@@ -126,6 +126,7 @@ const en = {
 
   // Shared download labels
   'download.jsonld': 'JSON-LD',
+  'download.json_schema': 'JSON Schema',
   'download.csv': 'CSV',
   'download.definition_xlsx': 'Definition (Excel)',
   'download.template_xlsx': 'Template (Excel)',
@@ -286,6 +287,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
 
     // Shared download labels
     'download.jsonld': 'JSON-LD',
+    'download.json_schema': 'JSON Schema',
     'download.csv': 'CSV',
     'download.definition_xlsx': 'Définition (Excel)',
     'download.template_xlsx': 'Modèle (Excel)',
@@ -441,6 +443,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
 
     // Shared download labels
     'download.jsonld': 'JSON-LD',
+    'download.json_schema': 'JSON Schema',
     'download.csv': 'CSV',
     'download.definition_xlsx': 'Definición (Excel)',
     'download.template_xlsx': 'Plantilla (Excel)',
