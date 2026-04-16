@@ -1,0 +1,20 @@
+id: cooking_stove_has_chimney
+maturity: draft
+label:
+  en: "Cooking stove has chimney or flue"
+  fr: "Le foyer de cuisson a une cheminée ou un conduit"
+  es: "La cocina tiene chimenea o conducto"
+
+definition:
+  en: "Whether the household's primary cooking stove has a chimney, flue, or fan to remove smoke from the cooking area. One of the two ventilation variables that adjusts the MTF cooking emission tier under default vs improved ventilation thresholds. Only applicable for solid-fuel stoves. Source: MICS6 EU2."
+  fr: "Si le foyer de cuisson principal du ménage est équipé d'une cheminée, d'un conduit ou d'un ventilateur pour évacuer la fumée de la zone de cuisson. L'une des deux variables de ventilation qui ajuste le niveau d'émission MTF de cuisson selon les seuils de ventilation par défaut ou améliorée. Applicable uniquement aux foyers à combustible solide. Source : MICS6 EU2."
+  es: "Si la cocina principal del hogar tiene chimenea, conducto o ventilador para eliminar el humo del área de cocción. Una de las dos variables de ventilación que ajusta el nivel de emisión de cocción MTF según los umbrales de ventilación por defecto o mejorada. Aplicable solo a cocinas de combustible sólido. Fuente: MICS6 EU2."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [who_world_bank_core_energy, unicef_mics6, se4all_mtf]

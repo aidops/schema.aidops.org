@@ -1,0 +1,18 @@
+id: previous_grade_level
+maturity: draft
+label:
+  en: Previous year grade level (local system)
+  fr: "Classe de l'année précédente (système national)"
+  es: "Grado del año anterior (sistema local)"
+definition:
+  en: "The grade or year the child attended during the previous school year, in country-specific terms. Integer within-level grade number. Ask only if attended_previous_year is Yes. Source: MICS6 CB10."
+  fr: "La classe ou l'année que l'enfant a fréquentée lors de l'année scolaire précédente, en termes spécifiques au pays. Numéro de classe entier dans le niveau. À poser uniquement si attended_previous_year est Oui. Source : MICS6 CB10."
+  es: "El grado o año que el niño cursó durante el año escolar anterior, en términos específicos del país. Número de grado entero dentro del nivel. Preguntar solo si attended_previous_year es Sí. Fuente: MICS6 CB10."
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

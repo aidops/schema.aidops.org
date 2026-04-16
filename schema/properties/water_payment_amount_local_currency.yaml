@@ -1,0 +1,19 @@
+id: water_payment_amount_local_currency
+maturity: draft
+label:
+  en: "Monthly water payment (local currency)"
+  fr: "Paiement mensuel pour l'eau (monnaie locale)"
+  es: "Pago mensual por agua (moneda local)"
+
+definition:
+  en: "Approximate amount the household pays per month for its main drinking water source, in local currency units. Asked only when water_payment is true. Currency unit should be recorded in the assessment notes. Used for affordability and cost-of-service analysis."
+  fr: "Montant approximatif que le ménage paie par mois pour sa principale source d'eau potable, en unités de monnaie locale. Demandé uniquement quand water_payment est vrai. L'unité monétaire doit être enregistrée dans les notes de l'évaluation. Utilisé pour l'analyse de l'accessibilité financière et du coût du service."
+  es: "Monto aproximado que el hogar paga por mes por su principal fuente de agua potable, en unidades de moneda local. Preguntado solo cuando water_payment es verdadero. La unidad monetaria debe registrarse en las notas de la evaluación. Usado para el análisis de asequibilidad y costo del servicio."
+
+type: decimal
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: water
+valid_instruments: [erwg_wash_hh]

@@ -1,0 +1,20 @@
+id: electricity_hours_per_day
+maturity: draft
+label:
+  en: "Electricity availability (hours per day)"
+  fr: "Disponibilité de l'électricité (heures par jour)"
+  es: "Disponibilidad de electricidad (horas por día)"
+
+definition:
+  en: "Hours per day electricity is typically available in the household. MTF electricity duration attribute — tier thresholds: 23 or more hrs/day = Tier 4-5; 16 or more hrs/day = Tier 3; 8 or more hrs/day = Tier 2; 4 or more hrs/day = Tier 1; fewer than 4 hrs/day = Tier 0 for this attribute. Combined with electricity_evening_hours this determines the duration tier. Respondent should report a typical week, not an exceptional one. Source: MTF household survey."
+  fr: "Heures par jour pendant lesquelles l'électricité est généralement disponible dans le ménage. Attribut de durée de l'électricité MTF — seuils de niveau : 23 heures/jour ou plus = niveaux 4 à 5 ; 16 heures/jour ou plus = niveau 3 ; 8 heures/jour ou plus = niveau 2 ; 4 heures/jour ou plus = niveau 1 ; moins de 4 heures/jour = niveau 0 pour cet attribut. Combiné avec electricity_evening_hours, cela détermine le niveau de durée. Le répondant doit indiquer une semaine typique, pas une semaine exceptionnelle. Source : enquête ménage MTF."
+  es: "Horas por día que la electricidad está disponible típicamente en el hogar. Atributo de duración de electricidad MTF: umbrales de nivel: 23 o más h/día = Niveles 4-5; 16 o más h/día = Nivel 3; 8 o más h/día = Nivel 2; 4 o más h/día = Nivel 1; menos de 4 h/día = Nivel 0 para este atributo. Combinado con electricity_evening_hours determina el nivel de duración. El respondente debe informar una semana típica, no una excepcional. Fuente: encuesta de hogares MTF."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [se4all_mtf]

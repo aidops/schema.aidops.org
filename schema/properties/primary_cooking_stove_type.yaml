@@ -1,0 +1,20 @@
+id: primary_cooking_stove_type
+maturity: draft
+label:
+  en: "Primary cooking stove type"
+  fr: "Type de foyer de cuisson principal"
+  es: "Tipo de cocina principal"
+
+definition:
+  en: "The type of cookstove or cooking appliance the household mainly uses for cooking. Together with primary cooking fuel, stove type determines the MTF cooking tier PM2.5 and efficiency attributes using published ESMAP/WHO emission factor crosswalk tables. Source: MICS6 EU1; WHO/World Bank harmonized questionnaire Q1."
+  fr: "Le type de foyer de cuisson ou d'appareil de cuisson que le ménage utilise principalement pour cuisiner. Avec le combustible de cuisson principal, le type de foyer détermine les attributs PM2,5 et efficacité du niveau MTF de cuisson à l'aide des tables de correspondance des facteurs d'émission ESMAP/OMS publiées. Source : MICS6 EU1 ; questionnaire harmonisé OMS/Banque mondiale Q1."
+  es: "El tipo de cocina o aparato de cocción que el hogar usa principalmente para cocinar. Junto con el combustible de cocción principal, el tipo de cocina determina los atributos de PM2,5 y eficiencia del nivel MTF de cocción mediante las tablas de referencia de factores de emisión publicadas por ESMAP/OMS. Fuente: MICS6 EU1; cuestionario armonizado OMS/Banco Mundial Q1."
+
+type: string
+cardinality: single
+core: true
+vocabulary: stove-type
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [who_world_bank_core_energy, unicef_mics6, se4all_mtf]

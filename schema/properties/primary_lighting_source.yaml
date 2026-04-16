@@ -1,0 +1,20 @@
+id: primary_lighting_source
+maturity: draft
+label:
+  en: "Primary lighting source"
+  fr: "Source d'éclairage principale"
+  es: "Fuente de iluminación principal"
+
+definition:
+  en: "The main source of lighting used in the household at night. Distinct from primary_electricity_source: a household with solar electricity may still use kerosene lamps for supplementary lighting. WHO Household Energy Database tracks lighting separately from cooking fuel for SDG monitoring. Kerosene and candle lighting represent health risks (indoor air pollution, fire) and cost burdens. Source: DHS hv207; MICS6 HC9; WHO/World Bank harmonized questionnaire."
+  fr: "La source principale d'éclairage utilisée par le ménage la nuit. Distincte de primary_electricity_source : un ménage disposant d'électricité solaire peut encore utiliser des lampes à pétrole pour l'éclairage d'appoint. La base de données sur l'énergie domestique de l'OMS suit l'éclairage séparément du combustible de cuisson pour le suivi des ODD. L'éclairage au pétrole lampant et à la bougie présente des risques pour la santé (pollution de l'air intérieur, incendie) et des charges de coût. Source : DHS hv207 ; MICS6 HC9 ; questionnaire harmonisé OMS/Banque mondiale."
+  es: "La fuente principal de iluminación utilizada en el hogar por la noche. Distinta de primary_electricity_source: un hogar con electricidad solar puede seguir usando lámparas de queroseno para iluminación suplementaria. La base de datos de energía doméstica de la OMS rastrea la iluminación por separado del combustible de cocción para el monitoreo de los ODS. La iluminación con queroseno y velas representa riesgos para la salud (contaminación del aire interior, incendio) y cargas de costo. Fuente: DHS hv207; MICS6 HC9; cuestionario armonizado OMS/Banco Mundial."
+
+type: string
+cardinality: single
+core: true
+vocabulary: lighting-source
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [who_world_bank_core_energy, unicef_mics6]

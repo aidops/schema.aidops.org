@@ -1,0 +1,18 @@
+id: homework_help
+maturity: draft
+label:
+  en: Homework help received
+  fr: "Aide aux devoirs reçue"
+  es: "Ayuda con las tareas recibida"
+definition:
+  en: "Whether anyone helps the child with homework. Ask only if has_homework is Yes. Source: MICS6 PR6."
+  fr: "Si quelqu'un aide l'enfant avec ses devoirs. À poser uniquement si has_homework est Oui. Source : MICS6 PR6."
+  es: "Si alguien ayuda al niño con las tareas escolares. Preguntar solo si has_homework es Sí. Fuente: MICS6 PR6."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

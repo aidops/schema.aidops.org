@@ -1,0 +1,19 @@
+id: handwashing_facility_type
+maturity: draft
+label:
+  en: "Handwashing facility type"
+  fr: "Type de dispositif de lavage des mains"
+  es: "Tipo de instalación para lavado de manos"
+
+definition:
+  en: "Type of handwashing facility present in the household. Asked only when handwashing_facility_present is not 'no'. Both fixed and mobile facilities qualify for the JMP basic hygiene service classification."
+  fr: "Type de dispositif de lavage des mains présent dans le ménage. Demandé uniquement quand handwashing_facility_present n'est pas 'no'. Les dispositifs fixes et mobiles sont tous deux éligibles pour la classification du service d'hygiène de base JMP."
+  es: "Tipo de instalación para lavado de manos presente en el hogar. Preguntado solo cuando handwashing_facility_present no es 'no'. Tanto las instalaciones fijas como las móviles califican para la clasificación del servicio de higiene básico del JMP."
+
+type: string
+cardinality: single
+core: false
+vocabulary: handwashing-facility-type
+references: null
+category: hygiene
+valid_instruments: [jmp_household_survey, mics6, mics7]

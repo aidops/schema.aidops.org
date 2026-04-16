@@ -1,0 +1,135 @@
+id: electricity-source
+maturity: draft
+label:
+  en: Electricity Source
+  fr: "Source d'électricité"
+  es: "Fuente de electricidad"
+definition:
+  en: >
+    The primary source of electricity in the household. Source type determines
+    the formality and legality dimension of the MTF electricity access tier.
+    The SDG 7.1.1 binary indicator (access to electricity) is met when this
+    value is anything other than 'none'.
+  fr: >
+    La source principale d'électricité dans le ménage. Le type de source détermine
+    la dimension de formalité et de légalité du niveau d'accès MTF à l'électricité.
+    L'indicateur binaire ODD 7.1.1 (accès à l'électricité) est satisfait lorsque
+    cette valeur est autre que 'none'.
+  es: >
+    La fuente principal de electricidad en el hogar. El tipo de fuente determina
+    la dimensión de formalidad y legalidad del nivel de acceso MTF a la electricidad.
+    El indicador binario ODS 7.1.1 (acceso a electricidad) se cumple cuando este
+    valor es distinto de 'none'.
+values:
+- code: none
+  label:
+    en: No electricity
+    fr: "Pas d'électricité"
+    es: "Sin electricidad"
+  definition:
+    en: "The household has no electricity source of any kind. MTF Tier 0 by definition."
+    fr: "Le ménage n'a aucune source d'électricité quelle qu'elle soit. Niveau MTF 0 par définition."
+    es: "El hogar no tiene ninguna fuente de electricidad. Nivel MTF 0 por definición."
+- code: national_grid
+  label:
+    en: National grid (utility)
+    fr: "Réseau national (service public)"
+    es: "Red nacional (servicio público)"
+  definition:
+    en: "Connection to the main national utility grid. The most common formal electricity source."
+    fr: "Raccordement au réseau national principal de service public. Source d'électricité formelle la plus courante."
+    es: "Conexión a la red eléctrica nacional principal del servicio público. La fuente de electricidad formal más común."
+- code: mini_grid
+  label:
+    en: Mini-grid (shared local network)
+    fr: "Mini-réseau (réseau local partagé)"
+    es: "Mini-red (red local compartida)"
+  definition:
+    en: "Off-grid mini-grid operated by a community, cooperative, or private operator. Provides grid-like service to a local area not connected to the national grid."
+    fr: "Mini-réseau hors réseau exploité par une communauté, une coopérative ou un opérateur privé. Fournit un service de type réseau à une zone locale non raccordée au réseau national."
+    es: "Mini-red fuera de red operada por una comunidad, cooperativa u operador privado. Proporciona servicio similar a la red a una zona local no conectada a la red nacional."
+- code: solar_home_system
+  label:
+    en: Solar home system (SHS)
+    fr: "Système solaire domestique (SHS)"
+    es: "Sistema solar doméstico (SHS)"
+  definition:
+    en: "Stand-alone solar home system installed for the household. Capacity ranges from pico-solar (less than 10 W) to large SHS (100 W or more)."
+    fr: "Système solaire domestique autonome installé pour le ménage. La capacité va du pico-solaire (moins de 10 W) aux grands SHS (100 W ou plus)."
+    es: "Sistema solar doméstico autónomo instalado para el hogar. La capacidad varía desde pico-solar (menos de 10 W) hasta SHS grandes (100 W o más)."
+- code: solar_lantern
+  label:
+    en: Solar lantern or small solar product
+    fr: "Lanterne solaire ou petit produit solaire"
+    es: "Linterna solar o pequeño producto solar"
+  definition:
+    en: "Pico-solar product (less than 10 W) providing only lighting and phone charging. Typically supports MTF Tier 1-2 capacity."
+    fr: "Produit pico-solaire (moins de 10 W) fournissant uniquement l'éclairage et la recharge de téléphone. Prend généralement en charge la capacité MTF niveaux 1 à 2."
+    es: "Producto pico-solar (menos de 10 W) que proporciona solo iluminación y carga de teléfonos. Generalmente admite capacidad MTF Niveles 1 a 2."
+- code: generator_shared
+  label:
+    en: Shared generator (neighborhood or compound)
+    fr: "Groupe électrogène partagé (quartier ou enceinte)"
+    es: "Generador compartido (vecindario o recinto)"
+  definition:
+    en: "Diesel or petrol generator shared among several households in a neighborhood or compound."
+    fr: "Groupe électrogène diesel ou essence partagé entre plusieurs ménages dans un quartier ou une enceinte."
+    es: "Generador diésel o de gasolina compartido entre varios hogares en un vecindario o recinto."
+- code: generator_own
+  label:
+    en: Own generator
+    fr: "Groupe électrogène personnel"
+    es: "Generador propio"
+  definition:
+    en: "Household-owned diesel or petrol generator."
+    fr: "Groupe électrogène diesel ou essence appartenant au ménage."
+    es: "Generador diésel o de gasolina propiedad del hogar."
+- code: battery_bank
+  label:
+    en: Battery / power bank (charged elsewhere)
+    fr: "Batterie / banque d'énergie (chargée ailleurs)"
+    es: "Batería / banco de energía (cargado en otro lugar)"
+  definition:
+    en: "Household uses a rechargeable battery or power bank as its primary electricity source; the battery is charged at an external charging point (market, neighbor, kiosk)."
+    fr: "Le ménage utilise une batterie rechargeable ou une banque d'énergie comme source principale d'électricité ; la batterie est chargée à un point de recharge externe (marché, voisin, kiosque)."
+    es: "El hogar utiliza una batería recargable o banco de energía como fuente principal de electricidad; la batería se carga en un punto de carga externo (mercado, vecino, quiosco)."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "An electricity source not covered by the other categories. Requires additional specification."
+    fr: "Une source d'électricité non couverte par les autres catégories. Nécessite une spécification supplémentaire."
+    es: "Una fuente de electricidad no cubierta por las otras categorías. Requiere especificación adicional."
+
+system_mappings:
+  dhs:
+    vocabulary_name: "hv206 - Has electricity (binary)"
+    values:
+    - code: "0"
+      label: "No"
+      maps_to: none
+    - code: "1"
+      label: "Yes"
+      maps_to: national_grid
+    note: "DHS hv206 is a binary indicator. Code 1 (yes) maps to national_grid as the most common grid-connected source in DHS samples; source sub-type is not captured in hv206. For off-grid sources in DHS, source type may be captured in country-specific modules."
+  mics6:
+    vocabulary_name: "MICS6 HC8 - Source of electricity"
+    values:
+    - code: "1"
+      label: "Electricity — national grid"
+      maps_to: national_grid
+    - code: "2"
+      label: "Electricity — solar system"
+      maps_to: solar_home_system
+    - code: "3"
+      label: "Electricity — generator"
+      maps_to: generator_shared
+    - code: "4"
+      label: "Electricity — other"
+      maps_to: other
+    - code: "0"
+      label: "No electricity"
+      maps_to: none
+    note: "MICS6 HC8 sub-codes (HC8A-HC8E) capture source type when HC8=1 (yes). The mapping above uses representative sub-codes; exact MICS6 sub-code structure varies by country survey version."

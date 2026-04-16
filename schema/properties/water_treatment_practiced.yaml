@@ -1,0 +1,19 @@
+id: water_treatment_practiced
+maturity: draft
+label:
+  en: "Water treatment practiced"
+  fr: "Traitement de l'eau pratiqué"
+  es: "Tratamiento de agua practicado"
+
+definition:
+  en: "Whether the household treats its drinking water in any way to make it safer. If yes, water_treatment_method captures the method(s) used. Based on JMP 2018 expanded questions and DHS hv237."
+  fr: "Si le ménage traite son eau potable d'une quelconque façon pour la rendre plus sûre. Si oui, water_treatment_method saisit la ou les méthodes utilisées. Basé sur les questions élargies JMP 2018 et DHS hv237."
+  es: "Si el hogar trata su agua potable de alguna manera para hacerla más segura. Si es así, water_treatment_method captura el/los método(s) utilizado(s). Basado en las preguntas ampliadas JMP 2018 y DHS hv237."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: water
+valid_instruments: [jmp_household_survey, dhs_8, mics6, mics7]

@@ -1,0 +1,21 @@
+id: iycf_currently_breastfed
+maturity: draft
+label:
+  en: "Currently breastfed"
+  fr: "Actuellement allaité"
+  es: "Actualmente amamantado"
+
+definition:
+  en: "Whether the child is currently breastfed. Published wording (WHO/UNICEF 2021): 'Is (NAME) currently breastfed?' Captures a broad current breastfeeding status for form routing and screening purposes. Used to gate the milk feed count question (iycf_milk_feed_count) for non-breastfed children."
+  fr: "Indique si l'enfant est actuellement allaité. Formulation publiée (OMS/UNICEF 2021) : « (PRÉNOM) est-il/elle actuellement allaité(e) ? » Indique le statut d'allaitement actuel général à des fins de routage du formulaire et de dépistage. Utilisé pour conditionner la question sur la fréquence des repas lactés (iycf_milk_feed_count) pour les enfants non allaités."
+  es: "Indica si el niño está siendo amamantado actualmente. Redacción publicada (OMS/UNICEF 2021): '¿Está (NOMBRE) siendo amamantado actualmente?' Captura un estado general de lactancia materna actual para el enrutamiento del formulario y fines de detección. Se utiliza para condicionar la pregunta sobre la frecuencia de las tomas de leche (iycf_milk_feed_count) para los niños no amamantados."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

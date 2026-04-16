@@ -1,0 +1,18 @@
+id: online_learning
+maturity: draft
+label:
+  en: Online learning participation
+  fr: "Participation à l'apprentissage en ligne"
+  es: "Participación en aprendizaje en línea"
+definition:
+  en: "Whether the child attended any online classes at home during the current school year. Ask only if attended_current_year is Yes. Source: MICS6 SP6."
+  fr: "Si l'enfant a suivi des cours en ligne à domicile pendant l'année scolaire en cours. À poser uniquement si attended_current_year est Oui. Source : MICS6 SP6."
+  es: "Si el niño asistió a alguna clase en línea en casa durante el año escolar actual. Preguntar solo si attended_current_year es Sí. Fuente: MICS6 SP6."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

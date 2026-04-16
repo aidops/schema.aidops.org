@@ -1,0 +1,21 @@
+id: iycf_fg_breastmilk
+maturity: draft
+label:
+  en: "MDD-C food group 1: breast milk"
+  fr: "Groupe alimentaire MDD-C 1 : lait maternel"
+  es: "Grupo alimentario MDD-C 1: leche materna"
+
+definition:
+  en: "Whether the child received breast milk in the previous 24 hours. Food group 1 of the 8-group MDD-C framework (WHO/UNICEF 2021). In practice this is derived from iycf_breastfed_yesterday rather than asked as a separate question; the form compiler maps the breastfed-yesterday answer to this food group flag."
+  fr: "Indique si l'enfant a reçu du lait maternel au cours des 24 heures précédentes. Groupe alimentaire 1 du cadre MDD-C à 8 groupes (OMS/UNICEF 2021). En pratique, cette donnée est dérivée de iycf_breastfed_yesterday plutôt que posée comme question distincte ; le compilateur de formulaire associe la réponse allaité-hier à cet indicateur de groupe alimentaire."
+  es: "Indica si el niño recibió leche materna en las 24 horas anteriores. Grupo alimentario 1 del marco MDD-C de 8 grupos (OMS/UNICEF 2021). En la práctica, esto se deriva de iycf_breastfed_yesterday en lugar de preguntarse como una pregunta separada; el compilador del formulario asigna la respuesta de amamantado-ayer a este indicador de grupo alimentario."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

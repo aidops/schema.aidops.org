@@ -1,0 +1,19 @@
+id: water_quantity_litres_per_person_per_day
+maturity: draft
+label:
+  en: "Water quantity (litres per person per day)"
+  fr: "Quantité d'eau (litres par personne par jour)"
+  es: "Cantidad de agua (litros por persona por día)"
+
+definition:
+  en: "Estimated litres of water collected per person per day for all household uses (drinking, cooking, personal hygiene). Enumerators may calculate from household-reported trips, containers, and volume: trips per day × containers per trip × litres per container ÷ household size. This is an approximation from self-report. Sphere minimum standard: 15 L/p/d (acute emergency phase: 7.5 L/p/d). JMP basic service aspiration for longer-term recovery programming: 30+ L/p/d. UNHCR SENS threshold: 10 L/p/d for potable storage."
+  fr: "Litres d'eau estimés collectés par personne et par jour pour tous les usages du ménage (boisson, cuisine, hygiène personnelle). Les énumérateurs peuvent calculer à partir des déclarations du ménage sur les trajets, les récipients et les volumes : trajets par jour × récipients par trajet × litres par récipient ÷ taille du ménage. Il s'agit d'une approximation à partir d'auto-déclarations. Norme minimale Sphère : 15 L/p/j (phase d'urgence aiguë : 7,5 L/p/j). Aspiration du service de base JMP pour la programmation de relèvement à long terme : 30+ L/p/j. Seuil SENS du HCR : 10 L/p/j pour le stockage d'eau potable."
+  es: "Litros estimados de agua recolectada por persona por día para todos los usos del hogar (beber, cocinar, higiene personal). Los enumeradores pueden calcular a partir de los viajes, recipientes y volumen reportados por el hogar: viajes por día × recipientes por viaje × litros por recipiente ÷ tamaño del hogar. Es una aproximación a partir de la autodeclaración. Estándar mínimo Esfera: 15 L/p/d (fase de emergencia aguda: 7,5 L/p/d). Aspiración de servicio básico JMP para programación de recuperación a largo plazo: 30+ L/p/d. Umbral SENS ACNUR: 10 L/p/d para almacenamiento de agua potable."
+
+type: decimal
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: water
+valid_instruments: [unhcr_sens_module7, erwg_wash_hh]

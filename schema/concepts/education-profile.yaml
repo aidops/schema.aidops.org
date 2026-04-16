@@ -1,0 +1,166 @@
+id: EducationProfile
+label:
+  en: Education Profile
+  fr: "Profil éducatif"
+  es: "Perfil educativo"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of school access, participation, and learning
+    environment for a single school-age child (aged 5 or older), collected
+    at the household level from a caregiver respondent. Records are
+    per-child, not per-household: every eligible child in the household
+    roster generates one EducationProfile record. Captures lifetime
+    attendance history (ever attended, highest level reached and whether
+    completed), current-year and previous-year attendance status, school
+    type and management, physical access and environment indicators,
+    parental involvement, and reasons for non-attendance. Supports
+    derivation of SDG 4.1.2 (completion rate) and UNESCO UIS out-of-school
+    children indicators from household survey data. Aligned with MICS6
+    (the canonical caregiver-reported instrument) and cross-referenced with
+    DHS and INEE Minimum Standards for emergency contexts. The Foundational
+    Learning Skills (FLS) direct assessment module is deferred to a
+    separate optional instrument administered by a trained enumerator; this
+    profile covers caregiver-reported items only.
+  fr: >
+    Un enregistrement ponctuel de l'accès à l'école, de la participation
+    et de l'environnement d'apprentissage pour un seul enfant en âge
+    scolaire (âgé de 5 ans ou plus), collecté au niveau du ménage auprès
+    d'un aidant répondant. Les enregistrements sont par enfant, pas par
+    ménage : chaque enfant éligible dans le registre du ménage génère un
+    enregistrement EducationProfile. Consigne l'historique de fréquentation
+    à vie (a déjà fréquenté, niveau le plus élevé atteint et s'il a été
+    achevé), le statut de fréquentation de l'année en cours et de l'année
+    précédente, le type et la gestion de l'école, les indicateurs d'accès
+    et d'environnement physique, l'implication parentale, et les raisons
+    de non-fréquentation. Soutient la dérivation de l'ODD 4.1.2 (taux
+    d'achèvement) et des indicateurs de l'ISU de l'UNESCO sur les enfants
+    non scolarisés à partir des données d'enquête ménage. Aligné avec
+    MICS6 (l'instrument canonique rapporté par l'aidant) et
+    contre-référencé avec les DHS et les Normes minimales INEE pour les
+    contextes d'urgence. Le module d'évaluation directe des Compétences
+    fondamentales d'apprentissage (CFA) est reporté à un instrument
+    optionnel distinct administré par un agent de terrain formé ; ce
+    profil couvre uniquement les éléments rapportés par l'aidant.
+  es: >
+    Un registro puntual del acceso escolar, la participación y el entorno
+    de aprendizaje para un solo niño en edad escolar (de 5 años o más),
+    recopilado a nivel del hogar de un cuidador como respondente. Los
+    registros son por niño, no por hogar: cada niño elegible en el registro
+    del hogar genera un registro EducationProfile. Captura el historial de
+    asistencia de por vida (alguna vez asistió, nivel más alto alcanzado y
+    si fue completado), el estado de asistencia del año actual y del año
+    anterior, el tipo y la gestión escolar, los indicadores de acceso físico
+    y entorno, la participación parental, y las razones de no asistencia.
+    Apoya la derivación del ODS 4.1.2 (tasa de finalización) y los
+    indicadores de niños fuera de la escuela del IEU de la UNESCO a partir
+    de datos de encuestas de hogares. Alineado con MICS6 (el instrumento
+    canónico de reporte del cuidador) y con referencia cruzada con DHS y
+    las Normas Mínimas INEE para contextos de emergencia. El módulo de
+    evaluación directa de Habilidades Fundamentales de Aprendizaje (HFA)
+    se difiere a un instrumento opcional separado administrado por un
+    encuestador capacitado; este perfil cubre únicamente los elementos
+    reportados por el cuidador.
+
+properties:
+  - ever_attended_school
+  - highest_education_level
+  - highest_grade_completed_local
+  - highest_level_completed
+  - attended_current_year
+  - current_grade_level
+  - attended_previous_year
+  - previous_grade_level
+  - school_type
+  - classroom_type
+  - school_management_type
+  - online_learning
+  - home_tutoring
+  - needs_help_to_reach_school
+  - reason_needs_help_transport
+  - travel_time_to_school
+  - learning_materials_available
+  - school_has_drinking_water
+  - school_has_toilet
+  - school_feels_safe
+  - school_closures_last_12m
+  - non_attendance_reason
+  - reasons_for_non_attendance
+  - books_at_home
+  - has_homework
+  - homework_help
+  - school_governing_body
+  - caregiver_attended_meeting
+  - received_report_card
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: education
+    properties:
+      - ever_attended_school
+      - highest_education_level
+      - highest_grade_completed_local
+      - highest_level_completed
+      - attended_current_year
+      - current_grade_level
+      - attended_previous_year
+      - previous_grade_level
+      - school_type
+      - classroom_type
+      - school_management_type
+      - online_learning
+      - home_tutoring
+      - needs_help_to_reach_school
+      - reason_needs_help_transport
+      - travel_time_to_school
+      - learning_materials_available
+      - school_has_drinking_water
+      - school_has_toilet
+      - school_feels_safe
+      - school_closures_last_12m
+      - non_attendance_reason
+      - reasons_for_non_attendance
+      - books_at_home
+      - has_homework
+      - homework_help
+      - school_governing_body
+      - caregiver_attended_meeting
+      - received_report_card
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (household education survey)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A per-child education assessment serializes as a QuestionnaireResponse whose subject is the child (Patient) and whose Questionnaire corresponds to the deployed education form. Each property maps to an item response. The per-child roster loop corresponds to multiple QuestionnaireResponse resources sharing a common context (encounter or composition) for the household visit."
+
+convergence:
+  system_count: 1
+  total_systems: 6
+  notes: >
+    OpenSPP carries an ISCED education level on the individual (Person)
+    record, which is the summary-level equivalent of EducationProfile's
+    highest_education_level. None of the other v1 social-protection systems
+    (FHIR, DHIS2, OpenCRVS, openIMIS, DCI Core) carry the per-child
+    school-participation and environment detail that EducationProfile
+    encodes: current-year attendance, school type, travel time, school
+    environment, and non-attendance reasons are humanitarian assessment
+    variables not represented in routine SP system data models. The low
+    convergence reflects scope: EducationProfile is a survey instrument
+    concept, not a service-delivery record.

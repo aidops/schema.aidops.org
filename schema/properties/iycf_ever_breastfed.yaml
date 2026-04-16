@@ -1,0 +1,21 @@
+id: iycf_ever_breastfed
+maturity: draft
+label:
+  en: "Ever breastfed"
+  fr: "Jamais allaité"
+  es: "Alguna vez amamantado"
+
+definition:
+  en: "Whether the child was ever breastfed. Published wording (WHO/UNICEF 2021): 'Was (NAME) ever breastfed?' Applies to children born in the last 24 months; the denominator for the Ever Breastfed indicator includes both living and deceased children from recent births."
+  fr: "Indique si l'enfant a déjà été allaité. Formulation publiée (OMS/UNICEF 2021) : « (PRÉNOM) a-t-il/elle déjà été allaité(e) ? » S'applique aux enfants nés au cours des 24 derniers mois ; le dénominateur de l'indicateur Jamais allaité comprend à la fois les enfants vivants et décédés issus de naissances récentes."
+  es: "Indica si el niño alguna vez fue amamantado. Redacción publicada (OMS/UNICEF 2021): '¿Alguna vez fue amamantado (NOMBRE)?' Se aplica a los niños nacidos en los últimos 24 meses; el denominador del indicador 'alguna vez amamantado' incluye tanto a los niños vivos como a los fallecidos de nacimientos recientes."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

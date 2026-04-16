@@ -1,0 +1,21 @@
+id: iycf_mdd_c
+maturity: draft
+label:
+  en: "Minimum Dietary Diversity for Children (MDD-C) achieved"
+  fr: "Diversité alimentaire minimale pour les enfants (MDD-C) atteinte"
+  es: "Diversidad Dietética Mínima para Niños (MDD-C) alcanzada"
+
+definition:
+  en: "Derived boolean: whether the child achieved Minimum Dietary Diversity for Children (MDD-C) in the previous 24 hours. Applies to children 6–23 months. Formula: iycf_mdd_c_score >= 5 (foods from at least 5 of the 8 food groups consumed). MDD-C revised in WHO/UNICEF 2021 to use 8 food groups (with breastmilk as group 1) and a threshold of 5/8, replacing the previous 4/7 threshold."
+  fr: "Booléen dérivé : indique si l'enfant a atteint la diversité alimentaire minimale pour les enfants (MDD-C) au cours des 24 heures précédentes. S'applique aux enfants de 6 à 23 mois. Formule : iycf_mdd_c_score >= 5 (aliments d'au moins 5 des 8 groupes alimentaires consommés). Le MDD-C a été révisé dans la mise à jour OMS/UNICEF 2021 pour utiliser 8 groupes alimentaires (avec le lait maternel comme groupe 1) et un seuil de 5/8, remplaçant l'ancien seuil de 4/7."
+  es: "Booleano derivado: indica si el niño logró la Diversidad Dietética Mínima para Niños (MDD-C) en las 24 horas anteriores. Se aplica a niños de 6–23 meses. Fórmula: iycf_mdd_c_score >= 5 (alimentos de al menos 5 de los 8 grupos alimentarios consumidos). El MDD-C fue revisado en la actualización OMS/UNICEF 2021 para usar 8 grupos alimentarios (con leche materna como grupo 1) y un umbral de 5/8, reemplazando el umbral anterior de 4/7."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

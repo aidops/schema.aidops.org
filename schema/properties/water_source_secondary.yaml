@@ -1,0 +1,19 @@
+id: water_source_secondary
+maturity: draft
+label:
+  en: "Secondary water source"
+  fr: "Source d'eau secondaire"
+  es: "Fuente de agua secundaria"
+
+definition:
+  en: "The secondary source of drinking water, asked only when the household's primary source is bottled or packaged water. The JMP uses this response (W2) to determine the water service level for households that rely solely on bottled or packaged water, because bottled water alone cannot be classified as safely managed without knowing the underlying improved or unimproved source."
+  fr: "La source d'eau potable secondaire, demandée uniquement lorsque la source principale du ménage est de l'eau en bouteille ou conditionnée. Le JMP utilise cette réponse (W2) pour déterminer le niveau de service en eau des ménages qui dépendent uniquement de l'eau en bouteille ou conditionnée, car l'eau en bouteille seule ne peut pas être classée comme à gestion sécurisée sans connaître la source sous-jacente améliorée ou non améliorée."
+  es: "La fuente secundaria de agua potable, preguntada solo cuando la fuente principal del hogar es agua embotellada o envasada. El JMP usa esta respuesta (W2) para determinar el nivel de servicio de agua para hogares que dependen únicamente de agua embotellada o envasada, porque el agua embotellada sola no puede clasificarse como con gestión segura sin conocer la fuente subyacente mejorada o no mejorada."
+
+type: string
+cardinality: single
+core: false
+vocabulary: water-source
+references: null
+category: water
+valid_instruments: [jmp_household_survey, mics6, mics7, dhs_8]

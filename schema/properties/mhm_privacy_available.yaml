@@ -1,0 +1,21 @@
+id: mhm_privacy_available
+maturity: draft
+label:
+  en: "Private place available for menstrual hygiene"
+  fr: "Lieu privé disponible pour l'hygiène menstruelle"
+  es: "Lugar privado disponible para la higiene menstrual"
+
+definition:
+  en: "Whether the respondent had a private place to wash themselves during their last menstrual period. Asked only to women and girls of menstruating age (typically 10–55 years); screened via household roster age/sex or a screening question. SDG 6.2 explicitly references women's and girls' hygiene needs. The JMP expanded its MHM monitoring in 2021. Based on JMP/MICS expanded MHM module (MICS Belize pilot UN14). Codes: yes_toilet_or_bathroom = private washing facility; yes_elsewhere = private space but not a toilet or bathroom; no = no private space available."
+  fr: "Si la répondante disposait d'un endroit privé pour se laver pendant ses dernières règles. Demandé uniquement aux femmes et filles en âge de menstruer (généralement 10–55 ans) ; filtré par l'âge/le sexe dans le registre des ménages ou une question de filtrage. L'ODD 6.2 fait explicitement référence aux besoins en matière d'hygiène des femmes et des filles. Le JMP a élargi son suivi de la GHM en 2021. Basé sur le module MHM élargi JMP/MICS (question pilote MICS Belize UN14). Codes : yes_toilet_or_bathroom = installation de lavage privée ; yes_elsewhere = espace privé mais pas de toilettes ni de salle de bains ; no = aucun espace privé disponible."
+  es: "Si la encuestada tuvo un lugar privado para lavarse durante su último período menstrual. Preguntado solo a mujeres y niñas en edad de menstruar (típicamente 10–55 años); filtrado por edad/sexo en el registro del hogar o mediante una pregunta de filtro. Los ODS 6.2 mencionan explícitamente las necesidades de higiene de las mujeres y las niñas. El JMP amplió su monitoreo de MHM en 2021. Basado en el módulo MHM ampliado JMP/MICS (pregunta piloto MICS Belice UN14). Códigos: yes_toilet_or_bathroom = instalación de lavado privada; yes_elsewhere = espacio privado pero no inodoro ni baño; no = sin espacio privado disponible."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes_toilet_or_bathroom / yes_elsewhere / no
+vocabulary: null
+references: null
+category: mhm
+sensitivity: sensitive
+valid_instruments: [jmp_household_survey, mics6, mics7]

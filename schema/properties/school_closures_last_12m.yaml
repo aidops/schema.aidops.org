@@ -1,0 +1,18 @@
+id: school_closures_last_12m
+maturity: draft
+label:
+  en: School closures in last 12 months
+  fr: "Fermetures scolaires au cours des 12 derniers mois"
+  es: "Cierres escolares en los últimos 12 meses"
+definition:
+  en: "The reasons for which the child's school has been closed at any time in the last 12 months. Multi-select; probe all closure types. Ask only if attended_current_year is Yes. Core item in any deployment context — captures conflict- and disaster-related disruptions from the household perspective. Essential emergency-context indicator per INEE Minimum Standards (2024). Source: MICS6 PR12."
+  fr: "Les raisons pour lesquelles l'école de l'enfant a été fermée à n'importe quel moment au cours des 12 derniers mois. Sélection multiple ; explorer tous les types de fermeture. À poser uniquement si attended_current_year est Oui. Item essentiel dans tout contexte de déploiement — capture les perturbations liées aux conflits et aux catastrophes du point de vue du ménage. Indicateur de contexte d'urgence essentiel selon les Normes minimales INEE (2024). Source : MICS6 PR12."
+  es: "Las razones por las que la escuela del niño ha estado cerrada en algún momento en los últimos 12 meses. Selección múltiple; explorar todos los tipos de cierre. Preguntar solo si attended_current_year es Sí. Ítem esencial en cualquier contexto de despliegue — captura las interrupciones relacionadas con conflictos y desastres desde la perspectiva del hogar. Indicador esencial de contexto de emergencia según las Normas Mínimas INEE (2024). Fuente: MICS6 PR12."
+type: string
+cardinality: multiple
+core: true
+vocabulary: school-closure-reason
+references: null
+category: education
+age_applicability:
+  - child_5_17

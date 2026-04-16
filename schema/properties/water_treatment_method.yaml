@@ -1,0 +1,19 @@
+id: water_treatment_method
+maturity: draft
+label:
+  en: "Water treatment method"
+  fr: "Méthode de traitement de l'eau"
+  es: "Método de tratamiento del agua"
+
+definition:
+  en: "Method(s) the household uses to treat drinking water to make it safer. Multi-select. Asked only when water_treatment_practiced is true. JMP adequate methods: boiling, chlorination, ceramic/sand/other filter, solar disinfection. JMP inadequate methods: straining through cloth, letting stand and settle. Based on JMP 2018 expanded questions and DHS hv237a."
+  fr: "Méthode(s) utilisée(s) par le ménage pour traiter l'eau potable afin de la rendre plus sûre. Sélection multiple. Demandé uniquement quand water_treatment_practiced est vrai. Méthodes adéquates JMP : ébullition, chloration, filtre céramique/sable/autre, désinfection solaire. Méthodes inadéquates JMP : filtrer à travers un tissu, laisser décanter. Basé sur les questions élargies JMP 2018 et DHS hv237a."
+  es: "Método(s) que utiliza el hogar para tratar el agua potable para hacerla más segura. Selección múltiple. Preguntado solo cuando water_treatment_practiced es verdadero. Métodos adecuados JMP: ebullición, cloración, filtro cerámico/de arena/otro, desinfección solar. Métodos inadecuados JMP: colar a través de tela, dejar reposar y asentar. Basado en las preguntas ampliadas JMP 2018 y DHS hv237a."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: water-treatment-method
+references: null
+category: water
+valid_instruments: [jmp_household_survey, dhs_8, mics6, mics7]

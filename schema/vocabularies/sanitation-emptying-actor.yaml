@@ -1,0 +1,60 @@
+id: sanitation-emptying-actor
+maturity: draft
+label:
+  en: Sanitation Pit Emptying Actor
+  fr: "Acteur du vidange de la fosse d'assainissement"
+  es: "Actor del vaciado del pozo de saneamiento"
+definition:
+  en: "Who carried out the last emptying of the on-site sanitation containment and by what method. Mechanical emptying by a service provider is more likely to result in safe treatment of fecal sludge and thus contributes to the safely managed sanitation criterion. Based on MICS6 pilot question WS8B."
+  fr: "Qui a effectué le dernier vidange du dispositif d'assainissement sur site et par quelle méthode. Le vidange mécanique par un prestataire de services est plus susceptible d'aboutir à un traitement sûr des boues fécales et contribue ainsi au critère d'assainissement à gestion sécurisée. Basé sur la question pilote MICS6 WS8B."
+  es: "Quién realizó el último vaciado del contenedor de saneamiento en el sitio y por qué método. El vaciado mecánico por un proveedor de servicios es más probable que resulte en un tratamiento seguro de los lodos fecales y así contribuye al criterio de saneamiento con gestión segura. Basado en la pregunta piloto MICS6 WS8B."
+standard:
+  name: "JMP Core Questions for Household Surveys (2018 Update)"
+  uri: "https://washdata.org/sites/default/files/documents/reports/2019-03/JMP-2018-core-questions-for-household-surveys.pdf"
+  notes: "MICS6 pilot question WS8B. Mechanical emptying by service provider is a proxy for safe fecal sludge management."
+values:
+- code: by_household_manually
+  label:
+    en: By household members (manually)
+    fr: "Par les membres du ménage (manuellement)"
+    es: "Por miembros del hogar (manualmente)"
+  definition:
+    en: "Household members emptied the pit or container manually. Carries higher risk of unsafe fecal sludge disposal."
+    fr: "Les membres du ménage ont vidangé la fosse ou le récipient manuellement. Comporte un risque plus élevé d'élimination non sûre des boues fécales."
+    es: "Los miembros del hogar vaciaron la fosa o recipiente manualmente. Conlleva mayor riesgo de eliminación insegura de lodos fecales."
+- code: by_service_provider_mechanically
+  label:
+    en: By service provider (mechanically / vacuum truck)
+    fr: "Par un prestataire de services (mécaniquement / camion de vidange)"
+    es: "Por proveedor de servicios (mecánicamente / camión de vacío)"
+  definition:
+    en: "A formal or informal service provider emptied the facility mechanically using a vacuum truck or pump. More likely to result in safe treatment. Contributes to the safely managed sanitation criterion."
+    fr: "Un prestataire de services formel ou informel a vidangé l'installation mécaniquement à l'aide d'un camion de vidange ou d'une pompe. Plus susceptible d'aboutir à un traitement sûr. Contribue au critère d'assainissement à gestion sécurisée."
+    es: "Un proveedor de servicios formal o informal vació la instalación mecánicamente usando un camión de vacío o bomba. Es más probable que resulte en un tratamiento seguro. Contribuye al criterio de saneamiento con gestión segura."
+- code: by_service_provider_manually
+  label:
+    en: By service provider (manually)
+    fr: "Par un prestataire de services (manuellement)"
+    es: "Por proveedor de servicios (manualmente)"
+  definition:
+    en: "A formal or informal service provider emptied the facility manually. The safety of fecal sludge disposal depends on how the provider handles and disposes of waste."
+    fr: "Un prestataire de services formel ou informel a vidangé l'installation manuellement. La sécurité de l'élimination des boues fécales dépend de la façon dont le prestataire gère et élimine les déchets."
+    es: "Un proveedor de servicios formal o informal vació la instalación manualmente. La seguridad de la eliminación de lodos fecales depende de cómo el proveedor maneja y elimina los residuos."
+- code: other
+  label:
+    en: Other
+    fr: "Autre"
+    es: "Otro"
+  definition:
+    en: "The pit or container was emptied by another means not covered by the other categories."
+    fr: "La fosse ou le récipient a été vidangé par un autre moyen non couvert par les autres catégories."
+    es: "La fosa o recipiente fue vaciada por otro medio no cubierto por las otras categorías."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: "Ne sait pas"
+    es: "No sabe"
+  definition:
+    en: "The respondent does not know how the facility was last emptied."
+    fr: "Le répondant ne sait pas comment l'installation a été vidangée pour la dernière fois."
+    es: "El encuestado no sabe cómo fue vaciada la instalación por última vez."

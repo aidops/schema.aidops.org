@@ -13,9 +13,19 @@ status: active
 informs:
   concepts:
     - DwellingDamageProfile
+    - WASHAssessmentProfile
   vocabularies:
     - habitability-status
     - nfi-item-type
+    - water-storage-container-type
+    - sanitation-facility-condition
+    - hygiene-item-type
   properties:
     - habitability_status
     - essential_items_missing
+    - water_quantity_litres_per_person_per_day
+    - water_storage_container_type
+    - water_storage_container_covered
+    - sanitation_facility_condition
+    - sanitation_facility_private
+    - hygiene_items_available

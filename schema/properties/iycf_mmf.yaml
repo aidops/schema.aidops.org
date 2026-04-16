@@ -1,0 +1,21 @@
+id: iycf_mmf
+maturity: draft
+label:
+  en: "Minimum Meal Frequency (MMF) achieved"
+  fr: "Fréquence minimale des repas (MMF) atteinte"
+  es: "Frecuencia Mínima de Comidas (MMF) alcanzada"
+
+definition:
+  en: "Derived boolean: whether the child achieved Minimum Meal Frequency (MMF) in the previous 24 hours. Applies to children 6–23 months. Thresholds are age- and breastfeeding-status-specific per WHO/UNICEF 2021: breastfed 6–8 months: iycf_solid_meal_count >= 2; breastfed 9–23 months: iycf_solid_meal_count >= 3; non-breastfed 6–23 months: (iycf_solid_meal_count + iycf_milk_feed_count) >= 4 AND iycf_solid_meal_count >= 1."
+  fr: "Booléen dérivé : indique si l'enfant a atteint la fréquence minimale des repas (MMF) au cours des 24 heures précédentes. S'applique aux enfants de 6 à 23 mois. Les seuils sont spécifiques à l'âge et au statut d'allaitement selon l'OMS/UNICEF 2021 : allaités 6–8 mois : iycf_solid_meal_count >= 2 ; allaités 9–23 mois : iycf_solid_meal_count >= 3 ; non allaités 6–23 mois : (iycf_solid_meal_count + iycf_milk_feed_count) >= 4 ET iycf_solid_meal_count >= 1."
+  es: "Booleano derivado: indica si el niño alcanzó la Frecuencia Mínima de Comidas (MMF) en las 24 horas anteriores. Se aplica a niños de 6–23 meses. Los umbrales son específicos por edad y estado de lactancia materna según OMS/UNICEF 2021: amamantados 6–8 meses: iycf_solid_meal_count >= 2; amamantados 9–23 meses: iycf_solid_meal_count >= 3; no amamantados 6–23 meses: (iycf_solid_meal_count + iycf_milk_feed_count) >= 4 Y iycf_solid_meal_count >= 1."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

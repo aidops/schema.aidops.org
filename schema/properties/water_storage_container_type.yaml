@@ -1,0 +1,19 @@
+id: water_storage_container_type
+maturity: draft
+label:
+  en: "Water storage container type"
+  fr: "Type de récipient de stockage d'eau"
+  es: "Tipo de recipiente de almacenamiento de agua"
+
+definition:
+  en: "Type(s) of container used by the household to store drinking water. Multi-select. Sphere guidance recommends narrow-neck covered containers (10–20 L) for safe household water storage. Wide-neck open containers carry higher contamination risk at the point of use."
+  fr: "Type(s) de récipient(s) utilisé(s) par le ménage pour stocker l'eau potable. Sélection multiple. Les directives Sphère recommandent des récipients couverts à col étroit (10–20 L) pour le stockage sûr de l'eau à domicile. Les récipients ouverts à col large présentent un risque de contamination plus élevé au point d'utilisation."
+  es: "Tipo(s) de recipiente(s) que utiliza el hogar para almacenar agua potable. Selección múltiple. Las directrices de Esfera recomiendan recipientes cubiertos de cuello estrecho (10–20 L) para el almacenamiento seguro de agua en el hogar. Los recipientes abiertos de cuello ancho conllevan mayor riesgo de contaminación en el punto de uso."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: water-storage-container-type
+references: null
+category: water
+valid_instruments: [erwg_wash_hh]

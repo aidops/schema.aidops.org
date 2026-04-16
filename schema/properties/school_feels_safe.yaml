@@ -1,0 +1,19 @@
+id: school_feels_safe
+maturity: draft
+label:
+  en: Child feels safe at school
+  fr: "L'enfant se sent en sécurité à l'école"
+  es: "El niño se siente seguro en la escuela"
+definition:
+  en: "Whether the child feels safe at school (caregiver-reported). Ask only if attended_current_year is Yes. Source: MICS6 SE16."
+  fr: "Si l'enfant se sent en sécurité à l'école (rapporté par l'aidant). À poser uniquement si attended_current_year est Oui. Source : MICS6 SE16."
+  es: "Si el niño se siente seguro en la escuela (reportado por el cuidador). Preguntar solo si attended_current_year es Sí. Fuente: MICS6 SE16."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+sensitivity: sensitive
+age_applicability:
+  - child_5_17

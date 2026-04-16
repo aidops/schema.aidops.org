@@ -1,0 +1,69 @@
+id: school-management-type
+maturity: draft
+label:
+  en: School Management Type
+  fr: "Type de gestion scolaire"
+  es: "Tipo de gestión escolar"
+definition:
+  en: "Classification of the institutional sector responsible for managing and funding a school. Based on the pragmatic six-code set used in MICS country implementations and EMIS data systems, drawing from UNESCO UIS ISCED-P 2011 institutional sector categories."
+  fr: "Classification du secteur institutionnel responsable de la gestion et du financement d'un établissement scolaire. Basée sur l'ensemble de six codes utilisé dans les implémentations MICS nationales et les systèmes EMIS, s'inspirant des catégories sectorielles institutionnelles de l'ISCED-P 2011 de l'ISU de l'UNESCO."
+  es: "Clasificación del sector institucional responsable de la gestión y financiamiento de una escuela. Basada en el conjunto pragmático de seis códigos utilizado en las implementaciones nacionales de MICS y los sistemas EMIS, derivada de las categorías del sector institucional de la CINE-P 2011 del IEU de la UNESCO."
+standard:
+  name: "UNESCO UIS ISCED-P 2011 — institutional sector classification (pragmatic adaptation)"
+  uri: https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-fields-of-education-and-training-2013-detailed-field-descriptions-2015-en.pdf
+  notes: "Six-code operational set used in MICS household education modules and EMIS data systems. Does not map 1:1 to ISCED-P public/government-dependent private/independent private trichotomy."
+values:
+- code: government
+  label:
+    en: Government / public
+    fr: "Gouvernemental / public"
+    es: "Gubernamental / público"
+  definition:
+    en: "State-funded and government-operated school."
+    fr: "École financée par l'État et gérée par le gouvernement."
+    es: "Escuela financiada por el Estado y operada por el gobierno."
+- code: private
+  label:
+    en: Private (fee-paying)
+    fr: "Privé (payant)"
+    es: "Privado (con cuota)"
+  definition:
+    en: "Tuition-funded, privately operated school."
+    fr: "École privée financée par les frais de scolarité."
+    es: "Escuela privada financiada mediante cuotas de matrícula."
+- code: community
+  label:
+    en: Community
+    fr: Communautaire
+    es: Comunitario
+  definition:
+    en: "Community-owned and managed school, typically with limited government funding."
+    fr: "École détenue et gérée par la communauté, généralement avec un financement gouvernemental limité."
+    es: "Escuela de propiedad y gestión comunitaria, generalmente con financiamiento gubernamental limitado."
+- code: ngo
+  label:
+    en: NGO / international organization
+    fr: "ONG / organisation internationale"
+    es: "ONG / organización internacional"
+  definition:
+    en: "School operated by a non-governmental organization or international body."
+    fr: "École gérée par une organisation non gouvernementale ou un organisme international."
+    es: "Escuela operada por una organización no gubernamental o un organismo internacional."
+- code: religious
+  label:
+    en: Religious / faith-based
+    fr: "Religieux / confessionnel"
+    es: "Religioso / confesional"
+  definition:
+    en: "School operated by a faith community; may receive partial government subsidy."
+    fr: "École gérée par une communauté confessionnelle ; peut recevoir une subvention gouvernementale partielle."
+    es: "Escuela operada por una comunidad religiosa; puede recibir subsidio gubernamental parcial."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "School management type not captured by any of the other categories."
+    fr: "Type de gestion scolaire non couvert par les autres catégories."
+    es: "Tipo de gestión escolar no contemplado en las demás categorías."

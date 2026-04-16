@@ -1,0 +1,20 @@
+id: electricity_voltage_problems
+maturity: draft
+label:
+  en: "Electricity voltage problems"
+  fr: "Problèmes de tension électrique"
+  es: "Problemas de voltaje eléctrico"
+
+definition:
+  en: "Whether voltage fluctuations or surges damaged or prevented the household from using electrical appliances in the past month. MTF electricity quality attribute: Tier 3 and above requires that voltage problems do not affect desired appliances. If voltage problems occurred and damaged or prevented appliance use, the quality tier is Tier 0-2. Source: MTF household survey."
+  fr: "Si des fluctuations ou surtensions ont endommagé ou empêché le ménage d'utiliser ses appareils électriques au cours du mois passé. Attribut de qualité de l'électricité MTF : les niveaux 3 et supérieurs exigent que les problèmes de tension n'affectent pas les appareils souhaités. Si des problèmes de tension se sont produits et ont endommagé ou empêché l'utilisation des appareils, le niveau de qualité est 0 à 2. Source : enquête ménage MTF."
+  es: "Si las fluctuaciones o picos de voltaje dañaron o impidieron al hogar usar sus electrodomésticos en el último mes. Atributo de calidad de electricidad MTF: el Nivel 3 y superiores requieren que los problemas de voltaje no afecten los electrodomésticos deseados. Si ocurrieron problemas de voltaje que dañaron o impidieron el uso de electrodomésticos, el nivel de calidad es Nivel 0-2. Fuente: encuesta de hogares MTF."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [se4all_mtf]

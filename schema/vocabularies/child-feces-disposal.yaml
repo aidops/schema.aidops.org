@@ -1,0 +1,125 @@
+id: child-feces-disposal
+maturity: draft
+label:
+  en: Child Feces Disposal Method
+  fr: "Mode d'élimination des matières fécales des enfants"
+  es: "Método de eliminación de heces de niños"
+definition:
+  en: "Method used to dispose of feces of children under 5 years of age. Safe disposal is defined as depositing feces into a toilet or latrine (directly or after rinsing), or burying them. Based on MICS WS16 and DHS hv238."
+  fr: "Méthode utilisée pour éliminer les matières fécales des enfants de moins de 5 ans. L'élimination sûre est définie comme le dépôt des matières fécales dans des toilettes ou une latrine (directement ou après rinçage), ou leur enfouissement. Basé sur MICS WS16 et DHS hv238."
+  es: "Método usado para eliminar las heces de niños menores de 5 años. La eliminación segura se define como depositar las heces en un inodoro o letrina (directamente o después de enjuagar), o enterrarlas. Basado en MICS WS16 y DHS hv238."
+standard:
+  name: "JMP Core Questions for Household Surveys (2018 Update)"
+  uri: "https://washdata.org/sites/default/files/documents/reports/2019-03/JMP-2018-core-questions-for-household-surveys.pdf"
+  notes: "MICS6 WS16 / DHS hv238. Safe disposal codes: in_toilet_or_latrine, rinsed_into_toilet_or_latrine. All other codes represent unsafe disposal for JMP purposes."
+values:
+- code: in_toilet_or_latrine
+  label:
+    en: Put/rinsed into toilet or latrine directly
+    fr: "Mis/rincé directement dans les toilettes ou la latrine"
+    es: "Depositado/enjuagado directamente en el inodoro o letrina"
+  definition:
+    en: "Child's feces are put directly into a toilet or latrine, or child uses the toilet or latrine themselves. Classified as safe disposal by the JMP."
+    fr: "Les matières fécales de l'enfant sont mises directement dans les toilettes ou la latrine, ou l'enfant utilise les toilettes ou la latrine lui-même. Classé comme élimination sûre par le JMP."
+    es: "Las heces del niño se depositan directamente en el inodoro o letrina, o el niño usa el inodoro o letrina por sí mismo. Clasificado como eliminación segura por el JMP."
+- code: rinsed_into_toilet_or_latrine
+  label:
+    en: Rinsed or washed into toilet or latrine
+    fr: "Rincé ou lavé dans les toilettes ou la latrine"
+    es: "Enjuagado o lavado en el inodoro o letrina"
+  definition:
+    en: "Child's feces are rinsed or washed from a diaper, cloth, or surface into a toilet or latrine. Classified as safe disposal by the JMP."
+    fr: "Les matières fécales de l'enfant sont rincées ou lavées d'une couche, d'un tissu ou d'une surface dans les toilettes ou la latrine. Classé comme élimination sûre par le JMP."
+    es: "Las heces del niño se enjuagan o lavan de un pañal, tela o superficie hacia el inodoro o letrina. Clasificado como eliminación segura por el JMP."
+- code: buried
+  label:
+    en: Buried
+    fr: "Enterrées"
+    es: "Enterradas"
+  definition:
+    en: "Child's feces are buried in the ground away from the household water source. Considered safer than open disposal but less safe than toilet or latrine disposal."
+    fr: "Les matières fécales de l'enfant sont enterrées dans le sol à l'écart de la source d'eau du ménage. Considéré comme plus sûr que l'élimination à l'air libre mais moins sûr que l'élimination dans les toilettes ou la latrine."
+    es: "Las heces del niño se entierran en el suelo lejos de la fuente de agua del hogar. Considerado más seguro que la eliminación al aire libre pero menos seguro que la eliminación en inodoro o letrina."
+- code: in_rubbish_or_bin
+  label:
+    en: Put in rubbish/garbage bin
+    fr: "Mis dans la poubelle"
+    es: "Puesto en el basurero"
+  definition:
+    en: "Child's feces are disposed of in a rubbish bin or garbage collection. Classified as unsafe disposal by the JMP."
+    fr: "Les matières fécales de l'enfant sont éliminées dans une poubelle ou une collecte d'ordures. Classé comme élimination non sûre par le JMP."
+    es: "Las heces del niño se eliminan en un basurero o recolección de basura. Clasificado como eliminación insegura por el JMP."
+- code: thrown_into_open
+  label:
+    en: Thrown into open space or water
+    fr: "Jetées dans un espace ouvert ou dans l'eau"
+    es: "Arrojadas al espacio abierto o al agua"
+  definition:
+    en: "Child's feces are thrown or left in an open area, drain, or water body. Classified as unsafe disposal by the JMP."
+    fr: "Les matières fécales de l'enfant sont jetées ou laissées dans un espace ouvert, un drain ou un plan d'eau. Classé comme élimination non sûre par le JMP."
+    es: "Las heces del niño se arrojan o dejan en un espacio abierto, drenaje o cuerpo de agua. Clasificado como eliminación insegura por el JMP."
+- code: left_to_child_to_clean
+  label:
+    en: Left for child to clean themselves
+    fr: "Laissées à l'enfant pour se nettoyer lui-même"
+    es: "Dejadas para que el niño se limpie solo"
+  definition:
+    en: "Child's feces are left for the child to handle without caretaker intervention. Classified as unsafe disposal by the JMP."
+    fr: "Les matières fécales de l'enfant sont laissées à l'enfant sans intervention du soignant. Classé comme élimination non sûre par le JMP."
+    es: "Las heces del niño se dejan para que el niño las maneje sin intervención del cuidador. Clasificado como eliminación insegura por el JMP."
+- code: other
+  label:
+    en: Other method
+    fr: "Autre méthode"
+    es: "Otro método"
+  definition:
+    en: "A disposal method not covered by the other categories."
+    fr: "Une méthode d'élimination non couverte par les autres catégories."
+    es: "Un método de eliminación no cubierto por las otras categorías."
+
+system_mappings:
+  dhs:
+    vocabulary_name: "hv238 - Disposal of child's stools"
+    values:
+      - code: '11'
+        label: "Child used toilet/latrine"
+        maps_to: in_toilet_or_latrine
+      - code: '12'
+        label: "Put/rinsed in toilet/latrine"
+        maps_to: rinsed_into_toilet_or_latrine
+      - code: '21'
+        label: "Put in garbage"
+        maps_to: in_rubbish_or_bin
+      - code: '22'
+        label: "Buried"
+        maps_to: buried
+      - code: '31'
+        label: "Left in the open"
+        maps_to: thrown_into_open
+      - code: '96'
+        label: "Other"
+        maps_to: other
+  mics:
+    vocabulary_name: "WS16 - Child's stool disposal"
+    values:
+      - code: '1'
+        label: "Child used toilet/latrine"
+        maps_to: in_toilet_or_latrine
+      - code: '2'
+        label: "Feces put/rinsed into toilet or latrine"
+        maps_to: rinsed_into_toilet_or_latrine
+      - code: '3'
+        label: "Feces buried"
+        maps_to: buried
+      - code: '4'
+        label: "Feces thrown into garbage"
+        maps_to: in_rubbish_or_bin
+      - code: '5'
+        label: "Feces thrown into open"
+        maps_to: thrown_into_open
+      - code: '6'
+        label: "Left for child to clean"
+        maps_to: left_to_child_to_clean
+      - code: '96'
+        label: "Other"
+        maps_to: other

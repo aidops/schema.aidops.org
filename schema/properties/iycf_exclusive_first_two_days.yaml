@@ -1,0 +1,21 @@
+id: iycf_exclusive_first_two_days
+maturity: draft
+label:
+  en: "Exclusively breastfed first two days after birth"
+  fr: "Allaitement exclusif les deux premiers jours après la naissance"
+  es: "Lactancia materna exclusiva los primeros dos días después del nacimiento"
+
+definition:
+  en: "Whether the child was fed only breast milk in the first two days after birth (no water, no other milk, no other food). Published wording (WHO/UNICEF 2021): 'In the first two days after birth, was (NAME) fed only breast milk — no water, no other milk, no other food?' This indicator is new in the 2021 update. Ask only if iycf_ever_breastfed = true."
+  fr: "Indique si l'enfant n'a reçu que du lait maternel pendant les deux premiers jours après la naissance (pas d'eau, pas d'autre lait, pas d'autre aliment). Formulation publiée (OMS/UNICEF 2021) : « Dans les deux premiers jours après la naissance, (PRÉNOM) a-t-il/elle été exclusivement allaité(e) — pas d'eau, pas d'autre lait, pas d'autre aliment ? » Cet indicateur est nouveau dans la mise à jour 2021. À poser uniquement si iycf_ever_breastfed = vrai."
+  es: "Indica si el niño fue alimentado solo con leche materna en los primeros dos días después del nacimiento (sin agua, sin otra leche, sin otro alimento). Redacción publicada (OMS/UNICEF 2021): 'En los primeros dos días después del nacimiento, ¿(NOMBRE) fue alimentado solo con leche materna, sin agua, sin otra leche, sin otro alimento?' Este indicador es nuevo en la actualización de 2021. Preguntar solo si iycf_ever_breastfed = verdadero."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

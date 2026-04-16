@@ -1,0 +1,93 @@
+id: electricity-mtf-tier
+maturity: draft
+label:
+  en: Electricity MTF Tier
+  fr: "Niveau MTF d'électricité"
+  es: "Nivel MTF de electricidad"
+definition:
+  en: >
+    The SE4All Multi-Tier Framework (MTF) tier for household electricity access,
+    derived from the minimum tier across seven attributes: capacity (peak power),
+    daily energy, duration (hours per day), evening supply, reliability
+    (interruptions per week and total outage hours), quality (voltage problems),
+    affordability (cost as share of income), legality/formality (billing status),
+    and health and safety (accidents). The overall electricity tier is the minimum
+    tier across all attributes. SDG 7.1.1 binary access indicator corresponds
+    roughly to Tier 1 or above. Source: ESMAP Technical Report 008/15
+    (Bhatia and Angelou 2015).
+  fr: >
+    Le niveau du cadre multi-niveaux (MTF) SE4All pour l'accès du ménage à
+    l'électricité, dérivé du niveau minimum sur sept attributs : capacité (puissance
+    de crête), énergie journalière, durée (heures par jour), alimentation en soirée,
+    fiabilité (interruptions par semaine et heures totales de coupure), qualité
+    (problèmes de tension), accessibilité financière (coût en part du revenu),
+    légalité/formalité (statut de facturation) et santé et sécurité (accidents).
+    Le niveau global d'électricité est le niveau minimum de tous les attributs.
+    L'indicateur binaire d'accès ODD 7.1.1 correspond approximativement au niveau 1
+    ou supérieur. Source : rapport technique ESMAP 008/15 (Bhatia et Angelou 2015).
+  es: >
+    El nivel del Marco de Múltiples Niveles (MTF) SE4All para el acceso del hogar
+    a la electricidad, derivado del nivel mínimo entre siete atributos: capacidad
+    (potencia máxima), energía diaria, duración (horas por día), suministro
+    vespertino, fiabilidad (interrupciones por semana y horas totales de corte),
+    calidad (problemas de voltaje), asequibilidad (costo como porcentaje del
+    ingreso), legalidad/formalidad (estado de facturación) y salud y seguridad
+    (accidentes). El nivel general de electricidad es el nivel mínimo de todos los
+    atributos. El indicador binario de acceso ODS 7.1.1 corresponde aproximadamente
+    al Nivel 1 o superior. Fuente: Informe Técnico ESMAP 008/15
+    (Bhatia y Angelou 2015).
+values:
+- code: tier_0
+  label:
+    en: "Tier 0 — No electricity"
+    fr: "Niveau 0 — Pas d'électricité"
+    es: "Nivel 0 — Sin electricidad"
+  definition:
+    en: "No electricity source of any kind. Household does not meet any capacity threshold."
+    fr: "Aucune source d'électricité quelle qu'elle soit. Le ménage ne satisfait à aucun seuil de capacité."
+    es: "Sin fuente de electricidad de ningún tipo. El hogar no cumple ningún umbral de capacidad."
+- code: tier_1
+  label:
+    en: "Tier 1 — Very low access"
+    fr: "Niveau 1 — Accès très faible"
+    es: "Nivel 1 — Acceso muy bajo"
+  definition:
+    en: "Capacity at least 3 W; at least 4 hours per day including evening supply; at most 14 disruptions per week. Supports phone charging and basic LED lighting."
+    fr: "Capacité d'au moins 3 W ; au moins 4 heures par jour incluant l'alimentation en soirée ; au plus 14 interruptions par semaine. Permet la recharge de téléphone et l'éclairage LED de base."
+    es: "Capacidad de al menos 3 W; al menos 4 horas por día incluido el suministro vespertino; a lo sumo 14 interrupciones por semana. Permite la carga de teléfono y la iluminación LED básica."
+- code: tier_2
+  label:
+    en: "Tier 2 — Low access"
+    fr: "Niveau 2 — Accès faible"
+    es: "Nivel 2 — Acceso bajo"
+  definition:
+    en: "Capacity at least 50 W; at least 8 hours per day including evening supply; at most 3 disruptions per week and less than 2 total outage hours per week. Supports fans, small televisions, and multiple LED lights."
+    fr: "Capacité d'au moins 50 W ; au moins 8 heures par jour incluant l'alimentation en soirée ; au plus 3 interruptions par semaine et moins de 2 heures totales de coupure par semaine. Permet les ventilateurs, les petites télévisions et plusieurs ampoules LED."
+    es: "Capacidad de al menos 50 W; al menos 8 horas por día incluido el suministro vespertino; a lo sumo 3 interrupciones por semana y menos de 2 horas totales de corte por semana. Permite ventiladores, televisores pequeños y varias bombillas LED."
+- code: tier_3
+  label:
+    en: "Tier 3 — Medium access"
+    fr: "Niveau 3 — Accès intermédiaire"
+    es: "Nivel 3 — Acceso medio"
+  definition:
+    en: "Capacity at least 200 W; at least 16 hours per day; reliable supply (at most 3 disruptions per week and less than 2 outage hours per week); voltage quality adequate (problems do not affect desired appliances). Supports refrigeration and moderate productive use."
+    fr: "Capacité d'au moins 200 W ; au moins 16 heures par jour ; alimentation fiable (au plus 3 interruptions par semaine et moins de 2 heures de coupure par semaine) ; qualité de tension adéquate (les problèmes n'affectent pas les appareils souhaités). Permet la réfrigération et un usage productif modéré."
+    es: "Capacidad de al menos 200 W; al menos 16 horas por día; suministro confiable (a lo sumo 3 interrupciones por semana y menos de 2 horas de corte por semana); calidad de voltaje adecuada (los problemas no afectan los electrodomésticos deseados). Permite refrigeración y uso productivo moderado."
+- code: tier_4
+  label:
+    en: "Tier 4 — High access"
+    fr: "Niveau 4 — Accès élevé"
+    es: "Nivel 4 — Acceso alto"
+  definition:
+    en: "Capacity at least 800 W; at least 23 hours per day; reliable and quality supply; cost of 365 kWh per year less than 5% of household income; bill paid to utility, prepaid meter, or authorized agent; no electricity-related accidents in the past 12 months."
+    fr: "Capacité d'au moins 800 W ; au moins 23 heures par jour ; alimentation fiable et de qualité ; coût de 365 kWh par an inférieur à 5 % du revenu du ménage ; facture payée à un service public, un compteur prépayé ou un agent agréé ; aucun accident lié à l'électricité au cours des 12 derniers mois."
+    es: "Capacidad de al menos 800 W; al menos 23 horas por día; suministro confiable y de calidad; costo de 365 kWh por año inferior al 5% del ingreso del hogar; factura pagada al servicio público, medidor de prepago o agente autorizado; sin accidentes relacionados con la electricidad en los últimos 12 meses."
+- code: tier_5
+  label:
+    en: "Tier 5 — Full access"
+    fr: "Niveau 5 — Accès complet"
+    es: "Nivel 5 — Acceso completo"
+  definition:
+    en: "Capacity at least 2 kW; at least 23 hours per day; meets all Tier 4 criteria for reliability, quality, affordability, legality, and safety. Supports full household electrical demand."
+    fr: "Capacité d'au moins 2 kW ; au moins 23 heures par jour ; satisfait à tous les critères de niveau 4 pour la fiabilité, la qualité, l'accessibilité financière, la légalité et la sécurité. Couvre la demande électrique totale du ménage."
+    es: "Capacidad de al menos 2 kW; al menos 23 horas por día; cumple todos los criterios del Nivel 4 para fiabilidad, calidad, asequibilidad, legalidad y seguridad. Cubre la demanda eléctrica total del hogar."

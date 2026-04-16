@@ -1,0 +1,159 @@
+id: EnergyAccessProfile
+label:
+  en: Energy Access Profile
+  fr: "Profil d'accès à l'énergie"
+  es: "Perfil de acceso a la energía"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of a household's access to cooking and electricity
+    energy services, assessed using the SE4All Multi-Tier Framework (MTF) lite
+    approach. Captures the primary cooking fuel (referenced from SocioEconomicProfile
+    via PublicSchema cooking_fuel), stove type, ventilation, cooking location,
+    secondary fuel (fuel stacking), convenience attributes (fuel collection time,
+    stove preparation time), safety, affordability, and fuel availability for cooking;
+    and primary electricity source, supply duration, evening availability, reliability,
+    quality, affordability, billing status, safety, and capacity for electricity.
+    Derives MTF tier scores for both cooking and electricity as the minimum tier
+    across all applicable attributes. Primary cooking fuel is captured via
+    SocioEconomicProfile (PS cooking_fuel property) and is not re-defined here; the
+    EnergyAccessProfile form references that value but does not duplicate the property.
+    Similarly, the PS electricity_access boolean can be derived from
+    primary_electricity_source: access is true when primary_electricity_source is
+    not 'none'. Productive-energy-use items are deferred and not included in this
+    version.
+  fr: >
+    Un enregistrement ponctuel de l'accès d'un ménage aux services énergétiques de
+    cuisson et d'électricité, évalué selon l'approche MTF-lite du cadre SE4All. Consigne
+    le combustible de cuisson principal (référencé depuis SocioEconomicProfile via la
+    propriété PS cooking_fuel), le type de foyer, la ventilation, le lieu de cuisson,
+    le combustible secondaire (empilement de combustibles), les attributs de commodité
+    (temps de collecte du combustible, temps de préparation du foyer), la sécurité,
+    l'accessibilité financière et la disponibilité du combustible pour la cuisson ; et
+    la source d'électricité principale, la durée d'alimentation, la disponibilité en
+    soirée, la fiabilité, la qualité, l'accessibilité financière, le statut de
+    facturation, la sécurité et la capacité pour l'électricité. Dérive les scores de
+    niveau MTF pour la cuisson et l'électricité comme le niveau minimum parmi tous les
+    attributs applicables. Le combustible de cuisson principal est capturé via
+    SocioEconomicProfile (propriété PS cooking_fuel) et n'est pas redéfini ici ; le
+    formulaire EnergyAccessProfile référence cette valeur sans dupliquer la propriété.
+    De même, le booléen PS electricity_access peut être dérivé de
+    primary_electricity_source : l'accès est vrai lorsque primary_electricity_source
+    n'est pas 'none'. Les items sur l'utilisation productive de l'énergie sont reportés
+    et ne sont pas inclus dans cette version.
+  es: >
+    Un registro puntual del acceso de un hogar a los servicios de energía de cocción y
+    electricidad, evaluado con el enfoque MTF-lite del marco SE4All. Consigna el
+    combustible de cocción principal (referenciado desde SocioEconomicProfile a través
+    de la propiedad PS cooking_fuel), el tipo de cocina, la ventilación, el lugar de
+    cocción, el combustible secundario (apilamiento de combustibles), los atributos de
+    conveniencia (tiempo de recolección de combustible, tiempo de preparación de la
+    cocina), la seguridad, la asequibilidad y la disponibilidad del combustible para
+    la cocción; y la fuente principal de electricidad, duración del suministro,
+    disponibilidad vespertina, fiabilidad, calidad, asequibilidad, estado de
+    facturación, seguridad y capacidad para la electricidad. Deriva los puntajes de
+    nivel MTF para cocción y electricidad como el nivel mínimo entre todos los
+    atributos aplicables. El combustible de cocción principal se captura a través de
+    SocioEconomicProfile (propiedad PS cooking_fuel) y no se redefine aquí; el
+    formulario EnergyAccessProfile referencia ese valor sin duplicar la propiedad.
+    Del mismo modo, el booleano PS electricity_access puede derivarse de
+    primary_electricity_source: el acceso es verdadero cuando primary_electricity_source
+    no es 'none'. Los ítems de uso productivo de energía se difieren y no están
+    incluidos en esta versión.
+
+properties:
+  # Cooking domain — core
+  - primary_cooking_stove_type
+  - cooking_stove_has_chimney
+  - cooking_location
+  # Cooking domain — extended
+  - secondary_cooking_fuel
+  - fuel_collection_time_hours_per_week
+  - stove_preparation_time_minutes
+  - cooking_accident_past_12_months
+  - cooking_fuel_cost_share
+  - cooking_fuel_availability_months
+  # Electricity domain — core
+  - primary_electricity_source
+  - electricity_hours_per_day
+  - electricity_evening_hours
+  - electricity_interruptions_per_week
+  # Electricity domain — extended
+  - electricity_interruption_hours_per_week
+  - electricity_voltage_problems
+  - electricity_cost_share
+  - electricity_billing_status
+  - electricity_accident_past_12_months
+  - electricity_capacity_watts
+  - electricity_appliances_supported
+  # Lighting
+  - primary_lighting_source
+  # Derived scores
+  - cooking_mtf_tier
+  - electricity_mtf_tier
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: energy
+    properties:
+      - primary_cooking_stove_type
+      - cooking_stove_has_chimney
+      - cooking_location
+      - secondary_cooking_fuel
+      - fuel_collection_time_hours_per_week
+      - stove_preparation_time_minutes
+      - cooking_accident_past_12_months
+      - cooking_fuel_cost_share
+      - cooking_fuel_availability_months
+      - primary_electricity_source
+      - electricity_hours_per_day
+      - electricity_evening_hours
+      - electricity_interruptions_per_week
+      - electricity_interruption_hours_per_week
+      - electricity_voltage_problems
+      - electricity_cost_share
+      - electricity_billing_status
+      - electricity_accident_past_12_months
+      - electricity_capacity_watts
+      - electricity_appliances_supported
+      - primary_lighting_source
+  - category: scores
+    properties:
+      - cooking_mtf_tier
+      - electricity_mtf_tier
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (household energy assessment)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A household-level energy access assessment serializes naturally as a QuestionnaireResponse with items corresponding to EnergyAccessProfile properties."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS, OpenSPP,
+    openIMIS, DCI Social Registry) carry a household-level multidimensional energy
+    access profile. PS SocioEconomicProfile holds a cooking_fuel summary property
+    and an electricity_access boolean, which are the standard SP registry items.
+    The full MTF-lite assessment is a humanitarian program assessment instrument with
+    no established equivalent in MIS core schemas. The canonical domain tools are the
+    SE4All MTF household surveys (ESMAP 2015, country surveys 2017-2020) and the
+    WHO/World Bank harmonized core questionnaire (2019).

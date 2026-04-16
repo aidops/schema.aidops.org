@@ -1,0 +1,19 @@
+id: handwashing_at_critical_junctures
+maturity: draft
+label:
+  en: "Handwashing at critical junctures (self-reported)"
+  fr: "Lavage des mains aux moments critiques (auto-déclaré)"
+  es: "Lavado de manos en momentos críticos (autodeclarado)"
+
+definition:
+  en: "Self-reported moments at which household members wash their hands, based on WHO/UNICEF five critical junctures. Multi-select. This is a softer indicator than the observed soap and water availability questions (H2 and H3) and is subject to social desirability bias; respondents may over-report hand-washing frequency. Used for hygiene knowledge, attitudes, and practices (KAP) analysis rather than for JMP service level determination."
+  fr: "Moments auto-déclarés auxquels les membres du ménage se lavent les mains, basés sur les cinq moments critiques OMS/UNICEF. Sélection multiple. Il s'agit d'un indicateur moins fiable que les questions de disponibilité observée de savon et d'eau (H2 et H3) et est sujet au biais de désirabilité sociale ; les répondants peuvent sur-déclarer la fréquence de lavage des mains. Utilisé pour l'analyse des connaissances, attitudes et pratiques (CAP) en matière d'hygiène plutôt que pour la détermination du niveau de service JMP."
+  es: "Momentos autodeclarados en que los miembros del hogar se lavan las manos, basados en los cinco momentos críticos de la OMS/UNICEF. Selección múltiple. Es un indicador más débil que las preguntas de disponibilidad observada de jabón y agua (H2 y H3) y está sujeto a sesgo de deseabilidad social; los encuestados pueden sobrenotificar la frecuencia de lavado de manos. Usado para el análisis de conocimientos, actitudes y prácticas (CAP) de higiene en lugar de para la determinación del nivel de servicio JMP."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: handwashing-critical-juncture
+references: null
+category: hygiene
+valid_instruments: [jmp_household_survey, erwg_wash_hh]

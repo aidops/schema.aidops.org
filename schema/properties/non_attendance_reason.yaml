@@ -1,0 +1,18 @@
+id: non_attendance_reason
+maturity: draft
+label:
+  en: Main reason for non-attendance
+  fr: "Raison principale de non-fréquentation"
+  es: "Razón principal de no asistencia"
+definition:
+  en: "The primary reason the child is not attending school in the current school year (or has never attended). Single-select; captures the main barrier for MICS6 comparability. For comprehensive assessments, use reasons_for_non_attendance (multi-select) to capture all applicable barriers. Ask if attended_current_year is No or ever_attended_school is No."
+  fr: "La raison principale pour laquelle l'enfant ne fréquente pas l'école pendant l'année scolaire en cours (ou n'a jamais fréquenté). Sélection unique ; capture l'obstacle principal pour la comparabilité avec MICS6. Pour les évaluations approfondies, utiliser reasons_for_non_attendance (sélection multiple) pour capturer tous les obstacles applicables. À poser si attended_current_year est Non ou ever_attended_school est Non."
+  es: "La razón principal por la que el niño no asiste a la escuela en el año escolar actual (o nunca ha asistido). Selección única; captura la barrera principal para comparabilidad con MICS6. Para evaluaciones comprensivas, usar reasons_for_non_attendance (selección múltiple) para capturar todas las barreras aplicables. Preguntar si attended_current_year es No o ever_attended_school es No."
+type: string
+cardinality: single
+core: true
+vocabulary: reason-for-non-attendance
+references: null
+category: education
+age_applicability:
+  - child_5_17

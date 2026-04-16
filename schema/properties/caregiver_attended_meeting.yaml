@@ -1,0 +1,18 @@
+id: caregiver_attended_meeting
+maturity: draft
+label:
+  en: Caregiver attended school governing body meeting
+  fr: "L'aidant a assisté à une réunion de l'organe de gestion scolaire"
+  es: "El cuidador asistió a una reunión del órgano de gobierno escolar"
+definition:
+  en: "Whether the caregiver or any adult from the household attended a meeting of the school's governing body in the last 12 months. Ask only if school_governing_body is Yes. Source: MICS6 PR8."
+  fr: "Si l'aidant ou tout adulte du ménage a assisté à une réunion de l'organe de gestion de l'école au cours des 12 derniers mois. À poser uniquement si school_governing_body est Oui. Source : MICS6 PR8."
+  es: "Si el cuidador o cualquier adulto del hogar asistió a una reunión del órgano de gobierno de la escuela en los últimos 12 meses. Preguntar solo si school_governing_body es Sí. Fuente: MICS6 PR8."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

@@ -17,6 +17,18 @@ hazard_event:
     fr: Événement dangereux
     es: Evento de peligro
 
+hygiene:
+  label:
+    en: Hygiene
+    fr: Hygiène
+    es: Higiene
+
+mhm:
+  label:
+    en: Menstrual Hygiene Management
+    fr: "Gestion de l'hygiène menstruelle"
+    es: "Gestión de la higiene menstrual"
+
 nfi:
   label:
     en: Non-food Items
@@ -34,6 +46,24 @@ recovery:
     en: Recovery
     fr: Relèvement
     es: Recuperación
+
+sanitation:
+  label:
+    en: Sanitation
+    fr: Assainissement
+    es: Saneamiento
+
+water:
+  label:
+    en: Water
+    fr: Eau
+    es: Agua
+
+energy:
+  label:
+    en: Energy
+    fr: "Énergie"
+    es: "Energía"
 
 scores:
   label:
@@ -71,3 +101,39 @@ wash:
     en: Water & Sanitation
     fr: Eau et assainissement
     es: Agua y saneamiento
+
+education:
+  label:
+    en: Education
+    fr: "Éducation"
+    es: "Educación"
+
+breastfeeding:
+  label:
+    en: Breastfeeding
+    fr: Allaitement maternel
+    es: Lactancia materna
+
+complementary_feeding:
+  label:
+    en: Complementary Feeding
+    fr: Alimentation complémentaire
+    es: Alimentación complementaria
+
+food_groups_24h:
+  label:
+    en: Food Groups (24-hour recall)
+    fr: Groupes alimentaires (rappel 24 heures)
+    es: Grupos alimentarios (recordatorio 24 horas)
+
+unhealthy_foods:
+  label:
+    en: Unhealthy Foods
+    fr: Aliments non sains
+    es: Alimentos no saludables
+
+derived_iycf:
+  label:
+    en: Derived IYCF Indicators
+    fr: "Indicateurs IYCF dérivés"
+    es: Indicadores IYCF derivados

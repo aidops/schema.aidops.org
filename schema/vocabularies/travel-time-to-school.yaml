@@ -1,0 +1,42 @@
+id: travel-time-to-school
+maturity: draft
+label:
+  en: Travel Time to School
+  fr: "Temps de trajet jusqu'à l'école"
+  es: "Tiempo de viaje a la escuela"
+definition:
+  en: "Ordinal classification of the typical one-way travel time for a child to reach school. Three-band scale per MICS6 SE3."
+  fr: "Classification ordinale du temps de trajet aller typique pour qu'un enfant se rende à l'école. Échelle à trois niveaux selon MICS6 SE3."
+  es: "Clasificación ordinal del tiempo de viaje de ida típico para que un niño llegue a la escuela. Escala de tres niveles según MICS6 SE3."
+standard:
+  name: "MICS6 SE3 — travel time to school"
+  uri: https://mics.unicef.org/tools
+  notes: "MICS6 uses three ordinal bands: under 30 minutes, 30-60 minutes, more than 1 hour. An alternative numeric encoding in minutes may be preferred where country programs collect exact time; the ordinal is the canonical MICS6 form."
+values:
+- code: less_than_30min
+  label:
+    en: Less than 30 minutes
+    fr: "Moins de 30 minutes"
+    es: "Menos de 30 minutos"
+  definition:
+    en: "Typical one-way travel time to school is less than 30 minutes."
+    fr: "Le temps de trajet aller typique jusqu'à l'école est inférieur à 30 minutes."
+    es: "El tiempo de viaje de ida típico a la escuela es menor de 30 minutos."
+- code: min_30_to_60
+  label:
+    en: 30 to 60 minutes
+    fr: "30 à 60 minutes"
+    es: "30 a 60 minutos"
+  definition:
+    en: "Typical one-way travel time to school is between 30 and 60 minutes."
+    fr: "Le temps de trajet aller typique jusqu'à l'école est compris entre 30 et 60 minutes."
+    es: "El tiempo de viaje de ida típico a la escuela es de entre 30 y 60 minutos."
+- code: more_than_1hour
+  label:
+    en: More than 1 hour
+    fr: "Plus d'une heure"
+    es: "Más de 1 hora"
+  definition:
+    en: "Typical one-way travel time to school is more than 1 hour."
+    fr: "Le temps de trajet aller typique jusqu'à l'école est supérieur à 1 heure."
+    es: "El tiempo de viaje de ida típico a la escuela es de más de 1 hora."

@@ -1,0 +1,18 @@
+id: travel_time_to_school
+maturity: draft
+label:
+  en: Travel time to school
+  fr: "Temps de trajet jusqu'à l'école"
+  es: "Tiempo de viaje a la escuela"
+definition:
+  en: "The typical one-way travel time for the child to get from home to school. Ordinal three-band classification per MICS6 SE3. Ask only if attended_current_year is Yes."
+  fr: "Le temps de trajet aller typique pour que l'enfant aille de chez lui à l'école. Classification ordinale à trois niveaux selon MICS6 SE3. À poser uniquement si attended_current_year est Oui."
+  es: "El tiempo de viaje de ida típico para que el niño vaya de casa a la escuela. Clasificación ordinal de tres bandas según MICS6 SE3. Preguntar solo si attended_current_year es Sí."
+type: string
+cardinality: single
+core: true
+vocabulary: travel-time-to-school
+references: null
+category: education
+age_applicability:
+  - child_5_17

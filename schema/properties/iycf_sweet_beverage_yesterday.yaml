@@ -1,0 +1,21 @@
+id: iycf_sweet_beverage_yesterday
+maturity: draft
+label:
+  en: "Sweet beverage consumed yesterday"
+  fr: "Boisson sucrée consommée hier"
+  es: "Bebida azucarada consumida ayer"
+
+definition:
+  en: "Whether the child drank any sweet beverage yesterday (24-hour recall). Published wording (WHO/UNICEF 2021): 'Yesterday, did (NAME) drink any sweet beverage — such as fruit juice, sweetened fruit drinks, sodas, flavored milk drinks, sports drinks, or sweet tea?' Applies to children 6–23 months. Numerator item for the Sweet Beverage Consumption indicator, a new unhealthy diet indicator in the 2021 update."
+  fr: "Indique si l'enfant a bu une boisson sucrée hier (rappel sur 24 heures). Formulation publiée (OMS/UNICEF 2021) : « Hier, (PRÉNOM) a-t-il/elle bu une boisson sucrée — telle que du jus de fruit, des boissons aux fruits sucrées, des sodas, des boissons au lait aromatisées, des boissons énergisantes ou du thé sucré ? » S'applique aux enfants de 6 à 23 mois. Item du numérateur pour l'indicateur de consommation de boissons sucrées, nouvel indicateur d'alimentation non saine dans la mise à jour 2021."
+  es: "Indica si el niño bebió alguna bebida azucarada ayer (recordatorio de 24 horas). Redacción publicada (OMS/UNICEF 2021): 'Ayer, ¿bebió (NOMBRE) alguna bebida azucarada, como jugo de fruta, bebidas de fruta azucaradas, sodas, bebidas de leche saborizada, bebidas deportivas o té dulce?' Se aplica a niños de 6–23 meses. Ítem numerador para el indicador de Consumo de Bebidas Azucaradas, un nuevo indicador de dieta no saludable en la actualización de 2021."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

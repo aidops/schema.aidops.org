@@ -1,0 +1,69 @@
+id: water-storage-container-type
+maturity: draft
+label:
+  en: Water Storage Container Type
+  fr: "Type de récipient de stockage d'eau"
+  es: "Tipo de recipiente de almacenamiento de agua"
+definition:
+  en: "Type of container(s) used by the household to store drinking water. Sphere guidance distinguishes safe storage (narrow-neck covered containers) from unsafe storage (wide-neck uncovered containers). Multi-select."
+  fr: "Type(s) de récipient(s) utilisés par le ménage pour stocker l'eau potable. Les directives Sphère distinguent le stockage sûr (récipients couverts à col étroit) du stockage non sûr (récipients ouverts à col large). Sélection multiple."
+  es: "Tipo(s) de recipiente(s) que utiliza el hogar para almacenar agua potable. Las directrices de Esfera distinguen el almacenamiento seguro (recipientes cubiertos de cuello estrecho) del almacenamiento inseguro (recipientes abiertos de cuello ancho). Selección múltiple."
+standard:
+  name: "Sphere Handbook 2018 — Chapter 2: WASH"
+  uri: "https://spherestandards.org/handbook-2018/"
+  notes: "Sphere recommends 10-20 L containers with lids and narrow neck for safe household water storage. ERWG WASH.HH.Water module uses compatible categories."
+values:
+- code: narrow_neck_jerrycan
+  label:
+    en: Narrow-neck jerrycan or sealed container
+    fr: "Jerrycan à col étroit ou récipient fermé"
+    es: "Bidón de cuello estrecho o recipiente sellado"
+  definition:
+    en: "A jerrycan, water bottle, or sealed container with a narrow neck that limits contamination when filling or pouring. Considered safe storage by Sphere guidance."
+    fr: "Jerrycan, bouteille d'eau ou récipient fermé à col étroit qui limite la contamination lors du remplissage ou du versement. Considéré comme stockage sûr par les directives Sphère."
+    es: "Un bidón, botella de agua o recipiente sellado con cuello estrecho que limita la contaminación al llenarlo o verterlo. Considerado almacenamiento seguro según las directrices de Esfera."
+- code: wide_neck_bucket
+  label:
+    en: Wide-neck bucket or open container
+    fr: "Seau à col large ou récipient ouvert"
+    es: "Cubo de cuello ancho o recipiente abierto"
+  definition:
+    en: "A bucket or wide-neck container without a secure lid that is exposed to contamination when open. Considered unsafe storage by Sphere guidance unless covered."
+    fr: "Seau ou récipient à col large sans couvercle sécurisé, exposé à la contamination lorsqu'il est ouvert. Considéré comme stockage non sûr par les directives Sphère sauf s'il est couvert."
+    es: "Un cubo o recipiente de cuello ancho sin tapa segura que queda expuesto a la contaminación cuando está abierto. Considerado almacenamiento inseguro según Esfera a menos que esté cubierto."
+- code: pot_without_cover
+  label:
+    en: Pot or clay vessel without cover
+    fr: "Pot ou récipient en argile sans couvercle"
+    es: "Olla o vasija de barro sin tapa"
+  definition:
+    en: "A traditional clay pot or cooking vessel used for water storage without a protective cover. High contamination risk from open storage."
+    fr: "Pot en argile traditionnel ou ustensile de cuisson utilisé pour le stockage de l'eau sans protection. Risque élevé de contamination dû au stockage ouvert."
+    es: "Una olla de barro tradicional o vasija de cocina usada para almacenar agua sin cubierta protectora. Alto riesgo de contaminación por almacenamiento abierto."
+- code: water_filter_container
+  label:
+    en: Water filter container (integrated storage)
+    fr: "Récipient filtre à eau (stockage intégré)"
+    es: "Recipiente filtro de agua (almacenamiento integrado)"
+  definition:
+    en: "A ceramic pot filter or biosand filter that serves both as treatment device and storage container. Typically includes a covered lower reservoir."
+    fr: "Filtre en pot céramique ou filtre biosable servant à la fois d'appareil de traitement et de récipient de stockage. Comprend généralement un réservoir inférieur couvert."
+    es: "Un filtro de maceta cerámica o filtro de bioarena que sirve tanto de dispositivo de tratamiento como de recipiente de almacenamiento. Normalmente incluye un depósito inferior cubierto."
+- code: piped_indoor_reservoir
+  label:
+    en: Piped indoor reservoir or tank
+    fr: "Réservoir ou citerne intérieur raccordé"
+    es: "Depósito o cisterna interior con tubería"
+  definition:
+    en: "A fixed indoor water storage tank connected to a piped supply, accessed by tap or pump inside the dwelling."
+    fr: "Réservoir de stockage d'eau intérieur fixe raccordé à une alimentation canalisée, accessible par robinet ou pompe à l'intérieur du logement."
+    es: "Un depósito fijo interior de almacenamiento de agua conectado a un suministro de tubería, al que se accede por grifo o bomba dentro de la vivienda."
+- code: other
+  label:
+    en: Other container type
+    fr: Autre type de récipient
+    es: Otro tipo de recipiente
+  definition:
+    en: "A water storage container type not covered by the other categories."
+    fr: "Un type de récipient de stockage d'eau non couvert par les autres catégories."
+    es: "Un tipo de recipiente de almacenamiento de agua no cubierto por las otras categorías."

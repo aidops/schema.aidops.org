@@ -1,0 +1,42 @@
+id: hygiene-service-level
+maturity: draft
+label:
+  en: Hygiene Service Level
+  fr: "Niveau de service d'hygiène"
+  es: "Nivel de servicio de higiene"
+definition:
+  en: "WHO/UNICEF JMP classification of household hygiene service level, derived from enumerator observation of handwashing facility presence, water availability, and soap availability. This is a three-rung ladder; the JMP does not yet define a 'safely managed' rung for household hygiene. The basic level is the SDG 6.2.1 target threshold."
+  fr: "Classification JMP OMS/UNICEF du niveau de service d'hygiène des ménages, dérivée de l'observation par l'énumérateur de la présence d'un dispositif de lavage des mains, de la disponibilité de l'eau et du savon. Il s'agit d'une échelle à trois niveaux ; le JMP ne définit pas encore de niveau 'gestion sécurisée' pour l'hygiène des ménages. Le niveau de base est le seuil cible de l'ODD 6.2.1."
+  es: "Clasificación JMP OMS/UNICEF del nivel de servicio de higiene del hogar, derivada de la observación por el enumerador de la presencia de instalación para lavado de manos, disponibilidad de agua y disponibilidad de jabón. Es una escala de tres peldaños; el JMP aún no define un peldaño de 'gestión segura' para la higiene del hogar. El nivel básico es el umbral objetivo de los ODS 6.2.1."
+standard:
+  name: "WHO/UNICEF JMP Service Ladder (SDG 6.2.1 — Hygiene)"
+  uri: "https://washdata.org/monitoring/hygiene"
+  notes: "Derived from JMP H1 (handwashing facility), H2 (water observed), H3 (soap observed). Basic = facility + water + soap observed. Limited = facility + water or soap but not both. No facility = no handwashing facility on premises."
+values:
+- code: basic
+  label:
+    en: Basic hygiene service
+    fr: "Service d'hygiène de base"
+    es: "Servicio de higiene básico"
+  definition:
+    en: "A handwashing facility is present with soap and water available at the time of observation. Meets the JMP SDG 6.2.1 basic hygiene service threshold."
+    fr: "Un dispositif de lavage des mains est présent avec du savon et de l'eau disponibles au moment de l'observation. Satisfait au seuil de service d'hygiène de base JMP ODD 6.2.1."
+    es: "Hay una instalación para lavado de manos con agua y jabón disponibles en el momento de la observación. Cumple el umbral de servicio de higiene básico JMP ODS 6.2.1."
+- code: limited
+  label:
+    en: Limited hygiene service
+    fr: "Service d'hygiène limité"
+    es: "Servicio de higiene limitado"
+  definition:
+    en: "A handwashing facility is present but either water or soap (or both) is not available at the time of observation."
+    fr: "Un dispositif de lavage des mains est présent mais l'eau ou le savon (ou les deux) n'est pas disponible au moment de l'observation."
+    es: "Hay una instalación para lavado de manos pero no hay agua o jabón (o ambos) disponibles en el momento de la observación."
+- code: no_facility
+  label:
+    en: No hygiene facility
+    fr: "Aucune installation d'hygiène"
+    es: "Sin instalación de higiene"
+  definition:
+    en: "No handwashing facility of any kind is present on the household premises."
+    fr: "Aucun dispositif de lavage des mains n'est présent dans les locaux du ménage."
+    es: "No hay ninguna instalación para lavado de manos en las instalaciones del hogar."

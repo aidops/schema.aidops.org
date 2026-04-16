@@ -1,0 +1,70 @@
+id: cooking-location
+maturity: draft
+label:
+  en: Cooking Location
+  fr: "Lieu de cuisson"
+  es: "Lugar de cocción"
+definition:
+  en: >
+    Where the household usually cooks. Cooking location determines indoor air
+    pollution (HAP) exposure: indoor cooking without a chimney is the highest-risk
+    configuration. This item is required to apply the MTF cooking exposure attribute
+    correctly. Source: WHO/World Bank harmonized core question Q5.
+  fr: >
+    L'endroit où le ménage cuisine habituellement. Le lieu de cuisson détermine
+    l'exposition à la pollution de l'air intérieur (HAP) : cuisiner à l'intérieur
+    sans cheminée est la configuration la plus à risque. Cet item est nécessaire pour
+    appliquer correctement l'attribut d'exposition MTF de la cuisine. Source :
+    question Q5 de l'enquête harmonisée OMS/Banque mondiale.
+  es: >
+    Donde el hogar cocina habitualmente. El lugar de cocción determina la exposición
+    a la contaminación del aire en interiores (HAP): cocinar en interiores sin
+    chimenea es la configuración de mayor riesgo. Este ítem es necesario para aplicar
+    correctamente el atributo de exposición de cocción MTF. Fuente: pregunta Q5 del
+    cuestionario armonizado OMS/Banco Mundial.
+values:
+- code: separate_outdoor_kitchen
+  label:
+    en: Separate outdoor kitchen
+    fr: "Cuisine extérieure séparée"
+    es: "Cocina exterior separada"
+  definition:
+    en: "Dedicated structure for cooking outside the main dwelling, open-sided or well-ventilated. Cooking smoke is not trapped in the living space."
+    fr: "Structure dédiée à la cuisine en dehors du logement principal, ouverte sur les côtés ou bien ventilée. La fumée de cuisson ne se concentre pas dans l'espace de vie."
+    es: "Estructura dedicada a la cocción fuera de la vivienda principal, abierta o bien ventilada. El humo de cocción no queda atrapado en el espacio habitable."
+- code: outdoor_open_space
+  label:
+    en: Outdoor open space
+    fr: "Espace extérieur ouvert"
+    es: "Espacio exterior abierto"
+  definition:
+    en: "Cooking done outside in the open without a dedicated structure. Smoke disperses freely."
+    fr: "Cuisine à l'extérieur en plein air sans structure dédiée. La fumée se disperse librement."
+    es: "Cocción realizada al aire libre sin una estructura dedicada. El humo se dispersa libremente."
+- code: indoor_with_chimney
+  label:
+    en: "Indoors — stove has chimney or flue"
+    fr: "Intérieur — foyer avec cheminée ou conduit"
+    es: "Interior — cocina con chimenea o conducto"
+  definition:
+    en: "Cooking inside the dwelling, but the stove has a chimney, flue, or fan that vents smoke to the outside. Reduced HAP exposure compared to indoor cooking without ventilation."
+    fr: "Cuisine à l'intérieur du logement, mais le foyer est équipé d'une cheminée, d'un conduit ou d'un ventilateur qui évacue la fumée vers l'extérieur. Exposition réduite aux HAP par rapport à la cuisine intérieure sans ventilation."
+    es: "Cocción dentro de la vivienda, pero la cocina tiene chimenea, conducto o ventilador que extrae el humo al exterior. Exposición a HAP reducida en comparación con la cocción interior sin ventilación."
+- code: indoor_without_chimney
+  label:
+    en: "Indoors — no chimney or flue"
+    fr: "Intérieur — sans cheminée ni conduit"
+    es: "Interior — sin chimenea ni conducto"
+  definition:
+    en: "Cooking inside the dwelling with no chimney, flue, or fan. Smoke accumulates indoors. Highest indoor air pollution exposure configuration."
+    fr: "Cuisine à l'intérieur du logement sans cheminée, conduit ni ventilateur. La fumée s'accumule à l'intérieur. Configuration la plus exposée à la pollution de l'air intérieur."
+    es: "Cocción dentro de la vivienda sin chimenea, conducto ni ventilador. El humo se acumula en el interior. Configuración con mayor exposición a la contaminación del aire interior."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "Another cooking location, for example under a covered porch or in a partially enclosed space."
+    fr: "Un autre lieu de cuisine, par exemple sous un porche couvert ou dans un espace partiellement fermé."
+    es: "Otro lugar de cocción, por ejemplo bajo un porche cubierto o en un espacio parcialmente cerrado."

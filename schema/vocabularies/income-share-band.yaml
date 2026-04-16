@@ -1,0 +1,67 @@
+id: income-share-band
+maturity: draft
+label:
+  en: Income Share Band
+  fr: "Tranche de part du revenu"
+  es: "Banda de participación en el ingreso"
+definition:
+  en: >
+    Banded estimate of a household expenditure item as a share of monthly household
+    income. Used for both cooking fuel cost and electricity cost in the MTF
+    affordability attribute assessment. The three-band structure captures the
+    MTF Tier 4-5 affordability threshold (less than 5% of income) without requiring
+    precise income and expenditure data. Source: MTF household survey affordability
+    module; WHO/World Bank harmonized questionnaire Q9.
+  fr: >
+    Estimation par tranche d'un poste de dépense du ménage en pourcentage du revenu
+    mensuel du ménage. Utilisé à la fois pour le coût du combustible de cuisson et
+    le coût de l'électricité dans l'évaluation de l'attribut d'accessibilité financière
+    MTF. La structure à trois tranches capture le seuil d'accessibilité financière MTF
+    des niveaux 4 à 5 (moins de 5 % du revenu) sans nécessiter de données précises
+    sur les revenus et les dépenses. Source : module d'accessibilité financière du
+    sondage ménage MTF ; question Q9 du questionnaire harmonisé OMS/Banque mondiale.
+  es: >
+    Estimación por bandas de un gasto del hogar como porcentaje del ingreso mensual
+    del hogar. Se usa tanto para el costo del combustible de cocción como para el
+    costo de la electricidad en la evaluación del atributo de asequibilidad MTF.
+    La estructura de tres bandas captura el umbral de asequibilidad MTF de los
+    Niveles 4 a 5 (menos del 5% del ingreso) sin requerir datos precisos de ingresos
+    y gastos. Fuente: módulo de asequibilidad de la encuesta de hogares MTF;
+    pregunta Q9 del cuestionario armonizado OMS/Banco Mundial.
+values:
+- code: less_than_5_pct
+  label:
+    en: "Less than 5%"
+    fr: "Moins de 5 %"
+    es: "Menos del 5%"
+  definition:
+    en: "Expenditure is less than 5% of monthly household income. Meets the MTF Tier 4-5 affordability criterion."
+    fr: "La dépense représente moins de 5 % du revenu mensuel du ménage. Satisfait au critère d'accessibilité financière MTF des niveaux 4 à 5."
+    es: "El gasto es menos del 5% del ingreso mensual del hogar. Cumple el criterio de asequibilidad MTF de los Niveles 4 a 5."
+- code: five_to_10_pct
+  label:
+    en: "5-10%"
+    fr: "5 à 10 %"
+    es: "5 a 10%"
+  definition:
+    en: "Expenditure is between 5% and 10% of monthly household income. Does not meet the MTF Tier 4-5 affordability criterion."
+    fr: "La dépense représente entre 5 % et 10 % du revenu mensuel du ménage. Ne satisfait pas au critère d'accessibilité financière MTF des niveaux 4 à 5."
+    es: "El gasto está entre el 5% y el 10% del ingreso mensual del hogar. No cumple el criterio de asequibilidad MTF de los Niveles 4 a 5."
+- code: more_than_10_pct
+  label:
+    en: "More than 10%"
+    fr: "Plus de 10 %"
+    es: "Más del 10%"
+  definition:
+    en: "Expenditure exceeds 10% of monthly household income. Does not meet the MTF Tier 4-5 affordability criterion."
+    fr: "La dépense dépasse 10 % du revenu mensuel du ménage. Ne satisfait pas au critère d'accessibilité financière MTF des niveaux 4 à 5."
+    es: "El gasto supera el 10% del ingreso mensual del hogar. No cumple el criterio de asequibilidad MTF de los Niveles 4 a 5."
+- code: dont_know
+  label:
+    en: "Don't know"
+    fr: "Ne sait pas"
+    es: "No sabe"
+  definition:
+    en: "Respondent is unable to estimate the expenditure share."
+    fr: "Le répondant n'est pas en mesure d'estimer la part des dépenses."
+    es: "El respondente no puede estimar la participación del gasto."

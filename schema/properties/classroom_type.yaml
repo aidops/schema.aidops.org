@@ -1,0 +1,18 @@
+id: classroom_type
+maturity: draft
+label:
+  en: Classroom type
+  fr: "Type de classe"
+  es: "Tipo de aula"
+definition:
+  en: "Whether the child attends a regular classroom, a special classroom for children with disabilities, or both. Ask only if school_type is regular or special_disability. Source: MICS6 SP5B."
+  fr: "Si l'enfant fréquente une classe ordinaire, une classe spéciale pour enfants handicapés, ou les deux. À poser uniquement si school_type est regular ou special_disability. Source : MICS6 SP5B."
+  es: "Si el niño asiste a un aula ordinaria, un aula especial para niños con discapacidad, o ambas. Preguntar solo si school_type es regular o special_disability. Fuente: MICS6 SP5B."
+type: string
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

@@ -1,0 +1,18 @@
+id: needs_help_to_reach_school
+maturity: draft
+label:
+  en: Needs help to reach school
+  fr: "A besoin d'aide pour se rendre à l'école"
+  es: "Necesita ayuda para llegar a la escuela"
+definition:
+  en: "Whether the child needs help from another person to get to school. Ask only if attended_current_year is Yes. If Yes, reason_needs_help_transport applies. Source: MICS6 SE1."
+  fr: "Si l'enfant a besoin de l'aide d'une autre personne pour se rendre à l'école. À poser uniquement si attended_current_year est Oui. Si Oui, reason_needs_help_transport s'applique. Source : MICS6 SE1."
+  es: "Si el niño necesita ayuda de otra persona para llegar a la escuela. Preguntar solo si attended_current_year es Sí. Si Sí, se aplica reason_needs_help_transport. Fuente: MICS6 SE1."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

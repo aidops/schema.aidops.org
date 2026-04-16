@@ -1,0 +1,20 @@
+id: sanitation_facility_private
+maturity: draft
+label:
+  en: "Sanitation facility is private"
+  fr: "L'installation sanitaire est privée"
+  es: "La instalación sanitaria es privada"
+
+definition:
+  en: "Whether the toilet or latrine facility is located in a private place, away from public view. Privacy is a Sphere minimum standard requirement (Sphere 2018 Standard 5: Excreta disposal). Particularly relevant for women, girls, and people with disabilities in displacement contexts. Skip if sanitation_facility is open_defecation."
+  fr: "Si les toilettes ou la latrine sont situées dans un endroit privé, à l'abri des regards du public. La vie privée est une exigence de la norme minimale Sphère (Norme 5 Sphère 2018 : Élimination des excréta). Particulièrement pertinent pour les femmes, les filles et les personnes handicapées dans les contextes de déplacement. À sauter si sanitation_facility est open_defecation."
+  es: "Si el inodoro o la letrina está ubicado en un lugar privado, fuera de la vista pública. La privacidad es un requisito del estándar mínimo de Esfera (Esfera 2018 Estándar 5: Eliminación de excrementos). Particularmente relevante para mujeres, niñas y personas con discapacidad en contextos de desplazamiento. Omitir si sanitation_facility es open_defecation."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: sanitation
+sensitivity: sensitive
+valid_instruments: [sphere_2018]

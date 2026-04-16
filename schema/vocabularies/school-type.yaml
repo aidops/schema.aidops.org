@@ -1,0 +1,60 @@
+id: school-type
+maturity: draft
+label:
+  en: School Type
+  fr: "Type d'établissement scolaire"
+  es: "Tipo de establecimiento escolar"
+definition:
+  en: "Classification of a school by its educational format and inclusion design, indicating whether instruction is mainstream, specialized for children with disabilities, home-based, or non-formal. Distinct from school management type (which covers who runs the school)."
+  fr: "Classification d'un établissement scolaire selon son format éducatif et sa conception inclusive, indiquant si l'enseignement est ordinaire, spécialisé pour les enfants handicapés, à domicile ou non formel. Distinct du type de gestion scolaire (qui couvre le responsable de l'école)."
+  es: "Clasificación de una escuela por su formato educativo y diseño inclusivo, indicando si la instrucción es convencional, especializada para niños con discapacidad, en el hogar o no formal. Distinto del tipo de gestión escolar (que cubre quién dirige la escuela)."
+standard:
+  name: "MICS6 SP5A — school type classification, expanded with INEE/IRC non-formal category"
+  uri: https://mics.unicef.org/tools
+  notes: "MICS6 codes: regular school, special school for children with disabilities, homeschooling. The non_formal code is added for emergency and displacement contexts per INEE, IRC, and UNHCR education assessment tools."
+values:
+- code: regular
+  label:
+    en: Regular school
+    fr: "École ordinaire"
+    es: "Escuela ordinaria"
+  definition:
+    en: "Standard mainstream school providing formal education to the general student population."
+    fr: "École ordinaire dispensant un enseignement formel à la population scolaire générale."
+    es: "Escuela convencional que brinda educación formal a la población estudiantil general."
+- code: special_disability
+  label:
+    en: Special school for children with disabilities
+    fr: "École spéciale pour enfants handicapés"
+    es: "Escuela especial para niños con discapacidad"
+  definition:
+    en: "Segregated or specialized school designed for children with disabilities."
+    fr: "École ségrégée ou spécialisée conçue pour les enfants handicapés."
+    es: "Escuela segregada o especializada diseñada para niños con discapacidad."
+- code: homeschooling
+  label:
+    en: Homeschooling
+    fr: "Instruction à domicile"
+    es: "Educación en el hogar"
+  definition:
+    en: "Home-based instruction regardless of who manages it."
+    fr: "Instruction à domicile, quel qu'en soit le gestionnaire."
+    es: "Instrucción en el hogar independientemente de quién la gestione."
+- code: non_formal
+  label:
+    en: Non-formal education centre
+    fr: "Centre d'éducation non formelle"
+    es: "Centro de educación no formal"
+  definition:
+    en: "Community learning centre, accelerated education programme, refugee learning centre, or similar non-formal education setting."
+    fr: "Centre d'apprentissage communautaire, programme d'éducation accélérée, centre d'apprentissage pour réfugiés ou autre cadre d'éducation non formelle similaire."
+    es: "Centro de aprendizaje comunitario, programa de educación acelerada, centro de aprendizaje para refugiados u otro entorno de educación no formal similar."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "School format not captured by any of the other categories."
+    fr: "Format scolaire non couvert par les autres catégories."
+    es: "Formato escolar no contemplado en las demás categorías."

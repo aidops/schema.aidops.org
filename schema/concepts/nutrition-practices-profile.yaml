@@ -1,0 +1,176 @@
+id: NutritionPracticesProfile
+label:
+  en: Nutrition Practices Profile
+  fr: "Profil des pratiques nutritionnelles"
+  es: "Perfil de prácticas nutricionales"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of infant and young child feeding (IYCF) behaviors
+    reported by a primary caregiver about an index child under 24 months of age.
+    Each record is scoped to a single child (subject: Person aged 0–23 months
+    completed); households with multiple children under 2 generate one record
+    per child. Captures breastfeeding initiation and continuation, introduction
+    of complementary foods, 24-hour dietary recall against the 8 MDD-C food
+    groups, meal frequency, milk feeding frequency, unhealthy diet indicators
+    (sweet beverages, unhealthy foods), and carries derived composite indicators
+    (EBF, CBF, MDD-C, MMF, MMFF, MAD, EFF, zero-veg-fruit,
+    age-appropriate breastfeeding). All IYCF items follow WHO/UNICEF 2021
+    indicator definitions. MDD-W (10-group dietary diversity for women 15–49)
+    is not included in this profile; it is carried on FoodSecurityProfile via
+    the wdds_* properties and mdd_w_score / mdd_w_achieved.
+  fr: >
+    Un enregistrement ponctuel des pratiques d'alimentation du nourrisson et du
+    jeune enfant (IYCF) rapportées par le soignant principal sur un enfant index
+    de moins de 24 mois. Chaque enregistrement est limité à un seul enfant
+    (sujet : personne âgée de 0 à 23 mois révolus) ; les ménages comportant
+    plusieurs enfants de moins de 2 ans génèrent un enregistrement par enfant.
+    Consigne l'initiation et la poursuite de l'allaitement, l'introduction
+    des aliments complémentaires, le rappel alimentaire sur 24 heures selon
+    les 8 groupes alimentaires MDD-C, la fréquence des repas, la fréquence
+    des repas lactés, les indicateurs d'alimentation non saine (boissons sucrées,
+    aliments non sains), et porte les indicateurs composites dérivés (ALM, CBF,
+    MDD-C, MMF, MMFF, MAD, EFF, consommation nulle de légumes/fruits,
+    allaitement adapté à l'âge). Tous les items IYCF suivent les définitions
+    d'indicateurs OMS/UNICEF 2021. Le MDD-W (diversité alimentaire à 10 groupes
+    pour les femmes de 15 à 49 ans) n'est pas inclus dans ce profil ; il est
+    porté par le FoodSecurityProfile via les propriétés wdds_* et
+    mdd_w_score / mdd_w_achieved.
+  es: >
+    Un registro puntual de las prácticas de alimentación del lactante y del
+    niño pequeño (IYCF) reportadas por el cuidador principal sobre un niño
+    índice menor de 24 meses. Cada registro está delimitado a un solo niño
+    (sujeto: persona de 0–23 meses cumplidos); los hogares con múltiples niños
+    menores de 2 años generan un registro por niño. Captura la iniciación y
+    continuación de la lactancia materna, la introducción de alimentos
+    complementarios, el recordatorio dietético de 24 horas contra los 8 grupos
+    alimentarios MDD-C, la frecuencia de comidas, la frecuencia de tomas de
+    leche, indicadores de dieta no saludable (bebidas azucaradas, alimentos no
+    saludables), y lleva indicadores compuestos derivados (LME, CBF, MDD-C,
+    MMF, MMFF, MAD, EFF, consumo nulo de verduras/frutas, lactancia materna
+    apropiada para la edad). Todos los ítems IYCF siguen las definiciones de
+    indicadores OMS/UNICEF 2021. El MDD-W (diversidad dietética de 10 grupos
+    para mujeres de 15–49 años) no se incluye en este perfil; se lleva en
+    FoodSecurityProfile a través de las propiedades wdds_* y
+    mdd_w_score / mdd_w_achieved.
+
+properties:
+  - child_age_months
+  - iycf_ever_breastfed
+  - iycf_early_initiation
+  - iycf_exclusive_first_two_days
+  - iycf_currently_breastfed
+  - iycf_breastfed_yesterday
+  - iycf_plain_water_yesterday
+  - iycf_other_liquids_yesterday
+  - iycf_infant_formula_yesterday
+  - iycf_animal_milk_yesterday
+  - iycf_bottle_fed_yesterday
+  - iycf_solid_food_yesterday
+  - iycf_fg_breastmilk
+  - iycf_fg_grains
+  - iycf_fg_pulses_nuts
+  - iycf_fg_dairy
+  - iycf_fg_flesh
+  - iycf_fg_eggs
+  - iycf_fg_vitamin_a_veg_fruit
+  - iycf_fg_other_veg_fruit
+  - iycf_solid_meal_count
+  - iycf_milk_feed_count
+  - iycf_sweet_beverage_yesterday
+  - iycf_unhealthy_food_yesterday
+  - iycf_cf_introduction_age_months
+  - iycf_ebf
+  - iycf_cbf
+  - iycf_mdd_c_score
+  - iycf_mdd_c
+  - iycf_mmf
+  - iycf_mmff
+  - iycf_mad
+  - iycf_eff
+  - iycf_zero_veg_fruit
+  - iycf_age_appropriate_breastfeeding
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: breastfeeding
+    properties:
+      - child_age_months
+      - iycf_ever_breastfed
+      - iycf_early_initiation
+      - iycf_exclusive_first_two_days
+      - iycf_currently_breastfed
+      - iycf_breastfed_yesterday
+      - iycf_plain_water_yesterday
+      - iycf_other_liquids_yesterday
+      - iycf_infant_formula_yesterday
+      - iycf_animal_milk_yesterday
+      - iycf_bottle_fed_yesterday
+  - category: complementary_feeding
+    properties:
+      - iycf_solid_food_yesterday
+      - iycf_solid_meal_count
+      - iycf_milk_feed_count
+      - iycf_cf_introduction_age_months
+  - category: food_groups_24h
+    properties:
+      - iycf_fg_breastmilk
+      - iycf_fg_grains
+      - iycf_fg_pulses_nuts
+      - iycf_fg_dairy
+      - iycf_fg_flesh
+      - iycf_fg_eggs
+      - iycf_fg_vitamin_a_veg_fruit
+      - iycf_fg_other_veg_fruit
+  - category: unhealthy_foods
+    properties:
+      - iycf_sweet_beverage_yesterday
+      - iycf_unhealthy_food_yesterday
+  - category: derived_iycf
+    properties:
+      - iycf_ebf
+      - iycf_cbf
+      - iycf_age_appropriate_breastfeeding
+      - iycf_mdd_c_score
+      - iycf_mdd_c
+      - iycf_mmf
+      - iycf_mmff
+      - iycf_mad
+      - iycf_eff
+      - iycf_zero_veg_fruit
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (IYCF feeding practices)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each IYCF administration maps to a QuestionnaireResponse whose Questionnaire is the WHO/UNICEF 2021 IYCF module. The index child is the FHIR subject; the caregiver respondent is captured in the source field. Derived IYCF composite indicators (EBF, MAD, MDD-C) map to FHIR Observation resources produced by a scoring step."
+
+convergence:
+  system_count: 1
+  total_systems: 6
+  notes: >
+    FHIR QuestionnaireResponse is the closest structural equivalent for
+    caregiver-reported IYCF batteries. DHIS2 routinely models IYCF indicators
+    as tracked-entity data elements per visit in national nutrition programs, but
+    the data-element structure is program-specific. OpenSPP, OpenCRVS, openIMIS,
+    and DCI Core do not carry IYCF feeding data in their core data models.
+    All IYCF properties are new to AidOps; no existing PS or AidOps properties
+    could be reused. MDD-W items were intentionally excluded and remain on
+    FoodSecurityProfile.

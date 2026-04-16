@@ -1,0 +1,41 @@
+id: jmp-core
+title: "Core Questions on Water, Sanitation and Hygiene for Household Surveys: 2018 Update"
+short_title: "JMP Core Questions 2018"
+publisher: "WHO / UNICEF Joint Monitoring Programme for Water Supply, Sanitation and Hygiene (JMP)"
+year: 2018
+type: guidance_publication
+domain: humanitarian
+uri: "https://washdata.org/sites/default/files/documents/reports/2019-03/JMP-2018-core-questions-for-household-surveys.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - WASHAssessmentProfile
+  vocabularies:
+    - water-availability-location
+    - water-treatment-method
+    - hygiene-service-level
+    - handwashing-facility-type
+    - handwashing-facility-location
+    - handwashing-critical-juncture
+    - child-feces-disposal
+    - sanitation-emptying-timing
+    - sanitation-emptying-actor
+    - mhm-disposal-method
+  properties:
+    - water_source_location
+    - water_treatment_practiced
+    - water_treatment_method
+    - water_availability_reliable
+    - child_feces_disposal
+    - sanitation_pit_last_emptied
+    - sanitation_pit_emptied_by
+    - handwashing_facility_present
+    - handwashing_water_available
+    - handwashing_soap_available
+    - hygiene_service_level
+    - handwashing_at_critical_junctures
+    - mhm_privacy_available
+    - mhm_materials_available
+    - mhm_material_disposal

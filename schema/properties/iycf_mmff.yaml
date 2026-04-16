@@ -1,0 +1,21 @@
+id: iycf_mmff
+maturity: draft
+label:
+  en: "Minimum Milk Feeding Frequency (MMFF) achieved"
+  fr: "Fréquence minimale d'alimentation lactée (MMFF) atteinte"
+  es: "Frecuencia Mínima de Alimentación con Leche (MMFF) alcanzada"
+
+definition:
+  en: "Derived boolean: whether the non-breastfed child received at least 2 milk feeds (infant formula or animal milk) yesterday. Applies to non-breastfed children 6–23 months only. Formula: iycf_milk_feed_count >= 2. This is a new explicit indicator in WHO/UNICEF 2021 (previously incorporated into MMF without a separate threshold)."
+  fr: "Booléen dérivé : indique si l'enfant non allaité a reçu au moins 2 repas lactés (lait maternisé ou lait animal) hier. S'applique uniquement aux enfants non allaités de 6 à 23 mois. Formule : iycf_milk_feed_count >= 2. Il s'agit d'un nouvel indicateur explicite de l'OMS/UNICEF 2021 (précédemment incorporé dans le MMF sans seuil distinct)."
+  es: "Booleano derivado: indica si el niño no amamantado recibió al menos 2 tomas de leche (fórmula infantil o leche animal) ayer. Se aplica solo a niños no amamantados de 6–23 meses. Fórmula: iycf_milk_feed_count >= 2. Este es un nuevo indicador explícito en OMS/UNICEF 2021 (anteriormente incorporado en el MMF sin un umbral separado)."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

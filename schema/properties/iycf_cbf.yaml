@@ -1,0 +1,21 @@
+id: iycf_cbf
+maturity: draft
+label:
+  en: "Continued breastfeeding (CBF)"
+  fr: "Allaitement maternel continu (CBF)"
+  es: "Lactancia materna continuada (CBF)"
+
+definition:
+  en: "Derived boolean: whether the child was breastfed yesterday. Applies to children 12–23 months (Continued Breastfeeding at 1 year indicator) and children 20–23 months (sub-group for Continued Breastfeeding at 2 years). Formula: iycf_breastfed_yesterday = true. Sub-group denominators (12–15 mo, 16–19 mo, 20–23 mo) are resolved at population-level analysis using child_age_months."
+  fr: "Booléen dérivé : indique si l'enfant a été allaité hier. S'applique aux enfants de 12 à 23 mois (indicateur d'allaitement continu à 1 an) et aux enfants de 20 à 23 mois (sous-groupe pour l'allaitement continu à 2 ans). Formule : iycf_breastfed_yesterday = vrai. Les dénominateurs des sous-groupes (12–15 mois, 16–19 mois, 20–23 mois) sont résolus dans l'analyse au niveau de la population à l'aide de child_age_months."
+  es: "Booleano derivado: indica si el niño fue amamantado ayer. Se aplica a niños de 12–23 meses (indicador de Lactancia Materna Continuada al año de edad) y niños de 20–23 meses (subgrupo para Lactancia Materna Continuada a los 2 años). Fórmula: iycf_breastfed_yesterday = verdadero. Los denominadores de subgrupo (12–15 meses, 16–19 meses, 20–23 meses) se resuelven en el análisis a nivel poblacional usando child_age_months."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

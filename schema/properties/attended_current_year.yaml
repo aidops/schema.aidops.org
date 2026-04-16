@@ -1,0 +1,18 @@
+id: attended_current_year
+maturity: draft
+label:
+  en: Attended school current year
+  fr: "A fréquenté l'école cette année scolaire"
+  es: "Asistió a la escuela el año escolar actual"
+definition:
+  en: "Whether the child attended school or any early childhood education programme at any time during the current school year. Ask only if ever_attended_school is Yes. If Yes, the school participation and environment modules apply; if No, the previous-year attendance and non-attendance reason modules apply. Source: MICS6 CB7."
+  fr: "Si l'enfant a fréquenté une école ou tout programme d'éducation de la petite enfance à n'importe quel moment de l'année scolaire en cours. À poser uniquement si ever_attended_school est Oui. Si Oui, les modules de participation scolaire et d'environnement s'appliquent ; si Non, les modules de fréquentation de l'année précédente et de raison de non-fréquentation s'appliquent. Source : MICS6 CB7."
+  es: "Si el niño asistió a una escuela o cualquier programa de educación de la primera infancia en algún momento durante el año escolar actual. Preguntar solo si ever_attended_school es Sí. Si Sí, se aplican los módulos de participación escolar y entorno; si No, se aplican los módulos de asistencia del año anterior y razón de no asistencia. Fuente: MICS6 CB7."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

@@ -1,0 +1,21 @@
+id: uis-sdg4
+title: "SDG 4 Indicator Methodologies: 4.1.1 (Minimum Proficiency in Reading and Mathematics) and 4.1.2 (Completion Rate)"
+short_title: "UIS SDG 4 Indicators"
+publisher: "UNESCO Institute for Statistics (UIS)"
+year: 2020
+type: guidance_publication
+domain: humanitarian
+uri: https://www.uis.unesco.org/en/methods-and-tools/sdg4-indicators
+access: open
+status: active
+
+informs:
+  concepts:
+    - EducationProfile
+  vocabularies: []
+  properties:
+    - highest_education_level
+    - highest_grade_completed_local
+    - highest_level_completed
+    - attended_current_year
+    - current_grade_level

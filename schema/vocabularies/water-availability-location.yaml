@@ -1,0 +1,42 @@
+id: water-availability-location
+maturity: draft
+label:
+  en: Water Source Location
+  fr: "Emplacement de la source d'eau"
+  es: "Ubicación de la fuente de agua"
+definition:
+  en: "Location of the household's main drinking water source relative to the dwelling. This is JMP question W3 and determines the second criterion of the safely managed water service level. 'On premises' means within the dwelling, yard, or plot controlled by the household."
+  fr: "Emplacement de la principale source d'eau potable du ménage par rapport au logement. Il s'agit de la question W3 du JMP et détermine le deuxième critère du niveau de service en eau à gestion sécurisée. 'Sur les lieux' signifie à l'intérieur du logement, de la cour ou de la parcelle contrôlée par le ménage."
+  es: "Ubicación de la principal fuente de agua potable del hogar en relación con la vivienda. Esta es la pregunta W3 del JMP y determina el segundo criterio del nivel de servicio de agua con gestión segura. 'En las instalaciones' significa dentro de la vivienda, patio o parcela controlada por el hogar."
+standard:
+  name: "JMP Core Questions for Household Surveys (2018 Update)"
+  uri: "https://washdata.org/sites/default/files/documents/reports/2019-03/JMP-2018-core-questions-for-household-surveys.pdf"
+  notes: "JMP W3. 'On premises' is a required criterion for the safely managed water service level alongside improved source type and water availability."
+values:
+- code: on_premises
+  label:
+    en: On premises
+    fr: Sur les lieux
+    es: En las instalaciones
+  definition:
+    en: "The water source is located inside the dwelling or within the yard, courtyard, or plot that the household controls. Meets the location criterion for safely managed water service."
+    fr: "La source d'eau est située à l'intérieur du logement ou dans la cour, le patio ou la parcelle contrôlée par le ménage. Satisfait au critère de localisation pour la gestion sécurisée du service en eau."
+    es: "La fuente de agua está ubicada dentro de la vivienda o dentro del patio, corral o parcela que controla el hogar. Cumple el criterio de ubicación para el servicio de agua con gestión segura."
+- code: in_yard_or_plot
+  label:
+    en: In the yard or plot (not on premises)
+    fr: Dans la cour ou la parcelle (hors logement)
+    es: En el patio o parcela (fuera de la vivienda)
+  definition:
+    en: "The water source is in the shared yard or plot but not inside the dwelling; the household may share access with others. Does not meet the on-premises criterion for safely managed water service."
+    fr: "La source d'eau se trouve dans la cour ou la parcelle partagée mais pas à l'intérieur du logement ; le ménage peut partager l'accès avec d'autres. Ne satisfait pas au critère sur les lieux pour la gestion sécurisée du service en eau."
+    es: "La fuente de agua está en el patio o parcela compartida pero no dentro de la vivienda; el hogar puede compartir el acceso con otros. No cumple el criterio de instalaciones para el servicio de agua con gestión segura."
+- code: elsewhere
+  label:
+    en: Elsewhere (off premises)
+    fr: Ailleurs (hors des lieux)
+    es: En otro lugar (fuera de las instalaciones)
+  definition:
+    en: "The water source is outside the household's premises and requires travel to collect. Collection time (W4) must be recorded."
+    fr: "La source d'eau est extérieure aux lieux du ménage et nécessite un déplacement pour la collecte. Le temps de collecte (W4) doit être enregistré."
+    es: "La fuente de agua está fuera de las instalaciones del hogar y requiere desplazarse para recogerla. Se debe registrar el tiempo de recolección (W4)."

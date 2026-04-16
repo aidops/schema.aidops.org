@@ -1,0 +1,21 @@
+id: child_age_months
+maturity: draft
+label:
+  en: "Child age (months)"
+  fr: "Âge de l'enfant (mois)"
+  es: "Edad del niño (meses)"
+
+definition:
+  en: "The age of the index child in completed months at the time of the assessment. Required for IYCF indicator computation: age-group determines which indicators apply (EBF for 0–5 months, CBF and MDD-C for 6–23 months) and drives age-gating in the form."
+  fr: "L'âge de l'enfant index en mois révolus au moment de l'évaluation. Requis pour le calcul des indicateurs IYCF : le groupe d'âge détermine les indicateurs applicables (ALM pour 0–5 mois, CBF et MDD-C pour 6–23 mois) et régit le filtrage par âge dans le formulaire."
+  es: "La edad del niño índice en meses cumplidos al momento de la evaluación. Requerido para el cálculo de indicadores IYCF: el grupo de edad determina qué indicadores aplican (LME para 0–5 meses, CBF y MDD-C para 6–23 meses) y controla el filtrado por edad en el formulario."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

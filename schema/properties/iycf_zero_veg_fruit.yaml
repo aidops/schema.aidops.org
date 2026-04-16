@@ -1,0 +1,21 @@
+id: iycf_zero_veg_fruit
+maturity: draft
+label:
+  en: "Zero vegetable or fruit consumption"
+  fr: "Consommation nulle de légumes ou de fruits"
+  es: "Consumo nulo de verduras o frutas"
+
+definition:
+  en: "Derived boolean: whether the child consumed no food from either the vitamin-A-rich fruits/vegetables group or the other fruits/vegetables group in the previous 24 hours. Applies to children 6–23 months. Formula: iycf_fg_vitamin_a_veg_fruit = false AND iycf_fg_other_veg_fruit = false. Zero vegetable or fruit consumption is a new unhealthy diet indicator in WHO/UNICEF 2021. True indicates dietary risk."
+  fr: "Booléen dérivé : indique si l'enfant n'a consommé aucun aliment du groupe fruits/légumes riches en vitamine A ni du groupe autres fruits/légumes au cours des 24 heures précédentes. S'applique aux enfants de 6 à 23 mois. Formule : iycf_fg_vitamin_a_veg_fruit = faux ET iycf_fg_other_veg_fruit = faux. La consommation nulle de légumes ou de fruits est un nouvel indicateur d'alimentation non saine de l'OMS/UNICEF 2021. La valeur vrai indique un risque alimentaire."
+  es: "Booleano derivado: indica si el niño no consumió ningún alimento del grupo de frutas/verduras ricas en vitamina A ni del grupo de otras frutas/verduras en las 24 horas anteriores. Se aplica a niños de 6–23 meses. Fórmula: iycf_fg_vitamin_a_veg_fruit = falso Y iycf_fg_other_veg_fruit = falso. El consumo nulo de verduras o frutas es un nuevo indicador de dieta no saludable en OMS/UNICEF 2021. Verdadero indica riesgo dietético."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

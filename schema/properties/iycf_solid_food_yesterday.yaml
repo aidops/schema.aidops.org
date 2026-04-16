@@ -1,0 +1,21 @@
+id: iycf_solid_food_yesterday
+maturity: draft
+label:
+  en: "Solid, semi-solid, or soft food eaten yesterday"
+  fr: "Aliment solide, semi-solide ou mou mangé hier"
+  es: "Alimento sólido, semisólido o blando comido ayer"
+
+definition:
+  en: "Whether the child ate any solid, semi-solid, or soft food yesterday during the day or at night (24-hour recall). Published wording (WHO/UNICEF 2021): 'Yesterday during the day or at night, did (NAME) eat any solid, semi-solid or soft food?' Numerator item for the Introduction of Solid, Semi-Solid, or Soft Foods (ISSSF) indicator, applied to children 6–8 months. Also a condition for computing the Exclusive Breastfeeding (EBF) indicator (EBF requires no solid food)."
+  fr: "Indique si l'enfant a mangé un aliment solide, semi-solide ou mou hier dans la journée ou la nuit (rappel sur 24 heures). Formulation publiée (OMS/UNICEF 2021) : « Hier dans la journée ou la nuit, (PRÉNOM) a-t-il/elle mangé un aliment solide, semi-solide ou mou ? » Item du numérateur pour l'indicateur d'introduction des aliments solides, semi-solides ou mous (ISSSF), appliqué aux enfants de 6 à 8 mois. Constitue également une condition pour calculer l'indicateur ALM (l'ALM exige qu'aucun aliment solide n'ait été consommé)."
+  es: "Indica si el niño comió algún alimento sólido, semisólido o blando ayer durante el día o la noche (recordatorio de 24 horas). Redacción publicada (OMS/UNICEF 2021): 'Ayer durante el día o la noche, ¿comió (NOMBRE) algún alimento sólido, semisólido o blando?' Ítem numerador para el indicador de Introducción de Alimentos Sólidos, Semisólidos o Blandos (ISSSF), aplicado a niños de 6–8 meses. También es una condición para calcular el indicador de LME (la LME requiere que no se hayan comido alimentos sólidos)."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

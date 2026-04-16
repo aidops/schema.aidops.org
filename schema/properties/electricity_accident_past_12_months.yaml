@@ -1,0 +1,20 @@
+id: electricity_accident_past_12_months
+maturity: draft
+label:
+  en: "Electricity accident in past 12 months"
+  fr: "Accident lié à l'électricité au cours des 12 derniers mois"
+  es: "Accidente eléctrico en los últimos 12 meses"
+
+definition:
+  en: "Whether any household member was injured by an electricity-related accident (electric shock, fire, or electrocution) at home in the past 12 months. MTF electricity health and safety attribute: Tier 4-5 criterion requires no past accidents AND no high future risk perception. If any electricity-related injury occurred in the past 12 months, the safety tier is Tier 0-3. Source: MTF household survey; WHO/World Bank harmonized questionnaire."
+  fr: "Si un membre du ménage a été blessé par un accident lié à l'électricité (électrocution, incendie ou choc électrique) à domicile au cours des 12 derniers mois. Attribut de santé et sécurité de l'électricité MTF : le critère des niveaux 4 à 5 exige qu'il n'y ait eu aucun accident passé ET aucune perception élevée du risque futur. Si une blessure liée à l'électricité s'est produite au cours des 12 derniers mois, le niveau de sécurité est 0 à 3. Source : enquête ménage MTF ; questionnaire harmonisé OMS/Banque mondiale."
+  es: "Si algún miembro del hogar resultó herido por un accidente eléctrico (choque eléctrico, incendio o electrocución) en el hogar en los últimos 12 meses. Atributo de salud y seguridad de electricidad MTF: el criterio de los Niveles 4 a 5 requiere que no haya habido accidentes pasados NI alta percepción de riesgo futuro. Si ocurrió alguna lesión eléctrica en los últimos 12 meses, el nivel de seguridad es Nivel 0-3. Fuente: encuesta de hogares MTF; cuestionario armonizado OMS/Banco Mundial."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [who_world_bank_core_energy, se4all_mtf]

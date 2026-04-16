@@ -1,0 +1,21 @@
+id: iycf_mdd_c_score
+maturity: draft
+label:
+  en: "MDD-C food group score"
+  fr: "Score MDD-C des groupes alimentaires"
+  es: "Puntaje MDD-C de grupos alimentarios"
+
+definition:
+  en: "Derived integer: count of the 8 MDD-C food groups consumed in the previous 24 hours. Applies to children 6–23 months. Computed as the sum of iycf_fg_breastmilk, iycf_fg_grains, iycf_fg_pulses_nuts, iycf_fg_dairy, iycf_fg_flesh, iycf_fg_eggs, iycf_fg_vitamin_a_veg_fruit, and iycf_fg_other_veg_fruit (each scored 1 if true, 0 otherwise). Range 0–8. Score >= 5 achieves MDD-C."
+  fr: "Entier dérivé : décompte des 8 groupes alimentaires MDD-C consommés au cours des 24 heures précédentes. S'applique aux enfants de 6 à 23 mois. Calculé comme la somme de iycf_fg_breastmilk, iycf_fg_grains, iycf_fg_pulses_nuts, iycf_fg_dairy, iycf_fg_flesh, iycf_fg_eggs, iycf_fg_vitamin_a_veg_fruit et iycf_fg_other_veg_fruit (chacun compté 1 si vrai, 0 sinon). Plage 0–8. Un score >= 5 atteint le MDD-C."
+  es: "Entero derivado: conteo de los 8 grupos alimentarios MDD-C consumidos en las 24 horas anteriores. Se aplica a niños de 6–23 meses. Calculado como la suma de iycf_fg_breastmilk, iycf_fg_grains, iycf_fg_pulses_nuts, iycf_fg_dairy, iycf_fg_flesh, iycf_fg_eggs, iycf_fg_vitamin_a_veg_fruit e iycf_fg_other_veg_fruit (cada uno puntuado 1 si es verdadero, 0 si no). Rango 0–8. Puntaje >= 5 logra el MDD-C."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

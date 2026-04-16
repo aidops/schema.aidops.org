@@ -1,0 +1,21 @@
+id: iycf_early_initiation
+maturity: draft
+label:
+  en: "Early initiation of breastfeeding timing"
+  fr: "Délai d'initiation précoce à l'allaitement"
+  es: "Momento de inicio temprano de la lactancia materna"
+
+definition:
+  en: "The timing of first breastfeeding after birth. Published wording (WHO/UNICEF 2021): 'How long after birth was (NAME) first put to the breast?' Used to compute the Early Initiation of Breastfeeding (EIBF) indicator: a child achieves EIBF if coded 'within_1_hour'. Ask only if iycf_ever_breastfed = true."
+  fr: "Le délai d'initiation à l'allaitement après la naissance. Formulation publiée (OMS/UNICEF 2021) : « Combien de temps après la naissance (PRÉNOM) a-t-il/elle été mis(e) au sein pour la première fois ? » Utilisé pour calculer l'indicateur d'allaitement précoce (EIBF) : un enfant atteint l'EIBF s'il est codé « within_1_hour ». À poser uniquement si iycf_ever_breastfed = vrai."
+  es: "El momento del primer amamantamiento después del nacimiento. Redacción publicada (OMS/UNICEF 2021): '¿Cuánto tiempo después del nacimiento se puso a (NOMBRE) al pecho por primera vez?' Se utiliza para calcular el indicador de inicio temprano de la lactancia materna (EIBF): un niño logra el EIBF si está codificado como 'within_1_hour'. Preguntar solo si iycf_ever_breastfed = verdadero."
+
+type: string
+cardinality: single
+core: true
+vocabulary: iycf-breastfeeding-initiation
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

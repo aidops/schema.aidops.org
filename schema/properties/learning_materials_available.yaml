@@ -1,0 +1,18 @@
+id: learning_materials_available
+maturity: draft
+label:
+  en: Learning materials available at school
+  fr: "Matériels d'apprentissage disponibles à l'école"
+  es: "Materiales de aprendizaje disponibles en la escuela"
+definition:
+  en: "Whether the child uses books or other learning materials provided by the school. Ask only if attended_current_year is Yes. Source: MICS6 SE5."
+  fr: "Si l'enfant utilise des livres ou d'autres matériels d'apprentissage fournis par l'école. À poser uniquement si attended_current_year est Oui. Source : MICS6 SE5."
+  es: "Si el niño usa libros u otros materiales de aprendizaje proporcionados por la escuela. Preguntar solo si attended_current_year es Sí. Fuente: MICS6 SE5."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

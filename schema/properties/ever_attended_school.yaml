@@ -1,0 +1,18 @@
+id: ever_attended_school
+maturity: draft
+label:
+  en: Ever attended school
+  fr: "A déjà fréquenté l'école"
+  es: "Alguna vez asistió a la escuela"
+definition:
+  en: "Whether the child has ever attended school or any early childhood education programme. Lifetime recall. Serves as the branching gate for the rest of the attendance history module. If No, the form skips to non-attendance reason."
+  fr: "Si l'enfant a déjà fréquenté une école ou tout programme d'éducation de la petite enfance. Rappel à vie. Sert de porte de branchement pour le reste du module d'historique de fréquentation. Si Non, le formulaire passe à la raison de non-fréquentation."
+  es: "Si el niño alguna vez ha asistido a una escuela o cualquier programa de educación de la primera infancia. Recuerdo de por vida. Sirve como puerta de ramificación para el resto del módulo de historial de asistencia. Si No, el formulario salta a la razón de no asistencia."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

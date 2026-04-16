@@ -1,0 +1,19 @@
+id: water_source_location
+maturity: draft
+label:
+  en: "Water source location"
+  fr: "Emplacement de la source d'eau"
+  es: "Ubicación de la fuente de agua"
+
+definition:
+  en: "Location of the household's main drinking water source relative to the dwelling. JMP question W3. Being located on premises is one of three criteria required for the safely managed water service level (along with improved source type and water availability when needed). Skip if water source is piped into dwelling or piped to yard, where location is known."
+  fr: "Emplacement de la principale source d'eau potable du ménage par rapport au logement. Question JMP W3. La localisation sur les lieux est l'un des trois critères requis pour le niveau de service en eau à gestion sécurisée (avec le type de source améliorée et la disponibilité de l'eau en cas de besoin). À sauter si la source d'eau est amenée par canalisation dans le logement ou jusqu'à la cour, où la localisation est connue."
+  es: "Ubicación de la principal fuente de agua potable del hogar en relación con la vivienda. Pregunta JMP W3. Estar ubicada en las instalaciones es uno de los tres criterios requeridos para el nivel de servicio de agua con gestión segura (junto con el tipo de fuente mejorada y la disponibilidad de agua cuando se necesita). Omitir si la fuente de agua está canalizada a la vivienda o al patio, donde la ubicación es conocida."
+
+type: string
+cardinality: single
+core: true
+vocabulary: water-availability-location
+references: null
+category: water
+valid_instruments: [jmp_household_survey, mics6, mics7, dhs_8]

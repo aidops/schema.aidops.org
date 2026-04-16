@@ -1,0 +1,19 @@
+id: child_feces_disposal
+maturity: draft
+label:
+  en: "Child feces disposal method"
+  fr: "Mode d'élimination des matières fécales des enfants"
+  es: "Método de eliminación de heces de niños"
+
+definition:
+  en: "Method used to dispose of feces of children under 5 years of age. Asked only when there are children under 5 in the household. Safe disposal is depositing into a toilet or latrine (directly or after rinsing). All other methods are classified as unsafe by the JMP. Based on MICS WS16 and DHS hv238."
+  fr: "Méthode utilisée pour éliminer les matières fécales des enfants de moins de 5 ans. Demandé uniquement s'il y a des enfants de moins de 5 ans dans le ménage. L'élimination sûre consiste à déposer les matières fécales dans des toilettes ou une latrine (directement ou après rinçage). Toutes les autres méthodes sont classées comme non sûres par le JMP. Basé sur MICS WS16 et DHS hv238."
+  es: "Método usado para eliminar las heces de niños menores de 5 años. Preguntado solo cuando hay niños menores de 5 años en el hogar. La eliminación segura es depositar las heces en un inodoro o letrina (directamente o después de enjuagar). Todos los demás métodos son clasificados como inseguros por el JMP. Basado en MICS WS16 y DHS hv238."
+
+type: string
+cardinality: single
+core: true
+vocabulary: child-feces-disposal
+references: null
+category: sanitation
+valid_instruments: [jmp_household_survey, mics6, mics7, dhs_8]

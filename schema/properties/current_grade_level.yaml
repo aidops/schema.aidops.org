@@ -1,0 +1,18 @@
+id: current_grade_level
+maturity: draft
+label:
+  en: Current grade level (local system)
+  fr: "Classe actuelle (système national)"
+  es: "Grado actual (sistema local)"
+definition:
+  en: "The grade or year the child is currently attending during the current school year, in country-specific terms. Integer corresponding to the grade within the current ISCED level (e.g., 1, 2, 3 within primary). Ask only if attended_current_year is Yes. The ISCED level is captured separately; this field holds the within-level grade number. Source: MICS6 CB8."
+  fr: "La classe ou l'année que l'enfant fréquente actuellement lors de l'année scolaire en cours, en termes spécifiques au pays. Entier correspondant à la classe dans le niveau CITE actuel (par ex. 1, 2, 3 dans le primaire). À poser uniquement si attended_current_year est Oui. Le niveau CITE est capturé séparément ; ce champ contient le numéro de classe dans le niveau. Source : MICS6 CB8."
+  es: "El grado o año que el niño está cursando actualmente durante el año escolar actual, en términos específicos del país. Entero correspondiente al grado dentro del nivel CINE actual (por ejemplo, 1, 2, 3 dentro de primaria). Preguntar solo si attended_current_year es Sí. El nivel CINE se captura por separado; este campo contiene el número de grado dentro del nivel. Fuente: MICS6 CB8."
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

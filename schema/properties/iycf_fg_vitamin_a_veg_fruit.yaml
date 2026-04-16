@@ -1,0 +1,21 @@
+id: iycf_fg_vitamin_a_veg_fruit
+maturity: draft
+label:
+  en: "MDD-C food group 7: vitamin-A-rich fruits and vegetables"
+  fr: "Groupe alimentaire MDD-C 7 : fruits et légumes riches en vitamine A"
+  es: "Grupo alimentario MDD-C 7: frutas y verduras ricas en vitamina A"
+
+definition:
+  en: "Whether the child ate any vitamin-A-rich fruit or vegetable in the previous 24 hours. Food group 7 of the 8-group MDD-C framework (WHO/UNICEF 2021). Example foods: ripe mango, papaya, carrot, pumpkin, orange-fleshed sweet potato, red palm oil. In the 8-group MDD-C framework, dark green leafy vegetables are included in this group (unlike the MDD-W framework). Published wording: 'Yesterday during the day or at night, did (NAME) eat/drink any [vitamin-A-rich fruits and vegetables]?'"
+  fr: "Indique si l'enfant a mangé un fruit ou un légume riche en vitamine A au cours des 24 heures précédentes. Groupe alimentaire 7 du cadre MDD-C à 8 groupes (OMS/UNICEF 2021). Exemples d'aliments : mangue mûre, papaye, carotte, citrouille, patate douce à chair orange, huile de palme rouge. Dans le cadre MDD-C à 8 groupes, les légumes-feuilles vert foncé sont inclus dans ce groupe (contrairement au cadre MDD-W)."
+  es: "Indica si el niño comió alguna fruta o verdura rica en vitamina A en las 24 horas anteriores. Grupo alimentario 7 del marco MDD-C de 8 grupos (OMS/UNICEF 2021). Ejemplos de alimentos: mango maduro, papaya, zanahoria, calabaza, batata de pulpa anaranjada, aceite de palma rojo. En el marco MDD-C de 8 grupos, las hortalizas de hoja verde oscuro se incluyen en este grupo (a diferencia del marco MDD-W)."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

@@ -1,0 +1,19 @@
+id: electricity_mtf_tier
+maturity: draft
+label:
+  en: "Electricity MTF tier"
+  fr: "Niveau MTF d'électricité"
+  es: "Nivel MTF de electricidad"
+
+definition:
+  en: "The derived SE4All Multi-Tier Framework (MTF) tier for household electricity access. Computed as the minimum tier across seven attributes: capacity (from electricity_capacity_watts or electricity_appliances_supported proxy), duration (from electricity_hours_per_day), evening supply (from electricity_evening_hours), reliability (from electricity_interruptions_per_week and electricity_interruption_hours_per_week), quality (from electricity_voltage_problems), affordability (from electricity_cost_share), legality/formality (from electricity_billing_status), and health and safety (from electricity_accident_past_12_months). SDG 7.1.1 binary access corresponds to Tier 1 or above. A ScoringEvent provides the authoritative computation."
+  fr: "Le niveau dérivé du cadre multi-niveaux (MTF) SE4All pour l'accès du ménage à l'électricité. Calculé comme le niveau minimum sur sept attributs : capacité (à partir de electricity_capacity_watts ou du proxy electricity_appliances_supported), durée (à partir de electricity_hours_per_day), alimentation en soirée (à partir de electricity_evening_hours), fiabilité (à partir de electricity_interruptions_per_week et electricity_interruption_hours_per_week), qualité (à partir de electricity_voltage_problems), accessibilité financière (à partir de electricity_cost_share), légalité/formalité (à partir de electricity_billing_status) et santé et sécurité (à partir de electricity_accident_past_12_months). L'accès binaire ODD 7.1.1 correspond au niveau 1 ou supérieur. Un ScoringEvent fournit le calcul de référence."
+  es: "El nivel derivado del Marco de Múltiples Niveles (MTF) SE4All para el acceso eléctrico del hogar. Calculado como el nivel mínimo entre siete atributos: capacidad (de electricity_capacity_watts o proxy electricity_appliances_supported), duración (de electricity_hours_per_day), suministro vespertino (de electricity_evening_hours), fiabilidad (de electricity_interruptions_per_week y electricity_interruption_hours_per_week), calidad (de electricity_voltage_problems), asequibilidad (de electricity_cost_share), legalidad/formalidad (de electricity_billing_status) y salud y seguridad (de electricity_accident_past_12_months). El acceso binario ODS 7.1.1 corresponde al Nivel 1 o superior. Un ScoringEvent proporciona el cálculo autoritativo."
+
+type: string
+cardinality: single
+core: true
+vocabulary: electricity-mtf-tier
+references: null
+category: energy
+sensitivity: standard

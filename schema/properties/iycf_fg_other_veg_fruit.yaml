@@ -1,0 +1,21 @@
+id: iycf_fg_other_veg_fruit
+maturity: draft
+label:
+  en: "MDD-C food group 8: other fruits and vegetables"
+  fr: "Groupe alimentaire MDD-C 8 : autres fruits et légumes"
+  es: "Grupo alimentario MDD-C 8: otras frutas y verduras"
+
+definition:
+  en: "Whether the child ate any other fruit or vegetable (not in the vitamin-A-rich group) in the previous 24 hours. Food group 8 of the 8-group MDD-C framework (WHO/UNICEF 2021). Example foods: tomato, onion, eggplant, spinach (not vitamin-A-rich leafy), banana, apple, citrus. Published wording: 'Yesterday during the day or at night, did (NAME) eat/drink any [other fruits and vegetables]?'"
+  fr: "Indique si l'enfant a mangé un autre fruit ou légume (hors groupe riche en vitamine A) au cours des 24 heures précédentes. Groupe alimentaire 8 du cadre MDD-C à 8 groupes (OMS/UNICEF 2021). Exemples d'aliments : tomate, oignon, aubergine, épinards (non riches en vitamine A), banane, pomme, agrumes."
+  es: "Indica si el niño comió alguna otra fruta o verdura (no del grupo rico en vitamina A) en las 24 horas anteriores. Grupo alimentario 8 del marco MDD-C de 8 grupos (OMS/UNICEF 2021). Ejemplos de alimentos: tomate, cebolla, berenjena, espinacas (no ricas en vitamina A), banano, manzana, cítricos."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

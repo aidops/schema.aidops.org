@@ -1,0 +1,19 @@
+id: hygiene_items_available
+maturity: draft
+label:
+  en: "Hygiene items available in household"
+  fr: "Articles d'hygiène disponibles dans le ménage"
+  es: "Artículos de higiene disponibles en el hogar"
+
+definition:
+  en: "Hygiene items currently available in the household. Multi-select. Based on the Sphere 2018 minimum Non-Food Item (NFI) hygiene package (Standard 4), which includes soap and sanitary items as minimum standards. Used for NFI distribution targeting and hygiene gap analysis."
+  fr: "Articles d'hygiène actuellement disponibles dans le ménage. Sélection multiple. Basé sur le paquet minimum d'articles non alimentaires (ANF) Sphère 2018 (Norme 4), qui inclut le savon et les articles sanitaires comme normes minimales. Utilisé pour le ciblage de la distribution d'ANF et l'analyse des lacunes en matière d'hygiène."
+  es: "Artículos de higiene disponibles actualmente en el hogar. Selección múltiple. Basado en el paquete mínimo de artículos no alimentarios (ANA) Esfera 2018 (Estándar 4), que incluye jabón y artículos sanitarios como estándares mínimos. Usado para la focalización de distribución de ANA y el análisis de brechas de higiene."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: hygiene-item-type
+references: null
+category: hygiene
+valid_instruments: [erwg_wash_hh, sphere_2018]

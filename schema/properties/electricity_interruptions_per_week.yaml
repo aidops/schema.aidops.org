@@ -1,0 +1,20 @@
+id: electricity_interruptions_per_week
+maturity: draft
+label:
+  en: "Electricity interruptions (times per week)"
+  fr: "Interruptions d'électricité (fois par semaine)"
+  es: "Interrupciones de electricidad (veces por semana)"
+
+definition:
+  en: "Average number of times per week electricity supply failed or went out unexpectedly in the past month. Unplanned interruptions only; excludes planned load-shedding schedules known to the household in advance. MTF electricity reliability attribute — tier thresholds: 3 or fewer disruptions per week = Tier 2-5 (with combined outage hours also checked for Tier 2+); 14 or fewer disruptions per week = Tier 1; more than 14 disruptions per week = Tier 0 for this attribute. Source: MTF household survey."
+  fr: "Nombre moyen de fois par semaine où l'alimentation électrique a subi une panne ou une coupure imprévue au cours du mois passé. Interruptions imprévues uniquement ; exclut les programmes de délestage planifié connus du ménage à l'avance. Attribut de fiabilité de l'électricité MTF — seuils de niveau : 3 interruptions ou moins par semaine = niveaux 2 à 5 (avec contrôle combiné des heures de coupure pour les niveaux 2+) ; 14 interruptions ou moins par semaine = niveau 1 ; plus de 14 interruptions par semaine = niveau 0 pour cet attribut. Source : enquête ménage MTF."
+  es: "Número promedio de veces por semana que el suministro eléctrico falló o se cortó inesperadamente en el último mes. Solo interrupciones no planificadas; excluye los programas de corte de carga planificados conocidos por el hogar con antelación. Atributo de fiabilidad de electricidad MTF: umbrales de nivel: 3 o menos interrupciones por semana = Niveles 2-5 (con verificación combinada de horas de corte para Nivel 2+); 14 o menos interrupciones por semana = Nivel 1; más de 14 interrupciones por semana = Nivel 0 para este atributo. Fuente: encuesta de hogares MTF."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [se4all_mtf]

@@ -1,0 +1,20 @@
+id: cooking_fuel_availability_months
+maturity: draft
+label:
+  en: "Cooking fuel availability (months per year)"
+  fr: "Disponibilité du combustible de cuisson (mois par an)"
+  es: "Disponibilidad del combustible de cocción (meses por año)"
+
+definition:
+  en: "Number of months in the past year in which the primary cooking fuel was consistently available. Applicable when the primary cooking fuel is biomass, charcoal, or another locally-sourced fuel subject to seasonal availability. MTF cooking availability attribute — tier thresholds: 12 months (year-round) = Tier 3-5; 10 or more months (at least 80% of year) = Tier 1-2; fewer than 10 months = Tier 0. Source: MTF household survey."
+  fr: "Nombre de mois au cours de l'année passée pendant lesquels le combustible de cuisson principal était régulièrement disponible. Applicable lorsque le combustible de cuisson principal est la biomasse, le charbon de bois ou un autre combustible d'approvisionnement local soumis à une disponibilité saisonnière. Attribut de disponibilité de cuisson MTF — seuils de niveau : 12 mois (toute l'année) = niveaux 3 à 5 ; 10 mois ou plus (au moins 80 % de l'année) = niveaux 1 à 2 ; moins de 10 mois = niveau 0. Source : enquête ménage MTF."
+  es: "Número de meses en el año pasado en que el combustible de cocción principal estuvo disponible de forma consistente. Aplicable cuando el combustible de cocción principal es biomasa, carbón vegetal u otro combustible de origen local sujeto a disponibilidad estacional. Atributo de disponibilidad de cocción MTF: umbrales de nivel: 12 meses (todo el año) = Niveles 3-5; 10 meses o más (al menos el 80% del año) = Niveles 1-2; menos de 10 meses = Nivel 0. Fuente: encuesta de hogares MTF."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: energy
+sensitivity: standard
+valid_instruments: [se4all_mtf]

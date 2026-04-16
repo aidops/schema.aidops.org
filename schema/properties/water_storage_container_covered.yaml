@@ -1,0 +1,19 @@
+id: water_storage_container_covered
+maturity: draft
+label:
+  en: "Water storage container covered"
+  fr: "Récipient de stockage d'eau couvert"
+  es: "Recipiente de almacenamiento de agua cubierto"
+
+definition:
+  en: "Whether the household's main water storage container is covered or sealed when not in use. Open or uncovered storage containers increase contamination risk at the point of use. Sphere guidance recommends covered containers for safe household water storage."
+  fr: "Si le principal récipient de stockage d'eau du ménage est couvert ou fermé lorsqu'il n'est pas utilisé. Les récipients de stockage ouverts ou non couverts augmentent le risque de contamination au point d'utilisation. Les directives Sphère recommandent des récipients couverts pour le stockage sûr de l'eau à domicile."
+  es: "Si el principal recipiente de almacenamiento de agua del hogar está cubierto o sellado cuando no está en uso. Los recipientes de almacenamiento abiertos o no cubiertos aumentan el riesgo de contaminación en el punto de uso. Las directrices de Esfera recomiendan recipientes cubiertos para el almacenamiento seguro de agua en el hogar."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: water
+valid_instruments: [erwg_wash_hh]

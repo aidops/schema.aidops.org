@@ -1,0 +1,79 @@
+id: electricity-billing-status
+maturity: draft
+label:
+  en: Electricity Billing Status
+  fr: "Statut de facturation de l'électricité"
+  es: "Estado de facturación de electricidad"
+definition:
+  en: >
+    How the household pays for electricity. This is the MTF legality/formality
+    attribute. Tier 4-5 criterion requires that the bill is paid to a utility,
+    prepaid meter, or authorized agent. Informal connections or no payment fail
+    the legality criterion for Tier 4 and above.
+  fr: >
+    Comment le ménage paie son électricité. Il s'agit de l'attribut de légalité et
+    de formalité du MTF. Le critère de niveau 4-5 exige que la facture soit payée
+    à un service public, un compteur prépayé ou un agent agréé. Les raccordements
+    informels ou l'absence de paiement ne satisfont pas au critère de légalité pour
+    le niveau 4 et au-delà.
+  es: >
+    Cómo paga el hogar la electricidad. Este es el atributo de legalidad y
+    formalidad del MTF. El criterio de los Niveles 4 y 5 exige que la factura se
+    pague a una empresa de servicios públicos, medidor de prepago o agente autorizado.
+    Las conexiones informales o la falta de pago no cumplen el criterio de legalidad
+    para el Nivel 4 y superiores.
+values:
+- code: utility_postpaid
+  label:
+    en: Utility bill (postpaid)
+    fr: "Facture de service public (postpayé)"
+    es: "Factura de servicio público (pospago)"
+  definition:
+    en: "Household receives and pays a postpaid bill from the utility. MTF legality: meets Tier 4-5 criterion."
+    fr: "Le ménage reçoit et paie une facture postpayée du service public. Légalité MTF : satisfait au critère des niveaux 4 à 5."
+    es: "El hogar recibe y paga una factura de pospago del servicio público. Legalidad MTF: cumple el criterio de los Niveles 4 a 5."
+- code: utility_prepaid
+  label:
+    en: Utility prepaid meter
+    fr: "Compteur prépayé du service public"
+    es: "Medidor de prepago del servicio público"
+  definition:
+    en: "Household pays via a prepaid meter managed by the utility. MTF legality: meets Tier 4-5 criterion."
+    fr: "Le ménage paie via un compteur prépayé géré par le service public. Légalité MTF : satisfait au critère des niveaux 4 à 5."
+    es: "El hogar paga a través de un medidor de prepago gestionado por el servicio público. Legalidad MTF: cumple el criterio de los Niveles 4 a 5."
+- code: authorized_agent
+  label:
+    en: Authorized reseller or energy kiosk
+    fr: "Revendeur agréé ou kiosque énergétique"
+    es: "Revendedor autorizado o quiosco de energía"
+  definition:
+    en: "Household pays an authorized reseller, energy kiosk, or licensed mini-grid operator. MTF legality: meets Tier 4-5 criterion."
+    fr: "Le ménage paie un revendeur agréé, un kiosque énergétique ou un opérateur de mini-réseau agréé. Légalité MTF : satisfait au critère des niveaux 4 à 5."
+    es: "El hogar paga a un revendedor autorizado, quiosco de energía u operador de mini-red con licencia. Legalidad MTF: cumple el criterio de los Niveles 4 a 5."
+- code: informal_connection
+  label:
+    en: "Informal connection (no contract, sub-metered from neighbor)"
+    fr: "Raccordement informel (sans contrat, sous-comptage chez un voisin)"
+    es: "Conexión informal (sin contrato, submedición desde un vecino)"
+  definition:
+    en: "Household receives electricity through an informal connection with no contract — for example, sub-metered from a neighbor or connected without utility authorization. MTF legality: fails Tier 4+ criterion (Tier 1-3 only)."
+    fr: "Le ménage reçoit de l'électricité par un raccordement informel sans contrat — par exemple, sous-comptage chez un voisin ou connexion sans autorisation du service public. Légalité MTF : ne satisfait pas au critère de niveau 4+ (niveaux 1 à 3 seulement)."
+    es: "El hogar recibe electricidad a través de una conexión informal sin contrato, por ejemplo, submedición desde un vecino o conexión sin autorización del servicio público. Legalidad MTF: no cumple el criterio de Nivel 4+ (solo Niveles 1 a 3)."
+- code: free_no_payment
+  label:
+    en: "Free, no payment required"
+    fr: "Gratuite, aucun paiement requis"
+    es: "Gratuita, sin pago requerido"
+  definition:
+    en: "Household receives electricity free of charge, for example from a community facility or humanitarian provision. No formal billing relationship. MTF legality: fails Tier 4+ criterion."
+    fr: "Le ménage reçoit de l'électricité gratuitement, par exemple d'une installation communautaire ou d'une aide humanitaire. Aucune relation de facturation formelle. Légalité MTF : ne satisfait pas au critère de niveau 4+."
+    es: "El hogar recibe electricidad de forma gratuita, por ejemplo, de una instalación comunitaria o provisión humanitaria. Sin relación de facturación formal. Legalidad MTF: no cumple el criterio de Nivel 4+."
+- code: no_electricity
+  label:
+    en: No electricity
+    fr: "Pas d'électricité"
+    es: "Sin electricidad"
+  definition:
+    en: "Household has no electricity; billing status is not applicable."
+    fr: "Le ménage n'a pas d'électricité ; le statut de facturation est sans objet."
+    es: "El hogar no tiene electricidad; el estado de facturación no es aplicable."

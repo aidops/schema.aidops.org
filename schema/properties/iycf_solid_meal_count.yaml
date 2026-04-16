@@ -1,0 +1,21 @@
+id: iycf_solid_meal_count
+maturity: draft
+label:
+  en: "Number of solid/semi-solid/soft food meals yesterday"
+  fr: "Nombre de repas d'aliments solides/semi-solides/mous hier"
+  es: "Número de comidas de alimentos sólidos/semisólidos/blandos ayer"
+
+definition:
+  en: "The number of times the child ate solid, semi-solid, or soft food yesterday during the day or at night (24-hour recall). Published wording (WHO/UNICEF 2021): 'How many times yesterday during the day or at night did (NAME) eat solid, semi-solid, or soft food?' Applies to children 6–23 months. The raw count used to compute the Minimum Meal Frequency (MMF) indicator; thresholds are age- and breastfeeding-status-dependent."
+  fr: "Le nombre de fois que l'enfant a mangé des aliments solides, semi-solides ou mous hier dans la journée ou la nuit (rappel sur 24 heures). Formulation publiée (OMS/UNICEF 2021) : « Combien de fois hier dans la journée ou la nuit (PRÉNOM) a-t-il/elle mangé des aliments solides, semi-solides ou mous ? » S'applique aux enfants de 6 à 23 mois. Le décompte brut utilisé pour calculer l'indicateur de fréquence minimale des repas (MMF) ; les seuils dépendent de l'âge et du statut d'allaitement."
+  es: "El número de veces que el niño comió alimentos sólidos, semisólidos o blandos ayer durante el día o la noche (recordatorio de 24 horas). Redacción publicada (OMS/UNICEF 2021): '¿Cuántas veces ayer durante el día o la noche comió (NOMBRE) alimentos sólidos, semisólidos o blandos?' Se aplica a niños de 6–23 meses. El conteo bruto utilizado para calcular el indicador de Frecuencia Mínima de Comidas (MMF); los umbrales dependen de la edad y el estado de lactancia materna."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

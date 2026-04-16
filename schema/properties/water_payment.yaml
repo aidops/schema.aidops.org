@@ -1,0 +1,19 @@
+id: water_payment
+maturity: draft
+label:
+  en: "Household pays for water"
+  fr: "Le ménage paie pour l'eau"
+  es: "El hogar paga por el agua"
+
+definition:
+  en: "Whether the household pays for its main drinking water source. Payment is relevant for programme targeting and affordability analysis. Affordability is one criterion considered in the safely managed water service level."
+  fr: "Si le ménage paie pour sa principale source d'eau potable. Le paiement est pertinent pour le ciblage des programmes et l'analyse de l'accessibilité financière. L'accessibilité financière est l'un des critères pris en compte dans le niveau de service en eau à gestion sécurisée."
+  es: "Si el hogar paga por su principal fuente de agua potable. El pago es relevante para la focalización de programas y el análisis de asequibilidad. La asequibilidad es uno de los criterios considerados en el nivel de servicio de agua con gestión segura."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: water
+valid_instruments: [erwg_wash_hh]

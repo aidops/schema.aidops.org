@@ -1,0 +1,18 @@
+id: highest_grade_completed_local
+maturity: draft
+label:
+  en: Highest grade completed (local system)
+  fr: "Classe la plus élevée complétée (système national)"
+  es: "Grado más alto completado (sistema local)"
+definition:
+  en: "The grade or year within the child's national education system corresponding to the highest level ever attended. Free text or country-adapted select list; the value is country-specific (e.g., 'Grade 4', 'Form 2', 'CE2'). Paired with highest_education_level (ISCED-mapped) to support SDG 4.1.2 completion rate calculation. Ask only if ever_attended_school is Yes. This field captures the MICS6 combined level-and-grade code in country-system terms before ISCED mapping."
+  fr: "La classe ou l'année dans le système éducatif national de l'enfant correspondant au niveau le plus élevé jamais fréquenté. Texte libre ou liste de sélection adaptée au pays ; la valeur est spécifique au pays (par ex. 'Classe 4', 'Formulaire 2', 'CE2'). Associé à highest_education_level (mappé CITE) pour soutenir le calcul du taux d'achèvement de l'ODD 4.1.2. À poser uniquement si ever_attended_school est Oui. Ce champ saisit le code combiné niveau+grade MICS6 dans les termes du système national avant le mappage CITE."
+  es: "El grado o año dentro del sistema educativo nacional del niño correspondiente al nivel más alto al que ha asistido. Texto libre o lista de selección adaptada al país; el valor es específico del país (por ejemplo, 'Grado 4', 'Formulario 2', 'CE2'). Emparejado con highest_education_level (mapeado a CINE) para apoyar el cálculo de la tasa de finalización del ODS 4.1.2. Preguntar solo si ever_attended_school es Sí. Este campo captura el código combinado de nivel y grado de MICS6 en términos del sistema nacional antes del mapeo CINE."
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

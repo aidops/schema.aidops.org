@@ -1,0 +1,21 @@
+id: iycf_breastfed_yesterday
+maturity: draft
+label:
+  en: "Breastfed yesterday"
+  fr: "Allaité hier"
+  es: "Amamantado ayer"
+
+definition:
+  en: "Whether the child was breastfed yesterday during the day or at night (24-hour recall). Published wording (WHO/UNICEF 2021): 'Was (NAME) breastfed yesterday during the day or at night?' This is the numerator item for Exclusive Breastfeeding (EBF, 0–5 months) and Continued Breastfeeding (CBF, 12–23 months). It is also mapped to food group 1 (breastmilk) in the MDD-C food group recall, so iycf_fg_breastmilk is derived from this property rather than asked separately."
+  fr: "Indique si l'enfant a été allaité hier dans la journée ou la nuit (rappel sur 24 heures). Formulation publiée (OMS/UNICEF 2021) : « (PRÉNOM) a-t-il/elle été allaité(e) hier dans la journée ou la nuit ? » C'est l'item du numérateur pour l'allaitement maternel exclusif (ALM, 0–5 mois) et l'allaitement continu (CBF, 12–23 mois). Il est également associé au groupe alimentaire 1 (lait maternel) dans le rappel des groupes alimentaires MDD-C, de sorte que iycf_fg_breastmilk est dérivé de cette propriété plutôt que demandé séparément."
+  es: "Indica si el niño fue amamantado ayer durante el día o la noche (recordatorio de 24 horas). Redacción publicada (OMS/UNICEF 2021): '¿Fue (NOMBRE) amamantado ayer durante el día o la noche?' Este es el ítem numerador para la Lactancia Materna Exclusiva (LME, 0–5 meses) y la Lactancia Materna Continuada (CBF, 12–23 meses). También se asigna al grupo alimentario 1 (leche materna) en el recordatorio de grupos alimentarios MDD-C, por lo que iycf_fg_breastmilk se deriva de esta propiedad en lugar de preguntarse por separado."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: nutrition
+age_applicability:
+  - infant_0_1
+valid_instruments: [who_iycf_2021]

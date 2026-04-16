@@ -1,0 +1,18 @@
+id: attended_previous_year
+maturity: draft
+label:
+  en: Attended school previous year
+  fr: "A fréquenté l'école l'année scolaire précédente"
+  es: "Asistió a la escuela el año escolar anterior"
+definition:
+  en: "Whether the child attended school or any early childhood education programme at any time during the previous school year. Ask only if attended_current_year is No. Supports identification of recent dropouts and short-term out-of-school status. Source: MICS6 CB9."
+  fr: "Si l'enfant a fréquenté une école ou tout programme d'éducation de la petite enfance à n'importe quel moment de l'année scolaire précédente. À poser uniquement si attended_current_year est Non. Soutient l'identification des abandons récents et du statut hors scolarisation à court terme. Source : MICS6 CB9."
+  es: "Si el niño asistió a una escuela o cualquier programa de educación de la primera infancia en algún momento durante el año escolar anterior. Preguntar solo si attended_current_year es No. Apoya la identificación de abandonos recientes y el estado de fuera de la escuela a corto plazo. Fuente: MICS6 CB9."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: education
+age_applicability:
+  - child_5_17

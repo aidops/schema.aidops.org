@@ -1,0 +1,87 @@
+id: mhm-disposal-method
+maturity: draft
+label:
+  en: Menstrual Material Disposal Method
+  fr: "Méthode d'élimination des matériaux menstruels"
+  es: "Método de eliminación de materiales menstruales"
+definition:
+  en: "Method used to dispose of menstrual hygiene materials after use. Safe disposal supports dignity and environmental health. Open disposal is a dignity and public health concern. Based on JMP/MICS expanded MHM questions and MICS Belize pilot question UN16."
+  fr: "Méthode utilisée pour éliminer les matériaux d'hygiène menstruelle après utilisation. Une élimination sûre contribue à la dignité et à la santé environnementale. L'élimination à l'air libre est une préoccupation en matière de dignité et de santé publique. Basé sur les questions MHM élargies JMP/MICS et la question pilote MICS Belize UN16."
+  es: "Método utilizado para eliminar los materiales de higiene menstrual después de su uso. La eliminación segura apoya la dignidad y la salud ambiental. La eliminación al aire libre es una preocupación de dignidad y salud pública. Basado en preguntas MHM ampliadas del JMP/MICS y la pregunta piloto MICS Belice UN16."
+standard:
+  name: "JMP Core Questions for Household Surveys (2018 Update)"
+  uri: "https://washdata.org/sites/default/files/documents/reports/2019-03/JMP-2018-core-questions-for-household-surveys.pdf"
+  notes: "JMP/MICS MHM expanded questions. MICS Belize pilot question UN16. JMP MHM database expanded in 2021."
+values:
+- code: special_bin_or_container
+  label:
+    en: Special bin or covered container
+    fr: "Bac spécial ou récipient couvert"
+    es: "Cubo especial o recipiente cubierto"
+  definition:
+    en: "Menstrual materials are disposed of in a designated covered bin or container specifically for sanitary waste."
+    fr: "Les matériaux menstruels sont éliminés dans un bac couvert désigné ou un récipient spécifiquement destiné aux déchets sanitaires."
+    es: "Los materiales menstruales se eliminan en un cubo cubierto designado o recipiente específicamente para residuos sanitarios."
+- code: household_waste_bin
+  label:
+    en: Household waste bin or rubbish
+    fr: "Poubelle ménagère ou ordures"
+    es: "Basurero doméstico o basura"
+  definition:
+    en: "Menstrual materials are disposed of in the general household rubbish or waste collection."
+    fr: "Les matériaux menstruels sont éliminés dans les ordures ménagères générales ou la collecte des déchets."
+    es: "Los materiales menstruales se eliminan en la basura doméstica general o la recolección de residuos."
+- code: into_latrine
+  label:
+    en: Put in toilet or latrine
+    fr: "Mis dans les toilettes ou la latrine"
+    es: "Puesto en el inodoro o letrina"
+  definition:
+    en: "Menstrual materials are put into the toilet or latrine for disposal. This can cause latrine blockages if materials are not biodegradable."
+    fr: "Les matériaux menstruels sont mis dans les toilettes ou la latrine pour élimination. Cela peut provoquer des blocages de la latrine si les matériaux ne sont pas biodégradables."
+    es: "Los materiales menstruales se ponen en el inodoro o letrina para su eliminación. Esto puede causar obstrucciones en la letrina si los materiales no son biodegradables."
+- code: burning
+  label:
+    en: Burning
+    fr: "Incinération"
+    es: "Quema"
+  definition:
+    en: "Used menstrual materials are burned as a disposal method."
+    fr: "Les matériaux menstruels usagés sont brûlés comme méthode d'élimination."
+    es: "Los materiales menstruales usados se queman como método de eliminación."
+- code: burying
+  label:
+    en: Burying
+    fr: "Enfouissement"
+    es: "Entierro"
+  definition:
+    en: "Used menstrual materials are buried in the ground as a disposal method."
+    fr: "Les matériaux menstruels usagés sont enterrés dans le sol comme méthode d'élimination."
+    es: "Los materiales menstruales usados se entierran en el suelo como método de eliminación."
+- code: open_disposal
+  label:
+    en: Open disposal (thrown in open area)
+    fr: "Élimination à l'air libre (jetés dans un espace ouvert)"
+    es: "Eliminación al aire libre (arrojados en espacio abierto)"
+  definition:
+    en: "Used menstrual materials are discarded in the open, in drains, or in water bodies. A dignity and environmental health concern."
+    fr: "Les matériaux menstruels usagés sont jetés dans des espaces ouverts, des drains ou des plans d'eau. Une préoccupation en matière de dignité et de santé environnementale."
+    es: "Los materiales menstruales usados se descartan al aire libre, en drenajes o en cuerpos de agua. Una preocupación de dignidad y salud ambiental."
+- code: reused_washed_and_reused
+  label:
+    en: Washed and reused (reusable materials only)
+    fr: "Lavés et réutilisés (matériaux réutilisables uniquement)"
+    es: "Lavados y reutilizados (solo materiales reutilizables)"
+  definition:
+    en: "Reusable menstrual cloth pads or other reusable materials are washed and stored for reuse. Not applicable for disposable materials."
+    fr: "Les serviettes hygiéniques en tissu réutilisables ou autres matériaux réutilisables sont lavés et stockés pour réutilisation. Non applicable pour les matériaux jetables."
+    es: "Las compresas de tela reutilizables u otros materiales reutilizables se lavan y almacenan para reutilización. No aplica para materiales desechables."
+- code: other
+  label:
+    en: Other method
+    fr: "Autre méthode"
+    es: "Otro método"
+  definition:
+    en: "A disposal method not covered by the other categories."
+    fr: "Une méthode d'élimination non couverte par les autres catégories."
+    es: "Un método de eliminación no cubierto por las otras categorías."
