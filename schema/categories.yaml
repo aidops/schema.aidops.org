@@ -1,0 +1,73 @@
+# AidOps-exclusive categories
+context:
+  label:
+    en: Context
+    fr: Contexte
+    es: Contexto
+
+habitability:
+  label:
+    en: Habitability
+    fr: Habitabilité
+    es: Habitabilidad
+
+hazard_event:
+  label:
+    en: Hazard event
+    fr: Événement dangereux
+    es: Evento de peligro
+
+nfi:
+  label:
+    en: Non-food Items
+    fr: Articles non alimentaires
+    es: Artículos no alimentarios
+
+nutrition:
+  label:
+    en: Nutrition
+    fr: Nutrition
+    es: Nutrición
+
+recovery:
+  label:
+    en: Recovery
+    fr: Relèvement
+    es: Recuperación
+
+scores:
+  label:
+    en: Scores
+    fr: Scores
+    es: Puntajes
+
+shelter:
+  label:
+    en: Shelter
+    fr: Abri
+    es: Refugio
+
+# Shared categories (referenced in concept property_groups, defined in PublicSchema)
+administrative:
+  label:
+    en: Administrative
+    fr: Administratif
+    es: Administrativo
+
+food_security:
+  label:
+    en: Food Security
+    fr: Sécurité alimentaire
+    es: Seguridad alimentaria
+
+location:
+  label:
+    en: Location
+    fr: Localisation
+    es: Ubicación
+
+wash:
+  label:
+    en: Water & Sanitation
+    fr: Eau et assainissement
+    es: Agua y saneamiento
