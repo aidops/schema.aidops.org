@@ -12,6 +12,7 @@ definition:
 
 type: string
 cardinality: single
+core: true
 vocabulary: food-consumption-group
 references: null
 category: food_security

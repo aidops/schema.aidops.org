@@ -12,6 +12,7 @@ definition:
 
 type: string
 cardinality: single
+core: true
 vocabulary: cutoff-rule
 references: null
 valid_instruments: [smart]

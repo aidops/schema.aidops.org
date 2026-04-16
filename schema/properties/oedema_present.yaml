@@ -12,6 +12,7 @@ definition:
 
 type: boolean
 cardinality: single
+core: true
 vocabulary: null
 references: null
 valid_instruments: [smart]

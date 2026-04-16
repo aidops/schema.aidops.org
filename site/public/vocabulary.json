@@ -726,6 +726,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": true,
       "age_applicability": [
         "infant_0_1",
         "child_2_4"
@@ -768,6 +769,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -806,6 +808,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -844,6 +847,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": null,
       "age_applicability": [
         "infant_0_1",
         "child_2_4",
@@ -888,6 +892,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "habitability",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iom_dtm_household",
@@ -930,6 +935,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "shelter",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iasc_mira",
@@ -975,6 +981,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nfi",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iasc_mira",
@@ -1017,6 +1024,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1056,6 +1064,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs"
@@ -1094,6 +1103,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1133,6 +1143,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1172,6 +1183,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1211,6 +1223,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1250,6 +1263,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1289,6 +1303,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs"
@@ -1327,6 +1342,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1366,6 +1382,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1405,6 +1422,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_fcs",
@@ -1444,6 +1462,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1480,6 +1499,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1516,6 +1536,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1552,6 +1573,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1588,6 +1610,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1626,6 +1649,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1662,6 +1686,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1698,6 +1723,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1734,6 +1760,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_fies"
@@ -1770,6 +1797,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -1808,6 +1836,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "habitability",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "shelter_cluster_rna",
@@ -1850,6 +1879,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -1888,6 +1918,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -1926,6 +1957,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -1964,6 +1996,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2002,6 +2035,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2040,6 +2074,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2078,6 +2113,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2116,6 +2152,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2154,6 +2191,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2192,6 +2230,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2230,6 +2269,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2268,6 +2308,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2306,6 +2347,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_hdds"
@@ -2344,6 +2386,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": null,
       "age_applicability": [
         "infant_0_1",
         "child_2_4",
@@ -2388,6 +2431,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -2426,6 +2470,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fanta_hhs"
@@ -2464,6 +2509,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fanta_hhs"
@@ -2502,6 +2548,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fanta_hhs"
@@ -2540,6 +2587,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fanta_hhs"
@@ -2578,6 +2626,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fanta_hhs"
@@ -2616,6 +2665,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2653,6 +2703,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2692,6 +2743,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2731,6 +2783,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2770,6 +2823,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2809,6 +2863,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2848,6 +2903,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2887,6 +2943,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2926,6 +2983,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -2965,6 +3023,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3004,6 +3063,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3043,6 +3103,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3082,6 +3143,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3121,6 +3183,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3160,6 +3223,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_lcs",
@@ -3199,6 +3263,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "location",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iasc_mira",
@@ -3239,6 +3304,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_mahfp"
@@ -3277,6 +3343,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_mdd_w"
@@ -3315,6 +3382,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "fao_mdd_w"
@@ -3353,6 +3421,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -3391,6 +3460,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": true,
       "age_applicability": [
         "infant_0_1",
         "child_2_4",
@@ -3434,6 +3504,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": true,
       "age_applicability": [
         "infant_0_1",
         "child_2_4"
@@ -3475,6 +3546,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -3514,6 +3586,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": true,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -3552,6 +3625,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi",
@@ -3591,6 +3665,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi",
@@ -3630,6 +3705,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi",
@@ -3669,6 +3745,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi",
@@ -3708,6 +3785,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi",
@@ -3747,6 +3825,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "wfp_rcsi"
@@ -3785,6 +3864,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "context",
+      "core": true,
       "age_applicability": null,
       "valid_instruments": null,
       "immutable_after_status": null,
@@ -3819,6 +3899,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "recovery",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iom_dtm_household",
@@ -3859,6 +3940,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "wash",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iasc_mira",
@@ -3899,6 +3981,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "shelter",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "shelter_cluster_rna",
@@ -3936,6 +4019,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": null,
       "age_applicability": [
         "infant_0_1",
         "child_2_4"
@@ -3978,6 +4062,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "hazard_event",
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "iasc_mira",
@@ -4018,6 +4103,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": null,
       "age_applicability": [
         "infant_0_1",
         "child_2_4"
@@ -4060,6 +4146,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "nutrition",
+      "core": null,
       "age_applicability": [
         "infant_0_1",
         "child_2_4"
@@ -4102,6 +4189,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4141,6 +4229,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4180,6 +4269,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4219,6 +4309,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4258,6 +4349,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4297,6 +4389,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4336,6 +4429,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4375,6 +4469,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4414,6 +4509,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4453,6 +4549,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": "food_security",
+      "core": null,
       "age_applicability": [
         "adolescent",
         "adult"
@@ -4492,6 +4589,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"
@@ -4530,6 +4628,7 @@
       "external_equivalents": null,
       "convergence": null,
       "category": null,
+      "core": null,
       "age_applicability": null,
       "valid_instruments": [
         "smart"

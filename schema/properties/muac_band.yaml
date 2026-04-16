@@ -12,6 +12,7 @@ definition:
 
 type: string
 cardinality: single
+core: true
 vocabulary: muac-band
 references: null
 category: nutrition

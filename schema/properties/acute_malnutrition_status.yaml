@@ -12,6 +12,7 @@ definition:
 
 type: string
 cardinality: single
+core: true
 vocabulary: acute-malnutrition-severity
 references: null
 category: nutrition

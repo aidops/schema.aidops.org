@@ -12,6 +12,7 @@ definition:
 
 type: decimal
 cardinality: single
+core: true
 vocabulary: null
 references: null
 category: nutrition

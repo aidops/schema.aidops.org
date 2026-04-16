@@ -56,6 +56,7 @@ just site-build         # full production build
 - **RDF namespace**: Reuses PS's `ps:` meta-namespace for shared metadata predicates. AidOps-owned types get `aidops:` prefix.
 - **dist/ variant**: dist-full/ only for now (PS types inlined with `"source": "publicschema"`).
 - **No /systems/ section**: System mappings deferred to later.
+- **`core: true` tier**: Profile properties may carry `core: true` to mark them as the must-ask subset for rapid-assessment variants. Form compilers (e.g. `aubex-compile --core-only`) can filter to core-only properties to derive a rapid form from a comprehensive profile without duplicating the schema. Defaults to `false` when omitted. Independent of `valid_instruments`.
 
 ## Known pitfalls
 
