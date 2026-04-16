@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.aidops.org/schemas/AnthropometricProfile.schema.json",
+  "title": "AnthropometricProfile",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "subject": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "observation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "performed_by": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "instrument_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "software_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "administration_mode": {
+      "type": "string",
+      "enum": [
+        "self",
+        "proxy",
+        "assisted",
+        "mixed"
+      ],
+      "$comment": "https://publicschema.org/vocab/administration-mode"
+    },
+    "respondent": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "respondent_relationship": {
+      "type": "string",
+      "enum": [
+        "spouse",
+        "parent",
+        "child",
+        "sibling",
+        "grandparent",
+        "grandchild",
+        "guardian",
+        "caregiver",
+        "dependent",
+        "in_law",
+        "extended_family",
+        "payment_proxy",
+        "survivor",
+        "non_relative",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/relationship-type"
+    },
+    "items_asked": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "height": {
+      "type": "number"
+    },
+    "body_weight": {
+      "type": "number"
+    },
+    "muac": {
+      "type": "number"
+    },
+    "oedema_present": {
+      "type": "boolean"
+    },
+    "measurement_type": {
+      "type": "string",
+      "enum": [
+        "recumbent",
+        "standing"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/measurement-type"
+    },
+    "age_at_measurement_months": {
+      "type": "integer"
+    },
+    "growth_reference": {
+      "type": "string",
+      "enum": [
+        "who_2006",
+        "who_2007",
+        "cdc_2000",
+        "nchs_1977",
+        "other"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/growth-reference"
+    },
+    "height_for_age_z": {
+      "type": "number"
+    },
+    "weight_for_age_z": {
+      "type": "number"
+    },
+    "weight_for_height_z": {
+      "type": "number"
+    },
+    "bmi_for_age_z": {
+      "type": "number"
+    },
+    "stunting_status": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "moderate",
+        "severe"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/malnutrition-severity"
+    },
+    "wasting_status": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "moderate",
+        "severe"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/malnutrition-severity"
+    },
+    "underweight_status": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "moderate",
+        "severe"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/malnutrition-severity"
+    },
+    "acute_malnutrition_status": {
+      "type": "string",
+      "enum": [
+        "adequate",
+        "moderate_acute_malnutrition",
+        "severe_acute_malnutrition"
+      ],
+      "$comment": "https://publicschema.org/vocab/acute-malnutrition-severity"
+    },
+    "muac_band": {
+      "type": "string",
+      "enum": [
+        "red",
+        "yellow",
+        "green"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/muac-band"
+    },
+    "muac_cutoff_rule": {
+      "type": "string",
+      "enum": [
+        "who_unicef_6_59m",
+        "who_2007_school_age",
+        "sphere_pregnant",
+        "humanitarian_adult",
+        "national_protocol"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/cutoff-rule"
+    }
+  }
+}

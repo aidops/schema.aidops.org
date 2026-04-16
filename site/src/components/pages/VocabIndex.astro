@@ -1,0 +1,62 @@
+---
+import Base from '../../layouts/Base.astro';
+import ExpandableDefinition from '../ExpandableDefinition.astro';
+import { defaultLocale, type Locale } from '../../i18n/languages';
+import { useTranslations, localePath } from '../../i18n/utils';
+import { loadVocabulary } from '../../data/vocabulary';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props;
+const t = useTranslations(locale);
+
+const vocab = loadVocabulary();
+const maturityRank: Record<string, number> = { normative: 0, candidate: 1, draft: 2 };
+// Vocabularies are keyed by their canonical reference form. Using the key
+// rather than `v.id` keeps any domain-prefixed routes working correctly.
+const vocabLabel = (v: { id: string; label?: { en?: string; fr?: string; es?: string } }) =>
+  v.label?.[locale] ?? v.label?.en ?? v.id;
+const showCanonical = locale !== defaultLocale;
+const vocabularies = Object.entries(vocab.vocabularies)
+  .map(([key, v]) => ({ key, ...v }))
+  .sort((a, b) =>
+    (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.key.localeCompare(b.key)
+  );
+---
+<Base title={t('vocab.page_title')} description={t('vocab.page_subtitle')} locale={locale}>
+  <div class="page-header">
+    <nav class="breadcrumb" aria-label={t('breadcrumb.home')}>
+      <a href={localePath('/', locale)}>{t('breadcrumb.home')}</a><span class="separator">/</span>{t('common.vocabularies')}
+    </nav>
+    <h1>{t('vocab.page_title')}</h1>
+    <p class="subtitle">{t('vocab.page_subtitle')}</p>
+  </div>
+
+  <table class="data-table mobile-card-table">
+    <thead>
+      <tr>
+        <th>{t('vocab.table.vocabulary')}</th>
+        <th>{t('vocab.table.values')}</th>
+        <th>{t('vocab.table.standard')}</th>
+        <th>{t('vocab.table.definition')}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {vocabularies.map((v) => (
+        <tr>
+          <td>
+            <a href={localePath(`/vocabularies/${v.key}`, locale)}>{vocabLabel(v)}</a>
+            {showCanonical && vocabLabel(v) !== v.id && <span class="canonical-hint">{v.id}</span>}
+          </td>
+          <td data-label={t('vocab.table.values')}>{v.values.length}</td>
+          <td data-label={t('vocab.table.standard')}>{v.standard?.name || "None"}</td>
+          <td data-label={t('vocab.table.definition')}>
+            <ExpandableDefinition text={v.definition[locale] ?? v.definition.en ?? ''} threshold={80} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Base>

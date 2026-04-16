@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.aidops.org/schemas/DwellingDamageProfile.schema.json",
+  "title": "DwellingDamageProfile",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "subject": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "observation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "performed_by": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "instrument_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "software_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "administration_mode": {
+      "type": "string",
+      "enum": [
+        "self",
+        "proxy",
+        "assisted",
+        "mixed"
+      ],
+      "$comment": "https://publicschema.org/vocab/administration-mode"
+    },
+    "respondent": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "respondent_relationship": {
+      "type": "string",
+      "enum": [
+        "spouse",
+        "parent",
+        "child",
+        "sibling",
+        "grandparent",
+        "grandchild",
+        "guardian",
+        "caregiver",
+        "dependent",
+        "in_law",
+        "extended_family",
+        "payment_proxy",
+        "survivor",
+        "non_relative",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/relationship-type"
+    },
+    "items_asked": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dwelling_type": {
+      "type": "string",
+      "enum": [
+        "permanent",
+        "semi_permanent",
+        "temporary",
+        "improvised",
+        "collective",
+        "mobile"
+      ],
+      "$comment": "https://publicschema.org/vocab/dwelling-type"
+    },
+    "floor_material": {
+      "type": "string",
+      "enum": [
+        "earth_sand",
+        "dung",
+        "wood_planks",
+        "palm_bamboo",
+        "parquet_polished_wood",
+        "vinyl_asphalt",
+        "ceramic_tiles",
+        "cement",
+        "carpet",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/floor-material"
+    },
+    "wall_material": {
+      "type": "string",
+      "enum": [
+        "no_walls",
+        "cane_palm_trunks",
+        "dirt",
+        "bamboo_with_mud",
+        "stone_with_mud",
+        "uncovered_adobe",
+        "plywood",
+        "cardboard",
+        "reused_wood",
+        "cement",
+        "stone_with_lime_cement",
+        "bricks",
+        "cement_blocks",
+        "covered_adobe",
+        "wood_planks_shingles",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/wall-material"
+    },
+    "roof_material": {
+      "type": "string",
+      "enum": [
+        "no_roof",
+        "thatch_palm_leaf",
+        "sod_grass",
+        "rustic_mat",
+        "palm_bamboo",
+        "wood_planks",
+        "cardboard",
+        "metal",
+        "wood",
+        "calamine_cement_fiber",
+        "ceramic_tiles",
+        "cement",
+        "roofing_shingles",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/roof-material"
+    },
+    "water_source": {
+      "type": "string",
+      "enum": [
+        "piped_into_dwelling",
+        "piped_to_yard",
+        "piped_to_neighbor",
+        "public_tap_standpipe",
+        "tube_well_borehole",
+        "protected_well",
+        "unprotected_well",
+        "protected_spring",
+        "unprotected_spring",
+        "rainwater",
+        "tanker_truck",
+        "cart_with_small_tank",
+        "surface_water",
+        "bottled_water",
+        "packaged_water",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/water-source"
+    },
+    "sanitation_facility": {
+      "type": "string",
+      "enum": [
+        "flush_to_piped_sewer",
+        "flush_to_septic_tank",
+        "flush_to_pit_latrine",
+        "flush_to_open_drain",
+        "flush_to_unknown",
+        "ventilated_improved_pit",
+        "pit_latrine_with_slab",
+        "pit_latrine_without_slab",
+        "composting_toilet",
+        "bucket_latrine",
+        "hanging_toilet",
+        "open_defecation",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/sanitation-facility"
+    },
+    "electricity_access": {
+      "type": "boolean"
+    },
+    "damage_level": {
+      "type": "string",
+      "enum": [
+        "destroyed",
+        "severely_damaged",
+        "moderately_damaged",
+        "minor_damage",
+        "undamaged"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/shelter-damage-level"
+    },
+    "habitability_status": {
+      "type": "string",
+      "enum": [
+        "habitable",
+        "needs_minor_repairs",
+        "needs_major_repairs_uninhabitable",
+        "must_be_demolished",
+        "unknown"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/habitability-status"
+    },
+    "current_shelter_type": {
+      "type": "string",
+      "enum": [
+        "original_home",
+        "original_home_repaired",
+        "tent_or_emergency_shelter",
+        "transitional_shelter",
+        "collective_center",
+        "host_family",
+        "rented_accommodation",
+        "displacement_site",
+        "unsheltered"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/shelter-situation-type"
+    },
+    "structural_safety_assessment": {
+      "type": "string",
+      "enum": [
+        "safe",
+        "restricted_use",
+        "unsafe"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/structural-safety-tag"
+    },
+    "essential_items_missing": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "tarpaulin",
+          "plastic_sheeting",
+          "rope_fixings",
+          "blanket",
+          "sleeping_mat",
+          "cooking_set",
+          "jerrycan",
+          "clothing",
+          "solar_lantern",
+          "hygiene_kit",
+          "winterization_kit",
+          "other"
+        ],
+        "$comment": "https://schema.aidops.org/vocab/nfi-item-type"
+      }
+    },
+    "reconstruction_intent": {
+      "type": "string",
+      "enum": [
+        "repair_in_place",
+        "rebuild_in_place",
+        "relocate",
+        "cannot_act_without_support",
+        "undecided"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/reconstruction-intent"
+    },
+    "services_disrupted": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "water",
+          "sanitation",
+          "electricity",
+          "telecommunications",
+          "water_unsafe",
+          "water_intermittent",
+          "electricity_intermittent",
+          "sanitation_overflowing",
+          "none"
+        ],
+        "$comment": "https://schema.aidops.org/vocab/service-disruption-type"
+      }
+    },
+    "triggering_hazard_event": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "location_of_assessment": {
+      "type": [
+        "object",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,283 @@
+---
+import '../styles/global.css';
+import { defaultLocale, languages, localesLive, type Locale } from '../i18n/languages';
+import { localePath, switchLocalePath, useTranslations } from '../i18n/utils';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  alternateJsonLd?: string;
+  ogType?: 'website' | 'article';
+  locale?: Locale;
+  noHreflang?: boolean;
+}
+
+const {
+  title,
+  alternateJsonLd,
+  ogType = 'website',
+  locale = defaultLocale,
+  noHreflang = false,
+} = Astro.props;
+
+const t = useTranslations(locale);
+const description = Astro.props.description ?? t('footer.tagline');
+
+const currentPath = Astro.url.pathname;
+const pageTitle = `${title} | AidOps`;
+const canonicalUrl = new URL(currentPath, Astro.site).href;
+const { htmlLang, ogLocale } = languages[locale];
+
+// Build BreadcrumbList JSON-LD from the URL path segments.
+const localeCodeSet = new Set(Object.keys(languages));
+const rawSegments = currentPath.split('/').filter(Boolean);
+const pathSegments = rawSegments[0] && localeCodeSet.has(rawSegments[0])
+  ? rawSegments.slice(1)
+  : rawSegments;
+
+const breadcrumbItems: Array<{ '@type': string; position: number; name: string; item?: string }> = [
+  { '@type': 'ListItem', position: 1, name: 'Home', item: new URL(localePath('/', locale), Astro.site).href },
+];
+pathSegments.forEach((segment, index) => {
+  const isLast = index === pathSegments.length - 1;
+  const segmentPath = '/' + pathSegments.slice(0, index + 1).join('/') + '/';
+  const name = isLast ? title : segment.charAt(0).toUpperCase() + segment.slice(1);
+  const item: { '@type': string; position: number; name: string; item?: string } = {
+    '@type': 'ListItem',
+    position: index + 2,
+    name,
+  };
+  if (!isLast) {
+    item.item = new URL(localePath(segmentPath, locale), Astro.site).href;
+  }
+  breadcrumbItems.push(item);
+});
+
+const breadcrumbJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems,
+});
+
+const navLinks = [
+  { href: '/concepts/', label: t('nav.concepts') },
+  { href: '/properties/', label: t('nav.properties') },
+  { href: '/vocabularies/', label: t('nav.vocabularies') },
+  { href: '/about/', label: t('nav.about') },
+];
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content={description} />
+  <title>{pageTitle}</title>
+  <link rel="canonical" href={canonicalUrl} />
+  {!noHreflang && localesLive.map((loc) => (
+    <link
+      rel="alternate"
+      hreflang={languages[loc].htmlLang}
+      href={new URL(switchLocalePath(Astro.url, loc), Astro.site).href}
+    />
+  ))}
+  {!noHreflang && <link rel="alternate" hreflang="x-default" href={new URL(switchLocalePath(Astro.url, defaultLocale), Astro.site).href} />}
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#0d9488" />
+  {alternateJsonLd && <link rel="alternate" type="application/ld+json" href={alternateJsonLd} />}
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content="AidOps" />
+  <meta property="og:locale" content={ogLocale} />
+  {!noHreflang && localesLive.filter((loc) => loc !== locale).map((loc) => (
+    <meta property="og:locale:alternate" content={languages[loc].ogLocale} />
+  ))}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <script type="application/ld+json" set:html={breadcrumbJsonLd}></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">{t('nav.skip_to_content')}</a>
+  <nav class="site-nav">
+    <div class="site-container">
+      <a href={localePath('/', locale)} class="site-logo">
+        <span>
+          <span class="site-title"><span class="site-title-aid">Aid</span>Ops</span>
+          <span class="site-title-sub">Humanitarian Schema</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        {navLinks.map(({ href, label }) => {
+          const localized = localePath(href, locale);
+          return (
+            <li>
+              <a href={localized} class:list={[{ active: currentPath.startsWith(localized) }]}>
+                {label}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <div
+        class="search-container"
+        data-locale={locale}
+        data-search-placeholder={t('search.placeholder')}
+        data-search-min-chars={t('search.min_chars')}
+        data-search-no-results={t('search.no_results')}
+        data-search-browse-hint={t('search.browse_hint')}
+        data-search-results-status={t('search.results_status')}
+        data-search-no-results-status={t('search.no_results_status')}
+        data-nav-concepts={t('nav.concepts')}
+        data-nav-properties={t('nav.properties')}
+        data-nav-vocabularies={t('nav.vocabularies')}
+        data-search-close={t('search.close')}
+      >
+        <div class="search-input-wrapper">
+          <input
+            type="search"
+            class="search-input"
+            placeholder={t('search.placeholder')}
+            role="combobox"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-haspopup="listbox"
+            aria-controls="search-results"
+            aria-label={t('search.aria_label')}
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="none"
+            spellcheck="false"
+          />
+          <kbd class="search-shortcut" aria-hidden="true"></kbd>
+        </div>
+        <div id="search-results" class="search-results" role="listbox" aria-label={t('search.aria_label')} hidden>
+        </div>
+        <span class="search-sr-status" aria-live="polite"></span>
+      </div>
+      <button class="search-mobile-toggle" aria-label={t('nav.search')} type="button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="8.5" cy="8.5" r="5.5"></circle>
+          <line x1="13" y1="13" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      {localesLive.length > 1 && (
+        <>
+          <div class="lang-switcher-desktop-wrapper">
+            <LanguageSwitcher currentLocale={locale} currentUrl={Astro.url} variant="desktop" />
+          </div>
+          <div class="lang-switcher-mobile-wrapper">
+            <LanguageSwitcher currentLocale={locale} currentUrl={Astro.url} variant="mobile-compact" />
+          </div>
+        </>
+      )}
+      <details class="mobile-nav">
+        <summary class="mobile-nav-toggle" aria-label={t('nav.menu')}>
+          <span class="hamburger-icon"></span>
+        </summary>
+        <ul class="mobile-nav-links">
+          {navLinks.map(({ href, label }) => {
+            const localized = localePath(href, locale);
+            return (
+              <li>
+                <a href={localized} class:list={[{ active: currentPath.startsWith(localized) }]}>
+                  {label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        {localesLive.length > 1 && (
+          <LanguageSwitcher currentLocale={locale} currentUrl={Astro.url} variant="mobile-full" />
+        )}
+      </details>
+    </div>
+  </nav>
+
+  <main id="main-content" class="site-container" tabindex="-1">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-name">AidOps</div>
+          <p>{t('footer.tagline')}</p>
+          <p style="margin-top: 0.5rem;"><a href="https://publicschema.org" target="_blank" rel="noopener noreferrer">{t('footer.publicschema')}</a></p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-col">
+            <h4>{t('footer.explore')}</h4>
+            <ul>
+              <li><a href={localePath('/concepts/', locale)}>{t('nav.concepts')}</a></li>
+              <li><a href={localePath('/properties/', locale)}>{t('nav.properties')}</a></li>
+              <li><a href={localePath('/vocabularies/', locale)}>{t('nav.vocabularies')}</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>{t('footer.project')}</h4>
+            <ul>
+              <li><a href={localePath('/about/', locale)}>{t('footer.about')}</a></li>
+              <li><a href="https://github.com/aidops-org/schema.aidops.org">{t('footer.source_github')}</a></li>
+              <li><a href="https://publicschema.org" target="_blank" rel="noopener noreferrer">PublicSchema</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>{t('footer.reference_model_cc')} <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | {t('footer.code_apache')} <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></span>
+        <span>{t('footer.built_with')} <a href="https://astro.build/">Astro</a></span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label={t('nav.back_to_top')} hidden>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="5,12 10,7 15,12"></polyline>
+      <line x1="10" y1="7" x2="10" y2="16"></line>
+    </svg>
+  </button>
+  <script src="../scripts/search.ts"></script>
+  <script>
+    const mobileNav = document.querySelector('.mobile-nav');
+    if (mobileNav) {
+      mobileNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => mobileNav.removeAttribute('open'));
+      });
+      document.addEventListener('click', (e) => {
+        if (mobileNav.hasAttribute('open') && !mobileNav.contains(e.target as Node)) {
+          mobileNav.removeAttribute('open');
+        }
+      });
+    }
+
+    const backToTop = document.querySelector<HTMLButtonElement>('.back-to-top');
+    if (backToTop) {
+      const toggle = () => {
+        if (window.scrollY > window.innerHeight) {
+          backToTop.hidden = false;
+        } else {
+          backToTop.hidden = true;
+        }
+      };
+      toggle();
+      window.addEventListener('scroll', toggle, { passive: true });
+      backToTop.addEventListener('click', () => {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+      });
+    }
+  </script>
+</body>
+</html>

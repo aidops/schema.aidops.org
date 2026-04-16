@@ -1,0 +1,166 @@
+---
+import Base from '../../layouts/Base.astro';
+import TranslationBanner from '../TranslationBanner.astro';
+import { defaultLocale, type Locale } from '../../i18n/languages';
+import { useTranslations, localePath } from '../../i18n/utils';
+import { loadVocabulary } from '../../data/vocabulary';
+import '../../styles/homepage.css';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props;
+const t = useTranslations(locale);
+
+const vocab = loadVocabulary();
+const maturityRank: Record<string, number> = { normative: 0, candidate: 1, draft: 2 };
+const byMaturityThenName = (a: { maturity: string; id: string }, b: { maturity: string; id: string }) =>
+  (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.id.localeCompare(b.id);
+
+const concepts = Object.values(vocab.concepts).sort(byMaturityThenName);
+const properties = Object.values(vocab.properties).sort(byMaturityThenName);
+const vocabularies = Object.entries(vocab.vocabularies)
+  .map(([key, v]) => ({ key, ...v }))
+  .sort((a, b) =>
+    (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.key.localeCompare(b.key)
+  );
+
+// Profile concepts for featured cards on the homepage.
+const profileIds = ['FoodSecurityProfile', 'FunctioningProfile', 'AnthropometricProfile', 'SocioEconomicProfile'];
+const profileConcepts = profileIds
+  .map((id) => vocab.concepts[id])
+  .filter(Boolean);
+
+// Featured concept chips for the index section.
+const featuredConcepts = concepts.filter((c) => c.featured);
+const conceptChips = featuredConcepts.length > 0 ? featuredConcepts : concepts.slice(0, 8);
+
+const titles: Record<Locale, { title: string; description: string }> = {
+  en: {
+    title: 'Humanitarian assessment profiles and operational tooling',
+    description: 'AidOps provides structured definitions for humanitarian assessment profiles and operational data. Built so aid programs can coordinate, share data, and reach the people they serve.',
+  },
+  fr: {
+    title: 'Profils d\'évaluation humanitaire et outillage opérationnel',
+    description: 'AidOps fournit des définitions structurées pour les profils d\'évaluation humanitaire et les données opérationnelles. Conçu pour que les programmes d\'aide puissent se coordonner, partager des données et atteindre les personnes concernées.',
+  },
+  es: {
+    title: 'Perfiles de evaluación humanitaria y herramientas operacionales',
+    description: 'AidOps proporciona definiciones estructuradas para perfiles de evaluación humanitaria y datos operacionales. Diseñado para que los programas de ayuda puedan coordinarse, compartir datos y llegar a las personas a las que sirven.',
+  },
+};
+
+const { title, description } = titles[locale];
+---
+<Base title={title} description={description} locale={locale}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AidOps",
+    "url": "https://schema.aidops.org/",
+    "description": description,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://schema.aidops.org/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
+  {locale !== defaultLocale && <TranslationBanner locale={locale} />}
+
+  <!-- Hero -->
+  <div class="h3-hero">
+    <div class="h3-hero-inner">
+      <h1>{title}</h1>
+      <p class="h3-hero-lead">
+        {locale === 'en' && <>Structured schema for humanitarian assessment and aid operations. Built on <a href="https://publicschema.org/">PublicSchema</a>, extended for field programs.</>}
+        {locale === 'fr' && <>Schéma structuré pour l'évaluation humanitaire et les opérations d'aide. Fondé sur <a href="https://publicschema.org/">PublicSchema</a>, enrichi pour les programmes de terrain.</>}
+        {locale === 'es' && <>Esquema estructurado para evaluación humanitaria y operaciones de ayuda. Basado en <a href="https://publicschema.org/">PublicSchema</a>, extendido para programas de campo.</>}
+      </p>
+      <div class="h3-hero-cta">
+        <a href={localePath('/concepts/', locale)} class="btn btn-primary">{t('nav.concepts')}</a>
+        <a href={localePath('/about/', locale)} class="btn btn-secondary">{t('footer.about')}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Assessment profiles -->
+  {profileConcepts.length > 0 && (
+    <div class="h3-prose">
+      <h2>
+        {locale === 'en' && 'Assessment profiles'}
+        {locale === 'fr' && 'Profils d\'évaluation'}
+        {locale === 'es' && 'Perfiles de evaluación'}
+      </h2>
+      <p>
+        {locale === 'en' && 'AidOps defines structured schemas for the most common humanitarian assessment profiles. Each profile captures a specific domain of field observation data.'}
+        {locale === 'fr' && 'AidOps définit des schémas structurés pour les profils d\'évaluation humanitaire les plus courants. Chaque profil capture un domaine spécifique de données d\'observation de terrain.'}
+        {locale === 'es' && 'AidOps define esquemas estructurados para los perfiles de evaluación humanitaria más comunes. Cada perfil captura un dominio específico de datos de observación de campo.'}
+      </p>
+      <div class="h3-profiles">
+        {profileConcepts.map((c) => (
+          <div class="h3-profile">
+            <h3><a href={localePath(c.path, locale)}>{c.id}</a></h3>
+            <p>{c.definition[locale] ?? c.definition.en}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Schema index -->
+  <div class="h3-prose" id="index">
+    <h2>{t('home.browse_schema')}</h2>
+
+    <div class="h3-idx">
+      <div class="h3-idx-header">
+        <h3>{t('home.core_concepts')}</h3>
+        <span class="h3-idx-count">{concepts.length}</span>
+      </div>
+      <div class="h3-idx-chips">
+        {conceptChips.map((c) => (
+          <a href={localePath(c.path, locale)} class="h3-chip">
+            {c.id}
+          </a>
+        ))}
+        {concepts.length > conceptChips.length && (
+          <a href={localePath('/concepts/', locale)} class="h3-chip h3-chip-more">
+            {t('home.plus_more', { count: concepts.length - conceptChips.length })}
+          </a>
+        )}
+      </div>
+    </div>
+
+    <div class="h3-idx">
+      <div class="h3-idx-header">
+        <h3>{t('home.vocabularies')}</h3>
+        <span class="h3-idx-count">{vocabularies.length}</span>
+      </div>
+      <div class="h3-idx-chips">
+        {vocabularies.slice(0, 8).map((v) => (
+          <a href={localePath(`/vocabularies/${v.key}`, locale)} class="h3-chip">
+            {v.key}
+            <span class="h3-chip-meta">{v.values.length}</span>
+          </a>
+        ))}
+        {vocabularies.length > 8 && (
+          <a href={localePath('/vocabularies/', locale)} class="h3-chip h3-chip-more">
+            {t('home.plus_more', { count: vocabularies.length - 8 })}
+          </a>
+        )}
+      </div>
+    </div>
+
+    <p class="h3-closing">
+      <a href={localePath('/about/', locale)}>{t('footer.about')}</a>
+      <span class="h3-header-sep" aria-hidden="true"></span>
+      <a href="https://github.com/aidops-org/schema.aidops.org">{t('footer.source_github')}</a>
+      <span class="h3-header-sep" aria-hidden="true"></span>
+      <a href="https://publicschema.org/">{t('footer.publicschema')}</a>
+    </p>
+  </div>
+</Base>

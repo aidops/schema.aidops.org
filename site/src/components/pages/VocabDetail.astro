@@ -1,0 +1,184 @@
+---
+import Base from '../../layouts/Base.astro';
+import { defaultLocale, type Locale } from '../../i18n/languages';
+import { useTranslations, localePath } from '../../i18n/utils';
+import { loadVocabulary } from '../../data/vocabulary';
+import type { Vocabulary } from '../../data/vocabulary';
+import SectionFeedback from '../SectionFeedback.astro';
+import NonNormativeBanner from '../NonNormativeBanner.astro';
+
+interface Props {
+  vocab: string;
+  locale?: Locale;
+}
+
+const { vocab, locale = defaultLocale } = Astro.props;
+const t = useTranslations(locale);
+
+const allVocab = loadVocabulary();
+const vocabulary = allVocab.vocabularies[vocab] as Vocabulary;
+const definition = vocabulary.definition[locale] ?? vocabulary.definition.en;
+const displayLabel = vocabulary.label?.[locale] ?? vocabulary.label?.en ?? vocabulary.id;
+const showCanonicalName = locale !== defaultLocale && displayLabel !== vocabulary.id;
+
+const bibliography = allVocab.bibliography ?? {};
+const bibRefs = (vocabulary.bibliography_refs ?? [])
+  .map((id) => bibliography[id])
+  .filter((entry) => entry !== undefined);
+const otherRefs = vocabulary.references ?? [];
+
+const isNonNormative = vocabulary.maturity === 'draft' || vocabulary.maturity === 'candidate';
+---
+<Base title={displayLabel} description={definition} alternateJsonLd={`/vocabularies/${vocab}.jsonld`} ogType="article" locale={locale}>
+  <article>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": vocabulary.id,
+    "description": definition,
+    "url": vocabulary.uri
+  })} />
+  <div class="page-header">
+    <nav class="breadcrumb" aria-label={t('breadcrumb.home')}>
+      <a href={localePath('/', locale)}>{t('breadcrumb.home')}</a>
+      <span class="separator">/</span>
+      <a href={localePath('/vocabularies/', locale)}>{t('common.vocabularies')}</a>
+      <span class="separator">/</span>
+      {displayLabel}
+    </nav>
+    <h1>{displayLabel}</h1>
+    <p class="canonical-line">
+      {showCanonicalName && <span class="canonical-name">{vocabulary.id}</span>}
+      {showCanonicalName && <span class="canonical-sep">&middot;</span>}
+      <span class="uri">{vocabulary.uri}</span>
+    </p>
+    <div class="meta-line">
+      <span class={`badge badge-${vocabulary.maturity}`}>{vocabulary.maturity}</span>
+    </div>
+    <p class="definition-text">{definition}</p>
+    {isNonNormative && (
+      <NonNormativeBanner
+        maturity={vocabulary.maturity as 'draft' | 'candidate'}
+        pageType="vocabulary"
+        pageId={vocab}
+        locale={locale}
+      />
+    )}
+  </div>
+  <div class="download-links">
+    <a href={`/vocabularies/${vocab}.csv`} class="btn btn-secondary" download>{t('download.csv')}</a>
+    <a href={`/vocabularies/${vocab}.jsonld`} class="btn btn-secondary">{t('download.jsonld')}</a>
+  </div>
+
+  {vocabulary.standard && (
+    <div class="concept-section" id="standard">
+      <h2>{t('vocab_detail.standard_reference')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="standard" sectionLabel={t('vocab_detail.standard_reference')} locale={locale} /></h2>
+      <p>
+        {vocabulary.standard.name}
+        {vocabulary.standard.uri && (
+          <> (<a href={vocabulary.standard.uri} target="_blank" rel="noopener noreferrer">{vocabulary.standard.uri}</a>)</>
+        )}
+      </p>
+      {vocabulary.standard.notes && (
+        <p style="color: var(--color-text-muted); line-height: 1.65;">{vocabulary.standard.notes}</p>
+      )}
+    </div>
+  )}
+
+  {vocabulary.external_equivalents && Object.keys(vocabulary.external_equivalents).length > 0 && (
+    <div class="concept-section" id="aligned-standards">
+      <h2>{t('vocab_detail.aligned_standards')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="aligned-standards" sectionLabel={t('vocab_detail.aligned_standards')} locale={locale} /></h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Standard</th>
+            <th>Equivalent</th>
+            <th>Match</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(vocabulary.external_equivalents).map(([key, eq]) => (
+            <>
+              <tr id={`eq-${key}`}>
+                <td>{eq.vocabulary}</td>
+                <td><a href={eq.uri} target="_blank" rel="noopener noreferrer">{eq.label}</a></td>
+                <td><span class={`badge badge-${eq.match}`}>{eq.match.replace('_', ' ')}</span></td>
+              </tr>
+              {eq.note && (
+                <tr class="aligned-note-row">
+                  <td colspan="3" class="aligned-note">{eq.note}</td>
+                </tr>
+              )}
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  {vocabulary.external_values ? (
+    <div class="concept-section" id="values">
+      <h2>{t('vocab_detail.values')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="values" sectionLabel={t('vocab_detail.values')} locale={locale} /></h2>
+      <p>
+        {t('vocab_detail.external_values_note_prefix')}{vocabulary.standard ? ` (${vocabulary.standard.name})` : ''}.
+        {' '}{t('vocab_detail.external_values_note_suffix')}{vocabulary.standard?.uri ? (
+          <> or from the <a href={vocabulary.standard.uri} target="_blank" rel="noopener noreferrer">{t('vocab_detail.official_standard_page')}</a></>
+        ) : ''}.
+      </p>
+    </div>
+  ) : (
+    <div class="concept-section" id="values">
+      <h2>{t('vocab_detail.values')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="values" sectionLabel={t('vocab_detail.values')} locale={locale} /></h2>
+      <table class="data-table mobile-card-table">
+        <thead>
+          <tr>
+            <th>{t('vocab_detail.table.code')}</th>
+            <th>{t('vocab_detail.table.label')}</th>
+            <th>{t('vocab_detail.table.standard_code')}</th>
+            <th>{t('vocab_detail.table.definition')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {vocabulary.values.map((v) => (
+            <tr id={`val-${v.code}`}>
+              <td><code>{v.code}</code></td>
+              <td data-label={t('vocab_detail.table.label')}>{v.label[locale] ?? v.label.en}</td>
+              <td data-label={t('vocab_detail.table.standard_code')}>{v.standard_code || ""}</td>
+              <td data-label={t('vocab_detail.table.definition')}>{v.definition[locale] ?? v.definition.en}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  {bibRefs.length > 0 && (
+    <div class="concept-section" id="references">
+      <h2>{t('references.referenced_by_vocab')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="references" sectionLabel={t('references.referenced_by_vocab')} locale={locale} /></h2>
+      <ul class="entity-references-list">
+        {bibRefs.map((entry) => (
+          <li>
+            <span>{entry.short_title ?? entry.title}</span>
+            <span class="entity-references-publisher">{entry.publisher}{entry.year ? `, ${entry.year}` : ''}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  {otherRefs.length > 0 && (
+    <div class="concept-section" id="other-references">
+      <h2>{t('vocab_detail.references')}<SectionFeedback pageType="vocabulary" pageId={vocab} sectionId="other-references" sectionLabel={t('vocab_detail.references')} locale={locale} /></h2>
+      <ul class="vocab-references-list">
+        {otherRefs.map((ref) => (
+          <li>
+            <a href={ref.uri} target="_blank" rel="noopener noreferrer">{ref.name}</a>
+            <span class="vocab-references-relationship">{ref.relationship.replace(/_/g, ' ')}</span>
+            {ref.notes && <span class="vocab-references-notes">{ref.notes}</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+  </article>
+</Base>

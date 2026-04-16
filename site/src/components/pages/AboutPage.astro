@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import { defaultLocale, type Locale } from '../../i18n/languages';
+import { useTranslations, localePath } from '../../i18n/utils';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props;
+const t = useTranslations(locale);
+
+const titles: Record<Locale, { title: string; subtitle: string; description: string }> = {
+  en: {
+    title: 'About AidOps',
+    subtitle: 'Humanitarian assessment profiles and operational tooling built on PublicSchema.',
+    description: 'AidOps provides structured schema for humanitarian assessment profiles and operational data, built on PublicSchema.',
+  },
+  fr: {
+    title: 'À propos d\'AidOps',
+    subtitle: 'Profils d\'évaluation humanitaire et outillage opérationnel fondés sur PublicSchema.',
+    description: 'AidOps fournit un schéma structuré pour les profils d\'évaluation humanitaire et les données opérationnelles, fondé sur PublicSchema.',
+  },
+  es: {
+    title: 'Acerca de AidOps',
+    subtitle: 'Perfiles de evaluación humanitaria y herramientas operacionales basados en PublicSchema.',
+    description: 'AidOps proporciona un esquema estructurado para perfiles de evaluación humanitaria y datos operacionales, basado en PublicSchema.',
+  },
+};
+
+const { title, subtitle, description } = titles[locale];
+---
+<Base title={title} description={description} locale={locale}>
+  <article class="concept-narrative">
+    <div class="page-header">
+      <nav class="breadcrumb" aria-label={t('breadcrumb.home')}>
+        <a href={localePath('/', locale)}>{t('breadcrumb.home')}</a><span class="separator">/</span>{title}
+      </nav>
+      <h1>{title}</h1>
+      <p class="subtitle">{subtitle}</p>
+    </div>
+
+    <h2>What is AidOps?</h2>
+    <p>AidOps provides common definitions for humanitarian assessment and aid operations. It defines structured schemas for the data that humanitarian field programs collect, process, and share.</p>
+
+    <h2>Built on PublicSchema</h2>
+    <p>AidOps extends <a href="https://publicschema.org/">PublicSchema</a>, the open reference model for public service delivery. Core concepts such as <a href={localePath('/Person/', locale)}>Person</a>, <a href={localePath('/Location/', locale)}>Location</a>, and <a href={localePath('/Household/', locale)}>Household</a> are inherited from PublicSchema. AidOps adds assessment profile concepts and properties specific to humanitarian contexts.</p>
+
+    <h2>Assessment profiles</h2>
+    <p>The key addition in AidOps is a set of structured assessment profile schemas:</p>
+    <ul>
+      <li><a href={localePath('/FoodSecurityProfile/', locale)}>FoodSecurityProfile</a>: food security and nutrition observation data</li>
+      <li><a href={localePath('/FunctioningProfile/', locale)}>FunctioningProfile</a>: disability and functioning observation data (Washington Group)</li>
+      <li><a href={localePath('/AnthropometricProfile/', locale)}>AnthropometricProfile</a>: anthropometric measurements for nutrition assessment</li>
+      <li><a href={localePath('/SocioEconomicProfile/', locale)}>SocioEconomicProfile</a>: socioeconomic status and household conditions</li>
+    </ul>
+
+    <h2>Design principles</h2>
+    <p>AidOps follows the same design principles as PublicSchema: stable URIs, JSON-LD contexts, and compatibility with Verifiable Credentials. Definitions are written for program officers, not developers.</p>
+
+    <h2>License</h2>
+    <p>The reference model is published under Creative Commons (CC BY 4.0). The site code is Apache 2.0.</p>
+
+    <h2>Contribute</h2>
+    <p>AidOps is developed in the open. <a href="https://github.com/aidops-org/schema.aidops.org" target="_blank" rel="noopener noreferrer">Contributions and feedback are welcome on GitHub.</a></p>
+  </article>
+</Base>

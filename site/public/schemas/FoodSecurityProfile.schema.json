@@ -1,0 +1,446 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.aidops.org/schemas/FoodSecurityProfile.schema.json",
+  "title": "FoodSecurityProfile",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "subject": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "observation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "performed_by": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "instrument_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "software_used": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "administration_mode": {
+      "type": "string",
+      "enum": [
+        "self",
+        "proxy",
+        "assisted",
+        "mixed"
+      ],
+      "$comment": "https://publicschema.org/vocab/administration-mode"
+    },
+    "respondent": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "respondent_relationship": {
+      "type": "string",
+      "enum": [
+        "spouse",
+        "parent",
+        "child",
+        "sibling",
+        "grandparent",
+        "grandchild",
+        "guardian",
+        "caregiver",
+        "dependent",
+        "in_law",
+        "extended_family",
+        "payment_proxy",
+        "survivor",
+        "non_relative",
+        "other"
+      ],
+      "$comment": "https://publicschema.org/vocab/relationship-type"
+    },
+    "items_asked": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fcs_staples_days": {
+      "type": "integer"
+    },
+    "fcs_pulses_days": {
+      "type": "integer"
+    },
+    "fcs_vegetables_days": {
+      "type": "integer"
+    },
+    "fcs_fruit_days": {
+      "type": "integer"
+    },
+    "fcs_meat_fish_eggs_days": {
+      "type": "integer"
+    },
+    "fcs_dairy_days": {
+      "type": "integer"
+    },
+    "fcs_fat_oil_days": {
+      "type": "integer"
+    },
+    "fcs_sugar_days": {
+      "type": "integer"
+    },
+    "fcs_condiments_days": {
+      "type": "integer"
+    },
+    "rcsi_less_preferred_food_days": {
+      "type": "integer"
+    },
+    "rcsi_borrow_food_days": {
+      "type": "integer"
+    },
+    "rcsi_reduce_meal_size_days": {
+      "type": "integer"
+    },
+    "rcsi_reduce_meal_number_days": {
+      "type": "integer"
+    },
+    "rcsi_restrict_adult_consumption_days": {
+      "type": "integer"
+    },
+    "lcs_spent_savings": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_sold_household_items": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_reduced_nonfood_expenses": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_borrowed_money_food": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_sold_productive_assets": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_withdrew_children_from_school": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_reduced_essential_nonfood": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_consumed_seed_stock": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_harvested_immature_crops": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_sold_house_or_land": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_migrated_whole_household": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_child_labor": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_early_marriage": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "lcs_begging": {
+      "type": "string",
+      "enum": [
+        "never",
+        "no_longer_can",
+        "yes_adopted",
+        "not_applicable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-frequency"
+    },
+    "hdds_cereals_consumed": {
+      "type": "boolean"
+    },
+    "hdds_roots_tubers_consumed": {
+      "type": "boolean"
+    },
+    "hdds_vegetables_consumed": {
+      "type": "boolean"
+    },
+    "hdds_fruit_consumed": {
+      "type": "boolean"
+    },
+    "hdds_meat_poultry_offal_consumed": {
+      "type": "boolean"
+    },
+    "hdds_eggs_consumed": {
+      "type": "boolean"
+    },
+    "hdds_fish_seafood_consumed": {
+      "type": "boolean"
+    },
+    "hdds_legumes_nuts_seeds_consumed": {
+      "type": "boolean"
+    },
+    "hdds_milk_dairy_consumed": {
+      "type": "boolean"
+    },
+    "hdds_oils_fats_consumed": {
+      "type": "boolean"
+    },
+    "hdds_sweets_consumed": {
+      "type": "boolean"
+    },
+    "hdds_spices_condiments_beverages_consumed": {
+      "type": "boolean"
+    },
+    "fies_worried": {
+      "type": "boolean"
+    },
+    "fies_unable_healthy_food": {
+      "type": "boolean"
+    },
+    "fies_ate_few_foods": {
+      "type": "boolean"
+    },
+    "fies_skip_meal": {
+      "type": "boolean"
+    },
+    "fies_ate_less": {
+      "type": "boolean"
+    },
+    "fies_ran_out": {
+      "type": "boolean"
+    },
+    "fies_hungry": {
+      "type": "boolean"
+    },
+    "fies_went_whole_day_without": {
+      "type": "boolean"
+    },
+    "hhs_no_food": {
+      "type": "string",
+      "enum": [
+        "never",
+        "rarely",
+        "sometimes",
+        "often"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/hhs-frequency"
+    },
+    "hhs_went_sleep_hungry": {
+      "type": "string",
+      "enum": [
+        "never",
+        "rarely",
+        "sometimes",
+        "often"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/hhs-frequency"
+    },
+    "hhs_went_whole_day_without": {
+      "type": "string",
+      "enum": [
+        "never",
+        "rarely",
+        "sometimes",
+        "often"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/hhs-frequency"
+    },
+    "mahfp_months_adequate": {
+      "type": "integer"
+    },
+    "wdds_grains_consumed": {
+      "type": "boolean"
+    },
+    "wdds_pulses_consumed": {
+      "type": "boolean"
+    },
+    "wdds_nuts_seeds_consumed": {
+      "type": "boolean"
+    },
+    "wdds_dairy_consumed": {
+      "type": "boolean"
+    },
+    "wdds_meat_poultry_fish_consumed": {
+      "type": "boolean"
+    },
+    "wdds_eggs_consumed": {
+      "type": "boolean"
+    },
+    "wdds_dark_green_leafy_veg_consumed": {
+      "type": "boolean"
+    },
+    "wdds_vitamin_a_fruit_veg_consumed": {
+      "type": "boolean"
+    },
+    "wdds_other_vegetables_consumed": {
+      "type": "boolean"
+    },
+    "wdds_other_fruits_consumed": {
+      "type": "boolean"
+    },
+    "recall_period_days": {
+      "type": "integer"
+    },
+    "fcs_score": {
+      "type": "number"
+    },
+    "fcs_consumption_group": {
+      "type": "string",
+      "enum": [
+        "poor",
+        "borderline",
+        "acceptable"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/food-consumption-group"
+    },
+    "rcsi_score": {
+      "type": "integer"
+    },
+    "hdds_score": {
+      "type": "integer"
+    },
+    "mdd_w_score": {
+      "type": "integer"
+    },
+    "mdd_w_achieved": {
+      "type": "boolean"
+    },
+    "hhs_score": {
+      "type": "integer"
+    },
+    "hhs_category": {
+      "type": "string",
+      "enum": [
+        "little_to_none",
+        "moderate",
+        "severe",
+        "very_severe"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/hhs-category"
+    },
+    "fies_raw_score": {
+      "type": "integer"
+    },
+    "lcs_band": {
+      "type": "string",
+      "enum": [
+        "none",
+        "stress",
+        "crisis",
+        "emergency"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/lcs-band"
+    }
+  }
+}

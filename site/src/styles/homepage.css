@@ -1,0 +1,228 @@
+/* Hero */
+.h3-hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: linear-gradient(180deg, var(--color-accent-light) 0%, var(--color-bg) 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.h3-hero-inner {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: calc(var(--space-2xl) + var(--space-xl)) var(--space-lg) calc(var(--space-2xl) + var(--space-lg));
+}
+
+.h3-hero h1 {
+  font-size: 3rem;
+  margin: 0 0 var(--space-lg);
+  line-height: 1.1;
+}
+
+.h3-hero-lead {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  max-width: 34rem;
+  margin: 0 auto var(--space-xl);
+}
+
+.h3-hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.h3-header-sep {
+  display: block;
+  width: 1px;
+  height: 0.9rem;
+  background: var(--color-border);
+}
+
+/* Prose sections (white bg, content-width) */
+.h3-prose {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-2xl) 0;
+}
+
+.h3-prose + .h3-prose {
+  border-top: 1px solid var(--color-border-light);
+}
+
+.h3-prose h2 {
+  font-size: 1.35rem;
+  margin: 0 0 var(--space-md);
+}
+
+.h3-prose p {
+  font-family: var(--font-serif);
+  line-height: 1.75;
+  margin-bottom: var(--space-md);
+}
+
+.h3-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.h3-prose code {
+  background: var(--color-surface);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85em;
+}
+
+/* Schema index */
+.h3-idx {
+  margin-bottom: var(--space-xl);
+}
+
+.h3-idx:last-child {
+  margin-bottom: 0;
+}
+
+.h3-idx-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.h3-idx-header h3 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.h3-idx-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-pill);
+}
+
+.h3-idx-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.h3-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.4rem 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.h3-chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.h3-chip-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.h3-chip-more {
+  background: none;
+  border-style: dashed;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.h3-chip-more:hover {
+  border-style: solid;
+  color: var(--color-accent);
+}
+
+/* Profile cards */
+.h3-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.h3-profile {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.h3-profile h3 {
+  font-size: 1rem;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-sm);
+}
+
+.h3-profile h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.h3-profile h3 a:hover {
+  text-decoration: underline;
+}
+
+.h3-profile > p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+/* Closing line */
+.h3-closing {
+  font-family: var(--font-sans) !important;
+  font-size: 0.875rem !important;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2xl) !important;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.h3-closing a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.h3-closing a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .h3-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .h3-hero-inner {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .h3-profiles {
+    grid-template-columns: 1fr;
+  }
+}

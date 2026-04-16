@@ -1,0 +1,172 @@
+---
+import Base from '../../layouts/Base.astro';
+import { defaultLocale, type Locale } from '../../i18n/languages';
+import { useTranslations, localePath } from '../../i18n/utils';
+import { loadVocabulary } from '../../data/vocabulary';
+import type { Property } from '../../data/vocabulary';
+import {
+  conceptPath as conceptPathFor,
+  collectAllSubtypes,
+} from '../../data/concept-utils';
+import SectionFeedback from '../SectionFeedback.astro';
+import NonNormativeBanner from '../NonNormativeBanner.astro';
+
+interface Props {
+  termId: string;
+  locale?: Locale;
+}
+
+const { termId, locale = defaultLocale } = Astro.props;
+const t = useTranslations(locale);
+
+const vocab = loadVocabulary();
+const prop = vocab.properties[termId] as Property;
+const definition = prop.definition[locale] ?? prop.definition.en ?? '';
+
+const conceptLink = (id: string) => localePath(conceptPathFor(vocab, id), locale);
+
+const typeConceptRef = prop.type.match(/^concept:(.+)$/)?.[1];
+
+const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate';
+---
+<Base title={prop.label?.en ?? prop.id} description={definition} alternateJsonLd={`${prop.path}.jsonld`} ogType="article" locale={locale}>
+  <article>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": prop.label?.en ?? prop.id,
+    "description": definition,
+    "url": prop.uri,
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "AidOps",
+      "url": "https://schema.aidops.org/properties/"
+    }
+  })} />
+  <div class="page-header">
+    <nav class="breadcrumb" aria-label={t('breadcrumb.home')}>
+      <a href={localePath('/', locale)}>{t('breadcrumb.home')}</a>
+      <span class="separator">/</span>
+      <a href={localePath('/properties/', locale)}>{t('common.properties')}</a>
+      <span class="separator">/</span>
+      {prop.label?.[locale] ?? prop.label?.en ?? prop.id}
+    </nav>
+    <h1>{prop.label?.[locale] ?? prop.label?.en ?? prop.id}</h1>
+    <div class="meta-line">
+      <span class={`badge badge-${prop.maturity}`}>{prop.maturity}</span>
+      {prop.sensitivity && prop.sensitivity !== 'standard' && (
+        <span class={`badge badge-${prop.sensitivity}`}>{prop.sensitivity}</span>
+      )}
+      {prop.age_applicability && prop.age_applicability.map((band) => (
+        <span class={`badge badge-age-${band}`} title={t(`property_detail.age_band.${band}.range`)}>{t(`property_detail.age_band.${band}`)}</span>
+      ))}
+    </div>
+    <p class="definition-text">{definition}</p>
+    <p class="uri">{prop.uri}</p>
+    {isNonNormative && (
+      <NonNormativeBanner
+        maturity={prop.maturity as 'draft' | 'candidate'}
+        pageType="property"
+        pageId={termId}
+        locale={locale}
+      />
+    )}
+  </div>
+  <div class="download-links">
+    <a href={`${prop.path}.jsonld`} class="btn btn-secondary">{t('download.jsonld')}</a>
+  </div>
+
+  {prop.external_equivalents && Object.keys(prop.external_equivalents).length > 0 && (
+    <div class="concept-section" id="evidence">
+      <h2>{t('concept_detail.aligned_standards')}<SectionFeedback pageType="property" pageId={termId} sectionId="evidence" sectionLabel={t('concept_detail.aligned_standards')} locale={locale} /></h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>{t('concept_detail.table.standard')}</th>
+            <th>{t('concept_detail.table.equivalent')}</th>
+            <th>{t('concept_detail.table.match')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.entries(prop.external_equivalents).map(([key, eq]) => (
+            <>
+              <tr id={`eq-${key}`}>
+                <td>{eq.vocabulary}</td>
+                <td><a href={eq.uri} target="_blank" rel="noopener noreferrer">{eq.label}</a></td>
+                <td><span class={`badge badge-${eq.match}`}>{eq.match.replace('_', ' ')}</span></td>
+              </tr>
+              {eq.note && (
+                <tr class="aligned-note-row">
+                  <td colspan="3" class="aligned-note">{eq.note}</td>
+                </tr>
+              )}
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  <div class="concept-section" id="details">
+    <h2>{t('property_detail.details')}<SectionFeedback pageType="property" pageId={termId} sectionId="details" sectionLabel={t('property_detail.details')} locale={locale} /></h2>
+    <table class="data-table detail-kv-table">
+      <tbody>
+        <tr>
+          <td style="font-weight: 600; color: var(--color-text-muted); width: 10rem;">{t('property_detail.type')}</td>
+          <td>
+            {typeConceptRef
+              ? <a href={conceptLink(typeConceptRef)}><code>{prop.type}</code></a>
+              : <code>{prop.type}</code>
+            }
+            {typeConceptRef && (() => {
+              const subs = collectAllSubtypes(vocab, typeConceptRef);
+              return subs.length > 0 && (
+                <span class="subtype-hint">
+                  {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                </span>
+              );
+            })()}
+          </td>
+        </tr>
+        <tr>
+          <td style="font-weight: 600; color: var(--color-text-muted);">{t('property_detail.cardinality')}</td>
+          <td>{prop.cardinality}</td>
+        </tr>
+        {prop.vocabulary && (
+          <tr>
+            <td style="font-weight: 600; color: var(--color-text-muted);">{t('property_detail.vocabulary')}</td>
+            <td><a href={localePath(`/vocabularies/${prop.vocabulary}`, locale)}>{prop.vocabulary}</a></td>
+          </tr>
+        )}
+        {prop.references && (
+          <tr>
+            <td style="font-weight: 600; color: var(--color-text-muted);">{t('property_detail.references')}</td>
+            <td>
+              <a href={conceptLink(prop.references)}>{prop.references}</a>
+              {(() => {
+                const subs = collectAllSubtypes(vocab, prop.references);
+                return subs.length > 0 && (
+                  <span class="subtype-hint">
+                    {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                  </span>
+                );
+              })()}
+            </td>
+          </tr>
+        )}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="concept-section" id="used-by">
+    <h2>{t('property_detail.used_by')}<SectionFeedback pageType="property" pageId={termId} sectionId="used-by" sectionLabel={t('property_detail.used_by')} locale={locale} /></h2>
+    {prop.used_by.length > 0 ? (
+      <div class="type-links">
+        {prop.used_by.map((d) => <a href={conceptLink(d)}>{d}</a>)}
+      </div>
+    ) : (
+      <p style="color: var(--color-text-muted);">{t('property_detail.no_uses')}</p>
+    )}
+  </div>
+  </article>
+</Base>

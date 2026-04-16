@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.aidops.org/schemas/HazardEvent.schema.json",
+  "title": "HazardEvent",
+  "type": "object",
+  "properties": {
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "hazard_type": {
+      "type": "string",
+      "enum": [
+        "geophysical",
+        "meteorological",
+        "biological",
+        "environmental",
+        "technological",
+        "conflict",
+        "economic",
+        "other"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/hazard-type"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "extreme",
+        "severe",
+        "moderate",
+        "minor",
+        "unknown"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/event-severity"
+    },
+    "certainty": {
+      "type": "string",
+      "enum": [
+        "observed",
+        "likely",
+        "possible",
+        "unlikely",
+        "unknown"
+      ],
+      "$comment": "https://schema.aidops.org/vocab/event-certainty"
+    },
+    "description": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "affected_locations": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "affected_programs": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "string"
+        ]
+      }
+    },
+    "data_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
