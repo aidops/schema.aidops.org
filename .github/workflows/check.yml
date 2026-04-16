@@ -16,7 +16,7 @@ jobs:
       # Check out PS into ../v2 so fetch_dependency --local can find it.
       - uses: actions/checkout@v4
         with:
-          repository: publicschema/publicschema  # adjust to actual PS repo
+          repository: PublicSchema/publicschema.org
           path: ../v2
           sparse-checkout: schema
 
