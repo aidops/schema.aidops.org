@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://publicschema.org/schemas/concept.schema.json",
+  "title": "PublicSchema Concept",
+  "type": "object",
+  "required": ["id", "maturity", "definition", "properties"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][a-zA-Z]*$",
+      "description": "PascalCase concept identifier"
+    },
+    "maturity": {
+      "type": "string",
+      "enum": ["draft", "candidate", "normative"]
+    },
+    "label": {
+      "$ref": "#/$defs/multilingual_text",
+      "description": "Human-readable display name in each supported language"
+    },
+    "domain": {
+      "type": ["string", "null"],
+      "description": "Domain namespace. Null or omitted for universal concepts."
+    },
+    "abstract": {
+      "type": "boolean",
+      "description": "True if the concept is an abstract supertype that exists only to group shared properties; concrete instances are recorded as one of its subtypes."
+    },
+    "featured": {
+      "type": "boolean",
+      "description": "True if the concept should be highlighted on the homepage and other summary views."
+    },
+    "definition": {
+      "$ref": "#/$defs/multilingual_text"
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Property ID"
+      }
+    },
+    "property_groups": {
+      "type": "array",
+      "description": "Display grouping and ordering of properties on the concept page. When present, defines which properties appear in each category section. May include inherited properties.",
+      "items": {
+        "type": "object",
+        "required": ["category", "properties"],
+        "additionalProperties": false,
+        "properties": {
+          "category": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$",
+            "description": "Category ID referencing schema/categories.yaml"
+          },
+          "properties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Property ID"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "subtypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supertypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "convergence": {
+      "$ref": "#/$defs/convergence"
+    },
+    "external_equivalents": {
+      "type": ["object", "null"],
+      "description": "Mappings to equivalent classes or properties in external ontologies (e.g. SEMIC Core Vocabularies)",
+      "additionalProperties": {
+        "$ref": "#/$defs/external_equivalent"
+      }
+    }
+  },
+  "$defs": {
+    "multilingual_text": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string" },
+        "fr": { "type": "string" },
+        "es": { "type": "string" }
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "convergence": {
+      "type": "object",
+      "properties": {
+        "system_count": { "type": "integer", "minimum": 0 },
+        "total_systems": { "type": "integer", "minimum": 0 },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "external_equivalent": {
+      "type": "object",
+      "required": ["label", "match"],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Human-readable name in the external ontology"
+        },
+        "uri": {
+          "type": "string",
+          "format": "uri",
+          "description": "Full URI of the equivalent in the external ontology"
+        },
+        "match": {
+          "type": "string",
+          "enum": ["exact", "close", "broad", "narrow", "related", "name_match", "none"],
+          "description": "Semantic match quality. SKOS-aligned: exact (same meaning), close (similar with minor differences), broad (external concept is broader than ours), narrow (external concept is narrower than ours), related (associated but not hierarchical). Non-SKOS extensions: name_match (same name but unverified semantics), none (no equivalent exists)"
+        },
+        "vocabulary": {
+          "type": "string",
+          "description": "Which vocabulary or ontology module this comes from (e.g. 'Core Person', 'CCCEV')"
+        },
+        "note": {
+          "type": "string",
+          "description": "Semantic rationale for the match quality, especially for close or broad matches"
+        }
+      }
+    }
+  }
+}
