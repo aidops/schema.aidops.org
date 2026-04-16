@@ -19,8 +19,15 @@ fetch-publicschema:
 
 # --- Build ---
 
+# Remove generated artifacts from dist/ and site/public/
+clean:
+    rm -rf {{dist_dir}}/
+    rm -f {{site_dir}}/public/vocabulary.json
+    rm -rf {{site_dir}}/public/schemas/
+    rm -f {{site_dir}}/public/*.csv {{site_dir}}/public/*.xlsx
+
 # Generate dist/ from YAML sources (AidOps + vendored PublicSchema)
-build:
+build: clean
     uv run python -m build.build
     rsync -a --include='*.csv' --include='*.xlsx' --include='*/' --exclude='*' {{dist_dir}}/downloads/ {{site_dir}}/public/
     rsync -a {{dist_dir}}/schemas/ {{site_dir}}/public/schemas/

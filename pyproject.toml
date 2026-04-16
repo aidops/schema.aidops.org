@@ -9,6 +9,7 @@ dependencies = [
     "jsonschema>=4.20",
     "openpyxl>=3.1",
     "babel>=2.14",
+    "rdflib>=7.6.0",
 ]
 
 [tool.uv]
@@ -16,7 +17,6 @@ dev-dependencies = [
     "pyld>=3.0.0",
     "pyshacl>=0.31.0",
     "pytest>=8.0",
-    "rdflib>=7.6.0",
 ]
 
 [tool.ruff]

@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 from build.loader import load_merged_schema, load_yaml
+from build.utils import collect_inherited_ids
 
 # Type mappings from YAML types to JSON Schema
 TYPE_MAP = {
@@ -302,24 +303,6 @@ def _collect_all_properties(concept_id: str, merged_concepts: dict) -> list:
     return all_props
 
 
-def _collect_inherited_ids(
-    concept_data: dict,
-    merged_concepts: dict,
-    result: set[str],
-    visited: set[str],
-) -> None:
-    """Walk the supertype chain and collect all inherited property IDs."""
-    for st in concept_data.get("supertypes", []):
-        if st in visited or st not in merged_concepts:
-            continue
-        visited.add(st)
-        parent_data = merged_concepts[st]["data"]
-        for prop_entry in parent_data.get("properties", []):
-            pid = prop_entry["id"] if isinstance(prop_entry, dict) else prop_entry
-            result.add(pid)
-        _collect_inherited_ids(parent_data, merged_concepts, result, visited)
-
-
 def _compute_uri(base_uri: str, domain: str | None, id_str: str) -> str:
     """Compute a URI with optional domain namespace segment."""
     if domain:
@@ -352,6 +335,8 @@ def _compute_property_domain_namespace(
 
     domains = set()
     for tagged in merged_concepts.values():
+        if tagged.get("source") != "aidops":
+            continue
         concept_data = tagged["data"]
         for entry in concept_data.get("properties", []):
             pid = entry["id"] if isinstance(entry, dict) else entry
@@ -553,6 +538,9 @@ def build_vocabulary(schema_dir: Path) -> dict:
     for vocab_key, tagged in merged["vocabularies"].items():
         data = tagged["data"]
         source = tagged["source"]
+        # vocab_id is the bare name from YAML (e.g. "status").
+        # vocab_key is the path-based dict key (e.g. "sp/status") and is what
+        # drives URI construction below; vocab_id is kept for reference/output.
         vocab_id = data["id"]
         vocab_ns = data.get("domain")
         if source == "aidops":

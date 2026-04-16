@@ -44,7 +44,7 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 4 concepts
+        # AidOps has exactly 4 concepts; update this count when adding/removing AidOps concepts
         assert len(result["concepts"]) == 4, (
             f"Expected 4 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
@@ -56,12 +56,12 @@ class TestRealSchema:
             "HazardEvent",
         }
 
-        # 104 exclusive properties
+        # Update this count when adding/removing AidOps-owned properties
         assert len(result["properties"]) == 104, (
             f"Expected 104 properties, got {len(result['properties'])}"
         )
 
-        # 25 exclusive vocabularies
+        # Update this count when adding/removing AidOps-owned vocabularies
         assert len(result["vocabularies"]) == 25, (
             f"Expected 25 vocabularies, got {len(result['vocabularies'])}"
         )

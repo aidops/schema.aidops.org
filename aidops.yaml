@@ -9,5 +9,3 @@ publicschema:
   # Local path to PS schema/ directory (for development).
   # Used by `just fetch-publicschema` in --local mode.
   local_path: "../v2/schema"
-
-base_uri: "https://schema.aidops.org/"

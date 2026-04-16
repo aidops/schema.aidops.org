@@ -169,10 +169,10 @@ def _resolve_all_properties(concept_id: str, concepts: dict) -> list:
         for st in concepts[cid].get("supertypes", []):
             walk(st)
         for entry in concepts[cid].get("properties", []):
-            pid = entry["id"]
+            pid = entry["id"] if isinstance(entry, dict) else entry
             if pid not in seen_ids:
                 seen_ids.add(pid)
-                all_props.append(entry)
+                all_props.append({"id": pid})
 
     walk(concept_id)
     return all_props

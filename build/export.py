@@ -118,6 +118,7 @@ def _resolve_properties(
     with duplicates removed.
     """
     seen: set[str] = set()
+    visited: set[str] = set()
     resolved: list[dict] = []
 
     def _add_props(entries):
@@ -127,13 +128,17 @@ def _resolve_properties(
                 seen.add(prop_id)
                 resolved.append(all_properties[prop_id])
 
-    if all_concepts:
-        for parent_id in concept.get("supertypes", []):
-            if parent_id in all_concepts:
-                parent = all_concepts[parent_id]
-                _add_props(parent.get("properties", []))
+    def _walk(c: dict):
+        # Walk supertypes first so parent properties appear before child properties.
+        if all_concepts:
+            for parent_id in c.get("supertypes", []):
+                if parent_id in visited or parent_id not in all_concepts:
+                    continue
+                visited.add(parent_id)
+                _walk(all_concepts[parent_id])
+        _add_props(c.get("properties", []))
 
-    _add_props(concept.get("properties", []))
+    _walk(concept)
     return resolved
 
 
@@ -185,9 +190,9 @@ def generate_concept_csv(
 ):
     """Generate a flat CSV with one row per property for a concept."""
     concept = vocab_result["concepts"][concept_id]
-    properties = _resolve_properties(
-        concept, vocab_result["properties"], vocab_result["concepts"],
-    )
+    all_concepts = vocab_result.get("_all_concepts", vocab_result["concepts"])
+    all_properties = vocab_result.get("_all_properties", vocab_result["properties"])
+    properties = _resolve_properties(concept, all_properties, all_concepts)
     out_dir = _concept_dir(concept, output_dir)
     csv_path = out_dir / f"{concept_id}.csv"
 
@@ -238,9 +243,9 @@ def generate_definition_xlsx(
 ):
     """Generate a data dictionary workbook for a concept."""
     concept = vocab_result["concepts"][concept_id]
-    properties = _resolve_properties(
-        concept, vocab_result["properties"], vocab_result["concepts"],
-    )
+    all_concepts = vocab_result.get("_all_concepts", vocab_result["concepts"])
+    all_properties = vocab_result.get("_all_properties", vocab_result["properties"])
+    properties = _resolve_properties(concept, all_properties, all_concepts)
     vocabularies = vocab_result["vocabularies"]
     out_dir = _concept_dir(concept, output_dir)
     xlsx_path = out_dir / f"{concept_id}-definition.xlsx"
@@ -404,9 +409,9 @@ def generate_template_xlsx(
 ):
     """Generate a ready-to-fill data entry workbook for a concept."""
     concept = vocab_result["concepts"][concept_id]
-    properties = _resolve_properties(
-        concept, vocab_result["properties"], vocab_result["concepts"],
-    )
+    all_concepts = vocab_result.get("_all_concepts", vocab_result["concepts"])
+    all_properties = vocab_result.get("_all_properties", vocab_result["properties"])
+    properties = _resolve_properties(concept, all_properties, all_concepts)
     vocabularies = vocab_result["vocabularies"]
     out_dir = _concept_dir(concept, output_dir)
     xlsx_path = out_dir / f"{concept_id}-template.xlsx"

@@ -47,6 +47,12 @@ def fetch_local(project_root: Path) -> None:
             f"  (configured as '{local_path_str}' in aidops.yaml)"
         )
 
+    if local_path == (project_root / "schema").resolve():
+        raise ValueError(
+            "local_path points to AidOps's own schema/ directory; "
+            "it must point to PublicSchema's schema/"
+        )
+
     dest = project_root / "vendor" / "publicschema" / "schema"
     dest.parent.mkdir(parents=True, exist_ok=True)
 

@@ -57,6 +57,8 @@ class TestRealExports:
         rows = list(reader)
         prop_ids = [r[header.index("property")] for r in rows]
         assert "fcs_staples_days" in prop_ids
+        assert "subject" in prop_ids, "Inherited PS property 'subject' missing from CSV"
+        assert "observation_date" in prop_ids, "Inherited PS property 'observation_date' missing from CSV"
 
     def test_food_security_definition_xlsx_generated(self, tmp_path):
         result = build_vocabulary(SCHEMA_DIR)

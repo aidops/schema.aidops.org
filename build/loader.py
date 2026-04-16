@@ -16,12 +16,17 @@ def load_yaml(path: Path) -> dict:
 
 
 def load_all_yaml(directory: Path) -> dict[str, dict]:
-    """Load all YAML files from a directory, keyed by filename."""
+    """Load all YAML files from a directory, keyed by relative path from directory.
+
+    Using the relative path (e.g. 'sp/status.yaml') instead of just the
+    filename avoids silent overwrites when two files share the same name
+    in different subdirectories.
+    """
     result = {}
     if not directory.exists():
         return result
     for p in sorted(directory.rglob("*.yaml")):
-        result[p.name] = load_yaml(p)
+        result[str(p.relative_to(directory))] = load_yaml(p)
     return result
 
 

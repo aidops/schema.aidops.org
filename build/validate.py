@@ -21,6 +21,7 @@ from build.loader import (
     load_vocabularies_with_paths,
     load_yaml,
 )
+from build.utils import collect_inherited_ids
 
 SCHEMAS_DIR = Path(__file__).parent / "schemas"
 
@@ -112,7 +113,6 @@ def validate_schema_dir(schema_dir: Path) -> list[ValidationError]:
 
     # The AidOps _meta.yaml has an extra 'dependencies' block not in the base
     # PS meta schema. We validate against a relaxed copy that allows it.
-    relaxed_meta_schema = dict(meta_schema)
     relaxed_meta_schema = json.loads(json.dumps(meta_schema))
     relaxed_meta_schema.pop("additionalProperties", None)
     errors.extend(_validate_against_schema(meta, relaxed_meta_schema, "_meta.yaml"))
@@ -453,7 +453,7 @@ def validate_schema_dir(schema_dir: Path) -> list[ValidationError]:
             all_expected.add(pid)
         # Walk supertype chain using the merged concept index
         visited_supers: set[str] = set()
-        _collect_inherited_ids(
+        collect_inherited_ids(
             data, merged["concepts"], all_expected, visited_supers,
         )
         grouped_ids: set[str] = set()
@@ -481,27 +481,6 @@ def validate_schema_dir(schema_dir: Path) -> list[ValidationError]:
                     ))
 
     return errors
-
-
-def _collect_inherited_ids(
-    concept_data: dict,
-    merged_concepts: dict[str, dict],
-    result: set[str],
-    visited: set[str],
-) -> None:
-    """Walk the supertype chain and collect all inherited property IDs.
-
-    merged_concepts maps concept_id to {data, source} tagged dicts.
-    """
-    for st in concept_data.get("supertypes", []):
-        if st in visited or st not in merged_concepts:
-            continue
-        visited.add(st)
-        parent_data = merged_concepts[st]["data"]
-        for prop_entry in parent_data.get("properties", []):
-            pid = prop_entry["id"] if isinstance(prop_entry, dict) else prop_entry
-            result.add(pid)
-        _collect_inherited_ids(parent_data, merged_concepts, result, visited)
 
 
 def main():
