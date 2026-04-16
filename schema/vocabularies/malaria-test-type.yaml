@@ -1,0 +1,47 @@
+id: malaria-test-type
+maturity: draft
+label:
+  en: Malaria Test Type
+  fr: "Type de test de paludisme"
+  es: "Tipo de prueba de malaria"
+definition:
+  en: "The type of malaria diagnostic test performed on a child with fever. Distinguishes rapid diagnostic tests (RDT) from blood-slide microscopy, and captures whether any test was done. Used to classify fever episodes as test-confirmed vs presumptive malaria."
+  fr: "Le type de test diagnostique du paludisme effectué sur un enfant fiévreux. Distingue les tests de diagnostic rapide (TDR) de la microscopie par frottis sanguin, et indique si un test a été réalisé. Utilisé pour classifier les épisodes de fièvre comme paludisme confirmé ou présomptif."
+  es: "El tipo de prueba diagnóstica de malaria realizada en un niño con fiebre. Distingue las pruebas de diagnóstico rápido (PDR) de la microscopía por frotis de sangre, y captura si se realizó alguna prueba. Utilizado para clasificar los episodios febriles como malaria confirmada o presuntiva."
+values:
+- code: rdt
+  label:
+    en: Rapid diagnostic test (RDT)
+    fr: "Test de diagnostic rapide (TDR)"
+    es: "Prueba de diagnóstico rápido (PDR)"
+  definition:
+    en: "A malaria rapid diagnostic test — a lateral-flow immunoassay detecting malaria antigens. Results available within 15–30 minutes."
+    fr: "Un test de diagnostic rapide du paludisme — un immunoessai par flux latéral détectant les antigènes du paludisme. Résultats disponibles en 15 à 30 minutes."
+    es: "Una prueba de diagnóstico rápido de malaria: un inmunoensayo de flujo lateral que detecta antígenos de malaria. Resultados disponibles en 15 a 30 minutos."
+- code: blood_slide
+  label:
+    en: Blood slide (microscopy)
+    fr: "Frottis sanguin (microscopie)"
+    es: "Frotis de sangre (microscopía)"
+  definition:
+    en: "A malaria blood slide examined by microscopy — the gold-standard diagnostic method for species identification and parasite density."
+    fr: "Un frottis sanguin de paludisme examiné par microscopie — la méthode diagnostique de référence pour l'identification des espèces et la densité parasitaire."
+    es: "Un frotis de sangre de malaria examinado por microscopía: el método diagnóstico de referencia para la identificación de especies y la densidad parasitaria."
+- code: "no"
+  label:
+    en: No test done
+    fr: "Aucun test effectué"
+    es: "No se realizó prueba"
+  definition:
+    en: "No malaria diagnostic test was performed for this fever episode. Treatment, if given, is presumptive."
+    fr: "Aucun test diagnostique du paludisme n'a été réalisé pour cet épisode de fièvre. Le traitement, s'il est administré, est présomptif."
+    es: "No se realizó ninguna prueba diagnóstica de malaria para este episodio febril. El tratamiento, si se administró, es presuntivo."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: "Ne sait pas"
+    es: "No sabe"
+  definition:
+    en: "The caregiver does not know whether a malaria test was done."
+    fr: "Le soignant ne sait pas si un test de paludisme a été effectué."
+    es: "El cuidador no sabe si se realizó una prueba de malaria."

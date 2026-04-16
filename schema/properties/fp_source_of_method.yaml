@@ -1,0 +1,22 @@
+id: fp_source_of_method
+maturity: draft
+label:
+  en: "Source of current contraceptive method"
+  fr: "Source de la méthode contraceptive actuelle"
+  es: "Fuente del método anticonceptivo actual"
+
+definition:
+  en: "Where the woman obtained or received her current contraceptive method most recently (DHS FP3; MICS CP3). If she is using multiple methods, ask about the main or most recently obtained method. Ask only if fp_using_any_method = true. Relevant for supply chain and public/private sector analysis."
+  fr: "Où la femme a obtenu ou reçu sa méthode contraceptive actuelle le plus récemment (DHS FP3 ; MICS CP3). Si elle utilise plusieurs méthodes, demander pour la méthode principale ou la plus récemment obtenue. Demander uniquement si fp_using_any_method = vrai. Pertinent pour l'analyse de la chaîne d'approvisionnement et des secteurs public/privé."
+  es: "Dónde obtuvo o recibió la mujer su método anticonceptivo actual más recientemente (DHS FP3; MICS CP3). Si usa múltiples métodos, preguntar sobre el método principal o el más recientemente obtenido. Preguntar solo si fp_using_any_method = verdadero. Relevante para el análisis de la cadena de suministro y el sector público/privado."
+
+type: string
+cardinality: single
+core: false
+vocabulary: family-planning-source
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women, mics6]

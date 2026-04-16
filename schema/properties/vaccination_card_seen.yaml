@@ -1,0 +1,23 @@
+id: vaccination_card_seen
+maturity: draft
+label:
+  en: "Vaccination card seen by enumerator"
+  fr: "Carnet de vaccination vu par l'enquêteur"
+  es: "Carnet de vacunación visto por el encuestador"
+
+definition:
+  en: "Derived indicator: whether the child's vaccination card was physically seen by the enumerator. True when vaccination_card_exists equals yes_seen. Drives branching in the form: card-path (dates copied from card) vs recall-path (caregiver report)."
+  fr: "Indicateur dérivé : si le carnet de vaccination de l'enfant a été vu physiquement par l'enquêteur. Vrai lorsque vaccination_card_exists est égal à yes_seen. Oriente le branchement dans le formulaire : voie carnet (dates copiées du carnet) ou voie mémorisation (déclaration du soignant)."
+  es: "Indicador derivado: si el carnet de vacunación del niño fue visto físicamente por el encuestador. Verdadero cuando vaccination_card_exists es igual a yes_seen. Determina el flujo en el formulario: vía carnet (fechas copiadas del carnet) o vía memoria (declaración del cuidador)."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

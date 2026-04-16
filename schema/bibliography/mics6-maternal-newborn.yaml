@@ -1,0 +1,37 @@
+id: mics6-maternal-newborn
+title: "MICS6 Women's Questionnaire — MN (Maternal and Newborn Health) Module"
+short_title: MICS6 MN Module
+publisher: UNICEF
+year: 2017
+type: guidance_publication
+domain: humanitarian
+uri: "https://mics.unicef.org/tools"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MaternalNewbornHealthProfile
+  vocabularies:
+    - maternity-care-provider
+    - place-of-delivery
+    - anc-visit-count-group
+    - mnh-breastfeeding-initiation-timing
+  properties:
+    - total_live_births
+    - total_stillbirths
+    - anc_any_visit
+    - anc_visits_count
+    - anc_first_visit_gestational_age_months
+    - anc_provider_type
+    - anc_content_blood_pressure
+    - anc_content_urine_sample
+    - anc_content_blood_sample
+    - anc_iron_supplementation
+    - delivery_place
+    - delivery_attendant_type
+    - newborn_weighed_at_birth
+    - newborn_birth_weight_kg
+    - breastfeeding_ever_initiated
+    - breastfeeding_initiation_hours
+    - breastfeeding_early_initiation

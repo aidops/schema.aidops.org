@@ -1,0 +1,23 @@
+id: vacc_bcg
+maturity: draft
+label:
+  en: "BCG vaccination status"
+  fr: "Statut vaccinal BCG"
+  es: "Estado de vacunación BCG"
+
+definition:
+  en: "Whether the child received the BCG (Bacille Calmette-Guérin) vaccine against tuberculosis. Published recall wording: 'Has (name) ever been given a BCG vaccination against tuberculosis — that is, an injection in the arm or shoulder that caused a scar?' BCG scar may be visually confirmed by the enumerator. One dose; recommended at birth or in the first week of life per the WHO EPI schedule. DHS code h2; MICS codes IM2 / IM11."
+  fr: "Si l'enfant a reçu le vaccin BCG (bacille de Calmette et Guérin) contre la tuberculose. Formulation de rappel publiée : « (Prénom) a-t-il/elle déjà reçu un vaccin BCG contre la tuberculose — c'est-à-dire une injection dans le bras ou l'épaule qui a laissé une cicatrice ? » La cicatrice BCG peut être confirmée visuellement par l'enquêteur. Une dose ; recommandée à la naissance ou dans la première semaine de vie selon le calendrier EPI de l'OMS. Code DHS h2 ; codes MICS IM2 / IM11."
+  es: "Si el niño recibió la vacuna BCG (bacilo de Calmette y Guérin) contra la tuberculosis. Redacción de recordatorio publicada: '¿Alguna vez recibió (nombre) una vacuna BCG contra la tuberculosis — es decir, una inyección en el brazo o el hombro que dejó una cicatriz?' La cicatriz BCG puede ser confirmada visualmente por el encuestador. Una dosis; recomendada al nacer o en la primera semana de vida según el calendario EPI de la OMS. Código DHS h2; códigos MICS IM2 / IM11."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

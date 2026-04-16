@@ -1,0 +1,21 @@
+id: weai_income_control_nonagr
+maturity: draft
+label:
+  en: "WEAI income control — non-agricultural work"
+  fr: "WEAI contrôle du revenu — travail non agricole"
+  es: "WEAI control de ingresos — trabajo no agrícola"
+
+definition:
+  en: "How much input the respondent had in decisions about how to use income earned from non-agricultural work (wage employment, casual labor, trade, services). Part of pro-WEAI Indicator B4 (control over use of income). Skip if the respondent had no non-agricultural income. Adequacy requires code input_some_decisions or input_most_all_decisions."
+  fr: "Dans quelle mesure le répondant a participé aux décisions sur l'utilisation du revenu provenant du travail non agricole (emploi salarié, travail occasionnel, commerce, services). Fait partie de l'indicateur B4 du pro-WEAI (contrôle de l'utilisation du revenu). Ignorer si le répondant n'a pas de revenus non agricoles. L'adéquation nécessite le code input_some_decisions ou input_most_all_decisions."
+  es: "En qué medida el encuestado tuvo participación en las decisiones sobre cómo usar los ingresos del trabajo no agrícola (empleo asalariado, trabajo eventual, comercio, servicios). Parte del Indicador B4 del pro-WEAI (control sobre el uso de ingresos). Omitir si el encuestado no tuvo ingresos no agrícolas. La adecuación requiere el código input_some_decisions o input_most_all_decisions."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-decision-input-4
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

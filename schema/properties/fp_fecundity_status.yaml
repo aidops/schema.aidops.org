@@ -1,0 +1,22 @@
+id: fp_fecundity_status
+maturity: draft
+label:
+  en: "Fecundity status"
+  fr: "Statut de fécondité"
+  es: "Estado de fecundidad"
+
+definition:
+  en: "Proxy classification of the woman's biological capacity to conceive, derived from the DHS multi-question approach (desire for children, time trying, menstrual history; DHS V625, V627, V629). Ask if the woman has never been pregnant and does not desire more children, or if she has been trying to get pregnant for 2 or more years. Women classified as infecund (infecund_declared, menopausal, hysterectomy) are excluded from the unmet need denominator."
+  fr: "Classification approximative de la capacité biologique de la femme à concevoir, dérivée de l'approche DHS à questions multiples (désir d'enfants, durée des tentatives, historique menstruel; DHS V625, V627, V629). Demander si la femme n'a jamais été enceinte et ne désire pas d'autres enfants, ou si elle essaie de tomber enceinte depuis 2 ans ou plus. Les femmes classées comme infécondes (infecund_declared, menopausal, hysterectomy) sont exclues du dénominateur de besoin non satisfait."
+  es: "Clasificación proxy de la capacidad biológica de la mujer para concebir, derivada del enfoque DHS de múltiples preguntas (deseo de hijos, tiempo intentando, historial menstrual; DHS V625, V627, V629). Preguntar si la mujer nunca ha estado embarazada y no desea más hijos, o si ha estado intentando quedar embarazada durante 2 años o más. Las mujeres clasificadas como infecundas (infecund_declared, menopausal, hysterectomy) se excluyen del denominador de necesidad insatisfecha."
+
+type: string
+cardinality: single
+core: false
+vocabulary: fecundity-status
+references: null
+category: unmet_need
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women]

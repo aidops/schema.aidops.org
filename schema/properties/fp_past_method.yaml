@@ -1,0 +1,22 @@
+id: fp_past_method
+maturity: draft
+label:
+  en: "Past contraceptive method(s) ever used"
+  fr: "Méthode(s) contraceptive(s) déjà utilisée(s) dans le passé"
+  es: "Método(s) anticonceptivo(s) alguna vez utilizado(s) en el pasado"
+
+definition:
+  en: "Which contraceptive method or methods the woman has ever used in the past (DHS). Multi-select. Ask only if fp_ever_used_any_method = true AND fp_using_any_method = false. Uses the same family-planning-method vocabulary as fp_current_method. Abbreviated in rapid assessments."
+  fr: "Quelle(s) méthode(s) contraceptive(s) la femme a déjà utilisée(s) dans le passé (DHS). Sélection multiple. Demander uniquement si fp_ever_used_any_method = vrai ET fp_using_any_method = faux. Utilise le même vocabulaire family-planning-method que fp_current_method. Abrégé dans les évaluations rapides."
+  es: "Qué método o métodos anticonceptivos la mujer ha utilizado alguna vez en el pasado (DHS). Selección múltiple. Preguntar solo si fp_ever_used_any_method = verdadero Y fp_using_any_method = falso. Usa el mismo vocabulario family-planning-method que fp_current_method. Abreviado en evaluaciones rápidas."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: family-planning-method
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women]

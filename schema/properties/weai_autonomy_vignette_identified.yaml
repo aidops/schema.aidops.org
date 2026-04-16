@@ -1,0 +1,21 @@
+id: weai_autonomy_vignette_identified
+maturity: draft
+label:
+  en: "WEAI autonomy vignette — identified regulation"
+  fr: "WEAI vignette d'autonomie — régulation identifiée"
+  es: "WEAI viñeta de autonomía — regulación identificada"
+
+definition:
+  en: "Relative Autonomy Index (RAI) vignette measuring identified (autonomous) motivation: how much the respondent identifies with a person who uses income according to their own judgment about what is best. One of three required pro-WEAI vignettes for Indicator A1 (autonomy in income). RAI weighting: +3. Adequacy for A1 is computed from the weighted sum of all three vignettes (RAI ≥ 1)."
+  fr: "Vignette de l'indice d'autonomie relative (RAI) mesurant la motivation identifiée (autonome) : dans quelle mesure le répondant s'identifie à une personne qui utilise ses revenus selon son propre jugement sur ce qui est le mieux. L'une des trois vignettes requises du pro-WEAI pour l'indicateur A1 (autonomie sur le revenu). Pondération RAI : +3. L'adéquation pour A1 est calculée à partir de la somme pondérée des trois vignettes (RAI ≥ 1)."
+  es: "Viñeta del Índice de Autonomía Relativa (RAI) que mide la motivación identificada (autónoma): en qué medida el encuestado se identifica con una persona que usa sus ingresos según su propio criterio sobre lo que es mejor. Una de las tres viñetas requeridas del pro-WEAI para el Indicador A1 (autonomía en los ingresos). Ponderación RAI: +3. La adecuación para A1 se calcula a partir de la suma ponderada de las tres viñetas (RAI ≥ 1)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-autonomy-scale
+references: null
+category: intrinsic_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

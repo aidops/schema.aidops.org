@@ -1,0 +1,187 @@
+id: family-planning-method
+maturity: draft
+label:
+  en: Family Planning Method
+  fr: "Méthode de planification familiale"
+  es: "Método de planificación familiar"
+definition:
+  en: "Contraceptive method used to delay, space, or prevent pregnancy. Codes follow the canonical DHS-7/DHS-8 modern and traditional method classification. Used as a multi-select vocabulary for current use and past use questions. Shared between ReproductiveHealthProfile and MaternalNewbornHealthProfile (postpartum contraception)."
+  fr: "Méthode contraceptive utilisée pour retarder, espacer ou prévenir une grossesse. Les codes suivent la classification canonique DHS-7/DHS-8 des méthodes modernes et traditionnelles. Utilisé comme vocabulaire à sélection multiple pour les questions sur l'utilisation actuelle et passée. Partagé entre ReproductiveHealthProfile et MaternalNewbornHealthProfile (contraception post-partum)."
+  es: "Método anticonceptivo utilizado para retrasar, espaciar o prevenir el embarazo. Los códigos siguen la clasificación canónica de métodos modernos y tradicionales DHS-7/DHS-8. Se utiliza como vocabulario de selección múltiple para preguntas sobre uso actual y pasado. Compartido entre ReproductiveHealthProfile y MaternalNewbornHealthProfile (anticoncepción posparto)."
+values:
+  - code: female_sterilization
+    label:
+      en: Female sterilization
+      fr: "Stérilisation féminine"
+      es: "Esterilización femenina"
+    definition:
+      en: "Permanent surgical method (tubal ligation). Modern method."
+      fr: "Méthode chirurgicale permanente (ligature des trompes). Méthode moderne."
+      es: "Método quirúrgico permanente (ligadura de trompas). Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: male_sterilization
+    label:
+      en: Male sterilization
+      fr: "Stérilisation masculine"
+      es: "Esterilización masculina"
+    definition:
+      en: "Permanent surgical method (vasectomy). Modern method."
+      fr: "Méthode chirurgicale permanente (vasectomie). Méthode moderne."
+      es: "Método quirúrgico permanente (vasectomía). Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: pill
+    label:
+      en: Oral contraceptive pill
+      fr: "Pilule contraceptive orale"
+      es: "Píldora anticonceptiva oral"
+    definition:
+      en: "Combined or progestin-only oral contraceptive pill. Modern method."
+      fr: "Pilule contraceptive orale combinée ou à base de progestatif uniquement. Méthode moderne."
+      es: "Píldora anticonceptiva oral combinada o solo progestina. Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: iud
+    label:
+      en: IUD (intrauterine device)
+      fr: "DIU (dispositif intra-utérin)"
+      es: "DIU (dispositivo intrauterino)"
+    definition:
+      en: "Copper or hormonal intrauterine device. Modern method."
+      fr: "Dispositif intra-utérin en cuivre ou hormonal. Méthode moderne."
+      es: "Dispositivo intrauterino de cobre u hormonal. Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: injectable
+    label:
+      en: Injectable
+      fr: "Contraceptif injectable"
+      es: "Inyectable"
+    definition:
+      en: "Hormonal injectable contraceptive (e.g., Depo-Provera, Sayana Press, Noristerat). Modern method."
+      fr: "Contraceptif injectable hormonal (p. ex. Depo-Provera, Sayana Press, Noristerone). Méthode moderne."
+      es: "Anticonceptivo inyectable hormonal (p. ej., Depo-Provera, Sayana Press, Noristerat). Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: implant
+    label:
+      en: Implant
+      fr: "Implant"
+      es: "Implante"
+    definition:
+      en: "Subdermal hormonal implant (e.g., Norplant, Jadelle, Implanon, Nexplanon). Modern method."
+      fr: "Implant hormonal sous-cutané (p. ex. Norplant, Jadelle, Implanon, Nexplanon). Méthode moderne."
+      es: "Implante hormonal subdérmico (p. ej., Norplant, Jadelle, Implanon, Nexplanon). Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: male_condom
+    label:
+      en: Male condom
+      fr: "Préservatif masculin"
+      es: "Condón masculino"
+    definition:
+      en: "Male latex or non-latex condom. Modern method; also provides STI/HIV protection."
+      fr: "Préservatif masculin en latex ou non-latex. Méthode moderne ; offre également une protection contre les IST/VIH."
+      es: "Condón masculino de látex o no látex. Método moderno; también protege contra ITS/VIH."
+    notes:
+      en: "DHS method_type = modern"
+  - code: female_condom
+    label:
+      en: Female condom
+      fr: "Préservatif féminin"
+      es: "Condón femenino"
+    definition:
+      en: "Female (internal) condom. Modern method; also provides STI/HIV protection."
+      fr: "Préservatif féminin (interne). Méthode moderne ; offre également une protection contre les IST/VIH."
+      es: "Condón femenino (interno). Método moderno; también protege contra ITS/VIH."
+    notes:
+      en: "DHS method_type = modern"
+  - code: emergency_contraception
+    label:
+      en: Emergency contraception
+      fr: "Contraception d'urgence"
+      es: "Anticoncepción de emergencia"
+    definition:
+      en: "Emergency contraceptive pills (levonorgestrel or ulipristal acetate) used after unprotected intercourse. Modern method."
+      fr: "Pilules contraceptives d'urgence (lévonorgestrel ou acétate d'ulipristal) utilisées après un rapport non protégé. Méthode moderne."
+      es: "Píldoras anticonceptivas de emergencia (levonorgestrel o acetato de ulipristal) utilizadas después de una relación sexual sin protección. Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: standard_days_method
+    label:
+      en: Standard days method
+      fr: "Méthode des jours standard"
+      es: "Método de días estándar"
+    definition:
+      en: "Fertility awareness method using CycleBeads to identify fertile days (days 8-19 of a 26-32 day cycle). Modern method per DHS-7."
+      fr: "Méthode de sensibilisation à la fertilité utilisant les CycleBeads pour identifier les jours fertiles (jours 8 à 19 d'un cycle de 26 à 32 jours). Méthode moderne selon DHS-7."
+      es: "Método de conciencia de fertilidad que usa CycleBeads para identificar los días fértiles (días 8 al 19 de un ciclo de 26 a 32 días). Método moderno según DHS-7."
+    notes:
+      en: "DHS method_type = modern"
+  - code: lam
+    label:
+      en: Lactational amenorrhea method (LAM)
+      fr: "Méthode de l'aménorrhée lactationnelle (MAMA)"
+      es: "Método de la amenorrea de la lactancia (MELA)"
+    definition:
+      en: "Temporary postpartum method for exclusively breastfeeding women with amenorrhea within the first six months after birth. Modern method."
+      fr: "Méthode temporaire post-partum pour les femmes qui allaitent exclusivement avec aménorrhée dans les six premiers mois suivant la naissance. Méthode moderne."
+      es: "Método temporal posparto para mujeres que amamantan exclusivamente con amenorrea dentro de los primeros seis meses después del parto. Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: rhythm_periodic_abstinence
+    label:
+      en: Rhythm / periodic abstinence
+      fr: "Rythme / abstinence périodique"
+      es: "Ritmo / abstinencia periódica"
+    definition:
+      en: "Calendar-based fertility awareness method in which couples abstain during the estimated fertile days of the menstrual cycle. Traditional method."
+      fr: "Méthode de sensibilisation à la fertilité basée sur le calendrier dans laquelle les couples s'abstiennent pendant les jours fertiles estimés du cycle menstruel. Méthode traditionnelle."
+      es: "Método de conciencia de fertilidad basado en el calendario en el que las parejas se abstienen durante los días fértiles estimados del ciclo menstrual. Método tradicional."
+    notes:
+      en: "DHS method_type = traditional"
+  - code: withdrawal
+    label:
+      en: Withdrawal
+      fr: "Retrait"
+      es: "Coito interrumpido"
+    definition:
+      en: "Coitus interruptus (withdrawal of the penis before ejaculation). Traditional method."
+      fr: "Coïtus interruptus (retrait du pénis avant l'éjaculation). Méthode traditionnelle."
+      es: "Coito interrumpido (retirada del pene antes de la eyaculación). Método tradicional."
+    notes:
+      en: "DHS method_type = traditional"
+  - code: other_modern
+    label:
+      en: Other modern method
+      fr: "Autre méthode moderne"
+      es: "Otro método moderno"
+    definition:
+      en: "Any modern contraceptive method not listed above (e.g., diaphragm, spermicide, contraceptive patch or ring). Modern method."
+      fr: "Toute méthode contraceptive moderne non répertoriée ci-dessus (p. ex. diaphragme, spermicide, patch ou anneau contraceptif). Méthode moderne."
+      es: "Cualquier método anticonceptivo moderno no listado arriba (p. ej., diafragma, espermicida, parche o anillo anticonceptivo). Método moderno."
+    notes:
+      en: "DHS method_type = modern"
+  - code: other_traditional
+    label:
+      en: Other traditional method
+      fr: "Autre méthode traditionnelle"
+      es: "Otro método tradicional"
+    definition:
+      en: "Any traditional method not listed above (e.g., herbs, abstinence based on perceived infertile period). Traditional method."
+      fr: "Toute méthode traditionnelle non répertoriée ci-dessus (p. ex. herbes, abstinence basée sur la période infertile supposée). Méthode traditionnelle."
+      es: "Cualquier método tradicional no listado arriba (p. ej., hierbas, abstinencia basada en el período infértil percibido). Método tradicional."
+    notes:
+      en: "DHS method_type = traditional"
+  - code: none
+    label:
+      en: Not using any method
+      fr: "N'utilise aucune méthode"
+      es: "No utiliza ningún método"
+    definition:
+      en: "The respondent is not currently using any contraceptive method. Included for completeness in past-use or method-switch questions."
+      fr: "La répondante n'utilise actuellement aucune méthode contraceptive. Inclus par souci d'exhaustivité dans les questions sur l'utilisation passée ou le changement de méthode."
+      es: "La encuestada no utiliza actualmente ningún método anticonceptivo. Se incluye por completitud en preguntas sobre uso pasado o cambio de método."
+    notes:
+      en: "DHS method_type = none (not applicable)"

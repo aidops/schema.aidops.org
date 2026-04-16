@@ -1,0 +1,21 @@
+id: weai_decision_capacity_crop
+maturity: draft
+label:
+  en: "WEAI decision capacity — crop production"
+  fr: "WEAI capacité décisionnelle — production agricole"
+  es: "WEAI capacidad de decisión — producción de cultivos"
+
+definition:
+  en: "To what extent the respondent feels they could participate in decisions about crop production if they wanted to. Used in pro-WEAI Indicator B1 Condition B: adequacy requires medium_extent or high_extent when the respondent reported only input_some_decisions. Skip this question if the respondent already reported input_most_all_decisions (Condition A is met)."
+  fr: "Dans quelle mesure le répondant pense-t-il qu'il pourrait participer aux décisions concernant la production agricole s'il le souhaitait. Utilisé dans la condition B de l'indicateur B1 du pro-WEAI : l'adéquation nécessite medium_extent ou high_extent lorsque le répondant n'a déclaré que input_some_decisions. Ignorer cette question si le répondant a déjà déclaré input_most_all_decisions (la condition A est satisfaite)."
+  es: "En qué medida el encuestado siente que podría participar en decisiones sobre producción de cultivos si quisiera. Utilizado en la Condición B del Indicador B1 del pro-WEAI: la adecuación requiere medium_extent o high_extent cuando el encuestado reportó solo input_some_decisions. Omitir esta pregunta si el encuestado ya reportó input_most_all_decisions (la Condición A se cumple)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-participation-capacity-4
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

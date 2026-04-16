@@ -1,0 +1,23 @@
+id: vaccination_card_exists
+maturity: draft
+label:
+  en: "Vaccination card exists"
+  fr: "Carnet de vaccination existant"
+  es: "Carnet de vacunación existente"
+
+definition:
+  en: "Whether the child has a home-based vaccination card, health card, or other home-based vaccination record, and whether it was physically seen by the enumerator. Published wording: 'Does (child name) have a vaccination card, health card, or other home-based vaccination record?' Enumerator should ask to see the card. This item gates the card-path vs recall-path in the vaccination section."
+  fr: "Si l'enfant possède un carnet de vaccination, une carte de santé ou tout autre document de vaccination à domicile, et s'il a été vu physiquement par l'enquêteur. Formulation publiée : « (Prénom de l'enfant) a-t-il/elle un carnet de vaccination, une carte de santé ou un autre document de vaccination à domicile ? » L'enquêteur doit demander à voir le carnet. Cet item oriente vers la voie carnet ou la voie mémorisation dans la section vaccination."
+  es: "Si el niño tiene un carnet de vacunación, tarjeta de salud u otro registro de vacunación domiciliario, y si fue visto físicamente por el encuestador. Redacción publicada: '¿Tiene (nombre del niño) un carnet de vacunación, tarjeta de salud u otro registro de vacunación domiciliario?' El encuestador debe pedir ver el carnet. Este ítem dirige hacia la vía carnet o la vía memoria en la sección de vacunación."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-card-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

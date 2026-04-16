@@ -1,0 +1,23 @@
+id: vacc_rota1
+maturity: draft
+label:
+  en: "Rotavirus dose 1 vaccination status"
+  fr: "Statut vaccinal rotavirus dose 1"
+  es: "Estado de vacunación rotavirus dosis 1"
+
+definition:
+  en: "Whether the child received the first dose of rotavirus vaccine (oral drops to protect against diarrhea from rotavirus) from approximately 6 weeks of age. Published recall wording: 'Has (name) been given a rotavirus vaccine — oral drops to protect against diarrhea from rotavirus — 1st dose?' Two- or three-dose schedule depending on the vaccine product and national schedule. Country-specific. DHS code h_rt1; MICS code IM7a."
+  fr: "Si l'enfant a reçu la première dose du vaccin antirotavirus (gouttes orales pour protéger contre la diarrhée à rotavirus) à partir de 6 semaines environ. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu un vaccin antirotavirus — des gouttes orales pour protéger contre la diarrhée à rotavirus — 1re dose ? » Schéma à 2 ou 3 doses selon le produit vaccinal et le calendrier national. Spécifique au pays. Code DHS h_rt1 ; code MICS IM7a."
+  es: "Si el niño recibió la primera dosis de vacuna contra rotavirus (gotas orales para proteger contra la diarrea por rotavirus) a partir de aproximadamente 6 semanas de edad. Redacción de recordatorio publicada: '¿Recibió (nombre) una vacuna contra el rotavirus — gotas orales para proteger contra la diarrea por rotavirus — 1.a dosis?' Esquema de 2 o 3 dosis según el producto vacunal y el calendario nacional. Específica por país. Código DHS h_rt1; código MICS IM7a."
+
+type: string
+cardinality: single
+core: false
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

@@ -1,0 +1,21 @@
+id: weai_autonomy_vignette_introjected
+maturity: draft
+label:
+  en: "WEAI autonomy vignette — introjected regulation"
+  fr: "WEAI vignette d'autonomie — régulation introjectée"
+  es: "WEAI viñeta de autonomía — regulación introyectada"
+
+definition:
+  en: "Relative Autonomy Index (RAI) vignette measuring introjected motivation: how much the respondent identifies with a person who uses income in the way their family or community expects, without being told to. One of three required pro-WEAI vignettes for Indicator A1 (autonomy in income). RAI weighting: −1. Adequacy for A1 is computed from the weighted sum of all three vignettes (RAI ≥ 1)."
+  fr: "Vignette de l'indice d'autonomie relative (RAI) mesurant la motivation introjectée : dans quelle mesure le répondant s'identifie à une personne qui utilise ses revenus comme sa famille ou sa communauté l'attend, sans y être obligée. L'une des trois vignettes requises du pro-WEAI pour l'indicateur A1 (autonomie sur le revenu). Pondération RAI : −1. L'adéquation pour A1 est calculée à partir de la somme pondérée des trois vignettes (RAI ≥ 1)."
+  es: "Viñeta del Índice de Autonomía Relativa (RAI) que mide la motivación introyectada: en qué medida el encuestado se identifica con una persona que usa sus ingresos de la manera en que su familia o comunidad espera, sin que se lo digan. Una de las tres viñetas requeridas del pro-WEAI para el Indicador A1 (autonomía en los ingresos). Ponderación RAI: −1. La adecuación para A1 se calcula a partir de la suma ponderada de las tres viñetas (RAI ≥ 1)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-autonomy-scale
+references: null
+category: intrinsic_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

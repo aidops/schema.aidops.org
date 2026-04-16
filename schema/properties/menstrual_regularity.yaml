@@ -1,0 +1,22 @@
+id: menstrual_regularity
+maturity: draft
+label:
+  en: "Menstrual regularity"
+  fr: "Régularité du cycle menstruel"
+  es: "Regularidad menstrual"
+
+definition:
+  en: "Whether the woman's menstrual periods are regular, irregular, or absent (WHO clinical guidance). Ask only if the woman is not using a hormonal method (which alters cycle pattern) and fp_fecundity_status is not 'menopausal' or 'hysterectomy'. Irregular or absent menses may indicate health conditions (PCOS, thyroid disorder, pregnancy) and affect fecundity assessment. Not a DHS or MICS standard question; drawn from WHO reproductive health clinical indicators."
+  fr: "Si les règles de la femme sont régulières, irrégulières ou absentes (recommandations cliniques de l'OMS). Demander uniquement si la femme n'utilise pas de méthode hormonale (qui altère le schéma du cycle) et si fp_fecundity_status n'est pas 'menopausal' ou 'hysterectomy'. Des règles irrégulières ou absentes peuvent indiquer des problèmes de santé (SOPK, troubles thyroïdiens, grossesse) et affecter l'évaluation de la fécondité. Ce n'est pas une question DHS ou MICS standard ; tirée des indicateurs cliniques de santé reproductive de l'OMS."
+  es: "Si los períodos menstruales de la mujer son regulares, irregulares o ausentes (guía clínica de la OMS). Preguntar solo si la mujer no usa un método hormonal (que altera el patrón del ciclo) y si fp_fecundity_status no es 'menopausal' o 'hysterectomy'. La menstruación irregular o ausente puede indicar condiciones de salud (SOP, trastorno tiroideo, embarazo) y afectar la evaluación de fecundidad. No es una pregunta estándar de DHS o MICS; tomada de los indicadores clínicos de salud reproductiva de la OMS."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: regular / irregular / absent / does_not_menstruate
+vocabulary: null
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult

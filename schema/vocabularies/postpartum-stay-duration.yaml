@@ -1,0 +1,65 @@
+id: postpartum-stay-duration
+maturity: draft
+label:
+  en: Postpartum Facility Stay Duration
+  fr: "Durée du séjour en établissement après l'accouchement"
+  es: "Duración de la estancia en el establecimiento posparto"
+definition:
+  en: "How long the woman stayed in the health facility after delivery. DHS-8 m61 categories. WHO PNC 2022 recommends at least 24 hours in a facility after birth for a normal vaginal delivery. Stays of less than 6 hours indicate early discharge and constitute a risk indicator. Only applicable when delivery occurred in a health facility."
+  fr: "Durée du séjour de la femme dans l'établissement de santé après l'accouchement. Catégories DHS-8 m61. L'OMS PNC 2022 recommande un séjour d'au moins 24 heures dans un établissement après la naissance pour un accouchement vaginal normal. Les séjours de moins de 6 heures indiquent une sortie précoce et constituent un indicateur de risque. Applicable uniquement lorsque l'accouchement a eu lieu dans un établissement de santé."
+  es: "Cuánto tiempo permaneció la mujer en el establecimiento de salud después del parto. Categorías DHS-8 m61. La OMS PNC 2022 recomienda al menos 24 horas en un establecimiento después del parto para un parto vaginal normal. Las estancias de menos de 6 horas indican alta temprana y constituyen un indicador de riesgo. Solo aplicable cuando el parto ocurrió en un establecimiento de salud."
+values:
+  - code: less_than_6_hours
+    label:
+      en: Less than 6 hours
+      fr: Moins de 6 heures
+      es: Menos de 6 horas
+    definition:
+      en: "The woman left the facility within 6 hours of delivery. Indicates early discharge; risk indicator."
+      fr: "La femme a quitté l'établissement dans les 6 heures suivant l'accouchement. Indique une sortie précoce ; indicateur de risque."
+      es: "La mujer salió del establecimiento dentro de las 6 horas del parto. Indica alta temprana; indicador de riesgo."
+  - code: h6_to_11
+    label:
+      en: 6 to 11 hours
+      fr: 6 à 11 heures
+      es: De 6 a 11 horas
+    definition:
+      en: "The woman stayed between 6 and 11 hours after delivery."
+      fr: "La femme est restée entre 6 et 11 heures après l'accouchement."
+      es: "La mujer permaneció entre 6 y 11 horas después del parto."
+  - code: h12_to_23
+    label:
+      en: 12 to 23 hours
+      fr: 12 à 23 heures
+      es: De 12 a 23 horas
+    definition:
+      en: "The woman stayed between 12 and 23 hours after delivery. Within 24 hours but not early discharge."
+      fr: "La femme est restée entre 12 et 23 heures après l'accouchement. Dans les 24 heures mais pas une sortie précoce."
+      es: "La mujer permaneció entre 12 y 23 horas después del parto. Dentro de las 24 horas pero no alta temprana."
+  - code: d1_to_2
+    label:
+      en: 1 to 2 days
+      fr: 1 à 2 jours
+      es: De 1 a 2 días
+    definition:
+      en: "The woman stayed 1 to 2 days after delivery. Meets the WHO PNC 2022 minimum for normal delivery."
+      fr: "La femme est restée 1 à 2 jours après l'accouchement. Satisfait au minimum OMS PNC 2022 pour un accouchement normal."
+      es: "La mujer permaneció de 1 a 2 días después del parto. Cumple con el mínimo OMS PNC 2022 para parto normal."
+  - code: d3_or_more
+    label:
+      en: 3 or more days
+      fr: 3 jours ou plus
+      es: 3 días o más
+    definition:
+      en: "The woman stayed 3 or more days after delivery. Typical for cesarean sections or complicated deliveries."
+      fr: "La femme est restée 3 jours ou plus après l'accouchement. Typique pour les césariennes ou les accouchements compliqués."
+      es: "La mujer permaneció 3 días o más después del parto. Típico para cesáreas o partos complicados."
+  - code: dont_know
+    label:
+      en: Don't know
+      fr: Ne sait pas
+      es: No sabe
+    definition:
+      en: "The respondent does not know or does not remember how long she stayed."
+      fr: "La répondante ne sait pas ou ne se souvient pas de la durée de son séjour."
+      es: "La encuestada no sabe o no recuerda cuánto tiempo permaneció."

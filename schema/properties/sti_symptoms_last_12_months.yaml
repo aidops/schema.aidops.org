@@ -1,0 +1,22 @@
+id: sti_symptoms_last_12_months
+maturity: draft
+label:
+  en: "STI symptoms in the last 12 months"
+  fr: "Symptômes d'IST au cours des 12 derniers mois"
+  es: "Síntomas de ITS en los últimos 12 meses"
+
+definition:
+  en: "Whether the woman experienced any of the following symptoms in the last 12 months: unusual vaginal discharge, sores or ulcers on the genitals, pelvic pain (any one counts) (WHO reproductive health indicators). Optional block, requires separate consent. Symptom-based proxy for STI prevalence in field settings where clinical diagnosis is not possible. Used as a service need indicator, not a diagnostic tool."
+  fr: "Si la femme a présenté l'un des symptômes suivants au cours des 12 derniers mois : pertes vaginales inhabituelles, plaies ou ulcères sur les organes génitaux, douleurs pelviennes (un seul suffit) (indicateurs OMS de santé reproductive). Bloc facultatif, nécessite un consentement distinct. Indicateur proxy symptomatologique pour la prévalence des IST dans les contextes de terrain où le diagnostic clinique est impossible. Utilisé comme indicateur de besoin de service, et non comme outil de diagnostic."
+  es: "Si la mujer experimentó alguno de los siguientes síntomas en los últimos 12 meses: secreción vaginal inusual, llagas o úlceras en los genitales, dolor pélvico (cualquiera cuenta) (indicadores de salud reproductiva de la OMS). Bloque opcional, requiere consentimiento separado. Indicador proxy basado en síntomas para la prevalencia de ITS en entornos de campo donde el diagnóstico clínico no es posible. Se usa como indicador de necesidad de servicio, no como herramienta diagnóstica."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes / no / prefer_not_to_answer
+vocabulary: null
+references: null
+category: sti_hiv
+sensitivity: sensitive
+age_applicability:
+  - adult

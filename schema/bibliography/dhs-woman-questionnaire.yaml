@@ -1,0 +1,91 @@
+id: dhs-woman-questionnaire
+title: "DHS-8 Model Woman's Questionnaire (Maternal Health sections, Chapter 9)"
+short_title: DHS-8 Woman's Questionnaire Ch. 9
+publisher: "ICF / The DHS Program"
+year: 2019
+type: guidance_publication
+domain: humanitarian
+uri: "https://dhsprogram.com/publications/publication-dhsq8-dhs-questionnaires-and-manuals.cfm"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MaternalNewbornHealthProfile
+  vocabularies:
+    - maternity-care-provider
+    - pregnancy-outcome
+    - birth-multiplicity
+    - place-of-delivery
+    - anc-visit-count-group
+    - anc-first-visit-timing
+    - tetanus-injections-received
+    - iron-supplementation-days
+    - postpartum-stay-duration
+    - pnc-timing
+    - cesarean-timing
+    - mnh-breastfeeding-initiation-timing
+  properties:
+    - total_live_births
+    - had_birth_in_recall_period
+    - total_stillbirths
+    - most_recent_birth_year
+    - most_recent_birth_outcome
+    - birth_multiplicity
+    - recall_period_months
+    - anc_any_visit
+    - anc_visits_count
+    - anc_4_or_more_visits
+    - anc_8_or_more_visits
+    - anc_first_visit_gestational_age_months
+    - anc_first_trimester_initiation
+    - anc_provider_type
+    - anc_skilled_provider
+    - anc_content_blood_pressure
+    - anc_content_urine_sample
+    - anc_content_blood_sample
+    - anc_content_fetal_heartbeat
+    - anc_content_nutrition_counseling
+    - anc_content_breastfeeding_counseling
+    - anc_content_vaginal_bleeding_asked
+    - anc_tetanus_protection
+    - anc_iron_supplementation
+    - anc_iron_days_taken
+    - anc_deworming
+    - anc_malaria_prevention_itn
+    - anc_hiv_test_offered
+    - anc_food_cash_assistance
+    - delivery_place
+    - delivery_in_health_facility
+    - delivery_attendant_type
+    - skilled_birth_attendance
+    - delivery_cesarean_section
+    - delivery_cesarean_timing
+    - delivery_stay_hours_or_days
+    - newborn_dried_after_birth
+    - newborn_skin_to_skin
+    - newborn_weighed_at_birth
+    - newborn_birth_weight_kg
+    - newborn_low_birth_weight
+    - pnc_mother_any_check
+    - pnc_mother_timing
+    - pnc_mother_within_2_days
+    - pnc_mother_provider_type
+    - pnc_mother_content_blood_pressure
+    - pnc_mother_content_vaginal_bleeding
+    - pnc_mother_content_family_planning
+    - pnc_mother_all_three_content
+    - pnc_newborn_any_check
+    - pnc_newborn_timing
+    - pnc_newborn_within_2_days
+    - pnc_newborn_provider_type
+    - pnc_newborn_signal_cord_check
+    - pnc_newborn_signal_temperature
+    - pnc_newborn_signal_danger_signs
+    - pnc_newborn_signal_breastfeeding_counsel
+    - pnc_newborn_signal_weighed
+    - pnc_newborn_all_five_signal_functions
+    - pnc_both_mother_and_newborn_checked
+    - breastfeeding_ever_initiated
+    - breastfeeding_initiation_hours
+    - breastfeeding_early_initiation

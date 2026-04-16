@@ -1,0 +1,128 @@
+id: family-planning-source
+maturity: draft
+label:
+  en: Family Planning Method Source
+  fr: "Source d'obtention de la méthode contraceptive"
+  es: "Fuente del método anticonceptivo"
+definition:
+  en: "The most recent source from which the respondent obtained or received their current contraceptive method. Categories follow the DHS and MICS public/private/other sector classification used for supply chain analysis."
+  fr: "La source la plus récente auprès de laquelle la répondante a obtenu sa méthode contraceptive actuelle. Les catégories suivent la classification secteur public/privé/autre des enquêtes DHS et MICS utilisée pour l'analyse de la chaîne d'approvisionnement."
+  es: "La fuente más reciente de la que la encuestada obtuvo su método anticonceptivo actual. Las categorías siguen la clasificación de sector público/privado/otro de las encuestas DHS y MICS utilizadas para el análisis de la cadena de suministro."
+values:
+  - code: government_hospital
+    label:
+      en: Government hospital
+      fr: "Hôpital public"
+      es: "Hospital público"
+    definition:
+      en: "Public sector: government or state hospital."
+      fr: "Secteur public : hôpital gouvernemental ou d'État."
+      es: "Sector público: hospital gubernamental o estatal."
+  - code: government_health_center
+    label:
+      en: Government health center
+      fr: "Centre de santé public"
+      es: "Centro de salud público"
+    definition:
+      en: "Public sector: government health center or clinic."
+      fr: "Secteur public : centre ou clinique de santé gouvernemental."
+      es: "Sector público: centro o clínica de salud gubernamental."
+  - code: government_health_post
+    label:
+      en: Government health post
+      fr: "Poste de santé public"
+      es: "Puesto de salud público"
+    definition:
+      en: "Public sector: government health post or dispensary."
+      fr: "Secteur public : poste de santé ou dispensaire gouvernemental."
+      es: "Sector público: puesto de salud o dispensario gubernamental."
+  - code: government_mobile_clinic
+    label:
+      en: Government mobile clinic / outreach
+      fr: "Clinique mobile ou stratégie avancée publique"
+      es: "Clínica móvil / extensión pública"
+    definition:
+      en: "Public sector: government mobile clinic or community outreach worker."
+      fr: "Secteur public : clinique mobile gouvernementale ou travailleur de sensibilisation communautaire."
+      es: "Sector público: clínica móvil gubernamental o trabajador de extensión comunitaria."
+  - code: ngo_clinic
+    label:
+      en: NGO / mission clinic
+      fr: "Clinique ONG / missions"
+      es: "Clínica de ONG / misiones"
+    definition:
+      en: "Non-governmental or faith-based organization clinic providing family planning services."
+      fr: "Clinique d'une organisation non gouvernementale ou confessionnelle fournissant des services de planification familiale."
+      es: "Clínica de una organización no gubernamental o confesional que presta servicios de planificación familiar."
+  - code: private_hospital
+    label:
+      en: Private hospital / clinic
+      fr: "Hôpital / clinique privé(e)"
+      es: "Hospital / clínica privada"
+    definition:
+      en: "Private sector: private hospital or clinic."
+      fr: "Secteur privé : hôpital ou clinique privé(e)."
+      es: "Sector privado: hospital o clínica privada."
+  - code: private_clinic
+    label:
+      en: Private doctor / private clinic
+      fr: "Médecin privé / clinique privée"
+      es: "Médico privado / clínica privada"
+    definition:
+      en: "Private sector: private doctor's office or small private clinic."
+      fr: "Secteur privé : cabinet médical privé ou petite clinique privée."
+      es: "Sector privado: consultorio médico privado o pequeña clínica privada."
+  - code: pharmacy_drugstore
+    label:
+      en: Pharmacy / drugstore
+      fr: "Pharmacie / droguerie"
+      es: "Farmacia"
+    definition:
+      en: "Private sector: pharmacy or drugstore (purchased without prescription or with one)."
+      fr: "Secteur privé : pharmacie ou droguerie (achetée sans ordonnance ou avec ordonnance)."
+      es: "Sector privado: farmacia (comprado sin receta o con receta)."
+  - code: community_health_worker
+    label:
+      en: Community health worker / depot holder
+      fr: "Agent de santé communautaire / dépositaire"
+      es: "Trabajador de salud comunitaria / depositario"
+    definition:
+      en: "Community-level provider: community health worker, village health worker, or depot holder distributing methods at community level."
+      fr: "Prestataire au niveau communautaire : agent de santé communautaire, agent de santé villageois ou dépositaire distribuant des méthodes au niveau communautaire."
+      es: "Proveedor a nivel comunitario: trabajador de salud comunitaria, trabajador de salud de aldea o depositario que distribuye métodos a nivel comunitario."
+  - code: shop_market
+    label:
+      en: Shop / market / vendor
+      fr: "Magasin / marché / vendeur"
+      es: "Tienda / mercado / vendedor"
+    definition:
+      en: "Commercial outlet: general shop, market stall, or street vendor (primarily relevant for condoms and oral pills)."
+      fr: "Point de vente commercial : boutique générale, stand de marché ou vendeur ambulant (principalement pour les préservatifs et les pilules)."
+      es: "Punto de venta comercial: tienda general, puesto de mercado o vendedor ambulante (principalmente relevante para condones y píldoras orales)."
+  - code: partner_or_family
+    label:
+      en: Partner or family member
+      fr: "Partenaire ou membre de la famille"
+      es: "Pareja o familiar"
+    definition:
+      en: "Obtained from a partner, husband, or family member rather than a formal provider."
+      fr: "Obtenu auprès d'un partenaire, d'un mari ou d'un membre de la famille plutôt que d'un prestataire officiel."
+      es: "Obtenido de una pareja, esposo o familiar en lugar de un proveedor formal."
+  - code: other_public
+    label:
+      en: Other public sector source
+      fr: "Autre source du secteur public"
+      es: "Otra fuente del sector público"
+    definition:
+      en: "Public sector source not covered by the codes above."
+      fr: "Source du secteur public non couverte par les codes ci-dessus."
+      es: "Fuente del sector público no cubierta por los códigos anteriores."
+  - code: other_private
+    label:
+      en: Other private sector source
+      fr: "Autre source du secteur privé"
+      es: "Otra fuente del sector privado"
+    definition:
+      en: "Private or commercial source not covered by the codes above."
+      fr: "Source privée ou commerciale non couverte par les codes ci-dessus."
+      es: "Fuente privada o comercial no cubierta por los códigos anteriores."

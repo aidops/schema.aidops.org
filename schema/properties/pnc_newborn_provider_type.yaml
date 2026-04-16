@@ -1,0 +1,19 @@
+id: pnc_newborn_provider_type
+maturity: draft
+label:
+  en: PNC provider type for newborn (first check)
+  fr: "Type de prestataire PNC pour le nouveau-né (premier contrôle)"
+  es: "Tipo de proveedor PPN para el recién nacido (primera revisión)"
+definition:
+  en: "The category of health worker who first checked the newborn. DHS-8 rh_pnc_nb_pv. Only asked if pnc_newborn_any_check = yes."
+  fr: "La catégorie d'agent de santé ayant examiné le nouveau-né en premier. DHS-8 rh_pnc_nb_pv. Posé uniquement si pnc_newborn_any_check = oui."
+  es: "La categoría del trabajador de salud que primero revisó al recién nacido. DHS-8 rh_pnc_nb_pv. Solo se pregunta si pnc_newborn_any_check = sí."
+type: string
+cardinality: single
+core: true
+vocabulary: maternity-care-provider
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

@@ -1,0 +1,22 @@
+id: ideal_number_of_children
+maturity: draft
+label:
+  en: "Ideal number of children"
+  fr: "Nombre idéal d'enfants"
+  es: "Número ideal de hijos"
+
+definition:
+  en: "The number of children the woman would have had if she could have chosen exactly how many to have over her whole life (DHS V613). Integer 0–20. Record null when the respondent gives a non-numeric response such as 'up to God' or 'as many as come' (DHS codes 96/97). Do not prompt with numeric options."
+  fr: "Le nombre d'enfants que la femme aurait eu si elle avait pu choisir exactement combien en avoir au cours de sa vie (DHS V613). Entier 0–20. Enregistrer null lorsque la répondante donne une réponse non numérique telle que « c'est Dieu qui décide » ou « autant qu'il en vient » (codes DHS 96/97). Ne pas suggérer d'options numériques."
+  es: "El número de hijos que la mujer habría tenido si hubiera podido elegir exactamente cuántos tener durante toda su vida (DHS V613). Entero 0–20. Registrar null cuando la encuestada da una respuesta no numérica como 'lo que Dios quiera' o 'los que vengan' (códigos DHS 96/97). No sugerir opciones numéricas."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: fertility_preferences
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women, mics6]

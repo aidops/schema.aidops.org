@@ -1,0 +1,74 @@
+id: anc-visit-count-group
+maturity: draft
+label:
+  en: ANC Visit Count Group
+  fr: "Groupe de nombre de visites prénatales"
+  es: "Grupo de cantidad de visitas de APN"
+definition:
+  en: "The number of antenatal care contacts received during the most recent pregnancy, grouped per DHS-8 m14 categories. WHO 2016 recommends 8 or more contacts; SDG 3.1.b and HMIS use 4 or more as the standard threshold. DHS-8 changed from 4+ to 8+ as the key indicator numerator."
+  fr: "Le nombre de contacts de soins prénataux reçus pendant la grossesse la plus récente, regroupé selon les catégories DHS-8 m14. L'OMS 2016 recommande 8 contacts ou plus ; l'ODD 3.1.b et les HMIS utilisent 4 ou plus comme seuil standard. Le DHS-8 est passé de 4+ à 8+ comme numérateur de l'indicateur clé."
+  es: "El número de contactos de atención prenatal recibidos durante el embarazo más reciente, agrupados según las categorías DHS-8 m14. La OMS 2016 recomienda 8 o más contactos; el ODS 3.1.b y los HMIS utilizan 4 o más como umbral estándar. El DHS-8 cambió de 4+ a 8+ como numerador del indicador clave."
+values:
+  - code: none
+    label:
+      en: None (0 visits)
+      fr: Aucune (0 visite)
+      es: Ninguna (0 visitas)
+    definition:
+      en: "No antenatal care contacts during this pregnancy."
+      fr: "Aucun contact de soins prénataux pendant cette grossesse."
+      es: "Ningún contacto de atención prenatal durante este embarazo."
+  - code: v1
+    label:
+      en: 1 visit
+      fr: 1 visite
+      es: 1 visita
+    definition:
+      en: "Exactly one antenatal care contact during this pregnancy. DHS m14 = 1."
+      fr: "Exactement un contact de soins prénataux pendant cette grossesse. DHS m14 = 1."
+      es: "Exactamente un contacto de atención prenatal durante este embarazo. DHS m14 = 1."
+  - code: v2
+    label:
+      en: 2 visits
+      fr: 2 visites
+      es: 2 visitas
+    definition:
+      en: "Exactly two antenatal care contacts during this pregnancy. DHS m14 = 2."
+      fr: "Exactement deux contacts de soins prénataux pendant cette grossesse. DHS m14 = 2."
+      es: "Exactamente dos contactos de atención prenatal durante este embarazo. DHS m14 = 2."
+  - code: v3
+    label:
+      en: 3 visits
+      fr: 3 visites
+      es: 3 visitas
+    definition:
+      en: "Exactly three antenatal care contacts during this pregnancy. DHS m14 = 3."
+      fr: "Exactement trois contacts de soins prénataux pendant cette grossesse. DHS m14 = 3."
+      es: "Exactamente tres contactos de atención prenatal durante este embarazo. DHS m14 = 3."
+  - code: v4_to_7
+    label:
+      en: 4 to 7 visits
+      fr: 4 à 7 visites
+      es: De 4 a 7 visitas
+    definition:
+      en: "Four to seven antenatal care contacts. Meets the SDG/HMIS 4+ threshold but not the WHO 2016 8-contact recommendation. DHS m14 = 4–7."
+      fr: "Quatre à sept contacts de soins prénataux. Satisfait au seuil ODD/HMIS 4+ mais pas à la recommandation OMS 2016 de 8 contacts. DHS m14 = 4–7."
+      es: "Cuatro a siete contactos de atención prenatal. Cumple el umbral ODS/HMIS de 4+ pero no la recomendación OMS 2016 de 8 contactos. DHS m14 = 4–7."
+  - code: v8_or_more
+    label:
+      en: 8 or more visits
+      fr: 8 visites ou plus
+      es: 8 visitas o más
+    definition:
+      en: "Eight or more antenatal care contacts. Meets the WHO 2016 recommended minimum of 8 contacts for a positive pregnancy experience. DHS m14 = 8+."
+      fr: "Huit contacts de soins prénataux ou plus. Satisfait au minimum recommandé par l'OMS 2016 de 8 contacts pour une expérience de grossesse positive. DHS m14 = 8+."
+      es: "Ocho o más contactos de atención prenatal. Cumple con el mínimo recomendado de la OMS 2016 de 8 contactos para una experiencia positiva del embarazo. DHS m14 = 8+."
+  - code: dont_know
+    label:
+      en: Don't know
+      fr: Ne sait pas
+      es: No sabe
+    definition:
+      en: "The respondent does not know or does not remember the number of visits."
+      fr: "La répondante ne sait pas ou ne se souvient pas du nombre de visites."
+      es: "La encuestada no sabe o no recuerda el número de visitas."

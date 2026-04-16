@@ -1,0 +1,40 @@
+id: who-anc-2016
+title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience"
+short_title: WHO ANC 2016
+publisher: World Health Organization
+year: 2016
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.who.int/publications/i/item/9789241549912"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MaternalNewbornHealthProfile
+  vocabularies:
+    - anc-visit-count-group
+    - anc-first-visit-timing
+    - maternity-care-provider
+  properties:
+    - anc_any_visit
+    - anc_visits_count
+    - anc_4_or_more_visits
+    - anc_8_or_more_visits
+    - anc_first_visit_gestational_age_months
+    - anc_first_trimester_initiation
+    - anc_provider_type
+    - anc_skilled_provider
+    - anc_content_blood_pressure
+    - anc_content_urine_sample
+    - anc_content_blood_sample
+    - anc_content_fetal_heartbeat
+    - anc_content_nutrition_counseling
+    - anc_content_breastfeeding_counseling
+    - anc_content_vaginal_bleeding_asked
+    - anc_tetanus_protection
+    - anc_iron_supplementation
+    - anc_iron_days_taken
+    - anc_deworming
+    - anc_malaria_prevention_itn
+    - anc_hiv_test_offered

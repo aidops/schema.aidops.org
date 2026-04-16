@@ -1,0 +1,83 @@
+id: place-of-delivery
+maturity: draft
+label:
+  en: Place of Delivery
+  fr: Lieu d'accouchement
+  es: Lugar del parto
+definition:
+  en: "The location where the most recent birth occurred, collapsed from DHS-8 m15 into the main place-type categories. DHS m15 codes: 10-19 = home, 20-29 = public facility, 30-39 = private facility, 41-46 = NGO/mission facility. Delivery in a health facility (any code other than home_own, home_other, or other) is derived as the facility-birth indicator (SDG 3.1.2 adjacent). MICS6 MN8 uses compatible groupings."
+  fr: "Le lieu du parto le plus récent, regroupé à partir des codes DHS-8 m15. Codes DHS m15 : 10–19 = domicile, 20–29 = établissement public, 30–39 = établissement privé, 41–46 = établissement ONG/mission. L'accouchement dans un établissement de santé (tout code autre que home_own, home_other ou other) est dérivé comme indicateur de naissance en établissement (adjacent à l'ODD 3.1.2). MICS6 MN8 utilise des regroupements compatibles."
+  es: "El lugar del parto más reciente, agrupado a partir de los códigos DHS-8 m15. Códigos DHS m15: 10–19 = domicilio, 20–29 = establecimiento público, 30–39 = establecimiento privado, 41–46 = establecimiento de ONG/misión. El parto en un establecimiento de salud (cualquier código distinto de home_own, home_other u other) se deriva como indicador de parto en establecimiento (adyacente al ODS 3.1.2). MICS6 MN8 utiliza agrupaciones compatibles."
+values:
+  - code: home_own
+    label:
+      en: "Home (respondent's own home)"
+      fr: "Domicile (domicile de la répondante)"
+      es: "Domicilio (domicilio de la encuestada)"
+    definition:
+      en: "Birth occurred at the respondent's own home. DHS m15 = 11."
+      fr: "L'accouchement a eu lieu au domicile de la répondante. DHS m15 = 11."
+      es: "El parto ocurrió en el domicilio de la encuestada. DHS m15 = 11."
+  - code: home_other
+    label:
+      en: "Home (other person's home)"
+      fr: "Domicile (domicile d'une autre personne)"
+      es: "Domicilio (domicilio de otra persona)"
+    definition:
+      en: "Birth occurred at someone else's home. DHS m15 = 12."
+      fr: "L'accouchement a eu lieu au domicile d'une autre personne. DHS m15 = 12."
+      es: "El parto ocurrió en el domicilio de otra persona. DHS m15 = 12."
+  - code: public_hospital
+    label:
+      en: Public hospital
+      fr: "Hôpital public"
+      es: Hospital público
+    definition:
+      en: "Birth occurred in a government/public hospital. DHS m15 = 21."
+      fr: "L'accouchement a eu lieu dans un hôpital gouvernemental/public. DHS m15 = 21."
+      es: "El parto ocurrió en un hospital gubernamental/público. DHS m15 = 21."
+  - code: public_health_centre
+    label:
+      en: Public health centre / clinic
+      fr: Centre de santé public / clinique
+      es: Centro de salud público / clínica
+    definition:
+      en: "Birth occurred in a public health centre, health post, or clinic. DHS m15 = 22–23."
+      fr: "L'accouchement a eu lieu dans un centre de santé public, un poste de santé ou une clinique. DHS m15 = 22–23."
+      es: "El parto ocurrió en un centro de salud público, puesto de salud o clínica. DHS m15 = 22–23."
+  - code: public_health_post
+    label:
+      en: Public health post / community health unit
+      fr: Poste de santé public / unité de santé communautaire
+      es: Puesto de salud público / unidad de salud comunitaria
+    definition:
+      en: "Birth occurred in a public health post or community health unit. DHS m15 = 24–25 in some country versions."
+      fr: "L'accouchement a eu lieu dans un poste de santé public ou une unité de santé communautaire."
+      es: "El parto ocurrió en un puesto de salud público o unidad de salud comunitaria."
+  - code: private_hospital_clinic
+    label:
+      en: Private hospital / clinic
+      fr: "Hôpital / clinique privé(e)"
+      es: Hospital / clínica privada
+    definition:
+      en: "Birth occurred in a private hospital or clinic. DHS m15 = 31–32."
+      fr: "L'accouchement a eu lieu dans un hôpital ou une clinique privée. DHS m15 = 31–32."
+      es: "El parto ocurrió en un hospital o clínica privada. DHS m15 = 31–32."
+  - code: ngo_facility
+    label:
+      en: NGO / mission / faith-based facility
+      fr: "Établissement ONG / mission / confessionnel"
+      es: "Establecimiento de ONG / misión / confesional"
+    definition:
+      en: "Birth occurred in a facility operated by an NGO, mission, or faith-based organization. DHS m15 = 41–46."
+      fr: "L'accouchement a eu lieu dans un établissement géré par une ONG, une mission ou une organisation confessionnelle. DHS m15 = 41–46."
+      es: "El parto ocurrió en un establecimiento operado por una ONG, misión u organización confesional. DHS m15 = 41–46."
+  - code: other
+    label:
+      en: Other
+      fr: Autre
+      es: Otro
+    definition:
+      en: "Birth occurred in another location not covered above (e.g., en route, in the field)."
+      fr: "L'accouchement a eu lieu dans un autre endroit non couvert ci-dessus (par exemple, en route, dans un champ)."
+      es: "El parto ocurrió en otro lugar no cubierto anteriormente (por ejemplo, en camino, en el campo)."

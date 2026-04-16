@@ -1,0 +1,23 @@
+id: fever_care_source
+maturity: draft
+label:
+  en: "Care source for fever"
+  fr: "Source de soins pour la fièvre"
+  es: "Fuente de atención para la fiebre"
+
+definition:
+  en: "The type(s) of provider or facility the caregiver visited for advice or treatment of the child's fever. Published wording: 'Where did you go or who did you see? (Select all that apply).' Multi-select. Ask only if fever_care_sought is true. DHS code h23 (provider variables); MICS code ML3."
+  fr: "Le(s) type(s) de prestataire ou d'établissement consulté par le soignant pour des conseils ou un traitement de la fièvre de l'enfant. Formulation publiée : « Où êtes-vous allé(e) ou qui avez-vous consulté ? (Sélectionnez tout ce qui s'applique). » Sélection multiple. Posez uniquement si fever_care_sought est vrai. Code DHS h23 (variables prestataires) ; code MICS ML3."
+  es: "El(los) tipo(s) de proveedor o establecimiento al que el cuidador acudió para recibir consejo o tratamiento por la fiebre del niño. Redacción publicada: '¿Adónde fue o a quién consultó? (Seleccione todo lo que corresponda).' Selección múltiple. Preguntar solo si fever_care_sought es verdadero. Código DHS h23 (variables de proveedor); código MICS ML3."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: care-provider-type
+references: null
+category: fever
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

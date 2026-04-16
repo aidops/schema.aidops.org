@@ -1,0 +1,19 @@
+id: sdg-3-7-1-metadata
+title: "SDG Indicator 3.7.1 Metadata: Proportion of women of reproductive age who have their need for family planning satisfied with modern methods"
+short_title: SDG 3.7.1 Metadata
+publisher: "UN DESA / WHO"
+year: 2020
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2020_metadata-03-07-01.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ReproductiveHealthProfile
+  vocabularies: []
+  properties:
+    - fp_demand_satisfied_modern
+    - fp_method_is_modern
+    - fp_unmet_need

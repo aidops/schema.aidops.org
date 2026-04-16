@@ -1,0 +1,19 @@
+id: anc_content_breastfeeding_counseling
+maturity: draft
+label:
+  en: Breastfeeding counseling received during ANC
+  fr: "Conseil sur l'allaitement reçu lors des CPN"
+  es: "Asesoramiento sobre lactancia materna recibido durante la APN"
+definition:
+  en: "Whether anyone counseled the woman about breastfeeding during antenatal care. DHS-8 m42h. WHO ANC 2016 recommendation. This item is owned by MaternalNewbornHealthProfile as an ANC service content measure; NutritionPracticesProfile may reference it as an exposure variable for breastfeeding knowledge but does not collect it separately. Only asked if anc_any_visit = yes."
+  fr: "Si quelqu'un a conseillé la femme sur l'allaitement lors des soins prénataux. DHS-8 m42h. Recommandation OMS ANC 2016. Cet item appartient au MaternalNewbornHealthProfile comme mesure de contenu de service CPN ; le NutritionPracticesProfile peut y faire référence comme variable d'exposition pour la connaissance de l'allaitement, mais ne le collecte pas séparément. Posé uniquement si anc_any_visit = oui."
+  es: "Si alguien asesoró a la mujer sobre la lactancia materna durante la atención prenatal. DHS-8 m42h. Recomendación OMS ANC 2016. Este ítem pertenece al MaternalNewbornHealthProfile como medida de contenido de servicio de APN; el NutritionPracticesProfile puede referenciarlo como variable de exposición para el conocimiento de la lactancia, pero no lo recopila por separado. Solo se pregunta si anc_any_visit = sí."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

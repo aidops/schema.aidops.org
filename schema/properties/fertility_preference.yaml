@@ -1,0 +1,21 @@
+id: fertility_preference
+maturity: draft
+label:
+  en: "Fertility preference classification (derived)"
+  fr: "Classification des préférences de fécondité (dérivée)"
+  es: "Clasificación de preferencias de fecundidad (derivada)"
+
+definition:
+  en: "Derived classification of the woman's reproductive intention, computed from desire_more_children, pregnancy_status (PS), and fp_using_any_method. Used as a programme planning indicator and as an input to the DHS unmet need algorithm. Not directly asked."
+  fr: "Classification dérivée de l'intention reproductive de la femme, calculée à partir de desire_more_children, pregnancy_status (PS) et fp_using_any_method. Utilisé comme indicateur de planification de programme et comme entrée dans l'algorithme DHS de besoin non satisfait. Non directement demandé."
+  es: "Clasificación derivada de la intención reproductiva de la mujer, calculada a partir de desire_more_children, pregnancy_status (PS) y fp_using_any_method. Se usa como indicador de planificación de programas y como entrada al algoritmo de necesidad insatisfecha del DHS. No se pregunta directamente."
+
+type: string
+cardinality: single
+core: true
+vocabulary: fertility-preference
+references: null
+category: fertility_preferences
+sensitivity: sensitive
+age_applicability:
+  - adult

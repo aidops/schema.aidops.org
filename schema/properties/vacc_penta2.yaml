@@ -1,0 +1,23 @@
+id: vacc_penta2
+maturity: draft
+label:
+  en: "DTP-HepB-Hib dose 2 (Penta2) vaccination status"
+  fr: "Statut vaccinal DTP-HepB-Hib dose 2 (Penta2)"
+  es: "Estado de vacunación DTP-HepB-Hib dosis 2 (Penta2)"
+
+definition:
+  en: "Whether the child received the second dose of the pentavalent (DTP-HepB-Hib) or DTP vaccine at approximately 10 weeks of age. Published recall wording: '(Name) was given a 2nd DPT / pentavalent injection?' DHS code h4; MICS code IM4b."
+  fr: "Si l'enfant a reçu la deuxième dose du vaccin pentavalent (DTP-HepB-Hib) ou DTP à environ 10 semaines. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une 2e injection DTC / pentavalent ? » Code DHS h4 ; code MICS IM4b."
+  es: "Si el niño recibió la segunda dosis de la vacuna pentavalente (DTP-HepB-Hib) o DTP a aproximadamente 10 semanas de edad. Redacción de recordatorio publicada: '¿Recibió (nombre) una 2.a inyección DPT / pentavalente?' Código DHS h4; código MICS IM4b."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

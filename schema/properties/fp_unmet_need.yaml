@@ -1,0 +1,21 @@
+id: fp_unmet_need
+maturity: draft
+label:
+  en: "Unmet need for family planning (derived)"
+  fr: "Besoin non satisfait en planification familiale (dérivé)"
+  es: "Necesidad insatisfecha de planificación familiar (derivada)"
+
+definition:
+  en: "Derived 10-category DHS unmet need classification (DHS Analytical Study 25, 2012 revised algorithm). Classifies every woman 15–49 into a mutually exclusive, exhaustive category. Required inputs: fp_using_any_method, desire_more_children, pregnancy_status (PS), fp_postpartum_amenorrhea, fp_fecundity_status, fp_sexually_active_last_4_weeks. Note: the simplified cross-sectional version (without a DHS contraceptive calendar) may slightly overcount unmet need because recent method failures are not retrospectively captured."
+  fr: "Classification DHS dérivée à 10 catégories de besoin non satisfait (algorithme révisé de l'Étude analytique DHS 25, 2012). Classe chaque femme de 15 à 49 ans dans une catégorie mutuellement exclusive et exhaustive. Entrées requises : fp_using_any_method, desire_more_children, pregnancy_status (PS), fp_postpartum_amenorrhea, fp_fecundity_status, fp_sexually_active_last_4_weeks. Remarque : la version transversale simplifiée (sans calendrier contraceptif DHS) peut légèrement surestimer le besoin non satisfait car les échecs récents de méthodes ne sont pas capturés rétrospectivement."
+  es: "Clasificación DHS derivada de 10 categorías de necesidad insatisfecha (algoritmo revisado del Estudio Analítico DHS 25, 2012). Clasifica a cada mujer de 15–49 años en una categoría mutuamente exclusiva y exhaustiva. Entradas requeridas: fp_using_any_method, desire_more_children, pregnancy_status (PS), fp_postpartum_amenorrhea, fp_fecundity_status, fp_sexually_active_last_4_weeks. Nota: la versión transversal simplificada (sin calendario anticonceptivo DHS) puede sobreestimar ligeramente la necesidad insatisfecha porque las fallas recientes de métodos no se capturan retrospectivamente."
+
+type: string
+cardinality: single
+core: true
+vocabulary: fp-unmet-need
+references: null
+category: unmet_need
+sensitivity: sensitive
+age_applicability:
+  - adult

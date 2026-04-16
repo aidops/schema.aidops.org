@@ -1,0 +1,18 @@
+id: weai-resource-center
+title: "WEAI Resource Center"
+short_title: "WEAI Resource Center (IFPRI)"
+publisher: "International Food Policy Research Institute (IFPRI)"
+authors:
+  - "IFPRI"
+year: 2024
+type: guidance_publication
+domain: humanitarian
+uri: "https://weai.ifpri.info/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - GenderEmpowermentProfile
+  vocabularies: []
+  properties: []

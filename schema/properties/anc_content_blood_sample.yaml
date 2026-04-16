@@ -1,0 +1,19 @@
+id: anc_content_blood_sample
+maturity: draft
+label:
+  en: Blood sample taken during ANC
+  fr: "Échantillon de sang prélevé lors des CPN"
+  es: "Muestra de sangre tomada durante la APN"
+definition:
+  en: "Whether the woman gave a blood sample during antenatal care for the most recent pregnancy. DHS-8 m42e; MICS6 MN3d. Core ANC content item. Blood sampling enables syphilis, HIV, hemoglobin (anemia), and blood type testing, all WHO-recommended ANC investigations. Only asked if anc_any_visit = yes."
+  fr: "Si la femme a donné un échantillon de sang lors des soins prénataux pour la grossesse la plus récente. DHS-8 m42e ; MICS6 MN3d. Item de contenu CPN central. Le prélèvement de sang permet les tests de syphilis, VIH, hémoglobine (anémie) et groupe sanguin, toutes des investigations CPN recommandées par l'OMS. Posé uniquement si anc_any_visit = oui."
+  es: "Si la mujer dio una muestra de sangre durante la atención prenatal para el embarazo más reciente. DHS-8 m42e; MICS6 MN3d. Ítem central de contenido de APN. El muestreo de sangre permite pruebas de sífilis, VIH, hemoglobina (anemia) y tipo de sangre, todas investigaciones de APN recomendadas por la OMS. Solo se pregunta si anc_any_visit = sí."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

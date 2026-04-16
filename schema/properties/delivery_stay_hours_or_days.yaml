@@ -1,0 +1,19 @@
+id: delivery_stay_hours_or_days
+maturity: draft
+label:
+  en: Duration of postpartum facility stay
+  fr: "Durée du séjour en établissement après l'accouchement"
+  es: "Duración de la estancia en el establecimiento después del parto"
+definition:
+  en: "How long the woman stayed in the health facility after delivery, grouped per DHS-8 m61 categories. WHO PNC 2022 recommends at least 24 hours in a facility after a normal vaginal delivery. Stays of less than 6 hours indicate early discharge, a risk indicator for postpartum complications. Only asked if delivery_in_health_facility = true."
+  fr: "Durée du séjour de la femme dans l'établissement de santé après l'accouchement, regroupée selon les catégories DHS-8 m61. L'OMS PNC 2022 recommande un séjour d'au moins 24 heures dans un établissement après un accouchement vaginal normal. Les séjours de moins de 6 heures indiquent une sortie précoce, un indicateur de risque de complications du post-partum. Posé uniquement si delivery_in_health_facility = vrai."
+  es: "Cuánto tiempo permaneció la mujer en el establecimiento de salud después del parto, agrupado según las categorías DHS-8 m61. La OMS PNC 2022 recomienda al menos 24 horas en un establecimiento después de un parto vaginal normal. Las estancias de menos de 6 horas indican alta temprana, un indicador de riesgo de complicaciones posparto. Solo se pregunta si delivery_in_health_facility = verdadero."
+type: string
+cardinality: single
+core: false
+vocabulary: postpartum-stay-duration
+references: null
+category: delivery
+age_applicability:
+  - adult
+sensitivity: sensitive

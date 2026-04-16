@@ -1,0 +1,19 @@
+id: pnc_mother_content_blood_pressure
+maturity: draft
+label:
+  en: Blood pressure measured during postnatal check
+  fr: "Tension artérielle mesurée lors du contrôle postnatal"
+  es: "Presión arterial medida durante la revisión posnatal"
+definition:
+  en: "Whether a health worker measured the woman's blood pressure during the postnatal check. DHS-8 m78f. New in DHS-8. WHO PNC 2022 recommendation for maternal monitoring (hypertension risk). Only asked if pnc_mother_any_check = yes."
+  fr: "Si un agent de santé a mesuré la tension artérielle de la femme lors du contrôle postnatal. DHS-8 m78f. Nouveau dans le DHS-8. Recommandation OMS PNC 2022 pour le suivi maternel (risque d'hypertension). Posé uniquement si pnc_mother_any_check = oui."
+  es: "Si un trabajador de salud midió la presión arterial de la mujer durante la revisión posnatal. DHS-8 m78f. Nuevo en DHS-8. Recomendación OMS PNC 2022 para el monitoreo materno (riesgo de hipertensión). Solo se pregunta si pnc_mother_any_check = sí."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

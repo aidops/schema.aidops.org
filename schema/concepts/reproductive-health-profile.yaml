@@ -1,0 +1,169 @@
+id: ReproductiveHealthProfile
+label:
+  en: Reproductive Health Profile
+  fr: "Profil de santé reproductive"
+  es: "Perfil de salud reproductiva"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of reproductive health data for a woman of
+    reproductive age (15–49), collected through an individual private
+    interview under explicit informed consent. Covers current and past
+    contraceptive use, method type and source, fertility preferences,
+    unmet need for family planning (DHS revised algorithm, Analytical
+    Study 25), and crisis-context access to reproductive health services
+    (MISP). Optional blocks cover STI/HIV testing (with a separate
+    consent step) and menstrual health clinical indicators. Does not
+    cover GBV prevalence (specialist protocols required), clinical
+    examination (medical staff required), or menstrual hygiene
+    management access (defined in WASHAssessmentProfile). Reuses the
+    pregnancy_status property from PublicSchema as an input to the
+    unmet need algorithm.
+  fr: >
+    Un enregistrement ponctuel de données de santé reproductive pour
+    une femme en âge de procréer (15–49 ans), collecté lors d'un
+    entretien individuel privé sous consentement éclairé explicite.
+    Couvre l'utilisation actuelle et passée de contraceptifs, le type
+    et la source de méthode, les préférences de fécondité, le besoin
+    non satisfait en planification familiale (algorithme DHS révisé,
+    Étude analytique 25) et l'accès aux services de santé reproductive
+    en contexte de crise (MISP). Des blocs facultatifs couvrent le
+    dépistage des IST/VIH (avec une étape de consentement distincte)
+    et les indicateurs cliniques de santé menstruelle. Ce profil ne
+    couvre pas la prévalence des VBG (protocoles spécialisés requis),
+    l'examen clinique (personnel médical requis), ni la gestion de
+    l'hygiène menstruelle (définie dans WASHAssessmentProfile). Réutilise
+    la propriété pregnancy_status de PublicSchema comme entrée dans
+    l'algorithme de besoin non satisfait.
+  es: >
+    Un registro puntual de datos de salud reproductiva para una mujer
+    en edad reproductiva (15–49 años), recopilado mediante una entrevista
+    individual privada bajo consentimiento informado explícito. Cubre el
+    uso actual y pasado de anticonceptivos, tipo y fuente del método,
+    preferencias de fecundidad, necesidad insatisfecha de planificación
+    familiar (algoritmo DHS revisado, Estudio Analítico 25) y acceso a
+    servicios de salud reproductiva en contextos de crisis (MISP). Los
+    bloques opcionales cubren pruebas de ITS/VIH (con un paso de
+    consentimiento separado) e indicadores clínicos de salud menstrual.
+    No cubre la prevalencia de VBG (se requieren protocolos especializados),
+    examen clínico (se requiere personal médico) ni gestión de higiene
+    menstrual (definida en WASHAssessmentProfile). Reutiliza la propiedad
+    pregnancy_status de PublicSchema como entrada al algoritmo de
+    necesidad insatisfecha.
+
+properties:
+  - desire_more_children
+  - desired_waiting_time
+  - ideal_number_of_children
+  - fertility_preference
+  - fp_using_any_method
+  - fp_current_method
+  - fp_method_is_modern
+  - fp_source_of_method
+  - fp_ever_used_any_method
+  - fp_ever_used_modern_method
+  - fp_past_method
+  - fp_reason_discontinuation
+  - fp_sexually_active_last_4_weeks
+  - fp_postpartum_amenorrhea
+  - fp_fecundity_status
+  - fp_reason_not_using
+  - fp_unmet_need
+  - fp_demand_satisfied_modern
+  - menstrual_regularity
+  - age_at_menarche_years
+  - hiv_ever_tested
+  - hiv_tested_last_12_months
+  - hiv_received_results
+  - sti_symptoms_last_12_months
+  - sti_sought_care
+  - rh_service_aware
+  - rh_service_accessible
+  - clean_delivery_kit_available
+  - emergency_contraception_aware
+  - condom_accessible
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: fertility_preferences
+    properties:
+      - desire_more_children
+      - desired_waiting_time
+      - ideal_number_of_children
+      - fertility_preference
+  - category: family_planning
+    properties:
+      - fp_using_any_method
+      - fp_current_method
+      - fp_method_is_modern
+      - fp_source_of_method
+      - fp_ever_used_any_method
+      - fp_ever_used_modern_method
+      - fp_past_method
+      - fp_reason_discontinuation
+      - menstrual_regularity
+      - age_at_menarche_years
+  - category: unmet_need
+    properties:
+      - fp_sexually_active_last_4_weeks
+      - fp_postpartum_amenorrhea
+      - fp_fecundity_status
+      - fp_reason_not_using
+      - fp_unmet_need
+      - fp_demand_satisfied_modern
+  - category: sti_hiv
+    properties:
+      - hiv_ever_tested
+      - hiv_tested_last_12_months
+      - hiv_received_results
+      - sti_symptoms_last_12_months
+      - sti_sought_care
+  - category: misp_access
+    properties:
+      - rh_service_aware
+      - rh_service_accessible
+      - clean_delivery_kit_available
+      - emergency_contraception_aware
+      - condom_accessible
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (reproductive health / family planning)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A woman-level reproductive health interview serializes naturally as a QuestionnaireResponse whose Questionnaire is the DHS or MICS family planning instrument. Derived indicators (fp_unmet_need, fp_demand_satisfied_modern, fertility_preference) are better represented as FHIR Observations produced by a scoring step. The STI/HIV block may require a separate QuestionnaireResponse gated on an additional consent resource."
+  dhis2:
+    label: "DHIS2 family planning data elements"
+    uri: "https://docs.dhis2.org/en/topics/metadata/global-health-data-sets.html"
+    match: close
+    vocabulary: "DHIS2 global health data sets"
+    note: "DHIS2 national health information systems frequently carry contraceptive prevalence and unmet need aggregate data elements, but household-survey-level item data is rarely modelled in DHIS2 core. The DHIS2 Tracker can accommodate individual-level survey data in a programme structure."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the six v1 social-protection reference systems (FHIR,
+    DHIS2, OpenCRVS, OpenSPP, openIMIS, DCI Social Registry) carry
+    household-level reproductive health survey items in core. The
+    informing domain tools live outside the v1 set: DHS Program, MICS,
+    IAWG MISP monitoring, and UNFPA/SDG reporting frameworks. Aggregate
+    contraceptive prevalence rates are widely reported through DHIS2
+    and the WHO Global Health Observatory, but the underlying item-level
+    survey data is not captured in those systems.

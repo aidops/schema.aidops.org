@@ -1,0 +1,23 @@
+id: vacc_mcv2
+maturity: draft
+label:
+  en: "MCV2 (measles-containing vaccine dose 2) vaccination status"
+  fr: "Statut vaccinal VCR2 (vaccin contenant le composant rougeole dose 2)"
+  es: "Estado de vacunación VCS2 (vacuna con componente de sarampión dosis 2)"
+
+definition:
+  en: "Whether the child received the second dose of measles-containing vaccine (MCV2) at 15–18 months, with a minimum 4-week interval from MCV1. Published recall wording: '(Name) received a 2nd measles injection?' Country-specific — not included in all national EPI schedules as of 2025. DHS code h_ms2; MICS code IM6b."
+  fr: "Si l'enfant a reçu la deuxième dose du vaccin contenant le composant rougeole (VCR2) entre 15 et 18 mois, avec un intervalle minimum de 4 semaines par rapport au VCR1. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une 2e injection contre la rougeole ? » Spécifique au pays — non inclus dans tous les calendriers EPI nationaux en 2025. Code DHS h_ms2 ; code MICS IM6b."
+  es: "Si el niño recibió la segunda dosis de vacuna con componente de sarampión (VCS2) entre los 15 y 18 meses, con un intervalo mínimo de 4 semanas desde VCS1. Redacción de recordatorio publicada: '¿Recibió (nombre) una 2.a inyección contra el sarampión?' Específica por país — no incluida en todos los calendarios EPI nacionales hasta 2025. Código DHS h_ms2; código MICS IM6b."
+
+type: string
+cardinality: single
+core: false
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

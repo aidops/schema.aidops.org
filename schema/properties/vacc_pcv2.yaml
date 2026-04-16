@@ -1,0 +1,23 @@
+id: vacc_pcv2
+maturity: draft
+label:
+  en: "PCV dose 2 vaccination status"
+  fr: "Statut vaccinal VPC dose 2"
+  es: "Estado de vacunación VPC dosis 2"
+
+definition:
+  en: "Whether the child received the second dose of pneumococcal conjugate vaccine (PCV2) at approximately 10 weeks of age. Published recall wording: '(Name) received a 2nd pneumococcal injection?' Country-specific. DHS code h_pn2; MICS code IM8b."
+  fr: "Si l'enfant a reçu la deuxième dose du vaccin antipneumococcique conjugué (VPC2) à environ 10 semaines. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une 2e injection antipneumococcique ? » Spécifique au pays. Code DHS h_pn2 ; code MICS IM8b."
+  es: "Si el niño recibió la segunda dosis de vacuna antineumocócica conjugada (VPC2) a aproximadamente 10 semanas de edad. Redacción de recordatorio publicada: '¿Recibió (nombre) una 2.a inyección antineumocócica?' Específica por país. Código DHS h_pn2; código MICS IM8b."
+
+type: string
+cardinality: single
+core: false
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

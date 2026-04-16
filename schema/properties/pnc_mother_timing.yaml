@@ -1,0 +1,19 @@
+id: pnc_mother_timing
+maturity: draft
+label:
+  en: Timing of first postnatal check for mother
+  fr: "Délai du premier contrôle postnatal pour la mère"
+  es: "Momento de la primera revisión posnatal para la madre"
+definition:
+  en: "When the woman received her first postnatal health check after delivery. DHS-8 rh_pnc_wm_timing categories. Only asked if pnc_mother_any_check = yes. Drives pnc_mother_within_2_days derived indicator. WHO PNC 2022 recommends a contact within 24 hours; 2 days is the standard DHS-8 indicator threshold."
+  fr: "Quand la femme a reçu son premier contrôle de santé postnatal après l'accouchement. Catégories DHS-8 rh_pnc_wm_timing. Posé uniquement si pnc_mother_any_check = oui. Génère l'indicateur dérivé pnc_mother_within_2_days. L'OMS PNC 2022 recommande un contact dans les 24 heures ; 2 jours est le seuil de l'indicateur standard DHS-8."
+  es: "Cuándo recibió la mujer su primera revisión de salud posnatal después del parto. Categorías DHS-8 rh_pnc_wm_timing. Solo se pregunta si pnc_mother_any_check = sí. Genera el indicador derivado pnc_mother_within_2_days. La OMS PNC 2022 recomienda un contacto dentro de las 24 horas; 2 días es el umbral del indicador estándar DHS-8."
+type: string
+cardinality: single
+core: true
+vocabulary: pnc-timing
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

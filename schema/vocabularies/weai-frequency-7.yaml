@@ -1,0 +1,77 @@
+id: weai-frequency-7
+maturity: draft
+label:
+  en: WEAI Seven-Point Mobility Frequency Scale
+  fr: "Échelle de fréquence à sept points WEAI"
+  es: "Escala de frecuencia de siete puntos WEAI"
+definition:
+  en: "Seven-point frequency scale used in pro-WEAI mobility (Indicator B6: visiting important locations) items. Adequacy condition A counts 'once per week or more' (daily, several times per week, or once a week); condition B counts 'once per month or more' (all codes except less_than_monthly and never)."
+  fr: "Échelle de fréquence à sept points utilisée dans les items de mobilité du pro-WEAI (Indicateur B6 : visite de lieux importants). La condition d'adéquation A compte 'au moins une fois par semaine' (quotidien, plusieurs fois par semaine ou une fois par semaine) ; la condition B compte 'au moins une fois par mois' (tous les codes sauf moins_que_mensuel et jamais)."
+  es: "Escala de frecuencia de siete puntos utilizada en los ítems de movilidad del pro-WEAI (Indicador B6: visita a lugares importantes). La condición de adecuación A cuenta 'al menos una vez por semana' (diariamente, varias veces por semana o una vez por semana); la condición B cuenta 'al menos una vez al mes' (todos los códigos excepto menos_que_mensual y nunca)."
+standard:
+  name: "pro-WEAI User Guide v3 (IFPRI 2026)"
+  uri: "https://weai.ifpri.info/files/2026/01/Pro-WEAI-Guide-v3.pdf"
+values:
+  - code: daily
+    label:
+      en: Daily
+      fr: "Quotidiennement"
+      es: "Diariamente"
+    definition:
+      en: "The respondent visits this location every day."
+      fr: "Le répondant visite ce lieu chaque jour."
+      es: "El encuestado visita este lugar todos los días."
+  - code: several_times_week
+    label:
+      en: Several times a week
+      fr: "Plusieurs fois par semaine"
+      es: "Varias veces por semana"
+    definition:
+      en: "The respondent visits this location two or more times per week but not every day."
+      fr: "Le répondant visite ce lieu deux fois ou plus par semaine, mais pas tous les jours."
+      es: "El encuestado visita este lugar dos o más veces por semana, pero no todos los días."
+  - code: once_a_week
+    label:
+      en: Once a week
+      fr: "Une fois par semaine"
+      es: "Una vez por semana"
+    definition:
+      en: "The respondent visits this location approximately once per week."
+      fr: "Le répondant visite ce lieu environ une fois par semaine."
+      es: "El encuestado visita este lugar aproximadamente una vez por semana."
+  - code: several_times_month
+    label:
+      en: Several times a month
+      fr: "Plusieurs fois par mois"
+      es: "Varias veces al mes"
+    definition:
+      en: "The respondent visits this location two or more times per month but less than once per week."
+      fr: "Le répondant visite ce lieu deux fois ou plus par mois, mais moins d'une fois par semaine."
+      es: "El encuestado visita este lugar dos o más veces al mes, pero menos de una vez por semana."
+  - code: once_a_month
+    label:
+      en: Once a month
+      fr: "Une fois par mois"
+      es: "Una vez al mes"
+    definition:
+      en: "The respondent visits this location approximately once per month."
+      fr: "Le répondant visite ce lieu environ une fois par mois."
+      es: "El encuestado visita este lugar aproximadamente una vez al mes."
+  - code: less_than_monthly
+    label:
+      en: Less than once a month
+      fr: "Moins d'une fois par mois"
+      es: "Menos de una vez al mes"
+    definition:
+      en: "The respondent visits this location infrequently, less than once per month."
+      fr: "Le répondant visite ce lieu rarement, moins d'une fois par mois."
+      es: "El encuestado visita este lugar con poca frecuencia, menos de una vez al mes."
+  - code: never
+    label:
+      en: Never
+      fr: "Jamais"
+      es: "Nunca"
+    definition:
+      en: "The respondent never visits this location."
+      fr: "Le répondant ne visite jamais ce lieu."
+      es: "El encuestado nunca visita este lugar."

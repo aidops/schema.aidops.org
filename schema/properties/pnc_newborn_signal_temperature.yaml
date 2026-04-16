@@ -1,0 +1,19 @@
+id: pnc_newborn_signal_temperature
+maturity: draft
+label:
+  en: "Newborn PNC signal: temperature measured"
+  fr: "Signal PNC nouveau-né : température mesurée"
+  es: "Señal PPN recién nacido: temperatura medida"
+definition:
+  en: "Whether the health worker measured the baby's temperature during the check in the first 2 days after birth. DHS-8 m78b. Newborn signal function 2 of 5. Only asked if pnc_newborn_any_check = yes and pnc_newborn_timing is within 2 days."
+  fr: "Si l'agent de santé a mesuré la température du bébé lors du contrôle dans les 2 premiers jours suivant la naissance. DHS-8 m78b. Fonction signal nouveau-né 2 sur 5. Posé uniquement si pnc_newborn_any_check = oui et pnc_newborn_timing est dans les 2 jours."
+  es: "Si el trabajador de salud midió la temperatura del bebé durante la revisión en los primeros 2 días después del parto. DHS-8 m78b. Función de señal del recién nacido 2 de 5. Solo se pregunta si pnc_newborn_any_check = sí y pnc_newborn_timing está dentro de los 2 días."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

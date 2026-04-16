@@ -1,0 +1,19 @@
+id: unfpa-rh-indicators
+title: "UNFPA Reproductive Health Indicators Framework (ICPD+25 Transformative Goals; FP2030 Core Measurement Framework)"
+short_title: UNFPA RH Indicators
+publisher: "UNFPA"
+year: 2021
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unfpa.org/data"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ReproductiveHealthProfile
+  vocabularies: []
+  properties:
+    - fp_demand_satisfied_modern
+    - fp_unmet_need
+    - fp_method_is_modern

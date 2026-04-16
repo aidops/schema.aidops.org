@@ -1,0 +1,19 @@
+id: delivery_cesarean_section
+maturity: draft
+label:
+  en: Cesarean section delivery
+  fr: "Accouchement par césarienne"
+  es: Parto por cesárea
+definition:
+  en: "Whether the most recent birth was delivered by cesarean section (surgical delivery). DHS-8 m17. Relevant for complications monitoring, facility capacity assessment, and overuse/underuse analysis. Gate item for delivery_cesarean_timing."
+  fr: "Si la naissance la plus récente a été réalisée par césarienne (accouchement chirurgical). DHS-8 m17. Pertinent pour le suivi des complications, l'évaluation de la capacité des établissements et l'analyse de la surutilisation/sous-utilisation. Item de seuil pour delivery_cesarean_timing."
+  es: "Si el parto más reciente se realizó por cesárea (parto quirúrgico). DHS-8 m17. Relevante para el monitoreo de complicaciones, evaluación de capacidad de establecimientos y análisis de sobreuso/subuso. Ítem de puerta para delivery_cesarean_timing."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: delivery
+age_applicability:
+  - adult
+sensitivity: sensitive

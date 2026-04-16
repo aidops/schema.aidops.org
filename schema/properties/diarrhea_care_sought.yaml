@@ -1,0 +1,23 @@
+id: diarrhea_care_sought
+maturity: draft
+label:
+  en: "Care sought for diarrhea"
+  fr: "Soins recherchés pour la diarrhée"
+  es: "Atención buscada por diarrea"
+
+definition:
+  en: "Whether the caregiver sought advice or treatment for the child's diarrhea from anyone. Published wording: 'Did you seek advice or treatment for the diarrhea from anyone?' Gateway to diarrhea_care_source. Ask only if diarrhea_last_2wks is not false. DHS code h12 (gateway variable); MICS code CD3."
+  fr: "Si le soignant a recherché des conseils ou un traitement auprès de quelqu'un pour la diarrhée de l'enfant. Formulation publiée : « Avez-vous cherché des conseils ou un traitement auprès de quelqu'un pour la diarrhée ? » Passerelle vers diarrhea_care_source. Posez uniquement si diarrhea_last_2wks est vrai. Code DHS h12 (variable passerelle) ; code MICS CD3."
+  es: "Si el cuidador buscó consejo o tratamiento para la diarrea del niño de alguna persona. Redacción publicada: '¿Buscó consejo o tratamiento para la diarrea de alguna persona?' Puerta de entrada a diarrhea_care_source. Preguntar solo si diarrhea_last_2wks es verdadero. Código DHS h12 (variable de puerta); código MICS CD3."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: diarrhea
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

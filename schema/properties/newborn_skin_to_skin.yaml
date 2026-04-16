@@ -1,0 +1,19 @@
+id: newborn_skin_to_skin
+maturity: draft
+label:
+  en: Newborn placed skin-to-skin on mother's chest
+  fr: "Nouveau-né placé peau à peau sur la poitrine de la mère"
+  es: "Recién nacido colocado piel a piel en el pecho de la madre"
+definition:
+  en: "Whether the baby was placed skin-to-skin on the mother's chest after birth. DHS-8 m77a (rh_del_skin). New indicator in DHS-8. WHO Essential Newborn Care recommendation. Promotes thermoregulation, bonding, and early initiation of breastfeeding. Only asked if most_recent_birth_outcome = live_birth."
+  fr: "Si le bébé a été placé peau à peau sur la poitrine de la mère après la naissance. DHS-8 m77a (rh_del_skin). Nouvel indicateur dans le DHS-8. Recommandation OMS des Soins Essentiels du Nouveau-né. Favorise la thermorégulation, le lien affectif et l'allaitement précoce. Posé uniquement si most_recent_birth_outcome = live_birth."
+  es: "Si el bebé fue colocado piel a piel en el pecho de la madre después del parto. DHS-8 m77a (rh_del_skin). Nuevo indicador en DHS-8. Recomendación de Cuidados Esenciales del Recién Nacido de la OMS. Promueve la termorregulación, el vínculo afectivo y el inicio temprano de la lactancia materna. Solo se pregunta si most_recent_birth_outcome = live_birth."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: newborn
+age_applicability:
+  - adult
+sensitivity: sensitive

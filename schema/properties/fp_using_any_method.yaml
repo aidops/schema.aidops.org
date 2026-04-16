@@ -1,0 +1,22 @@
+id: fp_using_any_method
+maturity: draft
+label:
+  en: "Currently using any contraceptive method"
+  fr: "Utilise actuellement une méthode contraceptive"
+  es: "Actualmente usa algún método anticonceptivo"
+
+definition:
+  en: "Whether the woman is currently doing something or using any method to delay or avoid getting pregnant (DHS FP1; MICS CP1). If yes, proceed to fp_current_method. If no, proceed to fp_ever_used_any_method."
+  fr: "Si la femme fait actuellement quelque chose ou utilise une méthode pour retarder ou éviter une grossesse (DHS FP1 ; MICS CP1). Si oui, passer à fp_current_method. Si non, passer à fp_ever_used_any_method."
+  es: "Si la mujer está haciendo actualmente algo o usando algún método para retrasar o evitar quedar embarazada (DHS FP1; MICS CP1). Si sí, continuar con fp_current_method. Si no, continuar con fp_ever_used_any_method."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women, mics6]

@@ -1,0 +1,186 @@
+id: GenderEmpowermentProfile
+label:
+  en: Gender Empowerment Profile
+  fr: "Profil d'autonomisation de genre"
+  es: "Perfil de empoderamiento de género"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of individual agency and empowerment data collected
+    from an adult respondent (18+) using the project-level Women's Empowerment
+    in Agriculture Index (pro-WEAI, IFPRI 2019). Captures raw item responses
+    across three theoretical domains: intrinsic agency (power within: autonomy,
+    self-efficacy, IPV attitudes, respect), instrumental agency (power to:
+    productive decisions, asset ownership, financial services, income control,
+    work balance, mobility), and collective agency (power with: group
+    membership and group influence). Designed for dual-respondent administration:
+    one profile per adult respondent per household, enabling computation of
+    the Gender Parity Index (GPI) for dual-adult households. Scoring (RAI,
+    NGSE sum, indicator adequacy flags, 3DE domain scores, empowerment score,
+    and GPI) is deferred to post-hoc analysis using IFPRI canonical scripts.
+    IPV attitude items (Indicator A3) are consent-gated at the form level and
+    marked sensitive; they measure normative attitudes, not GBV incidents.
+  fr: >
+    Un enregistrement ponctuel de données d'agentivité individuelle et
+    d'autonomisation collectées auprès d'un répondant adulte (18+) à l'aide
+    de l'Indice d'autonomisation des femmes dans l'agriculture au niveau du
+    projet (pro-WEAI, IFPRI 2019). Consigne les réponses brutes aux items dans
+    trois domaines théoriques : agentivité intrinsèque (pouvoir intérieur :
+    autonomie, auto-efficacité, attitudes envers la VPI, respect), agentivité
+    instrumentale (pouvoir de faire : décisions productives, propriété des
+    actifs, services financiers, contrôle du revenu, équilibre travail,
+    mobilité) et agentivité collective (pouvoir avec : appartenance aux
+    groupes et influence des groupes). Conçu pour une administration à double
+    répondant : un profil par répondant adulte par ménage, permettant le
+    calcul de l'Indice de parité de genre (GPI) pour les ménages à double
+    adulte. La notation (RAI, somme NGSE, indicateurs binaires d'adéquation,
+    scores de domaine 3DE, score d'autonomisation et GPI) est reportée à une
+    analyse post-hoc utilisant les scripts canoniques IFPRI. Les items
+    d'attitudes envers la VPI (indicateur A3) sont soumis au consentement
+    au niveau du formulaire et marqués comme sensibles ; ils mesurent des
+    attitudes normatives, et non des incidents de VBG.
+  es: >
+    Un registro puntual de datos de agencia individual y empoderamiento
+    recopilados de un encuestado adulto (18+) usando el Índice de
+    Empoderamiento de la Mujer en la Agricultura a nivel de proyecto
+    (pro-WEAI, IFPRI 2019). Consigna las respuestas brutas a los ítems en
+    tres dominios teóricos: agencia intrínseca (poder interior: autonomía,
+    autoeficacia, actitudes sobre VPI, respeto), agencia instrumental (poder
+    para: decisiones productivas, propiedad de activos, servicios financieros,
+    control de ingresos, equilibrio laboral, movilidad) y agencia colectiva
+    (poder con: membresía de grupos e influencia de grupos). Diseñado para
+    administración con doble encuestado: un perfil por encuestado adulto por
+    hogar, lo que permite calcular el Índice de Paridad de Género (GPI) para
+    hogares con dos adultos. La puntuación (RAI, suma NGSE, indicadores
+    binarios de adecuación, puntuaciones de dominio 3DE, puntuación de
+    empoderamiento y GPI) se difiere al análisis post-hoc usando los scripts
+    canónicos del IFPRI. Los ítems de actitudes sobre VPI (Indicador A3)
+    están sujetos a consentimiento a nivel de formulario y marcados como
+    sensibles; miden actitudes normativas, no incidentes de VBG.
+
+properties:
+  # Domain A: Intrinsic Agency
+  - weai_autonomy_vignette_external
+  - weai_autonomy_vignette_introjected
+  - weai_autonomy_vignette_identified
+  - weai_se_confident_goals
+  - weai_se_overcome_challenges
+  - weai_se_achieve_goals
+  - weai_se_succeed_efforts
+  - weai_se_handle_difficulties
+  - weai_se_confident_achieve
+  - weai_se_compared_to_others
+  - weai_se_difficult_situations
+  - weai_ipv_goes_out
+  - weai_ipv_neglects_children
+  - weai_ipv_argues
+  - weai_ipv_refuses_sex
+  - weai_ipv_burns_food
+  - weai_respect_r_to_partner
+  - weai_respect_partner_to_r
+  - weai_trust_partner
+  - weai_comfortable_disagreeing
+  # Domain B: Instrumental Agency
+  - weai_decision_input_crop
+  - weai_decision_input_livestock
+  - weai_decision_capacity_crop
+  - weai_asset_ownership_small
+  - weai_asset_ownership_large
+  - weai_land_ownership
+  - weai_credit_used
+  - weai_credit_decision
+  - weai_credit_access_capacity
+  - weai_account_access
+  - weai_income_control_agr
+  - weai_income_control_nonagr
+  - weai_work_primary_hours
+  - weai_work_domestic_hours
+  - weai_childcare_secondary_hours
+  - weai_mobility_city
+  - weai_mobility_market
+  - weai_mobility_family
+  - weai_mobility_health
+  - weai_mobility_public_meeting
+  # Domain C: Collective Agency
+  - weai_group_membership
+  - weai_group_influential
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: intrinsic_agency
+    properties:
+      - weai_autonomy_vignette_external
+      - weai_autonomy_vignette_introjected
+      - weai_autonomy_vignette_identified
+      - weai_se_confident_goals
+      - weai_se_overcome_challenges
+      - weai_se_achieve_goals
+      - weai_se_succeed_efforts
+      - weai_se_handle_difficulties
+      - weai_se_confident_achieve
+      - weai_se_compared_to_others
+      - weai_se_difficult_situations
+      - weai_ipv_goes_out
+      - weai_ipv_neglects_children
+      - weai_ipv_argues
+      - weai_ipv_refuses_sex
+      - weai_ipv_burns_food
+      - weai_respect_r_to_partner
+      - weai_respect_partner_to_r
+      - weai_trust_partner
+      - weai_comfortable_disagreeing
+  - category: instrumental_agency
+    properties:
+      - weai_decision_input_crop
+      - weai_decision_input_livestock
+      - weai_decision_capacity_crop
+      - weai_asset_ownership_small
+      - weai_asset_ownership_large
+      - weai_land_ownership
+      - weai_credit_used
+      - weai_credit_decision
+      - weai_credit_access_capacity
+      - weai_account_access
+      - weai_income_control_agr
+      - weai_income_control_nonagr
+      - weai_work_primary_hours
+      - weai_work_domestic_hours
+      - weai_childcare_secondary_hours
+      - weai_mobility_city
+      - weai_mobility_market
+      - weai_mobility_family
+      - weai_mobility_health
+      - weai_mobility_public_meeting
+  - category: collective_agency
+    properties:
+      - weai_group_membership
+      - weai_group_influential
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (women's empowerment battery)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each pro-WEAI administration maps to a FHIR QuestionnaireResponse with items organized by domain. The composite empowerment score and GPI are derived results better represented as FHIR Observation or RiskAssessment resources produced by a post-hoc scoring step."
+  dhis2:
+    label: "DHIS2 tracked entity attributes (women's empowerment)"
+    uri: "https://docs.dhis2.org/en/topics/metadata/global-health-data-sets.html"
+    match: related
+    vocabulary: "DHIS2 global health data sets"
+    note: "DHIS2 does not carry a standard WEAI program; individual projects implement empowerment items as tracked entity attributes or data elements in custom programs. No standard global DHIS2 mapping exists."

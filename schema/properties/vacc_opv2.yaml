@@ -1,0 +1,23 @@
+id: vacc_opv2
+maturity: draft
+label:
+  en: "OPV dose 2 vaccination status"
+  fr: "Statut vaccinal VPO dose 2"
+  es: "Estado de vacunación VPO dosis 2"
+
+definition:
+  en: "Whether the child received the second dose of oral polio vaccine (OPV2) at approximately 10 weeks of age. Published recall wording: 'Was a second dose of polio drops given at around 10 weeks?' DHS code h8; MICS code IM3c."
+  fr: "Si l'enfant a reçu la deuxième dose du vaccin antipoliomyélitique oral (VPO2) à environ 10 semaines. Formulation de rappel publiée : « Une deuxième dose de gouttes contre la polio a-t-elle été administrée vers 10 semaines ? » Code DHS h8 ; code MICS IM3c."
+  es: "Si el niño recibió la segunda dosis de vacuna antipoliomielítica oral (VPO2) a aproximadamente 10 semanas de edad. Redacción de recordatorio publicada: '¿Se administró una segunda dosis de gotas contra la polio alrededor de las 10 semanas?' Código DHS h8; código MICS IM3c."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

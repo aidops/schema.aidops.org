@@ -1,0 +1,23 @@
+id: fully_vaccinated_basic
+maturity: draft
+label:
+  en: "Fully vaccinated (basic antigens)"
+  fr: "Complètement vacciné (antigènes de base)"
+  es: "Completamente vacunado (antígenos básicos)"
+
+definition:
+  en: "Derived indicator: whether the child received all basic antigens in the WHO EPI schedule — BCG, three doses of DTP-HepB-Hib (Penta1/2/3), three doses of OPV (OPV1/2/3, excluding OPV0 birth dose), and one dose of measles-containing vaccine (MCV1) — all with status not equal to 'no'. Computed from individual antigen items vacc_bcg, vacc_penta1–3, vacc_opv1–3, and vacc_mcv1. Standard DHS-8 'fully vaccinated basic antigens' definition. Used for population-level EPI coverage monitoring."
+  fr: "Indicateur dérivé : si l'enfant a reçu tous les antigènes de base du calendrier EPI de l'OMS — BCG, trois doses de DTP-HepB-Hib (Penta1/2/3), trois doses de VPO (VPO1/2/3, hors dose de naissance VPO0) et une dose de vaccin contenant le composant rougeole (VCR1) — tous avec un statut différent de 'non'. Calculé à partir des items individuels vacc_bcg, vacc_penta1–3, vacc_opv1–3 et vacc_mcv1. Définition DHS-8 standard des « antigènes de base vaccinés complètement ». Utilisé pour le suivi de la couverture EPI au niveau population."
+  es: "Indicador derivado: si el niño recibió todos los antígenos básicos del calendario EPI de la OMS — BCG, tres dosis de DTP-HepB-Hib (Penta1/2/3), tres dosis de VPO (VPO1/2/3, excluyendo la dosis neonatal VPO0) y una dosis de vacuna con componente de sarampión (VCS1) — todos con estado distinto de 'no'. Calculado a partir de los ítems individuales vacc_bcg, vacc_penta1–3, vacc_opv1–3 y vacc_mcv1. Definición estándar DHS-8 de 'completamente vacunado con antígenos básicos'. Usado para el monitoreo de cobertura EPI a nivel poblacional."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

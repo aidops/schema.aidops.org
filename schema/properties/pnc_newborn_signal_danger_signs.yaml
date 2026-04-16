@@ -1,0 +1,19 @@
+id: pnc_newborn_signal_danger_signs
+maturity: draft
+label:
+  en: "Newborn PNC signal: danger signs counseled"
+  fr: "Signal PNC nouveau-né : signes de danger donnés"
+  es: "Señal PPN recién nacido: señales de peligro orientadas"
+definition:
+  en: "Whether the health worker told the mother about signs that the baby needs immediate medical attention during the check in the first 2 days after birth. DHS-8 m78c. Newborn signal function 3 of 5. Only asked if pnc_newborn_any_check = yes and pnc_newborn_timing is within 2 days."
+  fr: "Si l'agent de santé a informé la mère des signes indiquant que le bébé a besoin d'une attention médicale immédiate lors du contrôle dans les 2 premiers jours suivant la naissance. DHS-8 m78c. Fonction signal nouveau-né 3 sur 5. Posé uniquement si pnc_newborn_any_check = oui et pnc_newborn_timing est dans les 2 jours."
+  es: "Si el trabajador de salud le dijo a la madre sobre las señales de que el bebé necesita atención médica inmediata durante la revisión en los primeros 2 días después del parto. DHS-8 m78c. Función de señal del recién nacido 3 de 5. Solo se pregunta si pnc_newborn_any_check = sí y pnc_newborn_timing está dentro de los 2 días."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

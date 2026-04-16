@@ -1,0 +1,21 @@
+id: weai_income_control_agr
+maturity: draft
+label:
+  en: "WEAI income control — agricultural activity"
+  fr: "WEAI contrôle du revenu — activité agricole"
+  es: "WEAI control de ingresos — actividad agrícola"
+
+definition:
+  en: "How much input the respondent had in decisions about how to use income generated from an agricultural activity (crop production, livestock, fishing). Template property for pro-WEAI Indicator B4 (control over use of income); repeat per agricultural activity with income. Adequacy requires code input_some_decisions or input_most_all_decisions for every agricultural activity the respondent participated in."
+  fr: "Dans quelle mesure le répondant a participé aux décisions sur l'utilisation du revenu généré par une activité agricole (production végétale, élevage, pêche). Propriété modèle pour l'indicateur B4 du pro-WEAI (contrôle de l'utilisation du revenu) ; répéter pour chaque activité agricole génératrice de revenus. L'adéquation nécessite le code input_some_decisions ou input_most_all_decisions pour chaque activité agricole à laquelle le répondant a participé."
+  es: "En qué medida el encuestado tuvo participación en las decisiones sobre cómo usar los ingresos generados por una actividad agrícola (producción de cultivos, ganadería, pesca). Propiedad plantilla para el Indicador B4 del pro-WEAI (control sobre el uso de ingresos); repetir por actividad agrícola con ingresos. La adecuación requiere el código input_some_decisions o input_most_all_decisions para cada actividad agrícola en la que participó el encuestado."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-decision-input-4
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

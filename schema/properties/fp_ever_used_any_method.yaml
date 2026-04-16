@@ -1,0 +1,22 @@
+id: fp_ever_used_any_method
+maturity: draft
+label:
+  en: "Ever used any contraceptive method"
+  fr: "A déjà utilisé une méthode contraceptive"
+  es: "Alguna vez usó algún método anticonceptivo"
+
+definition:
+  en: "Whether the woman has ever used any method to delay or avoid getting pregnant (DHS; MICS). Ask only if fp_using_any_method = false. Identifies ever-users who have discontinued, relevant for continuation and dropout analysis."
+  fr: "Si la femme a déjà utilisé une méthode pour retarder ou éviter une grossesse (DHS ; MICS). Demander uniquement si fp_using_any_method = faux. Identifie les utilisatrices passées qui ont abandonné, pertinent pour l'analyse de la continuation et de l'abandon."
+  es: "Si la mujer alguna vez usó algún método para retrasar o evitar quedar embarazada (DHS; MICS). Preguntar solo si fp_using_any_method = falso. Identifica a las usuarias pasadas que han abandonado, relevante para el análisis de continuación y deserción."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women, mics6]

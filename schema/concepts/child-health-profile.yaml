@@ -1,0 +1,223 @@
+id: ChildHealthProfile
+label:
+  en: Child Health Profile
+  fr: "Profil de santé de l'enfant"
+  es: "Perfil de salud del niño"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of health status and recent illness episodes for a child
+    aged 1–59 months (under 5), reported by the primary caregiver. Each record is
+    scoped to a single child (subject: Person aged 1–59 months completed); households
+    with multiple children under 5 generate one record per child.
+
+    The profile covers three domains: (1) vaccination history — per-antigen status
+    verified from a home-based vaccination card or caregiver recall, following the
+    WHO EPI (Expanded Programme on Immunization) recommended schedule; (2) recent
+    illness — 2-week caregiver recall for diarrhea, acute respiratory infection
+    (ARI/pneumonia proxy), and fever, with treatment items (ORS, zinc, ORT,
+    antibiotics, antimalarials); and (3) care-seeking — provider type visited for
+    each illness episode.
+
+    Physical measurements (height, weight, MUAC, oedema) are deliberately excluded
+    and belong to AnthropometricProfile. Infant and young child feeding behaviors
+    (breastfeeding, complementary feeding, MDD-C) are excluded and belong to
+    NutritionPracticesProfile. Vitamin A supplementation and deworming are deferred.
+    Birth registration is out of scope (PS Identifier / CRVS territory). HPV
+    vaccination is deferred (adolescent scope).
+  fr: >
+    Un enregistrement ponctuel de l'état de santé et des épisodes de maladie
+    récents d'un enfant âgé de 1 à 59 mois (moins de 5 ans), rapporté par le
+    soignant principal. Chaque enregistrement est limité à un seul enfant
+    (sujet : personne âgée de 1 à 59 mois révolus) ; les ménages comportant
+    plusieurs enfants de moins de 5 ans génèrent un enregistrement par enfant.
+
+    Le profil couvre trois domaines : (1) l'historique vaccinal — statut par
+    antigène vérifié sur le carnet de vaccination à domicile ou par mémorisation
+    du soignant, suivant le calendrier recommandé de l'EPI (Programme élargi de
+    vaccination) de l'OMS ; (2) les maladies récentes — rappel de 2 semaines par
+    le soignant pour la diarrhée, l'infection respiratoire aiguë (IRA/proxy
+    pneumonie) et la fièvre, avec les traitements (SRO, zinc, TRO, antibiotiques,
+    antipaludéens) ; et (3) le recours aux soins — type de prestataire consulté
+    pour chaque épisode de maladie.
+
+    Les mesures physiques (taille, poids, PB, œdèmes) sont délibérément exclues
+    et relèvent du AnthropometricProfile. Les pratiques d'alimentation du nourrisson
+    et du jeune enfant (allaitement, alimentation complémentaire, DMA-C) sont
+    exclues et relèvent du NutritionPracticesProfile. La supplémentation en
+    vitamine A et le déparasitage sont différés. L'enregistrement des naissances
+    est hors périmètre (Identifiant PS / territoire CRVS). La vaccination contre
+    le HPV est différée (périmètre adolescent).
+  es: >
+    Un registro puntual del estado de salud y los episodios de enfermedad recientes
+    de un niño de 1 a 59 meses de edad (menor de 5 años), reportado por el cuidador
+    principal. Cada registro está delimitado a un solo niño (sujeto: persona de 1
+    a 59 meses cumplidos); los hogares con múltiples niños menores de 5 años generan
+    un registro por niño.
+
+    El perfil cubre tres dominios: (1) historial de vacunación — estado por antígeno
+    verificado en el carnet de vacunación domiciliario o por memoria del cuidador,
+    siguiendo el calendario recomendado del PAI (Programa Ampliado de Inmunización)
+    de la OMS; (2) enfermedades recientes — recordatorio de 2 semanas del cuidador
+    para diarrea, infección respiratoria aguda (IRA/proxy de neumonía) y fiebre,
+    con ítems de tratamiento (SRO, zinc, TRO, antibióticos, antipalúdicos); y
+    (3) búsqueda de atención — tipo de proveedor visitado para cada episodio de
+    enfermedad.
+
+    Las mediciones físicas (talla, peso, PB, edema) están deliberadamente excluidas
+    y pertenecen al AnthropometricProfile. Las prácticas de alimentación del
+    lactante y del niño pequeño (lactancia materna, alimentación complementaria,
+    DDM-C) están excluidas y pertenecen al NutritionPracticesProfile. La
+    suplementación con vitamina A y el desparasitamiento se difieren. El registro
+    de nacimientos está fuera del alcance (Identificador PS / territorio CRVS).
+    La vacunación contra el VPH se difiere (alcance adolescente).
+
+properties:
+  - child_age_months
+  - vaccination_card_exists
+  - vaccination_card_seen
+  - fully_vaccinated_basic
+  - vacc_bcg
+  - vacc_hepb_birth
+  - vacc_opv0
+  - vacc_opv1
+  - vacc_opv2
+  - vacc_opv3
+  - vacc_ipv
+  - vacc_penta1
+  - vacc_penta2
+  - vacc_penta3
+  - vacc_pcv1
+  - vacc_pcv2
+  - vacc_pcv3
+  - vacc_rota1
+  - vacc_rota2
+  - vacc_rota3
+  - vacc_mcv1
+  - vacc_mcv2
+  - other_vaccine_received
+  - diarrhea_last_2wks
+  - diarrhea_blood_in_stool
+  - diarrhea_care_sought
+  - diarrhea_care_source
+  - diarrhea_ors_given
+  - diarrhea_rhf_given
+  - diarrhea_zinc_given
+  - diarrhea_fluids_increased
+  - diarrhea_feeding_continued
+  - diarrhea_ort_achieved
+  - ari_cough_last_2wks
+  - ari_fast_breathing
+  - ari_difficult_breathing
+  - ari_symptom_classification
+  - ari_care_sought
+  - ari_care_source
+  - ari_antibiotics_given
+  - fever_last_2wks
+  - malaria_test_done
+  - malaria_test_result
+  - fever_care_sought
+  - fever_care_source
+  - fever_antimalarial_given
+  - fever_antimalarial_type
+  - fever_antibiotics_given
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: vaccination
+    properties:
+      - child_age_months
+      - vaccination_card_exists
+      - vaccination_card_seen
+      - fully_vaccinated_basic
+      - vacc_bcg
+      - vacc_hepb_birth
+      - vacc_opv0
+      - vacc_opv1
+      - vacc_opv2
+      - vacc_opv3
+      - vacc_ipv
+      - vacc_penta1
+      - vacc_penta2
+      - vacc_penta3
+      - vacc_pcv1
+      - vacc_pcv2
+      - vacc_pcv3
+      - vacc_rota1
+      - vacc_rota2
+      - vacc_rota3
+      - vacc_mcv1
+      - vacc_mcv2
+      - other_vaccine_received
+  - category: diarrhea
+    properties:
+      - diarrhea_last_2wks
+      - diarrhea_blood_in_stool
+      - diarrhea_care_sought
+      - diarrhea_care_source
+      - diarrhea_ors_given
+      - diarrhea_rhf_given
+      - diarrhea_zinc_given
+      - diarrhea_fluids_increased
+      - diarrhea_feeding_continued
+      - diarrhea_ort_achieved
+  - category: ari
+    properties:
+      - ari_cough_last_2wks
+      - ari_fast_breathing
+      - ari_difficult_breathing
+      - ari_symptom_classification
+      - ari_care_sought
+      - ari_care_source
+      - ari_antibiotics_given
+  - category: fever
+    properties:
+      - fever_last_2wks
+      - malaria_test_done
+      - malaria_test_result
+      - fever_care_sought
+      - fever_care_source
+      - fever_antimalarial_given
+      - fever_antimalarial_type
+      - fever_antibiotics_given
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (child health and immunization)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each ChildHealthProfile administration maps to a QuestionnaireResponse. Vaccination items also map to FHIR Immunization resources. Illness episode items (diarrhea, ARI, fever) map to FHIR Condition or Observation resources. The caregiver respondent is the FHIR QuestionnaireResponse.source; the child is the FHIR subject."
+  dhis2:
+    label: "DHIS2 Tracker Program (EPI, Child Health)"
+    uri: "https://dhis2.org"
+    match: close
+    note: "National EPI programs typically implement ChildHealthProfile-equivalent data as a DHIS2 Tracker program with per-child enrollment and repeated vaccination and illness visit events. Vaccination card status and per-antigen dose status map to Tracked Entity Attributes and Data Elements."
+
+convergence:
+  system_count: 2
+  total_systems: 6
+  notes: >
+    FHIR QuestionnaireResponse and DHIS2 Tracker are the closest structural
+    equivalents. OpenSPP, openIMIS, DCI Core, and OpenCRVS do not carry
+    per-child vaccination history or 2-week illness recall in their core
+    data models. All 46 child health properties are new to AidOps;
+    child_age_months is reused from NutritionPracticesProfile.
+    The care-provider-type vocabulary is authored as a shared AidOps
+    vocabulary for use by ChildHealthProfile, MaternalNewbornHealthProfile,
+    and ReproductiveHealthProfile.

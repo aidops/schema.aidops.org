@@ -1,0 +1,74 @@
+id: rh-service-access
+maturity: draft
+label:
+  en: Reproductive Health Service Access
+  fr: "Accès aux services de santé reproductive"
+  es: "Acceso a servicios de salud reproductiva"
+definition:
+  en: "Classification of whether a woman was able to access reproductive health services when she needed them in the past month, and the main barrier if access was denied. Used as a MISP (Minimum Initial Service Package) access indicator in humanitarian and crisis contexts."
+  fr: "Classification indiquant si une femme a pu accéder aux services de santé reproductive en cas de besoin au cours du mois écoulé, et la principale barrière si l'accès a été refusé. Utilisé comme indicateur d'accès MISP (Programme minimum initial de services) dans les contextes humanitaires et de crise."
+  es: "Clasificación de si una mujer pudo acceder a los servicios de salud reproductiva cuando los necesitaba en el último mes, y la barrera principal si el acceso fue denegado. Se usa como indicador de acceso MISP (Paquete de Servicios Iniciales Mínimos) en contextos humanitarios y de crisis."
+values:
+  - code: yes_no_need
+    label:
+      en: No need in the past month
+      fr: "Pas de besoin au cours du mois écoulé"
+      es: "Sin necesidad en el último mes"
+    definition:
+      en: "The woman did not need reproductive health services in the past month."
+      fr: "La femme n'avait pas besoin de services de santé reproductive au cours du mois écoulé."
+      es: "La mujer no necesitó servicios de salud reproductiva en el último mes."
+  - code: yes_accessed
+    label:
+      en: Yes, accessed services when needed
+      fr: "Oui, a accédé aux services quand nécessaire"
+      es: "Sí, accedió a los servicios cuando los necesitó"
+    definition:
+      en: "The woman needed and successfully accessed reproductive health services in the past month."
+      fr: "La femme avait besoin de services de santé reproductive et y a accédé avec succès au cours du mois écoulé."
+      es: "La mujer necesitó y accedió con éxito a los servicios de salud reproductiva en el último mes."
+  - code: no_barrier_distance
+    label:
+      en: No — too far / transport barrier
+      fr: "Non — trop loin / barrière de transport"
+      es: "No — demasiado lejos / barrera de transporte"
+    definition:
+      en: "The woman could not access services due to distance or lack of transport."
+      fr: "La femme n'a pas pu accéder aux services en raison de la distance ou du manque de transport."
+      es: "La mujer no pudo acceder a los servicios por distancia o falta de transporte."
+  - code: no_barrier_security
+    label:
+      en: No — security / safety barrier
+      fr: "Non — barrière de sécurité"
+      es: "No — barrera de seguridad"
+    definition:
+      en: "The woman could not access services due to security concerns, movement restrictions, or armed conflict."
+      fr: "La femme n'a pas pu accéder aux services en raison de préoccupations sécuritaires, de restrictions de mouvement ou de conflit armé."
+      es: "La mujer no pudo acceder a los servicios por preocupaciones de seguridad, restricciones de movimiento o conflicto armado."
+  - code: no_barrier_cost
+    label:
+      en: No — cost barrier
+      fr: "Non — barrière financière"
+      es: "No — barrera de costo"
+    definition:
+      en: "The woman could not access services because she could not afford the cost."
+      fr: "La femme n'a pas pu accéder aux services car elle ne pouvait pas se permettre le coût."
+      es: "La mujer no pudo acceder a los servicios porque no podía pagar el costo."
+  - code: no_barrier_availability
+    label:
+      en: No — services not available
+      fr: "Non — services non disponibles"
+      es: "No — servicios no disponibles"
+    definition:
+      en: "The woman could not access services because they were not available (facility closed, stockout, no staff)."
+      fr: "La femme n'a pas pu accéder aux services parce qu'ils n'étaient pas disponibles (établissement fermé, rupture de stock, pas de personnel)."
+      es: "La mujer no pudo acceder a los servicios porque no estaban disponibles (instalación cerrada, desabastecimiento, sin personal)."
+  - code: no_barrier_other
+    label:
+      en: No — other barrier
+      fr: "Non — autre barrière"
+      es: "No — otra barrera"
+    definition:
+      en: "The woman could not access services due to a barrier not covered by the other codes (e.g., permission denied by household head, lack of female provider)."
+      fr: "La femme n'a pas pu accéder aux services en raison d'une barrière non couverte par les autres codes (p. ex. permission refusée par le chef de ménage, absence de prestataire féminin)."
+      es: "La mujer no pudo acceder a los servicios debido a una barrera no cubierta por los otros códigos (p. ej., permiso denegado por el jefe del hogar, falta de proveedor femenino)."

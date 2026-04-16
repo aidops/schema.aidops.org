@@ -1,0 +1,19 @@
+id: pnc_newborn_within_2_days
+maturity: draft
+label:
+  en: Newborn received postnatal check within 2 days (derived)
+  fr: "Le nouveau-né a reçu un contrôle postnatal dans les 2 jours (dérivé)"
+  es: El recién nacido recibió revisión posnatal dentro de 2 días (derivado)
+definition:
+  en: "Derived indicator: true if pnc_newborn_timing is within_4_hours, 4_to_23_hours, or 1_to_2_days. DHS-8 rh_pnc_nb_2days indicator. Core monitoring indicator for newborn postnatal care coverage."
+  fr: "Indicateur dérivé : vrai si pnc_newborn_timing est within_4_hours, 4_to_23_hours ou 1_to_2_days. Indicateur DHS-8 rh_pnc_nb_2days. Indicateur de suivi central pour la couverture des soins postnataux du nouveau-né."
+  es: "Indicador derivado: verdadero si pnc_newborn_timing es within_4_hours, 4_to_23_hours o 1_to_2_days. Indicador DHS-8 rh_pnc_nb_2days. Indicador de monitoreo central para la cobertura de atención posnatal del recién nacido."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

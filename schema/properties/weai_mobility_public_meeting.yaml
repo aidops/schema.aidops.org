@@ -1,0 +1,21 @@
+id: weai_mobility_public_meeting
+maturity: draft
+label:
+  en: "WEAI mobility — attends public meetings"
+  fr: "WEAI mobilité — participation aux réunions publiques"
+  es: "WEAI movilidad — asistencia a reuniones públicas"
+
+definition:
+  en: "How often the respondent attends a public meeting, community gathering, or religious service. One of five mobility items in pro-WEAI Indicator B6 (visiting important locations). Contributes to Condition B adequacy: at least one of (health facility, public meeting) visited at monthly frequency or more."
+  fr: "À quelle fréquence le répondant assiste-t-il à une réunion publique, un rassemblement communautaire ou un service religieux. L'un des cinq items de mobilité de l'indicateur B6 du pro-WEAI (visite de lieux importants). Contribue à l'adéquation de la condition B : au moins l'un parmi (établissement de santé, réunion publique) visité au moins une fois par mois."
+  es: "Con qué frecuencia el encuestado asiste a una reunión pública, reunión comunitaria o servicio religioso. Uno de los cinco ítems de movilidad del Indicador B6 del pro-WEAI (visita a lugares importantes). Contribuye a la adecuación de la Condición B: al menos uno de (establecimiento de salud, reunión pública) visitado con frecuencia mensual o más."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-frequency-7
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

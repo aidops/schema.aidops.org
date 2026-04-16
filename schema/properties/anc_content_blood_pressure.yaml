@@ -1,0 +1,19 @@
+id: anc_content_blood_pressure
+maturity: draft
+label:
+  en: Blood pressure measured during ANC
+  fr: "Tension artérielle mesurée lors des CPN"
+  es: Presión arterial medida durante la APN
+definition:
+  en: "Whether the woman's blood pressure was measured during antenatal care for the most recent pregnancy. DHS-8 m42c; MICS6 MN3b. One of six core ANC content items tracked in DHS surveys. Blood pressure monitoring is essential for detecting pre-eclampsia. Only asked if anc_any_visit = yes."
+  fr: "Si la tension artérielle de la femme a été mesurée lors des soins prénataux pour la grossesse la plus récente. DHS-8 m42c ; MICS6 MN3b. L'un des six principaux items de contenu CPN suivis dans les enquêtes DHS. La surveillance de la tension artérielle est essentielle pour détecter la pré-éclampsie. Posé uniquement si anc_any_visit = oui."
+  es: "Si se midió la presión arterial de la mujer durante la atención prenatal para el embarazo más reciente. DHS-8 m42c; MICS6 MN3b. Uno de los seis ítems principales de contenido de APN rastreados en las encuestas DHS. El monitoreo de la presión arterial es esencial para detectar la preeclampsia. Solo se pregunta si anc_any_visit = sí."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

@@ -1,0 +1,23 @@
+id: vacc_penta3
+maturity: draft
+label:
+  en: "DTP-HepB-Hib dose 3 (Penta3) vaccination status"
+  fr: "Statut vaccinal DTP-HepB-Hib dose 3 (Penta3)"
+  es: "Estado de vacunación DTP-HepB-Hib dosis 3 (Penta3)"
+
+definition:
+  en: "Whether the child received the third dose of the pentavalent (DTP-HepB-Hib) or DTP vaccine at approximately 14 weeks of age. Published recall wording: '(Name) was given a 3rd DPT / pentavalent injection?' DTP3 / Penta3 is the SDG 3.b.1 and Sphere 2018 proxy for full immunization coverage (≥90% target). DHS code h5; MICS code IM4c."
+  fr: "Si l'enfant a reçu la troisième dose du vaccin pentavalent (DTP-HepB-Hib) ou DTP à environ 14 semaines. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une 3e injection DTC / pentavalent ? » DTC3 / Penta3 est le proxy ODD 3.b.1 et Sphère 2018 pour la couverture vaccinale complète (cible ≥90 %). Code DHS h5 ; code MICS IM4c."
+  es: "Si el niño recibió la tercera dosis de la vacuna pentavalente (DTP-HepB-Hib) o DTP a aproximadamente 14 semanas de edad. Redacción de recordatorio publicada: '¿Recibió (nombre) una 3.a inyección DPT / pentavalente?' DTP3 / Penta3 es el proxy ODS 3.b.1 y Esfera 2018 para la cobertura de inmunización completa (objetivo ≥90 %). Código DHS h5; código MICS IM4c."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

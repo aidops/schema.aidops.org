@@ -44,29 +44,33 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 7 concepts; update this count when adding/removing AidOps concepts
-        assert len(result["concepts"]) == 7, (
-            f"Expected 7 concepts, got {len(result['concepts'])}: "
+        # AidOps has exactly 11 concepts; update this count when adding/removing AidOps concepts
+        assert len(result["concepts"]) == 11, (
+            f"Expected 11 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
             "FoodSecurityProfile",
             "AnthropometricProfile",
+            "ChildHealthProfile",
             "DwellingDamageProfile",
             "EducationProfile",
             "EnergyAccessProfile",
+            "GenderEmpowermentProfile",
+            "MaternalNewbornHealthProfile",
             "NutritionPracticesProfile",
+            "ReproductiveHealthProfile",
             "WASHAssessmentProfile",
         }
 
         # Update this count when adding/removing AidOps-owned properties
-        assert len(result["properties"]) == 213, (
-            f"Expected 213 properties, got {len(result['properties'])}"
+        assert len(result["properties"]) == 396, (
+            f"Expected 396 properties, got {len(result['properties'])}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies
-        assert len(result["vocabularies"]) == 51, (
-            f"Expected 51 vocabularies, got {len(result['vocabularies'])}"
+        assert len(result["vocabularies"]) == 87, (
+            f"Expected 87 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema
@@ -101,8 +105,10 @@ class TestRealSchema:
     def test_supertype_links_to_publicschema(self):
         """Profile subtypes link to publicschema.org for their supertype."""
         result = build_vocabulary(SCHEMA_DIR)
-        for cid in ["FoodSecurityProfile", "AnthropometricProfile", "DwellingDamageProfile",
-                    "EducationProfile", "EnergyAccessProfile", "NutritionPracticesProfile",
+        for cid in ["FoodSecurityProfile", "AnthropometricProfile", "ChildHealthProfile",
+                    "DwellingDamageProfile", "EducationProfile", "EnergyAccessProfile",
+                    "GenderEmpowermentProfile", "MaternalNewbornHealthProfile",
+                    "NutritionPracticesProfile", "ReproductiveHealthProfile",
                     "WASHAssessmentProfile"]:
             concept = result["concepts"][cid]
             supertypes = concept.get("supertypes", [])
@@ -162,10 +168,12 @@ class TestDistOutputs:
         assert result.get("concept_schemas") is not None
         assert result.get("jsonld_docs") is not None
 
-        # JSON-LD docs for all 7 concepts
+        # JSON-LD docs for all 11 concepts
         for cid in ["FoodSecurityProfile", "AnthropometricProfile",
-                     "DwellingDamageProfile", "EducationProfile",
-                     "EnergyAccessProfile", "NutritionPracticesProfile",
+                     "ChildHealthProfile", "DwellingDamageProfile",
+                     "EducationProfile", "EnergyAccessProfile",
+                     "GenderEmpowermentProfile", "MaternalNewbornHealthProfile",
+                     "NutritionPracticesProfile", "ReproductiveHealthProfile",
                      "WASHAssessmentProfile"]:
             key = f"concepts/{cid}.jsonld"
             assert key in result["jsonld_docs"], f"Missing JSON-LD doc: {key}"

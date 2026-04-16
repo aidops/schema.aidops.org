@@ -1,0 +1,23 @@
+id: hiv_tested_last_12_months
+maturity: draft
+label:
+  en: "Tested for HIV in the last 12 months"
+  fr: "A subi un test VIH au cours des 12 derniers mois"
+  es: "Se hizo la prueba de VIH en los últimos 12 meses"
+
+definition:
+  en: "Whether the woman was tested for HIV in the last 12 months (DHS). Ask only if hiv_ever_tested = 'yes'. The 12-month recall period aligns with PEPFAR and UNAIDS programme metrics for HIV testing coverage."
+  fr: "Si la femme a subi un test de dépistage du VIH au cours des 12 derniers mois (DHS). Demander uniquement si hiv_ever_tested = 'yes'. La période de rappel de 12 mois est alignée sur les indicateurs de programme PEPFAR et ONUSIDA pour la couverture des tests VIH."
+  es: "Si la mujer se hizo la prueba de VIH en los últimos 12 meses (DHS). Preguntar solo si hiv_ever_tested = 'yes'. El período de recordatorio de 12 meses se alinea con las métricas de programa de PEPFAR y ONUSIDA para la cobertura de pruebas de VIH."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes / no / prefer_not_to_answer
+vocabulary: null
+references: null
+category: sti_hiv
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women]

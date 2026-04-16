@@ -1,0 +1,22 @@
+id: sti_sought_care
+maturity: draft
+label:
+  en: "Sought care for STI symptoms"
+  fr: "A cherché des soins pour des symptômes d'IST"
+  es: "Buscó atención por síntomas de ITS"
+
+definition:
+  en: "Whether the woman sought care for any STI symptoms experienced in the last 12 months (WHO reproductive health indicators). Ask only if sti_symptoms_last_12_months = 'yes'. Care-seeking gap indicator: the difference between symptom prevalence and care-seeking reveals unmet need for STI treatment services."
+  fr: "Si la femme a cherché des soins pour des symptômes d'IST présentés au cours des 12 derniers mois (indicateurs OMS de santé reproductive). Demander uniquement si sti_symptoms_last_12_months = 'yes'. Indicateur de déficit de recours aux soins : l'écart entre la prévalence des symptômes et le recours aux soins révèle un besoin non satisfait de services de traitement des IST."
+  es: "Si la mujer buscó atención por algún síntoma de ITS experimentado en los últimos 12 meses (indicadores de salud reproductiva de la OMS). Preguntar solo si sti_symptoms_last_12_months = 'yes'. Indicador de brecha en la búsqueda de atención: la diferencia entre la prevalencia de síntomas y la búsqueda de atención revela una necesidad insatisfecha de servicios de tratamiento de ITS."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes / no / prefer_not_to_answer
+vocabulary: null
+references: null
+category: sti_hiv
+sensitivity: sensitive
+age_applicability:
+  - adult

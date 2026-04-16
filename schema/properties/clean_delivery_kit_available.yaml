@@ -1,0 +1,23 @@
+id: clean_delivery_kit_available
+maturity: draft
+label:
+  en: "Clean delivery kit available at most recent birth"
+  fr: "Kit d'accouchement propre disponible lors du dernier accouchement"
+  es: "Kit de parto limpio disponible en el último nacimiento"
+
+definition:
+  en: "Whether the woman received or had access to a clean delivery kit for her most recent birth (MISP Objective 4). Ask only if the woman had a birth in the last 12 months. MISP minimum standard: clean delivery kits must be available for all anticipated home or non-facility births."
+  fr: "Si la femme a reçu ou eu accès à un kit d'accouchement propre lors de son dernier accouchement (Objectif MISP 4). Demander uniquement si la femme a accouché au cours des 12 derniers mois. Norme minimale MISP : des kits d'accouchement propres doivent être disponibles pour tous les accouchements à domicile ou hors établissement prévus."
+  es: "Si la mujer recibió o tuvo acceso a un kit de parto limpio para su nacimiento más reciente (Objetivo MISP 4). Preguntar solo si la mujer tuvo un parto en los últimos 12 meses. Estándar mínimo MISP: los kits de parto limpio deben estar disponibles para todos los partos domiciliarios o fuera de instalaciones previstos."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes / no / not_applicable
+vocabulary: null
+references: null
+category: misp_access
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [iawg_misp]

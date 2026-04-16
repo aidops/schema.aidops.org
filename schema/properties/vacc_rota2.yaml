@@ -1,0 +1,23 @@
+id: vacc_rota2
+maturity: draft
+label:
+  en: "Rotavirus dose 2 vaccination status"
+  fr: "Statut vaccinal rotavirus dose 2"
+  es: "Estado de vacunación rotavirus dosis 2"
+
+definition:
+  en: "Whether the child received the second dose of rotavirus vaccine at approximately 10 weeks of age (for 3-dose schedule) or as the final dose (for 2-dose schedule). Published recall wording: '(Name) received a 2nd rotavirus dose?' Country-specific. DHS code h_rt2; MICS code IM7b."
+  fr: "Si l'enfant a reçu la deuxième dose du vaccin antirotavirus à environ 10 semaines (pour un schéma à 3 doses) ou comme dose finale (pour un schéma à 2 doses). Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une 2e dose antirotavirus ? » Spécifique au pays. Code DHS h_rt2 ; code MICS IM7b."
+  es: "Si el niño recibió la segunda dosis de vacuna contra rotavirus a aproximadamente 10 semanas de edad (para esquema de 3 dosis) o como dosis final (para esquema de 2 dosis). Redacción de recordatorio publicada: '¿Recibió (nombre) una 2.a dosis de rotavirus?' Específica por país. Código DHS h_rt2; código MICS IM7b."
+
+type: string
+cardinality: single
+core: false
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

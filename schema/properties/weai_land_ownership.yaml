@@ -1,0 +1,21 @@
+id: weai_land_ownership
+maturity: draft
+label:
+  en: "WEAI land ownership"
+  fr: "WEAI propriété foncière"
+  es: "WEAI propiedad de tierra"
+
+definition:
+  en: "Whether the respondent owns any land (agricultural or residential) and, if so, whether ownership is sole or joint. Part of pro-WEAI Indicator B2 (ownership of land and other assets). Adequacy for B2 land condition: respondent solely or jointly owns any land. This is an independent adequacy condition from the small and large asset conditions."
+  fr: "Si le répondant possède des terres (agricoles ou résidentielles) et, si oui, si la propriété est individuelle ou conjointe. Fait partie de l'indicateur B2 du pro-WEAI (propriété de terres et d'autres actifs). L'adéquation pour la condition foncière de B2 : le répondant possède seul ou conjointement des terres. Il s'agit d'une condition d'adéquation indépendante des conditions de petits et grands actifs."
+  es: "Si el encuestado posee alguna tierra (agrícola o residencial) y, de ser así, si la propiedad es individual o conjunta. Parte del Indicador B2 del pro-WEAI (propiedad de tierras y otros activos). La adecuación para la condición de tierra de B2: el encuestado posee solo o conjuntamente cualquier tierra. Esta es una condición de adecuación independiente de las condiciones de activos pequeños y grandes."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-asset-ownership
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

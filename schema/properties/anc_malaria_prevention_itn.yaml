@@ -1,0 +1,19 @@
+id: anc_malaria_prevention_itn
+maturity: draft
+label:
+  en: Slept under a mosquito net during pregnancy
+  fr: "A dormi sous une moustiquaire pendant la grossesse"
+  es: "Durmió bajo un mosquitero durante el embarazo"
+definition:
+  en: "Whether the woman slept under a mosquito net (insecticide-treated net, ITN) during the most recent pregnancy. Applicable in malaria-endemic contexts only. Malaria prevention in pregnancy: ITN use is the primary household-level indicator; IPTp (intermittent preventive treatment with SP/Fansidar) is a facility-based measure not captured here. Suppress this item in non-endemic settings."
+  fr: "Si la femme a dormi sous une moustiquaire (moustiquaire imprégnée d'insecticide, MII) pendant la grossesse la plus récente. Applicable uniquement dans les contextes endémiques du paludisme. Prévention du paludisme pendant la grossesse : l'utilisation de MII est le principal indicateur au niveau du ménage ; le TPIp (traitement préventif intermittent avec SP/Fansidar) est une mesure basée dans les établissements non capturée ici. Supprimer cet item dans les contextes non endémiques."
+  es: "Si la mujer durmió bajo un mosquitero (mosquitero tratado con insecticida, MTI) durante el embarazo más reciente. Aplicable solo en contextos endémicos de malaria. Prevención de malaria en el embarazo: el uso de MTI es el principal indicador a nivel del hogar; el TPIe (tratamiento preventivo intermitente con SP/Fansidar) es una medida basada en establecimientos que no se captura aquí. Suprimir este ítem en entornos no endémicos."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

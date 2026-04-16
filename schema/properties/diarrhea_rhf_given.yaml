@@ -1,0 +1,23 @@
+id: diarrhea_rhf_given
+maturity: draft
+label:
+  en: "Recommended home fluid (RHF) given for diarrhea"
+  fr: "Liquide recommandé à domicile (RHF) administré pour la diarrhée"
+  es: "Líquido recomendado en el hogar (LRH) administrado para la diarrea"
+
+definition:
+  en: "Whether the child was given any recommended home fluid (RHF) — such as coconut water, rice water, or other locally recommended fluid — during the diarrhea episode. Published wording: 'Was (name) given any recommended home fluid — coconut water, rice water, other recommended fluid?' Part of the ORT (oral rehydration therapy) composite indicator: ORT = ORS or RHF or increased fluids. Ask only if diarrhea_last_2wks is not false. DHS code h13b."
+  fr: "Si l'enfant a reçu un liquide recommandé à domicile (RHF) — tel que l'eau de coco, l'eau de riz ou un autre liquide recommandé localement — pendant l'épisode de diarrhée. Formulation publiée : « (Prénom) a-t-il/elle reçu un liquide recommandé à domicile — eau de coco, eau de riz, autre liquide recommandé ? » Fait partie de l'indicateur composite de TRO (thérapie de réhydratation orale) : TRO = SRO ou RHF ou augmentation des liquides. Posez uniquement si diarrhea_last_2wks est vrai. Code DHS h13b."
+  es: "Si al niño se le dio algún líquido recomendado en el hogar (LRH) — como agua de coco, agua de arroz u otro líquido recomendado localmente — durante el episodio de diarrea. Redacción publicada: '¿Se le dio a (nombre) algún líquido recomendado en el hogar — agua de coco, agua de arroz, otro líquido recomendado?' Parte del indicador compuesto de TRO (terapia de rehidratación oral): TRO = SRO o LRH o aumento de líquidos. Preguntar solo si diarrhea_last_2wks es verdadero. Código DHS h13b."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: diarrhea
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8]

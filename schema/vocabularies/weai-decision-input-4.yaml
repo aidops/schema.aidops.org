@@ -1,0 +1,50 @@
+id: weai-decision-input-4
+maturity: draft
+label:
+  en: WEAI Decision Input Scale
+  fr: "Échelle de participation aux décisions WEAI"
+  es: "Escala de participación en decisiones WEAI"
+definition:
+  en: "Four-point scale for the degree of input a respondent had in productive or income-use decisions, used in pro-WEAI Indicators B1 (input in productive decisions) and B4 (control over use of income). Adequacy for B1 requires code 3 (input into most or all decisions), or code 2 combined with high perceived capacity (Indicator B1, condition B). Adequacy for B4 requires code 2 or 3."
+  fr: "Échelle en quatre points pour le degré de participation du répondant aux décisions productives ou d'utilisation du revenu, utilisée dans les indicateurs B1 (participation aux décisions productives) et B4 (contrôle de l'utilisation du revenu) du pro-WEAI. L'adéquation pour B1 nécessite le code 3 (participation à la plupart ou à toutes les décisions), ou le code 2 combiné à une capacité perçue élevée (Indicateur B1, condition B). L'adéquation pour B4 nécessite le code 2 ou 3."
+  es: "Escala de cuatro puntos para el grado de participación de un encuestado en decisiones productivas o de uso de ingresos, utilizada en los indicadores B1 (participación en decisiones productivas) y B4 (control sobre el uso de ingresos) del pro-WEAI. La adecuación para B1 requiere el código 3 (participación en la mayoría o en todas las decisiones), o el código 2 combinado con alta capacidad percibida (Indicador B1, condición B). La adecuación para B4 requiere el código 2 o 3."
+standard:
+  name: "pro-WEAI User Guide v3 (IFPRI 2026)"
+  uri: "https://weai.ifpri.info/files/2026/01/Pro-WEAI-Guide-v3.pdf"
+values:
+  - code: little_to_no_input
+    label:
+      en: Little to no input
+      fr: "Peu ou pas de participation"
+      es: "Poca o ninguna participación"
+    definition:
+      en: "The respondent had little or no input in decisions about this activity or income. Code 1."
+      fr: "Le répondant a eu peu ou pas de participation aux décisions concernant cette activité ou ce revenu. Code 1."
+      es: "El encuestado tuvo poca o ninguna participación en las decisiones sobre esta actividad o ingreso. Código 1."
+  - code: input_some_decisions
+    label:
+      en: Input into some decisions
+      fr: "Participation à certaines décisions"
+      es: "Participación en algunas decisiones"
+    definition:
+      en: "The respondent had input into some decisions but not most or all. Code 2. Meets B4 adequacy; meets B1 adequacy only if perceived capacity is also medium or high."
+      fr: "Le répondant a participé à certaines décisions mais pas à la plupart ou à toutes. Code 2. Satisfait à l'adéquation B4 ; satisfait à l'adéquation B1 seulement si la capacité perçue est également moyenne ou élevée."
+      es: "El encuestado tuvo participación en algunas decisiones pero no en la mayoría o todas. Código 2. Cumple adecuación B4; cumple adecuación B1 solo si la capacidad percibida también es media o alta."
+  - code: input_most_all_decisions
+    label:
+      en: Input into most or all decisions
+      fr: "Participation à la plupart ou à toutes les décisions"
+      es: "Participación en la mayoría o en todas las decisiones"
+    definition:
+      en: "The respondent had input into most or all decisions about this activity or income. Code 3. Meets B1 and B4 adequacy."
+      fr: "Le répondant a participé à la plupart ou à toutes les décisions concernant cette activité ou ce revenu. Code 3. Satisfait à l'adéquation B1 et B4."
+      es: "El encuestado tuvo participación en la mayoría o en todas las decisiones sobre esta actividad o ingreso. Código 3. Cumple adecuación B1 y B4."
+  - code: not_applicable
+    label:
+      en: Not applicable
+      fr: "Non applicable"
+      es: "No aplica"
+    definition:
+      en: "The activity was not undertaken or no income was generated; no decision existed. This response is excluded from the adequacy calculation for the activity."
+      fr: "L'activité n'a pas été entreprise ou aucun revenu n'a été généré ; aucune décision n'existait. Cette réponse est exclue du calcul de l'adéquation pour l'activité."
+      es: "La actividad no se realizó o no se generó ingreso; no existió ninguna decisión. Esta respuesta se excluye del cálculo de adecuación para la actividad."

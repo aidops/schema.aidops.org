@@ -1,0 +1,19 @@
+id: anc_content_nutrition_counseling
+maturity: draft
+label:
+  en: Nutrition counseling received during ANC
+  fr: "Conseil nutritionnel reçu lors des CPN"
+  es: "Asesoramiento nutricional recibido durante la APN"
+definition:
+  en: "Whether a health worker discussed the foods the woman should eat during pregnancy as part of antenatal care. DHS-8 m42g. WHO ANC 2016 recommends nutritional counseling at each contact. Cross-reference with NutritionPracticesProfile domain (this item is owned by MaternalNewbornHealthProfile as an ANC service quality measure). Only asked if anc_any_visit = yes."
+  fr: "Si un agent de santé a discuté des aliments que la femme devrait manger pendant la grossesse dans le cadre des soins prénataux. DHS-8 m42g. L'OMS ANC 2016 recommande un conseil nutritionnel à chaque contact. Référence croisée avec le domaine NutritionPracticesProfile (cet item appartient au MaternalNewbornHealthProfile comme mesure de qualité des services CPN). Posé uniquement si anc_any_visit = oui."
+  es: "Si un trabajador de salud discutió los alimentos que la mujer debería comer durante el embarazo como parte de la atención prenatal. DHS-8 m42g. La OMS ANC 2016 recomienda asesoramiento nutricional en cada contacto. Referencia cruzada con el dominio NutritionPracticesProfile (este ítem pertenece al MaternalNewbornHealthProfile como medida de calidad de servicio de APN). Solo se pregunta si anc_any_visit = sí."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

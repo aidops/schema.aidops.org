@@ -1,0 +1,41 @@
+id: who-pnc-2022
+title: "WHO Recommendations on Maternal and Newborn Care for a Positive Postnatal Experience"
+short_title: WHO PNC 2022
+publisher: World Health Organization
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.who.int/publications/i/item/9789240045989"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MaternalNewbornHealthProfile
+  vocabularies:
+    - pnc-timing
+    - postpartum-stay-duration
+    - maternity-care-provider
+  properties:
+    - delivery_stay_hours_or_days
+    - newborn_skin_to_skin
+    - newborn_dried_after_birth
+    - pnc_mother_any_check
+    - pnc_mother_timing
+    - pnc_mother_within_2_days
+    - pnc_mother_provider_type
+    - pnc_mother_content_blood_pressure
+    - pnc_mother_content_vaginal_bleeding
+    - pnc_mother_content_family_planning
+    - pnc_mother_all_three_content
+    - pnc_newborn_any_check
+    - pnc_newborn_timing
+    - pnc_newborn_within_2_days
+    - pnc_newborn_provider_type
+    - pnc_newborn_signal_cord_check
+    - pnc_newborn_signal_temperature
+    - pnc_newborn_signal_danger_signs
+    - pnc_newborn_signal_breastfeeding_counsel
+    - pnc_newborn_signal_weighed
+    - pnc_newborn_all_five_signal_functions
+    - pnc_both_mother_and_newborn_checked

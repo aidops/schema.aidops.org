@@ -1,0 +1,21 @@
+id: weai_decision_input_livestock
+maturity: draft
+label:
+  en: "WEAI decision input — livestock raising"
+  fr: "WEAI participation décisionnelle — élevage"
+  es: "WEAI participación en decisiones — cría de ganado"
+
+definition:
+  en: "How much input the respondent had in making decisions about livestock or fishery activities. One item in the pro-WEAI Indicator B1 (input in productive decisions) series. Adequacy condition A: code input_most_all_decisions. Condition B: code input_some_decisions AND perceived capacity is medium or high extent. Use not_applicable if the household has no livestock or fishery activity."
+  fr: "Dans quelle mesure le répondant a participé aux décisions concernant les activités d'élevage ou de pêche. Un item de la série de l'indicateur B1 du pro-WEAI (participation aux décisions productives). Condition d'adéquation A : code input_most_all_decisions. Condition B : code input_some_decisions ET capacité perçue moyenne ou élevée. Utiliser not_applicable si le ménage n'a pas d'activité d'élevage ou de pêche."
+  es: "En qué medida el encuestado tuvo participación en las decisiones sobre actividades de ganadería o pesca. Un ítem de la serie del Indicador B1 del pro-WEAI (participación en decisiones productivas). Condición de adecuación A: código input_most_all_decisions. Condición B: código input_some_decisions Y capacidad percibida media o alta. Usar not_applicable si el hogar no tiene actividad ganadera o pesquera."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-decision-input-4
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

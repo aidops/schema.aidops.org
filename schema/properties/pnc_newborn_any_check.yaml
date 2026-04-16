@@ -1,0 +1,19 @@
+id: pnc_newborn_any_check
+maturity: draft
+label:
+  en: Newborn received any postnatal health check
+  fr: "Le nouveau-né a reçu un contrôle de santé postnatal"
+  es: El recién nacido recibió alguna revisión de salud posnatal
+definition:
+  en: "Whether any health worker checked the baby after the delivery. DHS-8: derived from m78/m70 series. MICS6 postnatal section. Gateway for newborn PNC signal function items. Only asked if most_recent_birth_outcome = live_birth (skip entirely for stillbirths). WHO PNC 2022 recommends a newborn check within the first 24 hours."
+  fr: "Si un agent de santé a examiné le bébé après l'accouchement. DHS-8 : dérivé de la série m78/m70. Section postnatale MICS6. Seuil pour les items de fonctions signal du SPN du nouveau-né. Posé uniquement si most_recent_birth_outcome = live_birth (ignorer entièrement pour les mortinaissances). L'OMS PNC 2022 recommande un contrôle du nouveau-né dans les 24 premières heures."
+  es: "Si algún trabajador de salud revisó al bebé después del parto. DHS-8: derivado de la serie m78/m70. Sección posnatal de MICS6. Puerta de entrada para los ítems de función de señal de PPN del recién nacido. Solo se pregunta si most_recent_birth_outcome = live_birth (omitir completamente para mortinatos). La OMS PNC 2022 recomienda una revisión del recién nacido dentro de las primeras 24 horas."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

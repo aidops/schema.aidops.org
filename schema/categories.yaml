@@ -137,3 +137,111 @@ derived_iycf:
     en: Derived IYCF Indicators
     fr: "Indicateurs IYCF dérivés"
     es: Indicadores IYCF derivados
+
+vaccination:
+  label:
+    en: Vaccination
+    fr: Vaccination
+    es: Vacunación
+
+diarrhea:
+  label:
+    en: Diarrhea
+    fr: "Diarrhée"
+    es: Diarrea
+
+ari:
+  label:
+    en: ARI / Pneumonia
+    fr: "IRA / Pneumonie"
+    es: "IRA / Neumonía"
+
+fever:
+  label:
+    en: Fever
+    fr: "Fièvre"
+    es: Fiebre
+
+intrinsic_agency:
+  label:
+    en: Intrinsic Agency
+    fr: "Agentivité intrinsèque"
+    es: "Agencia intrínseca"
+
+instrumental_agency:
+  label:
+    en: Instrumental Agency
+    fr: "Agentivité instrumentale"
+    es: "Agencia instrumental"
+
+collective_agency:
+  label:
+    en: Collective Agency
+    fr: "Agentivité collective"
+    es: "Agencia colectiva"
+
+fertility_preferences:
+  label:
+    en: Fertility Preferences
+    fr: "Préférences de fécondité"
+    es: "Preferencias de fecundidad"
+
+family_planning:
+  label:
+    en: Family Planning
+    fr: "Planification familiale"
+    es: "Planificación familiar"
+
+unmet_need:
+  label:
+    en: Unmet Need for Family Planning
+    fr: "Besoin non satisfait en planification familiale"
+    es: "Necesidad insatisfecha de planificación familiar"
+
+sti_hiv:
+  label:
+    en: STI / HIV Testing
+    fr: "Dépistage des IST / VIH"
+    es: "Pruebas de ITS / VIH"
+
+misp_access:
+  label:
+    en: MISP Access to RH Services
+    fr: "Accès MISP aux services de SR"
+    es: "Acceso MISP a servicios de SR"
+
+pregnancy_history:
+  label:
+    en: Pregnancy History
+    fr: "Historique de grossesse"
+    es: Historia de embarazo
+
+antenatal_care:
+  label:
+    en: Antenatal Care
+    fr: "Soins prénataux"
+    es: Atención prenatal
+
+delivery:
+  label:
+    en: Delivery
+    fr: Accouchement
+    es: Parto
+
+postnatal_care:
+  label:
+    en: Postnatal Care
+    fr: "Soins postnataux"
+    es: "Atención posnatal"
+
+newborn:
+  label:
+    en: Newborn
+    fr: "Nouveau-né"
+    es: Recién nacido
+
+derived_mnh:
+  label:
+    en: Derived MNH Indicators
+    fr: "Indicateurs SMN dérivés"
+    es: Indicadores SMN derivados

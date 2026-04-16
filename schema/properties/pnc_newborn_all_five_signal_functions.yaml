@@ -1,0 +1,19 @@
+id: pnc_newborn_all_five_signal_functions
+maturity: draft
+label:
+  en: All five newborn PNC signal functions performed (derived)
+  fr: "Les cinq fonctions signal PNC nouveau-né réalisées (dérivé)"
+  es: Las cinco funciones de señal PPN del recién nacido realizadas (derivado)
+definition:
+  en: "Derived indicator: true if all five of the DHS-8 newborn signal functions were performed during the check within the first 2 days: cord check, temperature, danger signs counseling, breastfeeding counseling and observation, and weighing. DHS-8 rh_pnc_nb_5sigfunc composite."
+  fr: "Indicateur dérivé : vrai si les cinq fonctions signal DHS-8 du nouveau-né ont été réalisées lors du contrôle dans les 2 premiers jours : vérification du cordon, température, conseil sur les signes de danger, conseil et observation de l'allaitement, et pesée. Composite DHS-8 rh_pnc_nb_5sigfunc."
+  es: "Indicador derivado: verdadero si las cinco funciones de señal del recién nacido de DHS-8 se realizaron durante la revisión en los primeros 2 días: revisión del cordón, temperatura, orientación sobre señales de peligro, orientación y observación de lactancia, y pesaje. Compuesto DHS-8 rh_pnc_nb_5sigfunc."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

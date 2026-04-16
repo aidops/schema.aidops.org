@@ -1,0 +1,23 @@
+id: vacc_mcv1
+maturity: draft
+label:
+  en: "MCV1 (measles-containing vaccine dose 1) vaccination status"
+  fr: "Statut vaccinal VCR1 (vaccin contenant le composant rougeole dose 1)"
+  es: "Estado de vacunación VCS1 (vacuna con componente de sarampión dosis 1)"
+
+definition:
+  en: "Whether the child received the first dose of measles-containing vaccine (MCV1) — measles, MR (measles-rubella), or MMR (measles-mumps-rubella) — at 9 months or older. Published recall wording: 'Has (name) been given a measles injection — a shot in the arm at 9 months or older?' MCV1 is given at 9 months in high-transmission countries and at 12 months in low-transmission countries per the WHO EPI schedule. MCV1 is included in the 'fully vaccinated basic antigens' indicator and in the SDG 3.b.1 and Sphere 2018 (≥95% coverage target) measles indicator. DHS code h10; MICS code IM6."
+  fr: "Si l'enfant a reçu la première dose du vaccin contenant le composant rougeole (VCR1) — rougeole, RR (rougeole-rubéole) ou ROR (rougeole-oreillons-rubéole) — à 9 mois ou plus. Formulation de rappel publiée : « (Prénom) a-t-il/elle reçu une injection contre la rougeole — une injection dans le bras à 9 mois ou plus ? » Le VCR1 est administré à 9 mois dans les pays à forte transmission et à 12 mois dans les pays à faible transmission selon le calendrier EPI de l'OMS. Le VCR1 est inclus dans l'indicateur « antigènes de base vaccinés complètement » et dans l'indicateur rougeole ODD 3.b.1 et Sphère 2018 (cible de couverture ≥95 %). Code DHS h10 ; code MICS IM6."
+  es: "Si el niño recibió la primera dosis de vacuna con componente de sarampión (VCS1) — sarampión, SR (sarampión-rubéola) o SRP (sarampión-rubéola-parotiditis) — a los 9 meses o más. Redacción de recordatorio publicada: '¿Recibió (nombre) una inyección contra el sarampión — una inyección en el brazo a los 9 meses o más?' VCS1 se administra a los 9 meses en países de alta transmisión y a los 12 meses en países de baja transmisión según el calendario EPI de la OMS. VCS1 está incluido en el indicador de 'completamente vacunado con antígenos básicos' y en el indicador de sarampión ODS 3.b.1 y Esfera 2018 (objetivo de cobertura ≥95 %). Código DHS h10; código MICS IM6."
+
+type: string
+cardinality: single
+core: true
+vocabulary: vacc-status
+references: null
+category: vaccination
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

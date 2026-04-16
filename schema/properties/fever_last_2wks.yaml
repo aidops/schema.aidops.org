@@ -1,0 +1,23 @@
+id: fever_last_2wks
+maturity: draft
+label:
+  en: "Fever in the last two weeks"
+  fr: "Fièvre au cours des deux dernières semaines"
+  es: "Fiebre en las últimas dos semanas"
+
+definition:
+  en: "Whether the child had a fever in the last two weeks. Published wording: 'Has (name) had a fever in the last two weeks?' Standardized to 2-week recall for cross-indicator comparability with diarrhea and ARI modules (some DHS rounds historically used 4-week recall for fever via h22; this profile standardizes to 2 weeks aligned with MICS). Gateway item: if no, skip all other fever items. DHS code h22; MICS code ML1."
+  fr: "Si l'enfant a eu de la fièvre au cours des deux dernières semaines. Formulation publiée : « (Prénom) a-t-il/elle eu de la fièvre au cours des deux dernières semaines ? » Standardisé sur une période de rappel de 2 semaines pour la comparabilité inter-indicateurs avec les modules diarrhée et IRA (certains cycles DHS utilisaient historiquement un rappel de 4 semaines pour la fièvre via h22 ; ce profil standardise à 2 semaines en alignement avec le MICS). Item passerelle : si non, ignorer tous les autres items de fièvre. Code DHS h22 ; code MICS ML1."
+  es: "Si el niño tuvo fiebre en las últimas dos semanas. Redacción publicada: '¿Tuvo (nombre) fiebre en las últimas dos semanas?' Estandarizado a un período de recordatorio de 2 semanas para comparabilidad entre indicadores con los módulos de diarrea e IRA (algunas rondas DHS históricamente usaban recordatorio de 4 semanas para fiebre mediante h22; este perfil estandariza a 2 semanas alineado con MICS). Ítem de puerta: si no, omitir todos los demás ítems de fiebre. Código DHS h22; código MICS ML1."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: fever
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

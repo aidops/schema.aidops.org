@@ -1,0 +1,19 @@
+id: breastfeeding_ever_initiated
+maturity: draft
+label:
+  en: Ever breastfed this baby
+  fr: "A allaité ce bébé"
+  es: Alguna vez amamantó a este bebé
+definition:
+  en: "Whether the mother ever put the index baby (most recent live birth) to the breast to breastfeed. DHS-8 m4 (screener component); MICS6 MN12. Screener for breastfeeding_initiation_hours. If no, breastfeeding_early_initiation = false. Owned by MaternalNewbornHealthProfile as a delivery-period newborn care indicator. Only asked if most_recent_birth_outcome = live_birth."
+  fr: "Si la mère a jamais mis l'enfant index (naissance vivante la plus récente) au sein pour l'allaiter. DHS-8 m4 (composante de seuil) ; MICS6 MN12. Seuil pour breastfeeding_initiation_hours. Si non, breastfeeding_early_initiation = faux. Appartient au MaternalNewbornHealthProfile comme indicateur de soins au nouveau-né en période de délivrance. Posé uniquement si most_recent_birth_outcome = live_birth."
+  es: "Si la madre alguna vez puso al bebé índice (nacimiento vivo más reciente) al pecho para amamantar. DHS-8 m4 (componente de filtro); MICS6 MN12. Filtro para breastfeeding_initiation_hours. Si no, breastfeeding_early_initiation = falso. Pertenece al MaternalNewbornHealthProfile como indicador de atención neonatal en el período de parto. Solo se pregunta si most_recent_birth_outcome = live_birth."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: newborn
+age_applicability:
+  - adult
+sensitivity: sensitive

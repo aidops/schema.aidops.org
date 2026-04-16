@@ -1,0 +1,19 @@
+id: pnc_mother_provider_type
+maturity: draft
+label:
+  en: PNC provider type for mother (first check)
+  fr: "Type de prestataire PNC pour la mère (premier contrôle)"
+  es: "Tipo de proveedor PPN para la madre (primera revisión)"
+definition:
+  en: "The category of health worker who gave the mother her first postnatal check. DHS-8 rh_pnc_wm_pv. Only asked if pnc_mother_any_check = yes."
+  fr: "La catégorie d'agent de santé ayant réalisé le premier contrôle postnatal de la mère. DHS-8 rh_pnc_wm_pv. Posé uniquement si pnc_mother_any_check = oui."
+  es: "La categoría del trabajador de salud que realizó la primera revisión posnatal de la madre. DHS-8 rh_pnc_wm_pv. Solo se pregunta si pnc_mother_any_check = sí."
+type: string
+cardinality: single
+core: true
+vocabulary: maternity-care-provider
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

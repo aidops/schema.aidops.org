@@ -1,0 +1,19 @@
+id: pnc_mother_within_2_days
+maturity: draft
+label:
+  en: Mother received postnatal check within 2 days (derived)
+  fr: "La mère a reçu un contrôle postnatal dans les 2 jours (dérivé)"
+  es: La madre recibió revisión posnatal dentro de 2 días (derivado)
+definition:
+  en: "Derived indicator: true if pnc_mother_timing is within_4_hours, 4_to_23_hours, or 1_to_2_days. Core DHS-8 rh_pnc_wm_2days indicator. WHO PNC 2022 supports a contact between 48-72 hours post-delivery as the second recommended contact; within 2 days covers the first and second contacts."
+  fr: "Indicateur dérivé : vrai si pnc_mother_timing est within_4_hours, 4_to_23_hours ou 1_to_2_days. Indicateur central DHS-8 rh_pnc_wm_2days. L'OMS PNC 2022 soutient un contact entre 48 et 72 heures après l'accouchement comme deuxième contact recommandé ; dans les 2 jours couvre les premier et deuxième contacts."
+  es: "Indicador derivado: verdadero si pnc_mother_timing es within_4_hours, 4_to_23_hours o 1_to_2_days. Indicador central DHS-8 rh_pnc_wm_2days. La OMS PNC 2022 apoya un contacto entre 48-72 horas después del parto como segundo contacto recomendado; dentro de los 2 días cubre el primer y segundo contactos."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

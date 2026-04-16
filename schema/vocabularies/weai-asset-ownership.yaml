@@ -1,0 +1,41 @@
+id: weai-asset-ownership
+maturity: draft
+label:
+  en: WEAI Asset Ownership Status
+  fr: "Statut de propriété d'actif WEAI"
+  es: "Estado de propiedad de activo WEAI"
+definition:
+  en: "Three-code ownership classification used in pro-WEAI Indicator B2 (ownership of land and other assets). Adequacy requires the respondent to solely or jointly own at least one of: three or more small assets, two or more large assets, or any land."
+  fr: "Classification de propriété à trois codes utilisée dans l'indicateur B2 du pro-WEAI (propriété de terres et d'autres actifs). L'adéquation nécessite que le répondant possède seul ou conjointement au moins l'un des éléments suivants : trois actifs de petite taille ou plus, deux actifs de grande taille ou plus, ou des terres."
+  es: "Clasificación de propiedad de tres códigos utilizada en el indicador B2 del pro-WEAI (propiedad de tierras y otros activos). La adecuación requiere que el encuestado posea solo o conjuntamente al menos uno de: tres o más activos pequeños, dos o más activos grandes, o cualquier tierra."
+standard:
+  name: "pro-WEAI User Guide v3 (IFPRI 2026)"
+  uri: "https://weai.ifpri.info/files/2026/01/Pro-WEAI-Guide-v3.pdf"
+values:
+  - code: not_owned
+    label:
+      en: Not owned
+      fr: "Non possédé"
+      es: "No poseído"
+    definition:
+      en: "The respondent does not own this asset. Does not contribute to B2 adequacy for this asset type."
+      fr: "Le répondant ne possède pas cet actif. Ne contribue pas à l'adéquation B2 pour ce type d'actif."
+      es: "El encuestado no posee este activo. No contribuye a la adecuación B2 para este tipo de activo."
+  - code: owned_solely
+    label:
+      en: Owned solely
+      fr: "Possédé en propre"
+      es: "Poseído en solitario"
+    definition:
+      en: "The respondent is the sole owner of this asset. Counts toward B2 adequacy."
+      fr: "Le répondant est le seul propriétaire de cet actif. Compte pour l'adéquation B2."
+      es: "El encuestado es el único propietario de este activo. Cuenta para la adecuación B2."
+  - code: owned_jointly
+    label:
+      en: Owned jointly
+      fr: "Possédé conjointement"
+      es: "Poseído conjuntamente"
+    definition:
+      en: "The respondent jointly owns this asset with one or more other household members. Counts toward B2 adequacy."
+      fr: "Le répondant possède cet actif conjointement avec un ou plusieurs autres membres du ménage. Compte pour l'adéquation B2."
+      es: "El encuestado posee este activo conjuntamente con uno o más otros miembros del hogar. Cuenta para la adecuación B2."

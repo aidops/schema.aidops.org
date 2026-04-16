@@ -1,0 +1,22 @@
+id: weai_ipv_goes_out
+maturity: draft
+label:
+  en: "WEAI IPV attitude — wife goes out without telling"
+  fr: "WEAI attitude VPI — femme sort sans prévenir"
+  es: "WEAI actitud VPI — esposa sale sin avisar"
+
+definition:
+  en: "Whether the respondent believes a husband is justified in hitting or beating his wife if she goes out without telling him. One of five DHS-validated IPV attitude scenarios in pro-WEAI Indicator A3. Adequacy for this item requires response 'no' (husband is not justified). Adequacy for Indicator A3 requires 'no' for all five scenarios."
+  fr: "Si le répondant croit qu'un mari est justifié de frapper ou de battre sa femme si elle sort sans le prévenir. L'un des cinq scénarios d'attitudes VPI validés par DHS dans l'indicateur A3 du pro-WEAI. L'adéquation pour cet item nécessite une réponse 'non' (le mari n'est pas justifié). L'adéquation pour l'indicateur A3 nécessite 'non' pour les cinq scénarios."
+  es: "Si el encuestado cree que un marido está justificado en golpear o pegar a su esposa si ella sale sin decírselo. Uno de los cinco escenarios de actitud sobre VPI validados por DHS en el indicador A3 del pro-WEAI. La adecuación para este ítem requiere respuesta 'no' (el marido no está justificado). La adecuación para el Indicador A3 requiere 'no' para los cinco escenarios."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: intrinsic_agency
+sensitivity: sensitive
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

@@ -1,0 +1,19 @@
+id: linked_child_person_id
+maturity: draft
+label:
+  en: Linked child Person ID
+  fr: "Identifiant de la personne enfant lié"
+  es: ID de persona del niño vinculado
+definition:
+  en: "An optional reference to the Person record for the index child (the most recent live birth). When the same interview session produces both a MaternalNewbornHealthProfile and a ChildHealthProfile or NutritionPracticesProfile for the same birth event, this field links the maternal record to the child record without re-collecting birth date or outcome. The value is the child's person identifier string from the data collection system."
+  fr: "Une référence facultative à l'enregistrement Personne pour l'enfant index (la naissance vivante la plus récente). Lorsque la même session d'entretien produit à la fois un MaternalNewbornHealthProfile et un ChildHealthProfile ou NutritionPracticesProfile pour le même événement de naissance, ce champ relie l'enregistrement maternel à l'enregistrement enfant sans recollecte de la date de naissance ou du résultat. La valeur est la chaîne d'identification de personne de l'enfant dans le système de collecte de données."
+  es: "Una referencia opcional al registro de Persona del niño índice (el nacimiento vivo más reciente). Cuando la misma sesión de entrevista produce tanto un MaternalNewbornHealthProfile como un ChildHealthProfile o NutritionPracticesProfile para el mismo evento de parto, este campo vincula el registro materno con el registro del niño sin recopilar nuevamente la fecha de nacimiento o el resultado. El valor es la cadena de identificador de persona del niño en el sistema de recolección de datos."
+type: string
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: pregnancy_history
+age_applicability:
+  - adult
+sensitivity: sensitive

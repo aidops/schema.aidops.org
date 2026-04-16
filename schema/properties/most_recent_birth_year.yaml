@@ -1,0 +1,19 @@
+id: most_recent_birth_year
+maturity: draft
+label:
+  en: Year of most recent birth
+  fr: "Année de la naissance la plus récente"
+  es: "Año del parto más reciente"
+definition:
+  en: "The calendar year in which the most recent birth (live or stillbirth) occurred. DHS-8 m18 / b2; MICS6 MN birth date. Used together with the birth month to confirm the birth falls within the 2-year recall window and to compute the index child's current age. Enumerator should record both month and year; this property captures the year component."
+  fr: "L'année civile au cours de laquelle la naissance la plus récente (vivante ou mort-né) a eu lieu. DHS-8 m18 / b2 ; MICS6 MN date de naissance. Utilisé avec le mois de naissance pour confirmer que la naissance se situe dans la fenêtre de rappel de 2 ans et pour calculer l'âge actuel de l'enfant index. L'enquêteur doit enregistrer le mois et l'année ; cette propriété capture la composante de l'année."
+  es: "El año calendario en que ocurrió el parto más reciente (vivo o mortinato). DHS-8 m18 / b2; MICS6 MN fecha de nacimiento. Se usa junto con el mes de nacimiento para confirmar que el parto cae dentro de la ventana de recordatorio de 2 años y para calcular la edad actual del niño índice. El enumerador debe registrar tanto el mes como el año; esta propiedad captura el componente del año."
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: pregnancy_history
+age_applicability:
+  - adult
+sensitivity: sensitive

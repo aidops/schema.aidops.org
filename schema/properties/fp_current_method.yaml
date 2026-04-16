@@ -1,0 +1,22 @@
+id: fp_current_method
+maturity: draft
+label:
+  en: "Current contraceptive method(s) used"
+  fr: "Méthode(s) contraceptive(s) actuellement utilisée(s)"
+  es: "Método(s) anticonceptivo(s) actualmente utilizado(s)"
+
+definition:
+  en: "The contraceptive method or methods the woman is currently using (DHS FP2; MICS CP2). Multi-select. Ask only if fp_using_any_method = true. DHS-7 modern methods include: female and male sterilization, pill, IUD, injectables, implants, male condom, female condom, emergency contraception, standard days method, LAM. DHS-7 removes diaphragm from the modern list. Traditional methods: rhythm/periodic abstinence, withdrawal."
+  fr: "La méthode ou les méthodes contraceptives que la femme utilise actuellement (DHS FP2 ; MICS CP2). Sélection multiple. Demander uniquement si fp_using_any_method = vrai. Les méthodes modernes DHS-7 comprennent : stérilisation féminine et masculine, pilule, DIU, injectables, implants, préservatif masculin, préservatif féminin, contraception d'urgence, méthode des jours standard, MAMA. Le DHS-7 retire le diaphragme de la liste moderne. Méthodes traditionnelles : rythme/abstinence périodique, retrait."
+  es: "El método o métodos anticonceptivos que la mujer utiliza actualmente (DHS FP2; MICS CP2). Selección múltiple. Preguntar solo si fp_using_any_method = verdadero. Los métodos modernos DHS-7 incluyen: esterilización femenina y masculina, píldora, DIU, inyectables, implantes, condón masculino, condón femenino, anticoncepción de emergencia, método de días estándar, MELA. El DHS-7 elimina el diafragma de la lista moderna. Métodos tradicionales: ritmo/abstinencia periódica, coito interrumpido."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: family-planning-method
+references: null
+category: family_planning
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [dhs_women, mics6]

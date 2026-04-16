@@ -1,0 +1,23 @@
+id: ari_cough_last_2wks
+maturity: draft
+label:
+  en: "Cough in the last two weeks"
+  fr: "Toux au cours des deux dernières semaines"
+  es: "Tos en las últimas dos semanas"
+
+definition:
+  en: "Whether the child had a cough in the last two weeks. Published wording: 'Has (name) had a cough in the last two weeks?' Gateway item for the ARI module: if no, skip to the fever section. Two-week recall period aligned with diarrhea and fever modules for cross-indicator comparability. DHS code h31 (cough component); MICS code ARI1."
+  fr: "Si l'enfant a eu de la toux au cours des deux dernières semaines. Formulation publiée : « (Prénom) a-t-il/elle eu de la toux au cours des deux dernières semaines ? » Item passerelle du module IRA : si non, passer à la section fièvre. Période de rappel de deux semaines alignée sur les modules diarrhée et fièvre pour la comparabilité inter-indicateurs. Code DHS h31 (composante toux) ; code MICS ARI1."
+  es: "Si el niño tuvo tos en las últimas dos semanas. Redacción publicada: '¿Tuvo (nombre) tos en las últimas dos semanas?' Ítem de puerta del módulo de IRA: si no, pasar a la sección de fiebre. Período de recordatorio de dos semanas alineado con los módulos de diarrea y fiebre para comparabilidad entre indicadores. Código DHS h31 (componente de tos); código MICS ARI1."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: ari
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

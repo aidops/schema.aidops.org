@@ -1,0 +1,23 @@
+id: diarrhea_fluids_increased
+maturity: draft
+label:
+  en: "Fluids increased during diarrhea"
+  fr: "Liquides augmentés pendant la diarrhée"
+  es: "Líquidos aumentados durante la diarrea"
+
+definition:
+  en: "Whether the child was given more fluids than usual to drink during the diarrhea episode. Published wording: 'Was (name) given more fluids than usual to drink?' Part of the ORT (oral rehydration therapy) composite: ORT = ORS or RHF or increased fluids. Ask only if diarrhea_last_2wks is not false. DHS code h16."
+  fr: "Si l'enfant a reçu plus de liquides qu'habituellement à boire pendant l'épisode de diarrhée. Formulation publiée : « (Prénom) a-t-il/elle reçu plus de liquides qu'habituellement à boire ? » Fait partie du composite TRO (thérapie de réhydratation orale) : TRO = SRO ou RHF ou augmentation des liquides. Posez uniquement si diarrhea_last_2wks est vrai. Code DHS h16."
+  es: "Si al niño se le dieron más líquidos de lo habitual para beber durante el episodio de diarrea. Redacción publicada: '¿Se le dieron a (nombre) más líquidos de lo habitual para beber?' Parte del compuesto TRO (terapia de rehidratación oral): TRO = SRO o LRH o aumento de líquidos. Preguntar solo si diarrhea_last_2wks es verdadero. Código DHS h16."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: diarrhea
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8]

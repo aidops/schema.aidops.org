@@ -1,0 +1,21 @@
+id: weai_asset_ownership_large
+maturity: draft
+label:
+  en: "WEAI large asset ownership"
+  fr: "WEAI propriété de grands actifs"
+  es: "WEAI propiedad de activos grandes"
+
+definition:
+  en: "Whether the respondent owns one or more large assets (large livestock such as cattle or camels, motorized vehicles, large farm equipment, house or structure) and, if so, whether ownership is sole or joint. Part of pro-WEAI Indicator B2 (ownership of land and other assets). Adequacy for B2 large asset condition: respondent solely or jointly owns two or more large asset types. The specific list must be adapted to the local context at each deployment."
+  fr: "Si le répondant possède un ou plusieurs grands actifs (gros bétail comme les bovins ou les chameaux, véhicules motorisés, grands équipements agricoles, maison ou structure) et, si oui, si la propriété est individuelle ou conjointe. Fait partie de l'indicateur B2 du pro-WEAI (propriété de terres et d'autres actifs). L'adéquation pour la condition de grands actifs de B2 : le répondant possède seul ou conjointement deux types de grands actifs ou plus. La liste spécifique doit être adaptée au contexte local à chaque déploiement."
+  es: "Si el encuestado posee uno o más activos grandes (ganado mayor como bovinos o camellos, vehículos motorizados, grandes equipos agrícolas, casa o estructura) y, de ser así, si la propiedad es individual o conjunta. Parte del Indicador B2 del pro-WEAI (propiedad de tierras y otros activos). La adecuación para la condición de activos grandes de B2: el encuestado posee solo o conjuntamente dos o más tipos de activos grandes. La lista específica debe adaptarse al contexto local en cada implementación."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-asset-ownership
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

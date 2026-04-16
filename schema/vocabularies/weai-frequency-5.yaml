@@ -1,0 +1,59 @@
+id: weai-frequency-5
+maturity: draft
+label:
+  en: WEAI Five-Point Frequency Scale
+  fr: "Échelle de fréquence à cinq points WEAI"
+  es: "Escala de frecuencia de cinco puntos WEAI"
+definition:
+  en: "Five-point frequency scale used in pro-WEAI Indicator A4 (respect among household members) items for trust, respect, and comfort with disagreement. Adequacy threshold for each item is 'most of the time' or 'always'."
+  fr: "Échelle de fréquence à cinq points utilisée dans les items de l'Indicateur A4 du pro-WEAI (respect entre membres du ménage) pour la confiance, le respect et le confort dans le désaccord. Le seuil d'adéquation pour chaque item est 'la plupart du temps' ou 'toujours'."
+  es: "Escala de frecuencia de cinco puntos utilizada en los ítems del Indicador A4 del pro-WEAI (respeto entre miembros del hogar) para la confianza, el respeto y la comodidad con el desacuerdo. El umbral de adecuación para cada ítem es 'la mayoría de las veces' o 'siempre'."
+standard:
+  name: "pro-WEAI User Guide v3 (IFPRI 2026)"
+  uri: "https://weai.ifpri.info/files/2026/01/Pro-WEAI-Guide-v3.pdf"
+values:
+  - code: always
+    label:
+      en: Always
+      fr: "Toujours"
+      es: "Siempre"
+    definition:
+      en: "The condition occurs all of the time. Meets adequacy threshold."
+      fr: "La condition se produit tout le temps. Satisfait au seuil d'adéquation."
+      es: "La condición ocurre todo el tiempo. Cumple el umbral de adecuación."
+  - code: most_of_the_time
+    label:
+      en: Most of the time
+      fr: "La plupart du temps"
+      es: "La mayoría de las veces"
+    definition:
+      en: "The condition occurs most of the time. Meets adequacy threshold."
+      fr: "La condition se produit la plupart du temps. Satisfait au seuil d'adéquation."
+      es: "La condición ocurre la mayoría de las veces. Cumple el umbral de adecuación."
+  - code: sometimes
+    label:
+      en: Sometimes
+      fr: "Parfois"
+      es: "A veces"
+    definition:
+      en: "The condition occurs occasionally but not most of the time. Does not meet adequacy threshold."
+      fr: "La condition se produit occasionnellement mais pas la plupart du temps. Ne satisfait pas au seuil d'adéquation."
+      es: "La condición ocurre ocasionalmente pero no la mayoría de las veces. No cumple el umbral de adecuación."
+  - code: rarely
+    label:
+      en: Rarely
+      fr: "Rarement"
+      es: "Raramente"
+    definition:
+      en: "The condition occurs infrequently. Does not meet adequacy threshold."
+      fr: "La condition se produit rarement. Ne satisfait pas au seuil d'adéquation."
+      es: "La condición ocurre con poca frecuencia. No cumple el umbral de adecuación."
+  - code: never
+    label:
+      en: Never
+      fr: "Jamais"
+      es: "Nunca"
+    definition:
+      en: "The condition never occurs. Does not meet adequacy threshold."
+      fr: "La condition ne se produit jamais. Ne satisfait pas au seuil d'adéquation."
+      es: "La condición nunca ocurre. No cumple el umbral de adecuación."

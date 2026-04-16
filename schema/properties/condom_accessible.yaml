@@ -1,0 +1,23 @@
+id: condom_accessible
+maturity: draft
+label:
+  en: "Condoms available and accessible (last month)"
+  fr: "Préservatifs disponibles et accessibles (mois dernier)"
+  es: "Condones disponibles y accesibles (último mes)"
+
+definition:
+  en: "Whether condoms were available and accessible to the woman if needed in the past month (MISP Objective 3, HIV and STI prevention). Optional; context-specific. MISP Objective 3 requires condom supply for HIV and STI prevention."
+  fr: "Si des préservatifs étaient disponibles et accessibles à la femme en cas de besoin au cours du mois écoulé (Objectif MISP 3, prévention du VIH et des IST). Facultatif ; spécifique au contexte. L'objectif MISP 3 exige un approvisionnement en préservatifs pour la prévention du VIH et des IST."
+  es: "Si los condones estaban disponibles y accesibles para la mujer si los necesitaba en el último mes (Objetivo MISP 3, prevención del VIH y las ITS). Opcional; específico al contexto. El Objetivo MISP 3 requiere suministro de condones para la prevención del VIH y las ITS."
+
+type: string
+cardinality: single
+core: false
+# Allowed values: yes / no / dont_know / not_applicable
+vocabulary: null
+references: null
+category: misp_access
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [iawg_misp]

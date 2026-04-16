@@ -1,0 +1,19 @@
+id: anc_skilled_provider
+maturity: draft
+label:
+  en: ANC from a skilled provider (derived)
+  fr: "CPN dispensé par un prestataire qualifié (dérivé)"
+  es: APN de un proveedor calificado (derivado)
+definition:
+  en: "Derived indicator: true if anc_provider_type is doctor, nurse_midwife, or auxiliary_midwife. Aligns with the DHS-8 rh_anc_pvskill indicator and the WHO skilled birth attendance definition for the ANC context. Interoperable with MICS6 MN2 skilled provider classification."
+  fr: "Indicateur dérivé : vrai si anc_provider_type est médecin, nurse_midwife ou auxiliary_midwife. S'aligne sur l'indicateur DHS-8 rh_anc_pvskill et la définition OMS de l'assistance qualifiée à l'accouchement dans le contexte CPN. Interopérable avec la classification de prestataires qualifiés MICS6 MN2."
+  es: "Indicador derivado: verdadero si anc_provider_type es médico, nurse_midwife o auxiliary_midwife. Se alinea con el indicador DHS-8 rh_anc_pvskill y la definición de asistencia calificada al parto de la OMS en el contexto de APN. Interoperable con la clasificación de proveedores calificados MICS6 MN2."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

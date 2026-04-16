@@ -1,0 +1,21 @@
+id: weai_group_membership
+maturity: draft
+label:
+  en: "WEAI group membership"
+  fr: "WEAI appartenance à un groupe"
+  es: "WEAI membresía de grupo"
+
+definition:
+  en: "The types of groups in which the respondent is currently an active member. Captures pro-WEAI Indicator C1 (group membership) using a multi-select pattern across the canonical group types. Adequacy requires active membership in at least one group of any type."
+  fr: "Les types de groupes dont le répondant est actuellement un membre actif. Capte l'indicateur C1 du pro-WEAI (appartenance à un groupe) en utilisant un modèle multi-sélection sur les types de groupes canoniques. L'adéquation nécessite une appartenance active à au moins un groupe de n'importe quel type."
+  es: "Los tipos de grupos en los que el encuestado es actualmente un miembro activo. Captura el Indicador C1 del pro-WEAI (membresía de grupo) usando un patrón de selección múltiple sobre los tipos de grupos canónicos. La adecuación requiere membresía activa en al menos un grupo de cualquier tipo."
+
+type: string
+cardinality: multiple
+vocabulary: weai-group-type
+references: null
+category: collective_agency
+core: true
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

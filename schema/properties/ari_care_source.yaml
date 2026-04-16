@@ -1,0 +1,23 @@
+id: ari_care_source
+maturity: draft
+label:
+  en: "Care source for ARI"
+  fr: "Source de soins pour l'IRA"
+  es: "Fuente de atención para la IRA"
+
+definition:
+  en: "The type(s) of provider or facility the caregiver visited for advice or treatment of the child's cough or breathing problem. Published wording: 'Where did you go or who did you see? (Select all that apply).' Multi-select. Ask only if ari_care_sought is true. DHS codes h32a–h32x (country-specific provider codes); MICS code ARI5."
+  fr: "Le(s) type(s) de prestataire ou d'établissement consulté par le soignant pour des conseils ou un traitement de la toux ou des difficultés respiratoires de l'enfant. Formulation publiée : « Où êtes-vous allé(e) ou qui avez-vous consulté ? (Sélectionnez tout ce qui s'applique). » Sélection multiple. Posez uniquement si ari_care_sought est vrai. Codes DHS h32a–h32x (codes de prestataires propres au pays) ; code MICS ARI5."
+  es: "El(los) tipo(s) de proveedor o establecimiento al que el cuidador acudió para recibir consejo o tratamiento por la tos o el problema respiratorio del niño. Redacción publicada: '¿Adónde fue o a quién consultó? (Seleccione todo lo que corresponda).' Selección múltiple. Preguntar solo si ari_care_sought es verdadero. Códigos DHS h32a–h32x (códigos de proveedor específicos del país); código MICS ARI5."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: care-provider-type
+references: null
+category: ari
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

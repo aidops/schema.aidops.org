@@ -1,0 +1,38 @@
+id: cesarean-timing
+maturity: draft
+label:
+  en: Cesarean Section Timing
+  fr: "Moment de la césarienne"
+  es: "Momento de la cesárea"
+definition:
+  en: "Whether the cesarean section was performed before labor began (planned/elective) or after labor had already started (emergency). DHS-8 m17a. Only asked when delivery_cesarean_section = yes. Distinguishes elective from emergency cesareans, which have different clinical risk profiles."
+  fr: "Si la césarienne a été réalisée avant le début du travail (planifiée/élective) ou après le début du travail (urgence). DHS-8 m17a. Posé uniquement lorsque delivery_cesarean_section = oui. Distingue les césariennes électives des urgentes, qui ont des profils de risque clinique différents."
+  es: "Si la cesárea se realizó antes de que comenzara el trabajo de parto (planificada/electiva) o después de que el trabajo de parto ya había comenzado (emergencia). DHS-8 m17a. Solo se pregunta cuando delivery_cesarean_section = sí. Distingue las cesáreas electivas de las de emergencia, que tienen perfiles de riesgo clínico diferentes."
+values:
+  - code: before_labor
+    label:
+      en: Before labor started (planned / elective)
+      fr: "Avant le début du travail (planifiée / élective)"
+      es: Antes de que comenzara el trabajo de parto (planificada / electiva)
+    definition:
+      en: "The cesarean section was performed before labor began. Planned or elective cesarean."
+      fr: "La césarienne a été réalisée avant le début du travail. Césarienne planifiée ou élective."
+      es: "La cesárea se realizó antes de que comenzara el trabajo de parto. Cesárea planificada o electiva."
+  - code: after_labor_started
+    label:
+      en: After labor had already started (emergency / intrapartum)
+      fr: "Après le début du travail (urgence / intrapartum)"
+      es: Después de que el trabajo de parto había comenzado (emergencia / intraparto)
+    definition:
+      en: "The cesarean section was performed after labor had begun. Emergency or intrapartum cesarean."
+      fr: "La césarienne a été réalisée après le début du travail. Césarienne d'urgence ou intrapartum."
+      es: "La cesárea se realizó después de que el trabajo de parto había comenzado. Cesárea de emergencia o intraparto."
+  - code: dont_know
+    label:
+      en: Don't know
+      fr: Ne sait pas
+      es: No sabe
+    definition:
+      en: "The respondent does not know or does not remember whether the cesarean was before or after labor."
+      fr: "La répondante ne sait pas ou ne se souvient pas si la césarienne a eu lieu avant ou après le début du travail."
+      es: "La encuestada no sabe o no recuerda si la cesárea fue antes o después del trabajo de parto."

@@ -1,0 +1,19 @@
+id: breastfeeding_early_initiation
+maturity: draft
+label:
+  en: Early initiation of breastfeeding within 1 hour (derived)
+  fr: "Allaitement précoce dans l'heure suivant la naissance (dérivé)"
+  es: Inicio temprano de la lactancia materna dentro de la primera hora (derivado)
+definition:
+  en: "Derived indicator: true if breastfeeding_initiation_hours = within_1_hour. WHO/UNICEF EIBF indicator: the proportion of live births breastfed within 1 hour of birth. Owned by MaternalNewbornHealthProfile as a delivery-period newborn care indicator. NutritionPracticesProfile references this derived field as a cross-profile input to the IYCF indicator set but does not re-own or re-collect it."
+  fr: "Indicateur dérivé : vrai si breastfeeding_initiation_hours = within_1_hour. Indicateur EIBF OMS/UNICEF : proportion de naissances vivantes allaitées dans l'heure suivant la naissance. Appartient au MaternalNewbornHealthProfile comme indicateur de soins au nouveau-né en période de délivrance. Le NutritionPracticesProfile référence ce champ dérivé comme entrée transversale au jeu d'indicateurs IYCF mais n'en est pas propriétaire et ne le re-collecte pas."
+  es: "Indicador derivado: verdadero si breastfeeding_initiation_hours = within_1_hour. Indicador EIBF de OMS/UNICEF: la proporción de nacimientos vivos amamantados dentro de la primera hora del parto. Pertenece al MaternalNewbornHealthProfile como indicador de atención neonatal en el período de parto. El NutritionPracticesProfile referencia este campo derivado como entrada transversal al conjunto de indicadores IYCF, pero no lo posee ni lo recopila nuevamente."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

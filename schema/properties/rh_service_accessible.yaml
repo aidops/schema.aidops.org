@@ -1,0 +1,22 @@
+id: rh_service_accessible
+maturity: draft
+label:
+  en: "Accessed reproductive health services when needed (last month)"
+  fr: "A pu accéder aux services de santé reproductive en cas de besoin (mois dernier)"
+  es: "Accedió a servicios de salud reproductiva cuando los necesitó (último mes)"
+
+definition:
+  en: "Whether the woman was able to access reproductive health services when she needed them in the past month, and the main barrier if access was not achieved (MISP monitoring). MISP access to care indicator. Record the main barrier if access was denied."
+  fr: "Si la femme a pu accéder aux services de santé reproductive en cas de besoin au cours du mois écoulé, et la principale barrière si l'accès n'a pas été obtenu (suivi MISP). Indicateur d'accès aux soins MISP. Enregistrer la principale barrière si l'accès a été refusé."
+  es: "Si la mujer pudo acceder a los servicios de salud reproductiva cuando los necesitó en el último mes, y la barrera principal si no se logró el acceso (monitoreo MISP). Indicador de acceso a la atención MISP. Registrar la barrera principal si el acceso fue denegado."
+
+type: string
+cardinality: single
+core: true
+vocabulary: rh-service-access
+references: null
+category: misp_access
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [iawg_misp]

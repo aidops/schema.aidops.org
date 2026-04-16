@@ -1,0 +1,23 @@
+id: rh_service_aware
+maturity: draft
+label:
+  en: "Aware of a nearby reproductive health service"
+  fr: "Connaît un service de santé reproductive à proximité"
+  es: "Conoce un servicio de salud reproductiva cercano"
+
+definition:
+  en: "Whether the woman knows of a place nearby where she can receive reproductive health services (family planning, maternal care, or safe delivery) (MISP monitoring). MISP Objective 1/4 proxy indicator. Awareness is a necessary but not sufficient condition for access."
+  fr: "Si la femme connaît un endroit à proximité où elle peut recevoir des services de santé reproductive (planification familiale, soins maternels ou accouchement sans risque) (suivi MISP). Indicateur proxy de l'objectif MISP 1/4. La sensibilisation est une condition nécessaire mais insuffisante pour l'accès."
+  es: "Si la mujer conoce un lugar cercano donde puede recibir servicios de salud reproductiva (planificación familiar, atención materna o parto seguro) (monitoreo MISP). Indicador proxy del Objetivo MISP 1/4. El conocimiento es una condición necesaria pero no suficiente para el acceso."
+
+type: string
+cardinality: single
+core: true
+# Allowed values: yes / no / dont_know
+vocabulary: null
+references: null
+category: misp_access
+sensitivity: sensitive
+age_applicability:
+  - adult
+valid_instruments: [iawg_misp]

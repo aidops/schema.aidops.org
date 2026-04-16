@@ -1,0 +1,21 @@
+id: weai_se_confident_goals
+maturity: draft
+label:
+  en: "WEAI self-efficacy — confident to achieve goals"
+  fr: "WEAI auto-efficacité — confiant pour atteindre ses objectifs"
+  es: "WEAI autoeficacia — confiado en lograr objetivos"
+
+definition:
+  en: "NGSE item 1: 'I will be able to achieve most of the goals that I have set for myself.' One of eight items in the New General Self-Efficacy Scale (NGSE) used in pro-WEAI Indicator A2. Scored 1 (strongly disagree) to 5 (strongly agree). Adequacy for A2 requires sum of all eight NGSE items ≥ 32."
+  fr: "Item NGSE 1 : 'Je serai en mesure d'atteindre la plupart des objectifs que je me suis fixés.' L'un des huit items de la Nouvelle échelle générale d'auto-efficacité (NGSE) utilisée dans l'indicateur A2 du pro-WEAI. Noté de 1 (fortement en désaccord) à 5 (fortement d'accord). L'adéquation pour A2 nécessite que la somme des huit items NGSE soit ≥ 32."
+  es: "Ítem NGSE 1: 'Seré capaz de lograr la mayoría de los objetivos que me he propuesto.' Uno de los ocho ítems de la Nueva Escala General de Autoeficacia (NGSE) utilizada en el indicador A2 del pro-WEAI. Puntuado de 1 (muy en desacuerdo) a 5 (muy de acuerdo). La adecuación para A2 requiere que la suma de los ocho ítems NGSE sea ≥ 32."
+
+type: string
+cardinality: single
+core: false
+vocabulary: weai-agree-5
+references: null
+category: intrinsic_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

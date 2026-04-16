@@ -1,0 +1,74 @@
+id: pnc-timing
+maturity: draft
+label:
+  en: Postnatal Care Timing
+  fr: "Délai des soins postnataux"
+  es: "Momento de la atención posnatal"
+definition:
+  en: "The timing of the first postnatal health check, for either the mother or the newborn, measured from the time of delivery. Used for both rh_pnc_wm_timing (mother's first check) and rh_pnc_nb_timing (newborn's first check) in DHS-8. WHO PNC 2022 recommends a first contact within 24 hours of birth; a contact within 2 days is the standard DHS-8 indicator threshold."
+  fr: "Le délai du premier contrôle de santé postnatal, pour la mère ou le nouveau-né, mesuré à partir du moment de l'accouchement. Utilisé pour rh_pnc_wm_timing (premier contrôle de la mère) et rh_pnc_nb_timing (premier contrôle du nouveau-né) dans le DHS-8. L'OMS PNC 2022 recommande un premier contact dans les 24 heures suivant la naissance ; un contact dans les 2 jours est le seuil de l'indicateur standard DHS-8."
+  es: "El momento de la primera revisión de salud posnatal, para la madre o el recién nacido, medido desde el momento del parto. Se utiliza tanto para rh_pnc_wm_timing (primera revisión de la madre) como para rh_pnc_nb_timing (primera revisión del recién nacido) en DHS-8. La OMS PNC 2022 recomienda un primer contacto dentro de las 24 horas del parto; un contacto dentro de los 2 días es el umbral del indicador estándar DHS-8."
+values:
+  - code: within_4_hours
+    label:
+      en: Within 4 hours of delivery
+      fr: Dans les 4 heures suivant l'accouchement
+      es: Dentro de las 4 horas del parto
+    definition:
+      en: "The first check occurred within 4 hours of delivery. Part of the DHS-8 within-2-days composite."
+      fr: "Le premier contrôle a eu lieu dans les 4 heures suivant l'accouchement. Fait partie du composite DHS-8 dans les 2 jours."
+      es: "La primera revisión ocurrió dentro de las 4 horas del parto. Parte del compuesto DHS-8 dentro de los 2 días."
+  - code: h4_to_23
+    label:
+      en: 4 to 23 hours after delivery
+      fr: 4 à 23 heures après l'accouchement
+      es: De 4 a 23 horas después del parto
+    definition:
+      en: "The first check occurred between 4 and 23 hours after delivery. Part of the DHS-8 within-2-days composite."
+      fr: "Le premier contrôle a eu lieu entre 4 et 23 heures après l'accouchement. Fait partie du composite DHS-8 dans les 2 jours."
+      es: "La primera revisión ocurrió entre 4 y 23 horas después del parto. Parte del compuesto DHS-8 dentro de los 2 días."
+  - code: d1_to_2
+    label:
+      en: 1 to 2 days after delivery
+      fr: 1 à 2 jours après l'accouchement
+      es: De 1 a 2 días después del parto
+    definition:
+      en: "The first check occurred 1 to 2 days after delivery. Part of the DHS-8 within-2-days composite."
+      fr: "Le premier contrôle a eu lieu 1 à 2 jours après l'accouchement. Fait partie du composite DHS-8 dans les 2 jours."
+      es: "La primera revisión ocurrió 1 a 2 días después del parto. Parte del compuesto DHS-8 dentro de los 2 días."
+  - code: d3_to_6
+    label:
+      en: 3 to 6 days after delivery
+      fr: 3 à 6 jours après l'accouchement
+      es: De 3 a 6 días después del parto
+    definition:
+      en: "The first check occurred 3 to 6 days after delivery. After the DHS-8 within-2-days window but within the first week."
+      fr: "Le premier contrôle a eu lieu 3 à 6 jours après l'accouchement. Après la fenêtre DHS-8 dans les 2 jours mais dans la première semaine."
+      es: "La primera revisión ocurrió de 3 a 6 días después del parto. Fuera de la ventana DHS-8 de 2 días, pero dentro de la primera semana."
+  - code: d7_to_41
+    label:
+      en: 7 to 41 days after delivery
+      fr: 7 à 41 jours après l'accouchement
+      es: De 7 a 41 días después del parto
+    definition:
+      en: "The first check occurred 7 to 41 days after delivery. Late postnatal period."
+      fr: "Le premier contrôle a eu lieu 7 à 41 jours après l'accouchement. Période postnatale tardive."
+      es: "La primera revisión ocurrió de 7 a 41 días después del parto. Período posnatal tardío."
+  - code: more_than_6_weeks
+    label:
+      en: More than 6 weeks after delivery
+      fr: Plus de 6 semaines après l'accouchement
+      es: Más de 6 semanas después del parto
+    definition:
+      en: "The first check occurred more than 6 weeks (42 days) after delivery. Outside the standard postnatal period."
+      fr: "Le premier contrôle a eu lieu plus de 6 semaines (42 jours) après l'accouchement. En dehors de la période postnatale standard."
+      es: "La primera revisión ocurrió más de 6 semanas (42 días) después del parto. Fuera del período posnatal estándar."
+  - code: no_check
+    label:
+      en: No postnatal check received
+      fr: Aucun contrôle postnatal reçu
+      es: No recibió revisión posnatal
+    definition:
+      en: "No postnatal health check was received. Recorded here when the gateway item (pnc_mother_any_check or pnc_newborn_any_check) is no but the timing question is still asked for completeness."
+      fr: "Aucun contrôle de santé postnatal n'a été reçu. Enregistré ici lorsque l'item de seuil (pnc_mother_any_check ou pnc_newborn_any_check) est non mais que la question sur le délai est quand même posée pour exhaustivité."
+      es: "No se recibió ninguna revisión de salud posnatal. Se registra aquí cuando el ítem de puerta (pnc_mother_any_check o pnc_newborn_any_check) es no, pero se hace la pregunta sobre el momento para completitud."

@@ -1,0 +1,50 @@
+id: weai-participation-capacity-4
+maturity: draft
+label:
+  en: WEAI Perceived Participation Capacity Scale
+  fr: "Échelle de capacité de participation perçue WEAI"
+  es: "Escala de capacidad de participación percibida WEAI"
+definition:
+  en: "Four-point extent scale for perceived capacity to participate in a decision or access a resource, used across pro-WEAI Indicators B1 (productive decision capacity), B3 (credit access capacity), and C2 (group influence on community). Adequacy for B1 condition B and B3 condition B requires medium or high extent (codes 3 or 4)."
+  fr: "Échelle en quatre points pour la capacité perçue à participer à une décision ou à accéder à une ressource, utilisée dans les indicateurs B1 (capacité de décision productive), B3 (capacité d'accès au crédit) et C2 (influence du groupe sur la communauté) du pro-WEAI. L'adéquation pour la condition B de B1 et la condition B de B3 nécessite une étendue moyenne ou élevée (codes 3 ou 4)."
+  es: "Escala de cuatro puntos para la capacidad percibida de participar en una decisión o acceder a un recurso, utilizada en los indicadores B1 (capacidad de decisión productiva), B3 (capacidad de acceso al crédito) y C2 (influencia del grupo en la comunidad) del pro-WEAI. La adecuación para la condición B de B1 y la condición B de B3 requiere extensión media o alta (códigos 3 o 4)."
+standard:
+  name: "pro-WEAI User Guide v3 (IFPRI 2026)"
+  uri: "https://weai.ifpri.info/files/2026/01/Pro-WEAI-Guide-v3.pdf"
+values:
+  - code: not_at_all
+    label:
+      en: Not at all
+      fr: "Pas du tout"
+      es: "Para nada"
+    definition:
+      en: "The respondent perceives no capacity to participate in this decision or access this resource. Code 1. Does not meet adequacy threshold."
+      fr: "Le répondant perçoit aucune capacité à participer à cette décision ou à accéder à cette ressource. Code 1. Ne satisfait pas au seuil d'adéquation."
+      es: "El encuestado percibe ninguna capacidad para participar en esta decisión o acceder a este recurso. Código 1. No cumple el umbral de adecuación."
+  - code: small_extent
+    label:
+      en: To a small extent
+      fr: "Dans une petite mesure"
+      es: "En pequeña medida"
+    definition:
+      en: "The respondent perceives limited capacity to participate. Code 2. Does not meet adequacy threshold."
+      fr: "Le répondant perçoit une capacité limitée à participer. Code 2. Ne satisfait pas au seuil d'adéquation."
+      es: "El encuestado percibe capacidad limitada para participar. Código 2. No cumple el umbral de adecuación."
+  - code: medium_extent
+    label:
+      en: To a medium extent
+      fr: "Dans une mesure moyenne"
+      es: "En medida media"
+    definition:
+      en: "The respondent perceives moderate capacity to participate. Code 3. Meets adequacy threshold for B1 condition B and B3 condition B."
+      fr: "Le répondant perçoit une capacité modérée à participer. Code 3. Satisfait au seuil d'adéquation pour la condition B de B1 et la condition B de B3."
+      es: "El encuestado percibe capacidad moderada para participar. Código 3. Cumple el umbral de adecuación para la condición B de B1 y la condición B de B3."
+  - code: high_extent
+    label:
+      en: To a high extent
+      fr: "Dans une grande mesure"
+      es: "En gran medida"
+    definition:
+      en: "The respondent perceives strong capacity to participate. Code 4. Meets adequacy threshold for B1 condition B and B3 condition B."
+      fr: "Le répondant perçoit une forte capacité à participer. Code 4. Satisfait au seuil d'adéquation pour la condition B de B1 et la condition B de B3."
+      es: "El encuestado percibe una gran capacidad para participar. Código 4. Cumple el umbral de adecuación para la condición B de B1 y la condición B de B3."

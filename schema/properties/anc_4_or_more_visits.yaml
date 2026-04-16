@@ -1,0 +1,19 @@
+id: anc_4_or_more_visits
+maturity: draft
+label:
+  en: Received 4 or more ANC visits (derived)
+  fr: "A reçu 4 visites prénatales ou plus (dérivé)"
+  es: Recibió 4 o más visitas de APN (derivado)
+definition:
+  en: "Derived indicator: true if anc_visits_count is in the 4_to_7 or 8_or_more group. The standard SDG and HMIS coverage indicator for antenatal care. Numerator for the WHO/UNICEF global monitoring indicator: proportion of women who had a birth in the recall period and attended 4 or more ANC contacts."
+  fr: "Indicateur dérivé : vrai si anc_visits_count est dans le groupe 4_to_7 ou 8_or_more. L'indicateur de couverture standard ODD et HMIS pour les soins prénataux. Numérateur de l'indicateur de suivi mondial OMS/UNICEF : proportion de femmes ayant eu une naissance dans la période de rappel et ayant eu 4 contacts CPN ou plus."
+  es: "Indicador derivado: verdadero si anc_visits_count está en el grupo 4_to_7 o 8_or_more. El indicador de cobertura estándar de ODS y HMIS para la atención prenatal. Numerador del indicador de monitoreo global de OMS/UNICEF: proporción de mujeres que tuvieron un parto en el período de recordatorio y asistieron a 4 o más contactos de APN."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

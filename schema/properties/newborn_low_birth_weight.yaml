@@ -1,0 +1,19 @@
+id: newborn_low_birth_weight
+maturity: draft
+label:
+  en: Low birthweight (derived)
+  fr: "Faible poids à la naissance (dérivé)"
+  es: Bajo peso al nacer (derivado)
+definition:
+  en: "Derived indicator: true if newborn_birth_weight_kg < 2.5 kg and newborn_weighed_at_birth = yes. WHO low birthweight threshold: <2,500 grams. SDG indicator 2.2.3. Population-level indicator of maternal nutrition, infections, and obstetric complications."
+  fr: "Indicateur dérivé : vrai si newborn_birth_weight_kg < 2,5 kg et newborn_weighed_at_birth = oui. Seuil OMS de faible poids à la naissance : < 2 500 grammes. Indicateur ODD 2.2.3. Indicateur de niveau de population de nutrition maternelle, d'infections et de complications obstétricales."
+  es: "Indicador derivado: verdadero si newborn_birth_weight_kg < 2,5 kg y newborn_weighed_at_birth = sí. Umbral OMS de bajo peso al nacer: <2,500 gramos. Indicador ODS 2.2.3. Indicador a nivel de población de nutrición materna, infecciones y complicaciones obstétricas."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

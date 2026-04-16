@@ -1,0 +1,21 @@
+id: weai_se_confident_achieve
+maturity: draft
+label:
+  en: "WEAI self-efficacy — perform effectively on many tasks"
+  fr: "WEAI auto-efficacité — accomplir efficacement de nombreuses tâches"
+  es: "WEAI autoeficacia — desempeñarse eficazmente en muchas tareas"
+
+definition:
+  en: "NGSE item 6: 'I am confident that I can perform effectively on many different tasks.' One of eight items in the New General Self-Efficacy Scale (NGSE) used in pro-WEAI Indicator A2. Scored 1 (strongly disagree) to 5 (strongly agree). Adequacy for A2 requires sum of all eight NGSE items ≥ 32."
+  fr: "Item NGSE 6 : 'Je suis confiant(e) de pouvoir m'acquitter efficacement de nombreuses tâches différentes.' L'un des huit items de la Nouvelle échelle générale d'auto-efficacité (NGSE) utilisée dans l'indicateur A2 du pro-WEAI. Noté de 1 (fortement en désaccord) à 5 (fortement d'accord). L'adéquation pour A2 nécessite que la somme des huit items NGSE soit ≥ 32."
+  es: "Ítem NGSE 6: 'Confío en poder desempeñarme eficazmente en muchas tareas diferentes.' Uno de los ocho ítems de la Nueva Escala General de Autoeficacia (NGSE) utilizada en el indicador A2 del pro-WEAI. Puntuado de 1 (muy en desacuerdo) a 5 (muy de acuerdo). La adecuación para A2 requiere que la suma de los ocho ítems NGSE sea ≥ 32."
+
+type: string
+cardinality: single
+core: false
+vocabulary: weai-agree-5
+references: null
+category: intrinsic_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

@@ -1,0 +1,19 @@
+id: pnc_newborn_signal_breastfeeding_counsel
+maturity: draft
+label:
+  en: "Newborn PNC signal: breastfeeding counseled and observed"
+  fr: "Signal PNC nouveau-né : allaitement conseillé et observé"
+  es: "Señal PPN recién nacido: lactancia materna orientada y observada"
+definition:
+  en: "Whether the woman was counseled on breastfeeding and the health worker observed a breastfeed during the check in the first 2 days after birth. DHS-8 m78d. Newborn signal function 4 of 5. Cross-reference with NutritionPracticesProfile domain; owned by MaternalNewbornHealthProfile as a PNC service quality measure. Only asked if pnc_newborn_any_check = yes and pnc_newborn_timing is within 2 days."
+  fr: "Si la femme a été conseillée sur l'allaitement et si l'agent de santé a observé une tétée lors du contrôle dans les 2 premiers jours suivant la naissance. DHS-8 m78d. Fonction signal nouveau-né 4 sur 5. Référence croisée avec le domaine NutritionPracticesProfile ; appartient au MaternalNewbornHealthProfile comme mesure de qualité du service SPN. Posé uniquement si pnc_newborn_any_check = oui et pnc_newborn_timing est dans les 2 jours."
+  es: "Si la mujer fue orientada sobre la lactancia materna y el trabajador de salud observó una lactancia durante la revisión en los primeros 2 días después del parto. DHS-8 m78d. Función de señal del recién nacido 4 de 5. Referencia cruzada con el dominio NutritionPracticesProfile; pertenece al MaternalNewbornHealthProfile como medida de calidad del servicio PPN. Solo se pregunta si pnc_newborn_any_check = sí y pnc_newborn_timing está dentro de los 2 días."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

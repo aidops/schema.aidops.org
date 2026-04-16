@@ -1,0 +1,22 @@
+id: weai_comfortable_disagreeing
+maturity: draft
+label:
+  en: "WEAI respect — comfortable disagreeing with partner"
+  fr: "WEAI respect — à l'aise pour exprimer son désaccord avec le partenaire"
+  es: "WEAI respeto — cómodo en desacuerdo con la pareja"
+
+definition:
+  en: "How often the respondent feels comfortable disagreeing with their spouse or partner. One of four items in pro-WEAI Indicator A4 (respect among household members), an optional indicator. Adequacy for this item requires 'most_of_the_time' or 'always'. Adequacy for A4 requires all four conditions met."
+  fr: "À quelle fréquence le répondant se sent-il à l'aise pour exprimer son désaccord avec son conjoint ou partenaire. L'un des quatre items de l'indicateur A4 du pro-WEAI (respect entre membres du ménage), un indicateur facultatif. L'adéquation pour cet item nécessite 'la plupart du temps' ou 'toujours'. L'adéquation pour A4 nécessite que les quatre conditions soient remplies."
+  es: "Con qué frecuencia el encuestado se siente cómodo en desacuerdo con su cónyuge o pareja. Uno de los cuatro ítems del Indicador A4 del pro-WEAI (respeto entre miembros del hogar), un indicador opcional. La adecuación para este ítem requiere 'la mayoría de las veces' o 'siempre'. La adecuación para A4 requiere que se cumplan las cuatro condiciones."
+
+type: string
+cardinality: single
+core: false
+vocabulary: weai-frequency-5
+references: null
+category: intrinsic_agency
+sensitivity: sensitive
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

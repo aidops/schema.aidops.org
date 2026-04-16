@@ -1,0 +1,19 @@
+id: birth_multiplicity
+maturity: draft
+label:
+  en: Birth multiplicity (singleton or multiple)
+  fr: "Multiplicité de la naissance (unique ou multiple)"
+  es: Multiplicidad del parto (único o múltiple)
+definition:
+  en: "Whether the most recent birth was a singleton or a multiple birth (twins, triplets, or more). DHS birth history variable b0. Multiple births affect birthweight norms and newborn care protocols."
+  fr: "Si la naissance la plus récente était unique ou multiple (jumeaux, triplés ou plus). Variable d'historique de naissance DHS b0. Les naissances multiples affectent les normes de poids à la naissance et les protocoles de soins néonataux."
+  es: "Si el parto más reciente fue de un solo bebé o múltiple (gemelos, trillizos o más). Variable de historial de nacimientos DHS b0. Los partos múltiples afectan las normas de peso al nacer y los protocolos de atención al recién nacido."
+type: string
+cardinality: single
+core: false
+vocabulary: birth-multiplicity
+references: null
+category: pregnancy_history
+age_applicability:
+  - adult
+sensitivity: sensitive

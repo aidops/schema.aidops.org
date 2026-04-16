@@ -1,0 +1,57 @@
+id: vacc-card-status
+maturity: draft
+label:
+  en: Vaccination Card Status
+  fr: "Statut du carnet de vaccination"
+  es: "Estado del carnet de vacunación"
+definition:
+  en: "Whether the child has a home-based vaccination card or equivalent record, and whether it was physically seen by the enumerator. Used by the vaccination_card_exists property to gate the card-path vs recall-path in the vaccination section."
+  fr: "Indique si l'enfant possède un carnet de vaccination ou un document équivalent, et s'il a été physiquement vu par l'enquêteur. Utilisé par vaccination_card_exists pour orienter vers la voie carnet ou la voie mémorisation dans la section vaccination."
+  es: "Indica si el niño tiene un carnet de vacunación o documento equivalente, y si fue visto físicamente por el encuestador. Usado por vaccination_card_exists para dirigir hacia la vía carnet o la vía memoria en la sección de vacunación."
+standard:
+  name: "DHS h1 response categories"
+  uri: "https://www.dhsprogram.com/pubs/pdf/DHSG1/Guide_to_DHS_Statistics_DHS-8.pdf"
+values:
+- code: yes_seen
+  label:
+    en: Yes — card seen by enumerator
+    fr: "Oui — carnet vu par l'enquêteur"
+    es: "Sí — carnet visto por el encuestador"
+  definition:
+    en: "The caregiver has a vaccination card and the enumerator physically saw it. Maps to DHS h1 code 1."
+    fr: "Le soignant possède un carnet de vaccination et l'enquêteur l'a vu physiquement. Correspond au code DHS h1 = 1."
+    es: "El cuidador tiene un carnet de vacunación y el encuestador lo vio físicamente. Corresponde al código DHS h1 = 1."
+- code: yes_not_seen
+  label:
+    en: Yes — card exists but not seen
+    fr: "Oui — carnet existant mais non vu"
+    es: "Sí — carnet existe pero no fue visto"
+  definition:
+    en: "The caregiver reports having a vaccination card but it was not available for the enumerator to see. Maps to DHS h1 codes 2 (had, not seen) and 3 (had, destroyed)."
+    fr: "Le soignant déclare posséder un carnet de vaccination, mais il n'était pas disponible pour que l'enquêteur le consulte. Correspond aux codes DHS h1 = 2 (possédait, non vu) et 3 (possédait, détruit)."
+    es: "El cuidador declara tener un carnet de vacunación pero no estaba disponible para que el encuestador lo vea. Corresponde a los códigos DHS h1 = 2 (tenía, no visto) y 3 (tenía, destruido)."
+- code: "no"
+  label:
+    en: No — no card
+    fr: "Non — pas de carnet"
+    es: "No — sin carnet"
+  definition:
+    en: "The child does not have and has never had a vaccination card or home-based record. Maps to DHS h1 code 0."
+    fr: "L'enfant ne possède pas et n'a jamais possédé de carnet de vaccination ou de document de santé à domicile. Correspond au code DHS h1 = 0."
+    es: "El niño no tiene ni ha tenido nunca un carnet de vacunación o registro de salud domiciliario. Corresponde al código DHS h1 = 0."
+system_mappings:
+  dhs-8:
+    vocabulary_name: "DHS h1 vaccination card codes"
+    values:
+      - code: "0"
+        label: "No card"
+        maps_to: "no"
+      - code: "1"
+        label: "Card seen"
+        maps_to: yes_seen
+      - code: "2"
+        label: "Had card, not seen"
+        maps_to: yes_not_seen
+      - code: "3"
+        label: "Had card, destroyed"
+        maps_to: yes_not_seen

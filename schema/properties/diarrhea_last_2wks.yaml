@@ -1,0 +1,23 @@
+id: diarrhea_last_2wks
+maturity: draft
+label:
+  en: "Diarrhea in the last two weeks"
+  fr: "Diarrhée au cours des deux dernières semaines"
+  es: "Diarrea en las últimas dos semanas"
+
+definition:
+  en: "Whether the child had diarrhea in the last two weeks, and if so, whether it occurred in the last 24 hours. Published wording: 'Has (name) had diarrhea in the last two weeks?' Response distinguishes last 24 hours from earlier in the 2-week window. Standardized to 2-week recall for cross-indicator comparability with ARI and fever modules (some older DHS rounds used 4-week recall for diarrhea). DHS code h11; MICS code CD1. Gateway item: if no, skip all other diarrhea items."
+  fr: "Si l'enfant a eu de la diarrhée au cours des deux dernières semaines, et si oui, si c'était dans les dernières 24 heures. Formulation publiée : « (Prénom) a-t-il/elle eu de la diarrhée au cours des deux dernières semaines ? » La réponse distingue les dernières 24 heures du reste de la fenêtre de 2 semaines. Standardisé sur une période de rappel de 2 semaines pour la comparabilité inter-indicateurs avec les modules IRA et fièvre (certains cycles DHS plus anciens utilisaient un rappel de 4 semaines pour la diarrhée). Code DHS h11 ; code MICS CD1. Item passerelle : si non, ignorer tous les autres items de diarrhée."
+  es: "Si el niño tuvo diarrea en las últimas dos semanas, y si es así, si ocurrió en las últimas 24 horas. Redacción publicada: '¿Tuvo (nombre) diarrea en las últimas dos semanas?' La respuesta distingue las últimas 24 horas del resto de la ventana de 2 semanas. Estandarizado a un período de recordatorio de 2 semanas para comparabilidad entre indicadores con los módulos de IRA y fiebre (algunas rondas DHS anteriores usaban recordatorio de 4 semanas para diarrea). Código DHS h11; código MICS CD1. Ítem de puerta: si no, omitir todos los demás ítems de diarrea."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: diarrhea
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

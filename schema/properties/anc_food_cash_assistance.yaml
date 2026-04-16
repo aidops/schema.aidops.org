@@ -1,0 +1,19 @@
+id: anc_food_cash_assistance
+maturity: draft
+label:
+  en: Food or cash assistance received during pregnancy
+  fr: "Aide alimentaire ou monétaire reçue pendant la grossesse"
+  es: "Asistencia alimentaria o en efectivo recibida durante el embarazo"
+definition:
+  en: "Whether the woman received food or cash assistance as part of her antenatal care during the most recent pregnancy. DHS-8 m82. New in DHS-8. Relevant for social protection programme monitoring and for assessing integration of humanitarian cash transfers with maternal health services."
+  fr: "Si la femme a reçu une aide alimentaire ou monétaire dans le cadre de ses soins prénataux pendant la grossesse la plus récente. DHS-8 m82. Nouveau dans le DHS-8. Pertinent pour le suivi des programmes de protection sociale et pour évaluer l'intégration des transferts monétaires humanitaires avec les services de santé maternelle."
+  es: "Si la mujer recibió asistencia alimentaria o en efectivo como parte de su atención prenatal durante el embarazo más reciente. DHS-8 m82. Nuevo en DHS-8. Relevante para el monitoreo de programas de protección social y para evaluar la integración de transferencias monetarias humanitarias con los servicios de salud materna."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: antenatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive

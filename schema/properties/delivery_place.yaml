@@ -1,0 +1,19 @@
+id: delivery_place
+maturity: draft
+label:
+  en: Place of delivery
+  fr: Lieu d'accouchement
+  es: Lugar del parto
+definition:
+  en: "Where the woman gave birth for the most recent birth in the recall period. DHS-8 m15; MICS6 MN8. Collapsed from DHS m15 detail codes into main place-type categories (home, public facility, private facility, NGO facility, other). Drives the derived indicator delivery_in_health_facility."
+  fr: "Lieu d'accouchement pour la naissance la plus récente dans la période de rappel. DHS-8 m15 ; MICS6 MN8. Regroupé à partir des codes de détail DHS m15 en catégories de types de lieux principaux (domicile, établissement public, établissement privé, établissement ONG, autre). Génère l'indicateur dérivé delivery_in_health_facility."
+  es: "Dónde dio a luz la mujer para el parto más reciente en el período de recordatorio. DHS-8 m15; MICS6 MN8. Agrupado desde los códigos de detalle DHS m15 en categorías de tipos de lugar principales (domicilio, establecimiento público, establecimiento privado, establecimiento de ONG, otro). Genera el indicador derivado delivery_in_health_facility."
+type: string
+cardinality: single
+core: true
+vocabulary: place-of-delivery
+references: null
+category: delivery
+age_applicability:
+  - adult
+sensitivity: sensitive

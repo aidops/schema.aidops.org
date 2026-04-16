@@ -1,0 +1,59 @@
+id: weai-agree-5
+maturity: draft
+label:
+  en: WEAI Five-Point Agreement Scale
+  fr: "Échelle d'accord à cinq points WEAI"
+  es: "Escala de acuerdo de cinco puntos WEAI"
+definition:
+  en: "Standard five-point Likert agreement scale used in the pro-WEAI New General Self-Efficacy Scale (NGSE) items. Scores run from 1 (strongly disagree) to 5 (strongly agree). The sum of eight NGSE items yields a score of 8–40; adequacy threshold is ≥ 32."
+  fr: "Échelle d'accord de Likert standard à cinq points utilisée dans les items de la Nouvelle échelle générale d'auto-efficacité (NGSE) du pro-WEAI. Les scores vont de 1 (fortement en désaccord) à 5 (fortement d'accord). La somme des huit items NGSE donne un score de 8 à 40 ; le seuil d'adéquation est ≥ 32."
+  es: "Escala de acuerdo de Likert estándar de cinco puntos utilizada en los ítems de la Nueva Escala General de Autoeficacia (NGSE) del pro-WEAI. Las puntuaciones van de 1 (muy en desacuerdo) a 5 (muy de acuerdo). La suma de ocho ítems NGSE produce una puntuación de 8 a 40; el umbral de adecuación es ≥ 32."
+standard:
+  name: "Chen G, Gully SM, Eden D. (2001). Validation of a New General Self-Efficacy Scale. Organizational Research Methods 4(1):62–83."
+  uri: "https://doi.org/10.1177/109442810141004"
+values:
+  - code: strongly_disagree
+    label:
+      en: Strongly disagree
+      fr: "Fortement en désaccord"
+      es: "Muy en desacuerdo"
+    definition:
+      en: "The respondent strongly disagrees with the statement. Score value 1."
+      fr: "Le répondant est fortement en désaccord avec l'affirmation. Valeur de score 1."
+      es: "El encuestado está muy en desacuerdo con la afirmación. Valor de puntuación 1."
+  - code: disagree
+    label:
+      en: Disagree
+      fr: "En désaccord"
+      es: "En desacuerdo"
+    definition:
+      en: "The respondent disagrees with the statement. Score value 2."
+      fr: "Le répondant est en désaccord avec l'affirmation. Valeur de score 2."
+      es: "El encuestado está en desacuerdo con la afirmación. Valor de puntuación 2."
+  - code: neither
+    label:
+      en: Neither agree nor disagree
+      fr: "Ni d'accord ni en désaccord"
+      es: "Ni de acuerdo ni en desacuerdo"
+    definition:
+      en: "The respondent neither agrees nor disagrees. Score value 3."
+      fr: "Le répondant n'est ni d'accord ni en désaccord. Valeur de score 3."
+      es: "El encuestado no está de acuerdo ni en desacuerdo. Valor de puntuación 3."
+  - code: agree
+    label:
+      en: Agree
+      fr: "D'accord"
+      es: "De acuerdo"
+    definition:
+      en: "The respondent agrees with the statement. Score value 4."
+      fr: "Le répondant est d'accord avec l'affirmation. Valeur de score 4."
+      es: "El encuestado está de acuerdo con la afirmación. Valor de puntuación 4."
+  - code: strongly_agree
+    label:
+      en: Strongly agree
+      fr: "Fortement d'accord"
+      es: "Muy de acuerdo"
+    definition:
+      en: "The respondent strongly agrees with the statement. Score value 5."
+      fr: "Le répondant est fortement d'accord avec l'affirmation. Valeur de score 5."
+      es: "El encuestado está muy de acuerdo con la afirmación. Valor de puntuación 5."

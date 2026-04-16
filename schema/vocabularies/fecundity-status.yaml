@@ -1,0 +1,56 @@
+id: fecundity-status
+maturity: draft
+label:
+  en: Fecundity Status
+  fr: "Statut de fécondité"
+  es: "Estado de fecundidad"
+definition:
+  en: "Proxy classification of a woman's biological capacity to conceive, derived from the DHS multi-question approach using menstrual history, pregnancy history, and time spent trying to conceive. Women classified as infecund are excluded from the unmet need denominator."
+  fr: "Classification approximative de la capacité biologique d'une femme à concevoir, dérivée de l'approche DHS à questions multiples utilisant l'historique menstruel, l'historique de grossesse et le temps passé à essayer de concevoir. Les femmes classées comme infécondes sont exclues du dénominateur de besoin non satisfait."
+  es: "Clasificación proxy de la capacidad biológica de una mujer para concebir, derivada del enfoque de múltiples preguntas DHS usando historial menstrual, historial de embarazos y tiempo intentando concebir. Las mujeres clasificadas como infecundas son excluidas del denominador de necesidad insatisfecha."
+values:
+  - code: fecund
+    label:
+      en: Fecund
+      fr: "Féconde"
+      es: "Fecunda"
+    definition:
+      en: "The woman is presumed capable of conceiving based on menstrual history and absence of declared infecundity markers."
+      fr: "La femme est présumée capable de concevoir sur la base de l'historique menstruel et de l'absence de marqueurs d'infécondité déclarés."
+      es: "Se presume que la mujer es capaz de concebir con base en el historial menstrual y la ausencia de marcadores de infecundidad declarados."
+  - code: infecund_declared
+    label:
+      en: Infecund (self-declared or proxy indicators)
+      fr: "Inféconde (auto-déclarée ou indicateurs proxy)"
+      es: "Infecunda (autodeclarada o indicadores proxy)"
+    definition:
+      en: "The woman reports being unable to get pregnant, has been trying for two or more years without success, or has never had a period and has never been pregnant. DHS classification for exclusion from the unmet need denominator."
+      fr: "La femme déclare ne pas pouvoir tomber enceinte, essaie depuis deux ans ou plus sans succès, ou n'a jamais eu ses règles et n'a jamais été enceinte. Classification DHS pour l'exclusion du dénominateur de besoin non satisfait."
+      es: "La mujer reporta no poder quedar embarazada, lleva dos o más años intentándolo sin éxito, o nunca ha tenido el período y nunca ha estado embarazada. Clasificación DHS para exclusión del denominador de necesidad insatisfecha."
+  - code: amenorrhea_other_cause
+    label:
+      en: Amenorrhea (non-menopausal, non-pregnancy cause)
+      fr: "Aménorrhée (cause non ménopausique, non liée à la grossesse)"
+      es: "Amenorrea (causa no menopáusica, no relacionada con el embarazo)"
+    definition:
+      en: "The woman's period has stopped for reasons other than pregnancy or menopause (e.g., hormonal disorder, malnutrition, illness). Fertility status is uncertain."
+      fr: "Les règles de la femme se sont arrêtées pour des raisons autres que la grossesse ou la ménopause (p. ex. trouble hormonal, malnutrition, maladie). Le statut de fertilité est incertain."
+      es: "El período de la mujer se detuvo por razones distintas al embarazo o la menopausia (p. ej., trastorno hormonal, desnutrición, enfermedad). El estado de fertilidad es incierto."
+  - code: menopausal
+    label:
+      en: Menopausal
+      fr: "Ménopausée"
+      es: "Menopáusica"
+    definition:
+      en: "The woman's period has stopped due to menopause (natural cessation). She is infecund."
+      fr: "Les règles de la femme se sont arrêtées en raison de la ménopause (cessation naturelle). Elle est inféconde."
+      es: "El período de la mujer se detuvo debido a la menopausia (cese natural). Es infecunda."
+  - code: hysterectomy
+    label:
+      en: Hysterectomy
+      fr: "Hystérectomie"
+      es: "Histerectomía"
+    definition:
+      en: "The woman has had a hysterectomy and cannot conceive. She is infecund."
+      fr: "La femme a subi une hystérectomie et ne peut pas concevoir. Elle est inféconde."
+      es: "La mujer ha tenido una histerectomía y no puede concebir. Es infecunda."

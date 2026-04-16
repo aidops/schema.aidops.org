@@ -1,0 +1,19 @@
+id: newborn_dried_after_birth
+maturity: draft
+label:
+  en: Newborn dried with a clean cloth after birth
+  fr: "Nouveau-né séché avec un chiffon propre après la naissance"
+  es: "Recién nacido secado con un paño limpio después del parto"
+definition:
+  en: "Whether the baby was dried with a clean cloth or towel immediately after birth. Essential Newborn Care (ENC) practice: drying stimulates breathing and prevents hypothermia. WHO/UNICEF ENC recommendation. Only asked if most_recent_birth_outcome = live_birth."
+  fr: "Si le bébé a été séché avec un chiffon ou une serviette propre immédiatement après la naissance. Pratique des Soins Essentiels du Nouveau-né (SEN) : le séchage stimule la respiration et prévient l'hypothermie. Recommandation OMS/UNICEF SEN. Posé uniquement si most_recent_birth_outcome = live_birth."
+  es: "Si el bebé fue secado con un paño o toalla limpia inmediatamente después del parto. Práctica de Cuidados Esenciales del Recién Nacido (CERN): el secado estimula la respiración y previene la hipotermia. Recomendación OMS/UNICEF CERN. Solo se pregunta si most_recent_birth_outcome = live_birth."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: newborn
+age_applicability:
+  - adult
+sensitivity: sensitive

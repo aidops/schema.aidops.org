@@ -1,0 +1,76 @@
+id: pro-weai-2019
+title: "Development of the project-level Women's Empowerment in Agriculture Index (pro-WEAI)"
+short_title: "pro-WEAI (2019)"
+publisher: "World Development"
+authors:
+  - "Hazel J. Malapit"
+  - "Agnes R. Quisumbing"
+  - "Ruth Suseela Meinzen-Dick"
+  - "Gregory Seymour"
+  - "Elena M. Martinez"
+  - "Jessica Heckert"
+  - "Deborah Rubin"
+  - "Ana Vaz"
+  - "Kathryn M. Yount"
+year: 2019
+type: guidance_publication
+domain: humanitarian
+uri: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6694750/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - GenderEmpowermentProfile
+  vocabularies:
+    - weai-autonomy-scale
+    - weai-agree-5
+    - weai-frequency-7
+    - weai-frequency-5
+    - weai-decision-input-4
+    - weai-participation-capacity-4
+    - weai-asset-ownership
+    - weai-credit-decision
+    - weai-group-type
+  properties:
+    - weai_autonomy_vignette_external
+    - weai_autonomy_vignette_introjected
+    - weai_autonomy_vignette_identified
+    - weai_ipv_goes_out
+    - weai_ipv_neglects_children
+    - weai_ipv_argues
+    - weai_ipv_refuses_sex
+    - weai_ipv_burns_food
+    - weai_decision_input_crop
+    - weai_decision_input_livestock
+    - weai_decision_capacity_crop
+    - weai_asset_ownership_small
+    - weai_land_ownership
+    - weai_credit_used
+    - weai_credit_decision
+    - weai_credit_access_capacity
+    - weai_account_access
+    - weai_income_control_agr
+    - weai_income_control_nonagr
+    - weai_work_primary_hours
+    - weai_work_domestic_hours
+    - weai_childcare_secondary_hours
+    - weai_mobility_city
+    - weai_mobility_market
+    - weai_mobility_family
+    - weai_mobility_health
+    - weai_mobility_public_meeting
+    - weai_group_membership
+    - weai_se_confident_goals
+    - weai_se_overcome_challenges
+    - weai_se_achieve_goals
+    - weai_se_succeed_efforts
+    - weai_se_handle_difficulties
+    - weai_se_confident_achieve
+    - weai_se_compared_to_others
+    - weai_se_difficult_situations
+    - weai_respect_r_to_partner
+    - weai_respect_partner_to_r
+    - weai_trust_partner
+    - weai_comfortable_disagreeing
+    - weai_group_influential

@@ -1,0 +1,22 @@
+id: iawg-misp-2018
+title: "Minimum Initial Service Package (MISP) for Sexual and Reproductive Health in Crises"
+short_title: MISP 2018
+publisher: "Inter-Agency Working Group on Reproductive Health in Crises (IAWG)"
+year: 2018
+type: guidance_publication
+domain: humanitarian
+uri: "https://iawg.net/resources/minimum-initial-service-package-misp-resources"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ReproductiveHealthProfile
+  vocabularies:
+    - rh-service-access
+  properties:
+    - rh_service_aware
+    - rh_service_accessible
+    - clean_delivery_kit_available
+    - emergency_contraception_aware
+    - condom_accessible

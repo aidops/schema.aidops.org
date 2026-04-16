@@ -1,0 +1,19 @@
+id: pnc_mother_all_three_content
+maturity: draft
+label:
+  en: All three maternal PNC content items received (derived)
+  fr: "Les trois items de contenu PNC maternels reçus (dérivé)"
+  es: Los tres ítems de contenido PPN materno recibidos (derivado)
+definition:
+  en: "Derived indicator: true if pnc_mother_content_blood_pressure, pnc_mother_content_vaginal_bleeding, and pnc_mother_content_family_planning are all true. DHS-8 rh_pnc_wm_allchecks composite. Measures whether the woman received the complete recommended maternal PNC content package."
+  fr: "Indicateur dérivé : vrai si pnc_mother_content_blood_pressure, pnc_mother_content_vaginal_bleeding et pnc_mother_content_family_planning sont tous vrais. Composite DHS-8 rh_pnc_wm_allchecks. Mesure si la femme a reçu le package complet de contenu PNC maternel recommandé."
+  es: "Indicador derivado: verdadero si pnc_mother_content_blood_pressure, pnc_mother_content_vaginal_bleeding y pnc_mother_content_family_planning son todos verdaderos. Compuesto DHS-8 rh_pnc_wm_allchecks. Mide si la mujer recibió el paquete completo de contenido de PPN materna recomendado."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

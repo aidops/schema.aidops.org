@@ -1,0 +1,23 @@
+id: ari_antibiotics_given
+maturity: draft
+label:
+  en: "Antibiotics given for ARI"
+  fr: "Antibiotiques administrés pour l'IRA"
+  es: "Antibióticos administrados para la IRA"
+
+definition:
+  en: "Whether the child was given antibiotics (tablets, syrup, or injection) for the cough or breathing problem. Published wording: 'Was (name) given antibiotics — antibiotic tablets, syrup, or injection — for the cough or breathing problem?' IMCI recommendation: antibiotic (amoxicillin or cotrimoxazole) for non-severe pneumonia. Key programmatic indicator for ARI appropriate treatment coverage. Ask only if ari_symptom_classification is true. DHS code h33; MICS code ARI6."
+  fr: "Si l'enfant a reçu des antibiotiques (comprimés, sirop ou injection) pour la toux ou les difficultés respiratoires. Formulation publiée : « (Prénom) a-t-il/elle reçu des antibiotiques — comprimés, sirop ou injection d'antibiotiques — pour la toux ou les difficultés respiratoires ? » Recommandation PCIME : antibiotique (amoxicilline ou cotrimoxazole) pour la pneumonie non sévère. Indicateur programmatique clé de la couverture du traitement approprié de l'IRA. Posez uniquement si ari_symptom_classification est vrai. Code DHS h33 ; code MICS ARI6."
+  es: "Si al niño se le administraron antibióticos (comprimidos, jarabe o inyección) para la tos o el problema respiratorio. Redacción publicada: '¿Se le administraron a (nombre) antibióticos — comprimidos, jarabe o inyección de antibióticos — para la tos o el problema respiratorio?' Recomendación IMCI: antibiótico (amoxicilina o cotrimoxazol) para neumonía no grave. Indicador programático clave de cobertura de tratamiento apropiado de IRA. Preguntar solo si ari_symptom_classification es verdadero. Código DHS h33; código MICS ARI6."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: ari
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

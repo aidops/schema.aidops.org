@@ -1,0 +1,23 @@
+id: ari_fast_breathing
+maturity: draft
+label:
+  en: "Fast or rapid breathing during cough"
+  fr: "Respiration rapide pendant la toux"
+  es: "Respiración rápida durante la tos"
+
+definition:
+  en: "Whether the child's breathing was faster than usual (short, rapid breaths) when the child had the cough. Published wording: 'When (name) had the cough, was the breathing faster than usual — that is, short, rapid breaths?' The main IMCI pneumonia indicator captured from the caregiver's perspective. Age-specific thresholds (clinical definition, for health worker reference only): ≥60 breaths/min for infants under 2 months; ≥50 breaths/min for 2–11 months; ≥40 breaths/min for 12–59 months. Caregiver-reported proxy. Ask only if ari_cough_last_2wks is true. DHS code h31 (breathing component); MICS code ARI2."
+  fr: "Si la respiration de l'enfant était plus rapide que d'habitude (inspirations courtes et rapides) lorsque l'enfant toussait. Formulation publiée : « Lorsque (prénom) toussait, sa respiration était-elle plus rapide que d'habitude — c'est-à-dire des inspirations courtes et rapides ? » Le principal indicateur de pneumonie PCIME capturé du point de vue du soignant. Seuils spécifiques à l'âge (définition clinique, à titre de référence pour le professionnel de santé uniquement) : ≥60 respirations/min pour les nourrissons de moins de 2 mois ; ≥50 respirations/min pour 2 à 11 mois ; ≥40 respirations/min pour 12 à 59 mois. Indicateur proxy rapporté par le soignant. Posez uniquement si ari_cough_last_2wks est vrai. Code DHS h31 (composante respiratoire) ; code MICS ARI2."
+  es: "Si la respiración del niño era más rápida de lo habitual (respiraciones cortas y rápidas) cuando el niño tenía tos. Redacción publicada: 'Cuando (nombre) tenía tos, ¿respiraba más rápido de lo habitual — es decir, con respiraciones cortas y rápidas?' El principal indicador de neumonía IMCI capturado desde la perspectiva del cuidador. Umbrales específicos por edad (definición clínica, solo para referencia del trabajador de salud): ≥60 respiraciones/min para lactantes menores de 2 meses; ≥50 respiraciones/min para 2 a 11 meses; ≥40 respiraciones/min para 12 a 59 meses. Indicador proxy reportado por el cuidador. Preguntar solo si ari_cough_last_2wks es verdadero. Código DHS h31 (componente respiratorio); código MICS ARI2."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: ari
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

@@ -1,0 +1,19 @@
+id: pnc_both_mother_and_newborn_checked
+maturity: draft
+label:
+  en: Both mother and newborn received PNC within 2 days (derived)
+  fr: "La mère et le nouveau-né ont tous deux reçu un SPN dans les 2 jours (dérivé)"
+  es: Tanto la madre como el recién nacido recibieron PPN dentro de 2 días (derivado)
+definition:
+  en: "Derived indicator: true if both pnc_mother_within_2_days and pnc_newborn_within_2_days are true. DHS-8 rh_pnc_bothchecked composite. Measures continuity of care for the mother-newborn dyad. WHO PNC 2022 emphasizes care for the dyad together."
+  fr: "Indicateur dérivé : vrai si pnc_mother_within_2_days et pnc_newborn_within_2_days sont tous deux vrais. Composite DHS-8 rh_pnc_bothchecked. Mesure la continuité des soins pour la dyade mère-nouveau-né. L'OMS PNC 2022 souligne les soins conjoints pour la dyade."
+  es: "Indicador derivado: verdadero si tanto pnc_mother_within_2_days como pnc_newborn_within_2_days son verdaderos. Compuesto DHS-8 rh_pnc_bothchecked. Mide la continuidad de la atención para la díada madre-recién nacido. La OMS PNC 2022 enfatiza la atención conjunta para la díada."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_mnh
+age_applicability:
+  - adult
+sensitivity: sensitive

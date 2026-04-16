@@ -1,0 +1,21 @@
+id: weai_asset_ownership_small
+maturity: draft
+label:
+  en: "WEAI small asset ownership"
+  fr: "WEAI propriété de petits actifs"
+  es: "WEAI propiedad de activos pequeños"
+
+definition:
+  en: "Whether the respondent owns one or more small assets (poultry, small livestock, farm tools, household durables, mobile phone) and, if so, whether ownership is sole or joint. Part of pro-WEAI Indicator B2 (ownership of land and other assets). Adequacy for B2 small asset condition: respondent solely or jointly owns three or more small asset types. The specific list of small assets must be adapted to the local context at each deployment."
+  fr: "Si le répondant possède un ou plusieurs petits actifs (volailles, petit bétail, outils agricoles, biens ménagers durables, téléphone portable) et, si oui, si la propriété est individuelle ou conjointe. Fait partie de l'indicateur B2 du pro-WEAI (propriété de terres et d'autres actifs). L'adéquation pour la condition de petits actifs de B2 : le répondant possède seul ou conjointement trois types de petits actifs ou plus. La liste spécifique des petits actifs doit être adaptée au contexte local à chaque déploiement."
+  es: "Si el encuestado posee uno o más activos pequeños (aves de corral, pequeño ganado, herramientas agrícolas, bienes duraderos del hogar, teléfono móvil) y, de ser así, si la propiedad es individual o conjunta. Parte del Indicador B2 del pro-WEAI (propiedad de tierras y otros activos). La adecuación para la condición de activos pequeños de B2: el encuestado posee solo o conjuntamente tres o más tipos de activos pequeños. La lista específica de activos pequeños debe adaptarse al contexto local en cada implementación."
+
+type: string
+cardinality: single
+core: true
+vocabulary: weai-asset-ownership
+references: null
+category: instrumental_agency
+valid_instruments: [pro_weai]
+age_applicability:
+  - adult

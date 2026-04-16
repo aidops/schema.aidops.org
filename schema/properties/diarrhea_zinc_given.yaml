@@ -1,0 +1,23 @@
+id: diarrhea_zinc_given
+maturity: draft
+label:
+  en: "Zinc given for diarrhea"
+  fr: "Zinc administré pour la diarrhée"
+  es: "Zinc administrado para la diarrea"
+
+definition:
+  en: "Whether the child was given zinc tablets or syrup for the diarrhea. Published wording: 'Was (name) given zinc tablets or syrup for the diarrhea?' WHO/UNICEF joint indicator: ORS and zinc together constitute the recommended treatment for acute watery diarrhea in children under 5. Ask only if diarrhea_last_2wks is not false. DHS code h15e; MICS code CD6."
+  fr: "Si l'enfant a reçu des comprimés ou du sirop de zinc pour la diarrhée. Formulation publiée : « (Prénom) a-t-il/elle reçu des comprimés ou du sirop de zinc pour la diarrhée ? » Indicateur conjoint OMS/UNICEF : SRO et zinc constituent ensemble le traitement recommandé pour la diarrhée aqueuse aiguë chez les enfants de moins de 5 ans. Posez uniquement si diarrhea_last_2wks est vrai. Code DHS h15e ; code MICS CD6."
+  es: "Si al niño se le administraron comprimidos o jarabe de zinc para la diarrea. Redacción publicada: '¿Se le administraron a (nombre) comprimidos o jarabe de zinc para la diarrea?' Indicador conjunto OMS/UNICEF: SRO y zinc juntos constituyen el tratamiento recomendado para la diarrea acuosa aguda en niños menores de 5 años. Preguntar solo si diarrhea_last_2wks es verdadero. Código DHS h15e; código MICS CD6."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: diarrhea
+sensitivity: sensitive
+age_applicability:
+  - infant_0_1
+  - child_2_4
+valid_instruments: [dhs_8, mics6]

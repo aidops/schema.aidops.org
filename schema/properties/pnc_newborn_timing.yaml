@@ -1,0 +1,19 @@
+id: pnc_newborn_timing
+maturity: draft
+label:
+  en: Timing of first postnatal check for newborn
+  fr: "Délai du premier contrôle postnatal pour le nouveau-né"
+  es: "Momento de la primera revisión posnatal para el recién nacido"
+definition:
+  en: "When the newborn was first checked by a health worker after delivery. DHS-8 rh_pnc_nb_timing. Same pnc-timing vocabulary as mother. Only asked if pnc_newborn_any_check = yes. Drives pnc_newborn_within_2_days. If the check was NOT within 2 days, the five DHS-8 signal function items are skipped (per DHS-8 restriction)."
+  fr: "Quand le nouveau-né a été examiné pour la première fois par un agent de santé après l'accouchement. DHS-8 rh_pnc_nb_timing. Même vocabulaire pnc-timing que pour la mère. Posé uniquement si pnc_newborn_any_check = oui. Génère pnc_newborn_within_2_days. Si le contrôle n'était PAS dans les 2 jours, les cinq items de fonctions signal DHS-8 sont ignorés (conformément à la restriction DHS-8)."
+  es: "Cuándo fue revisado el recién nacido por primera vez por un trabajador de salud después del parto. DHS-8 rh_pnc_nb_timing. El mismo vocabulario pnc-timing que para la madre. Solo se pregunta si pnc_newborn_any_check = sí. Genera pnc_newborn_within_2_days. Si la revisión NO fue dentro de los 2 días, los cinco ítems de función de señal de DHS-8 se omiten (según la restricción DHS-8)."
+type: string
+cardinality: single
+core: true
+vocabulary: pnc-timing
+references: null
+category: postnatal_care
+age_applicability:
+  - adult
+sensitivity: sensitive
