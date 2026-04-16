@@ -26,28 +26,21 @@ const vocabularies = Object.entries(vocab.vocabularies)
     (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.key.localeCompare(b.key)
   );
 
-// Profile concepts for featured cards on the homepage.
-const profileIds = ['FoodSecurityProfile', 'AnthropometricProfile', 'DwellingDamageProfile'];
-const profileConcepts = profileIds
-  .map((id) => vocab.concepts[id])
-  .filter(Boolean);
-
-// Featured concept chips for the index section.
 const featuredConcepts = concepts.filter((c) => c.featured);
 const conceptChips = featuredConcepts.length > 0 ? featuredConcepts : concepts.slice(0, 8);
 
 const titles: Record<Locale, { title: string; description: string }> = {
   en: {
-    title: 'Humanitarian assessment profiles and operational tooling',
-    description: 'AidOps provides structured definitions for humanitarian assessment profiles and operational data. Built so aid programs can coordinate, share data, and reach the people they serve.',
+    title: 'Common definitions for humanitarian field data',
+    description: 'AidOps provides structured definitions for humanitarian field data so observations from different agencies can be shared, compared, and reused.',
   },
   fr: {
-    title: 'Profils d\'évaluation humanitaire et outillage opérationnel',
-    description: 'AidOps fournit des définitions structurées pour les profils d\'évaluation humanitaire et les données opérationnelles. Conçu pour que les programmes d\'aide puissent se coordonner, partager des données et atteindre les personnes concernées.',
+    title: 'Définitions communes pour les données humanitaires de terrain',
+    description: 'AidOps fournit des définitions structurées pour les données humanitaires de terrain afin que les observations de différentes agences puissent être partagées, comparées et réutilisées.',
   },
   es: {
-    title: 'Perfiles de evaluación humanitaria y herramientas operacionales',
-    description: 'AidOps proporciona definiciones estructuradas para perfiles de evaluación humanitaria y datos operacionales. Diseñado para que los programas de ayuda puedan coordinarse, compartir datos y llegar a las personas a las que sirven.',
+    title: 'Definiciones comunes para datos humanitarios de campo',
+    description: 'AidOps proporciona definiciones estructuradas para datos humanitarios de campo para que las observaciones de diferentes agencias puedan compartirse, compararse y reutilizarse.',
   },
 };
 
@@ -75,42 +68,346 @@ const { title, description } = titles[locale];
   <!-- Hero -->
   <div class="h3-hero">
     <div class="h3-hero-inner">
-      <h1>{title}</h1>
+      <h1><span class="h3-hero-aid">Aid</span>Ops</h1>
       <p class="h3-hero-lead">
-        {locale === 'en' && <>Structured schema for humanitarian assessment and aid operations. Built on <a href="https://publicschema.org/">PublicSchema</a>, extended for field programs.</>}
-        {locale === 'fr' && <>Schéma structuré pour l'évaluation humanitaire et les opérations d'aide. Fondé sur <a href="https://publicschema.org/">PublicSchema</a>, enrichi pour les programmes de terrain.</>}
-        {locale === 'es' && <>Esquema estructurado para evaluación humanitaria y operaciones de ayuda. Basado en <a href="https://publicschema.org/">PublicSchema</a>, extendido para programas de campo.</>}
+        {locale === 'en' && <>When multiple agencies assess the same population, their data should be comparable. AidOps provides structured definitions for the observations, measurements, and scores that humanitarian programs collect. Start here; adapt for your operation's context.</>}
+        {locale === 'fr' && <>Quand plusieurs agences évaluent la même population, leurs données devraient être comparables. AidOps fournit des définitions structurées pour les observations, mesures et scores que les programmes humanitaires collectent. Commencez ici ; adaptez à votre contexte opérationnel.</>}
+        {locale === 'es' && <>Cuando múltiples agencias evalúan la misma población, sus datos deberían ser comparables. AidOps proporciona definiciones estructuradas para las observaciones, mediciones y puntajes que los programas humanitarios recopilan. Comience aquí; adapte a su contexto operacional.</>}
       </p>
       <div class="h3-hero-cta">
-        <a href={localePath('/concepts/', locale)} class="btn btn-primary">{t('nav.concepts')}</a>
+        <a href="#contents" class="btn btn-primary">
+          {locale === 'en' && "What's in the schema"}
+          {locale === 'fr' && "Contenu du schéma"}
+          {locale === 'es' && "Contenido del esquema"}
+        </a>
         <a href={localePath('/about/', locale)} class="btn btn-secondary">{t('footer.about')}</a>
       </div>
     </div>
   </div>
 
-  <!-- Assessment profiles -->
-  {profileConcepts.length > 0 && (
-    <div class="h3-prose">
+  <!-- What the schema contains -->
+  <div class="h3-band" id="contents">
+    <div class="h3-band-inner">
       <h2>
-        {locale === 'en' && 'Assessment profiles'}
-        {locale === 'fr' && 'Profils d\'évaluation'}
-        {locale === 'es' && 'Perfiles de evaluación'}
+        {locale === 'en' && 'What the schema contains'}
+        {locale === 'fr' && 'Contenu du schéma'}
+        {locale === 'es' && 'Contenido del esquema'}
       </h2>
-      <p>
-        {locale === 'en' && 'AidOps defines structured schemas for the most common humanitarian assessment profiles. Each profile captures a specific domain of field observation data.'}
-        {locale === 'fr' && 'AidOps définit des schémas structurés pour les profils d\'évaluation humanitaire les plus courants. Chaque profil capture un domaine spécifique de données d\'observation de terrain.'}
-        {locale === 'es' && 'AidOps define esquemas estructurados para los perfiles de evaluación humanitaria más comunes. Cada perfil captura un dominio específico de datos de observación de campo.'}
+      <p class="h3-band-lead">
+        {locale === 'en' && <>AidOps is a shared set of definitions for humanitarian field data. It is not a data collection tool, a survey platform, or a reporting framework. When one agency records a food consumption score and another records a coping strategy index, the schema specifies exactly what fields to expect, what values are valid, and how scores are derived. Each definition has a permanent web address. Everything is optional: adopt the parts that fit your operation and leave the rest.</>}
+        {locale === 'fr' && <>AidOps est un ensemble partagé de définitions pour les données humanitaires de terrain. Ce n'est pas un outil de collecte, une plateforme d'enquête ou un cadre de reporting. Quand une agence enregistre un score de consommation alimentaire et une autre un indice de stratégies d'adaptation, le schéma spécifie exactement quels champs attendre, quelles valeurs sont valides et comment les scores sont dérivés. Chaque définition a une adresse web permanente. Tout est optionnel : adoptez ce qui convient à votre opération et laissez le reste.</>}
+        {locale === 'es' && <>AidOps es un conjunto compartido de definiciones para datos humanitarios de campo. No es una herramienta de recolección de datos, una plataforma de encuestas ni un marco de reportes. Cuando una agencia registra un puntaje de consumo alimentario y otra un índice de estrategias de afrontamiento, el esquema especifica exactamente qué campos esperar, qué valores son válidos y cómo se derivan los puntajes. Cada definición tiene una dirección web permanente. Todo es opcional: adopte lo que se ajuste a su operación y deje el resto.</>}
       </p>
-      <div class="h3-profiles">
-        {profileConcepts.map((c) => (
-          <div class="h3-profile">
-            <h3><a href={localePath(c.path, locale)}>{c.id}</a></h3>
-            <p>{c.definition[locale] ?? c.definition.en}</p>
+
+      <div class="h3-layers">
+        <div class="h3-layer">
+          <a href={localePath('/concepts/', locale)} class="h3-layer-header">
+            <h3>{t('home.core_concepts')} &amp; {t('nav.properties')}</h3>
+            <span class="h3-layer-count">{concepts.length} {t('home.core_concepts').toLowerCase()}, {properties.length} {t('nav.properties').toLowerCase()}</span>
+          </a>
+          <p>
+            {locale === 'en' && <>Structured profiles for field observations: nutrition screening, food security assessment, and shelter damage surveys. Each concept carries named, typed properties (<code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>) defined once and reused. Core building blocks like Person, Household, and Location come from <a href="https://publicschema.org/">PublicSchema</a>, so you don't redefine what's already standard.</>}
+            {locale === 'fr' && <>Profils structurés pour les observations de terrain : dépistage nutritionnel, évaluation de la sécurité alimentaire et enquêtes sur les dommages aux abris. Chaque concept porte des propriétés nommées et typées (<code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>) définies une seule fois et réutilisées. Les éléments fondamentaux comme Person, Household et Location proviennent de <a href="https://publicschema.org/">PublicSchema</a>, pour ne pas redéfinir ce qui est déjà standard.</>}
+            {locale === 'es' && <>Perfiles estructurados para observaciones de campo: tamizaje nutricional, evaluación de seguridad alimentaria y encuestas de daño a refugios. Cada concepto lleva propiedades nombradas y tipadas (<code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>) definidas una vez y reutilizadas. Los componentes fundamentales como Person, Household y Location provienen de <a href="https://publicschema.org/">PublicSchema</a>, para no redefinir lo que ya es estándar.</>}
+          </p>
+          <div class="h3-layer-examples">
+            {conceptChips.map((c) => (
+              <a href={localePath(c.path, locale)}>{c.id}</a>
+            ))}
+            {concepts.length > conceptChips.length && (
+              <a class="h3-layer-more" href={localePath('/concepts/', locale)}>
+                {t('home.plus_more', { count: concepts.length - conceptChips.length })}
+              </a>
+            )}
           </div>
-        ))}
+          <p class="h3-layer-standards">
+            <span class="h3-layer-standards-label">
+              {locale === 'en' && 'Based on'}
+              {locale === 'fr' && 'Basé sur'}
+              {locale === 'es' && 'Basado en'}
+            </span>
+            WFP (FCS, rCSI, CARI) · FAO (HDDS, FIES, MDD-W) · WHO (Growth Standards) · SMART · Washington Group
+          </p>
+        </div>
+        <div class="h3-layer">
+          <a href={localePath('/vocabularies/', locale)} class="h3-layer-header">
+            <h3>{t('home.vocabularies')}</h3>
+            <span class="h3-layer-count">{vocabularies.length} {t('home.vocabularies').toLowerCase()}</span>
+          </a>
+          <p>
+            {locale === 'en' && 'Controlled value sets for fields like food group categories, coping strategies, MUAC bands, damage levels, and shelter types. Where standard instrument definitions exist, we encode them. Where coding varies across agencies, we define a common set informed by field practice and standard instruments.'}
+            {locale === 'fr' && 'Ensembles de valeurs contrôlées pour des champs comme les catégories de groupes alimentaires, les stratégies d\'adaptation, les bandes MUAC, les niveaux de dommages et les types d\'abris. Là où des définitions d\'instruments standard existent, nous les encodons. Là où le codage varie entre agences, nous définissons un ensemble commun basé sur les pratiques de terrain et les instruments standard.'}
+            {locale === 'es' && 'Conjuntos de valores controlados para campos como categorías de grupos alimentarios, estrategias de afrontamiento, bandas MUAC, niveles de daño y tipos de refugio. Donde existen definiciones de instrumentos estándar, las codificamos. Donde la codificación varía entre agencias, definimos un conjunto común informado por la práctica de campo e instrumentos estándar.'}
+          </p>
+          <div class="h3-layer-examples">
+            {vocabularies.slice(0, 5).map((v) => (
+              <a href={localePath(`/vocabularies/${v.key}`, locale)}>
+                {v.key}
+                <span class="h3-chip-meta">{v.values.length}</span>
+              </a>
+            ))}
+            {vocabularies.length > 5 && (
+              <a class="h3-layer-more" href={localePath('/vocabularies/', locale)}>
+                {t('home.plus_more', { count: vocabularies.length - 5 })}
+              </a>
+            )}
+          </div>
+        </div>
       </div>
     </div>
-  )}
+  </div>
+
+  <!-- Why shared definitions matter -->
+  <div class="h3-prose">
+    <h2>
+      {locale === 'en' && 'Why shared definitions matter'}
+      {locale === 'fr' && 'Pourquoi des définitions partagées sont essentielles'}
+      {locale === 'es' && 'Por qué importan las definiciones compartidas'}
+    </h2>
+    <p>
+      {locale === 'en' && 'Three agencies run nutrition screenings in the same district after a flood. All three measure MUAC in millimeters, but Agency A classifies using standard WHO cutoffs (green \u2265 125 mm, yellow 115\u2013124 mm, red < 115 mm). Agency B records weight-for-height z-scores using WHO 2006 growth standards instead of MUAC. Agency C measures MUAC but applies a modified national protocol where "severe" starts at < 120 mm instead of < 115 mm.'}
+      {locale === 'fr' && 'Trois agences réalisent des dépistages nutritionnels dans le même district après une inondation. Les trois mesurent le MUAC en millimètres, mais l\'Agence A classe selon les seuils OMS standard (vert \u2265 125 mm, jaune 115\u2013124 mm, rouge < 115 mm). L\'Agence B enregistre des z-scores poids-pour-taille selon les normes de croissance OMS 2006 au lieu du MUAC. L\'Agence C mesure le MUAC mais applique un protocole national modifié où « sévère » commence à < 120 mm au lieu de < 115 mm.'}
+      {locale === 'es' && 'Tres agencias realizan tamizajes nutricionales en el mismo distrito después de una inundación. Las tres miden el MUAC en milímetros, pero la Agencia A clasifica usando los puntos de corte estándar de la OMS (verde \u2265 125 mm, amarillo 115\u2013124 mm, rojo < 115 mm). La Agencia B registra puntajes z de peso-para-talla usando los estándares de crecimiento OMS 2006 en lugar de MUAC. La Agencia C mide el MUAC pero aplica un protocolo nacional modificado donde "severo" comienza en < 120 mm en lugar de < 115 mm.'}
+    </p>
+
+    <div class="h3-example">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              {locale === 'en' && 'Agency'}
+              {locale === 'fr' && 'Agence'}
+              {locale === 'es' && 'Agencia'}
+            </th>
+            <th>
+              {locale === 'en' && 'Measurement'}
+              {locale === 'fr' && 'Mesure'}
+              {locale === 'es' && 'Medición'}
+            </th>
+            <th>
+              {locale === 'en' && 'Classification'}
+              {locale === 'fr' && 'Classification'}
+              {locale === 'es' && 'Clasificación'}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {locale === 'en' && 'Agency A'}
+              {locale === 'fr' && 'Agence A'}
+              {locale === 'es' && 'Agencia A'}
+            </td>
+            <td><code>muac</code> (mm)</td>
+            <td>
+              {locale === 'en' && 'WHO standard cutoffs (< 115 severe, 115\u2013124 moderate)'}
+              {locale === 'fr' && 'Seuils OMS standard (< 115 sévère, 115\u2013124 modéré)'}
+              {locale === 'es' && 'Puntos de corte OMS estándar (< 115 severo, 115\u2013124 moderado)'}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {locale === 'en' && 'Agency B'}
+              {locale === 'fr' && 'Agence B'}
+              {locale === 'es' && 'Agencia B'}
+            </td>
+            <td><code>weight_for_height_z</code></td>
+            <td>
+              {locale === 'en' && 'Continuous z-score (WHO 2006)'}
+              {locale === 'fr' && 'Z-score continu (OMS 2006)'}
+              {locale === 'es' && 'Puntaje z continuo (OMS 2006)'}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {locale === 'en' && 'Agency C'}
+              {locale === 'fr' && 'Agence C'}
+              {locale === 'es' && 'Agencia C'}
+            </td>
+            <td><code>muac</code> (mm)</td>
+            <td>
+              {locale === 'en' && 'Modified national cutoffs (< 120 severe, 120\u2013134 moderate)'}
+              {locale === 'fr' && 'Seuils nationaux modifiés (< 120 sévère, 120\u2013134 modéré)'}
+              {locale === 'es' && 'Puntos de corte nacionales modificados (< 120 severo, 120\u2013134 moderado)'}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="h3-example-caption">
+        {locale === 'en' && 'Same district. Three agencies. The raw measurements may overlap, but the classifications diverge.'}
+        {locale === 'fr' && 'Même district. Trois agences. Les mesures brutes peuvent se recouper, mais les classifications divergent.'}
+        {locale === 'es' && 'Mismo distrito. Tres agencias. Las mediciones pueden coincidir, pero las clasificaciones divergen.'}
+      </p>
+    </div>
+
+    <p>
+      {locale === 'en' && 'The nutrition cluster coordinator needs a consolidated picture for the district. Today that means weeks of manual harmonization: mapping codes, reconciling cutoffs, guessing at equivalences. It is expensive, error-prone, and starts over when the next assessment round begins.'}
+      {locale === 'fr' && 'Le coordinateur du cluster nutrition a besoin d\'une image consolidée du district. Aujourd\'hui, cela signifie des semaines d\'harmonisation manuelle : mapping des codes, réconciliation des seuils, estimation des équivalences. C\'est coûteux, source d\'erreurs, et recommence à chaque nouveau cycle d\'évaluation.'}
+      {locale === 'es' && 'El coordinador del clúster de nutrición necesita una imagen consolidada del distrito. Hoy eso significa semanas de armonización manual: mapear códigos, reconciliar puntos de corte, adivinar equivalencias. Es costoso, propenso a errores, y se reinicia en cada nueva ronda de evaluación.'}
+    </p>
+    <p>
+      {locale === 'en' && <>Spreadsheet crosswalks can reconcile naming differences, but they cannot recover information that was never captured in a comparable way. You cannot reconstruct z-score distributions from color bands, and modified cutoffs mean "severe" in one dataset does not match "severe" in another. Shared definitions do not just save time; they make accurate consolidation possible in the first place.</>}
+      {locale === 'fr' && <>Les tables de correspondance sur tableur peuvent réconcilier les différences de nommage, mais elles ne peuvent pas récupérer des informations qui n'ont jamais été saisies de manière comparable. On ne peut pas reconstruire des distributions de z-scores à partir de bandes de couleur, et des seuils modifiés signifient que « sévère » dans un jeu de données ne correspond pas à « sévère » dans un autre. Les définitions partagées ne font pas que gagner du temps ; elles rendent la consolidation précise possible en premier lieu.</>}
+      {locale === 'es' && <>Las tablas de correspondencia en hojas de cálculo pueden reconciliar diferencias de nomenclatura, pero no pueden recuperar información que nunca se capturó de manera comparable. No se pueden reconstruir distribuciones de puntajes z a partir de bandas de color, y puntos de corte modificados significan que "severo" en un conjunto de datos no coincide con "severo" en otro. Las definiciones compartidas no solo ahorran tiempo; hacen posible la consolidación precisa en primer lugar.</>}
+    </p>
+
+    <div class="h3-diagram">
+      <div class="h3-diagram-panel">
+        <svg viewBox="0 0 200 155" aria-hidden="true">
+          <line x1="100" y1="15" x2="162" y2="55" />
+          <line x1="100" y1="15" x2="38" y2="55" />
+          <line x1="162" y1="55" x2="138" y2="133" />
+          <line x1="162" y1="55" x2="62" y2="133" class="h3-lossy" />
+          <line x1="162" y1="55" x2="38" y2="55" class="h3-lossy" />
+          <line x1="138" y1="133" x2="62" y2="133" />
+          <line x1="138" y1="133" x2="38" y2="55" class="h3-lossy" />
+          <line x1="62" y1="133" x2="38" y2="55" />
+          <circle cx="100" cy="15" r="8" />
+          <circle cx="162" cy="55" r="8" />
+          <circle cx="138" cy="133" r="8" />
+          <circle cx="62" cy="133" r="8" />
+          <circle cx="38" cy="55" r="8" />
+        </svg>
+        <div class="h3-diagram-label">
+          <strong>
+            {locale === 'en' && 'Without shared definitions'}
+            {locale === 'fr' && 'Sans définitions partagées'}
+            {locale === 'es' && 'Sin definiciones compartidas'}
+          </strong>
+          {locale === 'en' && 'Custom mapping per agency pair.'}
+          {locale === 'fr' && 'Mapping personnalisé par paire d\'agences.'}
+          {locale === 'es' && 'Mapeo personalizado por par de agencias.'}
+        </div>
+      </div>
+      <div class="h3-diagram-panel h3-diagram-panel-hub">
+        <svg viewBox="0 0 200 155" aria-hidden="true">
+          <line x1="100" y1="15" x2="100" y2="80" />
+          <line x1="162" y1="55" x2="100" y2="80" />
+          <line x1="138" y1="133" x2="100" y2="80" />
+          <line x1="62" y1="133" x2="100" y2="80" />
+          <line x1="38" y1="55" x2="100" y2="80" />
+          <circle cx="100" cy="15" r="8" />
+          <circle cx="162" cy="55" r="8" />
+          <circle cx="138" cy="133" r="8" />
+          <circle cx="62" cy="133" r="8" />
+          <circle cx="38" cy="55" r="8" />
+          <circle cx="100" cy="80" r="12" class="h3-hub-node" />
+        </svg>
+        <div class="h3-diagram-label">
+          <strong>
+            {locale === 'en' && 'With shared definitions'}
+            {locale === 'fr' && 'Avec des définitions partagées'}
+            {locale === 'es' && 'Con definiciones compartidas'}
+          </strong>
+          {locale === 'en' && 'Each agency maps once to the shared schema.'}
+          {locale === 'fr' && 'Chaque agence se connecte une seule fois au schéma partagé.'}
+          {locale === 'es' && 'Cada agencia se conecta una vez al esquema compartido.'}
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top: var(--space-xl);">
+      {locale === 'en' && 'AidOps does not prescribe which measurement or cutoff is correct. It gives you a common reference so you can see exactly where agencies diverge, decide what fits your context, and extend it where your operation needs more.'}
+      {locale === 'fr' && 'AidOps ne prescrit pas quelle mesure ou quel seuil est correct. Il vous donne une référence commune pour voir exactement où les agences divergent, décider ce qui convient à votre contexte, et l\'étendre là où votre opération en a besoin.'}
+      {locale === 'es' && 'AidOps no prescribe qué medición o punto de corte es correcto. Le da una referencia común para ver exactamente dónde divergen las agencias, decidir qué se ajusta a su contexto, y extenderlo donde su operación lo necesite.'}
+    </p>
+  </div>
+
+  <!-- Where to start -->
+  <div class="h3-prose">
+    <p class="h3-overline">
+      {locale === 'en' && 'Choose your path'}
+      {locale === 'fr' && 'Choisissez votre parcours'}
+      {locale === 'es' && 'Elija su camino'}
+    </p>
+    <h2>
+      {locale === 'en' && 'Where to start'}
+      {locale === 'fr' && 'Par où commencer'}
+      {locale === 'es' && 'Por dónde empezar'}
+    </h2>
+    <div class="h3-personas">
+      <div class="h3-persona">
+        <h3>
+          {locale === 'en' && <>&ldquo;I coordinate assessments across agencies&rdquo;</>}
+          {locale === 'fr' && <>&laquo; Je coordonne les évaluations entre agences &raquo;</>}
+          {locale === 'es' && <>&laquo;Coordino evaluaciones entre agencias&raquo;</>}
+        </h3>
+        <p>
+          {locale === 'en' && 'You need consolidated nutrition, food security, or damage data from multiple partners to feed into your HNO or cluster reporting. AidOps gives you shared definitions so data from different agencies can be compared and merged without ad hoc mapping.'}
+          {locale === 'fr' && 'Vous avez besoin de données consolidées sur la nutrition, la sécurité alimentaire ou les dommages provenant de plusieurs partenaires pour alimenter votre HNO ou vos rapports de cluster. AidOps fournit des définitions partagées pour que les données de différentes agences puissent être comparées et fusionnées sans mapping ad hoc.'}
+          {locale === 'es' && 'Necesita datos consolidados de nutrición, seguridad alimentaria o daños de múltiples socios para alimentar su HNO o reportes de clúster. AidOps le da definiciones compartidas para que los datos de diferentes agencias puedan compararse y fusionarse sin mapeo ad hoc.'}
+        </p>
+        <div class="h3-persona-links">
+          <a href={localePath('/concepts/', locale)}>{t('nav.concepts')}</a>
+          <a href={localePath('/vocabularies/', locale)}>{t('nav.vocabularies')}</a>
+        </div>
+      </div>
+      <div class="h3-persona">
+        <h3>
+          {locale === 'en' && <>&ldquo;I design data collection forms&rdquo;</>}
+          {locale === 'fr' && <>&laquo; Je conçois des formulaires de collecte de données &raquo;</>}
+          {locale === 'es' && <>&laquo;Diseño formularios de recolección de datos&raquo;</>}
+        </h3>
+        <p>
+          {locale === 'en' && 'You need field names, value codes, and scoring rules that align with standard instruments (FCS, MUAC, rCSI). Use AidOps definitions in your KoboToolbox or ODK form design so your data is interoperable from the start.'}
+          {locale === 'fr' && 'Vous avez besoin de noms de champs, de codes de valeur et de règles de scoring alignés sur les instruments standard (FCS, MUAC, rCSI). Utilisez les définitions AidOps dans votre conception de formulaires KoboToolbox ou ODK pour que vos données soient interopérables dès le départ.'}
+          {locale === 'es' && 'Necesita nombres de campos, códigos de valores y reglas de puntuación alineados con instrumentos estándar (FCS, MUAC, rCSI). Use las definiciones de AidOps en su diseño de formularios KoboToolbox u ODK para que sus datos sean interoperables desde el inicio.'}
+        </p>
+        <div class="h3-persona-links">
+          <a href={localePath('/properties/', locale)}>{t('nav.properties')}</a>
+          <a href={localePath('/vocabularies/', locale)}>{t('nav.vocabularies')}</a>
+        </div>
+      </div>
+      <div class="h3-persona">
+        <h3>
+          {locale === 'en' && <>&ldquo;I build or maintain a humanitarian data platform&rdquo;</>}
+          {locale === 'fr' && <>&laquo; Je développe ou maintiens une plateforme de données humanitaires &raquo;</>}
+          {locale === 'es' && <>&laquo;Desarrollo o mantengo una plataforma de datos humanitarios&raquo;</>}
+        </h3>
+        <p>
+          {locale === 'en' && 'You need a canonical data model for assessment and profile data. Map your KoboToolbox, DHIS2, or custom platform fields to AidOps properties once; partner data flows in without custom transforms.'}
+          {locale === 'fr' && 'Vous avez besoin d\'un modèle de données canonique pour les données d\'évaluation et de profil. Mappez une seule fois les champs de votre KoboToolbox, DHIS2 ou plateforme personnalisée vers les propriétés AidOps ; les données des partenaires arrivent sans transformations personnalisées.'}
+          {locale === 'es' && 'Necesita un modelo de datos canónico para datos de evaluación y perfil. Mapee los campos de su KoboToolbox, DHIS2 o plataforma personalizada a las propiedades de AidOps una vez; los datos de socios fluyen sin transformaciones personalizadas.'}
+        </p>
+        <div class="h3-persona-links">
+          <a href={localePath('/properties/', locale)}>{t('nav.properties')}</a>
+          <a href={localePath('/concepts/', locale)}>{t('nav.concepts')}</a>
+        </div>
+      </div>
+      <div class="h3-persona">
+        <h3>
+          {locale === 'en' && <>&ldquo;I need to produce cluster or donor reports&rdquo;</>}
+          {locale === 'fr' && <>&laquo; Je dois produire des rapports pour le cluster ou les bailleurs &raquo;</>}
+          {locale === 'es' && <>&laquo;Necesito producir reportes para el clúster o donantes&raquo;</>}
+        </h3>
+        <p>
+          {locale === 'en' && 'You need to aggregate field data collected by multiple implementing partners into sitrep inputs, HNO sector annexes, or donor reports. When all partners use the same field definitions and value codes, aggregation is straightforward.'}
+          {locale === 'fr' && 'Vous devez agréger des données de terrain collectées par plusieurs partenaires de mise en \u0153uvre en contributions aux sitrep, annexes sectorielles HNO ou rapports aux bailleurs. Quand tous les partenaires utilisent les mêmes définitions de champs et codes de valeur, l\'agrégation est directe.'}
+          {locale === 'es' && 'Necesita agregar datos de campo recopilados por múltiples socios implementadores en insumos para sitrep, anexos sectoriales del HNO o reportes a donantes. Cuando todos los socios usan las mismas definiciones de campos y códigos de valores, la agregación es directa.'}
+        </p>
+        <div class="h3-persona-links">
+          <a href={localePath('/concepts/', locale)}>{t('nav.concepts')}</a>
+          <a href={localePath('/vocabularies/', locale)}>{t('nav.vocabularies')}</a>
+        </div>
+      </div>
+      <div class="h3-persona h3-persona-wide">
+        <h3>
+          {locale === 'en' && <>&ldquo;I run assessments for a national authority&rdquo;</>}
+          {locale === 'fr' && <>&laquo; Je mène des évaluations pour une autorité nationale &raquo;</>}
+          {locale === 'es' && <>&laquo;Realizo evaluaciones para una autoridad nacional&raquo;</>}
+        </h3>
+        <p>
+          {locale === 'en' && 'Your ministry runs its own nutrition surveys, disaster assessments, or social registry updates. You need your national data to be understood by the humanitarian coordination system without losing national classifications. AidOps gives you a bridge: map your national protocol once, and cluster partners can read your data directly.'}
+          {locale === 'fr' && 'Votre ministère mène ses propres enquêtes nutritionnelles, évaluations de catastrophes ou mises à jour de registres sociaux. Vous avez besoin que vos données nationales soient comprises par le système de coordination humanitaire sans perdre les classifications nationales. AidOps vous offre un pont : mappez votre protocole national une seule fois, et les partenaires du cluster peuvent lire vos données directement.'}
+          {locale === 'es' && 'Su ministerio realiza sus propias encuestas nutricionales, evaluaciones de desastres o actualizaciones de registros sociales. Necesita que sus datos nacionales sean comprendidos por el sistema de coordinación humanitaria sin perder las clasificaciones nacionales. AidOps le ofrece un puente: mapee su protocolo nacional una vez, y los socios del clúster pueden leer sus datos directamente.'}
+        </p>
+        <div class="h3-persona-links">
+          <a href={localePath('/concepts/', locale)}>{t('nav.concepts')}</a>
+          <a href={localePath('/about/', locale)}>{t('footer.about')}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Schema index -->
   <div class="h3-prose" id="index">
@@ -158,7 +455,7 @@ const { title, description } = titles[locale];
     <p class="h3-closing">
       <a href={localePath('/about/', locale)}>{t('footer.about')}</a>
       <span class="h3-header-sep" aria-hidden="true"></span>
-      <a href="https://github.com/aidops-org/schema.aidops.org">{t('footer.source_github')}</a>
+      <a href="https://github.com/aidops/schema.aidops.org">{t('footer.source_github')}</a>
       <span class="h3-header-sep" aria-hidden="true"></span>
       <a href="https://publicschema.org/">{t('footer.publicschema')}</a>
     </p>

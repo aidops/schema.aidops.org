@@ -12,7 +12,7 @@ interface Props {
 const { maturity, pageType, pageId, locale } = Astro.props;
 const t = useTranslations(locale);
 
-const GITHUB_REPO = 'https://github.com/aidops-org/schema.aidops.org';
+const GITHUB_REPO = 'https://github.com/aidops/schema.aidops.org';
 
 const copy = maturity === 'draft'
   ? t('feedback.banner_draft')

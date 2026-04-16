@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://schema.aidops.org">
+    <img src="https://schema.aidops.org/images/social-preview.png" alt="AidOps - Shared definitions for humanitarian aid" width="640">
+  </a>
+</p>
+
 # AidOps Schema (schema.aidops.org)
 
 Humanitarian assessment profiles and operational tooling, built on [PublicSchema](https://publicschema.org).
@@ -47,4 +53,5 @@ AidOps depends on PublicSchema for universal concepts (Person, Household, Profil
 
 ## License
 
-Apache-2.0
+Code (build pipeline, site, tests, tooling): [Apache-2.0](LICENSE-APACHE)
+Schema content (YAML sources, generated artifacts, vocabularies): [CC-BY-4.0](LICENSE-CC-BY)

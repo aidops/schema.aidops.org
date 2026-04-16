@@ -34,7 +34,7 @@ const en = {
   'search.close': 'Close search',
 
   // Footer
-  'footer.tagline': 'Humanitarian assessment profiles and operational tooling for aid programs.',
+  'footer.tagline': 'Common definitions for humanitarian field data.',
   'footer.explore': 'Explore',
   'footer.project': 'Project',
   'footer.about': 'About',
@@ -52,7 +52,7 @@ const en = {
 
   // Concepts index
   'concepts.page_title': 'Concepts',
-  'concepts.page_subtitle': 'The core entities used in humanitarian assessment and aid operations.',
+  'concepts.page_subtitle': 'Structured profiles and entities for humanitarian field data.',
   'concepts.table.concept': 'Concept',
   'concepts.table.definition': 'Definition',
   'concepts.table.maturity': 'Maturity',
@@ -195,7 +195,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'search.close': 'Fermer la recherche',
 
     // Footer
-    'footer.tagline': 'Profils d\'évaluation humanitaire et outillage opérationnel pour les programmes d\'aide.',
+    'footer.tagline': 'Définitions communes pour les données humanitaires de terrain.',
     'footer.explore': 'Explorer',
     'footer.project': 'Projet',
     'footer.about': 'À propos',
@@ -213,7 +213,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
 
     // Concepts index
     'concepts.page_title': 'Concepts',
-    'concepts.page_subtitle': 'Les entités fondamentales utilisées dans l\'évaluation humanitaire et les opérations d\'aide.',
+    'concepts.page_subtitle': 'Profils structurés et entités pour les données humanitaires de terrain.',
     'concepts.table.concept': 'Concept',
     'concepts.table.definition': 'Définition',
     'concepts.table.maturity': 'Maturité',
@@ -351,7 +351,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'search.close': 'Cerrar búsqueda',
 
     // Footer
-    'footer.tagline': 'Perfiles de evaluación humanitaria y herramientas operacionales para programas de ayuda.',
+    'footer.tagline': 'Definiciones comunes para datos humanitarios de campo.',
     'footer.explore': 'Explorar',
     'footer.project': 'Proyecto',
     'footer.about': 'Acerca de',
@@ -369,7 +369,7 @@ export const ui: Record<Locale, Partial<Dict>> = {
 
     // Concepts index
     'concepts.page_title': 'Conceptos',
-    'concepts.page_subtitle': 'Las entidades fundamentales utilizadas en la evaluación humanitaria y las operaciones de ayuda.',
+    'concepts.page_subtitle': 'Perfiles estructurados y entidades para datos humanitarios de campo.',
     'concepts.table.concept': 'Concepto',
     'concepts.table.definition': 'Definición',
     'concepts.table.maturity': 'Madurez',

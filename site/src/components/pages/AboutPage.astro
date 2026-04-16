@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import TranslationBanner from '../TranslationBanner.astro';
 import { defaultLocale, type Locale } from '../../i18n/languages';
 import { useTranslations, localePath } from '../../i18n/utils';
 
@@ -13,18 +14,18 @@ const t = useTranslations(locale);
 const titles: Record<Locale, { title: string; subtitle: string; description: string }> = {
   en: {
     title: 'About AidOps',
-    subtitle: 'Humanitarian assessment profiles and operational tooling built on PublicSchema.',
-    description: 'AidOps provides structured schema for humanitarian assessment profiles and operational data, built on PublicSchema.',
+    subtitle: 'What it provides, where it sits, and where it\'s going.',
+    description: 'What AidOps provides, where it sits in the humanitarian data landscape, and where it\'s going.',
   },
   fr: {
-    title: 'À propos d\'AidOps',
-    subtitle: 'Profils d\'évaluation humanitaire et outillage opérationnel fondés sur PublicSchema.',
-    description: 'AidOps fournit un schéma structuré pour les profils d\'évaluation humanitaire et les données opérationnelles, fondé sur PublicSchema.',
+    title: '\u00C0 propos d\'AidOps',
+    subtitle: 'Ce qu\'il fournit, où il se situe, et où il va.',
+    description: 'Ce que fournit AidOps, où il se situe dans le paysage des données humanitaires, et où il va.',
   },
   es: {
     title: 'Acerca de AidOps',
-    subtitle: 'Perfiles de evaluación humanitaria y herramientas operacionales basados en PublicSchema.',
-    description: 'AidOps proporciona un esquema estructurado para perfiles de evaluación humanitaria y datos operacionales, basado en PublicSchema.',
+    subtitle: 'Qué proporciona, dónde se ubica y hacia dónde va.',
+    description: 'Qué proporciona AidOps, dónde se ubica en el panorama de datos humanitarios y hacia dónde va.',
   },
 };
 
@@ -40,28 +41,292 @@ const { title, subtitle, description } = titles[locale];
       <p class="subtitle">{subtitle}</p>
     </div>
 
-    <h2>What is AidOps?</h2>
-    <p>AidOps provides common definitions for humanitarian assessment and aid operations. It defines structured schemas for the data that humanitarian field programs collect, process, and share.</p>
+    {locale !== defaultLocale && <TranslationBanner locale={locale} />}
 
-    <h2>Built on PublicSchema</h2>
-    <p>AidOps extends <a href="https://publicschema.org/">PublicSchema</a>, the open reference model for public service delivery. Core concepts such as <a href={localePath('/Person/', locale)}>Person</a>, <a href={localePath('/Location/', locale)}>Location</a>, and <a href={localePath('/Household/', locale)}>Household</a> are inherited from PublicSchema. AidOps adds assessment profile concepts and properties specific to humanitarian contexts.</p>
-
-    <h2>Assessment profiles</h2>
-    <p>The key addition in AidOps is a set of structured assessment profile schemas:</p>
+    <!-- What AidOps provides -->
+    <h2>
+      {locale === 'en' && 'What AidOps provides'}
+      {locale === 'fr' && 'Ce que fournit AidOps'}
+      {locale === 'es' && 'Qué proporciona AidOps'}
+    </h2>
+    <p>
+      {locale === 'en' && 'AidOps is an open reference model for humanitarian field data. It provides structured, machine-readable definitions for the data that humanitarian programs collect, process, and share.'}
+      {locale === 'fr' && 'AidOps est un modèle de référence ouvert pour les données humanitaires de terrain. Il fournit des définitions structurées et lisibles par machine pour les données que les programmes humanitaires collectent, traitent et partagent.'}
+      {locale === 'es' && 'AidOps es un modelo de referencia abierto para datos humanitarios de campo. Proporciona definiciones estructuradas y legibles por máquina para los datos que los programas humanitarios recopilan, procesan y comparten.'}
+    </p>
     <ul>
-      <li><a href={localePath('/FoodSecurityProfile/', locale)}>FoodSecurityProfile</a>: food security and nutrition observation data</li>
-      <li><a href={localePath('/FunctioningProfile/', locale)}>FunctioningProfile</a>: disability and functioning observation data (Washington Group)</li>
-      <li><a href={localePath('/AnthropometricProfile/', locale)}>AnthropometricProfile</a>: anthropometric measurements for nutrition assessment</li>
-      <li><a href={localePath('/SocioEconomicProfile/', locale)}>SocioEconomicProfile</a>: socioeconomic status and household conditions</li>
+      <li>
+        {locale === 'en' && <><strong>Concepts</strong>: structured profiles for field observations (nutrition screening, food security assessment, shelter damage). Each concept has a definition written for program staff, not developers.</>}
+        {locale === 'fr' && <><strong>Concepts</strong> : profils structurés pour les observations de terrain (dépistage nutritionnel, évaluation de la sécurité alimentaire, dommages aux abris). Chaque concept a une définition écrite pour le personnel de programme, pas pour les développeurs.</>}
+        {locale === 'es' && <><strong>Conceptos</strong>: perfiles estructurados para observaciones de campo (tamizaje nutricional, evaluación de seguridad alimentaria, daño a refugios). Cada concepto tiene una definición escrita para personal de programa, no para desarrolladores.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Properties</strong>: named, typed fields that carry the actual data: <code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>, <code>current_shelter_type</code>, and nearly a hundred others, each defined once and reused where it applies.</>}
+        {locale === 'fr' && <><strong>Propriétés</strong> : champs nommés et typés qui portent les données réelles : <code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>, <code>current_shelter_type</code>, et près d'une centaine d'autres, chacun défini une seule fois et réutilisé là où il s'applique.</>}
+        {locale === 'es' && <><strong>Propiedades</strong>: campos nombrados y tipados que llevan los datos reales: <code>muac</code>, <code>fcs_score</code>, <code>damage_level</code>, <code>current_shelter_type</code>, y cerca de cien más, cada uno definido una vez y reutilizado donde aplique.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Vocabularies</strong>: controlled value sets for fields like food groups, coping strategies, MUAC bands, damage levels, and measurement techniques. Encoded from standard instruments (WFP FCS, FAO HDDS, WHO Growth Standards) where they exist; defined as a common set where coding varies across agencies.</>}
+        {locale === 'fr' && <><strong>Vocabulaires</strong> : ensembles de valeurs contrôlées pour des champs comme les groupes alimentaires, les stratégies d'adaptation, les bandes MUAC, les niveaux de dommages et les techniques de mesure. Encodés à partir des instruments standard (WFP FCS, FAO HDDS, normes de croissance OMS) là où ils existent ; définis comme un ensemble commun là où le codage varie entre agences.</>}
+        {locale === 'es' && <><strong>Vocabularios</strong>: conjuntos de valores controlados para campos como grupos alimentarios, estrategias de afrontamiento, bandas MUAC, niveles de daño y técnicas de medición. Codificados a partir de instrumentos estándar (WFP FCS, FAO HDDS, estándares de crecimiento OMS) donde existen; definidos como un conjunto común donde la codificación varía entre agencias.</>}
+      </li>
+    </ul>
+    <p>
+      {locale === 'en' && <>AidOps builds on <a href="https://publicschema.org/">PublicSchema</a>'s universal concepts rather than defining its own Person, Household, or Location. This means assessment data from AidOps and enrollment data from a social protection system using PublicSchema share the same core identifiers, so linkage is straightforward.</>}
+      {locale === 'fr' && <>AidOps s'appuie sur les concepts universels de <a href="https://publicschema.org/">PublicSchema</a> plutôt que de définir ses propres Person, Household ou Location. Cela signifie que les données d'évaluation d'AidOps et les données d'inscription d'un système de protection sociale utilisant PublicSchema partagent les mêmes identifiants de base, facilitant ainsi le croisement des données.</>}
+      {locale === 'es' && <>AidOps se basa en los conceptos universales de <a href="https://publicschema.org/">PublicSchema</a> en lugar de definir sus propios Person, Household o Location. Esto significa que los datos de evaluación de AidOps y los datos de inscripción de un sistema de protección social que usa PublicSchema comparten los mismos identificadores base, facilitando el cruce de datos.</>}
+    </p>
+    <p>
+      {locale === 'en' && 'Every element gets a stable URI. Everything is optional. Organizations adopt what they need and extend what they don\'t.'}
+      {locale === 'fr' && 'Chaque élément a un URI stable. Tout est optionnel. Les organisations adoptent ce dont elles ont besoin et étendent le reste.'}
+      {locale === 'es' && 'Cada elemento tiene un URI estable. Todo es opcional. Las organizaciones adoptan lo que necesitan y extienden lo que no.'}
+    </p>
+    <p>
+      {locale === 'en' && 'AidOps is in active development. Definitions for nutrition assessment, food security measurement, and shelter damage are available now.'}
+      {locale === 'fr' && 'AidOps est en développement actif. Les définitions pour l\'évaluation nutritionnelle, la mesure de la sécurité alimentaire et les dommages aux abris sont disponibles dès maintenant.'}
+      {locale === 'es' && 'AidOps está en desarrollo activo. Las definiciones para evaluación nutricional, medición de seguridad alimentaria y daño a refugios están disponibles ahora.'}
+    </p>
+
+    <!-- Design principles -->
+    <h2>
+      {locale === 'en' && 'Design principles'}
+      {locale === 'fr' && 'Principes de conception'}
+      {locale === 'es' && 'Principios de diseño'}
+    </h2>
+    <ul>
+      <li>
+        {locale === 'en' && <><strong>Definitions carry semantic weight.</strong> Concepts are not bags of fields. Each definition describes what the data represents, not just what columns to expect.</>}
+        {locale === 'fr' && <><strong>Les définitions portent un poids sémantique.</strong> Les concepts ne sont pas des sacs de champs. Chaque définition décrit ce que les données représentent, pas seulement quelles colonnes attendre.</>}
+        {locale === 'es' && <><strong>Las definiciones llevan peso semántico.</strong> Los conceptos no son bolsas de campos. Cada definición describe lo que los datos representan, no solo qué columnas esperar.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Properties are reusable.</strong> A property like <code>muac</code> is defined once and used wherever it applies, keeping definitions consistent across profiles.</>}
+        {locale === 'fr' && <><strong>Les propriétés sont réutilisables.</strong> Une propriété comme <code>muac</code> est définie une seule fois et utilisée partout où elle s'applique, maintenant la cohérence entre les profils.</>}
+        {locale === 'es' && <><strong>Las propiedades son reutilizables.</strong> Una propiedad como <code>muac</code> se define una vez y se usa donde aplique, manteniendo la coherencia entre perfiles.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Instrument provenance is tracked by default.</strong> Every observation records what instrument collected it and when, so you always know where a score came from.</>}
+        {locale === 'fr' && <><strong>La provenance des instruments est suivie par défaut.</strong> Chaque observation enregistre quel instrument l'a collectée et quand, pour que vous sachiez toujours d'où vient un score.</>}
+        {locale === 'es' && <><strong>La procedencia del instrumento se rastrea por defecto.</strong> Cada observación registra qué instrumento la recopiló y cuándo, para que siempre sepa de dónde viene un puntaje.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Standard instruments are encoded, never reinvented.</strong> Where WFP, FAO, WHO, or other bodies define an instrument, we encode their definitions. We only define new value sets where no standard covers the domain.</>}
+        {locale === 'fr' && <><strong>Les instruments standard sont encodés, jamais réinventés.</strong> Là où le PAM, la FAO, l'OMS ou d'autres organismes définissent un instrument, nous encodons leurs définitions. Nous ne définissons de nouveaux ensembles de valeurs que là où aucun standard ne couvre le domaine.</>}
+        {locale === 'es' && <><strong>Los instrumentos estándar se codifican, nunca se reinventan.</strong> Donde WFP, FAO, OMS u otros organismos definen un instrumento, codificamos sus definiciones. Solo definimos nuevos conjuntos de valores donde ningún estándar cubre el dominio.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Nothing is mandatory.</strong> Organizations adopt what fits their operation. The schema grows through field use, not committee design.</>}
+        {locale === 'fr' && <><strong>Rien n'est obligatoire.</strong> Les organisations adoptent ce qui convient à leur opération. Le schéma évolue par l'usage de terrain, pas par conception en comité.</>}
+        {locale === 'es' && <><strong>Nada es obligatorio.</strong> Las organizaciones adoptan lo que se ajusta a su operación. El esquema crece a través del uso en campo, no del diseño en comité.</>}
+      </li>
     </ul>
 
-    <h2>Design principles</h2>
-    <p>AidOps follows the same design principles as PublicSchema: stable URIs, JSON-LD contexts, and compatibility with Verifiable Credentials. Definitions are written for program officers, not developers.</p>
+    <!-- Where AidOps sits -->
+    <h2>
+      {locale === 'en' && 'Where AidOps sits'}
+      {locale === 'fr' && 'Où se situe AidOps'}
+      {locale === 'es' && 'Dónde se ubica AidOps'}
+    </h2>
+    <p>
+      {locale === 'en' && 'AidOps complements existing humanitarian data efforts rather than competing with them. It sits at the field data layer: between assessment methodology and reporting.'}
+      {locale === 'fr' && 'AidOps complète les efforts existants en matière de données humanitaires plutôt que de les concurrencer. Il se situe au niveau des données de terrain : entre la méthodologie d\'évaluation et le reporting.'}
+      {locale === 'es' && 'AidOps complementa los esfuerzos existentes en datos humanitarios en lugar de competir con ellos. Se ubica en la capa de datos de campo: entre la metodología de evaluación y los reportes.'}
+    </p>
+    <div class="landscape-table">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              {locale === 'en' && 'Layer'}
+              {locale === 'fr' && 'Couche'}
+              {locale === 'es' && 'Capa'}
+            </th>
+            <th>
+              {locale === 'en' && 'What exists'}
+              {locale === 'fr' && 'Ce qui existe'}
+              {locale === 'es' && 'Qué existe'}
+            </th>
+            <th>
+              {locale === 'en' && 'What AidOps adds'}
+              {locale === 'fr' && 'Ce qu\'ajoute AidOps'}
+              {locale === 'es' && 'Qué agrega AidOps'}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {locale === 'en' && 'Assessment methodology'}
+              {locale === 'fr' && 'Méthodologie d\'évaluation'}
+              {locale === 'es' && 'Metodología de evaluación'}
+            </td>
+            <td>SMART, Washington Group, WFP food security instruments</td>
+            <td>
+              {locale === 'en' && 'Structured data definitions for what those methodologies produce'}
+              {locale === 'fr' && 'Définitions de données structurées pour ce que ces méthodologies produisent'}
+              {locale === 'es' && 'Definiciones de datos estructurados para lo que esas metodologías producen'}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {locale === 'en' && 'Data collection'}
+              {locale === 'fr' && 'Collecte de données'}
+              {locale === 'es' && 'Recolección de datos'}
+            </td>
+            <td>KoboToolbox, ODK, CommCare</td>
+            <td>
+              {locale === 'en' && 'Canonical field names and value codes to use inside forms'}
+              {locale === 'fr' && 'Noms de champs et codes de valeur canoniques à utiliser dans les formulaires'}
+              {locale === 'es' && 'Nombres de campos y códigos de valores canónicos para usar en formularios'}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {locale === 'en' && 'Data exchange'}
+              {locale === 'fr' && 'Échange de données'}
+              {locale === 'es' && 'Intercambio de datos'}
+            </td>
+            <td>OCHA HDX, HXL</td>
+            <td>
+              {locale === 'en' && 'Semantic definitions behind the tags and column headers'}
+              {locale === 'fr' && 'Définitions sémantiques derrière les tags et les en-têtes de colonnes'}
+              {locale === 'es' && 'Definiciones semánticas detrás de las etiquetas y encabezados de columnas'}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {locale === 'en' && 'Analysis and classification'}
+              {locale === 'fr' && 'Analyse et classification'}
+              {locale === 'es' && 'Análisis y clasificación'}
+            </td>
+            <td>
+              {locale === 'en' && 'IPC/CH, cluster dashboards, 4W matrices'}
+              {locale === 'fr' && 'IPC/CH, tableaux de bord de cluster, matrices 4W'}
+              {locale === 'es' && 'IPC/CH, tableros de clúster, matrices 4W'}
+            </td>
+            <td>
+              {locale === 'en' && 'Consistent field-level data that feeds directly into classification and reporting'}
+              {locale === 'fr' && 'Données cohérentes au niveau des champs qui alimentent directement la classification et le reporting'}
+              {locale === 'es' && 'Datos consistentes a nivel de campo que alimentan directamente la clasificación y los reportes'}
+            </td>
+          </tr>
+          <tr class="highlight-row">
+            <td>
+              <strong>
+                {locale === 'en' && 'Field data semantics'}
+                {locale === 'fr' && 'Sémantique des données de terrain'}
+                {locale === 'es' && 'Semántica de datos de campo'}
+              </strong>
+            </td>
+            <td>
+              <strong>
+                {locale === 'en' && 'No cross-agency standard'}
+                {locale === 'fr' && 'Aucun standard inter-agences'}
+                {locale === 'es' && 'Sin estándar inter-agencias'}
+              </strong>
+            </td>
+            <td>
+              <strong>
+                {locale === 'en' && 'This is the gap'}
+                {locale === 'fr' && 'C\'est le manque'}
+                {locale === 'es' && 'Este es el vacío'}
+              </strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      {locale === 'en' && 'SMART defines how to conduct a representative anthropometric survey; AidOps defines how to structure the resulting data. WFP specifies how to calculate the Food Consumption Score; AidOps defines the fields and value codes that carry the raw inputs and the result. HXL provides column tags for data exchange; AidOps specifies what those columns mean at the field level.'}
+      {locale === 'fr' && 'SMART définit comment mener une enquête anthropométrique représentative ; AidOps définit comment structurer les données résultantes. Le PAM spécifie comment calculer le Score de Consommation Alimentaire ; AidOps définit les champs et codes de valeur qui portent les entrées brutes et le résultat. HXL fournit des tags de colonnes pour l\'échange de données ; AidOps spécifie ce que ces colonnes signifient au niveau du champ.'}
+      {locale === 'es' && 'SMART define cómo realizar una encuesta antropométrica representativa; AidOps define cómo estructurar los datos resultantes. WFP especifica cómo calcular el Puntaje de Consumo de Alimentos; AidOps define los campos y códigos de valores que llevan las entradas brutas y el resultado. HXL proporciona etiquetas de columnas para el intercambio de datos; AidOps especifica qué significan esas columnas a nivel de campo.'}
+    </p>
 
-    <h2>License</h2>
-    <p>The reference model is published under Creative Commons (CC BY 4.0). The site code is Apache 2.0.</p>
+    <!-- Scope -->
+    <h2>
+      {locale === 'en' && 'Scope'}
+      {locale === 'fr' && 'Portée'}
+      {locale === 'es' && 'Alcance'}
+    </h2>
+    <p>
+      {locale === 'en' && 'AidOps starts with the data that humanitarian field programs most commonly collect: nutrition and anthropometric assessments, food security measurements, and post-disaster shelter and damage surveys. These are well-understood domains with standard instruments, active data sharing needs, and immediate interoperability pain.'}
+      {locale === 'fr' && 'AidOps commence par les données que les programmes humanitaires de terrain collectent le plus souvent : évaluations nutritionnelles et anthropométriques, mesures de sécurité alimentaire, et enquêtes post-catastrophe sur les abris et les dommages. Ce sont des domaines bien compris avec des instruments standard, des besoins actifs de partage de données, et des problèmes d\'interopérabilité immédiats.'}
+      {locale === 'es' && 'AidOps comienza con los datos que los programas humanitarios de campo recopilan con más frecuencia: evaluaciones nutricionales y antropométricas, mediciones de seguridad alimentaria, y encuestas post-desastre de refugios y daños. Son dominios bien entendidos con instrumentos estándar, necesidades activas de intercambio de datos y problemas inmediatos de interoperabilidad.'}
+    </p>
+    <p>
+      {locale === 'en' && 'New domains follow the same structure: define concepts, name properties, encode vocabularies. WASH, protection, livelihoods, and health referral data are natural next steps as adoption grows.'}
+      {locale === 'fr' && 'Les nouveaux domaines suivent la même structure : définir des concepts, nommer des propriétés, encoder des vocabulaires. Les données WASH, protection, moyens de subsistance et orientation santé sont les prochaines étapes naturelles à mesure que l\'adoption progresse.'}
+      {locale === 'es' && 'Los nuevos dominios siguen la misma estructura: definir conceptos, nombrar propiedades, codificar vocabularios. Los datos de WASH, protección, medios de vida y derivación de salud son los próximos pasos naturales a medida que crece la adopción.'}
+    </p>
 
-    <h2>Contribute</h2>
-    <p>AidOps is developed in the open. <a href="https://github.com/aidops-org/schema.aidops.org" target="_blank" rel="noopener noreferrer">Contributions and feedback are welcome on GitHub.</a></p>
+    <!-- How organizations adopt it -->
+    <h2>
+      {locale === 'en' && 'How organizations adopt it'}
+      {locale === 'fr' && 'Comment les organisations l\'adoptent'}
+      {locale === 'es' && 'Cómo lo adoptan las organizaciones'}
+    </h2>
+    <p>
+      {locale === 'en' && 'AidOps is a starting point, not a mandate. Organizations adopt the parts that apply to their operation and extend the rest. The most common entry point is mapping an existing dataset to AidOps definitions to see where your data already aligns and where it diverges.'}
+      {locale === 'fr' && 'AidOps est un point de départ, pas un mandat. Les organisations adoptent les parties qui s\'appliquent à leur opération et étendent le reste. Le point d\'entrée le plus courant est de mapper un jeu de données existant aux définitions AidOps pour voir où vos données s\'alignent déjà et où elles divergent.'}
+      {locale === 'es' && 'AidOps es un punto de partida, no un mandato. Las organizaciones adoptan las partes que aplican a su operación y extienden el resto. El punto de entrada más común es mapear un conjunto de datos existente a las definiciones de AidOps para ver dónde sus datos ya se alinean y dónde divergen.'}
+    </p>
+    <ul>
+      <li>
+        {locale === 'en' && <><strong>Use standard instrument vocabularies as-is.</strong> FCS food groups, rCSI strategies, MUAC bands, and damage levels map directly to the instruments your teams already use.</>}
+        {locale === 'fr' && <><strong>Utilisez les vocabulaires d'instruments standard tels quels.</strong> Les groupes alimentaires FCS, les stratégies rCSI, les bandes MUAC et les niveaux de dommages correspondent directement aux instruments que vos équipes utilisent déjà.</>}
+        {locale === 'es' && <><strong>Use los vocabularios de instrumentos estándar tal como están.</strong> Los grupos alimentarios FCS, las estrategias rCSI, las bandas MUAC y los niveles de daño se corresponden directamente con los instrumentos que sus equipos ya usan.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Adopt profile concepts for your assessments.</strong> <a href={localePath('/FoodSecurityProfile/', locale)}>FoodSecurityProfile</a>, <a href={localePath('/AnthropometricProfile/', locale)}>AnthropometricProfile</a>, and <a href={localePath('/DwellingDamageProfile/', locale)}>DwellingDamageProfile</a> give you a structured schema for the most common field data types.</>}
+        {locale === 'fr' && <><strong>Adoptez les concepts de profils pour vos évaluations.</strong> <a href={localePath('/FoodSecurityProfile/', locale)}>FoodSecurityProfile</a>, <a href={localePath('/AnthropometricProfile/', locale)}>AnthropometricProfile</a>, et <a href={localePath('/DwellingDamageProfile/', locale)}>DwellingDamageProfile</a> vous offrent un schéma structuré pour les types de données de terrain les plus courants.</>}
+        {locale === 'es' && <><strong>Adopte los conceptos de perfil para sus evaluaciones.</strong> <a href={localePath('/FoodSecurityProfile/', locale)}>FoodSecurityProfile</a>, <a href={localePath('/AnthropometricProfile/', locale)}>AnthropometricProfile</a>, y <a href={localePath('/DwellingDamageProfile/', locale)}>DwellingDamageProfile</a> le dan un esquema estructurado para los tipos de datos de campo más comunes.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Extend what's missing.</strong> Operation-specific fields (a custom vulnerability index, a local shelter classification, an additional food group) live in your namespace alongside AidOps definitions.</>}
+        {locale === 'fr' && <><strong>Étendez ce qui manque.</strong> Les champs spécifiques à l'opération (un indice de vulnérabilité personnalisé, une classification locale d'abris, un groupe alimentaire supplémentaire) vivent dans votre espace de noms aux côtés des définitions AidOps.</>}
+        {locale === 'es' && <><strong>Extienda lo que falta.</strong> Los campos específicos de la operación (un índice de vulnerabilidad personalizado, una clasificación local de refugios, un grupo alimentario adicional) viven en su espacio de nombres junto a las definiciones de AidOps.</>}
+      </li>
+      <li>
+        {locale === 'en' && <><strong>Propose upstream.</strong> When an extension turns out to be useful across operations, propose it for inclusion. The schema grows through field use, not committee design.</>}
+        {locale === 'fr' && <><strong>Proposez en amont.</strong> Quand une extension s'avère utile dans plusieurs opérations, proposez-la pour inclusion. Le schéma évolue par l'usage de terrain, pas par conception en comité.</>}
+        {locale === 'es' && <><strong>Proponga hacia arriba.</strong> Cuando una extensión resulta útil en varias operaciones, propóngala para inclusión. El esquema crece a través del uso en campo, no del diseño en comité.</>}
+      </li>
+    </ul>
+
+    <!-- Data responsibility -->
+    <h2>
+      {locale === 'en' && 'Data responsibility'}
+      {locale === 'fr' && 'Responsabilité des données'}
+      {locale === 'es' && 'Responsabilidad de datos'}
+    </h2>
+    <p>
+      {locale === 'en' && 'Humanitarian field data is among the most sensitive data collected anywhere. AidOps defines data structure, not data governance. Organizations using AidOps definitions remain responsible for applying their own data protection policies, including the IASC Operational Guidance on Data Responsibility. Sensitivity annotations on properties (standard, sensitive, restricted) flag fields that typically warrant additional safeguards, but classification decisions belong to each organization\'s data protection framework.'}
+      {locale === 'fr' && 'Les données humanitaires de terrain comptent parmi les données les plus sensibles collectées au monde. AidOps définit la structure des données, pas la gouvernance des données. Les organisations utilisant les définitions AidOps restent responsables de l\'application de leurs propres politiques de protection des données, y compris les Orientations opérationnelles de l\'IASC sur la responsabilité des données. Les annotations de sensibilité sur les propriétés (standard, sensible, restreint) signalent les champs qui nécessitent généralement des garanties supplémentaires, mais les décisions de classification relèvent du cadre de protection des données de chaque organisation.'}
+      {locale === 'es' && 'Los datos humanitarios de campo se encuentran entre los datos más sensibles recopilados en cualquier lugar. AidOps define la estructura de datos, no la gobernanza de datos. Las organizaciones que usan las definiciones de AidOps siguen siendo responsables de aplicar sus propias políticas de protección de datos, incluida la Guía Operacional del IASC sobre Responsabilidad de Datos. Las anotaciones de sensibilidad en las propiedades (estándar, sensible, restringido) señalan campos que típicamente requieren salvaguardas adicionales, pero las decisiones de clasificación pertenecen al marco de protección de datos de cada organización.'}
+    </p>
+
+    <!-- License -->
+    <h2>
+      {locale === 'en' && 'License'}
+      {locale === 'fr' && 'Licence'}
+      {locale === 'es' && 'Licencia'}
+    </h2>
+    <p>
+      {locale === 'en' && <>The reference model is published under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons (CC BY 4.0)</a>. The site code is <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</>}
+      {locale === 'fr' && <>Le modèle de référence est publié sous <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons (CC BY 4.0)</a>. Le code du site est sous <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</>}
+      {locale === 'es' && <>El modelo de referencia se publica bajo <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons (CC BY 4.0)</a>. El código del sitio es <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</>}
+    </p>
+
+    <!-- Contribute -->
+    <h2>
+      {locale === 'en' && 'Contribute'}
+      {locale === 'fr' && 'Contribuer'}
+      {locale === 'es' && 'Contribuir'}
+    </h2>
+    <p>
+      {locale === 'en' && <>AidOps is developed in the open. <a href="https://github.com/aidops/schema.aidops.org" target="_blank" rel="noopener noreferrer">Contributions and feedback are welcome on GitHub.</a></>}
+      {locale === 'fr' && <>AidOps est développé en open source. <a href="https://github.com/aidops/schema.aidops.org" target="_blank" rel="noopener noreferrer">Les contributions et retours sont les bienvenus sur GitHub.</a></>}
+      {locale === 'es' && <>AidOps se desarrolla de manera abierta. <a href="https://github.com/aidops/schema.aidops.org" target="_blank" rel="noopener noreferrer">Las contribuciones y comentarios son bienvenidos en GitHub.</a></>}
+    </p>
   </article>
 </Base>

@@ -13,7 +13,7 @@ interface Props {
 const { pageType, pageId, sectionId, sectionLabel, locale } = Astro.props;
 const t = useTranslations(locale);
 
-const GITHUB_REPO = 'https://github.com/aidops-org/schema.aidops.org';
+const GITHUB_REPO = 'https://github.com/aidops/schema.aidops.org';
 
 const title = `[${pageType}: ${pageId}] [${locale}] ${sectionLabel}`;
 const pageUrl = new URL(Astro.url.pathname + '#' + sectionId, Astro.site).href;

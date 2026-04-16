@@ -1,0 +1,10 @@
+This project is dual-licensed:
+
+- Code (build pipeline, site, tests, tooling): Apache License 2.0
+  See LICENSE-APACHE for the full text.
+
+- Schema definitions (YAML sources, generated artifacts, vocabulary):
+  Creative Commons Attribution 4.0 International (CC-BY-4.0)
+  See LICENSE-CC-BY for the full text.
+
+Copyright 2025 AidOps Contributors
