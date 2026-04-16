@@ -5,6 +5,7 @@ node_modules/
 
 # Generated
 dist/
+releases/
 site/dist/
 
 # Python

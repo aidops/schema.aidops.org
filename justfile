@@ -74,5 +74,9 @@ setup:
     uv sync
     cd {{site_dir}} && npm install
 
+# Create a versioned release snapshot from dist/
+release: build
+    uv run python -m build.release
+
 # Fetch PS, install deps, validate, build data, build site
 all: setup fetch-publicschema validate build site-build
