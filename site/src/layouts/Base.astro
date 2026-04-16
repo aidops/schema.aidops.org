@@ -85,6 +85,8 @@ const navLinks = [
   ))}
   {!noHreflang && <link rel="alternate" hreflang="x-default" href={new URL(switchLocalePath(Astro.url, defaultLocale), Astro.site).href} />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <meta name="theme-color" content="#0d9488" />
   {alternateJsonLd && <link rel="alternate" type="application/ld+json" href={alternateJsonLd} />}
 
@@ -95,14 +97,19 @@ const navLinks = [
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:site_name" content="AidOps" />
   <meta property="og:locale" content={ogLocale} />
+  <meta property="og:image" content={new URL('/images/social-preview.png', Astro.site).href} />
+  <meta property="og:image:alt" content="AidOps: shared definitions for humanitarian aid" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="640" />
   {!noHreflang && localesLive.filter((loc) => loc !== locale).map((loc) => (
     <meta property="og:locale:alternate" content={languages[loc].ogLocale} />
   ))}
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={new URL('/images/social-preview.png', Astro.site).href} />
   <script type="application/ld+json" set:html={breadcrumbJsonLd}></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
