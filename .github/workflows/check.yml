@@ -12,12 +12,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      # AidOps vendors PublicSchema for cross-schema resolution.
-      # Check out PS into ../v2 so fetch_dependency --local can find it.
+      # Vendor PublicSchema schema/ for cross-schema resolution
       - uses: actions/checkout@v4
         with:
           repository: PublicSchema/publicschema.org
-          path: ../v2
+          path: .publicschema
           sparse-checkout: schema
 
       - uses: astral-sh/setup-uv@v4
@@ -25,7 +24,7 @@ jobs:
       - run: uv sync
 
       - name: Fetch vendored PublicSchema
-        run: uv run python -m build.fetch_dependency --local
+        run: uv run python -m build.fetch_dependency --local .publicschema/schema
 
       - name: Validate schema
         run: uv run python -m build.validate

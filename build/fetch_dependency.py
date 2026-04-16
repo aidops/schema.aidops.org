@@ -1,11 +1,12 @@
 """Fetch the vendored PublicSchema schema/ directory.
 
 Usage:
-    python -m build.fetch_dependency [--local] [--version TAG]
+    python -m build.fetch_dependency [--local [PATH]] [--version TAG]
 
-    --local      Copy schema/ from the local path configured in aidops.yaml.
-                 This is the default when no flag is given.
-    --version    (stub) Download schema/ from a GitHub release tag.
+    --local          Copy schema/ from the local path configured in aidops.yaml.
+                     This is the default when no flag is given.
+    --local PATH     Copy schema/ from an explicit path (overrides aidops.yaml).
+    --version TAG    (stub) Download schema/ from a GitHub release tag.
 
 The fetched content is written to vendor/publicschema/schema/.
 After fetching, the script validates that a _meta.yaml is present.
@@ -27,20 +28,26 @@ def _load_config(project_root: Path) -> dict:
         return yaml.safe_load(f) or {}
 
 
-def fetch_local(project_root: Path) -> None:
-    """Copy schema/ from the local PS path configured in aidops.yaml."""
-    config = _load_config(project_root)
+def fetch_local(project_root: Path, explicit_path: str | None = None) -> None:
+    """Copy schema/ from a local PS path.
 
-    ps_section = config.get("publicschema")
-    if not ps_section:
-        raise ValueError("aidops.yaml is missing the 'publicschema' section")
+    If explicit_path is given, use it directly. Otherwise read from aidops.yaml.
+    """
+    if explicit_path:
+        local_path = Path(explicit_path).resolve()
+    else:
+        config = _load_config(project_root)
 
-    local_path_str = ps_section.get("local_path")
-    if not local_path_str:
-        raise ValueError("aidops.yaml publicschema.local_path is not set")
+        ps_section = config.get("publicschema")
+        if not ps_section:
+            raise ValueError("aidops.yaml is missing the 'publicschema' section")
 
-    # Resolve relative paths relative to the project root
-    local_path = (project_root / local_path_str).resolve()
+        local_path_str = ps_section.get("local_path")
+        if not local_path_str:
+            raise ValueError("aidops.yaml publicschema.local_path is not set")
+
+        # Resolve relative paths relative to the project root
+        local_path = (project_root / local_path_str).resolve()
     if not local_path.exists():
         raise FileNotFoundError(
             f"PublicSchema local_path does not exist: {local_path}\n"
@@ -99,8 +106,13 @@ def main() -> None:
         version = args[idx + 1]
         fetch_release(version, project_root)
     else:
-        # Default to --local (most common dev use)
-        fetch_local(project_root)
+        # --local with optional explicit path, or bare --local (reads aidops.yaml)
+        explicit_path = None
+        if "--local" in args:
+            idx = args.index("--local")
+            if idx + 1 < len(args) and not args[idx + 1].startswith("-"):
+                explicit_path = args[idx + 1]
+        fetch_local(project_root, explicit_path)
 
 
 if __name__ == "__main__":
