@@ -1,0 +1,36 @@
+[project]
+name = "aidops"
+version = "0.1.0"
+description = "Humanitarian assessment profiles and operational tooling, built on PublicSchema"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+dependencies = [
+    "pyyaml>=6.0",
+    "jsonschema>=4.20",
+    "openpyxl>=3.1",
+    "babel>=2.14",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pyld>=3.0.0",
+    "pyshacl>=0.31.0",
+    "pytest>=8.0",
+    "rdflib>=7.6.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[project.scripts]
+ao-build = "build.build:main"
+ao-validate = "build.validate:main"
+ao-lint = "build.lint:main"

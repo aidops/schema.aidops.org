@@ -1,0 +1,11 @@
+name: AidOps
+base_uri: https://schema.aidops.org/
+version: "0.1.0"
+maturity: draft
+languages: [en, fr, es]
+license: Apache-2.0
+
+dependencies:
+  publicschema:
+    base_uri: https://publicschema.org/
+    version: "0.2.0"
