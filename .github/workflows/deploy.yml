@@ -1,0 +1,74 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Vendor PublicSchema schema/ for cross-schema resolution
+      - uses: actions/checkout@v4
+        with:
+          repository: PublicSchema/publicschema.org
+          path: ../v2
+          sparse-checkout: schema
+
+      - uses: astral-sh/setup-uv@v4
+
+      - run: uv sync
+
+      - name: Fetch vendored PublicSchema
+        run: uv run python -m build.fetch_dependency --local
+
+      - name: Validate schema
+        run: uv run python -m build.validate
+
+      - name: Lint schema content
+        run: uv run python -m build.lint
+
+      - name: Build vocabulary data
+        run: uv run python -m build.build
+
+      - name: Copy downloads to site
+        run: rsync -a --include='*.csv' --include='*.xlsx' --include='*/' --exclude='*' dist/downloads/ site/public/
+
+      - name: Copy JSON Schemas to site
+        run: rsync -a dist/schemas/ site/public/schemas/
+
+      - name: Copy vocabulary data to site
+        run: cp dist/vocabulary.json site/public/vocabulary.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build site
+        uses: withastro/action@v6
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
