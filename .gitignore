@@ -7,6 +7,12 @@ node_modules/
 dist/
 releases/
 site/dist/
+site/public/*.csv
+site/public/*.xlsx
+site/public/*.jsonld
+site/public/*.schema.json
+site/public/vocabularies/*.jsonld
+site/public/vocabulary.json
 
 # Python
 __pycache__/

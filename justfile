@@ -23,14 +23,20 @@ fetch-publicschema:
 clean:
     rm -rf {{dist_dir}}/
     rm -f {{site_dir}}/public/vocabulary.json
-    rm -rf {{site_dir}}/public/schemas/
     rm -f {{site_dir}}/public/*.csv {{site_dir}}/public/*.xlsx
+    rm -f {{site_dir}}/public/*.jsonld {{site_dir}}/public/*.schema.json
+    rm -rf {{site_dir}}/public/schemas/
+    rm -rf {{site_dir}}/public/vocabularies/*.jsonld
 
 # Generate dist/ from YAML sources (AidOps + vendored PublicSchema)
 build: clean
     uv run python -m build.build
     rsync -a --include='*.csv' --include='*.xlsx' --include='*/' --exclude='*' {{dist_dir}}/downloads/ {{site_dir}}/public/
-    rsync -a {{dist_dir}}/schemas/ {{site_dir}}/public/schemas/
+    cp {{dist_dir}}/schemas/*.schema.json {{site_dir}}/public/
+    cp {{dist_dir}}/jsonld/concepts/*.jsonld {{site_dir}}/public/
+    cp {{dist_dir}}/jsonld/properties/*.jsonld {{site_dir}}/public/
+    mkdir -p {{site_dir}}/public/vocabularies
+    cp {{dist_dir}}/jsonld/vocab/*.jsonld {{site_dir}}/public/vocabularies/
     cp {{dist_dir}}/vocabulary.json {{site_dir}}/public/vocabulary.json
 
 # Validate all YAML source files (schema, referential integrity, translations)
