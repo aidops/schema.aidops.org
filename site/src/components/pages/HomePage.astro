@@ -27,7 +27,7 @@ const vocabularies = Object.entries(vocab.vocabularies)
   );
 
 // Profile concepts for featured cards on the homepage.
-const profileIds = ['FoodSecurityProfile', 'AnthropometricProfile', 'DwellingDamageProfile', 'HazardEvent'];
+const profileIds = ['FoodSecurityProfile', 'AnthropometricProfile', 'DwellingDamageProfile'];
 const profileConcepts = profileIds
   .map((id) => vocab.concepts[id])
   .filter(Boolean);

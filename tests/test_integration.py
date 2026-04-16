@@ -44,26 +44,25 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 4 concepts; update this count when adding/removing AidOps concepts
-        assert len(result["concepts"]) == 4, (
-            f"Expected 4 concepts, got {len(result['concepts'])}: "
+        # AidOps has exactly 3 concepts; update this count when adding/removing AidOps concepts
+        assert len(result["concepts"]) == 3, (
+            f"Expected 3 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
             "FoodSecurityProfile",
             "AnthropometricProfile",
             "DwellingDamageProfile",
-            "HazardEvent",
         }
 
         # Update this count when adding/removing AidOps-owned properties
-        assert len(result["properties"]) == 104, (
-            f"Expected 104 properties, got {len(result['properties'])}"
+        assert len(result["properties"]) == 99, (
+            f"Expected 99 properties, got {len(result['properties'])}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies
-        assert len(result["vocabularies"]) == 25, (
-            f"Expected 25 vocabularies, got {len(result['vocabularies'])}"
+        assert len(result["vocabularies"]) == 22, (
+            f"Expected 22 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema
@@ -144,13 +143,6 @@ class TestCrossReferences:
         assert "damage_level" in schema["properties"]
         assert "habitability_status" in schema["properties"]
 
-    def test_hazard_event_json_schema(self):
-        """HazardEvent JSON Schema has its own properties."""
-        result = build_vocabulary(SCHEMA_DIR)
-        schema = result["concept_schemas"]["HazardEvent"]
-        assert "hazard_type" in schema["properties"]
-        assert "severity" in schema["properties"]
-
 
 class TestDistOutputs:
     """Verify that dist/ outputs are generated correctly."""
@@ -164,8 +156,8 @@ class TestDistOutputs:
         assert result.get("concept_schemas") is not None
         assert result.get("jsonld_docs") is not None
 
-        # JSON-LD docs for all 4 concepts
+        # JSON-LD docs for all 3 concepts
         for cid in ["FoodSecurityProfile", "AnthropometricProfile",
-                     "DwellingDamageProfile", "HazardEvent"]:
+                     "DwellingDamageProfile"]:
             key = f"concepts/{cid}.jsonld"
             assert key in result["jsonld_docs"], f"Missing JSON-LD doc: {key}"

@@ -17,4 +17,3 @@ informs:
   properties:
   - damage_level
   - services_disrupted
-  - triggering_hazard_event

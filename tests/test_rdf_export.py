@@ -65,7 +65,7 @@ class TestRealRdfExport:
         g.parse(data=ttl, format="turtle")
 
         for cid in ["FoodSecurityProfile", "AnthropometricProfile",
-                     "DwellingDamageProfile", "HazardEvent"]:
+                     "DwellingDamageProfile"]:
             uri = AIDOPS[cid]
             assert (uri, RDF.type, RDFS.Class) in g, f"Missing class triple for {cid}"
 

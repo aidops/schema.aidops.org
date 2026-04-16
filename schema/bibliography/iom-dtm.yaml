@@ -16,4 +16,3 @@ informs:
   properties:
   - damage_level
   - current_shelter_type
-  - triggering_hazard_event

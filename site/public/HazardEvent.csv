@@ -1,6 +1,0 @@
-property,type,cardinality,definition,vocabulary,maturity,sensitivity,category,age_applicability,valid_instruments
-hazard_type,string,single,The category of hazard or disruptive event.,hazard-type,draft,,,,
-severity,string,single,The observed or expected severity of the event's impact.,event-severity,draft,,,,
-certainty,string,single,The confidence that the event has occurred or will occur.,event-certainty,draft,,,,
-affected_locations,concept:Location,multiple,The geographic or administrative areas affected by this event.,,draft,,,,
-affected_programs,concept:Program,multiple,Programs whose operations or beneficiaries are affected by this event.,,draft,,,,
