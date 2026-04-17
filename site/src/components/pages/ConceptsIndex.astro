@@ -4,6 +4,7 @@ import ExpandableDefinition from '../ExpandableDefinition.astro';
 import { defaultLocale, type Locale } from '../../i18n/languages';
 import { useTranslations, localePath } from '../../i18n/utils';
 import { loadVocabulary } from '../../data/vocabulary';
+import { isOwned } from '../../data/concept-utils';
 
 interface Props {
   locale?: Locale;
@@ -19,7 +20,7 @@ const byMaturityThenName = (a: { maturity: string; id: string }, b: { maturity: 
 const conceptLabel = (c: { id: string; label?: { en?: string; fr?: string; es?: string } }) =>
   c.label?.[locale] ?? c.label?.en ?? c.id;
 const showCanonical = locale !== defaultLocale;
-const concepts = Object.values(vocab.concepts).sort(byMaturityThenName);
+const concepts = Object.values(vocab.concepts).filter(isOwned).sort(byMaturityThenName);
 ---
 <Base title={t('concepts.page_title')} description={t('concepts.page_subtitle')} locale={locale}>
   <div class="page-header">

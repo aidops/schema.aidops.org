@@ -11,9 +11,12 @@ import {
   collectInheritedProperties,
   collectAllSubtypes,
   buildDisplayGroups,
+  isOwned,
+  externalHref,
 } from '../../data/concept-utils';
 import SectionFeedback from '../SectionFeedback.astro';
 import NonNormativeBanner from '../NonNormativeBanner.astro';
+import PsMark from '../PsMark.astro';
 
 interface Props {
   termId: string;
@@ -55,6 +58,14 @@ const displayGroups = concept.property_groups
 const primitiveTypes = ['string', 'integer', 'decimal', 'boolean', 'date', 'datetime', 'uri', 'geojson_geometry'];
 
 const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'candidate';
+
+const hasPsSupertype = concept.supertypes.some(
+  (s) => vocab.concepts[s] && !isOwned(vocab.concepts[s])
+);
+const hasPsInheritedProp = inheritedProps.some(
+  (p) => p.detail && !isOwned(p.detail)
+);
+const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
 ---
 <Base title={displayLabel} description={definition} alternateJsonLd={`${concept.path}.jsonld`} ogType="article" locale={locale}>
   <article>
@@ -111,12 +122,18 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
   {concept.supertypes.length > 0 && (
     <div class="concept-section" id="supertypes">
       <h2>{t('concept_detail.supertypes')}<SectionFeedback pageType="concept" pageId={termId} sectionId="supertypes" sectionLabel={t('concept_detail.supertypes')} locale={locale} /></h2>
+      {showsPsExtendsHint && (
+        <aside class="ps-extends-note">
+          {t('concept_detail.extends_ps')}
+        </aside>
+      )}
       <div class="type-links">
-        {concept.supertypes.map((s) => (
-          vocab.concepts[s]
+        {concept.supertypes.map((s) => {
+          const c = vocab.concepts[s];
+          return isOwned(c)
             ? <a href={conceptLink(s)}>{s}</a>
-            : <a href={`https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer">{s} <span class="external-hint">(PublicSchema)</span></a>
-        ))}
+            : <a href={externalHref(c) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>;
+        })}
       </div>
     </div>
   )}
@@ -126,16 +143,20 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
       const c = vocab.concepts[parentId];
       if (!c || c.subtypes.length === 0) return null;
       return c.subtypes.map((st, i) => {
-        const children = vocab.concepts[st]?.subtypes || [];
+        const stConcept = vocab.concepts[st];
+        const children = stConcept?.subtypes || [];
+        const stLink = isOwned(stConcept)
+          ? <a href={conceptLink(st)}>{st}</a>
+          : <a href={externalHref(stConcept) ?? `https://publicschema.org/concepts/${st}/`} target="_blank" rel="noopener noreferrer"><PsMark />{st}</a>;
         if (isRoot) {
           return (
             <span class="subtype-entry">
-              <a href={conceptLink(st)}>{st}</a>
+              {stLink}
               {children.length > 0 && <span class="subtype-children">{renderSubtypes(st, false)}</span>}
             </span>
           );
         }
-        return <>{i > 0 && ', '}<a href={conceptLink(st)}>{st}</a></>;
+        return <>{i > 0 && ', '}{stLink}</>;
       });
     }
     return (
@@ -170,15 +191,26 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
                 const conceptRef = typeStr.match(/^concept:(.+)$/)?.[1];
                 const isPrimitive = primitiveTypes.includes(typeStr);
                 const propDef = (p.detail?.definition?.[locale] ?? p.detail?.definition?.en) || '';
+                const fromConcept = p.from ? vocab.concepts[p.from] : undefined;
+                const refConcept = conceptRef ? vocab.concepts[conceptRef] : undefined;
                 return (
                   <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                     <td>
                       <a href={propLink(p.id)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
-                      {p.from && <span class="inherited-badge">{t('concept_detail.inherited_from')} <a href={conceptLink(p.from)}>{p.from}</a></span>}
+                      {p.from && (
+                        <span class="inherited-badge">
+                          {t('concept_detail.inherited_from')} {isOwned(fromConcept)
+                            ? <a href={conceptLink(p.from!)}>{p.from}</a>
+                            : <a href={externalHref(fromConcept) ?? `https://publicschema.org/concepts/${p.from}/`} target="_blank" rel="noopener noreferrer"><PsMark />{p.from}</a>
+                          }
+                        </span>
+                      )}
                     </td>
                     <td data-label={t('concept_detail.table.type')}>
                       {conceptRef
-                        ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
+                        ? isOwned(refConcept)
+                          ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
+                          : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{typeStr}</code></a>
                         : isPrimitive
                           ? <code>{typeStr}</code>
                           : <code>{typeStr}</code>
@@ -187,7 +219,13 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
                         const subs = collectAllSubtypes(vocab, conceptRef);
                         return subs.length > 0 && (
                           <span class="subtype-hint">
-                            {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                            {t('concept_detail.includes')} {subs.map((s, i) => {
+                              const sConcept = vocab.concepts[s];
+                              return <>{i > 0 && ', '}{isOwned(sConcept)
+                                ? <a href={conceptLink(s)}>{s}</a>
+                                : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>
+                              }</>;
+                            })}
                           </span>
                         );
                       })()}
@@ -220,22 +258,39 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
             const conceptRef = typeStr.match(/^concept:(.+)$/)?.[1];
             const isPrimitive = primitiveTypes.includes(typeStr);
             const propDef = (p.detail?.definition?.[locale] ?? p.detail?.definition?.en) || '';
+            const fromConcept = p.from ? vocab.concepts[p.from] : undefined;
+            const refConcept = conceptRef ? vocab.concepts[conceptRef] : undefined;
             return (
               <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                 <td>
                   <a href={propLink(p.id)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
-                  {p.from && <span class="inherited-badge">{t('concept_detail.inherited_from')} <a href={conceptLink(p.from)}>{p.from}</a></span>}
+                  {p.from && (
+                    <span class="inherited-badge">
+                      {t('concept_detail.inherited_from')} {isOwned(fromConcept)
+                        ? <a href={conceptLink(p.from!)}>{p.from}</a>
+                        : <a href={externalHref(fromConcept) ?? `https://publicschema.org/concepts/${p.from}/`} target="_blank" rel="noopener noreferrer"><PsMark />{p.from}</a>
+                      }
+                    </span>
+                  )}
                 </td>
                 <td data-label={t('concept_detail.table.type')}>
                   {conceptRef
-                    ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
+                    ? isOwned(refConcept)
+                      ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
+                      : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{typeStr}</code></a>
                     : <code>{typeStr}</code>
                   }
                   {conceptRef && (() => {
                     const subs = collectAllSubtypes(vocab, conceptRef);
                     return subs.length > 0 && (
                       <span class="subtype-hint">
-                        {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                        {t('concept_detail.includes')} {subs.map((s, i) => {
+                          const sConcept = vocab.concepts[s];
+                          return <>{i > 0 && ', '}{isOwned(sConcept)
+                            ? <a href={conceptLink(s)}>{s}</a>
+                            : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>
+                          }</>;
+                        })}
                       </span>
                     );
                   })()}
@@ -304,9 +359,11 @@ const isNonNormative = concept.maturity === 'draft' || concept.maturity === 'can
 </Base>
 
 <style>
-  .external-hint {
-    font-size: 0.75rem;
+  .ps-extends-note {
+    font-size: 0.875rem;
     color: var(--color-text-muted);
-    margin-left: 0.2rem;
+    border-left: 3px solid var(--color-border);
+    padding: 0.4rem 0.75rem;
+    margin-bottom: 0.75rem;
   }
 </style>

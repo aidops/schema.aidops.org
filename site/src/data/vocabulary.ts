@@ -32,8 +32,11 @@ export interface CategoryLabel {
   label: MultilingualText;
 }
 
+export type Source = 'aidops' | 'publicschema';
+
 export interface Concept {
   id: string;
+  source: Source;
   domain: string | null;
   uri: string;
   path: string;
@@ -60,6 +63,7 @@ export type AgeBand =
 
 export interface Property {
   id: string;
+  source: Source;
   label: MultilingualText;
   uri: string;
   path: string;
@@ -126,6 +130,7 @@ export interface VocabReference {
 
 export interface Vocabulary {
   id: string;
+  source: Source;
   domain: string | null;
   uri: string;
   path: string;

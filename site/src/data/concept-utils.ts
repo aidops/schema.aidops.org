@@ -1,5 +1,28 @@
-import type { VocabularyData, Property, PropertyGroup } from './vocabulary';
+import type { VocabularyData, Concept, Property, Vocabulary, PropertyGroup } from './vocabulary';
 import type { Locale } from '../i18n/languages';
+
+/**
+ * True for items AidOps owns (routable, renderable as local pages).
+ * False for PublicSchema items, which are kept in vocabulary.json for
+ * lookup/display but must not get local pages or appear in listings/search.
+ */
+export function isOwned(
+  item: Concept | Property | Vocabulary | undefined,
+): boolean {
+  return item?.source === 'aidops';
+}
+
+/**
+ * Resolve the href for a concept/property/vocabulary link. AidOps items
+ * route to the local path; PublicSchema items route to their canonical
+ * publicschema.org URI.
+ */
+export function externalHref(
+  item: Concept | Property | Vocabulary | undefined,
+): string | null {
+  if (!item) return null;
+  return item.source === 'aidops' ? item.path : item.uri;
+}
 
 /** Look up a concept's path by ID. Falls back to `/{id}` if unknown. */
 export function conceptPath(vocab: VocabularyData, id: string): string {

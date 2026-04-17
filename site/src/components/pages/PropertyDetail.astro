@@ -7,9 +7,12 @@ import type { Property } from '../../data/vocabulary';
 import {
   conceptPath as conceptPathFor,
   collectAllSubtypes,
+  isOwned,
+  externalHref,
 } from '../../data/concept-utils';
 import SectionFeedback from '../SectionFeedback.astro';
 import NonNormativeBanner from '../NonNormativeBanner.astro';
+import PsMark from '../PsMark.astro';
 
 interface Props {
   termId: string;
@@ -115,14 +118,22 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
           <td style="font-weight: 600; color: var(--color-text-muted); width: 10rem;">{t('property_detail.type')}</td>
           <td>
             {typeConceptRef
-              ? <a href={conceptLink(typeConceptRef)}><code>{prop.type}</code></a>
+              ? (() => {
+                  const typeC = vocab.concepts[typeConceptRef];
+                  return isOwned(typeC)
+                    ? <a href={conceptLink(typeConceptRef)}><code>{prop.type}</code></a>
+                    : <a href={externalHref(typeC) ?? `https://publicschema.org/concepts/${typeConceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{prop.type}</code></a>;
+                })()
               : <code>{prop.type}</code>
             }
             {typeConceptRef && (() => {
               const subs = collectAllSubtypes(vocab, typeConceptRef);
               return subs.length > 0 && (
                 <span class="subtype-hint">
-                  {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                  {t('concept_detail.includes')} {subs.map((s, i) => {
+                    const sc = vocab.concepts[s];
+                    return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>}</>;
+                  })}
                 </span>
               );
             })()}
@@ -135,19 +146,32 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
         {prop.vocabulary && (
           <tr>
             <td style="font-weight: 600; color: var(--color-text-muted);">{t('property_detail.vocabulary')}</td>
-            <td><a href={localePath(`/vocabularies/${prop.vocabulary}`, locale)}>{prop.vocabulary}</a></td>
+            <td>{(() => {
+              const v = vocab.vocabularies[prop.vocabulary!];
+              return isOwned(v)
+                ? <a href={localePath(`/vocabularies/${prop.vocabulary}`, locale)}>{prop.vocabulary}</a>
+                : <a href={externalHref(v) ?? `https://publicschema.org/vocabularies/${prop.vocabulary}/`} target="_blank" rel="noopener noreferrer"><PsMark />{prop.vocabulary}</a>;
+            })()}</td>
           </tr>
         )}
         {prop.references && (
           <tr>
             <td style="font-weight: 600; color: var(--color-text-muted);">{t('property_detail.references')}</td>
             <td>
-              <a href={conceptLink(prop.references)}>{prop.references}</a>
               {(() => {
-                const subs = collectAllSubtypes(vocab, prop.references);
+                const refC = vocab.concepts[prop.references!];
+                return isOwned(refC)
+                  ? <a href={conceptLink(prop.references!)}>{prop.references}</a>
+                  : <a href={externalHref(refC) ?? `https://publicschema.org/concepts/${prop.references}/`} target="_blank" rel="noopener noreferrer"><PsMark />{prop.references}</a>;
+              })()}
+              {(() => {
+                const subs = collectAllSubtypes(vocab, prop.references!);
                 return subs.length > 0 && (
                   <span class="subtype-hint">
-                    {t('concept_detail.includes')} {subs.map((s, i) => <>{i > 0 && ', '}<a href={conceptLink(s)}>{s}</a></>)}
+                    {t('concept_detail.includes')} {subs.map((s, i) => {
+                      const sc = vocab.concepts[s];
+                      return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>}</>;
+                    })}
                   </span>
                 );
               })()}
@@ -162,7 +186,12 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
     <h2>{t('property_detail.used_by')}<SectionFeedback pageType="property" pageId={termId} sectionId="used-by" sectionLabel={t('property_detail.used_by')} locale={locale} /></h2>
     {prop.used_by.length > 0 ? (
       <div class="type-links">
-        {prop.used_by.map((d) => <a href={conceptLink(d)}>{d}</a>)}
+        {prop.used_by.map((d) => {
+          const dc = vocab.concepts[d];
+          return isOwned(dc)
+            ? <a href={conceptLink(d)}>{d}</a>
+            : <a href={externalHref(dc) ?? `https://publicschema.org/concepts/${d}/`} target="_blank" rel="noopener noreferrer"><PsMark />{d}</a>;
+        })}
       </div>
     ) : (
       <p style="color: var(--color-text-muted);">{t('property_detail.no_uses')}</p>

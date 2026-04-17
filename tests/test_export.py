@@ -82,7 +82,9 @@ class TestRealExports:
         result = build_vocabulary(SCHEMA_DIR)
         output_dir = tmp_path / "out"
         output_dir.mkdir()
-        for cid in result["concepts"]:
+        for cid, concept in result["concepts"].items():
+            if concept.get("source") != "aidops":
+                continue
             generate_concept_csv(cid, result, output_dir)
             csv_path = output_dir / f"{cid}.csv"
             assert csv_path.exists(), f"Missing CSV for {cid}"

@@ -198,6 +198,8 @@ def build_shacl(result: dict) -> str:
 
     # Generate shapes only for AidOps-owned concepts
     for concept_id, concept in result["concepts"].items():
+        if concept.get("source") != "aidops":
+            continue
         concept_uri = rdflib.URIRef(concept["uri"])
         shape_uri = rdflib.URIRef(concept["uri"] + "Shape")
 

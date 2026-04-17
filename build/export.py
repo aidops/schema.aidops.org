@@ -477,7 +477,9 @@ def generate_template_xlsx(
 def generate_all_downloads(vocab_result: dict, output_dir: Path):
     """Generate CSV and Excel downloads for all AidOps concepts."""
     output_dir.mkdir(parents=True, exist_ok=True)
-    for concept_id in vocab_result["concepts"]:
+    for concept_id, concept in vocab_result["concepts"].items():
+        if concept.get("source") != "aidops":
+            continue
         generate_concept_csv(concept_id, vocab_result, output_dir)
         generate_definition_xlsx(concept_id, vocab_result, output_dir)
         generate_template_xlsx(concept_id, vocab_result, output_dir)

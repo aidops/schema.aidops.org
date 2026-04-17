@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { defaultLocale, type Locale } from '../../i18n/languages';
 import { useTranslations, localePath } from '../../i18n/utils';
 import { loadVocabulary } from '../../data/vocabulary';
+import { isOwned } from '../../data/concept-utils';
 
 interface Props {
   locale?: Locale;
@@ -15,7 +16,7 @@ const vocab = loadVocabulary();
 const maturityRank: Record<string, number> = { normative: 0, candidate: 1, draft: 2 };
 const byMaturityThenName = (a: { maturity: string; id: string }, b: { maturity: string; id: string }) =>
   (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.id.localeCompare(b.id);
-const properties = Object.values(vocab.properties).sort(byMaturityThenName);
+const properties = Object.values(vocab.properties).filter(isOwned).sort(byMaturityThenName);
 ---
 <Base title={t('properties.page_title')} description={t('properties.page_subtitle')} locale={locale}>
   <div class="page-header">

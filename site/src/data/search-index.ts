@@ -1,4 +1,5 @@
 import { loadVocabulary } from './vocabulary';
+import { isOwned } from './concept-utils';
 import { defaultLocale, type Locale } from '../i18n/languages';
 
 export interface SearchDocument {
@@ -33,6 +34,7 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchDocument
   const documents: SearchDocument[] = [];
 
   for (const concept of Object.values(vocab.concepts)) {
+    if (!isOwned(concept)) continue;
     const label = pick(concept.label, locale) || concept.id;
     documents.push({
       id: `concept:${concept.id}`,
@@ -46,6 +48,7 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchDocument
   }
 
   for (const prop of Object.values(vocab.properties)) {
+    if (!isOwned(prop)) continue;
     const usedByList = prop.used_by || [];
     documents.push({
       id: `property:${prop.id}`,
@@ -59,6 +62,7 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchDocument
   }
 
   for (const v of Object.values(vocab.vocabularies)) {
+    if (!isOwned(v)) continue;
     const label = pick(v.label, locale) || v.id;
     const valueLabels: string[] = [];
     if (!v.external_values) {

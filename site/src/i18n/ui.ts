@@ -104,6 +104,8 @@ const en = {
   'concept_detail.table.match': 'Match',
   'concept_detail.abstract_badge': 'abstract',
   'concept_detail.abstract_title': 'Abstract supertype: exists to group shared properties; instances are recorded as one of its subtypes',
+  'concept_detail.extends_ps': 'This concept builds on PublicSchema. Fields marked with the PublicSchema icon are defined there.',
+  'concept_detail.publicschema_hint': 'Defined in PublicSchema',
 
   // Property detail
   'property_detail.details': 'Details',
@@ -265,6 +267,8 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'concept_detail.table.match': 'Correspondance',
     'concept_detail.abstract_badge': 'abstrait',
     'concept_detail.abstract_title': 'Supertype abstrait : regroupe des propriétés partagées ; les instances sont enregistrées sous l\'un de ses sous-types.',
+    'concept_detail.extends_ps': 'Ce concept s\'appuie sur PublicSchema. Les champs marqués de l\'icône PublicSchema y sont définis.',
+    'concept_detail.publicschema_hint': 'Défini dans PublicSchema',
 
     // Property detail
     'property_detail.details': 'Détails',
@@ -421,6 +425,8 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'concept_detail.table.match': 'Correspondencia',
     'concept_detail.abstract_badge': 'abstracto',
     'concept_detail.abstract_title': 'Supertipo abstracto: existe para agrupar propiedades compartidas; las instancias se registran como uno de sus subtipos',
+    'concept_detail.extends_ps': 'Este concepto se basa en PublicSchema. Los campos marcados con el icono PublicSchema se definen allí.',
+    'concept_detail.publicschema_hint': 'Definido en PublicSchema',
 
     // Property detail
     'property_detail.details': 'Detalles',

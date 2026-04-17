@@ -44,16 +44,29 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
+        aidops_concepts = {
+            cid: c for cid, c in result["concepts"].items()
+            if c.get("source") == "aidops"
+        }
+        aidops_properties = {
+            pid: p for pid, p in result["properties"].items()
+            if p.get("source") == "aidops"
+        }
+        aidops_vocabularies = {
+            vid: v for vid, v in result["vocabularies"].items()
+            if v.get("source") == "aidops"
+        }
+
         # AidOps has exactly 18 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
         # Batch 3 adds: MentalHealthProfile
         # Batch 3 adds: ChildProtectionProfile
         # Phase 6 adds: GBVRiskProfile
-        assert len(result["concepts"]) == 18, (
-            f"Expected 18 concepts, got {len(result['concepts'])}: "
-            f"{sorted(result['concepts'].keys())}"
+        assert len(aidops_concepts) == 18, (
+            f"Expected 18 AidOps concepts, got {len(aidops_concepts)}: "
+            f"{sorted(aidops_concepts.keys())}"
         )
-        assert set(result["concepts"].keys()) == {
+        assert set(aidops_concepts.keys()) == {
             "FoodSecurityProfile",
             "AnthropometricProfile",
             "ChildHealthProfile",
@@ -84,8 +97,8 @@ class TestRealSchema:
         #   CP Batch +41 props, +6 vocabs (plus 1 extra vocab for fgm-continuation-belief → +7 in build count)
         # Phase 6 delta (Batch 3 baseline was 576):
         #   GBVRiskProfile: +15 properties (14 net-new + 1 new specific_need_adolescent_girl_at_risk)
-        assert len(result["properties"]) == 591, (
-            f"Expected 591 properties, got {len(result['properties'])}"
+        assert len(aidops_properties) == 591, (
+            f"Expected 591 AidOps properties, got {len(aidops_properties)}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
@@ -102,35 +115,44 @@ class TestRealSchema:
         #                   safety-perception-3, gbv-service-type; + 2 added to satisfy the
         #                   no-vocabulary:null-on-enumerated rule: latrine-sex-segregation,
         #                   latrine-lock-status)
-        assert len(result["vocabularies"]) == 144, (
-            f"Expected 144 vocabularies, got {len(result['vocabularies'])}"
+        assert len(aidops_vocabularies) == 144, (
+            f"Expected 144 AidOps vocabularies, got {len(aidops_vocabularies)}"
         )
 
-        # Every concept has a JSON Schema
-        for concept_id in result["concepts"]:
+        # Every AidOps concept has a JSON Schema
+        for concept_id in aidops_concepts:
             assert concept_id in result["concept_schemas"], (
                 f"Missing JSON Schema for concept {concept_id}"
             )
 
         # JSON-LD context has entries for all AidOps concepts and properties
         ctx = result["context"]["@context"]
-        for concept_id in result["concepts"]:
+        for concept_id in aidops_concepts:
             assert concept_id in ctx, f"Missing context entry for concept {concept_id}"
-        for prop_id in result["properties"]:
+        for prop_id in aidops_properties:
             assert prop_id in ctx, f"Missing context entry for property {prop_id}"
 
-    def test_no_ps_concepts_in_output(self):
-        """Vendored PS concepts must not appear in AidOps build output."""
+    def test_ps_concepts_present_with_source_tag(self):
+        """Vendored PS concepts appear in output tagged source=publicschema so
+        inherited-row rendering can access real type/label/definition."""
         result = build_vocabulary(SCHEMA_DIR)
         ps_concepts = {"Profile", "Event", "Person", "Household", "Group",
                         "Organization", "Location", "Instrument"}
-        leaked = ps_concepts & set(result["concepts"].keys())
-        assert not leaked, f"PS concepts leaked into output: {leaked}"
+        for cid in ps_concepts:
+            assert cid in result["concepts"], f"PS concept {cid} missing from output"
+            assert result["concepts"][cid]["source"] == "publicschema", (
+                f"PS concept {cid} not tagged source=publicschema"
+            )
+            assert result["concepts"][cid]["uri"].startswith("https://publicschema.org/"), (
+                f"PS concept {cid} has wrong URI: {result['concepts'][cid]['uri']}"
+            )
 
     def test_aidops_uris(self):
-        """All AidOps concepts use schema.aidops.org URIs."""
+        """All AidOps-sourced concepts use schema.aidops.org URIs."""
         result = build_vocabulary(SCHEMA_DIR)
         for cid, concept in result["concepts"].items():
+            if concept.get("source") != "aidops":
+                continue
             assert concept["uri"].startswith("https://schema.aidops.org/"), (
                 f"{cid} has wrong URI: {concept['uri']}"
             )

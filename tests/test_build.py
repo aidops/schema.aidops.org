@@ -37,32 +37,49 @@ class TestRoundTrip:
         assert "sev" in result["properties"]
         assert "severity" in result["vocabularies"]
 
-    def test_only_aidops_concepts_in_output(
+    def test_ps_concepts_present_with_source_tag(
         self, tmp_aidops, write_concept, write_property
     ):
-        """Vendored PS concepts (Profile) do not appear in build output."""
+        """Vendored PS concepts (Profile) appear in output tagged source=publicschema."""
         write_property("score.yaml", make_property(id="score", type="decimal"))
         write_concept("assess.yaml", make_concept(
             id="Assess", supertypes=["Profile"], properties=["score"],
         ))
 
         result = build_vocabulary(tmp_aidops)
-        assert "Assess" in result["concepts"]
-        assert "Profile" not in result["concepts"]
+        assert result["concepts"]["Assess"]["source"] == "aidops"
+        assert "Profile" in result["concepts"]
+        assert result["concepts"]["Profile"]["source"] == "publicschema"
 
-    def test_only_aidops_properties_in_output(
+    def test_ps_properties_present_with_source_tag(
         self, tmp_aidops, write_concept, write_property
     ):
-        """Vendored PS properties (subject, observation_date) do not appear in build output."""
+        """Vendored PS properties (subject, observation_date) appear in output
+        with source=publicschema so the site can render inherited rows with
+        real type/vocabulary/definition instead of 'unknown'."""
         write_property("score.yaml", make_property(id="score", type="decimal"))
         write_concept("assess.yaml", make_concept(
             id="Assess", supertypes=["Profile"], properties=["score"],
         ))
 
         result = build_vocabulary(tmp_aidops)
-        assert "score" in result["properties"]
-        assert "subject" not in result["properties"]
-        assert "observation_date" not in result["properties"]
+        assert result["properties"]["score"]["source"] == "aidops"
+        assert "subject" in result["properties"]
+        assert result["properties"]["subject"]["source"] == "publicschema"
+        assert result["properties"]["subject"]["type"] is not None
+        assert result["properties"]["subject"]["type"] != ""
+
+    def test_ps_items_use_publicschema_uri(
+        self, tmp_aidops, write_concept, write_property
+    ):
+        """PS entries carry canonical publicschema.org URIs so site links route
+        externally, not to a nonexistent AidOps path."""
+        write_concept("assess.yaml", make_concept(id="Assess", supertypes=["Profile"]))
+        result = build_vocabulary(tmp_aidops)
+        profile = result["concepts"]["Profile"]
+        assert profile["uri"].startswith("https://publicschema.org/")
+        subject = result["properties"]["subject"]
+        assert subject["uri"].startswith("https://publicschema.org/")
 
 
 # ---------------------------------------------------------------------------

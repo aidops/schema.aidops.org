@@ -795,34 +795,21 @@ def build_vocabulary(schema_dir: Path) -> dict:
     for cat_id, cat_data in categories_raw.items():
         out_categories[cat_id] = {"label": cat_data.get("label", {})}
 
-    # Filter out_concepts/out_properties/out_vocabularies for the main output:
-    # emit only AidOps-owned items. PS items were needed for resolution but
-    # should not appear in vocabulary.json or the manifest.
-    aidops_out_concepts = {
-        cid: c for cid, c in out_concepts.items() if c.get("source") == "aidops"
-    }
-    aidops_out_properties = {
-        pid: p for pid, p in out_properties.items() if p.get("source") == "aidops"
-    }
-    aidops_out_vocabularies = {
-        vid: v for vid, v in out_vocabularies.items() if v.get("source") == "aidops"
-    }
-
+    # Emit the full merged graph (AidOps + PS). Each entry carries
+    # source="aidops" or source="publicschema". Downstream consumers that
+    # must stay AidOps-only (manifest, SHACL shapes, per-concept downloads,
+    # site routing) guard on the source field.
     return {
         "meta": meta,
-        "concepts": aidops_out_concepts,
-        "properties": aidops_out_properties,
-        "vocabularies": aidops_out_vocabularies,
+        "concepts": out_concepts,
+        "properties": out_properties,
+        "vocabularies": out_vocabularies,
         "bibliography": out_bibliography,
         "categories": out_categories,
         "context": context,
         "concept_schemas": concept_schemas,
         "credential_schemas": {},
         "jsonld_docs": jsonld_docs,
-        # Full merged views for RDF / SHACL generation that needs all types
-        "_all_concepts": out_concepts,
-        "_all_properties": out_properties,
-        "_all_vocabularies": out_vocabularies,
     }
 
 
@@ -906,6 +893,8 @@ def write_outputs(result: dict, dist_dir: Path):
     }
 
     for concept_id, concept in result["concepts"].items():
+        if concept.get("source") != "aidops":
+            continue
         path = concept["path"]
         domain = concept.get("domain")
         dl_prefix = f"/downloads/{domain}" if domain else "/downloads"
@@ -917,7 +906,9 @@ def write_outputs(result: dict, dist_dir: Path):
             "xlsx_template": f"{dl_prefix}/{concept_id}-template.xlsx",
         }
 
-    for vocab_id in result.get("vocabularies", {}):
+    for vocab_id, vocab in result.get("vocabularies", {}).items():
+        if vocab.get("source") != "aidops":
+            continue
         manifest["vocabularies"][vocab_id] = {
             "jsonld": f"/vocab/{vocab_id}.jsonld",
         }
@@ -939,10 +930,13 @@ def main():
 
     result = build_vocabulary(schema_dir)
     write_outputs(result, dist_dir)
+    aidops_concepts = sum(1 for c in result["concepts"].values() if c.get("source") == "aidops")
+    aidops_properties = sum(1 for p in result["properties"].values() if p.get("source") == "aidops")
+    aidops_vocabularies = sum(1 for v in result["vocabularies"].values() if v.get("source") == "aidops")
     print(
-        f"Built {len(result['concepts'])} concepts, "
-        f"{len(result['properties'])} properties, "
-        f"{len(result['vocabularies'])} vocabularies, "
+        f"Built {aidops_concepts} concepts, "
+        f"{aidops_properties} properties, "
+        f"{aidops_vocabularies} vocabularies, "
         f"{len(result.get('bibliography', {}))} bibliography entries."
     )
 
