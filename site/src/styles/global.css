@@ -132,6 +132,15 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
+/* Passive discoverability cue: links with a hover-card preview get a
+   dotted underline on hover so the user notices the extra affordance
+   without a dedicated icon. No change when not hovered. */
+a[data-preview-key]:hover {
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
 code {
   font-family: var(--font-mono);
   font-size: 0.85em;

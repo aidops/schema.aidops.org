@@ -164,6 +164,15 @@ const en = {
   'references.referenced_by': 'Referenced by this concept',
   'references.referenced_by_vocab': 'Referenced by this vocabulary',
   'references.see_all': 'See full reference catalogue',
+
+  // Hover card (preview popovers for cross-reference links)
+  'hover_card.open_link': 'Open \u2192',
+  'hover_card.property_type': 'Type',
+  'hover_card.property_vocabulary': 'Vocabulary',
+  'hover_card.badge_draft': 'draft',
+  'hover_card.badge_candidate': 'candidate',
+  'hover_card.badge_stable': 'stable',
+  'hover_card.fallback_tag': 'Shown in {locale}',
 };
 
 type Dict = typeof en;
@@ -327,6 +336,15 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'references.referenced_by': 'Référencé par ce concept',
     'references.referenced_by_vocab': 'Référencé par ce vocabulaire',
     'references.see_all': 'Voir le catalogue complet des références',
+
+    // Hover card (preview popovers for cross-reference links)
+    'hover_card.open_link': 'Ouvrir \u2192',
+    'hover_card.property_type': 'Type',
+    'hover_card.property_vocabulary': 'Vocabulaire',
+    'hover_card.badge_draft': 'brouillon',
+    'hover_card.badge_candidate': 'candidat',
+    'hover_card.badge_stable': 'stable',
+    'hover_card.fallback_tag': 'Affiché en {locale}',
   },
   es: {
     // Navigation and chrome
@@ -485,5 +503,14 @@ export const ui: Record<Locale, Partial<Dict>> = {
     'references.referenced_by': 'Referenciado por este concepto',
     'references.referenced_by_vocab': 'Referenciado por este vocabulario',
     'references.see_all': 'Ver el catálogo completo de referencias',
+
+    // Hover card (preview popovers for cross-reference links)
+    'hover_card.open_link': 'Abrir \u2192',
+    'hover_card.property_type': 'Tipo',
+    'hover_card.property_vocabulary': 'Vocabulario',
+    'hover_card.badge_draft': 'borrador',
+    'hover_card.badge_candidate': 'candidato',
+    'hover_card.badge_stable': 'estable',
+    'hover_card.fallback_tag': 'Mostrado en {locale}',
   },
 };

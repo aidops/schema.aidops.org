@@ -23,6 +23,7 @@ fetch-publicschema:
 clean:
     rm -rf {{dist_dir}}/
     rm -f {{site_dir}}/public/vocabulary.json
+    rm -rf {{site_dir}}/public/preview/
     rm -f {{site_dir}}/public/*.csv {{site_dir}}/public/*.xlsx
     rm -f {{site_dir}}/public/*.jsonld {{site_dir}}/public/*.schema.json
     rm -rf {{site_dir}}/public/schemas/
@@ -38,6 +39,8 @@ build: clean
     mkdir -p {{site_dir}}/public/vocabularies
     cp {{dist_dir}}/jsonld/vocab/*.jsonld {{site_dir}}/public/vocabularies/
     cp {{dist_dir}}/vocabulary.json {{site_dir}}/public/vocabulary.json
+    mkdir -p {{site_dir}}/public/preview
+    cp {{dist_dir}}/preview/*.json {{site_dir}}/public/preview/
 
 # Validate all YAML source files (schema, referential integrity, translations)
 validate:

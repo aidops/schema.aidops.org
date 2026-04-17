@@ -13,6 +13,7 @@ site/public/*.jsonld
 site/public/*.schema.json
 site/public/vocabularies/*.jsonld
 site/public/vocabulary.json
+site/public/preview/
 
 # Python
 __pycache__/

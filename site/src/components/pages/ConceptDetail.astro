@@ -13,6 +13,7 @@ import {
   buildDisplayGroups,
   isOwned,
   externalHref,
+  previewKey,
 } from '../../data/concept-utils';
 import SectionFeedback from '../SectionFeedback.astro';
 import NonNormativeBanner from '../NonNormativeBanner.astro';
@@ -130,9 +131,10 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
       <div class="type-links">
         {concept.supertypes.map((s) => {
           const c = vocab.concepts[s];
+          const pk = previewKey(c);
           return isOwned(c)
-            ? <a href={conceptLink(s)}>{s}</a>
-            : <a href={externalHref(c) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>;
+            ? <a href={conceptLink(s)} data-preview-key={pk}>{s}</a>
+            : <a href={externalHref(c) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer" data-preview-key={pk}><PsMark />{s}</a>;
         })}
       </div>
     </div>
@@ -145,9 +147,10 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
       return c.subtypes.map((st, i) => {
         const stConcept = vocab.concepts[st];
         const children = stConcept?.subtypes || [];
+        const stPk = previewKey(stConcept);
         const stLink = isOwned(stConcept)
-          ? <a href={conceptLink(st)}>{st}</a>
-          : <a href={externalHref(stConcept) ?? `https://publicschema.org/concepts/${st}/`} target="_blank" rel="noopener noreferrer"><PsMark />{st}</a>;
+          ? <a href={conceptLink(st)} data-preview-key={stPk}>{st}</a>
+          : <a href={externalHref(stConcept) ?? `https://publicschema.org/concepts/${st}/`} target="_blank" rel="noopener noreferrer" data-preview-key={stPk}><PsMark />{st}</a>;
         if (isRoot) {
           return (
             <span class="subtype-entry">
@@ -196,7 +199,7 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                 return (
                   <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                     <td>
-                      <a href={propLink(p.id)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                      <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
                       {p.from && (
                         <span class="inherited-badge">
                           {t('concept_detail.inherited_from')} {isOwned(fromConcept)
@@ -209,8 +212,8 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                     <td data-label={t('concept_detail.table.type')}>
                       {conceptRef
                         ? isOwned(refConcept)
-                          ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
-                          : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{typeStr}</code></a>
+                          ? <a href={conceptLink(conceptRef)} data-preview-key={previewKey(refConcept)}><code>{typeStr}</code></a>
+                          : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(refConcept)}><PsMark /><code>{typeStr}</code></a>
                         : isPrimitive
                           ? <code>{typeStr}</code>
                           : <code>{typeStr}</code>
@@ -222,15 +225,15 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                             {t('concept_detail.includes')} {subs.map((s, i) => {
                               const sConcept = vocab.concepts[s];
                               return <>{i > 0 && ', '}{isOwned(sConcept)
-                                ? <a href={conceptLink(s)}>{s}</a>
-                                : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>
+                                ? <a href={conceptLink(s)} data-preview-key={previewKey(sConcept)}>{s}</a>
+                                : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(sConcept)}><PsMark />{s}</a>
                               }</>;
                             })}
                           </span>
                         );
                       })()}
                       {p.detail?.vocabulary && (
-                        <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)}>{p.detail.vocabulary}</a>)</>
+                        <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(vocab.vocabularies[p.detail.vocabulary])}>{p.detail.vocabulary}</a>)</>
                       )}
                     </td>
                     <td data-label={t('concept_detail.table.definition')}>
@@ -263,12 +266,12 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
             return (
               <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                 <td>
-                  <a href={propLink(p.id)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                  <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
                   {p.from && (
                     <span class="inherited-badge">
                       {t('concept_detail.inherited_from')} {isOwned(fromConcept)
-                        ? <a href={conceptLink(p.from!)}>{p.from}</a>
-                        : <a href={externalHref(fromConcept) ?? `https://publicschema.org/concepts/${p.from}/`} target="_blank" rel="noopener noreferrer"><PsMark />{p.from}</a>
+                        ? <a href={conceptLink(p.from!)} data-preview-key={previewKey(fromConcept)}>{p.from}</a>
+                        : <a href={externalHref(fromConcept) ?? `https://publicschema.org/concepts/${p.from}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(fromConcept)}><PsMark />{p.from}</a>
                       }
                     </span>
                   )}
@@ -276,8 +279,8 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                 <td data-label={t('concept_detail.table.type')}>
                   {conceptRef
                     ? isOwned(refConcept)
-                      ? <a href={conceptLink(conceptRef)}><code>{typeStr}</code></a>
-                      : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{typeStr}</code></a>
+                      ? <a href={conceptLink(conceptRef)} data-preview-key={previewKey(refConcept)}><code>{typeStr}</code></a>
+                      : <a href={externalHref(refConcept) ?? `https://publicschema.org/concepts/${conceptRef}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(refConcept)}><PsMark /><code>{typeStr}</code></a>
                     : <code>{typeStr}</code>
                   }
                   {conceptRef && (() => {
@@ -287,15 +290,15 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                         {t('concept_detail.includes')} {subs.map((s, i) => {
                           const sConcept = vocab.concepts[s];
                           return <>{i > 0 && ', '}{isOwned(sConcept)
-                            ? <a href={conceptLink(s)}>{s}</a>
-                            : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>
+                            ? <a href={conceptLink(s)} data-preview-key={previewKey(sConcept)}>{s}</a>
+                            : <a href={externalHref(sConcept) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(sConcept)}><PsMark />{s}</a>
                           }</>;
                         })}
                       </span>
                     );
                   })()}
                   {p.detail?.vocabulary && (
-                    <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)}>{p.detail.vocabulary}</a>)</>
+                    <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(vocab.vocabularies[p.detail.vocabulary])}>{p.detail.vocabulary}</a>)</>
                   )}
                 </td>
                 <td data-label={t('concept_detail.table.definition')}>

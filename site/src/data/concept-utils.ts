@@ -24,6 +24,19 @@ export function externalHref(
   return item.source === 'aidops' ? item.path : item.uri;
 }
 
+/**
+ * Stable lookup key for the hover-card preview data. AidOps items use their
+ * local path; PublicSchema items use their canonical URI. Matches the keying
+ * in `build/preview_export.py` so `data-preview-key` attributes resolve
+ * against `preview/{locale}.json` entries.
+ */
+export function previewKey(
+  item: Concept | Property | Vocabulary | undefined,
+): string | null {
+  if (!item) return null;
+  return item.source === 'aidops' ? item.path : item.uri;
+}
+
 /** Look up a concept's path by ID. Falls back to `/{id}` if unknown. */
 export function conceptPath(vocab: VocabularyData, id: string): string {
   return vocab.concepts[id]?.path || `/${id}`;

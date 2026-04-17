@@ -176,60 +176,45 @@ Two independent changes, shippable separately:
 
 ### Phase 1 — Data fix + "AidOps extends PS" copy (Change 1)
 
-- [ ] **1.1** `build/build.py`: stop filtering PS items out of `vocabulary.json` / `manifest.json`. Keep the `source` tag on every output.
-- [ ] **1.2** `site/src/data/vocabulary.ts`: add `source: 'aidops' | 'publicschema'` to `Concept`, `Property`, `Vocabulary`.
-- [ ] **1.3** `site/src/data/concept-utils.ts`: add `isOwned(item)` helper, plus `externalHref(item)` (returns `item.uri` for PS, `item.path` for AidOps).
+- [x] **1.1** `build/build.py`: stop filtering PS items out of `vocabulary.json` / `manifest.json`. Keep the `source` tag on every output.
+- [x] **1.2** `site/src/data/vocabulary.ts`: add `source: 'aidops' | 'publicschema'` to `Concept`, `Property`, `Vocabulary`.
+- [x] **1.3** `site/src/data/concept-utils.ts`: add `isOwned(item)` helper, plus `externalHref(item)` (returns `item.uri` for PS, `item.path` for AidOps).
 - [x] **1.4** `site/src/pages/[...slug].astro`: guard `getStaticPaths` to owned only.
 - [x] **1.5** `site/src/components/pages/ConceptsIndex.astro`: filter listing to owned only.
 - [x] **1.6** `site/src/components/pages/PropertiesIndex.astro`: filter listing to owned only.
 - [x] **1.7** `site/src/data/search-index.ts`: filter search records to owned only.
-- [x] **1.8** `site/src/components/pages/ConceptDetail.astro`: every concept/property link chooses internal vs. external via `isOwned`. Inherited-from attribution gets real link + (PublicSchema) hint when PS. Type cells render real type for PS properties instead of 'unknown'.
+- [x] **1.8** `site/src/components/pages/ConceptDetail.astro`: every concept/property link chooses internal vs. external via `isOwned`. Inherited-from attribution gets real link + PS icon when PS. Type cells render real type for PS properties instead of 'unknown'.
 - [x] **1.9** `site/src/components/pages/PropertyDetail.astro`: same pattern where applicable.
 - [x] **1.10** `site/src/components/pages/VocabDetail.astro`: same pattern where applicable.
-- [ ] **1.11** Get Jeremi to approve copy for the "AidOps extends PublicSchema" one-liner (draft: "This concept builds on PublicSchema. Fields marked *PublicSchema* are defined there.") and its translations for fr/es. Copy goes in `site/src/i18n/` locale files.
+- [x] **1.11** Copy approved 2026-04-17. The text mark `(PublicSchema)` was replaced mid-implementation with the PS brand icon at Jeremi's request; aside copy updated to "Fields marked with the PublicSchema icon are defined there." Tooltip: "Defined in PublicSchema" (en), "Défini dans PublicSchema" (fr), "Definido en PublicSchema" (es).
 - [x] **1.12** Render the one-liner in `ConceptDetail.astro` near the Supertypes section, conditional on the page having any PS-sourced supertype or inherited property. Don't show it on pure-AidOps pages (noise).
-- [ ] **1.13** Tests:
-  - [ ] Python: `tests/` — assert `vocabulary.json` contains entries with `source == 'publicschema'` for concepts/properties referenced transitively.
-  - [ ] Visual / integration: `just dev` → `/AnthropometricProfile` shows real types for inherited rows; clicking `Person` goes to publicschema.org; the "AidOps extends PublicSchema" aside is visible.
-- [ ] **1.14** Run `just check`.
-- [ ] **1.15** Commit (`fix: surface PS metadata for inherited rows, explain PS relationship`).
+- [x] **1.13** Tests:
+  - [x] Python: integration tests assert PS concepts/properties appear with `source == 'publicschema'` and canonical `https://publicschema.org/` URIs.
+  - [x] Visual build: `/AnthropometricProfile` static HTML confirmed 25 PS marks rendered; all PS links point to publicschema.org; the "AidOps extends PublicSchema" aside renders when applicable.
+- [x] **1.14** Run `just check`. All 44 tests pass, lint clean (errors 0, warnings pre-existing content), build completes.
+- [x] **1.15** Commit (`feat: surface PublicSchema metadata and mark PS references with icon`). Commit 3eb4c26.
 
 ### Phase 2 — Hover preview foundation (Change 2, part A)
 
-- [ ] **2.1** Build step: emit `dist/preview.json` keyed by path and URI, carrying label / `definition_excerpt` (build-time word-boundary truncation per locale: en ~220 chars, fr/es ~260) / type / vocabulary / maturity / href / source / `locale_used` tag when falling back to a non-requested locale.
-- [ ] **2.2** Unit test the build step (inputs/outputs, ensures PS entries are keyed by publicschema.org URI, AidOps entries by local path; verifies word-boundary truncation doesn't cut mid-word; verifies locale fallback behavior).
-- [ ] **2.3** `npm install @floating-ui/dom` in `site/`.
-- [ ] **2.4** `site/src/components/HoverCard.astro` + `site/src/scripts/hover-card.ts`:
-  - Event delegation on `[data-preview-key]`.
-  - Fetch `/preview.json` on first hover, cache.
-  - Floating-ui positioning with viewport flip/shift.
-  - Open timer 500ms with **pointer-settling gate** (card opens only if pointer has been still ~100ms at end of delay, to avoid triggering during fast table-scanning).
-  - Close timer 200ms, cancellable by moving onto card.
-  - ARIA: `role="tooltip"`, `aria-describedby` wired to anchor.
-  - Escape dismisses.
-  - Hover-capable-pointer only (`(hover: hover)` media).
-  - Respect `prefers-reduced-motion: reduce` → suppress animation, instant show/hide.
-  - Keyboard: Tab onto link triggers card; Tab again reaches the "Open →" CTA (single extra Tab stop).
-  - Screen reader: card content is supplementary via `aria-describedby`, does NOT auto-steal focus.
-  - Nested links inside card navigate on click; do NOT open another card.
-  - Render source badge ("Defined in PublicSchema") for PS, omitted for AidOps.
-  - Render fallback-language tag when `locale_used !== requested_locale`.
-  - Maturity badge shown when not `stable`.
-- [ ] **2.5** Mount `<HoverCard />` in `site/src/layouts/Base.astro`.
-- [ ] **2.6** Helper in `site/src/data/concept-utils.ts` for `previewKey(item)`.
-- [ ] **2.7** Subtle hover style for `[data-preview-key]` links as passive discoverability cue (e.g. slight color shift or dotted underline on hover). Tune during styling; no icons or nudges.
-- [ ] **2.8** Accessibility verification: Tab focus shows card; Escape dismisses; VoiceOver + NVDA announce order documented; `prefers-reduced-motion` honored.
+- [x] **2.1** Build step: `build/preview_export.py` emits `dist/preview/{en,fr,es}.json` keyed by path (aidops) or URI (PS). Sharded by locale to keep fetch size reasonable (~600 KB each vs ~2 MB single file). Each entry carries label / `definition_excerpt` (word-boundary truncated: en 220, fr/es 260) / kind / source / maturity / href / type / vocabulary / `locale_used`.
+- [x] **2.2** 14 unit tests in `tests/test_preview_export.py` covering truncate edge cases, aidops keyed by path, PS keyed by URI, per-locale limits, fallback marker, real-schema roundtrip (AnthropometricProfile present, Person keyed by `https://publicschema.org/Person`).
+- [x] **2.3** `@floating-ui/dom@1.7.6` added to `site/package.json`.
+- [x] **2.4** `site/src/components/HoverCard.astro` + `site/src/scripts/hover-card.ts` implemented per spec. Uses floating-ui with `strategy: 'fixed'` to dodge offset-parent gotchas. Pointer-settling gate + 500/200 ms delays + capture-phase pointerenter delegation (dedup via `pendingAnchor`). Fetch cached after first hover. Touch-device opt-out. `role="tooltip"`, `aria-describedby`, Escape + scroll close.
+- [x] **2.5** `<HoverCard />` mounted once in `site/src/layouts/Base.astro`.
+- [x] **2.6** `previewKey(item)` added to `site/src/data/concept-utils.ts`.
+- [x] **2.7** Subtle dotted-underline hover style for `a[data-preview-key]` in `site/src/styles/global.css`.
+- [ ] **2.8** Accessibility verification: Tab focus shows card; Escape dismisses; VoiceOver + NVDA announce order documented; `prefers-reduced-motion` honored. (Script honors reduced motion in CSS; manual VO/NVDA verification still pending; scheduled alongside Phase 3 visual pass.)
 
 ### Phase 3 — Wire links (Change 2, part B)
 
-- [ ] **3.0** Prerequisite audit: every place where `data-preview-key` would coexist with `ExpandableDefinition` on the same row. Decide per surface whether the card definition excerpt and the inline expandable definition both add value, or whether one should be suppressed. Default: property-name cell gets the card (metadata-forward), Definition cell keeps `ExpandableDefinition` (full text). Document decisions inline.
-- [ ] **3.1** Instrument `ConceptDetail.astro` links (supertypes, subtypes, property table type cells and name cells, inherited-from).
-- [ ] **3.2** Instrument `PropertyDetail.astro` links (used-by, type).
-- [ ] **3.3** Instrument `VocabDetail.astro` links.
-- [ ] **3.4** ~~Instrument listing pages~~ — **skip for v1.** Listings are scanning surfaces; cards would be noise. Revisit only if user feedback points to the gap.
-- [ ] **3.5** Instrument footer/meta links where they reference PS (if any).
-- [ ] **3.6** Visual pass across all locales (en, fr, es). Check that truncated definitions at the per-locale char limits render without overflow at 360px card width.
-- [ ] **3.7** `just check` + `just site-build`. Verify card bundle size is sane.
+- [x] **3.0** ExpandableDefinition audit: only ConceptDetail property tables co-locate a preview target with `ExpandableDefinition`. Decision applied: property-name cell gets the card (metadata-forward, 220-char excerpt), Definition cell keeps `ExpandableDefinition` inline (full text). No suppression needed.
+- [x] **3.1** `ConceptDetail.astro` instrumented: supertypes, subtypes (direct + nested), property-name links, inherited-from attribution, type-cell concept refs, subtype-hint chips, vocabulary refs. 52 `data-preview-key` attributes ship on `/AnthropometricProfile`.
+- [x] **3.2** `PropertyDetail.astro` instrumented: type link + subtype-hint chips, vocabulary, references link + subtype-hint chips, used-by list.
+- [x] **3.3** `VocabDetail.astro` reviewed: no concept/property cross-refs to instrument (page only references external standards).
+- [x] **3.4** ~~Listing pages~~ — skipped per plan.
+- [x] **3.5** Footer reviewed: existing PS link is a project-wide pointer, not a preview target. No change.
+- [ ] **3.6** Visual pass across en/fr/es at 360px card width. (Deferred; needs browser run.)
+- [x] **3.7** `just check` and `just site-build` green. HoverCard bundle: 21 KB. Preview JSON shards: 556/607/616 KB (en/fr/es).
 - [ ] **3.8** Commit (`feat: hover previews for cross-reference links`).
 
 ### Out of scope, explicitly

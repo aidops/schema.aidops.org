@@ -9,6 +9,7 @@ import {
   collectAllSubtypes,
   isOwned,
   externalHref,
+  previewKey,
 } from '../../data/concept-utils';
 import SectionFeedback from '../SectionFeedback.astro';
 import NonNormativeBanner from '../NonNormativeBanner.astro';
@@ -121,8 +122,8 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
               ? (() => {
                   const typeC = vocab.concepts[typeConceptRef];
                   return isOwned(typeC)
-                    ? <a href={conceptLink(typeConceptRef)}><code>{prop.type}</code></a>
-                    : <a href={externalHref(typeC) ?? `https://publicschema.org/concepts/${typeConceptRef}/`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{prop.type}</code></a>;
+                    ? <a href={conceptLink(typeConceptRef)} data-preview-key={previewKey(typeC)}><code>{prop.type}</code></a>
+                    : <a href={externalHref(typeC) ?? `https://publicschema.org/concepts/${typeConceptRef}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(typeC)}><PsMark /><code>{prop.type}</code></a>;
                 })()
               : <code>{prop.type}</code>
             }
@@ -132,7 +133,7 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
                 <span class="subtype-hint">
                   {t('concept_detail.includes')} {subs.map((s, i) => {
                     const sc = vocab.concepts[s];
-                    return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>}</>;
+                    return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)} data-preview-key={previewKey(sc)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(sc)}><PsMark />{s}</a>}</>;
                   })}
                 </span>
               );
@@ -149,8 +150,8 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
             <td>{(() => {
               const v = vocab.vocabularies[prop.vocabulary!];
               return isOwned(v)
-                ? <a href={localePath(`/vocabularies/${prop.vocabulary}`, locale)}>{prop.vocabulary}</a>
-                : <a href={externalHref(v) ?? `https://publicschema.org/vocabularies/${prop.vocabulary}/`} target="_blank" rel="noopener noreferrer"><PsMark />{prop.vocabulary}</a>;
+                ? <a href={localePath(`/vocabularies/${prop.vocabulary}`, locale)} data-preview-key={previewKey(v)}>{prop.vocabulary}</a>
+                : <a href={externalHref(v) ?? `https://publicschema.org/vocabularies/${prop.vocabulary}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(v)}><PsMark />{prop.vocabulary}</a>;
             })()}</td>
           </tr>
         )}
@@ -161,8 +162,8 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
               {(() => {
                 const refC = vocab.concepts[prop.references!];
                 return isOwned(refC)
-                  ? <a href={conceptLink(prop.references!)}>{prop.references}</a>
-                  : <a href={externalHref(refC) ?? `https://publicschema.org/concepts/${prop.references}/`} target="_blank" rel="noopener noreferrer"><PsMark />{prop.references}</a>;
+                  ? <a href={conceptLink(prop.references!)} data-preview-key={previewKey(refC)}>{prop.references}</a>
+                  : <a href={externalHref(refC) ?? `https://publicschema.org/concepts/${prop.references}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(refC)}><PsMark />{prop.references}</a>;
               })()}
               {(() => {
                 const subs = collectAllSubtypes(vocab, prop.references!);
@@ -170,7 +171,7 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
                   <span class="subtype-hint">
                     {t('concept_detail.includes')} {subs.map((s, i) => {
                       const sc = vocab.concepts[s];
-                      return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer"><PsMark />{s}</a>}</>;
+                      return <>{i > 0 && ', '}{isOwned(sc) ? <a href={conceptLink(s)} data-preview-key={previewKey(sc)}>{s}</a> : <a href={externalHref(sc) ?? `https://publicschema.org/concepts/${s}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(sc)}><PsMark />{s}</a>}</>;
                     })}
                   </span>
                 );
@@ -189,8 +190,8 @@ const isNonNormative = prop.maturity === 'draft' || prop.maturity === 'candidate
         {prop.used_by.map((d) => {
           const dc = vocab.concepts[d];
           return isOwned(dc)
-            ? <a href={conceptLink(d)}>{d}</a>
-            : <a href={externalHref(dc) ?? `https://publicschema.org/concepts/${d}/`} target="_blank" rel="noopener noreferrer"><PsMark />{d}</a>;
+            ? <a href={conceptLink(d)} data-preview-key={previewKey(dc)}>{d}</a>
+            : <a href={externalHref(dc) ?? `https://publicschema.org/concepts/${d}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(dc)}><PsMark />{d}</a>;
         })}
       </div>
     ) : (
