@@ -1,0 +1,56 @@
+id: wait-time-category
+maturity: draft
+label:
+  en: Wait Time Category
+  fr: "Catégorie de temps d'attente"
+  es: "Categoría de tiempo de espera"
+definition:
+  en: "Ordinal category for typical time waited at a health facility before being seen. Captures usual experience as a categorical band rather than exact minutes, matching WHO People's Voice Survey practice and humanitarian rapid assessment conventions. Used by `typical_wait_time_at_facility` in HealthAccessProfile."
+  fr: "Catégorie ordinale du temps d'attente habituel dans un établissement de santé avant d'être reçu. Saisit l'expérience habituelle sous forme de tranche catégorielle plutôt qu'en minutes exactes, conformément à la pratique de l'enquête People's Voice Survey de l'OMS et aux conventions d'évaluation rapide humanitaire. Utilisée par `typical_wait_time_at_facility` dans HealthAccessProfile."
+  es: "Categoría ordinal del tiempo habitual de espera en un establecimiento de salud antes de ser atendido. Capta la experiencia habitual como una banda categórica en lugar de minutos exactos, alineada con la práctica de la People's Voice Survey de la OMS y las convenciones de evaluación rápida humanitaria. Utilizada por `typical_wait_time_at_facility` en HealthAccessProfile."
+values:
+  - code: under_30min
+    label:
+      en: Less than 30 minutes
+      fr: "Moins de 30 minutes"
+      es: "Menos de 30 minutos"
+    definition:
+      en: "Typical wait of less than 30 minutes before being seen."
+      fr: "Attente habituelle de moins de 30 minutes avant d'être reçu."
+      es: "Espera habitual de menos de 30 minutos antes de ser atendido."
+  - code: thirty_min_to_1hr
+    label:
+      en: 30 minutes to 1 hour
+      fr: "30 minutes à 1 heure"
+      es: "30 minutos a 1 hora"
+    definition:
+      en: "Typical wait between 30 minutes and 1 hour."
+      fr: "Attente habituelle entre 30 minutes et 1 heure."
+      es: "Espera habitual entre 30 minutos y 1 hora."
+  - code: one_to_2hr
+    label:
+      en: 1 to 2 hours
+      fr: "1 à 2 heures"
+      es: "1 a 2 horas"
+    definition:
+      en: "Typical wait between 1 and 2 hours."
+      fr: "Attente habituelle entre 1 et 2 heures."
+      es: "Espera habitual entre 1 y 2 horas."
+  - code: over_2hr
+    label:
+      en: More than 2 hours
+      fr: "Plus de 2 heures"
+      es: "Más de 2 horas"
+    definition:
+      en: "Typical wait of more than 2 hours. Flagged in literature as a salient access barrier."
+      fr: "Attente habituelle de plus de 2 heures. Signalée dans la littérature comme une barrière d'accès importante."
+      es: "Espera habitual de más de 2 horas. Señalada en la literatura como una barrera de acceso importante."
+  - code: dont_know
+    label:
+      en: Don't know
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The respondent cannot estimate the typical wait time. Valid response; must not be re-coded as missing."
+      fr: "Le répondant ne peut pas estimer le temps d'attente habituel. Réponse valide ; ne doit pas être recodée comme manquante."
+      es: "El encuestado no puede estimar el tiempo de espera habitual. Respuesta válida; no debe recodificarse como faltante."

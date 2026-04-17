@@ -1,0 +1,19 @@
+id: tools_equipment_sufficient
+maturity: draft
+label:
+  en: "Tools and equipment are sufficient"
+  fr: "Outils et équipement suffisants"
+  es: "Herramientas y equipo suficientes"
+
+definition:
+  en: "Household self-report of whether it currently has enough tools and equipment for shelter maintenance and daily household activities. Self-report proxy complementing the objective tool-presence items under Sphere Standard 4."
+  fr: "Auto-déclaration du ménage sur le fait de disposer actuellement d'outils et d'équipement suffisants pour l'entretien de l'abri et les activités ménagères quotidiennes. Indicateur auto-déclaré complémentant les items objectifs de présence d'outils de la Norme Sphère 4."
+  es: "Auto-reporte del hogar sobre si tiene actualmente suficientes herramientas y equipo para el mantenimiento del refugio y las actividades diarias del hogar. Indicador auto-reportado que complementa los ítems objetivos de presencia de herramientas de la Norma Esfera 4."
+
+type: string
+cardinality: single
+vocabulary: yes-no-partial
+references: null
+category: nfi
+core: true
+sensitivity: standard

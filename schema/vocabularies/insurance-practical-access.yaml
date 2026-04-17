@@ -1,0 +1,47 @@
+id: insurance-practical-access
+maturity: draft
+label:
+  en: Insurance Practical Access
+  fr: "Accès pratique à l'assurance"
+  es: "Acceso práctico al seguro"
+definition:
+  en: "Three-level scale plus 'don't know' describing how easily a household member could actually use their health insurance when needed. Used by `insurance_practical_access` in HealthAccessProfile. Distinguishes insurance on paper from insurance that functions in practice. Drawn from the WHO People's Voice Survey affordability-confidence domain and commonly reported gaps in community-based and donor-subsidized schemes."
+  fr: "Échelle à trois niveaux plus « ne sait pas » décrivant avec quelle facilité un membre du ménage pourrait réellement utiliser son assurance maladie en cas de besoin. Utilisée par `insurance_practical_access` dans HealthAccessProfile. Distingue l'assurance sur papier de l'assurance qui fonctionne en pratique. Dérivée du domaine « confiance dans l'abordabilité » de l'enquête People's Voice Survey de l'OMS et des écarts couramment signalés dans les régimes communautaires et subventionnés par des bailleurs."
+  es: "Escala de tres niveles más 'no sabe' que describe con cuánta facilidad un miembro del hogar podría usar realmente su seguro de salud cuando lo necesite. Utilizada por `insurance_practical_access` en HealthAccessProfile. Distingue el seguro en papel del seguro que funciona en la práctica. Derivada del dominio 'confianza en la asequibilidad' de la People's Voice Survey de la OMS y de brechas comúnmente reportadas en esquemas comunitarios y subvencionados por donantes."
+values:
+  - code: yes_easily
+    label:
+      en: "Yes, easily"
+      fr: "Oui, facilement"
+      es: "Sí, fácilmente"
+    definition:
+      en: "Services covered by the insurance can be accessed without difficulty."
+      fr: "Les services couverts par l'assurance sont accessibles sans difficulté."
+      es: "Los servicios cubiertos por el seguro se pueden obtener sin dificultad."
+  - code: yes_with_some_difficulty
+    label:
+      en: "Yes, with some difficulty"
+      fr: "Oui, avec quelques difficultés"
+      es: "Sí, con alguna dificultad"
+    definition:
+      en: "Services can be accessed but only with procedural delays, extra costs, or partial coverage."
+      fr: "Les services sont accessibles mais seulement avec des retards de procédure, des frais supplémentaires ou une couverture partielle."
+      es: "Los servicios se pueden obtener pero solo con retrasos burocráticos, costos adicionales o cobertura parcial."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "Services covered on paper cannot be accessed in practice when needed."
+      fr: "Les services couverts sur papier ne sont pas accessibles en pratique lorsqu'ils sont nécessaires."
+      es: "Los servicios cubiertos en papel no se pueden obtener en la práctica cuando se necesitan."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The respondent cannot say. Valid response; must not be re-coded as missing or 'no'."
+      fr: "Le répondant ne peut pas répondre. Réponse valide ; ne doit pas être recodée comme manquante ou « non »."
+      es: "El encuestado no puede responder. Respuesta válida; no debe recodificarse como faltante o 'no'."

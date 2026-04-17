@@ -1,0 +1,110 @@
+id: chronic-condition-type
+maturity: draft
+label:
+  en: Chronic Condition Type
+  fr: "Type d'affection chronique"
+  es: "Tipo de afección crónica"
+definition:
+  en: "Broad clinical category of a chronic or long-term health condition requiring regular treatment or follow-up. Multi-select: a single household may include members with different conditions. Categories follow WHO NCD surveillance and ICD-11 broad groupings; humanitarian-relevant infectious chronic conditions (TB, HIV/AIDS) are included alongside NCDs because they drive continuity-of-treatment failures in displacement contexts. Narrower assessment of mental health conditions belongs in a future MentalHealthProfile."
+  fr: "Catégorie clinique large d'une affection chronique ou de longue durée nécessitant un traitement ou un suivi régulier. Sélection multiple : un même ménage peut inclure des membres présentant différentes affections. Les catégories suivent la surveillance des MNT de l'OMS et les grands regroupements de la CIM-11 ; les affections chroniques infectieuses à pertinence humanitaire (tuberculose, VIH/sida) sont incluses aux côtés des MNT car elles provoquent des ruptures de continuité de traitement dans les contextes de déplacement. Une évaluation plus fine des troubles de santé mentale relève d'un futur MentalHealthProfile."
+  es: "Categoría clínica amplia de una afección crónica o de largo plazo que requiere tratamiento o seguimiento regular. Selección múltiple: un mismo hogar puede incluir miembros con diferentes afecciones. Las categorías siguen la vigilancia de ENT de la OMS y las agrupaciones amplias de la CIE-11; las afecciones crónicas infecciosas de relevancia humanitaria (tuberculosis, VIH/sida) se incluyen junto con las ENT porque provocan fallas de continuidad del tratamiento en contextos de desplazamiento. Una evaluación más estrecha de trastornos de salud mental corresponde a un futuro MentalHealthProfile."
+values:
+  - code: cardiovascular
+    label:
+      en: Cardiovascular disease
+      fr: "Maladie cardiovasculaire"
+      es: "Enfermedad cardiovascular"
+    definition:
+      en: "Heart disease, stroke, or other cardiovascular condition."
+      fr: "Maladie cardiaque, accident vasculaire cérébral ou autre affection cardiovasculaire."
+      es: "Enfermedad cardiaca, accidente cerebrovascular u otra afección cardiovascular."
+  - code: diabetes
+    label:
+      en: Diabetes
+      fr: "Diabète"
+      es: "Diabetes"
+    definition:
+      en: "Diabetes mellitus, type 1 or type 2."
+      fr: "Diabète sucré, type 1 ou type 2."
+      es: "Diabetes mellitus, tipo 1 o tipo 2."
+  - code: hypertension
+    label:
+      en: Hypertension
+      fr: "Hypertension"
+      es: "Hipertensión"
+    definition:
+      en: "High blood pressure (hypertension), distinct from other cardiovascular disease."
+      fr: "Hypertension artérielle, distincte des autres maladies cardiovasculaires."
+      es: "Hipertensión arterial, distinta de otras enfermedades cardiovasculares."
+  - code: respiratory_asthma_copd
+    label:
+      en: Respiratory — asthma or COPD
+      fr: "Respiratoire — asthme ou BPCO"
+      es: "Respiratoria — asma o EPOC"
+    definition:
+      en: "Chronic respiratory condition such as asthma or chronic obstructive pulmonary disease (COPD)."
+      fr: "Affection respiratoire chronique telle que l'asthme ou la bronchopneumopathie chronique obstructive (BPCO)."
+      es: "Afección respiratoria crónica como asma o enfermedad pulmonar obstructiva crónica (EPOC)."
+  - code: epilepsy_neurological
+    label:
+      en: Epilepsy or neurological condition
+      fr: "Épilepsie ou affection neurologique"
+      es: "Epilepsia o afección neurológica"
+    definition:
+      en: "Epilepsy or other chronic neurological condition requiring ongoing medication."
+      fr: "Épilepsie ou autre affection neurologique chronique nécessitant un traitement continu."
+      es: "Epilepsia u otra afección neurológica crónica que requiere medicación continua."
+  - code: mental_health
+    label:
+      en: Mental health condition
+      fr: "Trouble de santé mentale"
+      es: "Trastorno de salud mental"
+    definition:
+      en: "Chronic mental health condition such as depression, anxiety disorder, or psychosis. Broad screening only; detailed assessment belongs in a future MentalHealthProfile."
+      fr: "Trouble de santé mentale chronique tel que dépression, trouble anxieux ou psychose. Dépistage large uniquement ; l'évaluation détaillée relève d'un futur MentalHealthProfile."
+      es: "Trastorno de salud mental crónico como depresión, trastorno de ansiedad o psicosis. Solo tamizaje amplio; la evaluación detallada corresponde a un futuro MentalHealthProfile."
+  - code: hiv_aids
+    label:
+      en: HIV/AIDS
+      fr: "VIH/sida"
+      es: "VIH/sida"
+    definition:
+      en: "HIV infection or AIDS requiring antiretroviral therapy or regular follow-up."
+      fr: "Infection à VIH ou sida nécessitant un traitement antirétroviral ou un suivi régulier."
+      es: "Infección por VIH o sida que requiere terapia antirretroviral o seguimiento regular."
+  - code: tuberculosis
+    label:
+      en: Tuberculosis (TB)
+      fr: "Tuberculose (TB)"
+      es: "Tuberculosis (TB)"
+    definition:
+      en: "Active TB or TB on maintenance treatment."
+      fr: "Tuberculose active ou tuberculose sous traitement d'entretien."
+      es: "Tuberculosis activa o tuberculosis en tratamiento de mantenimiento."
+  - code: cancer
+    label:
+      en: Cancer
+      fr: "Cancer"
+      es: "Cáncer"
+    definition:
+      en: "Cancer of any type, active or under surveillance."
+      fr: "Cancer de tout type, actif ou sous surveillance."
+      es: "Cáncer de cualquier tipo, activo o bajo vigilancia."
+  - code: musculoskeletal
+    label:
+      en: Musculoskeletal condition
+      fr: "Affection musculo-squelettique"
+      es: "Afección musculoesquelética"
+    definition:
+      en: "Chronic musculoskeletal condition such as arthritis or long-term disability from injury."
+      fr: "Affection musculo-squelettique chronique telle que l'arthrite ou une incapacité à long terme due à une blessure."
+      es: "Afección musculoesquelética crónica como artritis o discapacidad a largo plazo por lesión."
+  - code: other
+    label:
+      en: Other chronic condition
+      fr: "Autre affection chronique"
+      es: "Otra afección crónica"
+    definition:
+      en: "A chronic condition not captured by the codes above."
+      fr: "Une affection chronique non couverte par les codes ci-dessus."
+      es: "Una afección crónica no cubierta por los códigos anteriores."

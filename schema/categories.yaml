@@ -305,3 +305,45 @@ specific_needs:
     en: Specific Needs
     fr: "Besoins spécifiques"
     es: "Necesidades específicas"
+
+health_access_geography:
+  label:
+    en: "Health Access: Geography"
+    fr: "Accès aux soins : Géographie"
+    es: "Acceso a la salud: Geografía"
+
+health_access_unmet_need:
+  label:
+    en: "Health Access: Unmet Need"
+    fr: "Accès aux soins : Besoin non satisfait"
+    es: "Acceso a la salud: Necesidad insatisfecha"
+
+health_access_provider_preference:
+  label:
+    en: "Health Access: Provider Preference"
+    fr: "Accès aux soins : Préférence de prestataire"
+    es: "Acceso a la salud: Preferencia de proveedor"
+
+health_access_insurance:
+  label:
+    en: "Health Access: Insurance"
+    fr: "Accès aux soins : Assurance"
+    es: "Acceso a la salud: Seguro"
+
+health_access_oop:
+  label:
+    en: "Health Access: Out-of-pocket Expenditure"
+    fr: "Accès aux soins : Dépenses directes"
+    es: "Acceso a la salud: Gasto de bolsillo"
+
+health_access_coping:
+  label:
+    en: "Health Access: Coping Strategies"
+    fr: "Accès aux soins : Stratégies d'adaptation"
+    es: "Acceso a la salud: Estrategias de afrontamiento"
+
+health_access_chronic:
+  label:
+    en: "Health Access: Chronic Condition Continuity"
+    fr: "Accès aux soins : Continuité des affections chroniques"
+    es: "Acceso a la salud: Continuidad de afecciones crónicas"

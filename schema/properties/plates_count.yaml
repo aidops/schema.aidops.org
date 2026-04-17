@@ -1,0 +1,19 @@
+id: plates_count
+maturity: draft
+label:
+  en: "Number of plates or deep bowls"
+  fr: "Nombre d'assiettes ou bols profonds"
+  es: "Número de platos o tazones profundos"
+
+definition:
+  en: "Count of plates or deep bowls (dished plates suitable for serving a meal) currently held by the household. Sphere Standard 2: one dished plate per person. Together with household size, derives a per-person ratio."
+  fr: "Nombre d'assiettes ou de bols profonds (assiettes creuses convenant au service d'un repas) actuellement détenus par le ménage. Norme Sphère 2 : une assiette creuse par personne. Combiné à la taille du ménage, permet de dériver un ratio par personne."
+  es: "Cuenta de platos o tazones profundos (platos hondos aptos para servir una comida) que tiene actualmente el hogar. Norma Esfera 2: un plato hondo por persona. Junto con el tamaño del hogar, deriva una razón por persona."
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: true
+sensitivity: standard

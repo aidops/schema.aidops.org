@@ -1,0 +1,19 @@
+id: blankets_condition
+maturity: draft
+label:
+  en: "Condition of household blankets"
+  fr: "État des couvertures du ménage"
+  es: "Condición de las frazadas del hogar"
+
+definition:
+  en: "Usable condition of blankets or sleeping covers currently held by the household. Enumerator observation where possible. Used in NFI post-distribution monitoring to flag batches that arrived damaged or have degraded in use. Skip when the household has zero blankets (no_blankets is a valid value)."
+  fr: "État utilisable des couvertures ou couvertures de couchage actuellement détenues par le ménage. Observation de l'enquêteur lorsque possible. Utilisé dans le suivi post-distribution des ANA pour signaler les lots arrivés endommagés ou dégradés à l'usage. À ignorer lorsque le ménage ne possède aucune couverture (no_blankets est une valeur valide)."
+  es: "Condición utilizable de las frazadas o cubiertas para dormir que tiene actualmente el hogar. Observación del encuestador cuando sea posible. Utilizado en el monitoreo post-distribución de ANF para señalar los lotes que llegaron dañados o se han deteriorado con el uso. Omitir cuando el hogar no tiene frazadas (no_blankets es un valor válido)."
+
+type: string
+cardinality: single
+vocabulary: blanket-condition
+references: null
+category: nfi
+core: true
+sensitivity: standard

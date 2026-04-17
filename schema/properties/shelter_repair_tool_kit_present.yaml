@@ -1,0 +1,19 @@
+id: shelter_repair_tool_kit_present
+maturity: draft
+label:
+  en: "Shelter repair tool kit present"
+  fr: "Kit d'outils de réparation d'abri présent"
+  es: "Kit de herramientas de reparación de refugio presente"
+
+definition:
+  en: "Whether the household has a basic shelter repair tool set (hammer, nails, rope or wire). Sphere Standard 4: enable populations to build, maintain or repair shelters. UNHCR CRI catalogue lists Shelter Repair Tool Kits as a standard NFI. Complementary to technical_assistance_received on ShelterAdequacyProfile, which covers the knowledge/guidance dimension rather than tool ownership."
+  fr: "Si le ménage dispose d'un jeu d'outils de base pour la réparation d'abri (marteau, clous, corde ou fil de fer). Norme Sphère 4 : permettre aux populations de construire, entretenir ou réparer les abris. Le catalogue HCR CRI liste les kits d'outils de réparation d'abri comme ANA standard. Complémentaire à technical_assistance_received de ShelterAdequacyProfile, qui couvre la dimension connaissance/conseil plutôt que la possession d'outils."
+  es: "Si el hogar tiene un conjunto básico de herramientas para la reparación de refugio (martillo, clavos, cuerda o alambre). Norma Esfera 4: permitir a las poblaciones construir, mantener o reparar refugios. El catálogo ACNUR CRI lista los Kits de Herramientas de Reparación de Refugio como un ANF estándar. Complementario a technical_assistance_received de ShelterAdequacyProfile, que cubre la dimensión de conocimiento/orientación en lugar de la posesión de herramientas."
+
+type: string
+cardinality: single
+vocabulary: shelter-repair-kit-coverage
+references: null
+category: nfi
+core: true
+sensitivity: standard

@@ -1,0 +1,19 @@
+id: coping_skipped_care_cost
+maturity: draft
+label:
+  en: "Household skipped or delayed needed care due to cost (12 months)"
+  fr: "Le ménage a sauté ou reporté des soins nécessaires en raison du coût (12 mois)"
+  es: "El hogar omitió o retrasó atención necesaria debido al costo (12 meses)"
+
+definition:
+  en: "Whether any household member needed care in the last 12 months but skipped, delayed, or abandoned it because it was too expensive. Direct indicator of financial barriers to access, complementary to `care_not_sought_reason`=`cost_of_treatment`. Asked directly even when `hh_used_health_coping` is answered, because skipping care is a distinct coping strategy from borrowing or selling assets."
+  fr: "Si un membre du ménage a eu besoin de soins au cours des 12 derniers mois mais les a sautés, reportés ou abandonnés parce qu'ils étaient trop coûteux. Indicateur direct des obstacles financiers à l'accès, complémentaire à `care_not_sought_reason`=`cost_of_treatment`. Posé directement même lorsque `hh_used_health_coping` est renseigné, car sauter les soins est une stratégie d'adaptation distincte de l'emprunt ou de la vente d'actifs."
+  es: "Si algún miembro del hogar necesitó atención en los últimos 12 meses pero la omitió, retrasó o abandonó porque era demasiado costosa. Indicador directo de barreras financieras al acceso, complementario a `care_not_sought_reason`=`cost_of_treatment`. Se pregunta directamente aunque se haya contestado `hh_used_health_coping`, porque omitir la atención es una estrategia de afrontamiento distinta del préstamo o la venta de activos."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: health_access_coping
+sensitivity: sensitive

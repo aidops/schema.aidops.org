@@ -1,0 +1,19 @@
+id: chronic_treatment_interrupted_6mo
+maturity: draft
+label:
+  en: "Chronic treatment interrupted in the last 6 months"
+  fr: "Traitement chronique interrompu au cours des 6 derniers mois"
+  es: "Tratamiento crónico interrumpido en los últimos 6 meses"
+
+definition:
+  en: "Whether any household member with a diagnosed chronic condition had their treatment interrupted (stopped, skipped, or substantially reduced) for any reason during the past 6 months. A direct measure of treatment continuity aligned with UNHCR chronic-disease programming and Sphere 2018 essential health services. Ask only if `chronic_condition_in_hh` is `yes`. `dont_know` is retained as a distinct response."
+  fr: "Si un membre du ménage atteint d'une affection chronique diagnostiquée a subi une interruption de son traitement (arrêt, saut ou réduction substantielle) pour une raison quelconque au cours des 6 derniers mois. Mesure directe de la continuité du traitement, alignée sur la programmation maladies chroniques du HCR et les services de santé essentiels du Sphere 2018. Ne poser que si `chronic_condition_in_hh` est `yes`. « dont_know » est conservé comme réponse distincte."
+  es: "Si algún miembro del hogar con una condición crónica diagnosticada tuvo su tratamiento interrumpido (detenido, omitido o reducido sustancialmente) por cualquier motivo en los últimos 6 meses. Medida directa de la continuidad del tratamiento, alineada con la programación de enfermedades crónicas de ACNUR y los servicios de salud esenciales de Esfera 2018. Preguntar solo si `chronic_condition_in_hh` es `yes`. `dont_know` se mantiene como respuesta distinta."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: health_access_chronic
+sensitivity: sensitive

@@ -111,6 +111,99 @@ values:
     en: "Context-specific cold-weather supplies (heaters, insulation, winter clothing, thermal blankets) for cold-climate or high-altitude deployments."
     fr: "Fournitures contextuelles pour le froid (chauffages, isolation, vêtements d'hiver, couvertures thermiques) pour les déploiements en climat froid ou en haute altitude."
     es: "Suministros contextuales para climas fríos (calefactores, aislamiento, ropa de invierno, mantas térmicas) para despliegues en clima frío o altura."
+# Granular NFI unmet-needs codes added for NFIProfile nfi_unmet_needs_priority.
+# These decompose the existing cooking_set and clothing codes into more
+# specific items so households can name a single missing element.
+- code: cooking_pot
+  label:
+    en: Cooking pot
+    fr: "Marmite"
+    es: "Olla"
+  definition:
+    en: "Large cooking pot with handle and lid for household meal preparation. Used in NFIProfile unmet-needs reporting."
+    fr: "Grande marmite avec poignée et couvercle pour la préparation des repas du ménage. Utilisée pour le signalement des besoins non satisfaits dans NFIProfile."
+    es: "Olla grande con mango y tapa para la preparación de comidas del hogar. Utilizada en el reporte de necesidades no satisfechas de NFIProfile."
+- code: plate_or_bowl
+  label:
+    en: Plate or bowl
+    fr: "Assiette ou bol"
+    es: "Plato o tazón"
+  definition:
+    en: "Dished plate or deep bowl for individual meal serving (Sphere Std 2: one per person)."
+    fr: "Assiette creuse ou bol profond pour le service individuel des repas (Norme Sphère 2 : une par personne)."
+    es: "Plato hondo o tazón profundo para el servicio individual de las comidas (Norma Esfera 2: uno por persona)."
+- code: cup_or_mug
+  label:
+    en: Cup or mug
+    fr: "Tasse ou mug"
+    es: "Taza o jarro"
+  definition:
+    en: "Drinking vessel (Sphere Std 2: one per person)."
+    fr: "Récipient à boire (Norme Sphère 2 : un par personne)."
+    es: "Recipiente para beber (Norma Esfera 2: uno por persona)."
+- code: kitchen_knife
+  label:
+    en: Kitchen knife
+    fr: "Couteau de cuisine"
+    es: "Cuchillo de cocina"
+  definition:
+    en: "Knife for food preparation (Sphere Std 2: one per household)."
+    fr: "Couteau pour la préparation des aliments (Norme Sphère 2 : un par ménage)."
+    es: "Cuchillo para la preparación de alimentos (Norma Esfera 2: uno por hogar)."
+- code: matches_or_lighter
+  label:
+    en: Matches or lighter
+    fr: "Allumettes ou briquet"
+    es: "Fósforos o encendedor"
+  definition:
+    en: "Ignition source for cooking stove or fire. UNHCR CRI: listed as a renewable NFI requiring regular resupply."
+    fr: "Source d'allumage pour le foyer de cuisson ou le feu. HCR CRI : listée comme un ANA renouvelable nécessitant un réapprovisionnement régulier."
+    es: "Fuente de ignición para la cocina o el fuego. ACNUR CRI: listado como un ANF renovable que requiere reabastecimiento regular."
+- code: mosquito_net
+  label:
+    en: "Mosquito net (ITN/LLIN)"
+    fr: "Moustiquaire (MII/MIILDA)"
+    es: "Mosquitero (MTI/MILD)"
+  definition:
+    en: "Insecticide-treated mosquito net for sleeping protection. Sphere Std 1 key indicator in malaria-endemic settings."
+    fr: "Moustiquaire imprégnée d'insecticide pour la protection au couchage. Indicateur clé de la Norme Sphère 1 dans les contextes d'endémie palustre."
+    es: "Mosquitero tratado con insecticida para la protección al dormir. Indicador clave de la Norma Esfera 1 en entornos de paludismo endémico."
+- code: clothing_adult
+  label:
+    en: "Clothing (adult)"
+    fr: "Vêtements (adulte)"
+    es: "Ropa (adulto)"
+  definition:
+    en: "Climate-appropriate clothing set for adult household members. Sphere Std 1: two full sets per person in the correct size."
+    fr: "Ensemble de vêtements adaptés au climat pour les membres adultes du ménage. Norme Sphère 1 : deux ensembles complets par personne à la bonne taille."
+    es: "Conjunto de ropa apropiada para el clima para los miembros adultos del hogar. Norma Esfera 1: dos juegos completos por persona de la talla correcta."
+- code: clothing_child
+  label:
+    en: "Clothing (child)"
+    fr: "Vêtements (enfant)"
+    es: "Ropa (niño)"
+  definition:
+    en: "Climate-appropriate clothing set for child household members."
+    fr: "Ensemble de vêtements adaptés au climat pour les membres enfants du ménage."
+    es: "Conjunto de ropa apropiada para el clima para los miembros niños del hogar."
+- code: shelter_repair_tools
+  label:
+    en: "Shelter repair tools"
+    fr: "Outils de réparation d'abri"
+    es: "Herramientas de reparación de refugio"
+  definition:
+    en: "Hammer, nails, rope or equivalent shelter maintenance kit (Sphere Std 4 tools and equipment)."
+    fr: "Marteau, clous, corde ou kit équivalent de maintenance d'abri (Norme Sphère 4 outils et équipements)."
+    es: "Martillo, clavos, cuerda o kit equivalente de mantenimiento de refugio (Norma Esfera 4 herramientas y equipos)."
+- code: water_jerrycan
+  label:
+    en: "Water jerry can"
+    fr: "Jerrican à eau"
+    es: "Bidón para agua"
+  definition:
+    en: "Lidded water transport and storage container (10-20 litre). Overlaps with the generic jerrycan code; water_jerrycan is used in NFIProfile unmet-needs reporting when the specific use case is water-carrying rather than fuel storage."
+    fr: "Récipient à couvercle pour le transport et le stockage d'eau (10-20 litres). Recoupe le code générique jerrycan ; water_jerrycan est utilisé pour le signalement des besoins non satisfaits dans NFIProfile lorsque l'usage spécifique est le transport d'eau plutôt que le stockage de combustible."
+    es: "Recipiente con tapa para el transporte y almacenamiento de agua (10-20 litros). Se superpone con el código genérico jerrycan; water_jerrycan se usa en el reporte de necesidades no satisfechas de NFIProfile cuando el uso específico es el transporte de agua en lugar del almacenamiento de combustible."
 - code: other
   label:
     en: Other

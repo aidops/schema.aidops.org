@@ -1,0 +1,19 @@
+id: nfi_unmet_needs_priority
+maturity: draft
+label:
+  en: "Priority unmet NFI needs"
+  fr: "Besoins en ANA prioritaires non satisfaits"
+  es: "Necesidades prioritarias de ANF no satisfechas"
+
+definition:
+  en: "Multi-select list of non-food items the household most urgently needs right now (respondent selects up to three). Feeds Global Shelter Cluster 5W gap tracking. Values draw from the nfi-item-type vocabulary, including granular codes (cooking_pot, plate_or_bowl, cup_or_mug, kitchen_knife, matches_or_lighter, mosquito_net, clothing_adult, clothing_child, shelter_repair_tools, water_jerrycan) added to support per-item unmet-needs reporting."
+  fr: "Liste à sélection multiple des articles non alimentaires dont le ménage a le plus urgemment besoin en ce moment (le répondant sélectionne jusqu'à trois). Alimente le suivi des écarts 5W du Cluster Abri Mondial. Les valeurs proviennent du vocabulaire nfi-item-type, y compris des codes granulaires (cooking_pot, plate_or_bowl, cup_or_mug, kitchen_knife, matches_or_lighter, mosquito_net, clothing_adult, clothing_child, shelter_repair_tools, water_jerrycan) ajoutés pour prendre en charge le signalement des besoins non satisfaits par article."
+  es: "Lista de selección múltiple de los artículos no alimentarios que el hogar necesita con mayor urgencia ahora (el encuestado selecciona hasta tres). Alimenta el seguimiento de brechas 5W del Clúster Global de Refugio. Los valores provienen del vocabulario nfi-item-type, incluyendo códigos granulares (cooking_pot, plate_or_bowl, cup_or_mug, kitchen_knife, matches_or_lighter, mosquito_net, clothing_adult, clothing_child, shelter_repair_tools, water_jerrycan) añadidos para apoyar el reporte de necesidades no satisfechas por artículo."
+
+type: string
+cardinality: multiple
+vocabulary: nfi-item-type
+references: null
+category: nfi
+core: true
+sensitivity: standard

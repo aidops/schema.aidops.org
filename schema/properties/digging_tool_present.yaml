@@ -1,0 +1,19 @@
+id: digging_tool_present
+maturity: draft
+label:
+  en: "Digging tool available"
+  fr: "Outil de creusement disponible"
+  es: "Herramienta de excavación disponible"
+
+definition:
+  en: "Whether the household has access to a digging tool (such as a hoe, spade, or pickaxe). Sphere Standard 4: digging tools listed among essential household tools."
+  fr: "Si le ménage a accès à un outil de creusement (tel qu'une houe, une bêche ou une pioche). Norme Sphère 4 : les outils de creusement sont listés parmi les outils ménagers essentiels."
+  es: "Si el hogar tiene acceso a una herramienta de excavación (como un azadón, pala o pico). Norma Esfera 4: las herramientas de excavación están listadas entre las herramientas esenciales del hogar."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: false
+sensitivity: standard

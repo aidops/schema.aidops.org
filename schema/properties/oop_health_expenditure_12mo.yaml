@@ -1,0 +1,19 @@
+id: oop_health_expenditure_12mo
+maturity: draft
+label:
+  en: "Total out-of-pocket health expenditure in the last 12 months"
+  fr: "Dépenses de santé totales à la charge du ménage au cours des 12 derniers mois"
+  es: "Gasto total de bolsillo en salud en los últimos 12 meses"
+
+definition:
+  en: "Total amount the household paid out of pocket for health care over the last 12 months, in local currency. Includes consultations, medicines, hospital fees, and health-related transport, but excludes insurance premiums. Aligns with the SDG 3.8.2 out-of-pocket health expenditure indicator construction and the DHS AS59 out-of-pocket health spending question. Upstream of ScoringEvent-level catastrophic-expenditure derivations, which are not computed here."
+  fr: "Montant total payé par le ménage de sa poche pour les soins de santé au cours des 12 derniers mois, en monnaie locale. Comprend les consultations, les médicaments, les frais hospitaliers et le transport lié à la santé, mais exclut les primes d'assurance. S'aligne sur la construction de l'indicateur de dépenses de santé à la charge du ménage de la SDG 3.8.2 et sur la question AS59 du DHS sur les dépenses de santé de la poche. En amont des dérivations de dépenses catastrophiques au niveau de ScoringEvent, qui ne sont pas calculées ici."
+  es: "Monto total que el hogar pagó de su bolsillo por atención de salud en los últimos 12 meses, en moneda local. Incluye consultas, medicamentos, honorarios hospitalarios y transporte relacionado con salud, pero excluye primas de seguro. Se alinea con la construcción del indicador de gasto de bolsillo en salud del ODS 3.8.2 y con la pregunta AS59 del DHS sobre gasto de bolsillo en salud. Insumo para las derivaciones de gasto catastrófico a nivel de ScoringEvent, que no se calculan aquí."
+
+type: decimal
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: health_access_oop
+sensitivity: sensitive

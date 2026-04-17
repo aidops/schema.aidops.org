@@ -12,6 +12,7 @@ informs:
   concepts:
   - DwellingDamageProfile
   - ShelterAdequacyProfile
+  - NFIProfile
   vocabularies:
   - shelter-situation-type
   - shelter-damage-level
@@ -22,3 +23,9 @@ informs:
   - habitability_status
   - shelter_type
   - shelter_feels_adequate
+  # NFIProfile cross-cutting sufficiency and unmet-needs indicators
+  # align with the GSC Standardised Shelter Indicators composite NFI
+  # outcome indicator (Dec 2024).
+  - nfi_overall_sufficient
+  - nfi_unmet_needs_priority
+  - nfi_received_past_3mo

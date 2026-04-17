@@ -1,0 +1,19 @@
+id: typical_wait_time_at_facility
+maturity: draft
+label:
+  en: "Typical wait time at the nearest health facility"
+  fr: "Temps d'attente habituel à l'établissement de santé le plus proche"
+  es: "Tiempo habitual de espera en el establecimiento de salud más cercano"
+
+definition:
+  en: "Usual wait time at the nearest health facility before a household member is seen, captured as an ordinal band rather than an exact minute count. Long wait time is a documented access barrier in the WHO People's Voice Survey and the PAHO Americas household-survey barriers framework."
+  fr: "Temps d'attente habituel à l'établissement de santé le plus proche avant qu'un membre du ménage soit reçu, saisi comme une tranche ordinale plutôt qu'en minutes exactes. Un temps d'attente long est une barrière d'accès documentée dans l'enquête People's Voice Survey de l'OMS et dans le cadre PAHO des barrières dans les enquêtes ménages des Amériques."
+  es: "Tiempo habitual de espera en el establecimiento de salud más cercano antes de que un miembro del hogar sea atendido, capturado como una banda ordinal en lugar de un conteo exacto de minutos. Un tiempo de espera largo es una barrera de acceso documentada en la People's Voice Survey de la OMS y en el marco PAHO de barreras en encuestas de hogares de las Américas."
+
+type: string
+cardinality: single
+core: false
+vocabulary: wait-time-category
+references: null
+category: health_access_geography
+sensitivity: standard

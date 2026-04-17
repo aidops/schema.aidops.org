@@ -44,9 +44,10 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 13 concepts; update this count when adding/removing AidOps concepts
-        assert len(result["concepts"]) == 13, (
-            f"Expected 13 concepts, got {len(result['concepts'])}: "
+        # AidOps has exactly 15 concepts; update this count when adding/removing AidOps concepts
+        # Batch 2 adds: HealthAccessProfile
+        assert len(result["concepts"]) == 15, (
+            f"Expected 15 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
@@ -58,21 +59,29 @@ class TestRealSchema:
             "EducationProfile",
             "EnergyAccessProfile",
             "GenderEmpowermentProfile",
+            "HealthAccessProfile",
             "MaternalNewbornHealthProfile",
+            "NFIProfile",
             "NutritionPracticesProfile",
             "ReproductiveHealthProfile",
             "ShelterAdequacyProfile",
             "WASHAssessmentProfile",
         }
 
-        # Update this count when adding/removing AidOps-owned properties
-        assert len(result["properties"]) == 443, (
-            f"Expected 443 properties, got {len(result['properties'])}"
+        # Update this count when adding/removing AidOps-owned properties.
+        # Batch 2 delta (Batch 1 baseline was 443):
+        #   HealthAccessProfile: +30 properties
+        #   NFIProfile:          +32 properties (managed by NFI author)
+        assert len(result["properties"]) == 505, (
+            f"Expected 505 properties, got {len(result['properties'])}"
         )
 
-        # Update this count when adding/removing AidOps-owned vocabularies
-        assert len(result["vocabularies"]) == 114, (
-            f"Expected 114 vocabularies, got {len(result['vocabularies'])}"
+        # Update this count when adding/removing AidOps-owned vocabularies.
+        # Batch 2 delta (Batch 1 baseline was 114):
+        #   HealthAccessProfile: +11 vocabularies
+        #   NFIProfile:          +3 vocabularies (managed by NFI author)
+        assert len(result["vocabularies"]) == 128, (
+            f"Expected 128 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema

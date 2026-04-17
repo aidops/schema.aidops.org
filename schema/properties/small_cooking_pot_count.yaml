@@ -1,0 +1,19 @@
+id: small_cooking_pot_count
+maturity: draft
+label:
+  en: "Number of small/medium cooking pots"
+  fr: "Nombre de petites/moyennes marmites"
+  es: "Número de ollas pequeñas/medianas"
+
+definition:
+  en: "Count of small or medium-sized cooking pots (with handle and lid) currently held by the household. Sphere Standard 2: one medium-sized cooking pot with handle and lid per household for a group of 4-5 persons."
+  fr: "Nombre de marmites de petite ou moyenne taille (avec poignée et couvercle) actuellement détenues par le ménage. Norme Sphère 2 : une marmite de taille moyenne avec poignée et couvercle par ménage pour un groupe de 4 à 5 personnes."
+  es: "Cuenta de ollas pequeñas o medianas (con mango y tapa) que tiene actualmente el hogar. Norma Esfera 2: una olla de tamaño mediano con mango y tapa por hogar para un grupo de 4-5 personas."
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: false
+sensitivity: standard

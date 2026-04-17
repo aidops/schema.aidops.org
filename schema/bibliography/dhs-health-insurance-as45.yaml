@@ -1,0 +1,21 @@
+id: dhs-health-insurance-as45
+title: "Analytical Studies 45: Health Insurance Coverage and Its Impact on Maternal Health Care Utilization in Low- and Middle-Income Countries"
+short_title: DHS AS45
+publisher: "ICF / The DHS Program"
+year: 2013
+type: guidance_publication
+domain: humanitarian
+uri: "https://dhsprogram.com/publications/publication-as45-analytical-studies.cfm"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthAccessProfile
+  vocabularies:
+    - health-insurance-type
+  properties:
+    - any_hh_member_insured
+    - insurance_type
+    - insurance_members_count
+    - insurance_practical_access

@@ -1,0 +1,38 @@
+id: care-coverage-extent
+maturity: draft
+label:
+  en: Care Coverage Extent
+  fr: "Étendue de la couverture des soins"
+  es: "Alcance de la cobertura de la atención"
+definition:
+  en: "Three-level scale describing whether a household-level care or treatment outcome was achieved for all members who needed it, for some but not all members, or for none. Used by `hh_member_sought_care_30d` and `chronic_receiving_treatment` in HealthAccessProfile. 'yes_some' flags partial coverage within the household and is a distinct condition from both full coverage and complete failure to access care."
+  fr: "Échelle à trois niveaux décrivant si un résultat de soins ou de traitement au niveau du ménage a été obtenu pour tous les membres qui en avaient besoin, pour certains mais pas tous, ou pour aucun. Utilisée par `hh_member_sought_care_30d` et `chronic_receiving_treatment` dans HealthAccessProfile. « yes_some » signale une couverture partielle au sein du ménage et constitue une condition distincte à la fois d'une couverture complète et d'un échec total d'accès aux soins."
+  es: "Escala de tres niveles que describe si un resultado de atención o tratamiento a nivel del hogar se logró para todos los miembros que lo necesitaban, para algunos pero no todos, o para ninguno. Utilizada por `hh_member_sought_care_30d` y `chronic_receiving_treatment` en HealthAccessProfile. 'yes_some' señala una cobertura parcial dentro del hogar y constituye una condición distinta tanto de la cobertura completa como de la falta total de acceso a la atención."
+values:
+  - code: yes_all
+    label:
+      en: "Yes, all members"
+      fr: "Oui, tous les membres"
+      es: "Sí, todos los miembros"
+    definition:
+      en: "All household members who needed care or treatment received it."
+      fr: "Tous les membres du ménage qui avaient besoin de soins ou de traitement en ont reçu."
+      es: "Todos los miembros del hogar que necesitaban atención o tratamiento la recibieron."
+  - code: yes_some
+    label:
+      en: "Yes, some but not all"
+      fr: "Oui, certains mais pas tous"
+      es: "Sí, algunos pero no todos"
+    definition:
+      en: "Some but not all of the household members who needed care or treatment received it. Flags partial unmet need within the household."
+      fr: "Certains mais pas tous les membres du ménage qui avaient besoin de soins ou de traitement en ont reçu. Signale un besoin non satisfait partiel au sein du ménage."
+      es: "Algunos, pero no todos los miembros del hogar que necesitaban atención o tratamiento la recibieron. Señala una necesidad insatisfecha parcial dentro del hogar."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "No household member received the needed care or treatment."
+      fr: "Aucun membre du ménage n'a reçu les soins ou le traitement nécessaires."
+      es: "Ningún miembro del hogar recibió la atención o el tratamiento necesarios."

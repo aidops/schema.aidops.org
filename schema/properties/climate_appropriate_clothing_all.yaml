@@ -1,0 +1,19 @@
+id: climate_appropriate_clothing_all
+maturity: draft
+label:
+  en: "Every member has climate-appropriate clothing"
+  fr: "Chaque membre dispose de vêtements adaptés au climat"
+  es: "Cada miembro tiene ropa apropiada para el clima"
+
+definition:
+  en: "Whether every member of the household has at least two full sets of climate-appropriate clothing in good condition and the correct size. Sphere Standard 1 key indicator: two full sets of clothing per person in the correct size, culturally appropriate and gender-sensitive."
+  fr: "Si chaque membre du ménage dispose d'au moins deux ensembles complets de vêtements adaptés au climat, en bon état et à la bonne taille. Indicateur clé de la Norme Sphère 1 : deux ensembles complets de vêtements par personne à la bonne taille, culturellement appropriés et sensibles au genre."
+  es: "Si cada miembro del hogar tiene al menos dos juegos completos de ropa apropiada para el clima, en buen estado y de la talla correcta. Indicador clave de la Norma Esfera 1: dos juegos completos de ropa por persona de la talla correcta, culturalmente apropiados y sensibles al género."
+
+type: string
+cardinality: single
+vocabulary: nfi-sufficiency
+references: null
+category: nfi
+core: true
+sensitivity: standard

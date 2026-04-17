@@ -1,0 +1,19 @@
+id: nearest_facility_distance_km
+maturity: draft
+label:
+  en: "Distance to nearest health facility (km)"
+  fr: "Distance jusqu'à l'établissement de santé le plus proche (km)"
+  es: "Distancia al establecimiento de salud más cercano (km)"
+
+definition:
+  en: "Straight-line or usual-route distance in kilometres from the household's dwelling to the nearest health facility (clinic, health post, or hospital) the household would use for routine care. Sphere Handbook 2018 sets the normative minimum at one facility within 5 km of the affected population; UNHCR emergency standards apply the same benchmark to refugee or IDP contexts. When the household can only estimate travel time, the enumerator may convert using a 5 km/h walking speed; `nearest_facility_travel_time_min` is captured in parallel as a more respondent-reliable measure."
+  fr: "Distance en ligne droite ou selon l'itinéraire habituel en kilomètres entre le logement du ménage et l'établissement de santé le plus proche (clinique, poste de santé ou hôpital) que le ménage utiliserait pour des soins courants. Le Sphere Handbook 2018 fixe le minimum normatif à un établissement à moins de 5 km de la population affectée ; les normes d'urgence du HCR appliquent le même repère aux contextes de réfugiés ou de PDI. Lorsque le ménage ne peut qu'estimer le temps de trajet, l'enquêteur peut convertir en utilisant une vitesse de marche de 5 km/h ; `nearest_facility_travel_time_min` est saisi en parallèle comme mesure plus fiable pour le répondant."
+  es: "Distancia en línea recta o por la ruta habitual en kilómetros desde la vivienda del hogar hasta el establecimiento de salud más cercano (clínica, puesto de salud u hospital) que el hogar usaría para atención rutinaria. El Sphere Handbook 2018 fija el mínimo normativo en un establecimiento a menos de 5 km de la población afectada; los estándares de emergencia de ACNUR aplican la misma referencia a contextos de refugiados o PDI. Cuando el hogar solo puede estimar el tiempo de viaje, el encuestador puede convertir usando una velocidad de caminata de 5 km/h; `nearest_facility_travel_time_min` se captura en paralelo como medida más fiable para el encuestado."
+
+type: decimal
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: health_access_geography
+sensitivity: standard

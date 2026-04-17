@@ -1,0 +1,56 @@
+id: care-satisfaction-5
+maturity: draft
+label:
+  en: Care Satisfaction (5-level)
+  fr: "Satisfaction à l'égard des soins (5 niveaux)"
+  es: "Satisfacción con la atención (5 niveles)"
+definition:
+  en: "Four-point symmetric satisfaction scale plus 'don't know' used to rate the overall experience of care received by a household member. Used by `care_satisfaction` in HealthAccessProfile. Aligned with the WHO People's Voice Survey care-experience domain ('Overall, how would you rate the quality of health care you received?')."
+  fr: "Échelle de satisfaction symétrique à quatre niveaux plus « ne sait pas » utilisée pour évaluer l'expérience globale des soins reçus par un membre du ménage. Utilisée par `care_satisfaction` dans HealthAccessProfile. Alignée sur le domaine « expérience de soins » de l'enquête People's Voice Survey de l'OMS (« Globalement, comment évalueriez-vous la qualité des soins de santé que vous avez reçus ? »)."
+  es: "Escala de satisfacción simétrica de cuatro niveles más 'no sabe' utilizada para calificar la experiencia general de la atención recibida por un miembro del hogar. Utilizada por `care_satisfaction` en HealthAccessProfile. Alineada con el dominio 'experiencia de atención' de la People's Voice Survey de la OMS ('En general, ¿cómo calificaría la calidad de la atención de salud que recibió?')."
+values:
+  - code: very_satisfied
+    label:
+      en: Very satisfied
+      fr: "Très satisfait(e)"
+      es: "Muy satisfecho(a)"
+    definition:
+      en: "The respondent was very satisfied with the care received."
+      fr: "Le répondant était très satisfait des soins reçus."
+      es: "El encuestado estaba muy satisfecho con la atención recibida."
+  - code: somewhat_satisfied
+    label:
+      en: Somewhat satisfied
+      fr: "Plutôt satisfait(e)"
+      es: "Algo satisfecho(a)"
+    definition:
+      en: "The respondent was somewhat satisfied with the care received."
+      fr: "Le répondant était plutôt satisfait des soins reçus."
+      es: "El encuestado estaba algo satisfecho con la atención recibida."
+  - code: somewhat_dissatisfied
+    label:
+      en: Somewhat dissatisfied
+      fr: "Plutôt insatisfait(e)"
+      es: "Algo insatisfecho(a)"
+    definition:
+      en: "The respondent was somewhat dissatisfied with the care received."
+      fr: "Le répondant était plutôt insatisfait des soins reçus."
+      es: "El encuestado estaba algo insatisfecho con la atención recibida."
+  - code: very_dissatisfied
+    label:
+      en: Very dissatisfied
+      fr: "Très insatisfait(e)"
+      es: "Muy insatisfecho(a)"
+    definition:
+      en: "The respondent was very dissatisfied with the care received."
+      fr: "Le répondant était très insatisfait des soins reçus."
+      es: "El encuestado estaba muy insatisfecho con la atención recibida."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The respondent cannot rate the care received. Valid response; must not be re-coded as missing."
+      fr: "Le répondant ne peut pas évaluer les soins reçus. Réponse valide ; ne doit pas être recodée comme manquante."
+      es: "El encuestado no puede calificar la atención recibida. Respuesta válida; no debe recodificarse como faltante."

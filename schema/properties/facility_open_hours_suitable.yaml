@@ -1,0 +1,19 @@
+id: facility_open_hours_suitable
+maturity: draft
+label:
+  en: "Facility opening hours suitable for the household"
+  fr: "Horaires d'ouverture de l'établissement adaptés au ménage"
+  es: "Horario del establecimiento adecuado para el hogar"
+
+definition:
+  en: "Whether the nearest health facility's opening hours meet the household's usual needs for routine and urgent care. Sphere 2018 requires facilities to be accessible; night and weekend unavailability is a commonly reported access barrier in humanitarian settings and in the WHO People's Voice Survey. The five-level scale (`suitability-5-level`) allows respondents to distinguish full, partial, and no adequacy."
+  fr: "Si les horaires d'ouverture de l'établissement de santé le plus proche répondent aux besoins habituels du ménage pour les soins de routine et urgents. Sphere 2018 exige que les établissements soient accessibles ; l'indisponibilité de nuit et le week-end est une barrière d'accès couramment signalée dans les contextes humanitaires et dans l'enquête People's Voice Survey de l'OMS. L'échelle à cinq niveaux (`suitability-5-level`) permet aux répondants de distinguer une adéquation totale, partielle ou absente."
+  es: "Si el horario de apertura del establecimiento de salud más cercano cubre las necesidades habituales del hogar para atención rutinaria y urgente. Sphere 2018 exige que los establecimientos sean accesibles; la falta de atención nocturna y de fin de semana es una barrera de acceso comúnmente reportada en contextos humanitarios y en la People's Voice Survey de la OMS. La escala de cinco niveles (`suitability-5-level`) permite a los encuestados distinguir adecuación total, parcial o nula."
+
+type: string
+cardinality: single
+core: false
+vocabulary: suitability-5-level
+references: null
+category: health_access_geography
+sensitivity: standard

@@ -1,0 +1,38 @@
+id: stove-condition
+maturity: draft
+label:
+  en: "Stove condition (3-level)"
+  fr: "État du foyer de cuisson (3 niveaux)"
+  es: "Condición de la cocina (3 niveles)"
+definition:
+  en: "Three-level scale describing the working condition of a household's primary cooking stove or fire arrangement, independent of stove technology category (which is covered by the stove-type vocabulary on EnergyAccessProfile). Used to flag stoves that need repair or replacement in NFI post-distribution monitoring and shelter-settlement needs assessments."
+  fr: "Échelle à trois niveaux décrivant l'état de fonctionnement du foyer de cuisson principal ou de l'arrangement de feu d'un ménage, indépendamment de la catégorie technologique du foyer (couverte par le vocabulaire stove-type sur EnergyAccessProfile). Utilisée pour signaler les foyers qui nécessitent réparation ou remplacement dans le suivi post-distribution des ANA et les évaluations des besoins en abri et habitat."
+  es: "Escala de tres niveles que describe la condición de funcionamiento de la cocina principal o arreglo de fuego del hogar, independiente de la categoría tecnológica de la cocina (cubierta por el vocabulario stove-type en EnergyAccessProfile). Utilizada para señalar cocinas que requieren reparación o reemplazo en el monitoreo post-distribución de ANF y las evaluaciones de necesidades de refugio y asentamiento."
+values:
+  - code: good_condition
+    label:
+      en: "Good condition"
+      fr: "Bon état"
+      es: "Buena condición"
+    definition:
+      en: "Stove is fully functional and in good repair; can be used safely for household cooking."
+      fr: "Le foyer est pleinement fonctionnel et en bon état ; peut être utilisé en toute sécurité pour la cuisson du ménage."
+      es: "La cocina es plenamente funcional y está en buen estado; puede usarse de forma segura para la cocción del hogar."
+  - code: needs_repair
+    label:
+      en: "Needs repair"
+      fr: "Nécessite réparation"
+      es: "Necesita reparación"
+    definition:
+      en: "Stove is partially functional but requires maintenance, spare parts, or minor repair to operate safely or efficiently."
+      fr: "Le foyer est partiellement fonctionnel mais nécessite un entretien, des pièces de rechange ou une réparation mineure pour fonctionner de manière sûre ou efficace."
+      es: "La cocina es parcialmente funcional pero requiere mantenimiento, piezas de repuesto o reparación menor para operar de forma segura o eficiente."
+  - code: not_working
+    label:
+      en: "Not working"
+      fr: "Ne fonctionne pas"
+      es: "No funciona"
+    definition:
+      en: "Stove is non-functional and cannot currently be used for cooking."
+      fr: "Le foyer est non fonctionnel et ne peut pas être utilisé actuellement pour la cuisson."
+      es: "La cocina no es funcional y no puede usarse actualmente para la cocción."

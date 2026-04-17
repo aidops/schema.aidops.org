@@ -1,0 +1,19 @@
+id: serving_spoon_count
+maturity: draft
+label:
+  en: "Number of serving spoons or ladles"
+  fr: "Nombre de cuillères de service ou louches"
+  es: "Número de cucharas de servir o cucharones"
+
+definition:
+  en: "Count of serving spoons or ladles currently held by the household. Sphere Standard 2: two wooden serving spoons per household group of 4-5 persons."
+  fr: "Nombre de cuillères de service ou louches actuellement détenues par le ménage. Norme Sphère 2 : deux cuillères en bois par groupe ménager de 4 à 5 personnes."
+  es: "Cuenta de cucharas de servir o cucharones que tiene actualmente el hogar. Norma Esfera 2: dos cucharas de madera por grupo de 4-5 personas."
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: false
+sensitivity: standard

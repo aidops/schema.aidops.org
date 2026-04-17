@@ -1,0 +1,27 @@
+id: paho-barriers-americas-2020
+title: "Leveraging household survey data to measure barriers to health services access in the Americas"
+short_title: PAHO Americas Barriers
+publisher: "PAHO / Pan American Health Organization"
+year: 2020
+type: guidance_publication
+domain: humanitarian
+uri: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7429927/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthAccessProfile
+  vocabularies:
+    - care-access-barrier
+    - transport-mode-to-facility
+    - wait-time-category
+  properties:
+    - care_not_sought_reason
+    - care_not_sought_primary_reason
+    - nearest_facility_transport_mode
+    - one_way_transport_cost
+    - typical_wait_time_at_facility
+    - hh_member_needed_care_30d
+    - hh_member_sought_care_30d
+    - self_medication_first

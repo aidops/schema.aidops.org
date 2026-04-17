@@ -1,0 +1,47 @@
+id: self-medication-frequency
+maturity: draft
+label:
+  en: Self-Medication Frequency
+  fr: "Fréquence de l'automédication"
+  es: "Frecuencia de la automedicación"
+definition:
+  en: "Four-level ordinal scale describing how often a household tries home remedies or self-medication before seeking formal health care. Used by `self_medication_first` in HealthAccessProfile. Self-medication as a first resort delays formal care-seeking and is a behavioral complement to the use of pharmacies recorded in `care-provider-type`."
+  fr: "Échelle ordinale à quatre niveaux décrivant la fréquence à laquelle un ménage essaie des remèdes maison ou l'automédication avant de chercher des soins formels. Utilisée par `self_medication_first` dans HealthAccessProfile. L'automédication comme premier recours retarde la recherche de soins formels et constitue un complément comportemental à l'utilisation des pharmacies enregistrée dans `care-provider-type`."
+  es: "Escala ordinal de cuatro niveles que describe con qué frecuencia un hogar prueba remedios caseros o automedicación antes de buscar atención formal. Utilizada por `self_medication_first` en HealthAccessProfile. La automedicación como primer recurso retrasa la búsqueda de atención formal y es un complemento conductual al uso de farmacias registrado en `care-provider-type`."
+values:
+  - code: yes_always
+    label:
+      en: Yes, always
+      fr: "Oui, toujours"
+      es: "Sí, siempre"
+    definition:
+      en: "The household always tries home remedies or self-medication before seeking formal care."
+      fr: "Le ménage essaie toujours des remèdes maison ou l'automédication avant de chercher des soins formels."
+      es: "El hogar siempre prueba remedios caseros o automedicación antes de buscar atención formal."
+  - code: yes_sometimes
+    label:
+      en: Yes, sometimes
+      fr: "Oui, parfois"
+      es: "Sí, a veces"
+    definition:
+      en: "The household sometimes tries home remedies or self-medication before seeking formal care."
+      fr: "Le ménage essaie parfois des remèdes maison ou l'automédication avant de chercher des soins formels."
+      es: "El hogar a veces prueba remedios caseros o automedicación antes de buscar atención formal."
+  - code: rarely
+    label:
+      en: Rarely
+      fr: "Rarement"
+      es: "Raramente"
+    definition:
+      en: "The household rarely resorts to home remedies or self-medication before seeking formal care."
+      fr: "Le ménage a rarement recours aux remèdes maison ou à l'automédication avant de chercher des soins formels."
+      es: "El hogar rara vez recurre a remedios caseros o automedicación antes de buscar atención formal."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "The household does not try home remedies or self-medication before seeking formal care."
+      fr: "Le ménage n'essaie pas de remèdes maison ou d'automédication avant de chercher des soins formels."
+      es: "El hogar no prueba remedios caseros o automedicación antes de buscar atención formal."

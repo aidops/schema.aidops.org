@@ -1,0 +1,19 @@
+id: stove_condition
+maturity: draft
+label:
+  en: "Primary stove condition"
+  fr: "État du foyer de cuisson principal"
+  es: "Condición de la cocina principal"
+
+definition:
+  en: "Working condition of the household's primary cooking stove or fire arrangement, independent of stove technology category. Asked only when has_functional_stove is true. Based on UNHCR PDM enumerator-observation pattern."
+  fr: "État de fonctionnement du foyer de cuisson principal ou de l'arrangement de feu du ménage, indépendamment de la catégorie technologique du foyer. Demandé uniquement lorsque has_functional_stove est vrai. Basé sur le modèle d'observation de l'enquêteur du HCR PDM."
+  es: "Condición de funcionamiento de la cocina o arreglo de fuego principal del hogar, independiente de la categoría tecnológica. Preguntado solo cuando has_functional_stove es verdadero. Basado en el patrón de observación del encuestador del PDM del ACNUR."
+
+type: string
+cardinality: single
+vocabulary: stove-condition
+references: null
+category: nfi
+core: false
+sensitivity: standard

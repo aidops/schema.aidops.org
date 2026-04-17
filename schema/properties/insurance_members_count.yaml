@@ -1,0 +1,19 @@
+id: insurance_members_count
+maturity: draft
+label:
+  en: "Number of household members covered by health insurance"
+  fr: "Nombre de membres du ménage couverts par une assurance maladie"
+  es: "Número de miembros del hogar cubiertos por seguro de salud"
+
+definition:
+  en: "Count of household members currently covered by at least one health insurance scheme. Must be between 0 and the total household size. Complements `any_hh_member_insured` (gateway) and `insurance_type` (scheme). Ask only if `any_hh_member_insured` is `yes`."
+  fr: "Nombre de membres du ménage actuellement couverts par au moins un régime d'assurance maladie. Doit être compris entre 0 et la taille totale du ménage. Complète `any_hh_member_insured` (porte d'entrée) et `insurance_type` (type de régime). Ne poser que si `any_hh_member_insured` est `yes`."
+  es: "Número de miembros del hogar actualmente cubiertos por al menos un esquema de seguro de salud. Debe estar entre 0 y el tamaño total del hogar. Complementa `any_hh_member_insured` (entrada) y `insurance_type` (esquema). Preguntar solo si `any_hh_member_insured` es `yes`."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: health_access_insurance
+sensitivity: sensitive

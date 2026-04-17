@@ -1,0 +1,19 @@
+id: preferred_adult_curative_provider
+maturity: draft
+label:
+  en: "Preferred provider for adult curative care"
+  fr: "Prestataire préféré pour les soins curatifs adultes"
+  es: "Proveedor preferido para la atención curativa adulta"
+
+definition:
+  en: "Provider type the household would most likely consult first if an adult member were sick with a fever or common illness that is not an emergency. Captures the household's stated usual source of care — the 'usual source of care' domain tracked by the WHO People's Voice Survey. Reuses the `care-provider-type` vocabulary. Single-select; this is a general preference, not a specific episode. The form author should adapt phrasing to the local context."
+  fr: "Type de prestataire que le ménage consulterait probablement en premier si un membre adulte était malade avec une fièvre ou une affection courante qui ne soit pas une urgence. Saisit la source habituelle de soins déclarée par le ménage — le domaine « source habituelle de soins » suivi par l'enquête People's Voice Survey de l'OMS. Réutilise le vocabulaire `care-provider-type`. Sélection unique ; il s'agit d'une préférence générale, non d'un épisode spécifique. L'auteur du formulaire devrait adapter la formulation au contexte local."
+  es: "Tipo de proveedor que el hogar consultaría probablemente primero si un miembro adulto estuviera enfermo con fiebre o una afección común que no sea una emergencia. Capta la fuente habitual de atención declarada por el hogar — el dominio 'fuente habitual de atención' rastreado por la People's Voice Survey de la OMS. Reutiliza el vocabulario `care-provider-type`. Selección única; se trata de una preferencia general, no de un episodio específico. El autor del formulario debe adaptar la redacción al contexto local."
+
+type: string
+cardinality: single
+core: true
+vocabulary: care-provider-type
+references: null
+category: health_access_provider_preference
+sensitivity: sensitive

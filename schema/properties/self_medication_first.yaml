@@ -1,0 +1,19 @@
+id: self_medication_first
+maturity: draft
+label:
+  en: "Household tries self-medication or home remedies before formal care"
+  fr: "Le ménage essaie l'automédication ou les remèdes maison avant les soins formels"
+  es: "El hogar prueba automedicación o remedios caseros antes de la atención formal"
+
+definition:
+  en: "Whether the household usually tries home remedies or self-medication before seeking formal health care, captured on a four-level ordinal scale (`self-medication-frequency`). Self-medication as a first resort delays formal care-seeking and is a behavioral complement to the `pharmacy` code in `care-provider-type`."
+  fr: "Si le ménage essaie habituellement des remèdes maison ou l'automédication avant de chercher des soins formels, saisi sur une échelle ordinale à quatre niveaux (`self-medication-frequency`). L'automédication comme premier recours retarde la recherche de soins formels et constitue un complément comportemental au code `pharmacy` du vocabulaire `care-provider-type`."
+  es: "Si el hogar suele probar remedios caseros o automedicación antes de buscar atención formal, capturado en una escala ordinal de cuatro niveles (`self-medication-frequency`). La automedicación como primer recurso retrasa la búsqueda de atención formal y es un complemento conductual al código `pharmacy` en el vocabulario `care-provider-type`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: self-medication-frequency
+references: null
+category: health_access_provider_preference
+sensitivity: sensitive

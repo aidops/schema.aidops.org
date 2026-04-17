@@ -1,0 +1,19 @@
+id: large_cooking_pot_count
+maturity: draft
+label:
+  en: "Number of large cooking pots"
+  fr: "Nombre de grandes marmites"
+  es: "Número de ollas grandes"
+
+definition:
+  en: "Count of large cooking pots (with handle and lid, large enough to cook a full meal for the household) currently held by the household. Sphere Standard 2: one large-sized cooking pot with handle and pan/lid per household for a group of 4-5 persons."
+  fr: "Nombre de grandes marmites (avec poignée et couvercle, suffisamment grandes pour cuisiner un repas complet pour le ménage) actuellement détenues par le ménage. Norme Sphère 2 : une grande marmite avec poignée et poêle/couvercle par ménage pour un groupe de 4 à 5 personnes."
+  es: "Cuenta de ollas grandes (con mango y tapa, lo suficientemente grandes para cocinar una comida completa para el hogar) que tiene actualmente el hogar. Norma Esfera 2: una olla grande con mango y sartén/tapa por hogar para un grupo de 4-5 personas."
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: true
+sensitivity: standard

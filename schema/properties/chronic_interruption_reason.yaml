@@ -1,0 +1,19 @@
+id: chronic_interruption_reason
+maturity: draft
+label:
+  en: "Reason(s) for interruption of chronic treatment"
+  fr: "Raison(s) de l'interruption du traitement chronique"
+  es: "Razón(es) de la interrupción del tratamiento crónico"
+
+definition:
+  en: "Reason(s) the household member's chronic treatment was interrupted in the last 6 months, drawn from the shared `care-access-barrier` vocabulary. Multi-select because several barriers often coincide (e.g., stock-out of medicines plus cost). Ask only if `chronic_treatment_interrupted_6mo` is `yes`."
+  fr: "Raison(s) pour lesquelles le traitement chronique du membre du ménage a été interrompu au cours des 6 derniers mois, tirées du vocabulaire partagé `care-access-barrier`. Sélection multiple car plusieurs obstacles se combinent souvent (par exemple, rupture de stock de médicaments et coût). Ne poser que si `chronic_treatment_interrupted_6mo` est `yes`."
+  es: "Razón(es) por las que se interrumpió el tratamiento crónico del miembro del hogar en los últimos 6 meses, tomadas del vocabulario compartido `care-access-barrier`. Selección múltiple porque varias barreras a menudo coinciden (p. ej., desabastecimiento de medicamentos más costo). Preguntar solo si `chronic_treatment_interrupted_6mo` es `yes`."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: care-access-barrier
+references: null
+category: health_access_chronic
+sensitivity: sensitive

@@ -1,0 +1,19 @@
+id: nfi_received_past_3mo
+maturity: draft
+label:
+  en: "Household received NFIs in the past 3 months"
+  fr: "Ménage a reçu des ANA au cours des 3 derniers mois"
+  es: "Hogar recibió ANF en los últimos 3 meses"
+
+definition:
+  en: "Whether the household has received any non-food items (such as blankets, cooking sets, clothing, or tools) from an aid organisation in the past 3 months. Recall period: past 3 months. Based on the UNHCR Global NFI PDM framework: establish receipt of assistance before asking about adequacy and use."
+  fr: "Si le ménage a reçu des articles non alimentaires (tels que couvertures, kits de cuisine, vêtements ou outils) d'une organisation d'aide au cours des 3 derniers mois. Période de rappel : 3 derniers mois. Basé sur le cadre du Suivi Post-Distribution Mondial des ANA du HCR : établir la réception de l'aide avant d'interroger sur l'adéquation et l'utilisation."
+  es: "Si el hogar ha recibido artículos no alimentarios (como frazadas, juegos de cocina, ropa o herramientas) de una organización de ayuda en los últimos 3 meses. Período de recordatorio: últimos 3 meses. Basado en el marco del PDM Global de ANF del ACNUR: establecer la recepción de asistencia antes de preguntar sobre la adecuación y el uso."
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: nfi
+core: true
+sensitivity: standard

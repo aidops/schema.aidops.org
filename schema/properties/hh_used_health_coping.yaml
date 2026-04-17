@@ -1,0 +1,19 @@
+id: hh_used_health_coping
+maturity: draft
+label:
+  en: "Coping strategies used to pay for health care (12 months)"
+  fr: "Stratégies d'adaptation utilisées pour payer les soins de santé (12 mois)"
+  es: "Estrategias de afrontamiento usadas para pagar atención de salud (12 meses)"
+
+definition:
+  en: "Which coping strategies, if any, the household used in the last 12 months to finance out-of-pocket health expenses, drawn from the `health-payment-coping` vocabulary. Multi-select. Parallels the Reduced Coping Strategy Index for food security but is scoped to health-payment coping. Distressed coping (borrowing, asset sale) signals catastrophic health spending even when `oop_share_of_consumption` is not computed."
+  fr: "Les stratégies d'adaptation, le cas échéant, que le ménage a utilisées au cours des 12 derniers mois pour financer les dépenses de santé à sa charge, tirées du vocabulaire `health-payment-coping`. Sélection multiple. Parallèle à l'indice des stratégies d'adaptation alimentaire (rCSI), mais limité au paiement des soins de santé. L'adaptation en détresse (emprunt, vente d'actifs) signale des dépenses catastrophiques même lorsque `oop_share_of_consumption` n'est pas calculé."
+  es: "Qué estrategias de afrontamiento, si las hubo, usó el hogar en los últimos 12 meses para financiar gastos de bolsillo en salud, tomadas del vocabulario `health-payment-coping`. Selección múltiple. Paralelo al Índice Reducido de Estrategias de Afrontamiento (rCSI) pero limitado al pago de salud. El afrontamiento en estrés (préstamo, venta de activos) señala gasto catastrófico incluso cuando no se calcula `oop_share_of_consumption`."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: health-payment-coping
+references: null
+category: health_access_coping
+sensitivity: sensitive

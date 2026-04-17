@@ -1,0 +1,19 @@
+id: clothing_bedding_sufficient
+maturity: draft
+label:
+  en: "Clothing and bedding are sufficient"
+  fr: "Vêtements et literie suffisants"
+  es: "Ropa y cama suficientes"
+
+definition:
+  en: "Household self-report of whether it currently has sufficient clothing and bedding items for all members. Self-report proxy complementing the objective count and condition items under Sphere Standard 1. Discordance between this item and the computed sphere_clothing_pass derived score indicates under- or over-reporting of need."
+  fr: "Auto-déclaration du ménage sur le fait de disposer actuellement d'articles vestimentaires et de literie suffisants pour tous ses membres. Indicateur auto-déclaré complémentant les items objectifs de dénombrement et d'état de la Norme Sphère 1. Une discordance entre cet item et le score dérivé sphere_clothing_pass indique une sous- ou sur-déclaration des besoins."
+  es: "Auto-reporte del hogar sobre si tiene actualmente artículos de ropa y cama suficientes para todos sus miembros. Indicador auto-reportado que complementa los ítems objetivos de conteo y condición de la Norma Esfera 1. Una discordancia entre este ítem y el puntaje derivado sphere_clothing_pass indica subreporte o sobrerreporte de necesidades."
+
+type: string
+cardinality: single
+vocabulary: yes-no-partial
+references: null
+category: nfi
+core: true
+sensitivity: standard

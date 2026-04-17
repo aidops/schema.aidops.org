@@ -1,0 +1,28 @@
+id: who-pvs-2023
+title: "Measuring People's Views on Health System Performance: Design and Development of the People's Voice Survey"
+short_title: WHO People's Voice Survey
+publisher: "QuEST Network / PLOS Medicine"
+year: 2023
+type: guidance_publication
+domain: humanitarian
+uri: "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004294"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthAccessProfile
+  vocabularies:
+    - care-satisfaction-5
+    - care-coverage-extent
+    - suitability-5-level
+    - insurance-practical-access
+    - wait-time-category
+  properties:
+    - hh_member_needed_care_30d
+    - hh_member_sought_care_30d
+    - care_satisfaction
+    - preferred_adult_curative_provider
+    - facility_open_hours_suitable
+    - typical_wait_time_at_facility
+    - coping_skipped_care_cost

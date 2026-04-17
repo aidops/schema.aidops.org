@@ -1,0 +1,25 @@
+id: unhcr-nfi-pdm-2025
+title: "Global NFI Post-Distribution Monitoring Household Survey"
+short_title: "UNHCR Global NFI PDM"
+publisher: "UNHCR / Global Shelter Cluster"
+year: 2025
+version: "2025 revision"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unhcr.org/handbooks/assessment/sites/assessment/files/2025-09/Global_NFI_PDM_HH_Survey.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - NFIProfile
+  vocabularies: []
+  properties:
+    - blankets_condition
+    - clothing_bedding_sufficient
+    - cooking_utensils_sufficient
+    - stove_fuel_lighting_sufficient
+    - tools_equipment_sufficient
+    - nfi_overall_sufficient
+    - nfi_unmet_needs_priority
+    - nfi_received_past_3mo

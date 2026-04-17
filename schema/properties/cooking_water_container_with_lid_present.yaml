@@ -1,0 +1,19 @@
+id: cooking_water_container_with_lid_present
+maturity: draft
+label:
+  en: "Covered water container for cooking present"
+  fr: "Récipient à eau couvert pour la cuisine présent"
+  es: "Recipiente de agua cubierto para la cocina presente"
+
+definition:
+  en: "Whether the household has a covered container (such as a bucket with lid or a large pot) used for storing water for cooking and drinking. Sphere Standard 2: two water containers (10-20 litre capacity) for transportation and storage, food-grade plastic. This item captures the cooking-use water storage vessel; the water-carrying jerry can is recorded separately as water_jerrycan_count. Coordinate with WASHAssessmentProfile water_storage_container_covered if both profiles are collected in the same visit."
+  fr: "Si le ménage dispose d'un récipient couvert (tel qu'un seau avec couvercle ou une grande marmite) utilisé pour stocker l'eau pour la cuisine et la boisson. Norme Sphère 2 : deux récipients d'eau (capacité de 10 à 20 litres) pour le transport et le stockage, en plastique alimentaire. Cet item consigne le récipient de stockage d'eau à usage culinaire ; le jerrycan de transport d'eau est consigné séparément dans water_jerrycan_count. Coordonner avec water_storage_container_covered de WASHAssessmentProfile si les deux profils sont collectés lors de la même visite."
+  es: "Si el hogar tiene un recipiente con tapa (como una cubeta con tapa o una olla grande) usado para almacenar agua para cocinar y beber. Norma Esfera 2: dos recipientes de agua (capacidad de 10-20 litros) para el transporte y almacenamiento, de plástico apto para alimentos. Este ítem registra el recipiente de almacenamiento de agua para uso culinario; el bidón para transporte de agua se registra por separado en water_jerrycan_count. Coordinar con water_storage_container_covered de WASHAssessmentProfile si se recolectan ambos perfiles en la misma visita."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: nfi
+core: true
+sensitivity: standard

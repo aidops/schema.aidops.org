@@ -1,0 +1,65 @@
+id: health-insurance-type
+maturity: draft
+label:
+  en: Health Insurance Type
+  fr: "Type d'assurance maladie"
+  es: "Tipo de seguro de salud"
+definition:
+  en: "Type of health insurance or social health protection scheme that covers one or more household members. Multi-select: a single household may have members covered by different schemes. Types follow the WHO health financing taxonomy (prepaid public / private commercial / community / employer-based) and the DHS INSHHANY variable. Community-Based Health Insurance (CBHI, e.g., mutuelles de santé) is a distinct category from national statutory schemes and is common in low-income settings."
+  fr: "Type d'assurance maladie ou de régime de protection sociale en santé qui couvre un ou plusieurs membres du ménage. Sélection multiple : un même ménage peut avoir des membres couverts par différents régimes. Les types suivent la taxonomie de financement de la santé de l'OMS (prépaiement public / assurance commerciale privée / mutuelle communautaire / lié à l'employeur) et la variable INSHHANY du DHS. L'Assurance Maladie à Base Communautaire (CBHI, par exemple les mutuelles de santé) est une catégorie distincte des régimes statutaires nationaux et est courante dans les contextes à faible revenu."
+  es: "Tipo de seguro de salud o esquema de protección social en salud que cubre a uno o más miembros del hogar. Selección múltiple: un mismo hogar puede tener miembros cubiertos por diferentes esquemas. Los tipos siguen la taxonomía de financiamiento en salud de la OMS (prepago público / aseguramiento comercial privado / comunitario / vinculado al empleador) y la variable INSHHANY del DHS. El Seguro de Salud de Base Comunitaria (CBHI, p. ej., mutuelles de santé) es una categoría distinta a los esquemas estatutarios nacionales y es frecuente en contextos de bajos ingresos."
+values:
+  - code: national_statutory
+    label:
+      en: National statutory scheme
+      fr: "Régime statutaire national"
+      es: "Esquema estatutario nacional"
+    definition:
+      en: "A government-mandated health insurance or social health protection scheme covering the population by law (e.g., national health insurance scheme (NHIS), national social security health fund)."
+      fr: "Un régime d'assurance maladie ou de protection sociale en santé imposé par le gouvernement couvrant la population par la loi (par exemple, régime national d'assurance maladie (NHIS), caisse nationale de sécurité sociale en santé)."
+      es: "Un esquema de seguro de salud o protección social en salud obligatorio por el gobierno que cubre a la población por ley (p. ej., esquema nacional de seguro de salud (NHIS), caja nacional de seguridad social en salud)."
+  - code: private_commercial
+    label:
+      en: Private commercial insurance
+      fr: "Assurance commerciale privée"
+      es: "Seguro comercial privado"
+    definition:
+      en: "A voluntary premium-based insurance product sold by a private or for-profit insurer."
+      fr: "Un produit d'assurance volontaire à base de primes vendu par un assureur privé ou à but lucratif."
+      es: "Un producto de seguro voluntario basado en primas vendido por una aseguradora privada o con fines de lucro."
+  - code: community_based_mutualist
+    label:
+      en: Community-based or mutualist scheme
+      fr: "Mutuelle communautaire"
+      es: "Esquema comunitario o mutualista"
+    definition:
+      en: "A locally organized, member-financed mutual health insurance scheme not mandated by the state. Includes mutuelles de santé and community health funds."
+      fr: "Un régime d'assurance maladie mutualiste organisé localement et financé par les membres, non imposé par l'État. Inclut les mutuelles de santé et les caisses communautaires de santé."
+      es: "Un esquema mutual de seguro de salud organizado localmente y financiado por los miembros, no obligatorio por el Estado. Incluye mutuelles de santé y cajas comunitarias de salud."
+  - code: employer_based
+    label:
+      en: Employer-based scheme
+      fr: "Régime lié à l'employeur"
+      es: "Esquema vinculado al empleador"
+    definition:
+      en: "Health insurance provided as an employment benefit by a public or private employer."
+      fr: "Assurance maladie fournie comme avantage lié à l'emploi par un employeur public ou privé."
+      es: "Seguro de salud ofrecido como prestación laboral por un empleador público o privado."
+  - code: ngo_or_donor_subsidized
+    label:
+      en: NGO or donor-subsidized coverage
+      fr: "Couverture subventionnée par une ONG ou un bailleur"
+      es: "Cobertura subvencionada por ONG o donante"
+    definition:
+      en: "Health coverage provided by an NGO, humanitarian organization, or donor program (e.g., free-care card, voucher scheme)."
+      fr: "Couverture sanitaire fournie par une ONG, une organisation humanitaire ou un programme de bailleur de fonds (par exemple, carte de gratuité, programme de bons)."
+      es: "Cobertura sanitaria proporcionada por una ONG, organización humanitaria o programa de donante (p. ej., tarjeta de gratuidad, esquema de vales)."
+  - code: other
+    label:
+      en: Other
+      fr: "Autre"
+      es: "Otro"
+    definition:
+      en: "Another scheme type not captured above."
+      fr: "Un autre type de régime non couvert ci-dessus."
+      es: "Otro tipo de esquema no cubierto anteriormente."

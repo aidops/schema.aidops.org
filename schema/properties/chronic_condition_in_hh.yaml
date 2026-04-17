@@ -1,0 +1,19 @@
+id: chronic_condition_in_hh
+maturity: draft
+label:
+  en: "Any household member has a diagnosed chronic condition"
+  fr: "Un membre du ménage a une affection chronique diagnostiquée"
+  es: "Algún miembro del hogar tiene una condición crónica diagnosticada"
+
+definition:
+  en: "Whether any household member currently has a diagnosed chronic health condition requiring continuous treatment (e.g., hypertension, diabetes, HIV, TB, asthma, epilepsy, chronic mental illness, cancer). Gateway item for the chronic-continuity module. `dont_know` is retained as a distinct response."
+  fr: "Si un membre du ménage a actuellement une affection chronique diagnostiquée nécessitant un traitement continu (par exemple hypertension, diabète, VIH, tuberculose, asthme, épilepsie, maladie mentale chronique, cancer). Question porte d'entrée du module de continuité des soins pour affections chroniques. « dont_know » est conservé comme réponse distincte."
+  es: "Si algún miembro del hogar tiene actualmente una condición crónica diagnosticada que requiera tratamiento continuo (p. ej., hipertensión, diabetes, VIH, tuberculosis, asma, epilepsia, enfermedad mental crónica, cáncer). Ítem de entrada al módulo de continuidad de atención crónica. `dont_know` se mantiene como respuesta distinta."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: health_access_chronic
+sensitivity: sensitive

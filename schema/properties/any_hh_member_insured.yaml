@@ -1,0 +1,19 @@
+id: any_hh_member_insured
+maturity: draft
+label:
+  en: "Any household member covered by health insurance"
+  fr: "Un membre du ménage couvert par une assurance maladie"
+  es: "Algún miembro del hogar cubierto por seguro de salud"
+
+definition:
+  en: "Whether any member of the household is currently covered by a health insurance scheme of any kind. Household-level gateway item that matches the DHS INSHHANY variable ('Whether a member of the household is covered by health insurance'). `dont_know` is retained as a valid distinct response."
+  fr: "Si un membre du ménage est actuellement couvert par un régime d'assurance maladie de quelque type que ce soit. Question porte d'entrée au niveau du ménage qui correspond à la variable INSHHANY du DHS (« Si un membre du ménage est couvert par une assurance maladie »). « dont_know » est conservé comme réponse valide distincte."
+  es: "Si algún miembro del hogar está actualmente cubierto por un esquema de seguro de salud de cualquier tipo. Ítem de entrada a nivel del hogar que coincide con la variable INSHHANY del DHS ('Si un miembro del hogar está cubierto por un seguro de salud'). `dont_know` se mantiene como respuesta válida distinta."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: health_access_insurance
+sensitivity: sensitive

@@ -1,0 +1,19 @@
+id: sphere_cooking_pass
+maturity: draft
+label:
+  en: "Sphere Standard 2 (cooking and eating utensils) pass"
+  fr: "Norme Sphère 2 (ustensiles de cuisine et de repas) satisfaite"
+  es: "Norma Esfera 2 (utensilios de cocina y de comer) cumplida"
+
+definition:
+  en: "Whether the household meets the Sphere Standard 2 (cooking and eating utensils) minimum threshold. Derived as: large_cooking_pot_count >= 1 AND kitchen_knife_present = true AND plates_count >= household_size AND cups_count >= household_size. Objective-threshold enumerator-observation score, distinct from the self-report cooking_utensils_sufficient item."
+  fr: "Si le ménage satisfait au seuil minimal de la Norme Sphère 2 (ustensiles de cuisine et de repas). Dérivé comme : large_cooking_pot_count >= 1 ET kitchen_knife_present = vrai ET plates_count >= household_size ET cups_count >= household_size. Score d'observation de l'enquêteur au seuil objectif, distinct de l'item auto-déclaré cooking_utensils_sufficient."
+  es: "Si el hogar cumple con el umbral mínimo de la Norma Esfera 2 (utensilios de cocina y de comer). Derivado como: large_cooking_pot_count >= 1 Y kitchen_knife_present = verdadero Y plates_count >= household_size Y cups_count >= household_size. Puntaje de observación del encuestador al umbral objetivo, distinto del ítem auto-reportado cooking_utensils_sufficient."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: standard
