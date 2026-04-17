@@ -384,6 +384,30 @@ derived_child_protection:
     fr: "Indicateurs de protection de l'enfance dérivés"
     es: "Indicadores derivados de protección infantil"
 
+gbv_risk:
+  label:
+    en: "GBV Risk — Environmental and WASH Infrastructure"
+    fr: "Risque VBG — Infrastructure environnementale et EHA"
+    es: "Riesgo VBG — Infraestructura ambiental y WASH"
+
+gbv_services:
+  label:
+    en: "GBV Services and Awareness"
+    fr: "Services VBG et sensibilisation"
+    es: "Servicios VBG y conocimiento"
+
+gbv_safety_perception:
+  label:
+    en: "GBV Safety Perception"
+    fr: "Perception de sécurité VBG"
+    es: "Percepción de seguridad VBG"
+
+gbv_risk_factors:
+  label:
+    en: "GBV Risk Factors"
+    fr: "Facteurs de risque VBG"
+    es: "Factores de riesgo VBG"
+
 mental_health:
   label:
     en: Mental Health

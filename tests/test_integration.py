@@ -44,12 +44,13 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 17 concepts; update this count when adding/removing AidOps concepts
+        # AidOps has exactly 18 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
         # Batch 3 adds: MentalHealthProfile
         # Batch 3 adds: ChildProtectionProfile
-        assert len(result["concepts"]) == 17, (
-            f"Expected 17 concepts, got {len(result['concepts'])}: "
+        # Phase 6 adds: GBVRiskProfile
+        assert len(result["concepts"]) == 18, (
+            f"Expected 18 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
@@ -61,6 +62,7 @@ class TestRealSchema:
             "DwellingDamageProfile",
             "EducationProfile",
             "EnergyAccessProfile",
+            "GBVRiskProfile",
             "GenderEmpowermentProfile",
             "HealthAccessProfile",
             "MaternalNewbornHealthProfile",
@@ -80,8 +82,10 @@ class TestRealSchema:
         #   MentalHealthProfile:   +27 properties (21 items + 6 derived scores)
         #   ChildProtectionProfile:+44 properties (41 items + 3 derived scores)
         #   CP Batch +41 props, +6 vocabs (plus 1 extra vocab for fgm-continuation-belief → +7 in build count)
-        assert len(result["properties"]) == 576, (
-            f"Expected 576 properties, got {len(result['properties'])}"
+        # Phase 6 delta (Batch 3 baseline was 576):
+        #   GBVRiskProfile: +15 properties (14 net-new + 1 new specific_need_adolescent_girl_at_risk)
+        assert len(result["properties"]) == 591, (
+            f"Expected 591 properties, got {len(result['properties'])}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
@@ -93,8 +97,13 @@ class TestRealSchema:
         #   ChildProtectionProfile: +7 vocabularies (6 specified + fgm-continuation-belief
         #                           added to satisfy the no-vocabulary:null-on-enumerated rule)
         # Post-Batch-3 PS-promotion: -1 (care-provider-type moved to PublicSchema)
-        assert len(result["vocabularies"]) == 138, (
-            f"Expected 138 vocabularies, got {len(result['vocabularies'])}"
+        # Phase 6 delta (Batch 3 baseline was 138):
+        #   GBVRiskProfile: +6 vocabularies (4 specified: site-path-lighting, route-safety-3,
+        #                   safety-perception-3, gbv-service-type; + 2 added to satisfy the
+        #                   no-vocabulary:null-on-enumerated rule: latrine-sex-segregation,
+        #                   latrine-lock-status)
+        assert len(result["vocabularies"]) == 144, (
+            f"Expected 144 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema
@@ -137,6 +146,15 @@ class TestRealSchema:
             concept = result["concepts"][cid]
             supertypes = concept.get("supertypes", [])
             assert "Profile" in supertypes, f"{cid} missing Profile supertype"
+
+
+    # PS-promotion candidates from Phase 6 (GBVRiskProfile):
+    # None of the six new GBVRiskProfile vocabs are candidates for PS promotion at this time.
+    # All carry humanitarian-specific `standard:` metadata tied to AO-resident bibs
+    # (iasc-gbv-guidelines-2015, gbvaor-risk-analysis-2021, irc-safety-audit-2013,
+    # unfpa-gbv-minimum-standards-2019, oxfam-lighting-wash-gbv-2018). Per the PS-promotion
+    # pass retrospective, moving vocabs to PS before their evidence bibs are in PS creates
+    # informs_drift failures. Deferred pending PS bib additions for these sources.
 
 
 class TestCrossReferences:

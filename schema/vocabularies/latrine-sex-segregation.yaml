@@ -1,0 +1,47 @@
+id: latrine-sex-segregation
+maturity: draft
+label:
+  en: "Latrine sex segregation status"
+  fr: "Statut de ségrégation des latrines par sexe"
+  es: "Estado de segregación de letrinas por sexo"
+definition:
+  en: "Whether the latrines or toilets used by the household are physically separated and marked for men and women. Based on Sphere 2018 WASH Standard 3.1 and IRC Safety Audit Tool (2013)."
+  fr: "Si les latrines ou toilettes utilisées par le ménage sont séparées physiquement et indiquées pour les hommes et les femmes. Fondé sur la Norme WASH Sphère 2018 3.1 et l'outil d'audit de sécurité IRC (2013)."
+  es: "Si las letrinas o baños utilizados por el hogar están física y claramente separados y señalizados para hombres y mujeres. Basado en la Norma WASH Esfera 2018 3.1 y la Herramienta de Auditoría de Seguridad del IRC (2013)."
+values:
+  - code: "yes"
+    label:
+      en: "Yes — communal latrines are sex-segregated"
+      fr: "Oui — les latrines communales sont séparées par sexe"
+      es: "Sí — las letrinas comunales están segregadas por sexo"
+    definition:
+      en: "Communal or shared latrines are clearly marked and spatially separated by sex."
+      fr: "Les latrines communales ou partagées sont clairement signalisées et séparées physiquement par sexe."
+      es: "Las letrinas comunales o compartidas están claramente señalizadas y separadas físicamente por sexo."
+  - code: "no"
+    label:
+      en: "No — communal latrines are not sex-segregated"
+      fr: "Non — les latrines communales ne sont pas séparées par sexe"
+      es: "No — las letrinas comunales no están segregadas por sexo"
+    definition:
+      en: "Communal or shared latrines are not separated by sex."
+      fr: "Les latrines communales ou partagées ne sont pas séparées par sexe."
+      es: "Las letrinas comunales o compartidas no están separadas por sexo."
+  - code: household_private
+    label:
+      en: "Household has a private latrine"
+      fr: "Le ménage dispose d'une latrine privée"
+      es: "El hogar tiene una letrina privada"
+    definition:
+      en: "Household has its own private latrine or toilet not shared with others; sex segregation is not applicable."
+      fr: "Le ménage dispose de ses propres latrines ou toilettes privées non partagées avec d'autres ; la ségrégation par sexe ne s'applique pas."
+      es: "El hogar tiene su propia letrina o baño privado no compartido con otros; la segregación por sexo no aplica."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent does not know whether the latrines are sex-segregated."
+      fr: "Le répondant ne sait pas si les latrines sont séparées par sexe."
+      es: "El encuestado no sabe si las letrinas están segregadas por sexo."

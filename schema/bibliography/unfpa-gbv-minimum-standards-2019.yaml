@@ -1,0 +1,23 @@
+id: unfpa-gbv-minimum-standards-2019
+title: "The Inter-Agency Minimum Standards for Gender-Based Violence in Emergencies Programming"
+short_title: "UNFPA GBV Minimum Standards 2019"
+publisher: "UNFPA (lead), with UNICEF, UNHCR, IRC, WHO, UN Women"
+year: 2019
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unfpa.org/minimum-standards"
+access: open
+status: active
+
+informs:
+  concepts:
+    - GBVRiskProfile
+  vocabularies:
+    - gbv-service-type
+  properties:
+    - specific_need_adolescent_girl_at_risk
+    - gbv_referral_services_known
+    - gbv_referral_service_type_known
+    - wgss_presence_known
+    - wgss_distance_minutes
+    - gbv_community_mobilizer_present

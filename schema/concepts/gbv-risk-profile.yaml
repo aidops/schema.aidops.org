@@ -1,0 +1,179 @@
+id: GBVRiskProfile
+label:
+  en: GBV Risk Profile
+  fr: "Profil de risque VBG"
+  es: "Perfil de riesgo VBG"
+maturity: draft
+
+definition:
+  en: >
+    A household-level record of environmental, service-availability, and
+    caregiver-reported indicators that constitute risk factors for
+    gender-based violence (GBV) in humanitarian settings. This profile covers
+    (1) at-risk group composition flags indicating household-level
+    vulnerability concentrations, (2) physical environment indicators for
+    WASH and site infrastructure (latrine sex segregation, locking,
+    lighting, and distance), (3) service availability and awareness
+    indicators (GBV referral services, Women and Girls Safe Spaces, and
+    community mobilisation), and (4) household-reported perceived safety
+    on-site and at distribution points. All items are asked at household
+    level by general-purpose enumerators without specialist GBV training.
+    This profile explicitly does NOT capture GBV incident reports or
+    individual experience of violence; those require a specialist instrument
+    with private female-respondent conditions, specialised training, and
+    safety referral pathways (see future IndividualGBVExperienceProfile).
+    Based on IASC GBV Guidelines (2015), GBV AoR Risk Analysis Guidance
+    (2021), IRC Safety Audit Tool (2013), UNFPA Minimum Standards (2019),
+    Sphere 2018, and Oxfam/WEDC Lighting, WASH and GBV evidence review (2018).
+  fr: >
+    Un enregistrement au niveau du ménage des indicateurs environnementaux,
+    de disponibilité des services et déclarés par les soignants constituant
+    des facteurs de risque de violence basée sur le genre (VBG) dans les
+    contextes humanitaires. Ce profil couvre (1) les indicateurs de
+    composition des groupes à risque signalant des concentrations de
+    vulnérabilité au niveau du ménage, (2) les indicateurs d'environnement
+    physique pour les infrastructures EHA et du site (ségrégation par sexe
+    des latrines, verrouillage, éclairage et distance), (3) les indicateurs
+    de disponibilité et de connaissance des services (services d'orientation
+    VBG, espaces sûrs pour femmes et filles, mobilisation communautaire), et
+    (4) la sécurité perçue déclarée par le ménage sur le site et aux points
+    de distribution. Tous les items sont posés au niveau du ménage par des
+    enquêteurs généralistes sans formation spécialisée VBG. Ce profil ne
+    capture EXPLICITEMENT PAS les rapports d'incidents VBG ni les expériences
+    individuelles de violence ; ceux-ci nécessitent un instrument spécialisé
+    avec des conditions d'entretien privées avec une répondante de sexe
+    féminin, une formation spécialisée et des filières d'orientation vers
+    des services de sécurité (voir le futur IndividualGBVExperienceProfile).
+    Fondé sur les Directives VBG IASC (2015), le Guide d'analyse des risques
+    VBG AoR (2021), l'outil d'audit de sécurité IRC (2013), les Normes
+    minimales UNFPA (2019), Sphère 2018 et la synthèse de preuves Oxfam/WEDC
+    sur l'éclairage, l'EHA et la VBG (2018).
+  es: >
+    Un registro a nivel del hogar de indicadores ambientales, de
+    disponibilidad de servicios y reportados por cuidadores que constituyen
+    factores de riesgo para la violencia basada en género (VBG) en contextos
+    humanitarios. Este perfil cubre (1) indicadores de composición de grupos
+    en riesgo que señalan concentraciones de vulnerabilidad a nivel del hogar,
+    (2) indicadores de entorno físico para la infraestructura WASH y del sitio
+    (segregación por sexo de letrinas, cerrojos, alumbrado y distancia),
+    (3) indicadores de disponibilidad y conocimiento de servicios (servicios
+    de derivación VBG, espacios seguros para mujeres y niñas, movilización
+    comunitaria), y (4) seguridad percibida reportada por el hogar en el sitio
+    y en los puntos de distribución. Todos los ítems se preguntan a nivel del
+    hogar por encuestadores de propósito general sin formación especializada
+    en VBG. Este perfil explícitamente NO captura informes de incidentes VBG
+    ni experiencias individuales de violencia; estos requieren un instrumento
+    especializado con condiciones de entrevista privada con una encuestada de
+    sexo femenino, formación especializada y vías de derivación a servicios
+    de seguridad (ver futuro IndividualGBVExperienceProfile). Basado en las
+    Directrices VBG IASC (2015), la Guía de Análisis de Riesgos VBG AoR
+    (2021), la Herramienta de Auditoría de Seguridad del IRC (2013),
+    los Estándares Mínimos de UNFPA (2019), Esfera 2018 y la revisión de
+    evidencia Oxfam/WEDC sobre Alumbrado, WASH y VBG (2018).
+
+# Net-new properties owned by this profile.
+# REUSE properties from ShelterAdequacyProfile and WASHAssessmentProfile:
+#   lockable_door, privacy_women_girls, separate_sleeping_spaces_sex
+#   (ShelterAdequacyProfile);
+#   mhm_privacy_available, sanitation_facility_private, distance_safe_water_minutes
+#   (WASHAssessmentProfile / ShelterAdequacyProfile).
+# These cross-profile properties are listed in property_groups below but are
+# NOT re-declared in this properties list (owned by their source profiles).
+properties:
+  # Group 1: At-risk group flags
+  - specific_need_single_female_head
+  - specific_need_unaccompanied_minor
+  - specific_need_adolescent_girl_at_risk
+  - specific_need_disability
+  # Group 2: Environmental risk — WASH and site infrastructure
+  - latrine_sex_segregated
+  - latrine_has_lock
+  - latrine_lighting_path
+  - latrine_distance_from_shelter_adequate
+  - water_collection_safety_perceived
+  - firewood_collection_safety_perceived
+  # Group 3: Service availability and awareness
+  - gbv_referral_services_known
+  - gbv_referral_service_type_known
+  - wgss_presence_known
+  - wgss_distance_minutes
+  - gbv_community_mobilizer_present
+  # Group 4: Perceived safety
+  - site_feels_safe_daytime
+  - site_feels_safe_nighttime
+  - distribution_point_feels_safe
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: specific_needs
+    properties:
+      - specific_need_single_female_head
+      - specific_need_unaccompanied_minor
+      - specific_need_adolescent_girl_at_risk
+      - specific_need_disability
+  - category: gbv_risk_factors
+    properties:
+      # Latrine infrastructure (net-new)
+      - latrine_sex_segregated
+      - latrine_has_lock
+      - latrine_lighting_path
+      - latrine_distance_from_shelter_adequate
+      # Route safety (net-new)
+      - water_collection_safety_perceived
+      - firewood_collection_safety_perceived
+      # Cross-profile reuse from ShelterAdequacyProfile
+      - lockable_door
+      - privacy_women_girls
+      - separate_sleeping_spaces_sex
+      # Cross-profile reuse from WASHAssessmentProfile / ShelterAdequacyProfile
+      - mhm_privacy_available
+      - sanitation_facility_private
+      - distance_safe_water_minutes
+  - category: gbv_services
+    properties:
+      - gbv_referral_services_known
+      - gbv_referral_service_type_known
+      - wgss_presence_known
+      - wgss_distance_minutes
+      - gbv_community_mobilizer_present
+  - category: gbv_safety_perception
+    properties:
+      - site_feels_safe_daytime
+      - site_feels_safe_nighttime
+      - distribution_point_feels_safe
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (GBV risk screening)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A household GBV risk screening serializes as a QuestionnaireResponse. The at-risk group flags map most naturally as FHIR Flags or RiskAssessment resources on the Household/Group subject. There is no GBV-specific FHIR profile in core R4; the GBV AoR does not publish a FHIR implementation guide as of 2026."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS,
+    OpenSPP, openIMIS, DCI Social Registry) carry a household-level GBV
+    environmental risk screening module in core. GBV risk data in those
+    systems, where present at all, is confined to case-management records
+    (survivors, incident types) rather than population-level household risk
+    indicators. The zero v1 convergence reflects the humanitarian-operations
+    origin of this profile; GBV risk screening is deployed in MSNA and
+    REACH household surveys, IOM DTM protection rounds, and UNHCR NARE
+    assessments, not in social-protection registries.

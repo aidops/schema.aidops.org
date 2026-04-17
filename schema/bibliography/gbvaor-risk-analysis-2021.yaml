@@ -1,0 +1,31 @@
+id: gbvaor-risk-analysis-2021
+title: "Data Collection for GBV Risk Mitigation (including Household Surveys sub-document)"
+short_title: "GBV AoR Risk Analysis Guidance 2021"
+publisher: "GBV Area of Responsibility (GBV AoR) — UNICEF / UNFPA co-leads"
+year: 2021
+type: guidance_publication
+domain: humanitarian
+uri: "https://gbvguidelines.org/wp/wp-content/uploads/2021/08/GBV-Risk-Analysis-Guidance-2021.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - GBVRiskProfile
+  vocabularies:
+    - route-safety-3
+    - safety-perception-3
+    - site-path-lighting
+    - gbv-service-type
+  properties:
+    - water_collection_safety_perceived
+    - firewood_collection_safety_perceived
+    - gbv_referral_services_known
+    - gbv_referral_service_type_known
+    - wgss_presence_known
+    - wgss_distance_minutes
+    - gbv_community_mobilizer_present
+    - site_feels_safe_daytime
+    - site_feels_safe_nighttime
+    - distribution_point_feels_safe
+    - latrine_lighting_path

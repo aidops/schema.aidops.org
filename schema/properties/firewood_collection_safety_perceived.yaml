@@ -1,0 +1,19 @@
+id: firewood_collection_safety_perceived
+maturity: draft
+label:
+  en: "Perceived safety when collecting firewood or fuel"
+  fr: "Sécurité perçue lors de la collecte de bois de feu ou de combustible"
+  es: "Seguridad percibida al recolectar leña o combustible"
+
+definition:
+  en: "Household-level perceived safety of members traveling outside the settlement to collect firewood or other fuel, based on the past 7 days. Firewood collection — predominantly by women and girls — is a canonical high-risk activity in displacement settings (IASC GBV Guidelines 2015; UNFPA Minimum Standards 2019; IRC Safety Audit Tool 2013). Women traveling outside the settlement perimeter for fuel face acute GBV risk. Framed at household level to avoid requiring a female respondent. Skip if household uses only purchased or distributed fuel without collection (from EnergyAccessProfile if available)."
+  fr: "Sécurité perçue au niveau du ménage des membres se déplaçant hors du camp pour collecter du bois de feu ou d'autres combustibles, basée sur les 7 derniers jours. La collecte de bois de feu — principalement par les femmes et les filles — est une activité canonique à risque élevé dans les contextes de déplacement. Les femmes se déplaçant hors du périmètre du camp pour du combustible font face à un risque VBG aigu. Formulée au niveau du ménage pour éviter d'exiger une répondante de sexe féminin. Ignorer si le ménage n'utilise que du combustible acheté ou distribué sans collecte."
+  es: "Seguridad percibida a nivel del hogar de los miembros que se desplazan fuera del asentamiento para recolectar leña u otro combustible, basada en los últimos 7 días. La recolección de leña — predominantemente por mujeres y niñas — es una actividad de alto riesgo canónica en contextos de desplazamiento. Las mujeres que viajan fuera del perímetro del asentamiento para buscar combustible enfrentan riesgo agudo de VBG. Formulada a nivel del hogar para evitar requerir una encuestada de sexo femenino. Omitir si el hogar solo usa combustible comprado o distribuido sin recolección."
+
+type: string
+cardinality: single
+vocabulary: route-safety-3
+references: null
+category: gbv_risk
+core: false
+sensitivity: sensitive

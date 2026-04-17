@@ -1,0 +1,20 @@
+id: oxfam-lighting-wash-gbv-2018
+title: "Lighting, WASH and Gender-Based Violence in Camp Settings"
+short_title: "Oxfam/WEDC Lighting WASH GBV 2018"
+publisher: "GBV AoR (published); Oxfam / WEDC (research)"
+year: 2018
+type: guidance_publication
+domain: humanitarian
+uri: "https://gbvguidelines.org/wp/wp-content/uploads/2018/05/Lighting-WASH-and-GBV-in-camp-settings.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - GBVRiskProfile
+  vocabularies:
+    - site-path-lighting
+  properties:
+    - latrine_lighting_path
+    - latrine_distance_from_shelter_adequate
+    - site_feels_safe_nighttime

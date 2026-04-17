@@ -1,0 +1,18 @@
+id: latrine_distance_from_shelter_adequate
+maturity: draft
+label:
+  en: "Walking time from shelter to latrine (minutes, one way)"
+  fr: "Temps de marche de l'abri aux latrines (minutes, sens unique)"
+  es: "Tiempo de caminata del refugio a la letrina (minutos, ida)"
+
+definition:
+  en: "Time in minutes to walk from the shelter to the nearest latrine or toilet, one way. A value of 0 means the facility is on premises. Sphere 2018 WASH Standard 3.1 key indicator specifies that no dwelling should be more than 50 metres from the nearest toilet; at normal walking pace approximately 5 km/h, 50 metres corresponds to approximately 1 minute. Distance beyond the Sphere threshold is a GBV risk amplifier: poorly lit latrines at unsafe distances create hostile conditions, particularly for women and girls. IASC GBV Guidelines (2015) and Oxfam/WEDC lighting review (2018) both identify latrine distance as a core risk factor."
+  fr: "Temps en minutes pour marcher de l'abri à la latrine ou aux toilettes les plus proches, sens unique. Une valeur de 0 signifie que l'installation est sur place. L'indicateur clé de la Norme WASH Sphère 2018 3.1 précise qu'aucun logement ne doit se trouver à plus de 50 mètres des toilettes les plus proches ; à une allure de marche normale d'environ 5 km/h, 50 mètres correspond à environ 1 minute. Une distance supérieure au seuil Sphère est un facteur amplificateur du risque VBG : des latrines mal éclairées à des distances non sécurisées créent des conditions défavorables, particulièrement pour les femmes et les filles."
+  es: "Tiempo en minutos para caminar desde el refugio hasta la letrina o baño más cercano, en un sentido. Un valor de 0 significa que la instalación está en las instalaciones. El indicador clave de la Norma WASH Esfera 2018 3.1 especifica que ninguna vivienda debe estar a más de 50 metros del baño más cercano; a una velocidad normal de caminata de aproximadamente 5 km/h, 50 metros corresponde a aproximadamente 1 minuto. Una distancia superior al umbral de Esfera es un factor amplificador del riesgo de VBG: letrinas mal iluminadas a distancias inseguras crean condiciones hostiles, particularmente para mujeres y niñas."
+
+type: integer
+cardinality: single
+references: null
+category: gbv_risk
+core: false
+sensitivity: sensitive

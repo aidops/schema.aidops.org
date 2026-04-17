@@ -1,0 +1,19 @@
+id: gbv_referral_services_known
+maturity: draft
+label:
+  en: "GBV referral services: awareness"
+  fr: "Services d'orientation VBG : connaissance"
+  es: "Servicios de derivación VBG: conocimiento"
+
+definition:
+  en: "Whether the household head or adult household member is aware of where someone in the area could go to report a problem or get help if a woman or girl was harmed or threatened. This is an awareness measure only; does NOT probe individual experience, use of services, or disclosure. Enumerators must not prompt with specific service names. GBV AoR MSNA data (Ukraine 2022) found 63% of households unaware of GBV services — service awareness is the standard household-level indicator. UNFPA Minimum Standards (2019) Standard 5 identifies awareness of safe referral pathways as a minimum programme output."
+  fr: "Si le chef de ménage ou un adulte du ménage sait où quelqu'un dans la zone pourrait aller pour signaler un problème ou obtenir de l'aide si une femme ou une fille a été blessée ou menacée. Il s'agit uniquement d'une mesure de connaissance ; ne sonde PAS l'expérience individuelle, l'utilisation des services ou la divulgation. Les enquêteurs ne doivent pas suggérer des noms de services spécifiques. Les normes minimales UNFPA (2019), Norme 5, identifient la connaissance des filières de référence sûres comme un résultat minimum du programme."
+  es: "Si la persona jefa del hogar o un adulto del hogar sabe dónde podría acudir alguien en la zona para reportar un problema u obtener ayuda si una mujer o niña fue dañada o amenazada. Es solo una medida de conocimiento; NO indaga sobre la experiencia individual, el uso de servicios o la divulgación. Los encuestadores no deben sugerir nombres de servicios específicos. Los Estándares Mínimos de UNFPA (2019), Estándar 5, identifican el conocimiento de las vías de derivación seguras como un resultado mínimo del programa."
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: gbv_services
+core: false
+sensitivity: sensitive

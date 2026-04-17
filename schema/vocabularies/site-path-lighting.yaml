@@ -1,0 +1,47 @@
+id: site-path-lighting
+maturity: draft
+label:
+  en: "Site path lighting adequacy"
+  fr: "Adéquation de l'éclairage des voies du site"
+  es: "Adecuación del alumbrado de las vías del asentamiento"
+definition:
+  en: "Household-reported assessment of nighttime lighting adequacy on paths to key infrastructure (latrines, water points, health posts). Based on IRC Safety Audit Tool (2013) and Oxfam/WEDC Lighting, WASH and GBV in Camp Settings (2018)."
+  fr: "Évaluation déclarée par le ménage de l'adéquation de l'éclairage nocturne sur les voies menant aux infrastructures clés (latrines, points d'eau, postes de santé). Fondée sur l'outil d'audit de sécurité de l'IRC (2013) et le rapport Oxfam/WEDC sur l'éclairage, l'EHA et la VBG dans les camps (2018)."
+  es: "Evaluación reportada por el hogar sobre la adecuación del alumbrado nocturno en las vías hacia infraestructuras clave (letrinas, puntos de agua, puestos de salud). Basada en la Herramienta de Auditoría de Seguridad del IRC (2013) y el informe Oxfam/WEDC sobre Alumbrado, WASH y VBG en asentamientos (2018)."
+values:
+  - code: adequate
+    label:
+      en: "Adequate lighting"
+      fr: "Éclairage adéquat"
+      es: "Alumbrado adecuado"
+    definition:
+      en: "Path is lit sufficiently that a person can walk safely without an additional light source."
+      fr: "La voie est suffisamment éclairée pour qu'une personne puisse marcher en sécurité sans source de lumière supplémentaire."
+      es: "La vía está suficientemente iluminada para que una persona pueda caminar con seguridad sin fuente de luz adicional."
+  - code: partial
+    label:
+      en: "Partial or inconsistent lighting"
+      fr: "Éclairage partiel ou irrégulier"
+      es: "Alumbrado parcial o irregular"
+    definition:
+      en: "Some lighting exists but is insufficient, intermittent, or covers only part of the path."
+      fr: "Un éclairage existe mais il est insuffisant, intermittent ou ne couvre qu'une partie de la voie."
+      es: "Existe algún alumbrado pero es insuficiente, intermitente o cubre solo parte de la vía."
+  - code: none
+    label:
+      en: "No lighting"
+      fr: "Aucun éclairage"
+      es: "Sin alumbrado"
+    definition:
+      en: "No artificial light on the path; complete darkness at night."
+      fr: "Aucune lumière artificielle sur la voie ; obscurité complète la nuit."
+      es: "No hay luz artificial en la vía; oscuridad completa por la noche."
+  - code: not_applicable
+    label:
+      en: "Not applicable"
+      fr: "Sans objet"
+      es: "No aplica"
+    definition:
+      en: "Path does not exist (e.g., facility is adjacent to shelter) or facility is unused at night."
+      fr: "La voie n'existe pas (p. ex., l'installation est adjacente à l'abri) ou l'installation n'est pas utilisée la nuit."
+      es: "La vía no existe (p. ej., la instalación es adyacente al refugio) o la instalación no se usa por la noche."

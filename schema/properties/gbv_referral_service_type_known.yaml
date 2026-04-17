@@ -1,0 +1,19 @@
+id: gbv_referral_service_type_known
+maturity: draft
+label:
+  en: "GBV referral service type known"
+  fr: "Type de service d'orientation VBG connu"
+  es: "Tipo de servicio de derivación VBG conocido"
+
+definition:
+  en: "The type(s) of GBV response service the household head is aware of. Asked only when gbv_referral_services_known = yes. Allow respondent to name what they know; do not show a list. Multiple selections permitted to capture composite awareness. Based on UNFPA Minimum Standards (2019) service typology and GBV AoR referral pathway mapping."
+  fr: "Le(s) type(s) de service de réponse VBG dont le chef de ménage a connaissance. Posée uniquement lorsque gbv_referral_services_known = oui. Permettre au répondant de nommer ce qu'il sait ; ne pas montrer de liste. Sélections multiples autorisées pour saisir la connaissance composite. Fondé sur la typologie des services des Normes minimales UNFPA (2019) et la cartographie des filières d'orientation du GBV AoR."
+  es: "El/los tipo(s) de servicio de respuesta VBG del que tiene conocimiento la persona jefa del hogar. Se pregunta solo cuando gbv_referral_services_known = sí. Permitir que el encuestado nombre lo que sabe; no mostrar una lista. Se permiten selecciones múltiples para capturar el conocimiento compuesto. Basado en la tipología de servicios de los Estándares Mínimos de UNFPA (2019) y el mapeo de rutas de derivación del GBV AoR."
+
+type: string
+cardinality: multiple
+vocabulary: gbv-service-type
+references: null
+category: gbv_services
+core: false
+sensitivity: sensitive

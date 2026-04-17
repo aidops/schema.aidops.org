@@ -1,0 +1,19 @@
+id: gbv_community_mobilizer_present
+maturity: draft
+label:
+  en: "GBV community mobilizer active in area"
+  fr: "Mobilisateur communautaire VBG actif dans la zone"
+  es: "Movilizador comunitario VBG activo en la zona"
+
+definition:
+  en: "Whether, in the past month, someone came to the household's area to provide information about safety or services available to women and girls. Household-level proxy for programme coverage of GBV community mobilisation and outreach. Based on UNFPA Minimum Standards (2019) Standards 5 and 9 (community engagement). Presence of mobilizers is a programme-monitoring indicator for prevention programming reach. The question is household-level and does not require individual disclosure."
+  fr: "Si, au cours du dernier mois, quelqu'un est venu dans la zone du ménage pour fournir des informations sur la sécurité ou les services disponibles pour les femmes et les filles. Indicateur proxy au niveau du ménage de la couverture programmatique de la mobilisation communautaire VBG et de la sensibilisation. Fondé sur les Normes minimales UNFPA (2019), Normes 5 et 9 (engagement communautaire). La présence de mobilisateurs est un indicateur de suivi de programme pour la portée de la programmation de prévention. La question est au niveau du ménage et ne requiert pas de divulgation individuelle."
+  es: "Si, en el último mes, alguien vino a la zona del hogar para brindar información sobre seguridad o servicios disponibles para mujeres y niñas. Indicador proxy a nivel del hogar de la cobertura programática de la movilización comunitaria VBG y el alcance. Basado en los Estándares Mínimos de UNFPA (2019), Estándares 5 y 9 (participación comunitaria). La presencia de movilizadores es un indicador de seguimiento de programas para el alcance de la programación de prevención. La pregunta es a nivel del hogar y no requiere divulgación individual."
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: gbv_services
+core: false
+sensitivity: sensitive

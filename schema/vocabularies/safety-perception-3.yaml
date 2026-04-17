@@ -1,0 +1,47 @@
+id: safety-perception-3
+maturity: draft
+label:
+  en: "Safety perception (3 levels)"
+  fr: "Perception de sécurité (3 niveaux)"
+  es: "Percepción de seguridad (3 niveles)"
+definition:
+  en: "Three-level perceived safety scale for movement within a site or at service points. Framing is gender-specific ('for women and girls') to capture gender-differentiated risk. Based on GBV AoR (2021) guidance on safety perception framing in humanitarian household surveys."
+  fr: "Échelle de sécurité perçue à trois niveaux pour les déplacements au sein d'un site ou aux points de service. La formulation est spécifique au genre ('pour les femmes et les filles') pour saisir le risque différencié selon le sexe. Fondée sur les orientations du GBV AoR (2021) sur la formulation de la perception de sécurité dans les enquêtes ménages humanitaires."
+  es: "Escala de seguridad percibida de tres niveles para el desplazamiento dentro de un asentamiento o en puntos de servicio. La formulación es específica por género ('para mujeres y niñas') para capturar el riesgo diferenciado por género. Basada en la orientación del GBV AoR (2021) sobre la formulación de percepción de seguridad en encuestas de hogares humanitarias."
+values:
+  - code: generally_safe
+    label:
+      en: "Generally safe"
+      fr: "Généralement sûr"
+      es: "Generalmente seguro"
+    definition:
+      en: "Women and girls can generally move freely without concern in this context."
+      fr: "Les femmes et les filles peuvent généralement se déplacer librement sans crainte dans ce contexte."
+      es: "Las mujeres y niñas generalmente pueden moverse libremente sin preocupación en este contexto."
+  - code: sometimes_unsafe
+    label:
+      en: "Sometimes unsafe"
+      fr: "Parfois peu sûr"
+      es: "A veces inseguro"
+    definition:
+      en: "Women and girls sometimes feel or are unsafe; depends on time, crowd, or specific locations within the context."
+      fr: "Les femmes et les filles se sentent ou sont parfois peu en sécurité ; dépend de l'heure, de la foule ou d'endroits spécifiques dans le contexte."
+      es: "Las mujeres y niñas a veces se sienten o están inseguras; depende de la hora, la multitud o ubicaciones específicas dentro del contexto."
+  - code: generally_unsafe
+    label:
+      en: "Generally unsafe"
+      fr: "Généralement peu sûr"
+      es: "Generalmente inseguro"
+    definition:
+      en: "Women and girls generally cannot move freely without concern in this context."
+      fr: "Les femmes et les filles ne peuvent généralement pas se déplacer librement sans crainte dans ce contexte."
+      es: "Las mujeres y niñas generalmente no pueden moverse libremente sin preocupación en este contexto."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent does not know or cannot assess the safety situation for women and girls in this context."
+      fr: "Le répondant ne sait pas ou ne peut pas évaluer la situation de sécurité pour les femmes et les filles dans ce contexte."
+      es: "El encuestado no sabe o no puede evaluar la situación de seguridad para mujeres y niñas en este contexto."
