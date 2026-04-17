@@ -1,0 +1,33 @@
+id: kroenke-phq9-2001
+title: "The PHQ-9: Validity of a Brief Depression Severity Measure"
+short_title: "PHQ-9 validation"
+publisher: "Journal of General Internal Medicine (Society of General Internal Medicine)"
+authors:
+  - Kurt Kroenke
+  - Robert L. Spitzer
+  - Janet B. W. Williams
+year: 2001
+type: guidance_publication
+domain: humanitarian
+uri: "https://doi.org/10.1046/j.1525-1497.2001.016009606.x"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MentalHealthProfile
+  vocabularies:
+    - phq9-frequency-4pt
+    - phq9-severity-band
+  properties:
+    - phq9_1
+    - phq9_2
+    - phq9_3
+    - phq9_4
+    - phq9_5
+    - phq9_6
+    - phq9_7
+    - phq9_8
+    - phq9_9
+    - phq9_sum
+    - phq9_severity_band

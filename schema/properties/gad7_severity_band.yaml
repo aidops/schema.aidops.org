@@ -1,0 +1,19 @@
+id: gad7_severity_band
+maturity: draft
+label:
+  en: "GAD-7 severity band"
+  fr: "Niveau de sévérité GAD-7"
+  es: "Nivel de severidad GAD-7"
+
+definition:
+  en: "The anxiety severity band derived from gad7_sum using Spitzer et al. (2006) cut-points: none/minimal (0-4), mild (5-9), moderate (10-14), severe (15-21)."
+  fr: "Le niveau de sévérité de l'anxiété dérivé de gad7_sum en utilisant les seuils de Spitzer et al. (2006) : aucune/minimale (0-4), légère (5-9), modérée (10-14), sévère (15-21)."
+  es: "El nivel de severidad de la ansiedad derivado de gad7_sum usando los puntos de corte de Spitzer et al. (2006): ninguna/mínima (0-4), leve (5-9), moderada (10-14), severa (15-21)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: gad7-severity-band
+references: null
+category: mental_health
+sensitivity: sensitive

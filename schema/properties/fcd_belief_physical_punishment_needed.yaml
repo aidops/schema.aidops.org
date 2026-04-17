@@ -1,0 +1,19 @@
+id: fcd_belief_physical_punishment_needed
+maturity: draft
+label:
+  en: "Caregiver belief — physical punishment is needed to raise a child"
+  fr: "Croyance du soignant — la punition physique est nécessaire pour élever un enfant"
+  es: "Creencia del cuidador — el castigo físico es necesario para criar a un niño"
+definition:
+  en: "Whether the caregiver believes that in order to bring up, raise, or educate a child properly, the child needs to be physically punished. MICS 6 FCD5. Caregiver attitudinal item, distinct from the FCD2 behavioural items. Convergence note: this is the child-specific normative item; it partially overlaps the pro-WEAI IPV attitude items (weai_ipv_*) that measure wife-beating attitudes, but it targets adult-to-child violence and is retained as part of the coherent MICS FCD instrument rather than duplicated."
+  fr: "Si le soignant croit que pour élever, éduquer ou former un enfant correctement, l'enfant doit être puni physiquement. MICS 6 FCD5. Item attitudinal du soignant, distinct des items comportementaux FCD2. Note de convergence : il s'agit de l'item normatif spécifique à l'enfant ; il chevauche partiellement les items d'attitudes VPI pro-WEAI (weai_ipv_*) qui mesurent les attitudes envers la violence conjugale, mais il cible la violence adulte-enfant et est conservé dans le cadre de l'instrument cohérent MICS FCD plutôt que dupliqué."
+  es: "Si el cuidador cree que para criar, educar o formar a un niño correctamente, el niño debe ser castigado físicamente. MICS 6 FCD5. Ítem actitudinal del cuidador, distinto de los ítems conductuales FCD2. Nota de convergencia: este es el ítem normativo específico del niño; se superpone parcialmente con los ítems de actitudes VPI pro-WEAI (weai_ipv_*) que miden actitudes hacia la violencia conyugal, pero apunta a la violencia adulto-niño y se mantiene como parte del instrumento coherente MICS FCD en lugar de duplicarse."
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: child_discipline
+age_applicability:
+  - adult
+sensitivity: restricted

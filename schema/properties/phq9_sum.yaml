@@ -1,0 +1,19 @@
+id: phq9_sum
+maturity: draft
+label:
+  en: "PHQ-9 total score"
+  fr: "Score total PHQ-9"
+  es: "Puntaje total PHQ-9"
+
+definition:
+  en: "The PHQ-9 total depression severity score, calculated as the sum of the numeric values of items 1 through 9 (each 0-3). Range 0-27. A score of 10 or higher is the standard screening cut-off for probable major depressive disorder. Because this sum incorporates the value of phq9_9 (suicidal ideation), it inherits sensitivity: restricted and must not appear in default analytics exports."
+  fr: "Le score total de sévérité de la dépression PHQ-9, calculé comme la somme des valeurs numériques des items 1 à 9 (chacun de 0 à 3). Plage 0 à 27. Un score de 10 ou plus est le seuil de dépistage standard pour un épisode dépressif majeur probable. Cette somme incorporant la valeur de phq9_9 (idéation suicidaire), elle hérite de la sensibilité restricted et ne doit pas figurer dans les exports analytiques par défaut."
+  es: "El puntaje total de severidad de depresión del PHQ-9, calculado como la suma de los valores numéricos de los ítems 1 a 9 (cada uno de 0 a 3). Rango 0 a 27. Un puntaje de 10 o más es el punto de corte de tamizaje estándar para un trastorno depresivo mayor probable. Dado que esta suma incorpora el valor de phq9_9 (ideación suicida), hereda sensitivity: restricted y no debe aparecer en exportaciones analíticas por defecto."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: mental_health
+sensitivity: restricted

@@ -1,0 +1,20 @@
+id: fcd_hit_limb
+maturity: draft
+label:
+  en: "Discipline — hit or slapped on hand, arm, or leg"
+  fr: "Discipline — frappé ou giflé sur la main, le bras ou la jambe"
+  es: "Disciplina — golpeó o abofeteó en mano, brazo o pierna"
+definition:
+  en: "Whether any adult in the household hit or slapped the selected child on the hand, arm, or leg, in the past month. MICS 6 FCD2 item J. Physical punishment (non-severe) category. Included in the CP.3 violent-discipline composite."
+  fr: "Si un adulte du ménage a frappé ou giflé l'enfant sélectionné sur la main, le bras ou la jambe, au cours du mois écoulé. MICS 6 FCD2 item J. Catégorie de punition physique (non sévère). Inclus dans le composite CP.3 de discipline violente."
+  es: "Si algún adulto del hogar golpeó o abofeteó al niño seleccionado en la mano, brazo o pierna, en el último mes. MICS 6 FCD2 ítem J. Categoría de castigo físico (no severo). Incluido en el compuesto CP.3 de disciplina violenta."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: child_discipline
+age_applicability:
+  - child_2_4
+  - child_5_17
+sensitivity: restricted

@@ -1,0 +1,17 @@
+id: cm_children_under_18_married
+maturity: draft
+label:
+  en: "Any under-18 in household married or in union"
+  fr: "Un mineur dans le ménage marié ou en union"
+  es: "Algún menor en el hogar casado o en unión"
+definition:
+  en: "Household-level flag: whether any person in the household under the age of 18 is currently married or living with a partner as if married. Not a verbatim MICS item; derivable from Person.age and Person.marital_status in the household roster (HL) when available. MICS 6 measures child marriage retrospectively via the MA module on women/men 15-49; this profile carries only the household-level flag. Recommend: derive from the household roster if available; ask as fallback. SDG 5.3.1 metadata covers both formal marriage and informal union equally."
+  fr: "Indicateur au niveau ménage : s'il y a, dans le ménage, une personne de moins de 18 ans actuellement mariée ou vivant avec un partenaire comme si elle était mariée. Pas un item verbatim MICS ; dérivable de Person.age et Person.marital_status dans le roster du ménage (HL) lorsque disponible. MICS 6 mesure le mariage d'enfants rétrospectivement via le module MA pour les femmes/hommes 15-49 ; ce profil ne porte que l'indicateur ménage. Recommandation : dériver du roster si disponible ; poser la question en repli. Les métadonnées ODD 5.3.1 couvrent à la fois le mariage formel et l'union informelle."
+  es: "Indicador a nivel de hogar: si hay alguna persona en el hogar menor de 18 años actualmente casada o viviendo con una pareja como si estuviera casada. No es un ítem verbatim MICS; derivable de Person.age y Person.marital_status en el roster del hogar (HL) cuando esté disponible. MICS 6 mide el matrimonio infantil retrospectivamente mediante el módulo MA en mujeres/hombres 15-49; este perfil solo lleva el indicador a nivel de hogar. Recomendación: derivar del roster si está disponible; preguntar como respaldo. Los metadatos ODS 5.3.1 cubren tanto el matrimonio formal como la unión informal."
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: child_marriage
+sensitivity: sensitive

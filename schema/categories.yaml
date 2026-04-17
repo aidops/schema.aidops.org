@@ -347,3 +347,63 @@ health_access_chronic:
     en: "Health Access: Chronic Condition Continuity"
     fr: "Accès aux soins : Continuité des affections chroniques"
     es: "Acceso a la salud: Continuidad de afecciones crónicas"
+
+birth_registration:
+  label:
+    en: Birth Registration
+    fr: "Enregistrement des naissances"
+    es: "Registro de nacimientos"
+
+child_labour:
+  label:
+    en: Child Labour
+    fr: "Travail des enfants"
+    es: "Trabajo infantil"
+
+child_discipline:
+  label:
+    en: Child Discipline
+    fr: "Discipline de l'enfant"
+    es: "Disciplina del niño"
+
+child_marriage:
+  label:
+    en: Child Marriage
+    fr: "Mariage d'enfants"
+    es: "Matrimonio infantil"
+
+fgm:
+  label:
+    en: "Female Genital Mutilation / Cutting"
+    fr: "Mutilations génitales féminines / excision"
+    es: "Mutilación genital femenina / ablación"
+
+derived_child_protection:
+  label:
+    en: Derived Child Protection Indicators
+    fr: "Indicateurs de protection de l'enfance dérivés"
+    es: "Indicadores derivados de protección infantil"
+
+mental_health:
+  label:
+    en: Mental Health
+    fr: "Santé mentale"
+    es: "Salud mental"
+
+whom5_items:
+  label:
+    en: "WHO-5 Well-Being Index items"
+    fr: "Items de l'Indice de bien-être WHO-5"
+    es: "Ítems del Índice de Bienestar WHO-5"
+
+phq9_items:
+  label:
+    en: "PHQ-9 depression screener items"
+    fr: "Items du dépistage de la dépression PHQ-9"
+    es: "Ítems del tamizaje de depresión PHQ-9"
+
+gad7_items:
+  label:
+    en: "GAD-7 anxiety screener items"
+    fr: "Items du dépistage de l'anxiété GAD-7"
+    es: "Ítems del tamizaje de ansiedad GAD-7"

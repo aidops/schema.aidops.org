@@ -1,0 +1,67 @@
+id: mics6-child-protection
+title: "MICS6 Child Protection Modules (Birth Registration, Child Labour, Child Discipline, Child Marriage, Female Genital Mutilation/Cutting)"
+short_title: MICS6 Child Protection
+publisher: UNICEF
+year: 2017
+type: guidance_publication
+domain: humanitarian
+uri: "https://mics.unicef.org/tools"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ChildProtectionProfile
+  vocabularies:
+    - birth-certificate-status
+    - discipline-method-category
+    - hazardous-work-type
+    - fgm-type
+    - fgm-performer
+    - child-marriage-union-type
+    - fgm-continuation-belief
+  properties:
+    - birth_certificate_seen
+    - birth_registered
+    - birth_registration_knowledge
+    - cl_econ_farm_animals
+    - cl_econ_family_business
+    - cl_econ_produce_sell
+    - cl_econ_other_income
+    - cl_economic_activity_hours
+    - cl_hazardous_heavy_loads
+    - cl_hazardous_dangerous_tools
+    - cl_hazard_dust_fumes
+    - cl_hazard_temperature
+    - cl_hazard_noise_vibration
+    - cl_hazard_heights
+    - cl_hazard_chemicals
+    - cl_hazard_other
+    - cl_fetch_water_hours
+    - cl_collect_firewood_hours
+    - cl_chores_hours
+    - fcd_took_away_privileges
+    - fcd_explained
+    - fcd_shouted
+    - fcd_redirected
+    - fcd_name_called
+    - fcd_shook
+    - fcd_spanked
+    - fcd_hit_body
+    - fcd_hit_head
+    - fcd_hit_limb
+    - fcd_beat_hard_repeatedly
+    - fcd_belief_physical_punishment_needed
+    - cm_children_under_18_married
+    - cm_child_marriage_union_type
+    - fgm_heard_of_practice
+    - fgm_woman_cut
+    - fgm_woman_age_at_cutting
+    - fgm_woman_type
+    - fgm_any_daughter_cut
+    - fgm_daughter_age_at_cutting
+    - fgm_daughter_performer
+    - fgm_intend_to_continue
+    - cl_mics_child_labour
+    - fcd_violent_discipline
+    - any_fgm_in_household

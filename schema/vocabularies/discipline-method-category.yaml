@@ -1,0 +1,47 @@
+id: discipline-method-category
+maturity: draft
+label:
+  en: "Discipline Method Category"
+  fr: "Catégorie de méthode de discipline"
+  es: "Categoría del método de disciplina"
+definition:
+  en: "MICS 6 FCD2 item category groupings used to compute the CP.3 violent-discipline indicator (SDG 16.2.1). Each FCD2 response item belongs to exactly one category. The canonical MICS violent-discipline indicator combines psychological_aggression + physical_punishment + severe_physical_punishment."
+  fr: "Regroupements par catégorie des items MICS 6 FCD2 utilisés pour calculer l'indicateur CP.3 de discipline violente (ODD 16.2.1). Chaque item FCD2 appartient à exactement une catégorie. L'indicateur canonique MICS de discipline violente combine psychological_aggression + physical_punishment + severe_physical_punishment."
+  es: "Agrupaciones por categoría de los ítems MICS 6 FCD2 usadas para calcular el indicador CP.3 de disciplina violenta (ODS 16.2.1). Cada ítem FCD2 pertenece exactamente a una categoría. El indicador canónico MICS de disciplina violenta combina psychological_aggression + physical_punishment + severe_physical_punishment."
+values:
+  - code: non_violent
+    label:
+      en: "Non-violent discipline"
+      fr: "Discipline non violente"
+      es: "Disciplina no violenta"
+    definition:
+      en: "Methods that do not involve physical or psychological aggression. FCD2 items A (took away privileges), B (explained), E (gave something else to do)."
+      fr: "Méthodes n'impliquant ni agression physique ni psychologique. Items FCD2 A (retiré privilèges), B (expliqué), E (donné autre chose à faire)."
+      es: "Métodos que no implican agresión física ni psicológica. Ítems FCD2 A (retiró privilegios), B (explicó), E (dio otra cosa que hacer)."
+  - code: psychological_aggression
+    label:
+      en: "Psychological aggression"
+      fr: "Agression psychologique"
+      es: "Agresión psicológica"
+    definition:
+      en: "Shouting, yelling, screaming, name-calling. FCD2 items D (shouted) and H (called dumb/lazy)."
+      fr: "Crier, hurler, injurier. Items FCD2 D (a crié) et H (l'a traité de bête/paresseux)."
+      es: "Gritar, chillar, insultar. Ítems FCD2 D (gritó) y H (llamó tonto/perezoso)."
+  - code: physical_punishment
+    label:
+      en: "Physical punishment (non-severe)"
+      fr: "Punition physique (non sévère)"
+      es: "Castigo físico (no severo)"
+    definition:
+      en: "Physical acts not classified as severe. FCD2 items C (shook), F (spanked on bottom with bare hand), J (hit on hand/arm/leg)."
+      fr: "Actes physiques non classés comme sévères. Items FCD2 C (secoué), F (fessée sur les fesses à main nue), J (frappé sur la main/le bras/la jambe)."
+      es: "Actos físicos no clasificados como severos. Ítems FCD2 C (sacudió), F (nalgada a mano abierta), J (golpeó en la mano/brazo/pierna)."
+  - code: severe_physical_punishment
+    label:
+      en: "Severe physical punishment"
+      fr: "Punition physique sévère"
+      es: "Castigo físico severo"
+    definition:
+      en: "Physical acts carrying high injury risk. FCD2 items G (hit with object), I (hit on face/head/ears), K (beat up repeatedly as hard as one could)."
+      fr: "Actes physiques à risque élevé de blessure. Items FCD2 G (frappé avec un objet), I (frappé au visage/tête/oreilles), K (battu à plusieurs reprises aussi fort que possible)."
+      es: "Actos físicos con alto riesgo de lesiones. Ítems FCD2 G (golpeó con objeto), I (golpeó en cara/cabeza/orejas), K (golpeó repetidamente lo más fuerte posible)."

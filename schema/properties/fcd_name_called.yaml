@@ -1,0 +1,20 @@
+id: fcd_name_called
+maturity: draft
+label:
+  en: "Discipline — called the child dumb, lazy, or similar name"
+  fr: "Discipline — traité l'enfant de bête, paresseux ou nom similaire"
+  es: "Disciplina — llamó al niño tonto, perezoso o nombre similar"
+definition:
+  en: "Whether any adult in the household called the selected child dumb, lazy, or another name like that, in the past month. MICS 6 FCD2 item H. Psychological aggression category. Included in the CP.3 violent-discipline composite."
+  fr: "Si un adulte du ménage a traité l'enfant sélectionné de bête, paresseux ou d'un autre nom du genre, au cours du mois écoulé. MICS 6 FCD2 item H. Catégorie d'agression psychologique. Inclus dans le composite CP.3 de discipline violente."
+  es: "Si algún adulto del hogar llamó al niño seleccionado tonto, perezoso u otro nombre por el estilo, en el último mes. MICS 6 FCD2 ítem H. Categoría de agresión psicológica. Incluido en el compuesto CP.3 de disciplina violenta."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: child_discipline
+age_applicability:
+  - child_2_4
+  - child_5_17
+sensitivity: sensitive

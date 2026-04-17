@@ -1,0 +1,19 @@
+id: cl_economic_activity_hours
+maturity: draft
+label:
+  en: "Total hours of economic activity (past 7 days)"
+  fr: "Total des heures d'activité économique (7 derniers jours)"
+  es: "Total de horas de actividad económica (últimos 7 días)"
+definition:
+  en: "Total hours the selected child aged 5-17 engaged in economic activity (the four CL1 activities combined) in the past 7 days. MICS 6 CL3. Integer 0-98 where 98 codes '98 or more hours'. Zero is valid when none of the CL1 items is yes. Used in the CP.2 age-banded hour thresholds (≥1 for 5-11; ≥14 for 12-14; ≥43 for 15-17) to flag child labour by excessive hours."
+  fr: "Total d'heures que l'enfant sélectionné âgé de 5 à 17 ans a consacrées à une activité économique (les quatre activités CL1 combinées) au cours des 7 derniers jours. MICS 6 CL3. Entier 0-98 où 98 code « 98 heures ou plus ». Zéro est valide si aucun des items CL1 n'est oui. Utilisé dans les seuils horaires par tranche d'âge de CP.2 (≥1 pour 5-11 ; ≥14 pour 12-14 ; ≥43 pour 15-17) pour signaler le travail des enfants par heures excessives."
+  es: "Total de horas que el niño seleccionado de 5 a 17 años dedicó a actividad económica (las cuatro actividades CL1 combinadas) en los últimos 7 días. MICS 6 CL3. Entero 0-98 donde 98 codifica «98 horas o más». Cero es válido cuando ninguno de los ítems CL1 es sí. Usado en los umbrales horarios por banda de edad de CP.2 (≥1 para 5-11; ≥14 para 12-14; ≥43 para 15-17) para señalar trabajo infantil por horas excesivas."
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: child_labour
+age_applicability:
+  - child_5_17
+sensitivity: sensitive

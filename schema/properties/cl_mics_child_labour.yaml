@@ -1,0 +1,19 @@
+id: cl_mics_child_labour
+maturity: draft
+label:
+  en: "Child labour per MICS/ILO definition (derived)"
+  fr: "Travail des enfants selon la définition MICS/OIT (dérivé)"
+  es: "Trabajo infantil según la definición MICS/OIT (derivado)"
+definition:
+  en: "Derived per-selected-child boolean: true if the randomly selected child aged 5-17 meets the MICS/ILO-UNICEF 2020 child-labour definition. The age-banded logic is: 5-11 → economic activity ≥1 hour/week OR household chores ≥21 hours/week OR any hazardous exposure/condition; 12-14 → economic activity ≥14 hours/week OR household chores ≥21 hours/week OR any hazardous exposure/condition; 15-17 → economic activity ≥43 hours/week OR any hazardous exposure/condition. Hazardous exposure means any of cl_hazardous_heavy_loads, cl_hazardous_dangerous_tools, or any cl_hazard_* is yes. Aggregates to the SDG 8.7.1 indicator at population level."
+  fr: "Booléen dérivé par enfant sélectionné : vrai si l'enfant tiré au sort âgé de 5 à 17 ans répond à la définition MICS/OIT-UNICEF 2020 du travail des enfants. La logique par tranche d'âge est : 5-11 → activité économique ≥1 heure/semaine OU tâches ménagères ≥21 heures/semaine OU toute exposition/condition dangereuse ; 12-14 → activité économique ≥14 heures/semaine OU tâches ménagères ≥21 heures/semaine OU toute exposition/condition dangereuse ; 15-17 → activité économique ≥43 heures/semaine OU toute exposition/condition dangereuse. L'exposition dangereuse signifie que l'un de cl_hazardous_heavy_loads, cl_hazardous_dangerous_tools ou l'un des cl_hazard_* est oui. Agrégé à l'indicateur ODD 8.7.1 au niveau de la population."
+  es: "Booleano derivado por niño seleccionado: verdadero si el niño seleccionado aleatoriamente de 5 a 17 años cumple la definición MICS/OIT-UNICEF 2020 de trabajo infantil. La lógica por banda de edad es: 5-11 → actividad económica ≥1 hora/semana O tareas del hogar ≥21 horas/semana O cualquier exposición/condición peligrosa; 12-14 → actividad económica ≥14 horas/semana O tareas del hogar ≥21 horas/semana O cualquier exposición/condición peligrosa; 15-17 → actividad económica ≥43 horas/semana O cualquier exposición/condición peligrosa. Exposición peligrosa significa que cualquiera de cl_hazardous_heavy_loads, cl_hazardous_dangerous_tools o cualquier cl_hazard_* es sí. Agregado al indicador ODS 8.7.1 a nivel poblacional."
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: derived_child_protection
+age_applicability:
+  - child_5_17
+sensitivity: restricted

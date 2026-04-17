@@ -1,0 +1,47 @@
+id: fgm-continuation-belief
+maturity: draft
+label:
+  en: "FGM/C Continuation Belief"
+  fr: "Croyance sur la continuation des MGF/E"
+  es: "Creencia sobre la continuación de MGF/A"
+definition:
+  en: "Whether the respondent believes FGM/C should continue, stop, or depends on circumstances. MICS 6 FG22 response set. Used to compute the UNFPA indicator 'percentage of women who believe FGM/C should continue' (numerator: continued)."
+  fr: "Si la répondante croit que les MGF/E devraient se poursuivre, cesser ou selon les circonstances. Ensemble de réponses MICS 6 FG22. Utilisé pour calculer l'indicateur UNFPA « pourcentage de femmes qui croient que les MGF/E devraient se poursuivre » (numérateur : continued)."
+  es: "Si la encuestada cree que la MGF/A debería continuar, detenerse o depender de las circunstancias. Conjunto de respuestas MICS 6 FG22. Usado para calcular el indicador UNFPA «porcentaje de mujeres que creen que MGF/A debería continuar» (numerador: continued)."
+values:
+  - code: continued
+    label:
+      en: "Should be continued"
+      fr: "Devrait se poursuivre"
+      es: "Debería continuar"
+    definition:
+      en: "The respondent believes the practice should continue."
+      fr: "La répondante croit que la pratique devrait se poursuivre."
+      es: "La encuestada cree que la práctica debería continuar."
+  - code: stopped
+    label:
+      en: "Should be stopped"
+      fr: "Devrait cesser"
+      es: "Debería detenerse"
+    definition:
+      en: "The respondent believes the practice should stop."
+      fr: "La répondante croit que la pratique devrait cesser."
+      es: "La encuestada cree que la práctica debería detenerse."
+  - code: depends
+    label:
+      en: "Depends on circumstances"
+      fr: "Dépend des circonstances"
+      es: "Depende de las circunstancias"
+    definition:
+      en: "The respondent's view depends on specific circumstances (e.g., health, cultural setting)."
+      fr: "L'opinion de la répondante dépend de circonstances spécifiques (p. ex. santé, contexte culturel)."
+      es: "La opinión de la encuestada depende de circunstancias específicas (p. ej., salud, entorno cultural)."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The respondent does not know or cannot decide."
+      fr: "La répondante ne sait pas ou ne peut décider."
+      es: "La encuestada no sabe o no puede decidir."

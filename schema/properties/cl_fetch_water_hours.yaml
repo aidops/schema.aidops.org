@@ -1,0 +1,19 @@
+id: cl_fetch_water_hours
+maturity: draft
+label:
+  en: "Hours fetching water for household (past 7 days)"
+  fr: "Heures passées à chercher de l'eau pour le ménage (7 derniers jours)"
+  es: "Horas acarreando agua para el hogar (últimos 7 días)"
+definition:
+  en: "Total hours the selected child aged 5-17 spent fetching water for the household in the past 7 days. MICS 6 CL7-CL8. Integer hours; include 0 if no time spent. Summed with cl_collect_firewood_hours and cl_chores_hours to form total household-chores hours used in the MICS/ILO 21-hour threshold (ages 5-14)."
+  fr: "Total d'heures que l'enfant sélectionné âgé de 5 à 17 ans a consacrées à chercher de l'eau pour le ménage au cours des 7 derniers jours. MICS 6 CL7-CL8. Heures entières ; inclure 0 si aucun temps consacré. Somme avec cl_collect_firewood_hours et cl_chores_hours pour former le total d'heures de tâches ménagères utilisé dans le seuil MICS/OIT de 21 heures (5-14 ans)."
+  es: "Total de horas que el niño seleccionado de 5 a 17 años dedicó a acarrear agua para el hogar en los últimos 7 días. MICS 6 CL7-CL8. Horas enteras; incluir 0 si no se dedicó tiempo. Se suma con cl_collect_firewood_hours y cl_chores_hours para formar el total de horas de tareas del hogar usado en el umbral MICS/OIT de 21 horas (5-14 años)."
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: child_labour
+age_applicability:
+  - child_5_17
+sensitivity: sensitive

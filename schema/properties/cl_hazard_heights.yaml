@@ -1,0 +1,19 @@
+id: cl_hazard_heights
+maturity: draft
+label:
+  en: "Work at heights"
+  fr: "Travail en hauteur"
+  es: "Trabajo en altura"
+definition:
+  en: "Whether the child performed economic activity at heights in the past 7 days. MICS 6 CL6 D. Asked only if any of the CL1 economic-activity items is yes. A yes flags hazardous work under the ILO/UNICEF 2020 child-labour definition."
+  fr: "Si l'enfant a exercé une activité économique en hauteur au cours des 7 derniers jours. MICS 6 CL6 D. Posé uniquement si l'un des items CL1 d'activité économique est oui. Un oui signale un travail dangereux selon la définition OIT/UNICEF 2020 du travail des enfants."
+  es: "Si el niño realizó actividad económica en altura en los últimos 7 días. MICS 6 CL6 D. Se pregunta solo si alguno de los ítems CL1 de actividad económica es sí. Un sí señala trabajo peligroso bajo la definición OIT/UNICEF 2020 de trabajo infantil."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: child_labour
+age_applicability:
+  - child_5_17
+sensitivity: sensitive

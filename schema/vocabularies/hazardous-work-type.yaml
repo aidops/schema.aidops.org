@@ -1,0 +1,65 @@
+id: hazardous-work-type
+maturity: draft
+label:
+  en: "Hazardous Work Type"
+  fr: "Type de travail dangereux"
+  es: "Tipo de trabajo peligroso"
+definition:
+  en: "Enumeration of hazard exposure types in MICS 6 CL6 A–X response options, used in the hazardous-work branch of the ILO/UNICEF 2020 child-labour definition. A child is considered exposed to hazardous work if any one of these conditions applies during economic activity in the past week. Reusable for adult occupational-safety analyses in a future decent-work profile."
+  fr: "Énumération des types d'exposition aux dangers dans les options de réponse MICS 6 CL6 A–X, utilisée dans la branche travail dangereux de la définition OIT/UNICEF 2020 du travail des enfants. Un enfant est considéré exposé à un travail dangereux si l'une de ces conditions s'applique pendant l'activité économique de la semaine écoulée. Réutilisable pour des analyses de santé et sécurité au travail adultes dans un futur profil travail décent."
+  es: "Enumeración de los tipos de exposición a peligros en las opciones de respuesta MICS 6 CL6 A–X, usada en la rama de trabajo peligroso de la definición OIT/UNICEF 2020 de trabajo infantil. Un niño se considera expuesto a trabajo peligroso si se aplica alguna de estas condiciones durante actividad económica en la semana pasada. Reutilizable para análisis de salud y seguridad ocupacional en adultos en un futuro perfil de trabajo decente."
+values:
+  - code: dust_fumes_gas
+    label:
+      en: "Dust, fumes, or gas"
+      fr: "Poussière, fumées ou gaz"
+      es: "Polvo, humos o gas"
+    definition:
+      en: "Exposure to dust, fumes, or gas. MICS 6 CL6 A."
+      fr: "Exposition à la poussière, aux fumées ou au gaz. MICS 6 CL6 A."
+      es: "Exposición a polvo, humos o gas. MICS 6 CL6 A."
+  - code: extreme_temperature_humidity
+    label:
+      en: "Extreme cold, heat, or humidity"
+      fr: "Froid, chaleur ou humidité extrêmes"
+      es: "Frío, calor o humedad extremos"
+    definition:
+      en: "Exposure to extreme cold, heat, or humidity. MICS 6 CL6 B."
+      fr: "Exposition au froid, à la chaleur ou à l'humidité extrêmes. MICS 6 CL6 B."
+      es: "Exposición a frío, calor o humedad extremos. MICS 6 CL6 B."
+  - code: noise_vibration
+    label:
+      en: "Loud noise or vibration"
+      fr: "Bruit fort ou vibration"
+      es: "Ruido fuerte o vibración"
+    definition:
+      en: "Exposure to loud noise or vibration. MICS 6 CL6 C."
+      fr: "Exposition à un bruit fort ou à une vibration. MICS 6 CL6 C."
+      es: "Exposición a ruido fuerte o vibración. MICS 6 CL6 C."
+  - code: work_at_heights
+    label:
+      en: "Work at heights"
+      fr: "Travail en hauteur"
+      es: "Trabajo en altura"
+    definition:
+      en: "Work at heights. MICS 6 CL6 D."
+      fr: "Travail en hauteur. MICS 6 CL6 D."
+      es: "Trabajo en altura. MICS 6 CL6 D."
+  - code: chemicals_pesticides_explosives
+    label:
+      en: "Chemicals, pesticides, or explosives"
+      fr: "Produits chimiques, pesticides ou explosifs"
+      es: "Productos químicos, pesticidas o explosivos"
+    definition:
+      en: "Work with chemicals (pesticides, glues, etc.) or explosives. MICS 6 CL6 E."
+      fr: "Travail avec des produits chimiques (pesticides, colles, etc.) ou des explosifs. MICS 6 CL6 E."
+      es: "Trabajo con productos químicos (pesticidas, pegamentos, etc.) o explosivos. MICS 6 CL6 E."
+  - code: other_unsafe_condition
+    label:
+      en: "Other unsafe condition"
+      fr: "Autre condition non sécuritaire"
+      es: "Otra condición insegura"
+    definition:
+      en: "Other things, processes, or conditions bad for health or safety. MICS 6 CL6 X (catch-all)."
+      fr: "Autres choses, processus ou conditions mauvais pour la santé ou la sécurité. MICS 6 CL6 X (catégorie résiduelle)."
+      es: "Otras cosas, procesos o condiciones malos para la salud o seguridad. MICS 6 CL6 X (categoría residual)."

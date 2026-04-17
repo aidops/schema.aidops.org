@@ -44,16 +44,19 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 15 concepts; update this count when adding/removing AidOps concepts
+        # AidOps has exactly 17 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
-        assert len(result["concepts"]) == 15, (
-            f"Expected 15 concepts, got {len(result['concepts'])}: "
+        # Batch 3 adds: MentalHealthProfile
+        # Batch 3 adds: ChildProtectionProfile
+        assert len(result["concepts"]) == 17, (
+            f"Expected 17 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
             "FoodSecurityProfile",
             "AnthropometricProfile",
             "ChildHealthProfile",
+            "ChildProtectionProfile",
             "DisplacementProfile",
             "DwellingDamageProfile",
             "EducationProfile",
@@ -61,6 +64,7 @@ class TestRealSchema:
             "GenderEmpowermentProfile",
             "HealthAccessProfile",
             "MaternalNewbornHealthProfile",
+            "MentalHealthProfile",
             "NFIProfile",
             "NutritionPracticesProfile",
             "ReproductiveHealthProfile",
@@ -72,16 +76,24 @@ class TestRealSchema:
         # Batch 2 delta (Batch 1 baseline was 443):
         #   HealthAccessProfile: +30 properties
         #   NFIProfile:          +32 properties (managed by NFI author)
-        assert len(result["properties"]) == 505, (
-            f"Expected 505 properties, got {len(result['properties'])}"
+        # Batch 3 delta (Batch 2 baseline was 505):
+        #   MentalHealthProfile:   +27 properties (21 items + 6 derived scores)
+        #   ChildProtectionProfile:+44 properties (41 items + 3 derived scores)
+        #   CP Batch +41 props, +6 vocabs (plus 1 extra vocab for fgm-continuation-belief → +7 in build count)
+        assert len(result["properties"]) == 576, (
+            f"Expected 576 properties, got {len(result['properties'])}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
         # Batch 2 delta (Batch 1 baseline was 114):
         #   HealthAccessProfile: +11 vocabularies
         #   NFIProfile:          +3 vocabularies (managed by NFI author)
-        assert len(result["vocabularies"]) == 128, (
-            f"Expected 128 vocabularies, got {len(result['vocabularies'])}"
+        # Batch 3 delta (Batch 2 baseline was 128):
+        #   MentalHealthProfile:    +4 vocabularies
+        #   ChildProtectionProfile: +7 vocabularies (6 specified + fgm-continuation-belief
+        #                           added to satisfy the no-vocabulary:null-on-enumerated rule)
+        assert len(result["vocabularies"]) == 139, (
+            f"Expected 139 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema

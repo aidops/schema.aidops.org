@@ -1,0 +1,19 @@
+id: fgm_woman_type
+maturity: draft
+label:
+  en: "Type of FGM/C performed on woman"
+  fr: "Type de MGF/E pratiquée sur la femme"
+  es: "Tipo de MGF/A practicada a la mujer"
+definition:
+  en: "Classification of the type of FGM/C performed on the woman respondent. MICS 6 FG6 / FG7 combined into a single typology category. Asked only if fgm_woman_cut = yes. Uses the fgm-type vocab which maps approximately to WHO Type I-IV. See UNFPA 2021 compendium."
+  fr: "Classification du type de MGF/E pratiquée sur la femme répondante. MICS 6 FG6 / FG7 combinés en une catégorie typologique unique. Posé uniquement si fgm_woman_cut = oui. Utilise le vocabulaire fgm-type correspondant approximativement au Type I-IV OMS. Voir le compendium UNFPA 2021."
+  es: "Clasificación del tipo de MGF/A practicada a la mujer encuestada. MICS 6 FG6 / FG7 combinados en una sola categoría tipológica. Se pregunta solo si fgm_woman_cut = sí. Usa el vocabulario fgm-type que corresponde aproximadamente a los Tipos I-IV OMS. Véase el compendio UNFPA 2021."
+type: string
+cardinality: single
+core: false
+vocabulary: fgm-type
+references: null
+category: fgm
+age_applicability:
+  - adult
+sensitivity: restricted

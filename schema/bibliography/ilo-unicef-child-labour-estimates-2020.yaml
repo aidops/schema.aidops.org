@@ -1,0 +1,34 @@
+id: ilo-unicef-child-labour-estimates-2020
+title: "Child Labour: Global Estimates 2020, Trends and the Road Forward"
+short_title: ILO-UNICEF Child Labour 2020
+publisher: "International Labour Organization and UNICEF"
+year: 2021
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ilo.org/publications/major-publications/child-labour-global-estimates-2020-trends-and-road-forward"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ChildProtectionProfile
+  vocabularies:
+    - hazardous-work-type
+  properties:
+    - cl_econ_farm_animals
+    - cl_econ_family_business
+    - cl_econ_produce_sell
+    - cl_econ_other_income
+    - cl_economic_activity_hours
+    - cl_hazardous_heavy_loads
+    - cl_hazardous_dangerous_tools
+    - cl_hazard_dust_fumes
+    - cl_hazard_temperature
+    - cl_hazard_noise_vibration
+    - cl_hazard_heights
+    - cl_hazard_chemicals
+    - cl_hazard_other
+    - cl_fetch_water_hours
+    - cl_collect_firewood_hours
+    - cl_chores_hours
+    - cl_mics_child_labour

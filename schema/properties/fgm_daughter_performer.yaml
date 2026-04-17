@@ -1,0 +1,21 @@
+id: fgm_daughter_performer
+maturity: draft
+label:
+  en: "Person who performed FGM/C on the daughter"
+  fr: "Personne ayant pratiqué la MGF/E sur la fille"
+  es: "Persona que realizó la MGF/A a la hija"
+definition:
+  en: "Type of person who performed the FGM/C on the daughter. MICS 6 FG18, per-daughter. Encoded via fgm-performer vocab. Drives the UNFPA medicalization-of-FGM/C sub-indicator (share of daughters cut by a health professional). Asked only when the daughter has been cut."
+  fr: "Type de personne ayant pratiqué la MGF/E sur la fille. MICS 6 FG18, par fille. Codé via le vocabulaire fgm-performer. Alimente le sous-indicateur UNFPA de médicalisation des MGF/E (part des filles excisées par un professionnel de santé). Posé uniquement lorsque la fille a été excisée."
+  es: "Tipo de persona que realizó la MGF/A a la hija. MICS 6 FG18, por hija. Codificado mediante el vocabulario fgm-performer. Alimenta el subindicador UNFPA de medicalización de MGF/A (proporción de hijas cortadas por un profesional de salud). Se pregunta solo cuando la hija ha sido cortada."
+type: string
+cardinality: single
+core: false
+vocabulary: fgm-performer
+references: null
+category: fgm
+age_applicability:
+  - infant_0_1
+  - child_2_4
+  - child_5_17
+sensitivity: restricted

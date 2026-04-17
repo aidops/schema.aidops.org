@@ -1,0 +1,32 @@
+id: spitzer-gad7-2006
+title: "A Brief Measure for Assessing Generalized Anxiety Disorder: The GAD-7"
+short_title: "GAD-7 validation"
+publisher: "Archives of Internal Medicine (American Medical Association)"
+authors:
+  - Robert L. Spitzer
+  - Kurt Kroenke
+  - Janet B. W. Williams
+  - Bernd Löwe
+year: 2006
+type: guidance_publication
+domain: humanitarian
+uri: "https://doi.org/10.1001/archinte.166.10.1092"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MentalHealthProfile
+  vocabularies:
+    - phq9-frequency-4pt
+    - gad7-severity-band
+  properties:
+    - gad7_1
+    - gad7_2
+    - gad7_3
+    - gad7_4
+    - gad7_5
+    - gad7_6
+    - gad7_7
+    - gad7_sum
+    - gad7_severity_band

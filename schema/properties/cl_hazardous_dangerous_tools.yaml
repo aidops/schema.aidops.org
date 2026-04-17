@@ -1,0 +1,19 @@
+id: cl_hazardous_dangerous_tools
+maturity: draft
+label:
+  en: "Activity required dangerous tools or heavy machinery"
+  fr: "L'activité nécessitait des outils dangereux ou des machines lourdes"
+  es: "La actividad requería herramientas peligrosas o maquinaria pesada"
+definition:
+  en: "Whether the child's economic activity required working with dangerous tools (such as knives) or operating heavy machinery in the past 7 days. MICS 6 CL5. Asked only if any of the CL1 economic-activity items is yes. A yes flags hazardous work under the ILO/UNICEF 2020 child-labour definition."
+  fr: "Si l'activité économique de l'enfant nécessitait de travailler avec des outils dangereux (tels que des couteaux) ou d'utiliser des machines lourdes au cours des 7 derniers jours. MICS 6 CL5. Posé uniquement si l'un des items CL1 d'activité économique est oui. Un oui signale un travail dangereux selon la définition OIT/UNICEF 2020 du travail des enfants."
+  es: "Si la actividad económica del niño requería trabajar con herramientas peligrosas (como cuchillos) u operar maquinaria pesada en los últimos 7 días. MICS 6 CL5. Se pregunta solo si alguno de los ítems CL1 de actividad económica es sí. Un sí señala trabajo peligroso bajo la definición OIT/UNICEF 2020 de trabajo infantil."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: child_labour
+age_applicability:
+  - child_5_17
+sensitivity: sensitive

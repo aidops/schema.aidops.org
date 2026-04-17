@@ -1,0 +1,19 @@
+id: whom5_5
+maturity: draft
+label:
+  en: "WHO-5 item 5: daily life filled with interesting things"
+  fr: "WHO-5 item 5 : vie quotidienne remplie de choses intéressantes"
+  es: "WHO-5 ítem 5: vida diaria llena de cosas interesantes"
+
+definition:
+  en: "Frequency with which the respondent's daily life has been filled with things that interest them over the last two weeks. Item 5 of the WHO-5 Well-Being Index. Higher response values indicate better well-being (0 = at no time, 5 = all of the time)."
+  fr: "Fréquence à laquelle la vie quotidienne de la répondant·e a été remplie de choses qui l'intéressent au cours des deux dernières semaines. Item 5 de l'Indice de bien-être WHO-5. Des valeurs de réponse plus élevées indiquent un meilleur bien-être (0 = à aucun moment, 5 = tout le temps)."
+  es: "Frecuencia con la que la vida diaria de la persona encuestada ha estado llena de cosas que le interesan durante las últimas dos semanas. Ítem 5 del Índice de Bienestar WHO-5. Valores de respuesta más altos indican mejor bienestar (0 = en ningún momento, 5 = todo el tiempo)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: whom5-frequency-6pt
+references: null
+category: mental_health
+sensitivity: sensitive

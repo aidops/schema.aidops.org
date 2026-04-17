@@ -1,0 +1,19 @@
+id: cl_econ_family_business
+maturity: draft
+label:
+  en: "Child helped in family or own business in past 7 days"
+  fr: "L'enfant a aidé dans une entreprise familiale ou propre dans les 7 derniers jours"
+  es: "El niño ayudó en un negocio familiar o propio en los últimos 7 días"
+definition:
+  en: "Whether the selected child aged 5-17 helped in a family business or a relative's business (with or without pay), or ran his/her own business in the past 7 days. MICS 6 CL1b. Counted toward economic activity for the CL hours computation."
+  fr: "Si l'enfant sélectionné âgé de 5 à 17 ans a aidé dans une entreprise familiale ou d'un parent (avec ou sans rémunération), ou a exploité sa propre entreprise au cours des 7 derniers jours. MICS 6 CL1b. Comptabilisé dans l'activité économique pour le calcul des heures CL."
+  es: "Si el niño seleccionado de 5 a 17 años ayudó en un negocio familiar o de un pariente (con o sin paga), o manejó su propio negocio en los últimos 7 días. MICS 6 CL1b. Se cuenta dentro de la actividad económica para el cálculo de horas CL."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: child_labour
+age_applicability:
+  - child_5_17
+sensitivity: sensitive

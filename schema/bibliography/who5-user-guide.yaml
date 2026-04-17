@@ -1,0 +1,27 @@
+id: who5-user-guide
+title: "WHO-5 Well-Being Index"
+short_title: "WHO-5 User Guide"
+publisher: "Psychiatric Research Unit, Region Hovedstaden (Denmark); originally WHO Regional Office for Europe"
+authors:
+  - Per Bech
+  - "Psychiatric Research Unit, WHO Collaborating Centre in Mental Health, Hillerød"
+year: 1998
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.psykiatri-regionh.dk/who-5/Pages/default.aspx"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MentalHealthProfile
+  vocabularies:
+    - whom5-frequency-6pt
+  properties:
+    - whom5_1
+    - whom5_2
+    - whom5_3
+    - whom5_4
+    - whom5_5
+    - whom5_index
+    - whom5_at_risk

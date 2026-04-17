@@ -1,0 +1,248 @@
+id: ChildProtectionProfile
+label:
+  en: Child Protection Profile
+  fr: "Profil de protection de l'enfance"
+  es: "Perfil de protección infantil"
+maturity: draft
+
+definition:
+  en: >
+    A household- and per-child record of the four MICS 6 child-protection
+    indicator modules plus an optional FGM/C module. The modules are:
+    (1) Birth Registration (BR) asked per child under 5; (2) Child Labour
+    (CL) asked per one randomly selected child aged 5-17 in the household
+    following the MICS 6 random-child sampling protocol; (3) Child
+    Discipline (FCD) asked per one randomly selected child aged 1-14
+    following the same random-child sampling protocol; (4) a household-level
+    Child Marriage (CM) flag derivable from the household roster when
+    marital status is available; (5) an optional FGM/C module gated on a
+    context-selector question and restricted to women aged 15-49 (with
+    per-daughter items). Derived indicators include CP.1 (birth
+    registration, SDG 16.9.1), CP.2 (child labour, SDG 8.7.1), CP.3
+    (violent discipline, SDG 16.2.1), CP.4 (child marriage, SDG 5.3.1),
+    and the UNFPA FGM/C prevalence / medicalization / continuation-attitude
+    indicators. ALL items carry a minimum sensitivity of "sensitive"; FCD
+    physical and severe-physical items, the FCD5 physical-punishment belief
+    item, and ALL FGM/C items carry sensitivity "restricted" and require
+    secondary consent. BR cross-references Person-level identity_documents
+    (document-type = birth_certificate) but is not wired to auto-populate
+    in this batch. The FCD5 physical-punishment belief item is
+    child-specific and is kept in this profile; the pro-WEAI IPV attitude
+    items (weai_ipv_*) covering wife-beating attitudes are not duplicated
+    here (cross-reference GenderEmpowermentProfile). The retrospective
+    age-at-first-union item (MA8) that feeds the population-level SDG 5.3.1
+    indicator is out of scope for this profile and belongs to a future
+    MarriageProfile or ReproductiveHealthProfile extension.
+  fr: >
+    Un enregistrement au niveau du ménage et par enfant des quatre modules
+    d'indicateurs de protection de l'enfance MICS 6 plus un module
+    facultatif MGF/E. Les modules sont : (1) Enregistrement des naissances
+    (BR) posé par enfant de moins de 5 ans ; (2) Travail des enfants (CL)
+    posé pour un enfant tiré au sort âgé de 5 à 17 ans selon le protocole
+    d'échantillonnage aléatoire MICS 6 ; (3) Discipline de l'enfant (FCD)
+    posée pour un enfant tiré au sort âgé de 1 à 14 ans selon le même
+    protocole ; (4) un indicateur de mariage d'enfants (CM) au niveau
+    du ménage, dérivable du roster lorsque l'état matrimonial est
+    disponible ; (5) un module optionnel MGF/E conditionné par une
+    question de sélection de contexte et limité aux femmes de 15 à 49 ans
+    (avec des items par fille). Les indicateurs dérivés incluent CP.1
+    (enregistrement des naissances, ODD 16.9.1), CP.2 (travail des enfants,
+    ODD 8.7.1), CP.3 (discipline violente, ODD 16.2.1), CP.4 (mariage
+    d'enfants, ODD 5.3.1) et les indicateurs de prévalence MGF/E /
+    médicalisation / attitudes de continuation de l'UNFPA. TOUS les items
+    ont une sensibilité minimale « sensible » ; les items FCD physiques
+    et physiques sévères, l'item de croyance FCD5 et TOUS les items MGF/E
+    ont une sensibilité « restreinte » et nécessitent un consentement
+    secondaire. BR référence les identity_documents au niveau Personne
+    (document-type = birth_certificate) mais ne se pré-remplit pas
+    automatiquement dans ce lot. L'item de croyance de la punition physique
+    FCD5 est spécifique à l'enfant et est conservé ici ; les items
+    d'attitudes VPI pro-WEAI (weai_ipv_*) ne sont pas dupliqués
+    (référence croisée avec GenderEmpowermentProfile). L'item rétrospectif
+    d'âge au premier union (MA8) qui alimente l'indicateur ODD 5.3.1 au
+    niveau de la population est hors du champ de ce profil et relève d'un
+    futur MarriageProfile ou d'une extension ReproductiveHealthProfile.
+  es: >
+    Un registro a nivel de hogar y por niño de los cuatro módulos de
+    indicadores de protección infantil MICS 6 más un módulo opcional
+    de MGF/A. Los módulos son: (1) Registro de nacimiento (BR) preguntado
+    por cada niño menor de 5 años; (2) Trabajo infantil (CL) preguntado
+    para un niño seleccionado aleatoriamente de 5 a 17 años siguiendo el
+    protocolo de muestreo aleatorio MICS 6; (3) Disciplina infantil (FCD)
+    preguntada para un niño seleccionado aleatoriamente de 1 a 14 años
+    siguiendo el mismo protocolo; (4) una bandera a nivel de hogar de
+    matrimonio infantil (CM) derivable del roster cuando se dispone del
+    estado civil; (5) un módulo opcional de MGF/A condicionado por una
+    pregunta de selección de contexto y restringido a mujeres de 15 a 49
+    años (con ítems por hija). Los indicadores derivados incluyen CP.1
+    (registro de nacimiento, ODS 16.9.1), CP.2 (trabajo infantil, ODS
+    8.7.1), CP.3 (disciplina violenta, ODS 16.2.1), CP.4 (matrimonio
+    infantil, ODS 5.3.1) y los indicadores UNFPA de prevalencia de MGF/A
+    / medicalización / actitudes de continuación. TODOS los ítems tienen
+    una sensibilidad mínima «sensible»; los ítems FCD físicos y físicos
+    severos, el ítem de creencia FCD5 y TODOS los ítems MGF/A tienen
+    sensibilidad «restringida» y requieren consentimiento secundario.
+    BR referencia los identity_documents a nivel de Persona (document-type
+    = birth_certificate) pero no se auto-poblará en este lote. El ítem
+    FCD5 de creencia sobre castigo físico es específico del niño y se
+    mantiene aquí; los ítems de actitudes VPI pro-WEAI (weai_ipv_*) que
+    cubren actitudes hacia golpear a la esposa no se duplican (referencia
+    cruzada con GenderEmpowermentProfile). El ítem retrospectivo de edad
+    al primer unión (MA8) que alimenta el indicador ODS 5.3.1 a nivel
+    poblacional está fuera del alcance de este perfil y pertenece a un
+    futuro MarriageProfile o a una extensión de ReproductiveHealthProfile.
+
+properties:
+  # Birth Registration (per child under 5)
+  - birth_certificate_seen
+  - birth_registered
+  - birth_registration_knowledge
+  # Child Labour (per randomly selected child 5-17)
+  - cl_econ_farm_animals
+  - cl_econ_family_business
+  - cl_econ_produce_sell
+  - cl_econ_other_income
+  - cl_economic_activity_hours
+  - cl_hazardous_heavy_loads
+  - cl_hazardous_dangerous_tools
+  - cl_hazard_dust_fumes
+  - cl_hazard_temperature
+  - cl_hazard_noise_vibration
+  - cl_hazard_heights
+  - cl_hazard_chemicals
+  - cl_hazard_other
+  - cl_fetch_water_hours
+  - cl_collect_firewood_hours
+  - cl_chores_hours
+  # Child Discipline (per randomly selected child 1-14)
+  - fcd_took_away_privileges
+  - fcd_explained
+  - fcd_shook
+  - fcd_shouted
+  - fcd_redirected
+  - fcd_spanked
+  - fcd_hit_body
+  - fcd_name_called
+  - fcd_hit_head
+  - fcd_hit_limb
+  - fcd_beat_hard_repeatedly
+  - fcd_belief_physical_punishment_needed
+  # Child Marriage (household level)
+  - cm_children_under_18_married
+  - cm_child_marriage_union_type
+  # FGM/C (optional module, per woman 15-49 and per-daughter)
+  - fgm_heard_of_practice
+  - fgm_woman_cut
+  - fgm_woman_age_at_cutting
+  - fgm_woman_type
+  - fgm_any_daughter_cut
+  - fgm_daughter_age_at_cutting
+  - fgm_daughter_performer
+  - fgm_intend_to_continue
+  # Derived scores
+  - cl_mics_child_labour
+  - fcd_violent_discipline
+  - any_fgm_in_household
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: birth_registration
+    properties:
+      - birth_certificate_seen
+      - birth_registered
+      - birth_registration_knowledge
+  - category: child_labour
+    properties:
+      - cl_econ_farm_animals
+      - cl_econ_family_business
+      - cl_econ_produce_sell
+      - cl_econ_other_income
+      - cl_economic_activity_hours
+      - cl_hazardous_heavy_loads
+      - cl_hazardous_dangerous_tools
+      - cl_hazard_dust_fumes
+      - cl_hazard_temperature
+      - cl_hazard_noise_vibration
+      - cl_hazard_heights
+      - cl_hazard_chemicals
+      - cl_hazard_other
+      - cl_fetch_water_hours
+      - cl_collect_firewood_hours
+      - cl_chores_hours
+  - category: child_discipline
+    properties:
+      - fcd_took_away_privileges
+      - fcd_explained
+      - fcd_shook
+      - fcd_shouted
+      - fcd_redirected
+      - fcd_spanked
+      - fcd_hit_body
+      - fcd_name_called
+      - fcd_hit_head
+      - fcd_hit_limb
+      - fcd_beat_hard_repeatedly
+      - fcd_belief_physical_punishment_needed
+  - category: child_marriage
+    properties:
+      - cm_children_under_18_married
+      - cm_child_marriage_union_type
+  - category: fgm
+    properties:
+      - fgm_heard_of_practice
+      - fgm_woman_cut
+      - fgm_woman_age_at_cutting
+      - fgm_woman_type
+      - fgm_any_daughter_cut
+      - fgm_daughter_age_at_cutting
+      - fgm_daughter_performer
+      - fgm_intend_to_continue
+  - category: derived_child_protection
+    properties:
+      - cl_mics_child_labour
+      - fcd_violent_discipline
+      - any_fgm_in_household
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (MICS 6 child-protection battery)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each administration of the CP profile maps to one or more QuestionnaireResponse resources (per-child under 5 for BR; per randomly selected child for CL/FCD; per woman 15-49 plus per-daughter for FGM/C). Derived CP.1/CP.2/CP.3 booleans map to FHIR Observation. A birth-registration positive outcome could be reconciled to a FHIR Patient.identifier (birth certificate) or Person.identity-document, but no auto-reconciliation is wired in this batch."
+  dhis2:
+    label: "DHIS2 child protection tracker / aggregate elements"
+    uri: "https://docs.dhis2.org/en/topics/metadata/global-health-data-sets.html"
+    match: related
+    vocabulary: "DHIS2 global health data sets"
+    note: "DHIS2 does not ship a canonical child-protection package; country implementations commonly track birth registration and violent-discipline prevalence in HMIS tracker or aggregate programs. Item-level CL hazard exposure and FGM per-daughter detail are typically held only in survey microdata."
+
+convergence:
+  system_count: 2
+  total_systems: 6
+  notes: >
+    FHIR R4 and DHIS2 offer the closest structural equivalents. OpenCRVS
+    is the canonical system for birth-registration data, but the MICS 6
+    BR items capture caregiver report (not the registration event itself)
+    and so sit upstream of an OpenCRVS record rather than inside it.
+    openIMIS, OpenSPP, and DCI do not model child-protection survey items.
+    The FCD5 physical-punishment belief item partially converges with the
+    pro-WEAI IPV attitude items (weai_ipv_*) in GenderEmpowermentProfile
+    in that both measure normative attitudes toward interpersonal
+    violence; however, FCD5 targets adult-to-child violence specifically
+    and is retained in this profile as part of the coherent MICS FCD
+    instrument. Cross-reference both directions rather than duplicate.

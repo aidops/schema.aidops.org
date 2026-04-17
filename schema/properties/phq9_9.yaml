@@ -1,0 +1,19 @@
+id: phq9_9
+maturity: draft
+label:
+  en: "PHQ-9 item 9: suicidal or self-harm ideation"
+  fr: "PHQ-9 item 9 : idéation suicidaire ou d'automutilation"
+  es: "PHQ-9 ítem 9: ideación suicida o de autolesión"
+
+definition:
+  en: "Frequency with which, over the last two weeks, the respondent has been bothered by thoughts that they would be better off dead, or of hurting themselves in some way. PHQ-9 item 9, screening for suicidal ideation. Any response other than 'not at all' is a positive screen and requires an immediate referral-pathway response per the published PHQ-9 instructions; this is independent of the total PHQ-9 severity band. Scoring value 0 (not at all) to 3 (nearly every day). This property carries sensitivity: restricted and must not be surfaced in default analytics exports; the suicidal-ideation flag must be handled by a live form calculate and an enumerator-facing referral prompt."
+  fr: "Fréquence à laquelle, au cours des deux dernières semaines, la répondant·e a été gêné·e par des pensées selon lesquelles il vaudrait mieux qu'elle·il soit mort·e, ou des pensées de se faire du mal d'une manière ou d'une autre. PHQ-9 item 9, dépistage de l'idéation suicidaire. Toute réponse autre que « pas du tout » constitue un dépistage positif et requiert une réponse immédiate via la filière de référence conformément aux instructions publiées du PHQ-9 ; ceci est indépendant du niveau de sévérité total du PHQ-9. Valeur de notation : 0 (pas du tout) à 3 (presque tous les jours). Cette propriété porte la sensibilité restricted et ne doit pas figurer dans les exports analytiques par défaut ; le drapeau d'idéation suicidaire doit être géré par un calcul en direct dans le formulaire et une invitation de référence visible par l'enquêteur·rice."
+  es: "Frecuencia con la que, durante las últimas dos semanas, la persona encuestada ha sido molestada por pensamientos de que estaría mejor muerta, o de hacerse daño de alguna manera. Ítem 9 del PHQ-9, tamizaje de ideación suicida. Cualquier respuesta distinta de «en absoluto» constituye un tamizaje positivo y requiere una respuesta inmediata por la vía de referencia conforme a las instrucciones publicadas del PHQ-9; esto es independiente del nivel de severidad total del PHQ-9. Valor de puntuación: 0 (en absoluto) a 3 (casi todos los días). Esta propiedad lleva sensitivity: restricted y no debe aparecer en exportaciones analíticas por defecto; la bandera de ideación suicida debe gestionarse mediante un cálculo en vivo del formulario y una indicación de referencia visible para la persona encuestadora."
+
+type: string
+cardinality: single
+core: true
+vocabulary: phq9-frequency-4pt
+references: null
+category: mental_health
+sensitivity: restricted

@@ -1,0 +1,169 @@
+id: MentalHealthProfile
+label:
+  en: Mental Health Profile
+  fr: "Profil de santé mentale"
+  es: "Perfil de salud mental"
+maturity: draft
+
+definition:
+  en: >
+    A point-in-time record of an adult respondent's mental-health screening
+    data, collected by self-report (or enumerator-read self-report) under
+    explicit informed consent. Carries item-level responses for up to three
+    widely used screening instruments: the WHO-5 Well-Being Index (5 items,
+    0-100 index), the PHQ-9 Patient Health Questionnaire (9 items,
+    depression severity band), and the GAD-7 Generalized Anxiety Disorder
+    scale (7 items, anxiety severity band). Derived totals and severity
+    bands are carried alongside the raw items. PHQ-9 item 9 (suicidal
+    ideation) and any score that incorporates it (phq9_sum,
+    phq9_severity_band) carry sensitivity: restricted and must trigger a
+    referral-pathway response on a non-zero positive screen. Trauma
+    screening (PCL-5, HTQ) is intentionally out of scope and belongs to a
+    future TraumaScreenProfile; functional-impairment follow-up items are
+    similarly deferred. This profile is validated for adults (18+);
+    youth-adapted variants of these instruments exist and would require a
+    separate AdolescentMentalHealthProfile.
+  fr: >
+    Un enregistrement ponctuel des données de dépistage en santé mentale
+    d'un·e répondant·e adulte, collecté par auto-déclaration (ou
+    auto-déclaration lue par l'enquêteur·rice) sous consentement éclairé
+    explicite. Porte les réponses au niveau de l'item pour jusqu'à trois
+    instruments de dépistage largement utilisés : l'Indice de bien-être
+    WHO-5 (5 items, indice 0-100), le Patient Health Questionnaire PHQ-9
+    (9 items, niveau de sévérité de la dépression) et l'échelle de trouble
+    d'anxiété généralisée GAD-7 (7 items, niveau de sévérité de l'anxiété).
+    Les totaux dérivés et les niveaux de sévérité sont portés aux côtés
+    des items bruts. L'item 9 du PHQ-9 (idéation suicidaire) et tout score
+    qui l'intègre (phq9_sum, phq9_severity_band) portent la sensibilité
+    restricted et doivent déclencher une réponse par la filière de
+    référence en cas de dépistage positif non nul. Le dépistage des
+    traumatismes (PCL-5, HTQ) est volontairement hors du périmètre et
+    relève d'un futur TraumaScreenProfile ; les items de suivi de
+    l'altération fonctionnelle sont également reportés. Ce profil est
+    validé pour les adultes (18 ans et plus) ; des variantes adaptées aux
+    jeunes de ces instruments existent et nécessiteraient un
+    AdolescentMentalHealthProfile distinct.
+  es: >
+    Un registro puntual de los datos de tamizaje de salud mental de una
+    persona adulta, recopilado por autoinforme (o autoinforme leído por la
+    persona encuestadora) bajo consentimiento informado explícito. Lleva
+    las respuestas a nivel de ítem para hasta tres instrumentos de
+    tamizaje ampliamente utilizados: el Índice de Bienestar WHO-5 (5
+    ítems, índice 0-100), el Patient Health Questionnaire PHQ-9 (9 ítems,
+    nivel de severidad de la depresión) y la escala de Trastorno de
+    Ansiedad Generalizada GAD-7 (7 ítems, nivel de severidad de la
+    ansiedad). Los totales derivados y los niveles de severidad se llevan
+    junto a los ítems brutos. El ítem 9 del PHQ-9 (ideación suicida) y
+    cualquier puntaje que lo incorpore (phq9_sum, phq9_severity_band)
+    llevan sensitivity: restricted y deben activar una respuesta por la
+    vía de referencia ante un tamizaje positivo distinto de cero. El
+    tamizaje de trauma (PCL-5, HTQ) queda intencionalmente fuera del
+    alcance y corresponde a un futuro TraumaScreenProfile; los ítems de
+    seguimiento de deterioro funcional también se aplazan. Este perfil
+    está validado para adultos (18+); existen variantes adaptadas para
+    jóvenes de estos instrumentos y requerirían un
+    AdolescentMentalHealthProfile separado.
+
+properties:
+  - whom5_1
+  - whom5_2
+  - whom5_3
+  - whom5_4
+  - whom5_5
+  - phq9_1
+  - phq9_2
+  - phq9_3
+  - phq9_4
+  - phq9_5
+  - phq9_6
+  - phq9_7
+  - phq9_8
+  - phq9_9
+  - gad7_1
+  - gad7_2
+  - gad7_3
+  - gad7_4
+  - gad7_5
+  - gad7_6
+  - gad7_7
+  - whom5_index
+  - whom5_at_risk
+  - phq9_sum
+  - phq9_severity_band
+  - gad7_sum
+  - gad7_severity_band
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: whom5_items
+    properties:
+      - whom5_1
+      - whom5_2
+      - whom5_3
+      - whom5_4
+      - whom5_5
+  - category: phq9_items
+    properties:
+      - phq9_1
+      - phq9_2
+      - phq9_3
+      - phq9_4
+      - phq9_5
+      - phq9_6
+      - phq9_7
+      - phq9_8
+      - phq9_9
+  - category: gad7_items
+    properties:
+      - gad7_1
+      - gad7_2
+      - gad7_3
+      - gad7_4
+      - gad7_5
+      - gad7_6
+      - gad7_7
+  - category: scores
+    properties:
+      - whom5_index
+      - whom5_at_risk
+      - phq9_sum
+      - phq9_severity_band
+      - gad7_sum
+      - gad7_severity_band
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (mental-health screening)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each WHO-5, PHQ-9, or GAD-7 administration serializes naturally as a QuestionnaireResponse whose Questionnaire is the corresponding screening instrument. The derived total scores and severity bands are better represented as FHIR Observations produced by a scoring step. A positive PHQ-9 item 9 screen should additionally raise a FHIR Flag or trigger a RiskAssessment, aligning with the restricted-sensitivity treatment of that item in this profile."
+
+convergence:
+  system_count: 1
+  total_systems: 6
+  notes: >
+    Of the six v1 social-protection reference systems, only FHIR
+    represents item-level mental-health screening at the record level
+    (as QuestionnaireResponse plus derived Observations). DHIS2 national
+    deployments commonly carry aggregate PHQ-9 / GAD-7 prevalence
+    indicators but rarely model item-level screening data in core.
+    OpenCRVS, OpenSPP, openIMIS, and DCI Social Registry do not carry
+    mental-health screening data in core. The informing domain tools
+    live outside the v1 set: WHO mhGAP, IASC MHPSS guidelines,
+    Psychiatric Research Unit Region H (WHO-5 distribution), and the
+    PHQscreeners site (PHQ-9 and GAD-7 distribution).

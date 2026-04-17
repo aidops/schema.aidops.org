@@ -1,0 +1,19 @@
+id: phq9_severity_band
+maturity: draft
+label:
+  en: "PHQ-9 severity band"
+  fr: "Niveau de sévérité PHQ-9"
+  es: "Nivel de severidad PHQ-9"
+
+definition:
+  en: "The depression severity band derived from phq9_sum using Kroenke et al. (2001) cut-points: none/minimal (0-4), mild (5-9), moderate (10-14), moderately severe (15-19), severe (20-27). Inherits sensitivity: restricted because it is derived from phq9_sum, which incorporates phq9_9 (suicidal ideation)."
+  fr: "Le niveau de sévérité de la dépression dérivé de phq9_sum en utilisant les seuils de Kroenke et al. (2001) : aucun/minimal (0-4), léger (5-9), modéré (10-14), modérément sévère (15-19), sévère (20-27). Hérite de la sensibilité restricted car dérivé de phq9_sum, qui incorpore phq9_9 (idéation suicidaire)."
+  es: "El nivel de severidad de la depresión derivado de phq9_sum usando los puntos de corte de Kroenke et al. (2001): ninguno/mínimo (0-4), leve (5-9), moderado (10-14), moderadamente severo (15-19), severo (20-27). Hereda sensitivity: restricted porque deriva de phq9_sum, que incorpora phq9_9 (ideación suicida)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: phq9-severity-band
+references: null
+category: mental_health
+sensitivity: restricted

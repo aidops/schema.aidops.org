@@ -1,0 +1,19 @@
+id: whom5_at_risk
+maturity: draft
+label:
+  en: "WHO-5 reduced well-being flag"
+  fr: "Drapeau WHO-5 de bien-être réduit"
+  es: "Bandera WHO-5 de bienestar reducido"
+
+definition:
+  en: "Boolean flag set to true when whom5_index is below 50, indicating reduced well-being and flagging that a fuller diagnostic screen (e.g., PHQ-9) may be warranted. Based on the 1998 WHO-5 screening cut-off."
+  fr: "Drapeau booléen positionné à vrai lorsque whom5_index est inférieur à 50, indiquant un bien-être réduit et signalant qu'un dépistage diagnostique plus complet (par exemple, PHQ-9) peut être justifié. Basé sur le seuil de dépistage WHO-5 de 1998."
+  es: "Bandera booleana establecida en verdadero cuando whom5_index es inferior a 50, indicando bienestar reducido y señalando que un tamizaje diagnóstico más completo (por ejemplo, PHQ-9) puede estar justificado. Basado en el punto de corte de tamizaje WHO-5 de 1998."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: mental_health
+sensitivity: sensitive

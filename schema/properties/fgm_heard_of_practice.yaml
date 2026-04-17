@@ -1,0 +1,19 @@
+id: fgm_heard_of_practice
+maturity: draft
+label:
+  en: "Ever heard of female circumcision"
+  fr: "A déjà entendu parler de l'excision féminine"
+  es: "Ha oído hablar de la circuncisión femenina"
+definition:
+  en: "Whether the woman has ever heard of female circumcision / female genital mutilation. MICS 6 FG1. Screener item for the entire FGM module. If no, the entire FGM module is skipped."
+  fr: "Si la femme a déjà entendu parler de l'excision féminine / mutilation génitale féminine. MICS 6 FG1. Item de filtrage pour l'ensemble du module MGF. Si non, tout le module MGF est ignoré."
+  es: "Si la mujer ha oído hablar alguna vez de la circuncisión femenina / mutilación genital femenina. MICS 6 FG1. Ítem de filtro para todo el módulo MGF. Si no, todo el módulo MGF se omite."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: fgm
+age_applicability:
+  - adult
+sensitivity: restricted

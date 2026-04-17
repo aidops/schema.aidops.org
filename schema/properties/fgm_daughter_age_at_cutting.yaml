@@ -1,0 +1,21 @@
+id: fgm_daughter_age_at_cutting
+maturity: draft
+label:
+  en: "Daughter's age at circumcision (years)"
+  fr: "Âge de la fille lors de l'excision (années)"
+  es: "Edad de la hija al ser circuncidada (años)"
+definition:
+  en: "The daughter's reported age in years at the time she was circumcised / cut. MICS 6 FG17, asked per daughter who was cut. Integer years; special code 95 = during infancy (under 1 year); 98 = don't know. Per-daughter repeat."
+  fr: "Âge rapporté de la fille en années au moment de son excision / coupure. MICS 6 FG17, posé par fille excisée. Années entières ; code spécial 95 = pendant la petite enfance (moins de 1 an) ; 98 = ne sait pas. Répété par fille."
+  es: "Edad reportada de la hija en años al momento de la circuncisión / corte. MICS 6 FG17, preguntado por cada hija circuncidada. Años enteros; código especial 95 = durante la infancia (menos de 1 año); 98 = no sabe. Repetido por hija."
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: fgm
+age_applicability:
+  - infant_0_1
+  - child_2_4
+  - child_5_17
+sensitivity: restricted

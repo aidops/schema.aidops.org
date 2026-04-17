@@ -1,0 +1,19 @@
+id: phq9_2
+maturity: draft
+label:
+  en: "PHQ-9 item 2: feeling down, depressed, or hopeless"
+  fr: "PHQ-9 item 2 : sentiment de tristesse, dépression ou désespoir"
+  es: "PHQ-9 ítem 2: sentirse decaído, deprimido o sin esperanza"
+
+definition:
+  en: "Frequency with which, over the last two weeks, the respondent has been bothered by feeling down, depressed, or hopeless. PHQ-9 item 2, measuring depressed mood, one of the two core depressive symptoms in DSM diagnostic criteria. Scoring value 0 (not at all) to 3 (nearly every day)."
+  fr: "Fréquence à laquelle, au cours des deux dernières semaines, la répondant·e a été gêné·e par des sentiments de tristesse, de dépression ou de désespoir. PHQ-9 item 2, mesurant l'humeur dépressive, l'un des deux symptômes dépressifs centraux des critères diagnostiques DSM. Valeur de notation : 0 (pas du tout) à 3 (presque tous les jours)."
+  es: "Frecuencia con la que, durante las últimas dos semanas, la persona encuestada ha sido molestada por sentirse decaída, deprimida o sin esperanza. Ítem 2 del PHQ-9, que mide el ánimo deprimido, uno de los dos síntomas depresivos centrales en los criterios diagnósticos del DSM. Valor de puntuación: 0 (en absoluto) a 3 (casi todos los días)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: phq9-frequency-4pt
+references: null
+category: mental_health
+sensitivity: sensitive

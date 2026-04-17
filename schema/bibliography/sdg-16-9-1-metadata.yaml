@@ -1,0 +1,20 @@
+id: sdg-16-9-1-metadata
+title: "SDG Indicator 16.9.1 Metadata: Proportion of children under 5 years of age whose births have been registered with a civil authority, by age"
+short_title: SDG 16.9.1 Metadata
+publisher: "UNICEF"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://unstats.un.org/sdgs/metadata/files/Metadata-16-09-01.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ChildProtectionProfile
+  vocabularies:
+    - birth-certificate-status
+  properties:
+    - birth_certificate_seen
+    - birth_registered
+    - birth_registration_knowledge

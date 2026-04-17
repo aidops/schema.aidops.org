@@ -1,0 +1,47 @@
+id: birth-certificate-status
+maturity: draft
+label:
+  en: "Birth Certificate Status"
+  fr: "Statut du certificat de naissance"
+  es: "Estado del certificado de nacimiento"
+definition:
+  en: "MICS 6 BR1 response set. Captures both whether the child has a birth certificate and whether the enumerator verified it by sight. Distinct from document-type (which captures kind of identification) because this vocab encodes the verification dimension of the registration question."
+  fr: "Ensemble de réponses MICS 6 BR1. Indique si l'enfant a un certificat de naissance et si l'enquêteur l'a vérifié de vue. Distinct de document-type (qui capture le type d'identification) car ce vocabulaire encode la dimension de vérification de la question d'enregistrement."
+  es: "Conjunto de respuestas MICS 6 BR1. Captura si el niño tiene un certificado de nacimiento y si el encuestador lo verificó a la vista. Distinto de document-type (que captura el tipo de identificación) porque este vocabulario codifica la dimensión de verificación de la pregunta de registro."
+values:
+  - code: yes_seen
+    label:
+      en: "Yes, certificate seen by enumerator"
+      fr: "Oui, certificat vu par l'enquêteur"
+      es: "Sí, certificado visto por el encuestador"
+    definition:
+      en: "The caregiver reports the child has a birth certificate AND the enumerator verified it by sight. MICS 6 BR1 = 1."
+      fr: "Le soignant déclare que l'enfant a un certificat de naissance ET l'enquêteur l'a vérifié de vue. MICS 6 BR1 = 1."
+      es: "El cuidador informa que el niño tiene un certificado de nacimiento Y el encuestador lo verificó a la vista. MICS 6 BR1 = 1."
+  - code: yes_not_seen
+    label:
+      en: "Yes, certificate reported but not seen"
+      fr: "Oui, certificat déclaré mais non vu"
+      es: "Sí, certificado declarado pero no visto"
+    definition:
+      en: "The caregiver reports the child has a birth certificate but the enumerator could not verify it by sight. MICS 6 BR1 = 2."
+      fr: "Le soignant déclare que l'enfant a un certificat de naissance mais l'enquêteur n'a pas pu le vérifier de vue. MICS 6 BR1 = 2."
+      es: "El cuidador informa que el niño tiene un certificado de nacimiento pero el encuestador no pudo verificarlo a la vista. MICS 6 BR1 = 2."
+  - code: "no"
+    label:
+      en: "No certificate"
+      fr: "Pas de certificat"
+      es: "Sin certificado"
+    definition:
+      en: "The child does not have a birth certificate. MICS 6 BR1 = 3. Follow-up BR2 asked to determine whether the birth was otherwise registered."
+      fr: "L'enfant n'a pas de certificat de naissance. MICS 6 BR1 = 3. La question BR2 est posée pour déterminer si la naissance a été enregistrée autrement."
+      es: "El niño no tiene certificado de nacimiento. MICS 6 BR1 = 3. La pregunta BR2 se hace para determinar si el nacimiento fue registrado de otra manera."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The caregiver does not know whether the child has a birth certificate. MICS 6 BR1 = 8."
+      fr: "Le soignant ne sait pas si l'enfant a un certificat de naissance. MICS 6 BR1 = 8."
+      es: "El cuidador no sabe si el niño tiene un certificado de nacimiento. MICS 6 BR1 = 8."
