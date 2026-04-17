@@ -14,7 +14,6 @@ informs:
   vocabularies:
     - vacc-status
     - vacc-card-status
-    - care-provider-type
   properties:
     - vaccination_card_exists
     - vaccination_card_seen

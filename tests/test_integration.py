@@ -92,8 +92,9 @@ class TestRealSchema:
         #   MentalHealthProfile:    +4 vocabularies
         #   ChildProtectionProfile: +7 vocabularies (6 specified + fgm-continuation-belief
         #                           added to satisfy the no-vocabulary:null-on-enumerated rule)
-        assert len(result["vocabularies"]) == 139, (
-            f"Expected 139 vocabularies, got {len(result['vocabularies'])}"
+        # Post-Batch-3 PS-promotion: -1 (care-provider-type moved to PublicSchema)
+        assert len(result["vocabularies"]) == 138, (
+            f"Expected 138 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema
