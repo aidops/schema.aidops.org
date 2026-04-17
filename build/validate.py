@@ -381,6 +381,31 @@ def validate_schema_dir(schema_dir: Path) -> list[ValidationError]:
                     f"Bibliography 'informs.properties' references property '{pid}' which is not defined",
                 ))
 
+    # Reverse bibliography coverage: warn for any AidOps property that no
+    # bibliography entry cites via informs.properties. Properties in the
+    # allowlist below are cross-cutting administrative fields with no single
+    # canonical source; they are exempt from this check. The check is skipped
+    # entirely when the schema has no bibliography entries (e.g. test fixtures).
+    BIBLIOGRAPHY_EXEMPT_PROPERTIES: set[str] = {
+        "linked_child_person_id",   # internal linkage field, no canonical instrument
+        "location_of_assessment",   # GPS/admin field common to all post-shock instruments
+        "recall_period_days",       # context field shared across FIES, LCS, HDDS, MDD-W
+    }
+    if bibliography_raw:
+        cited_property_ids: set[str] = set()
+        for _bib_fn, bib_data in bibliography_raw.items():
+            for pid in (bib_data.get("informs") or {}).get("properties") or []:
+                cited_property_ids.add(pid)
+        for filename, data in properties_raw.items():
+            pid = data.get("id")
+            if pid and pid not in cited_property_ids and pid not in BIBLIOGRAPHY_EXEMPT_PROPERTIES:
+                errors.append(ValidationError(
+                    filename,
+                    f"Property '{pid}' is not cited by any bibliography entry "
+                    f"(add it to an informs.properties list, or to BIBLIOGRAPHY_EXEMPT_PROPERTIES)",
+                    severity="warning",
+                ))
+
     # age_applicability cross-check against WG/CFM bibliography citations
     WG_BAND_IMPLICATIONS = {
         "washington-group-ss": {"adult"},

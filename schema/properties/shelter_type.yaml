@@ -1,0 +1,20 @@
+id: shelter_type
+maturity: draft
+label:
+  en: "Shelter type"
+  fr: "Type d'abri"
+  es: "Tipo de refugio"
+
+definition:
+  en: "The type of shelter arrangement the household is currently living in, classified by programme/occupancy arrangement and physical form. Distinct from dwelling_type (which uses census categories of construction durability): this property records where the household actually lives at assessment time, using humanitarian shelter typology aligned with Sphere and IOM DTM practice."
+  fr: "Le type d'arrangement d'abri dans lequel le ménage vit actuellement, classé par arrangement de programme/occupation et forme physique. Distinct de dwelling_type (qui utilise des catégories de recensement de durabilité de construction) : cette propriété consigne où le ménage vit réellement au moment de l'évaluation, en utilisant la typologie d'abri humanitaire alignée sur la Sphère et la pratique DTM de l'OIM."
+  es: "El tipo de arreglo de refugio en el que el hogar vive actualmente, clasificado por arreglo de programa/ocupación y forma física. Distinto de dwelling_type (que usa categorías de censo de durabilidad de construcción): esta propiedad registra dónde vive realmente el hogar al momento de la evaluación, usando la tipología de refugio humanitario alineada con Esfera y la práctica DTM de la OIM."
+
+type: string
+cardinality: single
+vocabulary: shelter-situation-type
+references: null
+category: shelter
+core: true
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, iom_dtm_household, gsc_standardised, unhcr_nare]

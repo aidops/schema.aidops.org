@@ -1,0 +1,17 @@
+id: most_recent_displacement_date
+maturity: draft
+label:
+  en: "Date of most recent displacement move"
+  fr: "Date du déplacement le plus récent"
+  es: "Fecha del movimiento de desplazamiento más reciente"
+
+definition:
+  en: "The date (YYYY-MM or YYYY) when the household most recently moved to its current location as a result of displacement. May equal first_displacement_date for households displaced only once. A 'don't know' response is valid."
+  fr: "La date (AAAA-MM ou AAAA) à laquelle le ménage s'est le plus récemment déplacé vers son lieu actuel en raison d'un déplacement. Peut être égale à first_displacement_date pour les ménages déplacés une seule fois. Une réponse 'ne sait pas' est valide."
+  es: "La fecha (AAAA-MM o AAAA) en que el hogar se trasladó más recientemente a su ubicación actual como resultado del desplazamiento. Puede ser igual a first_displacement_date para hogares desplazados solo una vez. Una respuesta 'no sabe' es válida."
+
+type: date
+cardinality: single
+references: null
+category: displacement_history
+core: true

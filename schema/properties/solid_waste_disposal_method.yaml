@@ -1,0 +1,20 @@
+id: solid_waste_disposal_method
+maturity: draft
+label:
+  en: "Solid waste disposal method"
+  fr: "Méthode d'élimination des déchets solides"
+  es: "Método de eliminación de residuos sólidos"
+
+definition:
+  en: "The household's primary method for disposing of solid waste (rubbish, garbage). Sphere Standard 7 key action 3 calls for managing solid waste in a safe, timely, culturally sensitive, and environmentally sustainable way."
+  fr: "La principale méthode du ménage pour éliminer les déchets solides (ordures, détritus). L'action clé 3 de la Norme Sphère 7 appelle à gérer les déchets solides de manière sûre, rapide, culturellement sensible et écologiquement durable."
+  es: "El método principal del hogar para eliminar los residuos sólidos (basura, desechos). La acción clave 3 de la Norma Esfera 7 exige gestionar los residuos sólidos de manera segura, oportuna, culturalmente sensible y ambientalmente sostenible."
+
+type: string
+cardinality: single
+vocabulary: solid-waste-disposal
+references: null
+category: shelter
+core: false
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, iom_dtm_household]

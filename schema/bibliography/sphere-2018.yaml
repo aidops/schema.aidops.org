@@ -14,12 +14,16 @@ informs:
   concepts:
     - DwellingDamageProfile
     - WASHAssessmentProfile
+    - ShelterAdequacyProfile
   vocabularies:
     - habitability-status
     - nfi-item-type
     - water-storage-container-type
     - sanitation-facility-condition
     - hygiene-item-type
+    - shelter-tenure-document
+    - solid-waste-disposal
+    - occupancy-arrangement
   properties:
     - habitability_status
     - essential_items_missing
@@ -29,3 +33,22 @@ informs:
     - sanitation_facility_condition
     - sanitation_facility_private
     - hygiene_items_available
+    - covered_area_m2
+    - covered_area_per_person_m2
+    - floor_to_ceiling_height_adequate
+    - thermal_comfort_adequate
+    - ventilation_adequate
+    - lockable_door
+    - privacy_women_girls
+    - separate_sleeping_spaces_sex
+    - has_sleeping_items
+    - has_cooking_items
+    - technical_assistance_received
+    - technical_assistance_type
+    - tenure_document_type
+    - eviction_risk_6mo
+    - flood_risk_perceived
+    - hazard_protection_adequate
+    - solid_waste_disposal_method
+    - shelter_feels_adequate
+    - distance_safe_water_minutes

@@ -1,0 +1,18 @@
+id: specific_need_unaccompanied_minor
+maturity: draft
+label:
+  en: "Specific need flag: unaccompanied or separated minor"
+  fr: "Indicateur de besoin spécifique : mineur non accompagné ou séparé"
+  es: "Indicador de necesidad específica: menor no acompañado o separado"
+
+definition:
+  en: "Screening flag indicating that the household includes or is an unaccompanied or separated minor. Corresponds to the UNHCR Standardized Specific Needs Code UASC category. This flag enables targeting; individual-level assessment is recorded in a child protection profile."
+  fr: "Indicateur de dépistage signalant que le ménage comprend ou est un mineur non accompagné ou séparé. Correspond à la catégorie ENAS des Codes de besoins spécifiques standardisés du HCR. Cet indicateur permet le ciblage ; l'évaluation individuelle est enregistrée dans un profil de protection de l'enfant."
+  es: "Indicador de cribado que señala que el hogar incluye o es un menor no acompañado o separado. Corresponde a la categoría NNA de los Códigos de Necesidades Específicas Estandarizados del ACNUR. Este indicador permite la focalización; la evaluación individual se registra en un perfil de protección infantil."
+
+type: boolean
+cardinality: single
+references: null
+category: specific_needs
+core: true
+sensitivity: sensitive

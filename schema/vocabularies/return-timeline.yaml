@@ -1,0 +1,59 @@
+id: return-timeline
+maturity: draft
+label:
+  en: Return Timeline
+  fr: "Calendrier de retour"
+  es: "Cronograma de retorno"
+definition:
+  en: "The household's estimated timeline for executing its stated return or relocation intention. Applies only when return_intention is intend_to_return_origin or intend_to_relocate_elsewhere."
+  fr: "Le calendrier estimé du ménage pour mettre en œuvre son intention déclarée de retour ou de réinstallation. S'applique uniquement lorsque return_intention est intend_to_return_origin ou intend_to_relocate_elsewhere."
+  es: "El cronograma estimado del hogar para ejecutar su intención declarada de retorno o reubicación. Se aplica solo cuando return_intention es intend_to_return_origin o intend_to_relocate_elsewhere."
+standard:
+  name: "IOM DTM Intentions and Needs Survey (INS); IOM DTM South Sudan Rapid Intentions Survey"
+  uri: "https://dtm.iom.int/about/methodological-framework"
+values:
+- code: within_3_months
+  label:
+    en: Within 3 months
+    fr: "Dans les 3 mois"
+    es: "En los próximos 3 meses"
+  definition:
+    en: "Household plans to move within the next 3 months."
+    fr: "Le ménage prévoit de se déplacer dans les 3 prochains mois."
+    es: "El hogar planea moverse en los próximos 3 meses."
+- code: within_6_months
+  label:
+    en: Within 6 months
+    fr: "Dans les 6 mois"
+    es: "En los próximos 6 meses"
+  definition:
+    en: "Household plans to move within the next 6 months."
+    fr: "Le ménage prévoit de se déplacer dans les 6 prochains mois."
+    es: "El hogar planea moverse en los próximos 6 meses."
+- code: within_1_year
+  label:
+    en: Within 1 year
+    fr: "Dans l'année"
+    es: "En el próximo año"
+  definition:
+    en: "Household plans to move within the next 12 months."
+    fr: "Le ménage prévoit de se déplacer dans les 12 prochains mois."
+    es: "El hogar planea moverse en los próximos 12 meses."
+- code: more_than_1_year
+  label:
+    en: More than 1 year
+    fr: "Plus d'un an"
+    es: "Más de 1 año"
+  definition:
+    en: "Household plans to move but not within the next year."
+    fr: "Le ménage prévoit de se déplacer mais pas dans l'année à venir."
+    es: "El hogar planea moverse pero no dentro del próximo año."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: "Ne sait pas"
+    es: "No sabe"
+  definition:
+    en: "Household cannot estimate a timeline for its intended move."
+    fr: "Le ménage ne peut pas estimer un calendrier pour son déménagement prévu."
+    es: "El hogar no puede estimar un cronograma para su traslado previsto."

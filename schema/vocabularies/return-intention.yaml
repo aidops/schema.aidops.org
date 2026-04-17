@@ -1,0 +1,59 @@
+id: return-intention
+maturity: draft
+label:
+  en: Return Intention
+  fr: "Intention de retour"
+  es: "Intención de retorno"
+definition:
+  en: "The household's stated future preference regarding its place of residence, expressed in terms of the three durable solutions recognized by the IASC Framework: return to area of origin, local integration at current displacement location, or settlement elsewhere."
+  fr: "La préférence future déclarée du ménage concernant son lieu de résidence, exprimée en termes des trois solutions durables reconnues par le Cadre de l'IASC : retour dans la zone d'origine, intégration locale au lieu de déplacement actuel ou installation ailleurs."
+  es: "La preferencia futura declarada del hogar respecto a su lugar de residencia, expresada en términos de las tres soluciones duraderas reconocidas por el Marco del IASC: retorno al área de origen, integración local en el lugar de desplazamiento actual o asentamiento en otro lugar."
+standard:
+  name: "IASC Framework on Durable Solutions for Internally Displaced Persons; IOM DTM Return Intention component"
+  uri: "https://interagencystandingcommittee.org/other/iasc-framework-durable-solutions-internally-displaced-persons"
+values:
+- code: intend_to_return_origin
+  label:
+    en: Intend to return to area of origin
+    fr: "Intention de retourner dans la zone d'origine"
+    es: "Intención de retornar al área de origen"
+  definition:
+    en: "Household intends to return to the area from which it was displaced."
+    fr: "Le ménage a l'intention de retourner dans la zone d'où il a été déplacé."
+    es: "El hogar tiene la intención de retornar al área de la que fue desplazado."
+- code: intend_to_relocate_elsewhere
+  label:
+    en: Intend to relocate to a different area
+    fr: "Intention de se réinstaller dans une autre zone"
+    es: "Intención de reubicarse en otra área"
+  definition:
+    en: "Household intends to settle in a location other than its area of origin and different from its current displacement location."
+    fr: "Le ménage a l'intention de s'installer dans un lieu autre que sa zone d'origine et différent de son lieu de déplacement actuel."
+    es: "El hogar tiene la intención de establecerse en un lugar distinto de su área de origen y diferente de su ubicación de desplazamiento actual."
+- code: intend_to_integrate_locally
+  label:
+    en: Intend to integrate locally
+    fr: "Intention de s'intégrer localement"
+    es: "Intención de integrarse localmente"
+  definition:
+    en: "Household intends to remain and permanently integrate in the current location of displacement."
+    fr: "Le ménage a l'intention de rester et de s'intégrer définitivement dans son lieu de déplacement actuel."
+    es: "El hogar tiene la intención de permanecer e integrarse permanentemente en su ubicación de desplazamiento actual."
+- code: undecided
+  label:
+    en: Undecided
+    fr: "Indécis"
+    es: "Indeciso"
+  definition:
+    en: "Household has not yet decided on a durable solution preference."
+    fr: "Le ménage n'a pas encore décidé d'une préférence pour une solution durable."
+    es: "El hogar no ha decidido aún una preferencia de solución duradera."
+- code: no_intention_to_return
+  label:
+    en: No intention to return
+    fr: "Aucune intention de retour"
+    es: "Sin intención de retornar"
+  definition:
+    en: "Household has definitively decided not to return to its area of origin and is considering local integration or relocation elsewhere."
+    fr: "Le ménage a définitivement décidé de ne pas retourner dans sa zone d'origine et envisage une intégration locale ou une réinstallation ailleurs."
+    es: "El hogar ha decidido definitivamente no retornar a su área de origen y está considerando integración local o reubicación en otro lugar."

@@ -1,0 +1,18 @@
+id: current_location_type
+maturity: draft
+label:
+  en: "Current location type"
+  fr: "Type de lieu de résidence actuel"
+  es: "Tipo de ubicación actual"
+
+definition:
+  en: "The type of location or shelter arrangement where the household is currently living, classified using the shelter-situation-type vocabulary extended with displacement-specific codes (camp_planned, spontaneous_settlement). Applies when displacement_status is idp, refugee, or asylum_seeker."
+  fr: "Le type de lieu ou d'arrangement d'abri où le ménage vit actuellement, classifié à l'aide du vocabulaire shelter-situation-type enrichi de codes spécifiques au déplacement (camp_planned, spontaneous_settlement). S'applique lorsque displacement_status est idp, refugee ou asylum_seeker."
+  es: "El tipo de ubicación o arreglo de refugio donde el hogar vive actualmente, clasificado usando el vocabulario shelter-situation-type extendido con códigos específicos de desplazamiento (camp_planned, spontaneous_settlement). Aplica cuando displacement_status es idp, refugee o asylum_seeker."
+
+type: string
+cardinality: single
+vocabulary: shelter-situation-type
+references: null
+category: shelter
+core: true

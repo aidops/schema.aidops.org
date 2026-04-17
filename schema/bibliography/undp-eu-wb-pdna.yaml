@@ -20,3 +20,4 @@ informs:
   - damage_level
   - habitability_status
   - reconstruction_intent
+  - triggering_hazard_event

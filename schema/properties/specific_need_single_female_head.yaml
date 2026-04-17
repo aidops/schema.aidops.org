@@ -1,0 +1,18 @@
+id: specific_need_single_female_head
+maturity: draft
+label:
+  en: "Specific need flag: single female-headed household"
+  fr: "Indicateur de besoin spécifique : ménage dirigé par une femme seule"
+  es: "Indicador de necesidad específica: hogar encabezado por mujer sola"
+
+definition:
+  en: "Screening flag indicating that the household is headed by a single woman. Corresponds to the UNHCR Standardized Specific Needs Code single female-headed household category and IOM DTM vulnerability targeting criteria."
+  fr: "Indicateur de dépistage signalant que le ménage est dirigé par une femme seule. Correspond à la catégorie ménage dirigé par une femme seule des Codes de besoins spécifiques standardisés du HCR et aux critères de ciblage de vulnérabilité DTM de l'OIM."
+  es: "Indicador de cribado que señala que el hogar está encabezado por una mujer sola. Corresponde a la categoría hogar con jefatura femenina única de los Códigos de Necesidades Específicas Estandarizados del ACNUR y a los criterios de focalización de vulnerabilidad IOM DTM."
+
+type: boolean
+cardinality: single
+references: null
+category: specific_needs
+core: true
+sensitivity: sensitive

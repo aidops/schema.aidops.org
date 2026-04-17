@@ -1,0 +1,20 @@
+id: covered_area_per_person_m2
+maturity: draft
+label:
+  en: "Covered living area per person (m²)"
+  fr: "Surface habitable couverte par personne (m²)"
+  es: "Área habitable cubierta por persona (m²)"
+
+definition:
+  en: "Derived indicator: total covered living area (covered_area_m2) divided by household size. Calculated in XLSForm or post-hoc. The adequacy threshold — 3.5 m² per person for warm climates, 4.5 m² for cold climates or urban settings with indoor cooking — is applied at scoring time with a deployment-level climate_zone parameter, not encoded in the schema."
+  fr: "Indicateur dérivé : surface habitable couverte totale (covered_area_m2) divisée par la taille du ménage. Calculé dans XLSForm ou a posteriori. Le seuil d'adéquation — 3,5 m² par personne pour les climats chauds, 4,5 m² pour les climats froids ou les milieux urbains avec cuisine intérieure — est appliqué au moment du scoring avec un paramètre climate_zone au niveau du déploiement, non encodé dans le schéma."
+  es: "Indicador derivado: área habitable cubierta total (covered_area_m2) dividida por el tamaño del hogar. Calculado en XLSForm o ex post. El umbral de adecuación — 3,5 m² por persona para climas cálidos, 4,5 m² para climas fríos o entornos urbanos con cocina interior — se aplica en el momento de la puntuación con un parámetro climate_zone a nivel de despliegue, no codificado en el esquema."
+
+type: decimal
+cardinality: single
+vocabulary: null
+references: null
+category: shelter
+core: true
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, gsc_standardised]

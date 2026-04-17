@@ -1,0 +1,21 @@
+id: privacy_women_girls
+maturity: draft
+label:
+  en: "Private space for women and girls"
+  fr: "Espace privé pour les femmes et les filles"
+  es: "Espacio privado para mujeres y niñas"
+
+definition:
+  en: "Whether the shelter has a separate, enclosed space where women and girls can change clothes, wash, or attend to personal hygiene in private. Sphere Standard 3 specifies that women, girls and those needing assistance with personal hygiene often require additional space for privacy."
+  fr: "Si l'abri dispose d'un espace séparé et fermé où les femmes et les filles peuvent se changer, se laver ou s'occuper de leur hygiène personnelle en privé. La Norme Sphère 3 précise que les femmes, les filles et ceux ayant besoin d'aide pour l'hygiène personnelle ont souvent besoin d'espace supplémentaire pour leur vie privée."
+  es: "Si el refugio tiene un espacio separado y cerrado donde mujeres y niñas pueden cambiarse de ropa, lavarse o atender su higiene personal en privado. La Norma Esfera 3 especifica que las mujeres, niñas y quienes necesitan asistencia con la higiene personal a menudo requieren espacio adicional para la privacidad."
+
+type: string
+cardinality: single
+# Allowed values: yes_inside_shelter / yes_nearby_shared / no
+vocabulary: null
+references: null
+category: shelter
+core: true
+sensitivity: sensitive
+valid_instruments: [sphere_shelter_adequacy, gsc_standardised, unhcr_nare]

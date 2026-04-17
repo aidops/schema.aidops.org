@@ -1,0 +1,17 @@
+id: specific_need_disability
+maturity: draft
+label:
+  en: "Specific need flag: person with disability"
+  fr: "Indicateur de besoin spécifique : personne en situation de handicap"
+  es: "Indicador de necesidad específica: persona con discapacidad"
+
+definition:
+  en: "Screening flag indicating that the household includes a person with a disability whose needs are exacerbated by displacement. Corresponds to UNHCR Standardized Specific Needs Code DS (Disability) category. Detailed functioning assessment is recorded on FunctioningProfile using the Washington Group Short Set."
+  fr: "Indicateur de dépistage signalant que le ménage comprend une personne en situation de handicap dont les besoins sont aggravés par le déplacement. Correspond à la catégorie DS (Handicap) des Codes de besoins spécifiques standardisés du HCR. L'évaluation détaillée du fonctionnement est enregistrée sur FunctioningProfile à l'aide du jeu court du Groupe de Washington."
+  es: "Indicador de cribado que señala que el hogar incluye una persona con discapacidad cuyas necesidades se agravan por el desplazamiento. Corresponde a la categoría DS (Discapacidad) de los Códigos de Necesidades Específicas Estandarizados del ACNUR. La evaluación detallada del funcionamiento se registra en FunctioningProfile utilizando el Conjunto Corto del Grupo de Washington."
+
+type: boolean
+cardinality: single
+references: null
+category: specific_needs
+core: true

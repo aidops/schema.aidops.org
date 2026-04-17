@@ -1,0 +1,24 @@
+id: iom-dtm-shelter-companion
+title: "DTM Field Companion for Shelter and NFIs (and Site Typology)"
+short_title: "IOM DTM Shelter Field Companion"
+publisher: "International Organization for Migration (IOM) / Global Shelter Cluster"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://dtm.iom.int/dtm-partners-toolkit/guide/dtm-shelter-and-nfis-and-site-typology"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ShelterAdequacyProfile
+  vocabularies:
+    - occupancy-arrangement
+    - technical-assistance-type
+  properties:
+    - shelter_type
+    - occupancy_arrangement
+    - covered_area_m2
+    - has_sleeping_items
+    - has_cooking_items
+    - solid_waste_disposal_method

@@ -1,0 +1,20 @@
+id: distance_safe_water_minutes
+maturity: draft
+label:
+  en: "Distance to safe water source (minutes, round trip)"
+  fr: "Distance à la source d'eau potable (minutes, aller-retour)"
+  es: "Distancia a la fuente de agua segura (minutos, ida y vuelta)"
+
+definition:
+  en: "Time in minutes to walk from the shelter to the nearest source of safe drinking water and back, including waiting time. Sphere Standard 2 cross-reference. May be omitted if WashAssessmentProfile is collected simultaneously and covers water_collection_time in the same assessment round."
+  fr: "Temps en minutes pour marcher de l'abri à la source d'eau potable la plus proche et revenir, incluant le temps d'attente. Référence croisée Norme Sphère 2. Peut être omis si WashAssessmentProfile est collecté simultanément et couvre water_collection_time dans le même cycle d'évaluation."
+  es: "Tiempo en minutos para caminar desde el refugio hasta la fuente de agua potable más cercana y regresar, incluyendo el tiempo de espera. Referencia cruzada Norma Esfera 2. Puede omitirse si WashAssessmentProfile se recopila simultáneamente y cubre water_collection_time en el mismo ciclo de evaluación."
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: water
+core: false
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy]

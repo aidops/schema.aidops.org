@@ -17,3 +17,13 @@ informs:
   properties:
   - mdd_w_achieved
   - mdd_w_score
+  - wdds_grains_consumed
+  - wdds_pulses_consumed
+  - wdds_nuts_seeds_consumed
+  - wdds_dairy_consumed
+  - wdds_meat_poultry_fish_consumed
+  - wdds_eggs_consumed
+  - wdds_dark_green_leafy_veg_consumed
+  - wdds_vitamin_a_fruit_veg_consumed
+  - wdds_other_vegetables_consumed
+  - wdds_other_fruits_consumed

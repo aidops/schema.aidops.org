@@ -1,0 +1,18 @@
+id: preferred_destination_country
+maturity: draft
+label:
+  en: "Preferred destination country"
+  fr: "Pays de destination préféré"
+  es: "País de destino preferido"
+
+definition:
+  en: "The household's preferred country of destination if it plans to relocate. Recorded as an ISO 3166-1 alpha-2 country code. Applies when return_intention is intend_to_relocate_elsewhere."
+  fr: "Le pays de destination préféré du ménage s'il prévoit de se réinstaller. Enregistré sous forme de code de pays ISO 3166-1 alpha-2. S'applique lorsque return_intention est intend_to_relocate_elsewhere."
+  es: "El país de destino preferido del hogar si planea reubicarse. Registrado como código de país ISO 3166-1 alpha-2. Aplica cuando return_intention es intend_to_relocate_elsewhere."
+
+type: string
+cardinality: single
+vocabulary: country
+references: null
+category: intentions
+core: false

@@ -39,3 +39,9 @@ informs:
     - mhm_privacy_available
     - mhm_materials_available
     - mhm_material_disposal
+    - handwashing_facility_type
+    - handwashing_facility_location
+    - water_source_secondary
+    - water_availability_days_per_week
+    - water_payment
+    - water_payment_amount_local_currency

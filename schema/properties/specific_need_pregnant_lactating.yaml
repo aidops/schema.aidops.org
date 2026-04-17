@@ -1,0 +1,17 @@
+id: specific_need_pregnant_lactating
+maturity: draft
+label:
+  en: "Specific need flag: pregnant or lactating woman"
+  fr: "Indicateur de besoin spécifique : femme enceinte ou allaitante"
+  es: "Indicador de necesidad específica: mujer embarazada o lactante"
+
+definition:
+  en: "Screening flag indicating that the household includes a pregnant or lactating woman. Corresponds to the UNHCR Standardized Specific Needs Code category. Detailed assessment of pregnancy status is recorded on the relevant health or nutrition profile."
+  fr: "Indicateur de dépistage signalant que le ménage comprend une femme enceinte ou allaitante. Correspond à la catégorie des Codes de besoins spécifiques standardisés du HCR. L'évaluation détaillée de l'état de grossesse est enregistrée sur le profil de santé ou de nutrition pertinent."
+  es: "Indicador de cribado que señala que el hogar incluye una mujer embarazada o lactante. Corresponde a la categoría de los Códigos de Necesidades Específicas Estandarizados del ACNUR. La evaluación detallada del estado de embarazo se registra en el perfil de salud o nutrición correspondiente."
+
+type: boolean
+cardinality: single
+references: null
+category: specific_needs
+core: false

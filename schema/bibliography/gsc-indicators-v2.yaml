@@ -1,0 +1,30 @@
+id: gsc-indicators-v2
+title: "GSC Standardised Shelter Indicators Guidelines"
+short_title: "GSC Indicators v2"
+publisher: "Global Shelter Cluster (UNHCR/IFRC)"
+year: 2024
+type: guidance_publication
+domain: humanitarian
+uri: "https://sheltercluster.org/global-shelter-cluster-information-management-and-assessment-toolkit/documents/gscstandardized-0"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ShelterAdequacyProfile
+  vocabularies:
+    - solid-waste-disposal
+  properties:
+    - shelter_type
+    - covered_area_m2
+    - covered_area_per_person_m2
+    - sleeping_spaces_count
+    - thermal_comfort_adequate
+    - lockable_door
+    - privacy_women_girls
+    - has_sleeping_items
+    - technical_assistance_received
+    - technical_assistance_type
+    - tenure_document_type
+    - eviction_risk_6mo
+    - shelter_feels_adequate

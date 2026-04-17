@@ -25,3 +25,11 @@ informs:
   vocabularies: []
   properties:
     - fies_raw_score
+    - fies_worried
+    - fies_ate_few_foods
+    - fies_ate_less
+    - fies_ran_out
+    - fies_skip_meal
+    - fies_unable_healthy_food
+    - fies_went_whole_day_without
+    - fies_hungry

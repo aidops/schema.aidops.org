@@ -1,0 +1,18 @@
+id: has_uasc
+maturity: draft
+label:
+  en: "Household has unaccompanied or separated child"
+  fr: "Le ménage a un enfant non accompagné ou séparé"
+  es: "El hogar tiene un niño no acompañado o separado"
+
+definition:
+  en: "Whether there is an unaccompanied or separated child (UASC) among the household members or in the care of this household. This is a household-level screening flag; individual-level assessment belongs to a child protection profile."
+  fr: "S'il y a un enfant non accompagné ou séparé (ENAS) parmi les membres du ménage ou à la charge de ce ménage. Il s'agit d'un indicateur de dépistage au niveau du ménage ; l'évaluation individuelle appartient à un profil de protection de l'enfant."
+  es: "Si hay un niño no acompañado o separado (NNA) entre los miembros del hogar o al cuidado de este hogar. Este es un indicador de cribado a nivel del hogar; la evaluación individual pertenece a un perfil de protección infantil."
+
+type: boolean
+cardinality: single
+references: null
+category: family_separation
+core: true
+sensitivity: sensitive

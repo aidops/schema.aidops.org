@@ -1,0 +1,152 @@
+id: ShelterAdequacyProfile
+label:
+  en: Shelter Adequacy Profile
+  fr: "Profil d'adéquation de l'abri"
+  es: "Perfil de adecuación del refugio"
+maturity: draft
+
+definition:
+  en: >
+    A household-level record of whether the current shelter arrangement meets
+    Sphere minimum standards for shelter and settlement. Covers shelter type
+    and occupancy arrangement, living space, construction materials, thermal
+    comfort and ventilation, privacy and security, household items (NFIs),
+    technical assistance received, security of tenure, hazard exposure, and
+    environmental sustainability. Based on the Sphere Handbook 2018 Shelter
+    and Settlement chapter (Standards 2-7), the IOM DTM Field Companion for
+    Shelter and NFIs, and the Global Shelter Cluster Standardised Shelter
+    Indicators. Intended for longitudinal monitoring of shelter conditions
+    of displaced or crisis-affected households; distinct from
+    DwellingDamageProfile, which is event-anchored and focuses on
+    post-shock damage to the household's original dwelling.
+  fr: >
+    Un enregistrement au niveau du ménage indiquant si l'arrangement d'abri
+    actuel répond aux normes minimales Sphère pour l'abri et les
+    établissements. Couvre le type d'abri et l'arrangement d'occupation,
+    l'espace de vie, les matériaux de construction, le confort thermique et
+    la ventilation, la vie privée et la sécurité, les articles ménagers
+    (ANAs), l'assistance technique reçue, la sécurité d'occupation, l'exposition
+    aux risques et la durabilité environnementale. Basé sur le chapitre Abri
+    et Établissements du Manuel Sphère 2018 (Normes 2-7), le Companion de
+    terrain DTM de l'OIM pour l'Abri et les ANAs, et les Indicateurs d'Abri
+    Standardisés du Cluster Abri Mondial. Destiné au suivi longitudinal des
+    conditions d'abri des ménages déplacés ou affectés par une crise; distinct
+    de DwellingDamageProfile, qui est ancré à un événement et se concentre sur
+    les dommages post-choc au logement d'origine du ménage.
+  es: >
+    Un registro a nivel del hogar de si el arreglo de refugio actual cumple los
+    estándares mínimos de Esfera para refugio y asentamiento. Abarca el tipo de
+    refugio y arreglo de ocupación, espacio habitable, materiales de
+    construcción, confort térmico y ventilación, privacidad y seguridad,
+    artículos del hogar (ANFs), asistencia técnica recibida, seguridad de
+    tenencia, exposición a peligros y sostenibilidad ambiental. Basado en el
+    capítulo de Refugio y Asentamiento del Manual Esfera 2018 (Normas 2-7), el
+    Companion de campo DTM de la OIM para Refugio y ANFs, y los Indicadores de
+    Refugio Estandarizados del Clúster Global de Refugio. Destinado al
+    monitoreo longitudinal de las condiciones de refugio de hogares desplazados
+    o afectados por crisis; distinto de DwellingDamageProfile, que está anclado
+    a un evento y se centra en los daños post-choque a la vivienda original del
+    hogar.
+
+properties:
+  - shelter_type
+  - occupancy_arrangement
+  - covered_area_m2
+  - covered_area_per_person_m2
+  - floor_to_ceiling_height_adequate
+  - sleeping_spaces_count
+  - roof_material
+  - wall_material
+  - floor_material
+  - thermal_comfort_adequate
+  - ventilation_adequate
+  - lockable_door
+  - privacy_women_girls
+  - separate_sleeping_spaces_sex
+  - has_sleeping_items
+  - has_cooking_items
+  - technical_assistance_received
+  - technical_assistance_type
+  - tenure_document_type
+  - eviction_risk_6mo
+  - flood_risk_perceived
+  - hazard_protection_adequate
+  - solid_waste_disposal_method
+  - distance_safe_water_minutes
+  - shelter_feels_adequate
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: shelter
+    properties:
+      - shelter_type
+      - occupancy_arrangement
+      - roof_material
+      - wall_material
+      - floor_material
+      - thermal_comfort_adequate
+      - ventilation_adequate
+      - technical_assistance_received
+      - technical_assistance_type
+  - category: living_space
+    properties:
+      - covered_area_m2
+      - covered_area_per_person_m2
+      - floor_to_ceiling_height_adequate
+      - sleeping_spaces_count
+  - category: habitability
+    properties:
+      - lockable_door
+      - privacy_women_girls
+      - separate_sleeping_spaces_sex
+      - shelter_feels_adequate
+  - category: nfi
+    properties:
+      - has_sleeping_items
+      - has_cooking_items
+  - category: tenure
+    properties:
+      - tenure_document_type
+      - eviction_risk_6mo
+  - category: environment
+    properties:
+      - flood_risk_perceived
+      - hazard_protection_adequate
+      - solid_waste_disposal_method
+      - distance_safe_water_minutes
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (shelter adequacy assessment)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A household shelter adequacy assessment serializes as a QuestionnaireResponse against a Questionnaire aligned with the Sphere shelter standards."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS,
+    OpenSPP, openIMIS, DCI Social Registry) carry a household-level shelter
+    adequacy assessment. The domain tools live in humanitarian operations:
+    IOM Displacement Tracking Matrix (DTM), Global Shelter Cluster rapid
+    needs assessments, REACH multi-sector household surveys, and UNHCR NARE
+    assessments. The low v1 convergence reflects scope rather than
+    prevalence; shelter adequacy assessments are widely deployed in
+    humanitarian responses. FHIR's QuestionnaireResponse pattern
+    accommodates the shape.

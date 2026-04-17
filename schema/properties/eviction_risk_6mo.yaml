@@ -1,0 +1,21 @@
+id: eviction_risk_6mo
+maturity: draft
+label:
+  en: "Eviction risk in past 6 months"
+  fr: "Risque d'expulsion au cours des 6 derniers mois"
+  es: "Riesgo de desalojo en los últimos 6 meses"
+
+definition:
+  en: "Whether the household has been threatened with or experienced a forced eviction from its shelter in the past 6 months. Sphere Standard 6 guidance identifies common triggers for eviction including inability to pay rent, absence of a written lease, and discrimination. A key HLP protection indicator."
+  fr: "Si le ménage a été menacé d'expulsion forcée ou en a subi une depuis son abri au cours des 6 derniers mois. Les orientations de la Norme Sphère 6 identifient les déclencheurs courants d'expulsion, notamment l'incapacité à payer le loyer, l'absence de bail écrit et la discrimination. Un indicateur clé de protection HLP."
+  es: "Si el hogar ha sido amenazado con o ha experimentado un desalojo forzado de su refugio en los últimos 6 meses. La orientación de la Norma Esfera 6 identifica desencadenantes comunes de desalojo incluyendo incapacidad de pagar el alquiler, ausencia de contrato escrito y discriminación. Un indicador clave de protección VTP."
+
+type: string
+cardinality: single
+# Allowed values: yes_evicted / yes_threatened / no
+vocabulary: null
+references: null
+category: shelter
+core: true
+sensitivity: sensitive
+valid_instruments: [sphere_shelter_adequacy, unhcr_nare, gsc_standardised]

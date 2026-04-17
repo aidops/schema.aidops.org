@@ -15,4 +15,5 @@ informs:
     - DwellingDamageProfile
   vocabularies:
     - structural-safety-tag
-  properties: []
+  properties:
+    - structural_safety_assessment

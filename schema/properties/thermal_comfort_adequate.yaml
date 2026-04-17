@@ -1,0 +1,21 @@
+id: thermal_comfort_adequate
+maturity: draft
+label:
+  en: "Thermal comfort adequate"
+  fr: "Confort thermique adéquat"
+  es: "Confort térmico adecuado"
+
+definition:
+  en: "Whether the shelter is adequately warm or cool for the local climate throughout the year, including the coldest or hottest season. Self-reported by the household head or adult member. Sphere Standard 3 guidance notes address thermal comfort for both warm/humid and cold climates."
+  fr: "Si l'abri est suffisamment chaud ou frais pour le climat local tout au long de l'année, y compris la saison la plus froide ou la plus chaude. Autodéclaré par le chef de ménage ou un membre adulte. Les notes d'orientation de la Norme Sphère 3 abordent le confort thermique pour les climats chauds/humides et froids."
+  es: "Si el refugio es adecuadamente cálido o fresco para el clima local durante todo el año, incluyendo la temporada más fría o más caliente. Autodeclarado por el jefe del hogar o un miembro adulto. Las notas de orientación de la Norma Esfera 3 abordan el confort térmico para climas cálidos/húmedos y fríos."
+
+type: string
+cardinality: single
+# Allowed values: yes / no / partial / dont_know
+vocabulary: null
+references: null
+category: shelter
+core: true
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, gsc_standardised]

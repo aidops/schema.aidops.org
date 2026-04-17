@@ -44,3 +44,4 @@ informs:
     - hiv_ever_tested
     - hiv_tested_last_12_months
     - hiv_received_results
+    - age_at_menarche_years

@@ -11,6 +11,7 @@ status: active
 informs:
   concepts:
   - DwellingDamageProfile
+  - ShelterAdequacyProfile
   vocabularies:
   - shelter-situation-type
   - shelter-damage-level
@@ -19,3 +20,5 @@ informs:
   - current_shelter_type
   - damage_level
   - habitability_status
+  - shelter_type
+  - shelter_feels_adequate

@@ -1,0 +1,17 @@
+id: displacement_origin_admin1
+maturity: draft
+label:
+  en: "Displacement origin administrative area (level 1)"
+  fr: "Zone administrative d'origine du déplacement (niveau 1)"
+  es: "Área administrativa de origen del desplazamiento (nivel 1)"
+
+definition:
+  en: "The first-level administrative division (province, state, region, or governorate) from which the household was internally displaced. Stored as a free-text name with an OCHA P-code when available. Applies when displacement_status is idp or idp_returnee."
+  fr: "La division administrative de premier niveau (province, état, région ou gouvernorat) d'où le ménage a été déplacé à l'intérieur du pays. Stocké sous forme de nom en texte libre avec un code-P OCHA lorsque disponible. S'applique lorsque displacement_status est idp ou idp_returnee."
+  es: "La división administrativa de primer nivel (provincia, estado, región o gobernación) de la que el hogar fue desplazado internamente. Almacenado como nombre en texto libre con un código-P de OCHA cuando esté disponible. Aplica cuando displacement_status es idp o idp_returnee."
+
+type: string
+cardinality: single
+references: null
+category: location
+core: true

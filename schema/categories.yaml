@@ -77,6 +77,24 @@ shelter:
     fr: Abri
     es: Refugio
 
+tenure:
+  label:
+    en: Security of Tenure
+    fr: "Sécurité d'occupation"
+    es: "Seguridad de tenencia"
+
+living_space:
+  label:
+    en: Living Space
+    fr: "Espace de vie"
+    es: "Espacio habitable"
+
+environment:
+  label:
+    en: Environment
+    fr: Environnement
+    es: Entorno
+
 # Shared categories (referenced in concept property_groups, defined in PublicSchema)
 administrative:
   label:
@@ -245,3 +263,45 @@ derived_mnh:
     en: Derived MNH Indicators
     fr: "Indicateurs SMN dérivés"
     es: Indicadores SMN derivados
+
+displacement_status:
+  label:
+    en: Displacement Status
+    fr: "Statut de déplacement"
+    es: "Estado de desplazamiento"
+
+displacement_history:
+  label:
+    en: Displacement History
+    fr: "Historique de déplacement"
+    es: "Historia de desplazamiento"
+
+push_factors:
+  label:
+    en: Push Factors
+    fr: "Facteurs de départ"
+    es: "Factores de expulsión"
+
+intentions:
+  label:
+    en: Intentions
+    fr: "Intentions"
+    es: "Intenciones"
+
+documentation:
+  label:
+    en: Documentation
+    fr: "Documentation"
+    es: "Documentación"
+
+family_separation:
+  label:
+    en: Family Separation
+    fr: "Séparation familiale"
+    es: "Separación familiar"
+
+specific_needs:
+  label:
+    en: Specific Needs
+    fr: "Besoins spécifiques"
+    es: "Necesidades específicas"

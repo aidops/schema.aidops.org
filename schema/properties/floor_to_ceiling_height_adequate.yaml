@@ -1,0 +1,21 @@
+id: floor_to_ceiling_height_adequate
+maturity: draft
+label:
+  en: "Floor-to-ceiling height adequate"
+  fr: "Hauteur sol-plafond adéquate"
+  es: "Altura suelo-techo adecuada"
+
+definition:
+  en: "Whether the internal floor-to-ceiling height is at least 2 metres at the highest point of the shelter. Enumerator observation is preferred over self-report. Sphere Standard 3 specifies a minimum of 2 metres (2.6 metres in hot climates) at the highest point."
+  fr: "Si la hauteur intérieure sol-plafond est d'au moins 2 mètres au point le plus élevé de l'abri. L'observation par l'enquêteur est préférable à l'autodéclaration. La Norme Sphère 3 spécifie un minimum de 2 mètres (2,6 mètres dans les climats chauds) au point le plus élevé."
+  es: "Si la altura interior suelo-techo es de al menos 2 metros en el punto más alto del refugio. Se prefiere la observación del encuestador sobre el autoinforme. La Norma Esfera 3 especifica un mínimo de 2 metros (2,6 metros en climas calurosos) en el punto más alto."
+
+type: string
+cardinality: single
+# Allowed values: yes / no / dont_know
+vocabulary: null
+references: null
+category: shelter
+core: false
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, gsc_standardised]

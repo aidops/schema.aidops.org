@@ -1,0 +1,59 @@
+id: rsd-status
+maturity: draft
+label:
+  en: Refugee Status Determination Status
+  fr: "Statut de la détermination du statut de réfugié"
+  es: "Estado de la determinación del estatuto de refugiado"
+definition:
+  en: "The current state of the refugee status determination (RSD) claim for a household whose members are of concern under the 1951 Refugee Convention or UNHCR mandate. Applies only when displacement_status is refugee or asylum_seeker; skip otherwise."
+  fr: "L'état actuel de la demande de détermination du statut de réfugié (DSR) pour un ménage dont les membres relèvent de la Convention de 1951 relative au statut des réfugiés ou du mandat du HCR. S'applique uniquement lorsque displacement_status est refugee ou asylum_seeker ; ignorer autrement."
+  es: "El estado actual de la solicitud de determinación del estatuto de refugiado (DER) para un hogar cuyos miembros son de preocupación bajo la Convención de Refugiados de 1951 o el mandato del ACNUR. Se aplica solo cuando displacement_status es refugee o asylum_seeker; omitir en caso contrario."
+standard:
+  name: "UNHCR Guidance on Registration and Identity Management (2022); 1951 Refugee Convention"
+  uri: "https://www.unhcr.org/registration-guidance/"
+values:
+- code: recognized
+  label:
+    en: Recognized refugee
+    fr: "Réfugié reconnu"
+    es: "Refugiado reconocido"
+  definition:
+    en: "Refugee status formally recognized by UNHCR under its mandate or by the national asylum authority."
+    fr: "Statut de réfugié formellement reconnu par le HCR dans le cadre de son mandat ou par l'autorité nationale d'asile."
+    es: "Estatuto de refugiado formalmente reconocido por el ACNUR bajo su mandato o por la autoridad de asilo nacional."
+- code: pending
+  label:
+    en: Claim pending
+    fr: "Demande en attente"
+    es: "Solicitud pendiente"
+  definition:
+    en: "Application for refugee status or asylum has been lodged and is awaiting determination."
+    fr: "La demande de statut de réfugié ou d'asile a été déposée et attend d'être examinée."
+    es: "La solicitud de estatuto de refugiado o asilo ha sido presentada y está pendiente de determinación."
+- code: rejected
+  label:
+    en: Claim rejected
+    fr: "Demande rejetée"
+    es: "Solicitud rechazada"
+  definition:
+    en: "Application was assessed and rejected; appeal or further proceedings may still be open."
+    fr: "La demande a été évaluée et rejetée ; un appel ou d'autres procédures peuvent encore être en cours."
+    es: "La solicitud fue evaluada y rechazada; pueden aún estar abiertas apelaciones u otros procedimientos."
+- code: not_applied
+  label:
+    en: Has not applied
+    fr: "N'a pas demandé"
+    es: "No ha solicitado"
+  definition:
+    en: "Person has not submitted a refugee status determination claim."
+    fr: "La personne n'a pas soumis de demande de détermination du statut de réfugié."
+    es: "La persona no ha presentado una solicitud de determinación del estatuto de refugiado."
+- code: not_applicable
+  label:
+    en: Not applicable
+    fr: "Sans objet"
+    es: "No aplica"
+  definition:
+    en: "RSD process does not apply to this household, for example when displacement_status is idp or resident."
+    fr: "Le processus de DSR ne s'applique pas à ce ménage, par exemple lorsque displacement_status est idp ou resident."
+    es: "El proceso de DER no aplica para este hogar, por ejemplo cuando displacement_status es idp o resident."

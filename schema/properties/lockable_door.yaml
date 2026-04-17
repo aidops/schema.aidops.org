@@ -1,0 +1,20 @@
+id: lockable_door
+maturity: draft
+label:
+  en: "Lockable or securely closable door"
+  fr: "Porte verrouillable ou fermant solidement"
+  es: "Puerta con cerradura o cierre seguro"
+
+definition:
+  en: "Whether the shelter has a door or entrance that can be locked or securely closed from the inside. A key privacy and physical security indicator. Sphere Standard 3 protection guidance emphasises personal security within the shelter, including the ability to control access."
+  fr: "Si l'abri dispose d'une porte ou d'une entrée pouvant être verrouillée ou fermée solidement de l'intérieur. Un indicateur clé de vie privée et de sécurité physique. Les orientations de protection de la Norme Sphère 3 soulignent la sécurité personnelle à l'intérieur de l'abri, y compris la capacité à contrôler l'accès."
+  es: "Si el refugio tiene una puerta o entrada que puede bloquearse o cerrarse de forma segura desde adentro. Un indicador clave de privacidad y seguridad física. La orientación de protección de la Norma Esfera 3 enfatiza la seguridad personal dentro del refugio, incluida la capacidad de controlar el acceso."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: shelter
+core: true
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, gsc_standardised, unhcr_nare]

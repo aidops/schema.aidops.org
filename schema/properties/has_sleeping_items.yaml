@@ -1,0 +1,21 @@
+id: has_sleeping_items
+maturity: draft
+label:
+  en: "Has adequate sleeping items"
+  fr: "Dispose d'articles de couchage adéquats"
+  es: "Tiene artículos de cama adecuados"
+
+definition:
+  en: "Whether each member of the household has at least one blanket and a sleeping mat or mattress. Sphere Standard 4 key indicator: minimum one blanket and bedding (floor mat, mattress, or sheeting) per person."
+  fr: "Si chaque membre du ménage dispose d'au moins une couverture et d'un tapis de couchage ou d'un matelas. Indicateur clé de la Norme Sphère 4 : minimum une couverture et literie (tapis de sol, matelas ou drap) par personne."
+  es: "Si cada miembro del hogar tiene al menos una frazada y una estera o colchón para dormir. Indicador clave de la Norma Esfera 4: mínimo una frazada y ropa de cama (estera de piso, colchón o sábana) por persona."
+
+type: string
+cardinality: single
+# Allowed values: yes_all / yes_some / no
+vocabulary: null
+references: null
+category: nfi
+core: true
+sensitivity: standard
+valid_instruments: [sphere_shelter_adequacy, iom_dtm_household, gsc_standardised]

@@ -1,0 +1,17 @@
+id: displacement_event_count
+maturity: draft
+label:
+  en: "Number of displacement events"
+  fr: "Nombre d'événements de déplacement"
+  es: "Número de eventos de desplazamiento"
+
+definition:
+  en: "The total number of times the household has been displaced, counting each separate forced move as one event. Code 98 = don't know; code 99 = prefer not to say."
+  fr: "Le nombre total de fois que le ménage a été déplacé, en comptant chaque déménagement forcé séparé comme un événement. Code 98 = ne sait pas ; code 99 = préfère ne pas répondre."
+  es: "El número total de veces que el hogar ha sido desplazado, contando cada traslado forzado separado como un evento. Código 98 = no sabe; código 99 = prefiere no responder."
+
+type: integer
+cardinality: single
+references: null
+category: displacement_history
+core: false

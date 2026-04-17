@@ -1,0 +1,19 @@
+id: displacement_primary_reason
+maturity: draft
+label:
+  en: "Primary displacement reason"
+  fr: "Raison principale du déplacement"
+  es: "Razón principal del desplazamiento"
+
+definition:
+  en: "The single most important reason for the household's displacement, selected from the same displacement-reason vocabulary used for displacement_reasons. Collected in comprehensive surveys when a ranking of reasons is required."
+  fr: "La raison la plus importante pour le déplacement du ménage, sélectionnée dans le même vocabulaire displacement-reason utilisé pour displacement_reasons. Collecté dans les enquêtes complètes lorsqu'un classement des raisons est requis."
+  es: "La razón más importante para el desplazamiento del hogar, seleccionada del mismo vocabulario displacement-reason utilizado para displacement_reasons. Se recopila en encuestas completas cuando se requiere una clasificación de razones."
+
+type: string
+cardinality: single
+vocabulary: displacement-reason
+references: null
+category: push_factors
+core: false
+sensitivity: sensitive

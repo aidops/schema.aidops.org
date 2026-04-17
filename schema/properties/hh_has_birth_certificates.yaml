@@ -1,0 +1,17 @@
+id: hh_has_birth_certificates
+maturity: draft
+label:
+  en: "Children have birth certificates"
+  fr: "Les enfants ont des actes de naissance"
+  es: "Los niños tienen actas de nacimiento"
+
+definition:
+  en: "Whether every child under 18 in the household has a birth certificate. Responses: yes (all children have one), partial (some do), no (none do), not_applicable (no children under 18 in household)."
+  fr: "Si chaque enfant de moins de 18 ans dans le ménage possède un acte de naissance. Réponses : yes (tous les enfants en ont un), partial (certains en ont un), no (aucun n'en a), not_applicable (pas d'enfants de moins de 18 ans dans le ménage)."
+  es: "Si cada niño menor de 18 años en el hogar tiene un acta de nacimiento. Respuestas: yes (todos los niños tienen una), partial (algunos tienen), no (ninguno tiene), not_applicable (no hay niños menores de 18 años en el hogar)."
+
+type: string
+cardinality: single
+references: null
+category: documentation
+core: false

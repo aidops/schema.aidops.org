@@ -1,0 +1,19 @@
+id: displacement_reasons
+maturity: draft
+label:
+  en: "Displacement reasons"
+  fr: "Raisons du déplacement"
+  es: "Razones del desplazamiento"
+
+definition:
+  en: "The main reasons why the household left its place of habitual residence, as reported by the respondent. Multi-select. Refers to the most recent or initial displacement event; forms should specify which. See displacement-reason vocabulary."
+  fr: "Les principales raisons pour lesquelles le ménage a quitté son lieu de résidence habituel, telles que déclarées par le répondant. Sélection multiple. Se réfère à l'événement de déplacement le plus récent ou initial ; les formulaires doivent préciser lequel. Voir le vocabulaire displacement-reason."
+  es: "Las principales razones por las que el hogar dejó su lugar de residencia habitual, según lo reportado por el encuestado. Selección múltiple. Se refiere al evento de desplazamiento más reciente o inicial; los formularios deben especificar cuál. Ver vocabulario displacement-reason."
+
+type: string
+cardinality: multiple
+vocabulary: displacement-reason
+references: null
+category: push_factors
+core: true
+sensitivity: sensitive

@@ -1,0 +1,18 @@
+id: displacement_origin_country
+maturity: draft
+label:
+  en: "Displacement origin country"
+  fr: "Pays d'origine du déplacement"
+  es: "País de origen del desplazamiento"
+
+definition:
+  en: "The country from which the household was displaced or fled. Recorded as an ISO 3166-1 alpha-2 country code. Applies when displacement_status is refugee, asylum_seeker, returnee_from_abroad, or international_migrant."
+  fr: "Le pays dont le ménage a été déplacé ou a fui. Enregistré sous forme de code de pays ISO 3166-1 alpha-2. S'applique lorsque displacement_status est refugee, asylum_seeker, returnee_from_abroad ou international_migrant."
+  es: "El país del que el hogar fue desplazado o huyó. Registrado como código de país ISO 3166-1 alpha-2. Aplica cuando displacement_status es refugee, asylum_seeker, returnee_from_abroad o international_migrant."
+
+type: string
+cardinality: single
+vocabulary: country
+references: null
+category: demographics
+core: true

@@ -44,15 +44,16 @@ class TestRealSchema:
         assert "context" in result
         assert "concept_schemas" in result
 
-        # AidOps has exactly 11 concepts; update this count when adding/removing AidOps concepts
-        assert len(result["concepts"]) == 11, (
-            f"Expected 11 concepts, got {len(result['concepts'])}: "
+        # AidOps has exactly 13 concepts; update this count when adding/removing AidOps concepts
+        assert len(result["concepts"]) == 13, (
+            f"Expected 13 concepts, got {len(result['concepts'])}: "
             f"{sorted(result['concepts'].keys())}"
         )
         assert set(result["concepts"].keys()) == {
             "FoodSecurityProfile",
             "AnthropometricProfile",
             "ChildHealthProfile",
+            "DisplacementProfile",
             "DwellingDamageProfile",
             "EducationProfile",
             "EnergyAccessProfile",
@@ -60,17 +61,18 @@ class TestRealSchema:
             "MaternalNewbornHealthProfile",
             "NutritionPracticesProfile",
             "ReproductiveHealthProfile",
+            "ShelterAdequacyProfile",
             "WASHAssessmentProfile",
         }
 
         # Update this count when adding/removing AidOps-owned properties
-        assert len(result["properties"]) == 396, (
-            f"Expected 396 properties, got {len(result['properties'])}"
+        assert len(result["properties"]) == 443, (
+            f"Expected 443 properties, got {len(result['properties'])}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies
-        assert len(result["vocabularies"]) == 87, (
-            f"Expected 87 vocabularies, got {len(result['vocabularies'])}"
+        assert len(result["vocabularies"]) == 97, (
+            f"Expected 97 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema
