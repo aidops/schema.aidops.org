@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes_regularly / yes_occasionally / no / dont_know
-vocabulary: null
+vocabulary: flood-risk-perceived
 references: null
 category: shelter
 core: true

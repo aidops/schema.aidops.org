@@ -1,0 +1,47 @@
+id: yes-no-dk-na
+maturity: draft
+label:
+  en: "Yes / No / Don't know / Not applicable"
+  fr: "Oui / Non / Ne sait pas / Sans objet"
+  es: "Sí / No / No sabe / No aplica"
+definition:
+  en: "Four-level response scale for questions where both genuine uncertainty and situational non-applicability are valid response categories, in addition to yes/no."
+  fr: "Échelle de réponse à quatre niveaux pour les questions où l'incertitude genuine et la non-applicabilité situationnelle sont des catégories de réponse valides, en plus de oui/non."
+  es: "Escala de respuesta de cuatro niveles para preguntas donde tanto la incertidumbre genuina como la no aplicabilidad situacional son categorías de respuesta válidas, además de sí/no."
+values:
+  - code: "yes"
+    label:
+      en: "Yes"
+      fr: "Oui"
+      es: "Sí"
+    definition:
+      en: "The respondent confirms the condition or item."
+      fr: "Le répondant confirme la condition ou l'article."
+      es: "El encuestado confirma la condición o artículo."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "The respondent denies the condition or item."
+      fr: "Le répondant nie la condition ou l'article."
+      es: "El encuestado niega la condición o artículo."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The respondent does not know. This is a valid response and must not be re-coded as 'no' or missing."
+      fr: "Le répondant ne sait pas. Il s'agit d'une réponse valide qui ne doit pas être recodée comme 'non' ou manquante."
+      es: "El encuestado no sabe. Esta es una respuesta válida y no debe recodificarse como 'no' o faltante."
+  - code: not_applicable
+    label:
+      en: "Not applicable"
+      fr: "Sans objet"
+      es: "No aplica"
+    definition:
+      en: "The question does not apply to the respondent's situation."
+      fr: "La question ne s'applique pas à la situation du répondant."
+      es: "La pregunta no aplica a la situación del encuestado."

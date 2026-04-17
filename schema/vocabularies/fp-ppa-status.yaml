@@ -1,0 +1,38 @@
+id: fp-ppa-status
+maturity: draft
+label:
+  en: "Postpartum amenorrhea status (3-level)"
+  fr: "Statut d'aménorrhée post-partum (3 niveaux)"
+  es: "Estado de amenorrea posparto (3 niveles)"
+definition:
+  en: "Three-level response for DHS V405 proxy - whether the woman's menstrual period has returned since her last pregnancy ended. The 'no_last_pregnancy' code captures women who have never been pregnant, avoiding ambiguity between 'no, period has not returned' and 'no, there was no pregnancy'. DHS-8 approach: PPA classification is based on the last pregnancy, not the last birth."
+  fr: "Réponse à trois niveaux pour le proxy DHS V405 - si les règles de la femme sont revenues depuis la fin de sa dernière grossesse. Le code 'no_last_pregnancy' capture les femmes n'ayant jamais été enceintes, évitant l'ambiguïté entre 'non, les règles ne sont pas revenues' et 'non, il n'y a pas eu de grossesse'. Approche DHS-8 : la classification APM est basée sur la dernière grossesse, pas le dernier accouchement."
+  es: "Respuesta de tres niveles para el proxy DHS V405 - si el período menstrual de la mujer ha regresado desde que terminó su último embarazo. El código 'no_last_pregnancy' captura a las mujeres que nunca han estado embarazadas, evitando la ambigüedad entre 'no, el período no ha regresado' y 'no, no hubo embarazo'. Enfoque DHS-8: la clasificación AMP se basa en el último embarazo, no en el último parto."
+values:
+  - code: "yes"
+    label:
+      en: "Yes - period has returned since last pregnancy"
+      fr: "Oui - les règles sont revenues depuis la dernière grossesse"
+      es: "Sí - el período ha regresado desde el último embarazo"
+    definition:
+      en: "The woman's menstrual period has returned after her last pregnancy ended."
+      fr: "Les règles de la femme sont revenues après la fin de sa dernière grossesse."
+      es: "El período menstrual de la mujer ha regresado después de que terminó su último embarazo."
+  - code: "no"
+    label:
+      en: "No - period has not returned since last pregnancy"
+      fr: "Non - les règles ne sont pas revenues depuis la dernière grossesse"
+      es: "No - el período no ha regresado desde el último embarazo"
+    definition:
+      en: "The woman's menstrual period has not yet returned after her last pregnancy ended. She is in postpartum amenorrhea."
+      fr: "Les règles de la femme ne sont pas encore revenues après la fin de sa dernière grossesse. Elle est en aménorrhée post-partum."
+      es: "El período menstrual de la mujer aún no ha regresado después de que terminó su último embarazo. Está en amenorrea posparto."
+  - code: no_last_pregnancy
+    label:
+      en: "No last pregnancy - never been pregnant"
+      fr: "Pas de dernière grossesse - n'a jamais été enceinte"
+      es: "Sin último embarazo - nunca ha estado embarazada"
+    definition:
+      en: "The woman has never been pregnant, so the question about period return after last pregnancy is not applicable."
+      fr: "La femme n'a jamais été enceinte, donc la question sur le retour des règles après la dernière grossesse ne s'applique pas."
+      es: "La mujer nunca ha estado embarazada, por lo que la pregunta sobre el retorno del período después del último embarazo no aplica."

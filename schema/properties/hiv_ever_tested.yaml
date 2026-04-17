@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: yes / no / prefer_not_to_answer
-vocabulary: null
+vocabulary: yes-no-pnta
 references: null
 category: sti_hiv
 sensitivity: sensitive

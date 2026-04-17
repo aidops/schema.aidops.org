@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: regular / irregular / absent / does_not_menstruate
-vocabulary: null
+vocabulary: menstrual-regularity
 references: null
 category: family_planning
 sensitivity: sensitive

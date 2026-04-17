@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes_inside_shelter / yes_nearby_shared / no
-vocabulary: null
+vocabulary: privacy-space-3
 references: null
 category: shelter
 core: true

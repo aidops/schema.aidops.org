@@ -71,8 +71,8 @@ class TestRealSchema:
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies
-        assert len(result["vocabularies"]) == 97, (
-            f"Expected 97 vocabularies, got {len(result['vocabularies'])}"
+        assert len(result["vocabularies"]) == 114, (
+            f"Expected 114 vocabularies, got {len(result['vocabularies'])}"
         )
 
         # Every concept has a JSON Schema

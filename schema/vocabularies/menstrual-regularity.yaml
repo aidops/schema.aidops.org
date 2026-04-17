@@ -1,0 +1,47 @@
+id: menstrual-regularity
+maturity: draft
+label:
+  en: "Menstrual cycle regularity (4-level)"
+  fr: "Régularité du cycle menstruel (4 niveaux)"
+  es: "Regularidad del ciclo menstrual (4 niveles)"
+definition:
+  en: "Four-level classification of menstrual cycle regularity based on WHO reproductive health clinical guidance. Irregular or absent menses may indicate health conditions (PCOS, thyroid disorder, pregnancy). 'Does not menstruate' captures permanent or long-term amenorrhea (menopausal, hysterectomy) distinct from postpartum amenorrhea which is captured separately."
+  fr: "Classification à quatre niveaux de la régularité du cycle menstruel basée sur les recommandations cliniques de l'OMS en santé reproductive. Les règles irrégulières ou absentes peuvent indiquer des problèmes de santé (SOPK, troubles thyroïdiens, grossesse). 'Does not menstruate' capture l'aménorrhée permanente ou à long terme (ménopause, hystérectomie) distincte de l'aménorrhée post-partum qui est capturée séparément."
+  es: "Clasificación de cuatro niveles de la regularidad del ciclo menstrual basada en la guía clínica de salud reproductiva de la OMS. La menstruación irregular o ausente puede indicar condiciones de salud (SOP, trastorno tiroideo, embarazo). 'Does not menstruate' captura la amenorrea permanente o a largo plazo (menopáusica, histerectomía) distinta de la amenorrea posparto que se captura por separado."
+values:
+  - code: regular
+    label:
+      en: "Regular"
+      fr: "Régulier"
+      es: "Regular"
+    definition:
+      en: "Menstrual periods occur at predictable intervals (typically 21–35 days)."
+      fr: "Les règles surviennent à intervalles prévisibles (généralement 21–35 jours)."
+      es: "Los períodos menstruales ocurren a intervalos predecibles (típicamente 21–35 días)."
+  - code: irregular
+    label:
+      en: "Irregular"
+      fr: "Irrégulier"
+      es: "Irregular"
+    definition:
+      en: "Menstrual periods occur but at unpredictable intervals or with highly variable cycle lengths."
+      fr: "Les règles surviennent mais à intervalles imprévisibles ou avec des durées de cycle très variables."
+      es: "Los períodos menstruales ocurren pero a intervalos impredecibles o con duraciones de ciclo muy variables."
+  - code: absent
+    label:
+      en: "Absent (amenorrhea)"
+      fr: "Absent (aménorrhée)"
+      es: "Ausente (amenorrea)"
+    definition:
+      en: "Menstrual periods are currently absent (amenorrhea), not due to permanent condition such as menopause or hysterectomy."
+      fr: "Les règles sont actuellement absentes (aménorrhée), non dues à une condition permanente telle que la ménopause ou l'hystérectomie."
+      es: "Los períodos menstruales están actualmente ausentes (amenorrea), no debido a una condición permanente como menopausia o histerectomía."
+  - code: does_not_menstruate
+    label:
+      en: "Does not menstruate (permanent)"
+      fr: "Ne menstruate pas (permanent)"
+      es: "No menstrúa (permanente)"
+    definition:
+      en: "The respondent does not menstruate due to a permanent or long-term condition (menopausal, hysterectomy, or other permanent reason)."
+      fr: "La répondante ne menstruate pas en raison d'une condition permanente ou à long terme (ménopause, hystérectomie ou autre raison permanente)."
+      es: "La encuestada no menstrúa debido a una condición permanente o a largo plazo (menopáusica, histerectomía u otra razón permanente)."

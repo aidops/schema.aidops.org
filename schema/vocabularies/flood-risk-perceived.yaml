@@ -1,0 +1,47 @@
+id: flood-risk-perceived
+maturity: draft
+label:
+  en: "Perceived flood risk (4-level)"
+  fr: "Risque d'inondation perçu (4 niveaux)"
+  es: "Riesgo de inundación percibido (4 niveles)"
+definition:
+  en: "Four-level household-perception scale for flood frequency at the shelter location. Recall period: past 12 months. Based on Sphere Standard 2 guidance on hazard-safe shelter siting. 'Regularly' = 3 or more events; 'occasionally' = 1–2 events in the recall period."
+  fr: "Échelle de perception des ménages à quatre niveaux pour la fréquence des inondations à l'emplacement de l'abri. Période de rappel : 12 derniers mois. Basée sur les orientations de la Norme Sphère 2 sur l'emplacement des abris à l'abri des risques. 'Régulièrement' = 3 événements ou plus ; 'occasionnellement' = 1–2 événements pendant la période de rappel."
+  es: "Escala de percepción del hogar de cuatro niveles para la frecuencia de inundaciones en la ubicación del refugio. Período de recordatorio: últimos 12 meses. Basada en la orientación de la Norma Esfera 2 sobre la ubicación del refugio libre de peligros. 'Regularmente' = 3 o más eventos; 'ocasionalmente' = 1–2 eventos en el período de recordatorio."
+values:
+  - code: yes_regularly
+    label:
+      en: "Yes — floods regularly (3 or more times in past 12 months)"
+      fr: "Oui — inonde régulièrement (3 fois ou plus au cours des 12 derniers mois)"
+      es: "Sí — se inunda regularmente (3 veces o más en los últimos 12 meses)"
+    definition:
+      en: "The shelter area flooded three or more times in the past 12 months as perceived by the household."
+      fr: "La zone de l'abri a inondé trois fois ou plus au cours des 12 derniers mois selon la perception du ménage."
+      es: "El área del refugio se inundó tres veces o más en los últimos 12 meses según la percepción del hogar."
+  - code: yes_occasionally
+    label:
+      en: "Yes — flooded occasionally (1–2 times in past 12 months)"
+      fr: "Oui — a inondé occasionnellement (1–2 fois au cours des 12 derniers mois)"
+      es: "Sí — se inundó ocasionalmente (1–2 veces en los últimos 12 meses)"
+    definition:
+      en: "The shelter area flooded once or twice in the past 12 months as perceived by the household."
+      fr: "La zone de l'abri a inondé une ou deux fois au cours des 12 derniers mois selon la perception du ménage."
+      es: "El área del refugio se inundó una o dos veces en los últimos 12 meses según la percepción del hogar."
+  - code: "no"
+    label:
+      en: "No — does not flood"
+      fr: "Non — n'inonde pas"
+      es: "No — no se inunda"
+    definition:
+      en: "The household does not perceive their shelter area to be flood-prone."
+      fr: "Le ménage ne perçoit pas que la zone de leur abri est sujette aux inondations."
+      es: "El hogar no percibe que su área de refugio sea propensa a inundaciones."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "The household is unable to assess flood risk at their shelter location, typically due to recent arrival."
+      fr: "Le ménage n'est pas en mesure d'évaluer le risque d'inondation à l'emplacement de son abri, généralement en raison d'une arrivée récente."
+      es: "El hogar no puede evaluar el riesgo de inundación en la ubicación de su refugio, generalmente debido a una llegada reciente."

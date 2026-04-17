@@ -12,7 +12,10 @@ status: active
 informs:
   concepts:
     - ReproductiveHealthProfile
-  vocabularies: []
+  vocabularies:
+    - fp-demand-satisfied
+    - menstrual-regularity
+    - yes-no-pnta
   properties:
     - fp_demand_satisfied_modern
     - menstrual_regularity

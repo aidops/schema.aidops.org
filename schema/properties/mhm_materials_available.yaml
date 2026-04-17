@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: yes_disposable / yes_reusable / yes_both / no_access / does_not_menstruate
-vocabulary: null
+vocabulary: mhm-materials-access
 references: null
 category: mhm
 sensitivity: sensitive

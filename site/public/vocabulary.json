@@ -4818,7 +4818,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-na",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -4859,7 +4859,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-dk-na",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -6967,7 +6967,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "eviction-risk-3",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -8177,7 +8177,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "flood-risk-perceived",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -8218,7 +8218,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-dk",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -8301,7 +8301,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "fp-demand-satisfied",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -8552,7 +8552,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "fp-ppa-status",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -9132,7 +9132,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "hwf-presence-observation",
       "references": null,
       "used_by": [
         "WASHAssessmentProfile"
@@ -9296,7 +9296,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "nfi-sufficiency",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -9376,7 +9376,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "nfi-sufficiency",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -9456,7 +9456,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-partial",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -10476,7 +10476,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-pnta",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -10517,7 +10517,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-pnta",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -10558,7 +10558,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-pnta",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -13206,7 +13206,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "menstrual-regularity",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -13286,7 +13286,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "mhm-materials-access",
       "references": null,
       "used_by": [
         "WASHAssessmentProfile"
@@ -13327,7 +13327,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "mhm-privacy-access",
       "references": null,
       "used_by": [
         "WASHAssessmentProfile"
@@ -15049,7 +15049,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "privacy-space-3",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -15752,7 +15752,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-dk",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -16268,7 +16268,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "sleeping-space-sex-separation",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -16385,7 +16385,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-partial",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -16781,7 +16781,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-pnta",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -16820,7 +16820,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-pnta",
       "references": null,
       "used_by": [
         "ReproductiveHealthProfile"
@@ -17107,7 +17107,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "thermal-comfort-adequacy",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -18250,7 +18250,7 @@
       },
       "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-partial",
       "references": null,
       "used_by": [
         "ShelterAdequacyProfile"
@@ -23333,6 +23333,80 @@
         "who-world-bank-core-energy-questions"
       ]
     },
+    "eviction-risk-3": {
+      "id": "eviction-risk-3",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/eviction-risk-3",
+      "path": "/vocab/eviction-risk-3",
+      "maturity": "draft",
+      "label": {
+        "en": "Eviction risk status (3-level)",
+        "fr": "Statut du risque d'expulsion (3 niveaux)",
+        "es": "Estado del riesgo de desalojo (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level scale distinguishing between households that have been evicted, households that have been threatened with eviction, and households with no eviction threat. Sphere Standard 6 HLP protection indicator. Distinguishing between actual eviction and threat allows for separate analysis of housing, land, and property vulnerability.",
+        "fr": "Échelle à trois niveaux distinguant les ménages expulsés, les ménages menacés d'expulsion et les ménages sans risque d'expulsion. Indicateur de protection HLP de la Norme Sphère 6. La distinction entre l'expulsion réelle et la menace permet une analyse séparée de la vulnérabilité en matière de logement, de terres et de propriété.",
+        "es": "Escala de tres niveles que distingue entre hogares que han sido desalojados, hogares que han sido amenazados con desalojo y hogares sin amenaza de desalojo. Indicador de protección VTP de la Norma Esfera 6. Distinguir entre el desalojo real y la amenaza permite un análisis separado de la vulnerabilidad en materia de vivienda, tierra y propiedad."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_evicted",
+          "uri": "https://schema.aidops.org/vocab/eviction-risk-3/yes_evicted",
+          "label": {
+            "en": "Yes — household was actually evicted",
+            "fr": "Oui — le ménage a été effectivement expulsé",
+            "es": "Sí — el hogar fue efectivamente desalojado"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household was forcibly evicted from its shelter during the reference period.",
+            "fr": "Le ménage a été expulsé de force de son abri pendant la période de référence.",
+            "es": "El hogar fue desalojado forzosamente de su refugio durante el período de referencia."
+          }
+        },
+        {
+          "code": "yes_threatened",
+          "uri": "https://schema.aidops.org/vocab/eviction-risk-3/yes_threatened",
+          "label": {
+            "en": "Yes — household was threatened with eviction but not evicted",
+            "fr": "Oui — le ménage a été menacé d'expulsion mais n'a pas été expulsé",
+            "es": "Sí — el hogar fue amenazado con desalojo pero no desalojado"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household received a threat of forced eviction during the reference period but was not actually evicted.",
+            "fr": "Le ménage a reçu une menace d'expulsion forcée pendant la période de référence mais n'a pas été effectivement expulsé.",
+            "es": "El hogar recibió una amenaza de desalojo forzado durante el período de referencia pero no fue efectivamente desalojado."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/eviction-risk-3/no",
+          "label": {
+            "en": "No — no eviction threat or event",
+            "fr": "Non — aucune menace ni événement d'expulsion",
+            "es": "No — sin amenaza ni evento de desalojo"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household experienced no eviction threat or event during the reference period.",
+            "fr": "Le ménage n'a subi aucune menace ni événement d'expulsion pendant la période de référence.",
+            "es": "El hogar no experimentó ninguna amenaza ni evento de desalojo durante el período de referencia."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
+      ]
+    },
     "family-planning-method": {
       "id": "family-planning-method",
       "source": "aidops",
@@ -24291,6 +24365,95 @@
         "dhs-family-planning"
       ]
     },
+    "flood-risk-perceived": {
+      "id": "flood-risk-perceived",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/flood-risk-perceived",
+      "path": "/vocab/flood-risk-perceived",
+      "maturity": "draft",
+      "label": {
+        "en": "Perceived flood risk (4-level)",
+        "fr": "Risque d'inondation perçu (4 niveaux)",
+        "es": "Riesgo de inundación percibido (4 niveles)"
+      },
+      "definition": {
+        "en": "Four-level household-perception scale for flood frequency at the shelter location. Recall period: past 12 months. Based on Sphere Standard 2 guidance on hazard-safe shelter siting. 'Regularly' = 3 or more events; 'occasionally' = 1–2 events in the recall period.",
+        "fr": "Échelle de perception des ménages à quatre niveaux pour la fréquence des inondations à l'emplacement de l'abri. Période de rappel : 12 derniers mois. Basée sur les orientations de la Norme Sphère 2 sur l'emplacement des abris à l'abri des risques. 'Régulièrement' = 3 événements ou plus ; 'occasionnellement' = 1–2 événements pendant la période de rappel.",
+        "es": "Escala de percepción del hogar de cuatro niveles para la frecuencia de inundaciones en la ubicación del refugio. Período de recordatorio: últimos 12 meses. Basada en la orientación de la Norma Esfera 2 sobre la ubicación del refugio libre de peligros. 'Regularmente' = 3 o más eventos; 'ocasionalmente' = 1–2 eventos en el período de recordatorio."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_regularly",
+          "uri": "https://schema.aidops.org/vocab/flood-risk-perceived/yes_regularly",
+          "label": {
+            "en": "Yes — floods regularly (3 or more times in past 12 months)",
+            "fr": "Oui — inonde régulièrement (3 fois ou plus au cours des 12 derniers mois)",
+            "es": "Sí — se inunda regularmente (3 veces o más en los últimos 12 meses)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The shelter area flooded three or more times in the past 12 months as perceived by the household.",
+            "fr": "La zone de l'abri a inondé trois fois ou plus au cours des 12 derniers mois selon la perception du ménage.",
+            "es": "El área del refugio se inundó tres veces o más en los últimos 12 meses según la percepción del hogar."
+          }
+        },
+        {
+          "code": "yes_occasionally",
+          "uri": "https://schema.aidops.org/vocab/flood-risk-perceived/yes_occasionally",
+          "label": {
+            "en": "Yes — flooded occasionally (1–2 times in past 12 months)",
+            "fr": "Oui — a inondé occasionnellement (1–2 fois au cours des 12 derniers mois)",
+            "es": "Sí — se inundó ocasionalmente (1–2 veces en los últimos 12 meses)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The shelter area flooded once or twice in the past 12 months as perceived by the household.",
+            "fr": "La zone de l'abri a inondé une ou deux fois au cours des 12 derniers mois selon la perception du ménage.",
+            "es": "El área del refugio se inundó una o dos veces en los últimos 12 meses según la percepción del hogar."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/flood-risk-perceived/no",
+          "label": {
+            "en": "No — does not flood",
+            "fr": "Non — n'inonde pas",
+            "es": "No — no se inunda"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household does not perceive their shelter area to be flood-prone.",
+            "fr": "Le ménage ne perçoit pas que la zone de leur abri est sujette aux inondations.",
+            "es": "El hogar no percibe que su área de refugio sea propensa a inundaciones."
+          }
+        },
+        {
+          "code": "dont_know",
+          "uri": "https://schema.aidops.org/vocab/flood-risk-perceived/dont_know",
+          "label": {
+            "en": "Don't know",
+            "fr": "Ne sait pas",
+            "es": "No sabe"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household is unable to assess flood risk at their shelter location, typically due to recent arrival.",
+            "fr": "Le ménage n'est pas en mesure d'évaluer le risque d'inondation à l'emplacement de son abri, généralement en raison d'une arrivée récente.",
+            "es": "El hogar no puede evaluar el riesgo de inundación en la ubicación de su refugio, generalmente debido a una llegada reciente."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
+      ]
+    },
     "food-consumption-group": {
       "id": "food-consumption-group",
       "source": "aidops",
@@ -24367,6 +24530,82 @@
       "references": [],
       "bibliography_refs": [
         "wfp-fcs"
+      ]
+    },
+    "fp-demand-satisfied": {
+      "id": "fp-demand-satisfied",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/fp-demand-satisfied",
+      "path": "/vocab/fp-demand-satisfied",
+      "maturity": "draft",
+      "label": {
+        "en": "FP demand satisfied with modern methods - derived (3-level)",
+        "fr": "Demande PF satisfaite par des méthodes modernes - dérivée (3 niveaux)",
+        "es": "Demanda PF satisfecha con métodos modernos - derivada (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level derived indicator for SDG 3.7.1 - Proportion of women of reproductive age (15–49 years) who have their need for family planning satisfied with modern methods. 'Not in need' captures women excluded from the denominator (infecund, not sexually active, or wanting a birth within 2 years). Derived from fp_unmet_need classification and fp_method_is_modern.",
+        "fr": "Indicateur dérivé à trois niveaux pour l'ODD 3.7.1 - Proportion de femmes en âge de procréer (15–49 ans) dont le besoin en planification familiale est satisfait par des méthodes modernes. 'Not in need' capture les femmes exclues du dénominateur (infécondes, non sexuellement actives ou souhaitant une naissance dans les 2 ans). Dérivé de la classification fp_unmet_need et fp_method_is_modern.",
+        "es": "Indicador derivado de tres niveles para el ODS 3.7.1 - Proporción de mujeres en edad reproductiva (15–49 años) que tienen su necesidad de planificación familiar satisfecha con métodos modernos. 'Not in need' captura las mujeres excluidas del denominador (infecundas, no sexualmente activas o que desean un nacimiento en los próximos 2 años). Derivado de la clasificación fp_unmet_need y fp_method_is_modern."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/fp-demand-satisfied/yes",
+          "label": {
+            "en": "Yes - demand satisfied with modern method",
+            "fr": "Oui - demande satisfaite par une méthode moderne",
+            "es": "Sí - demanda satisfecha con método moderno"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman is in need of family planning and is using a modern contraceptive method.",
+            "fr": "La femme a besoin de planification familiale et utilise une méthode contraceptive moderne.",
+            "es": "La mujer tiene necesidad de planificación familiar y está usando un método anticonceptivo moderno."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/fp-demand-satisfied/no",
+          "label": {
+            "en": "No - demand not satisfied with modern method",
+            "fr": "Non - demande non satisfaite par une méthode moderne",
+            "es": "No - demanda no satisfecha con método moderno"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman is in need of family planning but is not using a modern contraceptive method (unmet need).",
+            "fr": "La femme a besoin de planification familiale mais n'utilise pas de méthode contraceptive moderne (besoin non satisfait).",
+            "es": "La mujer tiene necesidad de planificación familiar pero no está usando un método anticonceptivo moderno (necesidad insatisfecha)."
+          }
+        },
+        {
+          "code": "not_in_need",
+          "uri": "https://schema.aidops.org/vocab/fp-demand-satisfied/not_in_need",
+          "label": {
+            "en": "Not in need - excluded from SDG 3.7.1 denominator",
+            "fr": "Sans besoin - exclue du dénominateur ODD 3.7.1",
+            "es": "Sin necesidad - excluida del denominador ODS 3.7.1"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman is not in the family planning need group (infecund, not sexually active in last 4 weeks, or wants a birth within 2 years) and is excluded from the SDG 3.7.1 denominator.",
+            "fr": "La femme n'appartient pas au groupe ayant besoin de planification familiale (inféconde, non sexuellement active au cours des 4 dernières semaines ou souhaitant une naissance dans les 2 ans) et est exclue du dénominateur ODD 3.7.1.",
+            "es": "La mujer no pertenece al grupo con necesidad de planificación familiar (infecunda, no sexualmente activa en las últimas 4 semanas o que desea un nacimiento en los próximos 2 años) y está excluida del denominador ODS 3.7.1."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "dhs-unmet-need-as25",
+        "sdg-3-7-1-metadata",
+        "who-rh-indicators-2006"
       ]
     },
     "fp-discontinuation-reason": {
@@ -24860,6 +25099,81 @@
       "references": [],
       "bibliography_refs": [
         "dhs-family-planning"
+      ]
+    },
+    "fp-ppa-status": {
+      "id": "fp-ppa-status",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/fp-ppa-status",
+      "path": "/vocab/fp-ppa-status",
+      "maturity": "draft",
+      "label": {
+        "en": "Postpartum amenorrhea status (3-level)",
+        "fr": "Statut d'aménorrhée post-partum (3 niveaux)",
+        "es": "Estado de amenorrea posparto (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level response for DHS V405 proxy - whether the woman's menstrual period has returned since her last pregnancy ended. The 'no_last_pregnancy' code captures women who have never been pregnant, avoiding ambiguity between 'no, period has not returned' and 'no, there was no pregnancy'. DHS-8 approach: PPA classification is based on the last pregnancy, not the last birth.",
+        "fr": "Réponse à trois niveaux pour le proxy DHS V405 - si les règles de la femme sont revenues depuis la fin de sa dernière grossesse. Le code 'no_last_pregnancy' capture les femmes n'ayant jamais été enceintes, évitant l'ambiguïté entre 'non, les règles ne sont pas revenues' et 'non, il n'y a pas eu de grossesse'. Approche DHS-8 : la classification APM est basée sur la dernière grossesse, pas le dernier accouchement.",
+        "es": "Respuesta de tres niveles para el proxy DHS V405 - si el período menstrual de la mujer ha regresado desde que terminó su último embarazo. El código 'no_last_pregnancy' captura a las mujeres que nunca han estado embarazadas, evitando la ambigüedad entre 'no, el período no ha regresado' y 'no, no hubo embarazo'. Enfoque DHS-8: la clasificación AMP se basa en el último embarazo, no en el último parto."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/fp-ppa-status/yes",
+          "label": {
+            "en": "Yes - period has returned since last pregnancy",
+            "fr": "Oui - les règles sont revenues depuis la dernière grossesse",
+            "es": "Sí - el período ha regresado desde el último embarazo"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman's menstrual period has returned after her last pregnancy ended.",
+            "fr": "Les règles de la femme sont revenues après la fin de sa dernière grossesse.",
+            "es": "El período menstrual de la mujer ha regresado después de que terminó su último embarazo."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/fp-ppa-status/no",
+          "label": {
+            "en": "No - period has not returned since last pregnancy",
+            "fr": "Non - les règles ne sont pas revenues depuis la dernière grossesse",
+            "es": "No - el período no ha regresado desde el último embarazo"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman's menstrual period has not yet returned after her last pregnancy ended. She is in postpartum amenorrhea.",
+            "fr": "Les règles de la femme ne sont pas encore revenues après la fin de sa dernière grossesse. Elle est en aménorrhée post-partum.",
+            "es": "El período menstrual de la mujer aún no ha regresado después de que terminó su último embarazo. Está en amenorrea posparto."
+          }
+        },
+        {
+          "code": "no_last_pregnancy",
+          "uri": "https://schema.aidops.org/vocab/fp-ppa-status/no_last_pregnancy",
+          "label": {
+            "en": "No last pregnancy - never been pregnant",
+            "fr": "Pas de dernière grossesse - n'a jamais été enceinte",
+            "es": "Sin último embarazo - nunca ha estado embarazada"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The woman has never been pregnant, so the question about period return after last pregnancy is not applicable.",
+            "fr": "La femme n'a jamais été enceinte, donc la question sur le retour des règles après la dernière grossesse ne s'applique pas.",
+            "es": "La mujer nunca ha estado embarazada, por lo que la pregunta sobre el retorno del período después del último embarazo no aplica."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "dhs-family-planning",
+        "dhs-unmet-need-as25"
       ]
     },
     "fp-unmet-need": {
@@ -25980,6 +26294,80 @@
       "references": [],
       "bibliography_refs": [
         "fanta-hhs"
+      ]
+    },
+    "hwf-presence-observation": {
+      "id": "hwf-presence-observation",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/hwf-presence-observation",
+      "path": "/vocab/hwf-presence-observation",
+      "maturity": "draft",
+      "label": {
+        "en": "Handwashing facility presence — enumerator observation (3-level)",
+        "fr": "Présence d'un dispositif de lavage des mains — observation de l'enquêteur (3 niveaux)",
+        "es": "Presencia de instalación para lavado de manos — observación del encuestador (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level enumerator-observation scale for JMP H1. Distinguishes between facilities directly observed by the enumerator, facilities reported by the household but not observed, and absence of a facility. The JMP-recommended method is to ask to see the handwashing facility; direct observation is more reliable than self-report. Based on JMP Core Questions 2018, indicator H1.",
+        "fr": "Échelle d'observation de l'enquêteur à trois niveaux pour le JMP H1. Distingue les dispositifs directement observés par l'enquêteur, les dispositifs signalés par le ménage mais non observés, et l'absence de dispositif. La méthode recommandée par le JMP est de demander à voir le dispositif de lavage des mains ; l'observation directe est plus fiable que l'auto-déclaration. Basée sur les Questions de base du JMP 2018, indicateur H1.",
+        "es": "Escala de observación del encuestador de tres niveles para JMP H1. Distingue entre instalaciones directamente observadas por el encuestador, instalaciones reportadas por el hogar pero no observadas, y ausencia de instalación. El método recomendado por el JMP es pedir ver la instalación de lavado de manos; la observación directa es más confiable que la autodeclaración. Basada en las Preguntas Básicas del JMP 2018, indicador H1."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_observed",
+          "uri": "https://schema.aidops.org/vocab/hwf-presence-observation/yes_observed",
+          "label": {
+            "en": "Yes — facility seen by enumerator",
+            "fr": "Oui — dispositif vu par l'enquêteur",
+            "es": "Sí — instalación vista por el encuestador"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The enumerator directly observed a place where hands can be washed (fixed or mobile).",
+            "fr": "L'enquêteur a directement observé un endroit où les mains peuvent être lavées (fixe ou mobile).",
+            "es": "El encuestador observó directamente un lugar donde se pueden lavar las manos (fijo o móvil)."
+          }
+        },
+        {
+          "code": "yes_not_observed_but_reported",
+          "uri": "https://schema.aidops.org/vocab/hwf-presence-observation/yes_not_observed_but_reported",
+          "label": {
+            "en": "Yes — household reports facility but enumerator could not observe it",
+            "fr": "Oui — le ménage déclare un dispositif mais l'enquêteur n'a pas pu l'observer",
+            "es": "Sí — el hogar reporta instalación pero el encuestador no pudo observarla"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household reports having a handwashing facility but the enumerator could not observe it directly (e.g., located elsewhere, in use, or not shown).",
+            "fr": "Le ménage déclare disposer d'un dispositif de lavage des mains mais l'enquêteur n'a pas pu l'observer directement (p. ex., situé ailleurs, en cours d'utilisation ou non montré).",
+            "es": "El hogar reporta tener una instalación para lavado de manos pero el encuestador no pudo observarla directamente (p. ej., ubicada en otro lugar, en uso o no mostrada)."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/hwf-presence-observation/no",
+          "label": {
+            "en": "No — no handwashing facility",
+            "fr": "Non — pas de dispositif de lavage des mains",
+            "es": "No — sin instalación para lavado de manos"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household has no place where hands can be washed.",
+            "fr": "Le ménage n'a pas d'endroit où les mains peuvent être lavées.",
+            "es": "El hogar no tiene un lugar donde se puedan lavar las manos."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "jmp-core"
       ]
     },
     "hygiene-item-type": {
@@ -27780,6 +28168,95 @@
         "who-child-growth-standards"
       ]
     },
+    "menstrual-regularity": {
+      "id": "menstrual-regularity",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/menstrual-regularity",
+      "path": "/vocab/menstrual-regularity",
+      "maturity": "draft",
+      "label": {
+        "en": "Menstrual cycle regularity (4-level)",
+        "fr": "Régularité du cycle menstruel (4 niveaux)",
+        "es": "Regularidad del ciclo menstrual (4 niveles)"
+      },
+      "definition": {
+        "en": "Four-level classification of menstrual cycle regularity based on WHO reproductive health clinical guidance. Irregular or absent menses may indicate health conditions (PCOS, thyroid disorder, pregnancy). 'Does not menstruate' captures permanent or long-term amenorrhea (menopausal, hysterectomy) distinct from postpartum amenorrhea which is captured separately.",
+        "fr": "Classification à quatre niveaux de la régularité du cycle menstruel basée sur les recommandations cliniques de l'OMS en santé reproductive. Les règles irrégulières ou absentes peuvent indiquer des problèmes de santé (SOPK, troubles thyroïdiens, grossesse). 'Does not menstruate' capture l'aménorrhée permanente ou à long terme (ménopause, hystérectomie) distincte de l'aménorrhée post-partum qui est capturée séparément.",
+        "es": "Clasificación de cuatro niveles de la regularidad del ciclo menstrual basada en la guía clínica de salud reproductiva de la OMS. La menstruación irregular o ausente puede indicar condiciones de salud (SOP, trastorno tiroideo, embarazo). 'Does not menstruate' captura la amenorrea permanente o a largo plazo (menopáusica, histerectomía) distinta de la amenorrea posparto que se captura por separado."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "regular",
+          "uri": "https://schema.aidops.org/vocab/menstrual-regularity/regular",
+          "label": {
+            "en": "Regular",
+            "fr": "Régulier",
+            "es": "Regular"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "Menstrual periods occur at predictable intervals (typically 21–35 days).",
+            "fr": "Les règles surviennent à intervalles prévisibles (généralement 21–35 jours).",
+            "es": "Los períodos menstruales ocurren a intervalos predecibles (típicamente 21–35 días)."
+          }
+        },
+        {
+          "code": "irregular",
+          "uri": "https://schema.aidops.org/vocab/menstrual-regularity/irregular",
+          "label": {
+            "en": "Irregular",
+            "fr": "Irrégulier",
+            "es": "Irregular"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "Menstrual periods occur but at unpredictable intervals or with highly variable cycle lengths.",
+            "fr": "Les règles surviennent mais à intervalles imprévisibles ou avec des durées de cycle très variables.",
+            "es": "Los períodos menstruales ocurren pero a intervalos impredecibles o con duraciones de ciclo muy variables."
+          }
+        },
+        {
+          "code": "absent",
+          "uri": "https://schema.aidops.org/vocab/menstrual-regularity/absent",
+          "label": {
+            "en": "Absent (amenorrhea)",
+            "fr": "Absent (aménorrhée)",
+            "es": "Ausente (amenorrea)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "Menstrual periods are currently absent (amenorrhea), not due to permanent condition such as menopause or hysterectomy.",
+            "fr": "Les règles sont actuellement absentes (aménorrhée), non dues à une condition permanente telle que la ménopause ou l'hystérectomie.",
+            "es": "Los períodos menstruales están actualmente ausentes (amenorrea), no debido a una condición permanente como menopausia o histerectomía."
+          }
+        },
+        {
+          "code": "does_not_menstruate",
+          "uri": "https://schema.aidops.org/vocab/menstrual-regularity/does_not_menstruate",
+          "label": {
+            "en": "Does not menstruate (permanent)",
+            "fr": "Ne menstruate pas (permanent)",
+            "es": "No menstrúa (permanente)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent does not menstruate due to a permanent or long-term condition (menopausal, hysterectomy, or other permanent reason).",
+            "fr": "La répondante ne menstruate pas en raison d'une condition permanente ou à long terme (ménopause, hystérectomie ou autre raison permanente).",
+            "es": "La encuestada no menstrúa debido a una condición permanente o a largo plazo (menopáusica, histerectomía u otra razón permanente)."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "who-rh-indicators-2006"
+      ]
+    },
     "mhm-disposal-method": {
       "id": "mhm-disposal-method",
       "source": "aidops",
@@ -27921,6 +28398,184 @@
             "en": "A disposal method not covered by the other categories.",
             "fr": "Une méthode d'élimination non couverte par les autres catégories.",
             "es": "Un método de eliminación no cubierto por las otras categorías."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "jmp-core"
+      ]
+    },
+    "mhm-materials-access": {
+      "id": "mhm-materials-access",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/mhm-materials-access",
+      "path": "/vocab/mhm-materials-access",
+      "maturity": "draft",
+      "label": {
+        "en": "MHM — menstrual materials access type (5-level)",
+        "fr": "GHM — type d'accès aux matériaux menstruels (5 niveaux)",
+        "es": "MHM — tipo de acceso a materiales menstruales (5 niveles)"
+      },
+      "definition": {
+        "en": "Five-level scale for assessing access to and type of menstrual hygiene materials during the last menstrual period. Distinguishes between disposable materials (commercial pads, tampons), reusable materials (cloth pads, menstrual cup), both types, no access, and respondents who do not currently menstruate. Based on MICS MHM module and MICS Belize pilot indicator UN15.",
+        "fr": "Échelle à cinq niveaux pour évaluer l'accès aux matériaux d'hygiène menstruelle et leur type pendant les dernières règles. Distingue les matériaux jetables (serviettes commerciales, tampons), les matériaux réutilisables (serviettes en tissu, coupe menstruelle), les deux types, l'absence d'accès et les répondantes qui ne menstruent pas actuellement. Basée sur le module MHM MICS et l'indicateur pilote MICS Belize UN15.",
+        "es": "Escala de cinco niveles para evaluar el acceso a materiales de higiene menstrual y su tipo durante el último período menstrual. Distingue entre materiales desechables (compresas comerciales, tampones), materiales reutilizables (compresas de tela, copa menstrual), ambos tipos, sin acceso y encuestadas que no menstrúan actualmente. Basada en el módulo MHM de MICS y el indicador piloto MICS Belice UN15."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_disposable",
+          "uri": "https://schema.aidops.org/vocab/mhm-materials-access/yes_disposable",
+          "label": {
+            "en": "Yes — had disposable materials (pads, tampons)",
+            "fr": "Oui — avait des matériaux jetables (serviettes, tampons)",
+            "es": "Sí — tenía materiales desechables (compresas, tampones)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had access to disposable menstrual materials (commercial pads or tampons) during her last menstrual period.",
+            "fr": "La répondante avait accès à des matériaux menstruels jetables (serviettes hygiéniques commerciales ou tampons) pendant ses dernières règles.",
+            "es": "La encuestada tuvo acceso a materiales menstruales desechables (compresas comerciales o tampones) durante su último período menstrual."
+          }
+        },
+        {
+          "code": "yes_reusable",
+          "uri": "https://schema.aidops.org/vocab/mhm-materials-access/yes_reusable",
+          "label": {
+            "en": "Yes — had reusable materials (cloth pads, menstrual cup)",
+            "fr": "Oui — avait des matériaux réutilisables (serviettes en tissu, coupe menstruelle)",
+            "es": "Sí — tenía materiales reutilizables (compresas de tela, copa menstrual)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had access to reusable menstrual materials (cloth pads or menstrual cup) during her last menstrual period.",
+            "fr": "La répondante avait accès à des matériaux menstruels réutilisables (serviettes en tissu ou coupe menstruelle) pendant ses dernières règles.",
+            "es": "La encuestada tuvo acceso a materiales menstruales reutilizables (compresas de tela o copa menstrual) durante su último período menstrual."
+          }
+        },
+        {
+          "code": "yes_both",
+          "uri": "https://schema.aidops.org/vocab/mhm-materials-access/yes_both",
+          "label": {
+            "en": "Yes — had both disposable and reusable materials",
+            "fr": "Oui — avait des matériaux jetables et réutilisables",
+            "es": "Sí — tenía materiales desechables y reutilizables"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had access to both disposable and reusable menstrual materials during her last menstrual period.",
+            "fr": "La répondante avait accès à la fois à des matériaux menstruels jetables et réutilisables pendant ses dernières règles.",
+            "es": "La encuestada tuvo acceso tanto a materiales menstruales desechables como reutilizables durante su último período menstrual."
+          }
+        },
+        {
+          "code": "no_access",
+          "uri": "https://schema.aidops.org/vocab/mhm-materials-access/no_access",
+          "label": {
+            "en": "No — had no access to materials",
+            "fr": "Non — n'avait pas accès aux matériaux",
+            "es": "No — no tenía acceso a materiales"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had no access to any menstrual hygiene materials during her last menstrual period.",
+            "fr": "La répondante n'avait accès à aucun matériau d'hygiène menstruelle pendant ses dernières règles.",
+            "es": "La encuestada no tuvo acceso a ningún material de higiene menstrual durante su último período menstrual."
+          }
+        },
+        {
+          "code": "does_not_menstruate",
+          "uri": "https://schema.aidops.org/vocab/mhm-materials-access/does_not_menstruate",
+          "label": {
+            "en": "Does not currently menstruate",
+            "fr": "Ne menstruate pas actuellement",
+            "es": "No menstrúa actualmente"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent does not currently menstruate (e.g., menopausal, pregnant, breastfeeding with amenorrhea, or other medical reason).",
+            "fr": "La répondante ne menstruate pas actuellement (p. ex., ménopausée, enceinte, allaitante avec aménorrhée ou autre raison médicale).",
+            "es": "La encuestada no menstrúa actualmente (p. ej., menopáusica, embarazada, lactante con amenorrea u otra razón médica)."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "jmp-core"
+      ]
+    },
+    "mhm-privacy-access": {
+      "id": "mhm-privacy-access",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/mhm-privacy-access",
+      "path": "/vocab/mhm-privacy-access",
+      "maturity": "draft",
+      "label": {
+        "en": "MHM — private place for menstrual hygiene (3-level)",
+        "fr": "GHM — lieu privé pour l'hygiène menstruelle (3 niveaux)",
+        "es": "MHM — lugar privado para la higiene menstrual (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level scale for assessing whether a woman or girl had access to a private place to wash during her last menstrual period. Distinguishes between access to a private toilet or bathroom and access to another private space. Based on JMP/MICS expanded MHM module (MICS Belize pilot indicator UN14). Relevant to SDG 6.2 which explicitly references women's and girls' hygiene needs.",
+        "fr": "Échelle à trois niveaux pour évaluer si une femme ou une fille avait accès à un lieu privé pour se laver pendant ses dernières règles. Distingue l'accès à des toilettes ou une salle de bain privée et l'accès à un autre espace privé. Basée sur le module MHM élargi JMP/MICS (indicateur pilote MICS Belize UN14). Pertinent pour l'ODD 6.2 qui fait explicitement référence aux besoins en matière d'hygiène des femmes et des filles.",
+        "es": "Escala de tres niveles para evaluar si una mujer o niña tuvo acceso a un lugar privado para lavarse durante su último período menstrual. Distingue entre acceso a un inodoro o baño privado y acceso a otro espacio privado. Basada en el módulo MHM ampliado JMP/MICS (indicador piloto MICS Belice UN14). Relevante para los ODS 6.2 que hacen referencia explícita a las necesidades de higiene de mujeres y niñas."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_toilet_or_bathroom",
+          "uri": "https://schema.aidops.org/vocab/mhm-privacy-access/yes_toilet_or_bathroom",
+          "label": {
+            "en": "Yes — private toilet or bathroom",
+            "fr": "Oui — toilettes ou salle de bain privée",
+            "es": "Sí — inodoro o baño privado"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had access to a private toilet or bathroom to wash during her last menstrual period.",
+            "fr": "La répondante avait accès à des toilettes ou une salle de bain privée pour se laver pendant ses dernières règles.",
+            "es": "La encuestada tuvo acceso a un inodoro o baño privado para lavarse durante su último período menstrual."
+          }
+        },
+        {
+          "code": "yes_elsewhere",
+          "uri": "https://schema.aidops.org/vocab/mhm-privacy-access/yes_elsewhere",
+          "label": {
+            "en": "Yes — private space but not a toilet or bathroom",
+            "fr": "Oui — espace privé mais pas de toilettes ni de salle de bain",
+            "es": "Sí — espacio privado pero no inodoro ni baño"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had access to a private space for washing but not a toilet or bathroom specifically.",
+            "fr": "La répondante avait accès à un espace privé pour se laver mais pas à des toilettes ou une salle de bain spécifiquement.",
+            "es": "La encuestada tuvo acceso a un espacio privado para lavarse pero no específicamente a un inodoro o baño."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/mhm-privacy-access/no",
+          "label": {
+            "en": "No — no private space available",
+            "fr": "Non — aucun espace privé disponible",
+            "es": "No — sin espacio privado disponible"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent had no private space available to wash during her last menstrual period.",
+            "fr": "La répondante n'avait aucun espace privé disponible pour se laver pendant ses dernières règles.",
+            "es": "La encuestada no tuvo ningún espacio privado disponible para lavarse durante su último período menstrual."
           }
         }
       ],
@@ -28320,6 +28975,80 @@
             "en": "Other essential NFI not captured by the standard categories; narrative description expected at the record level.",
             "fr": "Autre NFI essentiel non couvert par les catégories standards ; une description narrative est attendue au niveau de l'enregistrement.",
             "es": "Otros NFI esenciales no cubiertos por las categorías estándar; se espera descripción narrativa a nivel del registro."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
+      ]
+    },
+    "nfi-sufficiency": {
+      "id": "nfi-sufficiency",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/nfi-sufficiency",
+      "path": "/vocab/nfi-sufficiency",
+      "maturity": "draft",
+      "label": {
+        "en": "NFI sufficiency for all household members (3-level)",
+        "fr": "Suffisance des ANF pour tous les membres du ménage (3 niveaux)",
+        "es": "Suficiencia de ANF para todos los miembros del hogar (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level scale for assessing whether a household has sufficient non-food items (NFIs) for all members. 'Yes_all' means every member has the required items. 'Yes_some' (partial) means the household has some items but at least one member lacks the minimum. 'No' means the household has none of the required items. Based on Sphere Standard 4 NFI minimum standards.",
+        "fr": "Échelle à trois niveaux pour évaluer si un ménage dispose d'articles non alimentaires (ANF) suffisants pour tous ses membres. 'Yes_all' signifie que chaque membre a les articles requis. 'Yes_some' (partiel) signifie que le ménage a certains articles mais qu'au moins un membre n'a pas le minimum requis. 'No' signifie que le ménage n'a aucun des articles requis. Basée sur les normes minimales d'ANF de la Norme Sphère 4.",
+        "es": "Escala de tres niveles para evaluar si un hogar tiene artículos no alimentarios (ANF) suficientes para todos sus miembros. 'Yes_all' significa que cada miembro tiene los artículos requeridos. 'Yes_some' (parcial) significa que el hogar tiene algunos artículos pero al menos un miembro carece del mínimo requerido. 'No' significa que el hogar no tiene ninguno de los artículos requeridos. Basada en los estándares mínimos de ANF de la Norma Esfera 4."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_all",
+          "uri": "https://schema.aidops.org/vocab/nfi-sufficiency/yes_all",
+          "label": {
+            "en": "Yes — all household members have adequate items",
+            "fr": "Oui — tous les membres du ménage ont des articles adéquats",
+            "es": "Sí — todos los miembros del hogar tienen artículos adecuados"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "Every household member has the minimum required items as specified by Sphere Standard 4.",
+            "fr": "Chaque membre du ménage a les articles minimaux requis selon la Norme Sphère 4.",
+            "es": "Cada miembro del hogar tiene los artículos mínimos requeridos según la Norma Esfera 4."
+          }
+        },
+        {
+          "code": "yes_some",
+          "uri": "https://schema.aidops.org/vocab/nfi-sufficiency/yes_some",
+          "label": {
+            "en": "Partial — some members have adequate items but not all",
+            "fr": "Partiel — certains membres ont des articles adéquats mais pas tous",
+            "es": "Parcial — algunos miembros tienen artículos adecuados pero no todos"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household has some of the required items but at least one member lacks the Sphere Standard 4 minimum.",
+            "fr": "Le ménage dispose de certains articles requis mais au moins un membre n'a pas le minimum de la Norme Sphère 4.",
+            "es": "El hogar tiene algunos de los artículos requeridos pero al menos un miembro carece del mínimo de la Norma Esfera 4."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/nfi-sufficiency/no",
+          "label": {
+            "en": "No — no adequate items",
+            "fr": "Non — aucun article adéquat",
+            "es": "No — sin artículos adecuados"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household has none of the required items.",
+            "fr": "Le ménage n'a aucun des articles requis.",
+            "es": "El hogar no tiene ninguno de los artículos requeridos."
           }
         }
       ],
@@ -28947,6 +29676,80 @@
       "references": [],
       "bibliography_refs": [
         "dhs-woman-questionnaire"
+      ]
+    },
+    "privacy-space-3": {
+      "id": "privacy-space-3",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/privacy-space-3",
+      "path": "/vocab/privacy-space-3",
+      "maturity": "draft",
+      "label": {
+        "en": "Private space availability for women and girls (3-level)",
+        "fr": "Disponibilité d'espace privé pour les femmes et les filles (3 niveaux)",
+        "es": "Disponibilidad de espacio privado para mujeres y niñas (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level scale for assessing whether women and girls have access to a private space for personal hygiene, distinguishing between private space inside the shelter and access to a shared facility nearby. Sphere Standard 3 guidance notes that women, girls, and those needing assistance with personal hygiene often require additional space for privacy.",
+        "fr": "Échelle à trois niveaux pour évaluer si les femmes et les filles ont accès à un espace privé pour l'hygiène personnelle, distinguant l'espace privé à l'intérieur de l'abri et l'accès à une installation partagée à proximité. La Norme Sphère 3 précise que les femmes, les filles et ceux ayant besoin d'aide pour l'hygiène personnelle ont souvent besoin d'espace supplémentaire pour leur vie privée.",
+        "es": "Escala de tres niveles para evaluar si las mujeres y niñas tienen acceso a un espacio privado para higiene personal, distinguiendo entre espacio privado dentro del refugio y acceso a una instalación compartida cercana. La orientación de la Norma Esfera 3 señala que las mujeres, niñas y quienes necesitan asistencia con la higiene personal a menudo requieren espacio adicional para la privacidad."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes_inside_shelter",
+          "uri": "https://schema.aidops.org/vocab/privacy-space-3/yes_inside_shelter",
+          "label": {
+            "en": "Yes — private space inside the shelter",
+            "fr": "Oui — espace privé à l'intérieur de l'abri",
+            "es": "Sí — espacio privado dentro del refugio"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "A separate, enclosed space for personal hygiene is available inside the shelter.",
+            "fr": "Un espace séparé et fermé pour l'hygiène personnelle est disponible à l'intérieur de l'abri.",
+            "es": "Un espacio separado y cerrado para la higiene personal está disponible dentro del refugio."
+          }
+        },
+        {
+          "code": "yes_nearby_shared",
+          "uri": "https://schema.aidops.org/vocab/privacy-space-3/yes_nearby_shared",
+          "label": {
+            "en": "Yes — nearby shared facility (e.g., latrine block with privacy)",
+            "fr": "Oui — installation partagée à proximité (p. ex., bloc de latrines avec espace privé)",
+            "es": "Sí — instalación compartida cercana (p. ej., bloque de letrinas con privacidad)"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "A private space is available but only in a shared facility nearby (such as a communal latrine block), not inside the shelter.",
+            "fr": "Un espace privé est disponible mais uniquement dans une installation partagée à proximité (comme un bloc de latrines communal), pas à l'intérieur de l'abri.",
+            "es": "Un espacio privado está disponible pero solo en una instalación compartida cercana (como un bloque de letrinas comunal), no dentro del refugio."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/privacy-space-3/no",
+          "label": {
+            "en": "No — no private space available",
+            "fr": "Non — aucun espace privé disponible",
+            "es": "No — sin espacio privado disponible"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "No private space is available for women and girls to wash or attend to personal hygiene.",
+            "fr": "Aucun espace privé n'est disponible pour que les femmes et les filles se lavent ou s'occupent de leur hygiène personnelle.",
+            "es": "No hay espacio privado disponible para que mujeres y niñas se laven o atiendan su higiene personal."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
       ]
     },
     "rcsi-strategy": {
@@ -31334,6 +32137,80 @@
         "sphere-2018"
       ]
     },
+    "sleeping-space-sex-separation": {
+      "id": "sleeping-space-sex-separation",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/sleeping-space-sex-separation",
+      "path": "/vocab/sleeping-space-sex-separation",
+      "maturity": "draft",
+      "label": {
+        "en": "Sleeping space separation by sex (3-level)",
+        "fr": "Séparation des espaces de couchage par sexe (3 niveaux)",
+        "es": "Separación de espacios para dormir por sexo (3 niveles)"
+      },
+      "definition": {
+        "en": "Three-level scale for assessing whether a household has separate sleeping spaces for adult males and adult females who are not intimate partners. Sphere Standard 3 requires privacy and separation between sexes. 'Not applicable' covers households where all adults are intimate partners or where only one adult is present.",
+        "fr": "Échelle à trois niveaux pour évaluer si un ménage dispose d'espaces de couchage séparés pour les hommes et les femmes adultes qui ne sont pas des partenaires intimes. La Norme Sphère 3 exige la vie privée et la séparation entre les sexes. 'Sans objet' couvre les ménages où tous les adultes sont des partenaires intimes ou où un seul adulte est présent.",
+        "es": "Escala de tres niveles para evaluar si un hogar tiene espacios para dormir separados para hombres y mujeres adultas que no son parejas íntimas. La Norma Esfera 3 requiere privacidad y separación entre sexos. 'No aplica' cubre hogares donde todos los adultos son parejas íntimas o donde solo hay un adulto presente."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/sleeping-space-sex-separation/yes",
+          "label": {
+            "en": "Yes — separate sleeping spaces for men and women",
+            "fr": "Oui — espaces de couchage séparés pour les hommes et les femmes",
+            "es": "Sí — espacios para dormir separados para hombres y mujeres"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The household has separate sleeping spaces for adult males and adult females who are not intimate partners.",
+            "fr": "Le ménage dispose d'espaces de couchage séparés pour les hommes adultes et les femmes adultes qui ne sont pas des partenaires intimes.",
+            "es": "El hogar tiene espacios para dormir separados para hombres adultos y mujeres adultas que no son parejas íntimas."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/sleeping-space-sex-separation/no",
+          "label": {
+            "en": "No — no separate sleeping spaces",
+            "fr": "Non — pas d'espaces de couchage séparés",
+            "es": "No — sin espacios para dormir separados"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "Adult males and adult females who are not intimate partners share the same sleeping space.",
+            "fr": "Les hommes adultes et les femmes adultes qui ne sont pas des partenaires intimes partagent le même espace de couchage.",
+            "es": "Los hombres adultos y las mujeres adultas que no son parejas íntimas comparten el mismo espacio para dormir."
+          }
+        },
+        {
+          "code": "not_applicable",
+          "uri": "https://schema.aidops.org/vocab/sleeping-space-sex-separation/not_applicable",
+          "label": {
+            "en": "Not applicable — all adults are intimate partners or only one adult",
+            "fr": "Sans objet — tous les adultes sont des partenaires intimes ou il n'y a qu'un seul adulte",
+            "es": "No aplica — todos los adultos son parejas íntimas o solo hay un adulto"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The question does not apply because all adult household members are intimate partners, or the household has only one adult.",
+            "fr": "La question ne s'applique pas parce que tous les membres adultes du ménage sont des partenaires intimes, ou le ménage n'a qu'un seul adulte.",
+            "es": "La pregunta no aplica porque todos los miembros adultos del hogar son parejas íntimas, o el hogar tiene solo un adulto."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
+      ]
+    },
     "solid-waste-disposal": {
       "id": "solid-waste-disposal",
       "source": "aidops",
@@ -32045,6 +32922,95 @@
       "references": [],
       "bibliography_refs": [
         "dhs-woman-questionnaire"
+      ]
+    },
+    "thermal-comfort-adequacy": {
+      "id": "thermal-comfort-adequacy",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/thermal-comfort-adequacy",
+      "path": "/vocab/thermal-comfort-adequacy",
+      "maturity": "draft",
+      "label": {
+        "en": "Thermal comfort adequacy scale",
+        "fr": "Échelle d'adéquation du confort thermique",
+        "es": "Escala de adecuación del confort térmico"
+      },
+      "definition": {
+        "en": "Four-level scale for assessing whether a shelter provides adequate thermal comfort throughout the year, including the coldest or hottest season. Includes a 'don't know' option to capture seasonal uncertainty or recent occupancy. Based on Sphere Standard 3 guidance on thermal comfort for warm/humid and cold climates.",
+        "fr": "Échelle à quatre niveaux pour évaluer si un abri offre un confort thermique adéquat tout au long de l'année, y compris la saison la plus froide ou la plus chaude. Inclut une option 'ne sait pas' pour capturer l'incertitude saisonnière ou une occupation récente. Basée sur les orientations de la Norme Sphère 3 sur le confort thermique pour les climats chauds/humides et froids.",
+        "es": "Escala de cuatro niveles para evaluar si un refugio proporciona confort térmico adecuado durante todo el año, incluyendo la temporada más fría o más caliente. Incluye una opción 'no sabe' para capturar la incertidumbre estacional o la ocupación reciente. Basada en la orientación de la Norma Esfera 3 sobre el confort térmico para climas cálidos/húmedos y fríos."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/thermal-comfort-adequacy/yes",
+          "label": {
+            "en": "Yes — adequate in all seasons",
+            "fr": "Oui — adéquat en toutes saisons",
+            "es": "Sí — adecuado en todas las estaciones"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The shelter provides adequate warmth or cooling throughout the year, including in the coldest or hottest season.",
+            "fr": "L'abri fournit une chaleur ou une fraîcheur adéquate tout au long de l'année, y compris pendant la saison la plus froide ou la plus chaude.",
+            "es": "El refugio proporciona calor o frescura adecuados durante todo el año, incluyendo en la temporada más fría o más caliente."
+          }
+        },
+        {
+          "code": "partial",
+          "uri": "https://schema.aidops.org/vocab/thermal-comfort-adequacy/partial",
+          "label": {
+            "en": "Partial — adequate in some seasons but not all",
+            "fr": "Partiel — adéquat pour certaines saisons mais pas toutes",
+            "es": "Parcial — adecuado en algunas estaciones pero no en todas"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The shelter is thermally comfortable in some seasons but inadequate in at least one season (e.g., too cold in winter or too hot in summer).",
+            "fr": "L'abri est thermiquement confortable en certaines saisons mais inadéquat dans au moins une saison (p. ex., trop froid en hiver ou trop chaud en été).",
+            "es": "El refugio es térmicamente cómodo en algunas estaciones pero inadecuado en al menos una estación (p. ej., demasiado frío en invierno o demasiado caliente en verano)."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/thermal-comfort-adequacy/no",
+          "label": {
+            "en": "No — not adequately warm or cool",
+            "fr": "Non — pas suffisamment chaud ou frais",
+            "es": "No — no suficientemente cálido o fresco"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The shelter does not provide adequate thermal comfort in any season.",
+            "fr": "L'abri ne fournit pas un confort thermique adéquat dans aucune saison.",
+            "es": "El refugio no proporciona confort térmico adecuado en ninguna estación."
+          }
+        },
+        {
+          "code": "dont_know",
+          "uri": "https://schema.aidops.org/vocab/thermal-comfort-adequacy/dont_know",
+          "label": {
+            "en": "Don't know",
+            "fr": "Ne sait pas",
+            "es": "No sabe"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent is unable to assess thermal comfort, typically because they have not occupied the shelter through all seasons.",
+            "fr": "Le répondant n'est pas en mesure d'évaluer le confort thermique, généralement parce qu'il n'a pas occupé l'abri pendant toutes les saisons.",
+            "es": "El encuestado no puede evaluar el confort térmico, generalmente porque no ha ocupado el refugio durante todas las estaciones."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
       ]
     },
     "travel-time-to-school": {
@@ -33885,6 +34851,393 @@
       "bibliography_refs": [
         "pro-weai-2019"
       ]
+    },
+    "yes-no-dk-na": {
+      "id": "yes-no-dk-na",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/yes-no-dk-na",
+      "path": "/vocab/yes-no-dk-na",
+      "maturity": "draft",
+      "label": {
+        "en": "Yes / No / Don't know / Not applicable",
+        "fr": "Oui / Non / Ne sait pas / Sans objet",
+        "es": "Sí / No / No sabe / No aplica"
+      },
+      "definition": {
+        "en": "Four-level response scale for questions where both genuine uncertainty and situational non-applicability are valid response categories, in addition to yes/no.",
+        "fr": "Échelle de réponse à quatre niveaux pour les questions où l'incertitude genuine et la non-applicabilité situationnelle sont des catégories de réponse valides, en plus de oui/non.",
+        "es": "Escala de respuesta de cuatro niveles para preguntas donde tanto la incertidumbre genuina como la no aplicabilidad situacional son categorías de respuesta válidas, además de sí/no."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk-na/yes",
+          "label": {
+            "en": "Yes",
+            "fr": "Oui",
+            "es": "Sí"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the condition or item.",
+            "fr": "Le répondant confirme la condition ou l'article.",
+            "es": "El encuestado confirma la condición o artículo."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk-na/no",
+          "label": {
+            "en": "No",
+            "fr": "Non",
+            "es": "No"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent denies the condition or item.",
+            "fr": "Le répondant nie la condition ou l'article.",
+            "es": "El encuestado niega la condición o artículo."
+          }
+        },
+        {
+          "code": "dont_know",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk-na/dont_know",
+          "label": {
+            "en": "Don't know",
+            "fr": "Ne sait pas",
+            "es": "No sabe"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent does not know. This is a valid response and must not be re-coded as 'no' or missing.",
+            "fr": "Le répondant ne sait pas. Il s'agit d'une réponse valide qui ne doit pas être recodée comme 'non' ou manquante.",
+            "es": "El encuestado no sabe. Esta es una respuesta válida y no debe recodificarse como 'no' o faltante."
+          }
+        },
+        {
+          "code": "not_applicable",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk-na/not_applicable",
+          "label": {
+            "en": "Not applicable",
+            "fr": "Sans objet",
+            "es": "No aplica"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The question does not apply to the respondent's situation.",
+            "fr": "La question ne s'applique pas à la situation du répondant.",
+            "es": "La pregunta no aplica a la situación del encuestado."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "iawg-misp-2018"
+      ]
+    },
+    "yes-no-dk": {
+      "id": "yes-no-dk",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/yes-no-dk",
+      "path": "/vocab/yes-no-dk",
+      "maturity": "draft",
+      "label": {
+        "en": "Yes / No / Don't know",
+        "fr": "Oui / Non / Ne sait pas",
+        "es": "Sí / No / No sabe"
+      },
+      "definition": {
+        "en": "Three-level response scale for factual questions where the respondent may genuinely be unable to provide a yes/no answer. 'Don't know' is a valid response distinct from refusal and must not be re-coded as missing or 'no'.",
+        "fr": "Échelle de réponse à trois niveaux pour les questions factuelles où le répondant peut genuinement être incapable de fournir une réponse oui/non. 'Ne sait pas' est une réponse valide distincte du refus et ne doit pas être recodée comme manquante ou 'non'.",
+        "es": "Escala de respuesta de tres niveles para preguntas factuales donde el encuestado puede genuinamente ser incapaz de proporcionar una respuesta sí/no. 'No sabe' es una respuesta válida distinta de la negativa y no debe recodificarse como faltante o 'no'."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk/yes",
+          "label": {
+            "en": "Yes",
+            "fr": "Oui",
+            "es": "Sí"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the condition or event.",
+            "fr": "Le répondant confirme la condition ou l'événement.",
+            "es": "El encuestado confirma la condición o el evento."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk/no",
+          "label": {
+            "en": "No",
+            "fr": "Non",
+            "es": "No"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent denies the condition or event.",
+            "fr": "Le répondant nie la condition ou l'événement.",
+            "es": "El encuestado niega la condición o el evento."
+          }
+        },
+        {
+          "code": "dont_know",
+          "uri": "https://schema.aidops.org/vocab/yes-no-dk/dont_know",
+          "label": {
+            "en": "Don't know",
+            "fr": "Ne sait pas",
+            "es": "No sabe"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent does not know the answer. This is a valid response and must not be re-coded as 'no' or missing.",
+            "fr": "Le répondant ne connaît pas la réponse. Il s'agit d'une réponse valide qui ne doit pas être recodée comme 'non' ou manquante.",
+            "es": "El encuestado no sabe la respuesta. Esta es una respuesta válida y no debe recodificarse como 'no' o faltante."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "iawg-misp-2018",
+        "sphere-2018"
+      ]
+    },
+    "yes-no-na": {
+      "id": "yes-no-na",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/yes-no-na",
+      "path": "/vocab/yes-no-na",
+      "maturity": "draft",
+      "label": {
+        "en": "Yes / No / Not applicable",
+        "fr": "Oui / Non / Sans objet",
+        "es": "Sí / No / No aplica"
+      },
+      "definition": {
+        "en": "Three-level response scale for questions that may not be relevant for all respondents due to their situation. 'Not applicable' captures skip logic contexts where asking yes/no would be meaningless or inappropriate.",
+        "fr": "Échelle de réponse à trois niveaux pour les questions qui peuvent ne pas être pertinentes pour tous les répondants en raison de leur situation. 'Sans objet' capture les contextes de saut logique où poser oui/non serait dénué de sens ou inapproprié.",
+        "es": "Escala de respuesta de tres niveles para preguntas que pueden no ser relevantes para todos los encuestados debido a su situación. 'No aplica' captura contextos de lógica de salto donde preguntar sí/no sería sin sentido o inapropiado."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/yes-no-na/yes",
+          "label": {
+            "en": "Yes",
+            "fr": "Oui",
+            "es": "Sí"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the condition or item applies and is present.",
+            "fr": "Le répondant confirme que la condition ou l'article s'applique et est présent.",
+            "es": "El encuestado confirma que la condición o artículo aplica y está presente."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/yes-no-na/no",
+          "label": {
+            "en": "No",
+            "fr": "Non",
+            "es": "No"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the condition or item does not apply or is absent.",
+            "fr": "Le répondant confirme que la condition ou l'article ne s'applique pas ou est absent.",
+            "es": "El encuestado confirma que la condición o artículo no aplica o está ausente."
+          }
+        },
+        {
+          "code": "not_applicable",
+          "uri": "https://schema.aidops.org/vocab/yes-no-na/not_applicable",
+          "label": {
+            "en": "Not applicable",
+            "fr": "Sans objet",
+            "es": "No aplica"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The question is not applicable to the respondent's situation (e.g., the event has never occurred, or a prerequisite condition is not met).",
+            "fr": "La question ne s'applique pas à la situation du répondant (p. ex., l'événement ne s'est jamais produit ou une condition préalable n'est pas remplie).",
+            "es": "La pregunta no aplica a la situación del encuestado (p. ej., el evento nunca ha ocurrido o no se cumple una condición previa)."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "iawg-misp-2018"
+      ]
+    },
+    "yes-no-partial": {
+      "id": "yes-no-partial",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/yes-no-partial",
+      "path": "/vocab/yes-no-partial",
+      "maturity": "draft",
+      "label": {
+        "en": "Yes / No / Partial adequacy scale",
+        "fr": "Échelle d'adéquation Oui / Non / Partiel",
+        "es": "Escala de adecuación Sí / No / Parcial"
+      },
+      "definition": {
+        "en": "Three-level adequacy scale used for shelter and environmental condition assessments where 'partial' captures situations that meet standards in some respects but not all. Used across Sphere Standard 2, 3, and 7 adequacy indicators.",
+        "fr": "Échelle d'adéquation à trois niveaux utilisée pour les évaluations des conditions de l'abri et de l'environnement, où 'partiel' capture les situations qui répondent aux normes sous certains aspects mais pas tous. Utilisée pour les indicateurs d'adéquation des Normes Sphère 2, 3 et 7.",
+        "es": "Escala de adecuación de tres niveles utilizada para evaluaciones de condiciones de refugio y ambientales donde 'parcial' captura situaciones que cumplen los estándares en algunos aspectos pero no en todos. Utilizada en los indicadores de adecuación de las Normas Esfera 2, 3 y 7."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/yes-no-partial/yes",
+          "label": {
+            "en": "Yes",
+            "fr": "Oui",
+            "es": "Sí"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The condition is fully adequate.",
+            "fr": "La condition est pleinement adéquate.",
+            "es": "La condición es plenamente adecuada."
+          }
+        },
+        {
+          "code": "partial",
+          "uri": "https://schema.aidops.org/vocab/yes-no-partial/partial",
+          "label": {
+            "en": "Partial — adequate in some respects but not all",
+            "fr": "Partiel — adéquat à certains égards mais pas à tous",
+            "es": "Parcial — adecuado en algunos aspectos pero no en todos"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The condition partially meets adequacy standards — some dimensions are acceptable but at least one falls below the minimum.",
+            "fr": "La condition répond partiellement aux normes d'adéquation — certaines dimensions sont acceptables mais au moins une est en dessous du minimum.",
+            "es": "La condición cumple parcialmente con los estándares de adecuación — algunas dimensiones son aceptables pero al menos una está por debajo del mínimo."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/yes-no-partial/no",
+          "label": {
+            "en": "No",
+            "fr": "Non",
+            "es": "No"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The condition does not meet adequacy standards.",
+            "fr": "La condition ne répond pas aux normes d'adéquation.",
+            "es": "La condición no cumple con los estándares de adecuación."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "sphere-2018"
+      ]
+    },
+    "yes-no-pnta": {
+      "id": "yes-no-pnta",
+      "source": "aidops",
+      "domain": null,
+      "uri": "https://schema.aidops.org/vocab/yes-no-pnta",
+      "path": "/vocab/yes-no-pnta",
+      "maturity": "draft",
+      "label": {
+        "en": "Yes / No / Prefer not to answer",
+        "fr": "Oui / Non / Préfère ne pas répondre",
+        "es": "Sí / No / Prefiere no responder"
+      },
+      "definition": {
+        "en": "Three-level response scale for sensitive health questions where respondents may decline to answer. Used for HIV testing history and STI symptom and care-seeking questions. The 'prefer not to answer' option is essential for sensitive topics to avoid forced disclosure and reduce item non-response from refusal-to-end-interview.",
+        "fr": "Échelle de réponse à trois niveaux pour les questions de santé sensibles où les répondants peuvent refuser de répondre. Utilisée pour les questions sur l'historique des tests VIH et les symptômes des IST et la recherche de soins. L'option 'préfère ne pas répondre' est essentielle pour les sujets sensibles afin d'éviter la divulgation forcée et réduire la non-réponse aux items par refus d'arrêter l'entretien.",
+        "es": "Escala de respuesta de tres niveles para preguntas de salud sensibles donde los encuestados pueden negarse a responder. Utilizada para preguntas sobre historial de pruebas de VIH y síntomas de ITS y búsqueda de atención. La opción 'prefiere no responder' es esencial para temas sensibles para evitar la divulgación forzada y reducir la no respuesta a ítems por negativa a terminar la entrevista."
+      },
+      "standard": null,
+      "values": [
+        {
+          "code": "yes",
+          "uri": "https://schema.aidops.org/vocab/yes-no-pnta/yes",
+          "label": {
+            "en": "Yes",
+            "fr": "Oui",
+            "es": "Sí"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the event or condition occurred.",
+            "fr": "Le répondant confirme que l'événement ou la condition s'est produit.",
+            "es": "El encuestado confirma que el evento o condición ocurrió."
+          }
+        },
+        {
+          "code": "no",
+          "uri": "https://schema.aidops.org/vocab/yes-no-pnta/no",
+          "label": {
+            "en": "No",
+            "fr": "Non",
+            "es": "No"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent confirms the event or condition did not occur.",
+            "fr": "Le répondant confirme que l'événement ou la condition ne s'est pas produit.",
+            "es": "El encuestado confirma que el evento o condición no ocurrió."
+          }
+        },
+        {
+          "code": "prefer_not_to_answer",
+          "uri": "https://schema.aidops.org/vocab/yes-no-pnta/prefer_not_to_answer",
+          "label": {
+            "en": "Prefer not to answer",
+            "fr": "Préfère ne pas répondre",
+            "es": "Prefiere no responder"
+          },
+          "standard_code": null,
+          "definition": {
+            "en": "The respondent declines to provide an answer for this item. This is a valid response and must not be re-coded as missing.",
+            "fr": "Le répondant refuse de fournir une réponse pour cet item. Il s'agit d'une réponse valide qui ne doit pas être recodée comme manquante.",
+            "es": "El encuestado se niega a proporcionar una respuesta para este ítem. Esta es una respuesta válida y no debe recodificarse como faltante."
+          }
+        }
+      ],
+      "system_mappings": null,
+      "external_equivalents": null,
+      "same_standard_systems": null,
+      "external_values": false,
+      "references": [],
+      "bibliography_refs": [
+        "dhs-family-planning",
+        "who-rh-indicators-2006"
+      ]
     }
   },
   "bibliography": {
@@ -34037,7 +35390,9 @@
           "fecundity-status",
           "fp-unmet-need",
           "fp-nonuse-reason",
-          "fp-discontinuation-reason"
+          "fp-discontinuation-reason",
+          "yes-no-pnta",
+          "fp-ppa-status"
         ],
         "properties": [
           "desire_more_children",
@@ -34084,7 +35439,9 @@
           "ReproductiveHealthProfile"
         ],
         "vocabularies": [
-          "fp-unmet-need"
+          "fp-unmet-need",
+          "fp-demand-satisfied",
+          "fp-ppa-status"
         ],
         "properties": [
           "fp_unmet_need",
@@ -34614,7 +35971,10 @@
           "ReproductiveHealthProfile"
         ],
         "vocabularies": [
-          "rh-service-access"
+          "rh-service-access",
+          "yes-no-dk",
+          "yes-no-na",
+          "yes-no-dk-na"
         ],
         "properties": [
           "rh_service_aware",
@@ -34793,7 +36153,10 @@
           "child-feces-disposal",
           "sanitation-emptying-timing",
           "sanitation-emptying-actor",
-          "mhm-disposal-method"
+          "mhm-disposal-method",
+          "hwf-presence-observation",
+          "mhm-privacy-access",
+          "mhm-materials-access"
         ],
         "properties": [
           "water_source_location",
@@ -35142,7 +36505,9 @@
         "concepts": [
           "ReproductiveHealthProfile"
         ],
-        "vocabularies": [],
+        "vocabularies": [
+          "fp-demand-satisfied"
+        ],
         "properties": [
           "fp_demand_satisfied_modern",
           "fp_method_is_modern",
@@ -35278,7 +36643,15 @@
           "hygiene-item-type",
           "shelter-tenure-document",
           "solid-waste-disposal",
-          "occupancy-arrangement"
+          "occupancy-arrangement",
+          "yes-no-partial",
+          "thermal-comfort-adequacy",
+          "eviction-risk-3",
+          "flood-risk-perceived",
+          "privacy-space-3",
+          "sleeping-space-sex-separation",
+          "nfi-sufficiency",
+          "yes-no-dk"
         ],
         "properties": [
           "habitability_status",
@@ -35930,7 +37303,11 @@
         "concepts": [
           "ReproductiveHealthProfile"
         ],
-        "vocabularies": [],
+        "vocabularies": [
+          "fp-demand-satisfied",
+          "menstrual-regularity",
+          "yes-no-pnta"
+        ],
         "properties": [
           "fp_demand_satisfied_modern",
           "menstrual_regularity",

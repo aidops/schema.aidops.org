@@ -1,0 +1,38 @@
+id: hwf-presence-observation
+maturity: draft
+label:
+  en: "Handwashing facility presence — enumerator observation (3-level)"
+  fr: "Présence d'un dispositif de lavage des mains — observation de l'enquêteur (3 niveaux)"
+  es: "Presencia de instalación para lavado de manos — observación del encuestador (3 niveles)"
+definition:
+  en: "Three-level enumerator-observation scale for JMP H1. Distinguishes between facilities directly observed by the enumerator, facilities reported by the household but not observed, and absence of a facility. The JMP-recommended method is to ask to see the handwashing facility; direct observation is more reliable than self-report. Based on JMP Core Questions 2018, indicator H1."
+  fr: "Échelle d'observation de l'enquêteur à trois niveaux pour le JMP H1. Distingue les dispositifs directement observés par l'enquêteur, les dispositifs signalés par le ménage mais non observés, et l'absence de dispositif. La méthode recommandée par le JMP est de demander à voir le dispositif de lavage des mains ; l'observation directe est plus fiable que l'auto-déclaration. Basée sur les Questions de base du JMP 2018, indicateur H1."
+  es: "Escala de observación del encuestador de tres niveles para JMP H1. Distingue entre instalaciones directamente observadas por el encuestador, instalaciones reportadas por el hogar pero no observadas, y ausencia de instalación. El método recomendado por el JMP es pedir ver la instalación de lavado de manos; la observación directa es más confiable que la autodeclaración. Basada en las Preguntas Básicas del JMP 2018, indicador H1."
+values:
+  - code: yes_observed
+    label:
+      en: "Yes — facility seen by enumerator"
+      fr: "Oui — dispositif vu par l'enquêteur"
+      es: "Sí — instalación vista por el encuestador"
+    definition:
+      en: "The enumerator directly observed a place where hands can be washed (fixed or mobile)."
+      fr: "L'enquêteur a directement observé un endroit où les mains peuvent être lavées (fixe ou mobile)."
+      es: "El encuestador observó directamente un lugar donde se pueden lavar las manos (fijo o móvil)."
+  - code: yes_not_observed_but_reported
+    label:
+      en: "Yes — household reports facility but enumerator could not observe it"
+      fr: "Oui — le ménage déclare un dispositif mais l'enquêteur n'a pas pu l'observer"
+      es: "Sí — el hogar reporta instalación pero el encuestador no pudo observarla"
+    definition:
+      en: "The household reports having a handwashing facility but the enumerator could not observe it directly (e.g., located elsewhere, in use, or not shown)."
+      fr: "Le ménage déclare disposer d'un dispositif de lavage des mains mais l'enquêteur n'a pas pu l'observer directement (p. ex., situé ailleurs, en cours d'utilisation ou non montré)."
+      es: "El hogar reporta tener una instalación para lavado de manos pero el encuestador no pudo observarla directamente (p. ej., ubicada en otro lugar, en uso o no mostrada)."
+  - code: "no"
+    label:
+      en: "No — no handwashing facility"
+      fr: "Non — pas de dispositif de lavage des mains"
+      es: "No — sin instalación para lavado de manos"
+    definition:
+      en: "The household has no place where hands can be washed."
+      fr: "Le ménage n'a pas d'endroit où les mains peuvent être lavées."
+      es: "El hogar no tiene un lugar donde se puedan lavar las manos."

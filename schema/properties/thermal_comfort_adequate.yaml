@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes / no / partial / dont_know
-vocabulary: null
+vocabulary: thermal-comfort-adequacy
 references: null
 category: shelter
 core: true

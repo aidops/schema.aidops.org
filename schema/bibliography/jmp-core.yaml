@@ -23,6 +23,9 @@ informs:
     - sanitation-emptying-timing
     - sanitation-emptying-actor
     - mhm-disposal-method
+    - hwf-presence-observation
+    - mhm-privacy-access
+    - mhm-materials-access
   properties:
     - water_source_location
     - water_treatment_practiced

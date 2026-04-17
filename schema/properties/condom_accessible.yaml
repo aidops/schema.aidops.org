@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: yes / no / dont_know / not_applicable
-vocabulary: null
+vocabulary: yes-no-dk-na
 references: null
 category: misp_access
 sensitivity: sensitive

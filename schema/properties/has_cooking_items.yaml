@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes_all / yes_some / no
-vocabulary: null
+vocabulary: nfi-sufficiency
 references: null
 category: nfi
 core: false

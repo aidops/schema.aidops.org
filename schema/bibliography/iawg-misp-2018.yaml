@@ -14,6 +14,9 @@ informs:
     - ReproductiveHealthProfile
   vocabularies:
     - rh-service-access
+    - yes-no-dk
+    - yes-no-na
+    - yes-no-dk-na
   properties:
     - rh_service_aware
     - rh_service_accessible

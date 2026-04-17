@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: true
-# Allowed values: yes / no / not_in_need
-vocabulary: null
+vocabulary: fp-demand-satisfied
 references: null
 category: unmet_need
 sensitivity: sensitive

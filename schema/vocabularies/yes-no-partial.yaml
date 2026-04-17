@@ -1,0 +1,38 @@
+id: yes-no-partial
+maturity: draft
+label:
+  en: "Yes / No / Partial adequacy scale"
+  fr: "Échelle d'adéquation Oui / Non / Partiel"
+  es: "Escala de adecuación Sí / No / Parcial"
+definition:
+  en: "Three-level adequacy scale used for shelter and environmental condition assessments where 'partial' captures situations that meet standards in some respects but not all. Used across Sphere Standard 2, 3, and 7 adequacy indicators."
+  fr: "Échelle d'adéquation à trois niveaux utilisée pour les évaluations des conditions de l'abri et de l'environnement, où 'partiel' capture les situations qui répondent aux normes sous certains aspects mais pas tous. Utilisée pour les indicateurs d'adéquation des Normes Sphère 2, 3 et 7."
+  es: "Escala de adecuación de tres niveles utilizada para evaluaciones de condiciones de refugio y ambientales donde 'parcial' captura situaciones que cumplen los estándares en algunos aspectos pero no en todos. Utilizada en los indicadores de adecuación de las Normas Esfera 2, 3 y 7."
+values:
+  - code: "yes"
+    label:
+      en: "Yes"
+      fr: "Oui"
+      es: "Sí"
+    definition:
+      en: "The condition is fully adequate."
+      fr: "La condition est pleinement adéquate."
+      es: "La condición es plenamente adecuada."
+  - code: partial
+    label:
+      en: "Partial — adequate in some respects but not all"
+      fr: "Partiel — adéquat à certains égards mais pas à tous"
+      es: "Parcial — adecuado en algunos aspectos pero no en todos"
+    definition:
+      en: "The condition partially meets adequacy standards — some dimensions are acceptable but at least one falls below the minimum."
+      fr: "La condition répond partiellement aux normes d'adéquation — certaines dimensions sont acceptables mais au moins une est en dessous du minimum."
+      es: "La condición cumple parcialmente con los estándares de adecuación — algunas dimensiones son aceptables pero al menos una está por debajo del mínimo."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "The condition does not meet adequacy standards."
+      fr: "La condition ne répond pas aux normes d'adéquation."
+      es: "La condición no cumple con los estándares de adecuación."

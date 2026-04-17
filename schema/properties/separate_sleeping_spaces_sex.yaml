@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes / no / not_applicable
-vocabulary: null
+vocabulary: sleeping-space-sex-separation
 references: null
 category: shelter
 core: false

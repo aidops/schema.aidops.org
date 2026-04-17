@@ -12,7 +12,8 @@ status: active
 informs:
   concepts:
     - ReproductiveHealthProfile
-  vocabularies: []
+  vocabularies:
+    - fp-demand-satisfied
   properties:
     - fp_demand_satisfied_modern
     - fp_method_is_modern

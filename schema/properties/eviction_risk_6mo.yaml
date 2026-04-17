@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes_evicted / yes_threatened / no
-vocabulary: null
+vocabulary: eviction-risk-3
 references: null
 category: shelter
 core: true

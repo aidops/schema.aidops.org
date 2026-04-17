@@ -1,0 +1,38 @@
+id: mhm-privacy-access
+maturity: draft
+label:
+  en: "MHM — private place for menstrual hygiene (3-level)"
+  fr: "GHM — lieu privé pour l'hygiène menstruelle (3 niveaux)"
+  es: "MHM — lugar privado para la higiene menstrual (3 niveles)"
+definition:
+  en: "Three-level scale for assessing whether a woman or girl had access to a private place to wash during her last menstrual period. Distinguishes between access to a private toilet or bathroom and access to another private space. Based on JMP/MICS expanded MHM module (MICS Belize pilot indicator UN14). Relevant to SDG 6.2 which explicitly references women's and girls' hygiene needs."
+  fr: "Échelle à trois niveaux pour évaluer si une femme ou une fille avait accès à un lieu privé pour se laver pendant ses dernières règles. Distingue l'accès à des toilettes ou une salle de bain privée et l'accès à un autre espace privé. Basée sur le module MHM élargi JMP/MICS (indicateur pilote MICS Belize UN14). Pertinent pour l'ODD 6.2 qui fait explicitement référence aux besoins en matière d'hygiène des femmes et des filles."
+  es: "Escala de tres niveles para evaluar si una mujer o niña tuvo acceso a un lugar privado para lavarse durante su último período menstrual. Distingue entre acceso a un inodoro o baño privado y acceso a otro espacio privado. Basada en el módulo MHM ampliado JMP/MICS (indicador piloto MICS Belice UN14). Relevante para los ODS 6.2 que hacen referencia explícita a las necesidades de higiene de mujeres y niñas."
+values:
+  - code: yes_toilet_or_bathroom
+    label:
+      en: "Yes — private toilet or bathroom"
+      fr: "Oui — toilettes ou salle de bain privée"
+      es: "Sí — inodoro o baño privado"
+    definition:
+      en: "The respondent had access to a private toilet or bathroom to wash during her last menstrual period."
+      fr: "La répondante avait accès à des toilettes ou une salle de bain privée pour se laver pendant ses dernières règles."
+      es: "La encuestada tuvo acceso a un inodoro o baño privado para lavarse durante su último período menstrual."
+  - code: yes_elsewhere
+    label:
+      en: "Yes — private space but not a toilet or bathroom"
+      fr: "Oui — espace privé mais pas de toilettes ni de salle de bain"
+      es: "Sí — espacio privado pero no inodoro ni baño"
+    definition:
+      en: "The respondent had access to a private space for washing but not a toilet or bathroom specifically."
+      fr: "La répondante avait accès à un espace privé pour se laver mais pas à des toilettes ou une salle de bain spécifiquement."
+      es: "La encuestada tuvo acceso a un espacio privado para lavarse pero no específicamente a un inodoro o baño."
+  - code: "no"
+    label:
+      en: "No — no private space available"
+      fr: "Non — aucun espace privé disponible"
+      es: "No — sin espacio privado disponible"
+    definition:
+      en: "The respondent had no private space available to wash during her last menstrual period."
+      fr: "La répondante n'avait aucun espace privé disponible pour se laver pendant ses dernières règles."
+      es: "La encuestada no tuvo ningún espacio privado disponible para lavarse durante su último período menstrual."

@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: yes_toilet_or_bathroom / yes_elsewhere / no
-vocabulary: null
+vocabulary: mhm-privacy-access
 references: null
 category: mhm
 sensitivity: sensitive

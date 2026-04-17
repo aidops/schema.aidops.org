@@ -1,0 +1,38 @@
+id: privacy-space-3
+maturity: draft
+label:
+  en: "Private space availability for women and girls (3-level)"
+  fr: "Disponibilité d'espace privé pour les femmes et les filles (3 niveaux)"
+  es: "Disponibilidad de espacio privado para mujeres y niñas (3 niveles)"
+definition:
+  en: "Three-level scale for assessing whether women and girls have access to a private space for personal hygiene, distinguishing between private space inside the shelter and access to a shared facility nearby. Sphere Standard 3 guidance notes that women, girls, and those needing assistance with personal hygiene often require additional space for privacy."
+  fr: "Échelle à trois niveaux pour évaluer si les femmes et les filles ont accès à un espace privé pour l'hygiène personnelle, distinguant l'espace privé à l'intérieur de l'abri et l'accès à une installation partagée à proximité. La Norme Sphère 3 précise que les femmes, les filles et ceux ayant besoin d'aide pour l'hygiène personnelle ont souvent besoin d'espace supplémentaire pour leur vie privée."
+  es: "Escala de tres niveles para evaluar si las mujeres y niñas tienen acceso a un espacio privado para higiene personal, distinguiendo entre espacio privado dentro del refugio y acceso a una instalación compartida cercana. La orientación de la Norma Esfera 3 señala que las mujeres, niñas y quienes necesitan asistencia con la higiene personal a menudo requieren espacio adicional para la privacidad."
+values:
+  - code: yes_inside_shelter
+    label:
+      en: "Yes — private space inside the shelter"
+      fr: "Oui — espace privé à l'intérieur de l'abri"
+      es: "Sí — espacio privado dentro del refugio"
+    definition:
+      en: "A separate, enclosed space for personal hygiene is available inside the shelter."
+      fr: "Un espace séparé et fermé pour l'hygiène personnelle est disponible à l'intérieur de l'abri."
+      es: "Un espacio separado y cerrado para la higiene personal está disponible dentro del refugio."
+  - code: yes_nearby_shared
+    label:
+      en: "Yes — nearby shared facility (e.g., latrine block with privacy)"
+      fr: "Oui — installation partagée à proximité (p. ex., bloc de latrines avec espace privé)"
+      es: "Sí — instalación compartida cercana (p. ej., bloque de letrinas con privacidad)"
+    definition:
+      en: "A private space is available but only in a shared facility nearby (such as a communal latrine block), not inside the shelter."
+      fr: "Un espace privé est disponible mais uniquement dans une installation partagée à proximité (comme un bloc de latrines communal), pas à l'intérieur de l'abri."
+      es: "Un espacio privado está disponible pero solo en una instalación compartida cercana (como un bloque de letrinas comunal), no dentro del refugio."
+  - code: "no"
+    label:
+      en: "No — no private space available"
+      fr: "Non — aucun espace privé disponible"
+      es: "No — sin espacio privado disponible"
+    definition:
+      en: "No private space is available for women and girls to wash or attend to personal hygiene."
+      fr: "Aucun espace privé n'est disponible pour que les femmes et les filles se lavent ou s'occupent de leur hygiène personnelle."
+      es: "No hay espacio privado disponible para que mujeres y niñas se laven o atiendan su higiene personal."

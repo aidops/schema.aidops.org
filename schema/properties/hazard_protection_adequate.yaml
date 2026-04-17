@@ -12,8 +12,7 @@ definition:
 
 type: string
 cardinality: single
-# Allowed values: yes / no / partial
-vocabulary: null
+vocabulary: yes-no-partial
 references: null
 category: shelter
 core: false

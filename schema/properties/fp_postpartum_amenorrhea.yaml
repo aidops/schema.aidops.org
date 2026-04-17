@@ -13,8 +13,7 @@ definition:
 type: string
 cardinality: single
 core: false
-# Allowed values: yes / no / no_last_pregnancy
-vocabulary: null
+vocabulary: fp-ppa-status
 references: null
 category: unmet_need
 sensitivity: sensitive

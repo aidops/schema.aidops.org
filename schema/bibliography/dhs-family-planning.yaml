@@ -22,6 +22,8 @@ informs:
     - fp-unmet-need
     - fp-nonuse-reason
     - fp-discontinuation-reason
+    - yes-no-pnta
+    - fp-ppa-status
   properties:
     - desire_more_children
     - desired_waiting_time
