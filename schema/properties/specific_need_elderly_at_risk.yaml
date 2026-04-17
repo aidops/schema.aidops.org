@@ -15,3 +15,4 @@ cardinality: single
 references: null
 category: specific_needs
 core: true
+sensitivity: sensitive

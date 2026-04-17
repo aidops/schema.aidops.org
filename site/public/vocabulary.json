@@ -8155,15 +8155,15 @@
         "fr": "Si le ménage a été séparé de membres de sa famille à la suite d'un déplacement. Réponses : yes, no, ne sait pas.",
         "es": "Si el hogar ha sido separado de algún miembro de la familia como resultado del desplazamiento. Respuestas: yes, no, no sabe."
       },
-      "type": "boolean",
+      "type": "string",
       "cardinality": "single",
-      "vocabulary": null,
+      "vocabulary": "yes-no-dk",
       "references": null,
       "used_by": [
         "DisplacementProfile"
       ],
       "schema_org_equivalent": null,
-      "sensitivity": null,
+      "sensitivity": "sensitive",
       "system_mappings": null,
       "external_equivalents": null,
       "convergence": null,
@@ -18512,7 +18512,7 @@
         "DisplacementProfile"
       ],
       "schema_org_equivalent": null,
-      "sensitivity": null,
+      "sensitivity": "sensitive",
       "system_mappings": null,
       "external_equivalents": null,
       "convergence": null,
@@ -18944,7 +18944,7 @@
         "DisplacementProfile"
       ],
       "schema_org_equivalent": null,
-      "sensitivity": null,
+      "sensitivity": "sensitive",
       "system_mappings": null,
       "external_equivalents": null,
       "convergence": null,
@@ -18982,7 +18982,7 @@
         "DisplacementProfile"
       ],
       "schema_org_equivalent": null,
-      "sensitivity": null,
+      "sensitivity": "sensitive",
       "system_mappings": null,
       "external_equivalents": null,
       "convergence": null,
@@ -19020,7 +19020,7 @@
         "DisplacementProfile"
       ],
       "schema_org_equivalent": null,
-      "sensitivity": null,
+      "sensitivity": "sensitive",
       "system_mappings": null,
       "external_equivalents": null,
       "convergence": null,

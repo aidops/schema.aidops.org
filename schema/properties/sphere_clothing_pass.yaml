@@ -15,5 +15,5 @@ cardinality: single
 vocabulary: null
 references: null
 category: scores
-core: false
+core: true
 sensitivity: standard
