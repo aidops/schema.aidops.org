@@ -1,0 +1,44 @@
+id: gbv-severity-tier
+maturity: draft
+label:
+  en: "IPV severity tier (composite)"
+  fr: "Niveau de gravité VPI (composite)"
+  es: "Nivel de gravedad VPI (compuesto)"
+definition:
+  en: "Composite severity classification for intimate partner violence based on the act typology from the DHS Domestic Violence module and the less-severe/more-severe physical violence distinction from Garcia-Moreno et al. (WHO MCS, 2005). This is a research classification for analysis; it must not be presented to respondents or used for individual-level eligibility decisions. Used only for the derived indicator gbv_ipv_severity_tier."
+  fr: "Classification composite de gravité de la violence du partenaire intime basée sur la typologie des actes du module DHS et la distinction moins grave/plus grave de Garcia-Moreno et al. (Étude multi-pays OMS, 2005). Classification de recherche uniquement; ne pas présenter aux répondantes ni utiliser pour des décisions d'éligibilité individuelles."
+  es: "Clasificación compuesta de gravedad de la violencia de pareja íntima basada en la tipología de actos del módulo DHS y la distinción menos grave/más grave de Garcia-Moreno et al. (Estudio multipaís OMS, 2005). Solo para uso analítico; no presentar a encuestadas ni usar para decisiones de elegibilidad individuales."
+
+standard:
+  name: who-mcs-domestic-violence-2005
+  uri: "https://iris.who.int/handle/10665/43309"
+  notes: "Physical IPV severity typology (less-severe / more-severe; Garcia-Moreno et al. 2005)"
+
+values:
+  - code: none
+    label:
+      en: "No IPV reported"
+      fr: "Aucune VPI signalée"
+      es: "Ninguna VPI reportada"
+    definition:
+      en: "No act in the physical, sexual, or emotional IPV battery was answered positively."
+      fr: "Aucun acte dans la batterie VPI physique, sexuelle ou émotionnelle n'a reçu de réponse positive."
+      es: "Ningún acto en la batería de VPI física, sexual o emocional recibió una respuesta positiva."
+  - code: moderate
+    label:
+      en: "Moderate IPV"
+      fr: "VPI modérée"
+      es: "VPI moderada"
+    definition:
+      en: "At least one emotional IPV act or at least one moderate physical act (push/shake/throw, slap, twist arm/pull hair, punch) reported; no severe physical or sexual act. Corresponds to the 'less severe' physical violence category in DHS tabulations and IPUMS DHS DVPLSEVER."
+      fr: "Au moins un acte de VPI émotionnelle ou au moins un acte physique modéré (pousser/secouer/lancer, gifler, tordre le bras/tirer les cheveux, frapper) signalé; aucun acte physique grave ni acte sexuel. Correspond à la catégorie 'moins grave' dans les tableaux DHS."
+      es: "Al menos un acto de VPI emocional o al menos un acto físico moderado (empujar/sacudir/lanzar, abofetear, torcer el brazo/jalar el cabello, golpear) reportado; ningún acto físico grave ni sexual. Corresponde a la categoría 'menos grave' en tabulaciones DHS."
+  - code: severe
+    label:
+      en: "Severe IPV"
+      fr: "VPI grave"
+      es: "VPI grave"
+    definition:
+      en: "At least one severe physical act (kick/drag/beat, choke/burn, weapon threat) or any sexual IPV act reported. Sexual IPV is always classified as severe regardless of accompanying physical force. Corresponds to the 'more severe' physical violence category in DHS tabulations."
+      fr: "Au moins un acte physique grave (frapper à coups de pied/traîner/rouer de coups, étrangler/brûler, menace avec arme) ou tout acte de VPI sexuelle signalé. La VPI sexuelle est toujours classée comme grave. Correspond à la catégorie 'plus grave' dans les tableaux DHS."
+      es: "Al menos un acto físico grave (patear/arrastrar/golpear, ahogar/quemar, amenaza con arma) o cualquier acto de VPI sexual reportado. La VPI sexual siempre se clasifica como grave. Corresponde a la categoría 'más grave' en tabulaciones DHS."

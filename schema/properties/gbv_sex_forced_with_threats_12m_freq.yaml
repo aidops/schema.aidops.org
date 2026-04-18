@@ -1,0 +1,30 @@
+id: gbv_sex_forced_with_threats_12m_freq
+maturity: draft
+label:
+  en: "Sexual IPV (12m frequency): forced to perform sexual acts through threats"
+  fr: "VPI sexuelle (fréquence 12m) : forcée par des menaces à accomplir des actes sexuels"
+  es: "VPI sexual (frecuencia 12m): forzada mediante amenazas a realizar actos sexuales"
+
+definition:
+  en: >
+    Frequency of partner forcing the respondent to perform sexual acts through threats or other
+    means in the past 12 months. DHS instrument item DV05B for act DV05A-x. Asked only if
+    gbv_sex_forced_with_threats_lifetime = true (skip logic: if lifetime = false, this property
+    is not asked). DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des actes de contrainte sexuelle par menaces ou autres moyens dans les 12 derniers
+    mois. Item DHS DV05B pour DV05A-x. Posée uniquement si
+    gbv_sex_forced_with_threats_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero fuerce a la encuestada mediante amenazas u otros medios a
+    realizar actos sexuales en los últimos 12 meses. Ítem DHS DV05B para DV05A-x. Se pregunta
+    solo si gbv_sex_forced_with_threats_lifetime = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_sexual_ipv
+core: false
+sensitivity: restricted

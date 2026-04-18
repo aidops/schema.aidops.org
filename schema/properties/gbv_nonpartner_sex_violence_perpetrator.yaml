@@ -1,0 +1,29 @@
+id: gbv_nonpartner_sex_violence_perpetrator
+maturity: draft
+label:
+  en: "Non-partner sexual violence: perpetrator type"
+  fr: "Violence sexuelle non conjugale : type d'auteur"
+  es: "Violencia sexual no conyugal: tipo de perpetrador"
+
+definition:
+  en: >
+    Who perpetrated non-partner sexual violence against the respondent. DHS instrument item DV23.
+    Multi-select; record all perpetrators mentioned. Skip logic: asked only if
+    gbv_nonpartner_sex_violence_lifetime = true. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Qui a perpétré des violences sexuelles non conjugales contre la répondante. Item DHS DV23.
+    Sélection multiple; noter tous les auteurs mentionnés. Posée uniquement si
+    gbv_nonpartner_sex_violence_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Quién perpetró violencia sexual no conyugal contra la encuestada. Ítem DHS DV23. Selección
+    múltiple; registrar todos los perpetradores mencionados. Se pregunta solo si
+    gbv_nonpartner_sex_violence_lifetime = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: multiple
+vocabulary: gbv-perpetrator-type
+references: null
+category: gbv_safety_signals
+core: false
+sensitivity: restricted

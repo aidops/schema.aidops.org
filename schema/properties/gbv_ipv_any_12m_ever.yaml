@@ -1,0 +1,35 @@
+id: gbv_ipv_any_12m_ever
+maturity: draft
+label:
+  en: "Derived: experienced any IPV in past 12 months"
+  fr: "Dérivé : a subi une VPI quelconque au cours des 12 derniers mois"
+  es: "Derivado: experimentó cualquier VPI en los últimos 12 meses"
+
+definition:
+  en: >
+    Derived boolean indicator: true if the respondent experienced any form of IPV in the past
+    12 months. Formula: TRUE if gbv_ipv_physical_12m_ever OR gbv_ipv_sexual_12m_ever OR
+    gbv_ipv_emotional_12m_ever = true. SDG 5.2 relevance: this indicator is the numerator variable
+    for SDG 5.2.1 (proportion of ever-partnered women who experienced physical and/or sexual IPV
+    in the previous 12 months). For strict SDG 5.2.1 compliance, use only the physical and sexual
+    components (gbv_ipv_physical_12m_ever OR gbv_ipv_sexual_12m_ever); emotional IPV is included
+    in this property for analytical use but excluded from the SDG numerator per the indicator
+    definition. Sensitivity: restricted. Minimum aggregate n=30 before publication. Derived, not asked.
+  fr: >
+    Indicateur booléen dérivé : vrai si la répondante a subi toute forme de VPI au cours des
+    12 derniers mois. Formule : VRAI si gbv_ipv_physical_12m_ever OU gbv_ipv_sexual_12m_ever OU
+    gbv_ipv_emotional_12m_ever = vrai. Variable numérateur pour l'ODD 5.2.1 (physique et/ou
+    sexuelle uniquement pour la conformité stricte à l'ODD). Dérivé, non posé.
+  es: >
+    Indicador booleano derivado: verdadero si la encuestada experimentó cualquier forma de VPI en
+    los últimos 12 meses. Fórmula: VERDADERO si gbv_ipv_physical_12m_ever O gbv_ipv_sexual_12m_ever
+    O gbv_ipv_emotional_12m_ever = verdadero. Variable numerador para el ODS 5.2.1 (solo física y
+    sexual para cumplimiento estricto del ODS). Derivado, no preguntado.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: restricted

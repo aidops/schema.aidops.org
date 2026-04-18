@@ -1,0 +1,30 @@
+id: gbv_emot_threaten_harm_lifetime
+maturity: draft
+label:
+  en: "Emotional IPV (lifetime): threatened to hurt her or someone close to her"
+  fr: "VPI émotionnelle (vie entière) : menacé de lui faire du mal ou de s'en prendre à ses proches"
+  es: "VPI emocional (de por vida): amenazó con hacerle daño a ella o a alguien cercano"
+
+definition:
+  en: >
+    Whether the referent partner has ever threatened to hurt or harm the respondent or someone
+    close to her. DHS instrument item DV04A-b (also coded d103b in DHS recode files). Lifetime
+    reference period (ever). If true, the follow-up 12-month frequency property
+    gbv_emot_threaten_harm_12m_freq is asked. DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais menacé de blesser ou de faire du mal à la répondante ou
+    à quelqu'un qui lui est proche. Item DHS DV04A-b (d103b). Période de référence : à vie.
+    Si vrai, gbv_emot_threaten_harm_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez amenazó con hacerle daño a la encuestada o a alguien
+    cercano a ella. Ítem DHS DV04A-b (d103b). Período de referencia: de por vida. Si verdadero,
+    se pregunta gbv_emot_threaten_harm_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_emotional_ipv
+core: false
+sensitivity: restricted

@@ -1,0 +1,36 @@
+id: gbv_ipv_any_physical_severe_lifetime
+maturity: draft
+label:
+  en: "Derived: ever experienced severe physical IPV (lifetime)"
+  fr: "Dérivé : a jamais subi une VPI physique grave (vie entière)"
+  es: "Derivado: alguna vez experimentó VPI física grave (de por vida)"
+
+definition:
+  en: >
+    Derived boolean indicator: true if the respondent ever experienced at least one severe
+    physical IPV act (more severe physical violence in DHS terminology). Formula: TRUE if any of
+    gbv_phys_kick_drag_beat_lifetime, gbv_phys_choke_burn_lifetime, or
+    gbv_phys_weapon_threat_lifetime = true. Corresponds to 'more severe physical violence by
+    husband/partner' in DHS country reports and to the IPUMS DHS DVPLSEVER variable concept.
+    Does not include sexual IPV (which is separately classified as severe in gbv_ipv_severity_tier).
+    DHS-7+ compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+    Derived, not asked.
+  fr: >
+    Indicateur booléen dérivé : vrai si la répondante a subi au moins un acte de VPI physique
+    grave à vie. Formule : VRAI si gbv_phys_kick_drag_beat_lifetime OU gbv_phys_choke_burn_lifetime
+    OU gbv_phys_weapon_threat_lifetime = vrai. Correspond à 'violence physique plus grave' dans
+    les rapports DHS (DVPLSEVER). N'inclut pas la VPI sexuelle. Dérivé, non posé.
+  es: >
+    Indicador booleano derivado: verdadero si la encuestada alguna vez experimentó al menos un
+    acto de VPI física grave. Fórmula: VERDADERO si gbv_phys_kick_drag_beat_lifetime O
+    gbv_phys_choke_burn_lifetime O gbv_phys_weapon_threat_lifetime = verdadero. Corresponde a
+    'violencia física más grave' en informes DHS (DVPLSEVER). No incluye VPI sexual. Derivado,
+    no preguntado.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: restricted

@@ -1,0 +1,29 @@
+id: gbv_ctrl_monitors_whereabouts
+maturity: draft
+label:
+  en: "Controlling behavior: insists on knowing whereabouts at all times"
+  fr: "Comportement de contrôle : exige de savoir où elle se trouve en permanence"
+  es: "Comportamiento controlador: exige saber dónde está en todo momento"
+
+definition:
+  en: >
+    Whether the referent partner insists or insisted on knowing where the respondent is or was at
+    all times. DHS instrument item DV03e. Reference period: ever (relationship pattern). Response
+    options use the yes-no-dk vocabulary. DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent insiste ou insistait pour savoir où se trouve la répondante en tout
+    temps. Item DHS DV03e. Période de référence : toujours (schéma relationnel). Options de
+    réponse : vocabulaire yes-no-dk. Compatible DHS-7+.
+  es: >
+    Si el compañero referente insiste o insistía en saber dónde está la encuestada en todo
+    momento. Ítem DHS DV03e. Período de referencia: alguna vez (patrón relacional). Opciones de
+    respuesta: vocabulario yes-no-dk. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: gbv_controlling
+core: false
+sensitivity: restricted

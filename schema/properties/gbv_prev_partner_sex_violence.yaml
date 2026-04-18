@@ -1,0 +1,28 @@
+id: gbv_prev_partner_sex_violence
+maturity: draft
+label:
+  en: "Previous partner: ever experienced sexual violence"
+  fr: "Partenaire précédent : a jamais subi de violences sexuelles"
+  es: "Compañero anterior: alguna vez experimentó violencia sexual"
+
+definition:
+  en: >
+    Whether any previous husband or partner ever sexually harmed the respondent. DHS instrument
+    item DV15A (sexual violence component). Lifetime reference period (ever, from any previous
+    partner). Secondary item; the primary battery addresses the referent partner. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si un mari ou partenaire précédent a jamais agressé sexuellement la répondante. Item DHS DV15A
+    (composante violence sexuelle). Période de référence : à vie. Item secondaire. Compatible DHS-7+.
+  es: >
+    Si algún marido o compañero anterior alguna vez agredió sexualmente a la encuestada. Ítem DHS
+    DV15A (componente violencia sexual). Período de referencia: de por vida. Ítem secundario.
+    Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_safety_signals
+core: false
+sensitivity: restricted

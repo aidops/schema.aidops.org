@@ -1,0 +1,20 @@
+id: who-mcs-domestic-violence-2005
+title: "WHO Multi-Country Study on Women's Health and Domestic Violence Against Women: Initial Results on Prevalence, Health Outcomes and Women's Responses"
+short_title: "WHO MCS Domestic Violence 2005"
+publisher: "World Health Organization (WHO)"
+year: 2005
+type: guidance_publication
+domain: humanitarian
+uri: "https://iris.who.int/handle/10665/43309"
+access: open
+status: active
+
+informs:
+  concepts:
+    - IndividualGBVExperienceProfile
+  vocabularies:
+    - gbv-helpseeking-barriers
+    - gbv-severity-tier
+  properties:
+    - gbv_ipv_severity_tier
+    - gbv_ipv_any_physical_severe_lifetime

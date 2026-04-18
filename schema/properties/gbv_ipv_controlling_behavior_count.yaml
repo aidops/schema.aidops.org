@@ -1,0 +1,34 @@
+id: gbv_ipv_controlling_behavior_count
+maturity: draft
+label:
+  en: "Derived: number of controlling behaviors reported (count)"
+  fr: "Dérivé : nombre de comportements de contrôle signalés (compte)"
+  es: "Derivado: número de comportamientos controladores reportados (conteo)"
+
+definition:
+  en: >
+    Derived integer indicator: count of controlling behavior items answered 'yes' by the
+    respondent. Formula: count of (gbv_ctrl_jealous_other_men, gbv_ctrl_accuses_infidelity,
+    gbv_ctrl_restricts_friends, gbv_ctrl_limits_family_contact, gbv_ctrl_monitors_whereabouts,
+    gbv_ctrl_controls_money, gbv_ctrl_discriminates_spending) where value = 'yes'. Range: 0-7
+    (or 0-5 if only the canonical 5-item battery DV03a-e is administered; items f and g may be
+    absent in some deployments). This is a count, not a weighted score. The DHS Guide to Statistics
+    reports this as 'percentage of women whose husband/partner has any controlling behavior'
+    (count >= 1) and 'percentage with 3 or more controlling behaviors' (count >= 3).
+    Sensitivity: restricted. Minimum aggregate n=30 before publication. Derived, not asked.
+  fr: >
+    Indicateur entier dérivé : nombre d'items de comportement de contrôle répondus 'oui'. Formule :
+    compter les 7 items de comportement de contrôle (ou 5 si batterie canonique uniquement) ayant
+    la valeur 'oui'. Plage : 0-7 (ou 0-5). Pas un score pondéré. Dérivé, non posé.
+  es: >
+    Indicador entero derivado: conteo de ítems de comportamiento controlador respondidos 'sí'.
+    Fórmula: contar los 7 ítems de comportamiento controlador (o 5 si solo la batería canónica)
+    con valor 'sí'. Rango: 0-7 (o 0-5). No es una puntuación ponderada. Derivado, no preguntado.
+
+type: integer
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: restricted

@@ -1,0 +1,34 @@
+id: gbv_helpseeking_attempted
+maturity: draft
+label:
+  en: "Help-seeking: ever tried to seek help after partner violence"
+  fr: "Recherche d'aide : a jamais cherché de l'aide après des violences conjugales"
+  es: "Búsqueda de ayuda: alguna vez intentó buscar ayuda tras violencia de pareja"
+
+definition:
+  en: >
+    Whether the respondent has ever tried to seek help in response to any of the experiences of
+    physical, sexual, or emotional partner violence she reported in the IPV batteries. DHS
+    instrument item DV27. Lifetime reference period (ever). Skip logic: asked only of respondents
+    who reported at least one act in the physical, sexual, or emotional IPV batteries. If true,
+    gbv_helpseeking_sources is asked. If false, gbv_helpseeking_barriers and
+    gbv_disclosure_told_anyone are asked. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si la répondante a jamais cherché de l'aide à la suite de l'une des expériences de violences
+    physiques, sexuelles ou émotionnelles qu'elle a signalées. Item DHS DV27. Période de référence :
+    à vie. Si vrai, gbv_helpseeking_sources est posée. Si faux, gbv_helpseeking_barriers et
+    gbv_disclosure_told_anyone sont posées.
+  es: >
+    Si la encuestada alguna vez buscó ayuda en respuesta a alguna de las experiencias de violencia
+    de pareja física, sexual o emocional que reportó. Ítem DHS DV27. Período de referencia: de
+    por vida. Si verdadero, se pregunta gbv_helpseeking_sources. Si falso, se preguntan
+    gbv_helpseeking_barriers y gbv_disclosure_told_anyone.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_help_seeking
+core: false
+sensitivity: restricted

@@ -1,0 +1,29 @@
+id: gbv_emot_threaten_harm_12m_freq
+maturity: draft
+label:
+  en: "Emotional IPV (12m frequency): threatened to hurt her or someone close"
+  fr: "VPI émotionnelle (fréquence 12m) : menacé de lui faire du mal ou à ses proches"
+  es: "VPI emocional (frecuencia 12m): amenazó con hacerle daño a ella o a alguien cercano"
+
+definition:
+  en: >
+    Frequency of partner threatening to hurt or harm the respondent or someone close to her in the
+    past 12 months. DHS instrument item DV04B for act DV04A-b (d103b). Asked only if
+    gbv_emot_threaten_harm_lifetime = true (skip logic: if lifetime = false, this property is not
+    asked). DHS-7+ compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des menaces de blesser la répondante ou ses proches au cours des 12 derniers mois.
+    Item DHS DV04B pour DV04A-b (d103b). Posée uniquement si
+    gbv_emot_threaten_harm_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero amenace con hacerle daño a la encuestada o a alguien cercano
+    en los últimos 12 meses. Ítem DHS DV04B para DV04A-b (d103b). Se pregunta solo si
+    gbv_emot_threaten_harm_lifetime = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_emotional_ipv
+core: false
+sensitivity: restricted

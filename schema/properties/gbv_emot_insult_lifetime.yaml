@@ -1,0 +1,35 @@
+id: gbv_emot_insult_lifetime
+maturity: draft
+label:
+  en: "Emotional IPV (lifetime): insulted or made to feel bad about herself"
+  fr: "VPI émotionnelle (vie entière) : insultée ou amenée à se sentir mal dans sa peau"
+  es: "VPI emocional (de por vida): insultada o hecha sentir mal consigo misma"
+
+definition:
+  en: >
+    Whether the referent partner has ever insulted the respondent or made her feel bad about
+    herself. DHS instrument item DV04A-c (also coded d103c in DHS recode files). Lifetime
+    reference period (ever). Note: surveys conducted before approximately 2006 may have used
+    only the two-item emotional IPV battery (DV04A-a and DV04A-b); this third item was added
+    later. Derived indicators using all three emotional IPV items will not be comparable with
+    older survey rounds that used only two items. If true, the follow-up 12-month frequency
+    property gbv_emot_insult_12m_freq is asked. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais insulté la répondante ou lui a fait sentir qu'elle était
+    moins que rien. Item DHS DV04A-c (d103c). Période de référence : à vie. Note : les enquêtes
+    antérieures à 2006 peuvent n'avoir eu que 2 items émotionnels (a et b). Si vrai,
+    gbv_emot_insult_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez insultó a la encuestada o la hizo sentir mal consigo
+    misma. Ítem DHS DV04A-c (d103c). Período de referencia: de por vida. Nota: encuestas
+    anteriores a 2006 pueden haber tenido solo 2 ítems emocionales. Si verdadero, se pregunta
+    gbv_emot_insult_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_emotional_ipv
+core: false
+sensitivity: restricted

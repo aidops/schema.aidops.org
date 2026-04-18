@@ -1,0 +1,29 @@
+id: gbv_phys_push_shake_throw_lifetime
+maturity: draft
+label:
+  en: "Physical IPV (lifetime): pushed, shaken, or had something thrown at her"
+  fr: "VPI physique (vie entière) : poussée, secouée ou s'est fait lancer un objet"
+  es: "VPI física (de por vida): empujada, sacudida o le lanzaron algo"
+
+definition:
+  en: >
+    Whether the referent partner has ever pushed, shaken, or thrown something at the respondent.
+    DHS instrument item DV05A-i. Lifetime reference period (ever). If true, the follow-up
+    12-month frequency property gbv_phys_push_shake_throw_12m_freq is asked. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais poussé, secoué la répondante ou lui a lancé quelque chose.
+    Item DHS DV05A-i. Période de référence : à vie (jamais). Si vrai, la propriété de fréquence
+    sur 12 mois gbv_phys_push_shake_throw_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez empujó, sacudió a la encuestada o le lanzó algo.
+    Ítem DHS DV05A-i. Período de referencia: de por vida (alguna vez). Si verdadero, se pregunta
+    la propiedad de frecuencia de 12 meses gbv_phys_push_shake_throw_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_physical_ipv
+core: false
+sensitivity: restricted

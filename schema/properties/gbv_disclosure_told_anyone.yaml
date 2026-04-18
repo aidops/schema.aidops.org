@@ -1,0 +1,30 @@
+id: gbv_disclosure_told_anyone
+maturity: draft
+label:
+  en: "Disclosure: ever told anyone about the violence"
+  fr: "Divulgation : a jamais dit à quelqu'un les violences subies"
+  es: "Divulgación: alguna vez contó a alguien sobre la violencia"
+
+definition:
+  en: >
+    Whether the respondent has ever told anyone about the partner violence she experienced, even
+    without formally seeking help. DHS instrument item DV29. Lifetime reference period (ever).
+    Skip logic: asked only if gbv_helpseeking_attempted = false (for respondents who did not seek
+    formal help). Captures informal disclosure as distinct from formal help-seeking.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si la répondante a jamais parlé à quelqu'un des violences conjugales qu'elle a subies, même
+    sans chercher formellement de l'aide. Item DHS DV29. Période de référence : à vie. Posée
+    uniquement si gbv_helpseeking_attempted = faux.
+  es: >
+    Si la encuestada alguna vez le contó a alguien sobre la violencia de pareja que sufrió, aunque
+    no haya buscado ayuda formalmente. Ítem DHS DV29. Período de referencia: de por vida.
+    Se pregunta solo si gbv_helpseeking_attempted = falso.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_help_seeking
+core: false
+sensitivity: restricted

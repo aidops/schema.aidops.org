@@ -1,0 +1,29 @@
+id: gbv_phys_weapon_threat_12m_freq
+maturity: draft
+label:
+  en: "Physical IPV (12m frequency): threatened with knife, gun, or weapon"
+  fr: "VPI physique (fréquence 12m) : menacée avec une arme"
+  es: "VPI física (frecuencia 12m): amenazada con arma"
+
+definition:
+  en: >
+    Frequency of partner threatening the respondent with a knife, gun, or other weapon in the
+    past 12 months. DHS instrument item DV05B for act DV05A-vii. Asked only if
+    gbv_phys_weapon_threat_lifetime = true (skip logic: if lifetime = false, this property is not
+    asked). DHS-7+ compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des menaces avec une arme contre la répondante au cours des 12 derniers mois.
+    Item DHS DV05B pour DV05A-vii. Posée uniquement si gbv_phys_weapon_threat_lifetime = vrai.
+    Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero amenace a la encuestada con arma en los últimos 12 meses.
+    Ítem DHS DV05B para DV05A-vii. Se pregunta solo si gbv_phys_weapon_threat_lifetime = verdadero.
+    Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_physical_ipv
+core: false
+sensitivity: restricted

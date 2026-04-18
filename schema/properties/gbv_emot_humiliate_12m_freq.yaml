@@ -1,0 +1,29 @@
+id: gbv_emot_humiliate_12m_freq
+maturity: draft
+label:
+  en: "Emotional IPV (12m frequency): humiliated in front of others"
+  fr: "VPI émotionnelle (fréquence 12m) : humiliée devant autrui"
+  es: "VPI emocional (frecuencia 12m): humillada frente a otros"
+
+definition:
+  en: >
+    Frequency of partner saying or doing something to humiliate the respondent in front of others
+    in the past 12 months. DHS instrument item DV04B for act DV04A-a (d103a). Asked only if
+    gbv_emot_humiliate_lifetime = true (skip logic: if lifetime = false, this property is not
+    asked). DHS-7+ compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des actes visant à humilier la répondante devant d'autres personnes au cours des
+    12 derniers mois. Item DHS DV04B pour DV04A-a (d103a). Posée uniquement si
+    gbv_emot_humiliate_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero humille a la encuestada frente a otros en los últimos 12 meses.
+    Ítem DHS DV04B para DV04A-a (d103a). Se pregunta solo si gbv_emot_humiliate_lifetime = verdadero.
+    Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_emotional_ipv
+core: false
+sensitivity: restricted

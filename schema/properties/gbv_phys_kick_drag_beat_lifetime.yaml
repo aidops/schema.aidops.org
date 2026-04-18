@@ -1,0 +1,30 @@
+id: gbv_phys_kick_drag_beat_lifetime
+maturity: draft
+label:
+  en: "Physical IPV (lifetime): kicked, dragged, or beaten up"
+  fr: "VPI physique (vie entière) : frappée à coups de pied, traînée ou rouée de coups"
+  es: "VPI física (de por vida): pateada, arrastrada o golpeada"
+
+definition:
+  en: >
+    Whether the referent partner has ever kicked, dragged, or beaten up the respondent. DHS
+    instrument item DV05A-v. Lifetime reference period (ever). This is classified as a 'severe'
+    physical IPV act in the DHS severity typology (Garcia-Moreno et al. 2005). If true, the
+    follow-up 12-month frequency property gbv_phys_kick_drag_beat_12m_freq is asked. DHS-7+
+    compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais frappé à coups de pied, traîné ou roué de coups la
+    répondante. Item DHS DV05A-v. Période de référence : à vie. Acte de VPI physique 'grave'
+    selon la typologie DHS. Si vrai, gbv_phys_kick_drag_beat_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez pateó, arrastró o golpeó a la encuestada. Ítem DHS
+    DV05A-v. Período de referencia: de por vida. Acto de VPI física 'grave' en la tipología DHS.
+    Si verdadero, se pregunta gbv_phys_kick_drag_beat_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_physical_ipv
+core: false
+sensitivity: restricted

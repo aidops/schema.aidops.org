@@ -1,0 +1,30 @@
+id: gbv_phys_twist_arm_pull_hair_12m_freq
+maturity: draft
+label:
+  en: "Physical IPV (12m frequency): arm twisted or hair pulled"
+  fr: "VPI physique (fréquence 12m) : bras tordu ou cheveux tirés"
+  es: "VPI física (frecuencia 12m): brazo torcido o cabello jalado"
+
+definition:
+  en: >
+    Frequency of partner twisting the respondent's arm or pulling her hair in the past 12 months.
+    DHS instrument item DV05B for act DV05A-iii. Asked only if
+    gbv_phys_twist_arm_pull_hair_lifetime = true (skip logic: if lifetime = false, this property
+    is not asked). DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des actes de tordre le bras ou tirer les cheveux de la répondante au cours des
+    12 derniers mois. Item DHS DV05B pour DV05A-iii. Posée uniquement si
+    gbv_phys_twist_arm_pull_hair_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero tuerza el brazo o jale el cabello de la encuestada en los
+    últimos 12 meses. Ítem DHS DV05B para DV05A-iii. Se pregunta solo si
+    gbv_phys_twist_arm_pull_hair_lifetime = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_physical_ipv
+core: false
+sensitivity: restricted

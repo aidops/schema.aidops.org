@@ -1,0 +1,29 @@
+id: gbv_phys_choke_burn_12m_freq
+maturity: draft
+label:
+  en: "Physical IPV (12m frequency): tried to choke or burn on purpose"
+  fr: "VPI physique (fréquence 12m) : tenté de l'étrangler ou de la brûler"
+  es: "VPI física (frecuencia 12m): intentó ahogarla o quemarla"
+
+definition:
+  en: >
+    Frequency of partner trying to choke or burn the respondent in the past 12 months. DHS
+    instrument item DV05B for act DV05A-vi. Asked only if gbv_phys_choke_burn_lifetime = true
+    (skip logic: if lifetime = false, this property is not asked). DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Fréquence des tentatives d'étranglement ou de brûlure intentionnelle de la répondante au
+    cours des 12 derniers mois. Item DHS DV05B pour DV05A-vi. Posée uniquement si
+    gbv_phys_choke_burn_lifetime = vrai. Compatible DHS-7+.
+  es: >
+    Frecuencia de que el compañero intente ahogar o quemar a la encuestada en los últimos
+    12 meses. Ítem DHS DV05B para DV05A-vi. Se pregunta solo si
+    gbv_phys_choke_burn_lifetime = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: ipv-freq-3
+references: null
+category: gbv_physical_ipv
+core: false
+sensitivity: restricted

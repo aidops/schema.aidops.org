@@ -1,0 +1,43 @@
+id: gbv_ipv_severity_tier
+maturity: draft
+label:
+  en: "Derived: IPV severity classification"
+  fr: "Dérivé : classification de la gravité de la VPI"
+  es: "Derivado: clasificación de la gravedad de la VPI"
+
+definition:
+  en: >
+    Derived composite severity classification for intimate partner violence, using the act typology
+    from the DHS Domestic Violence module and the severity distinction from Garcia-Moreno et al.
+    (WHO MCS, 2005). Formula: 'severe' if any of gbv_phys_kick_drag_beat_lifetime,
+    gbv_phys_choke_burn_lifetime, gbv_phys_weapon_threat_lifetime,
+    gbv_sex_forced_intercourse_lifetime, gbv_sex_forced_other_acts_lifetime, or
+    gbv_sex_forced_with_threats_lifetime = true (severe physical acts or any sexual IPV act).
+    'moderate' if not severe AND any of gbv_phys_push_shake_throw_lifetime,
+    gbv_phys_slap_lifetime, gbv_phys_twist_arm_pull_hair_lifetime, gbv_phys_punch_lifetime,
+    gbv_emot_humiliate_lifetime, gbv_emot_threaten_harm_lifetime, or
+    gbv_emot_insult_lifetime = true. 'none' if all IPV battery items = false or not answered.
+    This classification is a research aid for analysis; it must not be presented to respondents
+    or used for individual-level eligibility decisions. Corresponds to the IPUMS DHS DVPLSEVER
+    variable concept. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+    Derived, not asked.
+  fr: >
+    Classification composite dérivée de la gravité de la VPI, basée sur la distinction moins
+    grave/plus grave de Garcia-Moreno et al. (OMS MCS, 2005). Formule : 'severe' si au moins
+    un acte physique grave ou un acte sexuel est signalé; 'moderate' si non grave et au moins
+    un acte modéré ou émotionnel est signalé; 'none' si tous les items sont négatifs. Aide à
+    la recherche uniquement. Dérivé, non posé.
+  es: >
+    Clasificación compuesta derivada de la gravedad de la VPI, usando la distinción menos grave/
+    más grave de Garcia-Moreno et al. (OMS MCS, 2005). Fórmula: 'severe' si al menos un acto
+    físico grave o sexual es reportado; 'moderate' si no grave y al menos un acto moderado o
+    emocional; 'none' si todos los ítems son negativos. Solo para uso analítico. Derivado,
+    no preguntado.
+
+type: string
+cardinality: single
+vocabulary: gbv-severity-tier
+references: null
+category: scores
+core: false
+sensitivity: restricted

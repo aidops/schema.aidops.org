@@ -1,0 +1,62 @@
+id: gbv-partner-type
+maturity: draft
+label:
+  en: "IPV referent partner type"
+  fr: "Type de partenaire référent pour la VPI"
+  es: "Tipo de compañero referente para la VPI"
+definition:
+  en: "Relationship type of the referent intimate partner for IPV questions in the DHS Domestic Violence module. The referent partner is the current husband/partner for currently married or cohabiting women, and the most recent husband/partner for women who are divorced, separated, or widowed. DHS-8 extends this to never-married women who have had an intimate partner."
+  fr: "Type de relation du partenaire intime référent pour les questions de VPI du module DHS. Le partenaire référent est le mari ou partenaire actuel pour les femmes mariées ou en union libre, et le plus récent pour les femmes divorcées, séparées ou veuves. Le DHS-8 étend cela aux femmes jamais mariées ayant eu un partenaire."
+  es: "Tipo de relación del compañero íntimo referente para las preguntas de VPI del módulo DHS. El compañero referente es el marido o compañero actual para mujeres casadas o en unión libre, y el más reciente para divorciadas, separadas o viudas. El DHS-8 extiende esto a mujeres nunca casadas que han tenido un compañero íntimo."
+
+standard:
+  name: dhs-domestic-violence-module-2022
+  uri: "https://dhsprogram.com/publications/publication-dhsq8-dhs-questionnaires-and-manuals.cfm"
+  notes: "Partner-type establishment at module opening (DHS-8 eligibility expansion)"
+
+values:
+  - code: current_married
+    label:
+      en: "Current husband (married)"
+      fr: "Mari actuel (marié)"
+      es: "Marido actual (casado)"
+    definition:
+      en: "Legally married, currently living together or separated temporarily."
+      fr: "Légalement marié, vivant actuellement ensemble ou séparé temporairement."
+      es: "Legalmente casado, viviendo actualmente juntos o separados temporalmente."
+  - code: current_cohabiting
+    label:
+      en: "Current cohabiting partner"
+      fr: "Partenaire cohabitant actuel"
+      es: "Compañero cohabitante actual"
+    definition:
+      en: "Living together as partners without legal marriage."
+      fr: "Vivant ensemble en tant que partenaires sans mariage légal."
+      es: "Viviendo juntos como pareja sin matrimonio legal."
+  - code: former_partner
+    label:
+      en: "Former husband or partner"
+      fr: "Ex-mari ou ex-partenaire"
+      es: "Ex marido o ex compañero"
+    definition:
+      en: "Divorced, separated, or widowed from most recent partner."
+      fr: "Divorcé, séparé ou veuf du partenaire le plus récent."
+      es: "Divorciado, separado o viudo del compañero más reciente."
+  - code: current_boyfriend
+    label:
+      en: "Current boyfriend (not cohabiting)"
+      fr: "Petit ami actuel (sans cohabitation)"
+      es: "Novio actual (sin cohabitar)"
+    definition:
+      en: "Intimate partner not cohabiting; introduced in DHS-8 for never-married women. DHS-8 only."
+      fr: "Partenaire intime sans cohabitation; introduit dans le DHS-8 pour les femmes jamais mariées. DHS-8 uniquement."
+      es: "Compañero íntimo sin cohabitar; introducido en DHS-8 para mujeres nunca casadas. Solo DHS-8."
+  - code: former_boyfriend
+    label:
+      en: "Former boyfriend"
+      fr: "Ex-petit ami"
+      es: "Ex novio"
+    definition:
+      en: "Former non-cohabiting intimate partner. DHS-8 only."
+      fr: "Ex-partenaire intime sans cohabitation. DHS-8 uniquement."
+      es: "Ex compañero íntimo sin cohabitar. Solo DHS-8."

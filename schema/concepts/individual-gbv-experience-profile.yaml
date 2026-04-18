@@ -1,0 +1,312 @@
+id: IndividualGBVExperienceProfile
+label:
+  en: Individual GBV Experience Profile
+  fr: "Profil d'expérience individuelle de VBG"
+  es: "Perfil de experiencia individual de VBG"
+maturity: draft
+
+definition:
+  en: >
+    A person-level record of a woman's self-reported experiences of intimate partner violence
+    (IPV), including physical, sexual, and emotional violence; partner controlling behaviors;
+    physical consequences of violence; help-seeking and disclosure; barriers to help-seeking;
+    and safety signals (violence during pregnancy, previous partner violence, non-partner sexual
+    violence). The primary instrument canon is the DHS-8 Domestic Violence module (Section 9,
+    2022), with ethics and safety protocols governed by Ellsberg and Heise (2005) and WHO
+    'Putting Women First' (2001). The subject is the randomly pre-selected woman age 15-49
+    (one per sampled household) who is eligible for and consents to this module.
+
+    SENSITIVITY: All properties carry sensitivity: restricted (the most protective tier in
+    AidOps). The restricted tier requires: (1) minimum aggregate n of 30 before any statistic
+    is published or shared; (2) no individual-record export without a named, signed data-use
+    agreement (DUA) identifying the receiving organization, the analytic purpose, and a
+    destruction-or-return clause; (3) mandatory pre-mapped referral pathway before any
+    deployment; (4) separate access-control layer in any data warehouse with explicit role
+    assignment.
+
+    OPERATIONAL PREREQUISITES (deployment gate conditions, not capturable data items):
+    (1) Trained female enumerator only; male enumerators are not permitted under any
+    circumstances. (2) One randomly pre-selected woman per sampled household using a pre-set
+    randomization scheme (Kish grid or EPSEM). If the selected woman declines or is ineligible,
+    the module is skipped for that household; no substitution is permitted. (3) Private interview
+    setting with no other adults present; if privacy cannot be secured, the module must be
+    skipped. (4) Retraumatization-warning consent introduction before the module, including: the
+    option to decline any question or stop at any time; a safe-word or nonverbal signal option;
+    confirmation that answers will not be shared with the partner or household. (5) Pre-mapped
+    GBV referral pathway: at least one operating GBV service provider contacted, confirmed
+    active, and printed on a discreet referral card carried by every enumerator. If no operating
+    provider can be identified, the module must NOT be fielded. Referral cards are offered to
+    every respondent regardless of disclosure to avoid marking disclosers. (6) Three-tier
+    distress-response protocol: Tier 1 (mild distress, pause and wait), Tier 2 (active distress,
+    stop module, offer referral card), Tier 3 (severe distress, stop full interview, emergency
+    protocol). All tiers adapted from Ellsberg and Heise (2005).
+
+    DIFFERENTIATION FROM GBVRiskProfile: GBVRiskProfile is a household-level record of
+    environmental, service-availability, and caregiver-reported GBV risk indicators
+    (sensitivity: sensitive, general-purpose enumerators, no specialist training required).
+    IndividualGBVExperienceProfile is the individual-disclosure complement: it captures a
+    woman's direct experience of violence, requires specialist conditions throughout, and carries
+    sensitivity: restricted for all properties.
+
+    OUT OF SCOPE: (1) Case-management intake fields (incident ID, incident date, location,
+    perpetrator biodata, case status, action plan, referral record): these belong to GBVIMS /
+    Primero. (2) Child sexual abuse and child protection items: owned by ChildProtectionProfile.
+    (3) GBV service availability, WGSS presence, environmental risk factors: owned by
+    GBVRiskProfile. (4) Attitudes toward wife beating: belongs in a future GenderNormsProfile.
+    (5) Alcohol use by partner (DV11-DV12): analytical risk-factor covariate, not a monitoring
+    indicator. (6) Fear of partner (DV13): analytical covariate, candidate for Phase 2 extension.
+    (7) Intergenerational violence exposure (DV30: did father beat mother): analytical risk factor.
+    (8) Non-partner sexual violence before age 15: boundary item with ChildProtectionProfile.
+
+    CANON CITATIONS: DHS-8 Domestic Violence Module (2022); Ellsberg and Heise (2005);
+    WHO 'Putting Women First' (2001).
+  fr: >
+    Enregistrement au niveau de la personne des expériences autodéclarées de violences du
+    partenaire intime (VPI) d'une femme, y compris les violences physiques, sexuelles et
+    émotionnelles, les comportements de contrôle du partenaire, les conséquences physiques
+    des violences, la recherche d'aide et la divulgation, les obstacles à la recherche d'aide,
+    et les signaux de sécurité. L'instrument canon est le module Violence domestique DHS-8
+    (Section 9, 2022), avec des protocoles d'éthique et de sécurité régis par Ellsberg et Heise
+    (2005) et le document de l'OMS 'Mettre les femmes en premier' (2001). Le sujet est la femme
+    de 15-49 ans préalablement sélectionnée de manière aléatoire (une par ménage échantillonné)
+    éligible et consentante à ce module.
+
+    SENSIBILITÉ : Toutes les propriétés portent sensitivity: restricted. Le niveau restreint
+    requiert un agrégat minimum de 30 individus avant toute publication, un accord d'utilisation
+    des données signé pour tout export de données individuelles, une filière de référencement
+    pré-cartographiée avant tout déploiement, et un contrôle d'accès distinct en entrepôt de
+    données.
+
+    DIFFÉRENCIATION DE GBVRiskProfile : GBVRiskProfile est un enregistrement au niveau du
+    ménage des facteurs de risque VBG environnementaux et de disponibilité des services
+    (sensitivity: sensitive, enquêteurs généralistes). IndividualGBVExperienceProfile est le
+    complément de divulgation individuelle, nécessitant des conditions spécialisées et portant
+    sensitivity: restricted pour toutes les propriétés.
+  es: >
+    Registro a nivel de persona de las experiencias autodeclaradas de violencia de pareja íntima
+    (VPI) de una mujer, incluyendo violencia física, sexual y emocional, comportamientos
+    controladores del compañero, consecuencias físicas de la violencia, búsqueda de ayuda y
+    divulgación, barreras para buscar ayuda, y señales de seguridad. El instrumento canon es el
+    módulo de Violencia Doméstica DHS-8 (Sección 9, 2022), con protocolos éticos y de seguridad
+    regulados por Ellsberg y Heise (2005) y la OMS 'Las mujeres primero' (2001). El sujeto es la
+    mujer de 15-49 años preseleccionada aleatoriamente (una por hogar muestreado) elegible y con
+    consentimiento para este módulo.
+
+    SENSIBILIDAD: Todas las propiedades tienen sensitivity: restricted. El nivel restringido
+    requiere n agregado mínimo de 30 antes de publicar, acuerdo de uso de datos firmado para
+    exportación de registros individuales, ruta de derivación pre-mapeada antes del despliegue,
+    y control de acceso diferenciado en el almacén de datos.
+
+    DIFERENCIACIÓN DE GBVRiskProfile: GBVRiskProfile es un registro a nivel de hogar de
+    factores de riesgo VBG ambientales y de disponibilidad de servicios (sensitivity: sensitive,
+    encuestadores de propósito general). IndividualGBVExperienceProfile es el complemento de
+    divulgación individual, requiriendo condiciones especializadas y con sensitivity: restricted
+    en todas las propiedades.
+
+# All 66 net-new properties owned by this profile.
+properties:
+  # Consent gate
+  - gbv_module_consent_obtained
+  # Module administration
+  - interview_module_completed_gbv_dv
+  - gbv_partner_type_referent
+  - gbv_partner_relationship_status
+  # Controlling behaviors (DV03a-g)
+  - gbv_ctrl_jealous_other_men
+  - gbv_ctrl_accuses_infidelity
+  - gbv_ctrl_restricts_friends
+  - gbv_ctrl_limits_family_contact
+  - gbv_ctrl_monitors_whereabouts
+  - gbv_ctrl_controls_money
+  - gbv_ctrl_discriminates_spending
+  # Physical IPV (DV05A-i through vii, lifetime + 12m frequency)
+  - gbv_phys_push_shake_throw_lifetime
+  - gbv_phys_push_shake_throw_12m_freq
+  - gbv_phys_slap_lifetime
+  - gbv_phys_slap_12m_freq
+  - gbv_phys_twist_arm_pull_hair_lifetime
+  - gbv_phys_twist_arm_pull_hair_12m_freq
+  - gbv_phys_punch_lifetime
+  - gbv_phys_punch_12m_freq
+  - gbv_phys_kick_drag_beat_lifetime
+  - gbv_phys_kick_drag_beat_12m_freq
+  - gbv_phys_choke_burn_lifetime
+  - gbv_phys_choke_burn_12m_freq
+  - gbv_phys_weapon_threat_lifetime
+  - gbv_phys_weapon_threat_12m_freq
+  # Sexual IPV (DV05A-viii through x, lifetime + 12m frequency)
+  - gbv_sex_forced_intercourse_lifetime
+  - gbv_sex_forced_intercourse_12m_freq
+  - gbv_sex_forced_other_acts_lifetime
+  - gbv_sex_forced_other_acts_12m_freq
+  - gbv_sex_forced_with_threats_lifetime
+  - gbv_sex_forced_with_threats_12m_freq
+  # Emotional IPV (DV04A-a through c, lifetime + 12m frequency)
+  - gbv_emot_humiliate_lifetime
+  - gbv_emot_humiliate_12m_freq
+  - gbv_emot_threaten_harm_lifetime
+  - gbv_emot_threaten_harm_12m_freq
+  - gbv_emot_insult_lifetime
+  - gbv_emot_insult_12m_freq
+  # Physical consequences (DV08a-c + derived)
+  - gbv_conseq_cuts_bruises_aches
+  - gbv_conseq_eye_injury_sprains_burns
+  - gbv_conseq_serious_injury
+  - gbv_conseq_sought_medical_care
+  # Help-seeking and disclosure (DV27-DV29)
+  - gbv_helpseeking_attempted
+  - gbv_helpseeking_sources
+  - gbv_disclosure_told_anyone
+  - gbv_helpseeking_barriers
+  # Safety signals, pregnancy (DV20-DV21)
+  - gbv_safety_violence_during_pregnancy
+  - gbv_safety_violence_preg_perpetrator
+  # Respondent-initiated physical act, OPTIONAL (DV09-DV10)
+  - gbv_initiation_ever
+  - gbv_initiation_12m_freq
+  # Previous partner violence (DV15A-DV15B)
+  - gbv_prev_partner_phys_violence
+  - gbv_prev_partner_sex_violence
+  - gbv_prev_partner_emot_violence
+  - gbv_prev_partner_timing
+  # Non-partner sexual violence (DV22A/B-DV23)
+  - gbv_nonpartner_sex_violence_lifetime
+  - gbv_nonpartner_sex_violence_perpetrator
+  # Derived indicators (all category: scores)
+  - gbv_ipv_physical_lifetime_ever
+  - gbv_ipv_physical_12m_ever
+  - gbv_ipv_sexual_lifetime_ever
+  - gbv_ipv_sexual_12m_ever
+  - gbv_ipv_emotional_lifetime_ever
+  - gbv_ipv_emotional_12m_ever
+  - gbv_ipv_any_lifetime_ever
+  - gbv_ipv_any_12m_ever
+  - gbv_ipv_controlling_behavior_count
+  - gbv_ipv_severity_tier
+  - gbv_ipv_any_physical_severe_lifetime
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: gbv_consent
+    properties:
+      - gbv_module_consent_obtained
+  - category: gbv_module_admin
+    properties:
+      - interview_module_completed_gbv_dv
+      - gbv_partner_type_referent
+      - gbv_partner_relationship_status
+  - category: gbv_controlling
+    properties:
+      - gbv_ctrl_jealous_other_men
+      - gbv_ctrl_accuses_infidelity
+      - gbv_ctrl_restricts_friends
+      - gbv_ctrl_limits_family_contact
+      - gbv_ctrl_monitors_whereabouts
+      - gbv_ctrl_controls_money
+      - gbv_ctrl_discriminates_spending
+  - category: gbv_physical_ipv
+    properties:
+      - gbv_phys_push_shake_throw_lifetime
+      - gbv_phys_push_shake_throw_12m_freq
+      - gbv_phys_slap_lifetime
+      - gbv_phys_slap_12m_freq
+      - gbv_phys_twist_arm_pull_hair_lifetime
+      - gbv_phys_twist_arm_pull_hair_12m_freq
+      - gbv_phys_punch_lifetime
+      - gbv_phys_punch_12m_freq
+      - gbv_phys_kick_drag_beat_lifetime
+      - gbv_phys_kick_drag_beat_12m_freq
+      - gbv_phys_choke_burn_lifetime
+      - gbv_phys_choke_burn_12m_freq
+      - gbv_phys_weapon_threat_lifetime
+      - gbv_phys_weapon_threat_12m_freq
+  - category: gbv_sexual_ipv
+    properties:
+      - gbv_sex_forced_intercourse_lifetime
+      - gbv_sex_forced_intercourse_12m_freq
+      - gbv_sex_forced_other_acts_lifetime
+      - gbv_sex_forced_other_acts_12m_freq
+      - gbv_sex_forced_with_threats_lifetime
+      - gbv_sex_forced_with_threats_12m_freq
+  - category: gbv_emotional_ipv
+    properties:
+      - gbv_emot_humiliate_lifetime
+      - gbv_emot_humiliate_12m_freq
+      - gbv_emot_threaten_harm_lifetime
+      - gbv_emot_threaten_harm_12m_freq
+      - gbv_emot_insult_lifetime
+      - gbv_emot_insult_12m_freq
+  - category: gbv_consequences
+    properties:
+      - gbv_conseq_cuts_bruises_aches
+      - gbv_conseq_eye_injury_sprains_burns
+      - gbv_conseq_serious_injury
+      - gbv_conseq_sought_medical_care
+  - category: gbv_help_seeking
+    properties:
+      - gbv_helpseeking_attempted
+      - gbv_helpseeking_sources
+      - gbv_disclosure_told_anyone
+      - gbv_helpseeking_barriers
+  - category: gbv_safety_signals
+    properties:
+      - gbv_safety_violence_during_pregnancy
+      - gbv_safety_violence_preg_perpetrator
+      - gbv_initiation_ever
+      - gbv_initiation_12m_freq
+      - gbv_prev_partner_phys_violence
+      - gbv_prev_partner_sex_violence
+      - gbv_prev_partner_emot_violence
+      - gbv_prev_partner_timing
+      - gbv_nonpartner_sex_violence_lifetime
+      - gbv_nonpartner_sex_violence_perpetrator
+  - category: scores
+    properties:
+      - gbv_ipv_physical_lifetime_ever
+      - gbv_ipv_physical_12m_ever
+      - gbv_ipv_sexual_lifetime_ever
+      - gbv_ipv_sexual_12m_ever
+      - gbv_ipv_emotional_lifetime_ever
+      - gbv_ipv_emotional_12m_ever
+      - gbv_ipv_any_lifetime_ever
+      - gbv_ipv_any_12m_ever
+      - gbv_ipv_controlling_behavior_count
+      - gbv_ipv_severity_tier
+      - gbv_ipv_any_physical_severe_lifetime
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (GBV individual experience)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "An individual GBV experience disclosure serializes as a FHIR QuestionnaireResponse with subject typed to a Patient (the interviewed woman). The act-level items map to QuestionnaireResponse.item entries. Physical consequence and derived indicators may map to FHIR Observation resources on the same patient. There is no GBV-specific FHIR profile in core R4; the GBV AoR does not publish a FHIR implementation guide as of 2026."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS, OpenSPP, openIMIS,
+    DCI Social Registry) carry a population-level individual IPV experience monitoring module
+    in core. GBV experience data in those systems, where present at all, is confined to
+    case-management records in GBVIMS or Primero (survivors, incident types, case plans) rather
+    than population-level monitoring indicators. The zero v1 convergence reflects the origin of
+    this module in humanitarian demographic surveys (DHS, MICS) and research instruments (WHO
+    MCS); it is deployed in DHS country surveys, MSNA specialist rounds, and stand-alone
+    protection assessments, not in social-protection registries. The minimum-aggregate-n-30 rule
+    and DUA requirement for individual records are additional barriers to integration with
+    standard registry architectures.

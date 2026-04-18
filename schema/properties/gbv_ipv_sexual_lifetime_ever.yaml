@@ -1,0 +1,30 @@
+id: gbv_ipv_sexual_lifetime_ever
+maturity: draft
+label:
+  en: "Derived: ever experienced sexual IPV (lifetime)"
+  fr: "Dérivé : a jamais subi une VPI sexuelle (vie entière)"
+  es: "Derivado: alguna vez experimentó VPI sexual (de por vida)"
+
+definition:
+  en: >
+    Derived boolean indicator: true if the respondent reported at least one lifetime sexual IPV
+    act. Formula: TRUE if any of gbv_sex_forced_intercourse_lifetime,
+    gbv_sex_forced_other_acts_lifetime, or gbv_sex_forced_with_threats_lifetime = true.
+    DHS-7+ compatible. Sensitivity: restricted. Minimum aggregate n=30 before publication.
+    Derived, not asked.
+  fr: >
+    Indicateur booléen dérivé : vrai si la répondante a signalé au moins un acte de VPI sexuelle
+    à vie. Formule : VRAI si l'un des 3 items de VPI sexuelle à vie = vrai. Compatible DHS-7+.
+    Dérivé, non posé.
+  es: >
+    Indicador booleano derivado: verdadero si la encuestada reportó al menos un acto de VPI sexual
+    de por vida. Fórmula: VERDADERO si cualquiera de los 3 ítems de VPI sexual de por vida =
+    verdadero. Compatible DHS-7+. Derivado, no preguntado.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: restricted

@@ -1,0 +1,37 @@
+id: gbv_partner_type_referent
+maturity: draft
+label:
+  en: "Referent partner type"
+  fr: "Type de partenaire référent"
+  es: "Tipo de compañero referente"
+
+definition:
+  en: >
+    Relationship type of the referent intimate partner for all IPV battery questions. The referent
+    partner is the current husband or partner for currently married or cohabiting women, and the
+    most recent husband or partner for women who are separated, divorced, or widowed. Under the
+    DHS-8 extension, never-married women who have had an intimate partner are also eligible; for
+    them the referent is the most recent intimate partner. Where possible, this should be derived
+    from marital_status data already collected in the individual questionnaire rather than re-asked.
+    DHS-8 only for 'current_boyfriend' and 'former_boyfriend' codes. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Type de relation du partenaire intime référent pour toutes les questions de la batterie VPI.
+    Le partenaire référent est le mari ou partenaire actuel pour les femmes mariées ou en union
+    libre, et le plus récent pour les femmes séparées, divorcées ou veuves. L'extension DHS-8
+    inclut les femmes jamais mariées ayant eu un partenaire intime. Dériver si possible du statut
+    matrimonial déjà collecté. Codes 'current_boyfriend' et 'former_boyfriend': DHS-8 uniquement.
+  es: >
+    Tipo de relación del compañero íntimo referente para todas las preguntas de la batería de VPI.
+    El compañero referente es el marido o compañero actual para mujeres casadas o en unión libre,
+    y el más reciente para separadas, divorciadas o viudas. La extensión DHS-8 incluye mujeres
+    nunca casadas con compañero íntimo. Derivar del estado civil ya recopilado cuando sea posible.
+    Códigos 'current_boyfriend' y 'former_boyfriend': solo DHS-8.
+
+type: string
+cardinality: single
+vocabulary: gbv-partner-type
+references: null
+category: gbv_module_admin
+core: false
+sensitivity: restricted

@@ -1,0 +1,31 @@
+id: gbv_sex_forced_intercourse_lifetime
+maturity: draft
+label:
+  en: "Sexual IPV (lifetime): physically forced to have sexual intercourse"
+  fr: "VPI sexuelle (vie entière) : forcée physiquement à avoir des rapports sexuels"
+  es: "VPI sexual (de por vida): forzada físicamente a tener relaciones sexuales"
+
+definition:
+  en: >
+    Whether the referent partner has ever physically forced the respondent to have sexual
+    intercourse when she did not want to. DHS instrument item DV05A-viii. Lifetime reference
+    period (ever). Sexual IPV acts are tabulated separately from physical acts in DHS reporting
+    although they appear within the same DV05A battery. If true, the follow-up 12-month frequency
+    property gbv_sex_forced_intercourse_12m_freq is asked. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais forcé physiquement la répondante à avoir des rapports
+    sexuels lorsqu'elle ne le souhaitait pas. Item DHS DV05A-viii. Période de référence : à vie.
+    Si vrai, gbv_sex_forced_intercourse_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez forzó físicamente a la encuestada a tener relaciones
+    sexuales cuando ella no quería. Ítem DHS DV05A-viii. Período de referencia: de por vida.
+    Si verdadero, se pregunta gbv_sex_forced_intercourse_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_sexual_ipv
+core: false
+sensitivity: restricted

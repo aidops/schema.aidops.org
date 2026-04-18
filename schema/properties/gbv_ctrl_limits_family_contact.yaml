@@ -1,0 +1,29 @@
+id: gbv_ctrl_limits_family_contact
+maturity: draft
+label:
+  en: "Controlling behavior: tries to limit contact with family"
+  fr: "Comportement de contrôle : tente de limiter le contact avec la famille"
+  es: "Comportamiento controlador: intenta limitar el contacto familiar"
+
+definition:
+  en: >
+    Whether the referent partner tries or tried to limit the respondent's contact with her own
+    family. DHS instrument item DV03d. Reference period: ever (relationship pattern). Response
+    options use the yes-no-dk vocabulary. DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent tente ou tentait de limiter le contact de la répondante avec sa
+    propre famille. Item DHS DV03d. Période de référence : toujours (schéma relationnel).
+    Options de réponse : vocabulaire yes-no-dk. Compatible DHS-7+.
+  es: >
+    Si el compañero referente intenta o intentaba limitar el contacto de la encuestada con su
+    propia familia. Ítem DHS DV03d. Período de referencia: alguna vez (patrón relacional).
+    Opciones de respuesta: vocabulario yes-no-dk. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: gbv_controlling
+core: false
+sensitivity: restricted

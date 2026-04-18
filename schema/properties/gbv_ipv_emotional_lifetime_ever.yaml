@@ -1,0 +1,32 @@
+id: gbv_ipv_emotional_lifetime_ever
+maturity: draft
+label:
+  en: "Derived: ever experienced emotional IPV (lifetime)"
+  fr: "Dérivé : a jamais subi une VPI émotionnelle (vie entière)"
+  es: "Derivado: alguna vez experimentó VPI emocional (de por vida)"
+
+definition:
+  en: >
+    Derived boolean indicator: true if the respondent reported at least one lifetime emotional IPV
+    act. Formula: TRUE if any of gbv_emot_humiliate_lifetime, gbv_emot_threaten_harm_lifetime, or
+    gbv_emot_insult_lifetime = true. Note: surveys prior to approximately 2006 may have collected
+    only two emotional IPV items (humiliate and threaten_harm); a derived indicator using all three
+    items will not be comparable with older data. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication. Derived, not asked.
+  fr: >
+    Indicateur booléen dérivé : vrai si la répondante a signalé au moins un acte de VPI
+    émotionnelle à vie. Formule : VRAI si l'un des 3 items de VPI émotionnelle à vie = vrai.
+    Note : les enquêtes antérieures à 2006 peuvent n'avoir que 2 items émotionnels. Dérivé, non posé.
+  es: >
+    Indicador booleano derivado: verdadero si la encuestada reportó al menos un acto de VPI
+    emocional de por vida. Fórmula: VERDADERO si cualquiera de los 3 ítems de VPI emocional de
+    por vida = verdadero. Nota: encuestas anteriores a 2006 pueden tener solo 2 ítems emocionales.
+    Derivado, no preguntado.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: scores
+core: false
+sensitivity: restricted

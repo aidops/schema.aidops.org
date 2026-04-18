@@ -655,3 +655,58 @@ cross_cutting:
     en: "Cross-cutting"
     fr: "Transversal"
     es: "Transversal"
+
+# IndividualGBVExperienceProfile categories
+gbv_consent:
+  label:
+    en: "GBV Module Consent"
+    fr: "Consentement au module VBG"
+    es: "Consentimiento al módulo VBG"
+
+gbv_module_admin:
+  label:
+    en: "GBV Module Administration"
+    fr: "Administration du module VBG"
+    es: "Administración del módulo VBG"
+
+gbv_controlling:
+  label:
+    en: "GBV Controlling Behaviors"
+    fr: "Comportements de contrôle VBG"
+    es: "Comportamientos controladores VBG"
+
+gbv_physical_ipv:
+  label:
+    en: "Physical IPV"
+    fr: "VPI physique"
+    es: "VPI física"
+
+gbv_sexual_ipv:
+  label:
+    en: "Sexual IPV"
+    fr: "VPI sexuelle"
+    es: "VPI sexual"
+
+gbv_emotional_ipv:
+  label:
+    en: "Emotional IPV"
+    fr: "VPI émotionnelle"
+    es: "VPI emocional"
+
+gbv_consequences:
+  label:
+    en: "Physical Consequences of IPV"
+    fr: "Conséquences physiques de la VPI"
+    es: "Consecuencias físicas de la VPI"
+
+gbv_help_seeking:
+  label:
+    en: "GBV Help-Seeking and Disclosure"
+    fr: "Recherche d'aide et divulgation VBG"
+    es: "Búsqueda de ayuda y divulgación VBG"
+
+gbv_safety_signals:
+  label:
+    en: "GBV Safety Signals and Secondary Items"
+    fr: "Signaux de sécurité VBG et items secondaires"
+    es: "Señales de seguridad VBG e ítems secundarios"

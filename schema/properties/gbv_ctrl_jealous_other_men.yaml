@@ -1,0 +1,30 @@
+id: gbv_ctrl_jealous_other_men
+maturity: draft
+label:
+  en: "Controlling behavior: jealous if talks to other men"
+  fr: "Comportement de contrôle : jaloux si elle parle à d'autres hommes"
+  es: "Comportamiento controlador: celoso si habla con otros hombres"
+
+definition:
+  en: >
+    Whether the referent partner is or was jealous or angry if the respondent talks or talked to
+    other men. DHS instrument item DV03a. Reference period: ever (relationship pattern, not a
+    specific incident). Response options use the yes-no-dk vocabulary. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent est ou était jaloux ou en colère lorsque la répondante parle ou
+    parlait à d'autres hommes. Item DHS DV03a. Période de référence : toujours (schéma
+    relationnel, pas un incident spécifique). Options de réponse : vocabulaire yes-no-dk.
+    Compatible DHS-7+.
+  es: >
+    Si el compañero referente es o era celoso o se enojaba cuando la encuestada habla o hablaba
+    con otros hombres. Ítem DHS DV03a. Período de referencia: alguna vez (patrón relacional,
+    no un incidente específico). Opciones de respuesta: vocabulario yes-no-dk. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: gbv_controlling
+core: false
+sensitivity: restricted

@@ -12,6 +12,7 @@ status: active
 informs:
   concepts:
     - GBVRiskProfile
+    - IndividualGBVExperienceProfile
   vocabularies:
     - gbv-service-type
     - route-safety-3
@@ -33,3 +34,8 @@ informs:
     - site_feels_safe_daytime
     - site_feels_safe_nighttime
     - distribution_point_feels_safe
+    # IndividualGBVExperienceProfile: IASC Guidelines are the normative
+    # source for the referral-pathway precondition that gates module
+    # administration.
+    - gbv_module_consent_obtained
+    - interview_module_completed_gbv_dv

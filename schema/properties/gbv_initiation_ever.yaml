@@ -1,0 +1,36 @@
+id: gbv_initiation_ever
+maturity: draft
+label:
+  en: "Respondent-initiated physical act against partner (optional): ever"
+  fr: "Acte physique initié par la répondante contre le partenaire (optionnel) : jamais"
+  es: "Acto físico iniciado por la encuestada contra el compañero (opcional): alguna vez"
+
+definition:
+  en: >
+    Whether the respondent has ever hit, slapped, kicked, or done anything else to physically hurt
+    her current or most recent husband/partner at times when he was not already beating or
+    physically hurting her. DHS instrument item DV09. Lifetime reference period (ever). OPTIONAL:
+    this item is omitted in some country DHS implementations due to respondent burden and acquiescence
+    bias concerns. Deployment teams must explicitly decide to include this item. Note: responses
+    could be used against the respondent in legal proceedings in some jurisdictions; the restricted
+    sensitivity tier is especially important for this property. If true, gbv_initiation_12m_freq
+    is asked. DHS-7+ compatible where included. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si la répondante a jamais frappé, giflé, donné des coups de pied ou fait autre chose pour
+    blesser physiquement son partenaire lorsqu'il ne la frappait pas déjà. Item DHS DV09. OPTIONNEL :
+    omis dans certaines enquêtes DHS nationales. La tier de sensibilité restreinte est particulièrement
+    importante pour cet item. Si vrai, gbv_initiation_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si la encuestada alguna vez golpeó, abofeteó, pateó o hizo algo para lastimar físicamente a
+    su compañero en momentos en que él no la estaba golpeando. Ítem DHS DV09. OPCIONAL: omitido
+    en algunas encuestas DHS nacionales. El nivel de sensibilidad restringida es especialmente
+    importante para este ítem. Si verdadero, se pregunta gbv_initiation_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_safety_signals
+core: false
+sensitivity: restricted

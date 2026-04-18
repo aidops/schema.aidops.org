@@ -1,0 +1,37 @@
+id: interview_module_completed_gbv_dv
+maturity: draft
+label:
+  en: "GBV/DV module: interview completed"
+  fr: "Module VBG/VD : entretien complété"
+  es: "Módulo VBG/VD: entrevista completada"
+
+definition:
+  en: >
+    Boolean flag indicating whether the GBV Domestic Violence module was completed for this
+    respondent record. False when the module was stopped due to loss of privacy, respondent
+    distress (Tier 2 or 3 distress-response protocol), or other field conditions that prevented
+    completion. False does not indicate that no violence occurred. When false, any partially
+    collected module items should be treated as missing. This property lives in
+    IndividualGBVExperienceProfile rather than in general registration profiles because its
+    access tier is restricted; it identifies which Person records carry GBV DV module data.
+    The subject is the randomly pre-selected woman age 15-49 (one per sampled household) who
+    was eligible for this module. DHS-8 DV module compatible (corresponds to DV31/DV32
+    interruption tracking). Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Indicateur booléen indiquant si le module VBG Violence domestique a été complété pour ce
+    dossier de répondante. Faux lorsque le module a été interrompu en raison d'un manque de
+    confidentialité, d'une détresse de la répondante (protocole de niveau 2 ou 3) ou d'autres
+    conditions de terrain. Faux n'indique pas l'absence de violence. Compatible DHS-8 (DV31/DV32).
+  es: >
+    Indicador booleano que indica si el módulo VBG Violencia doméstica fue completado para este
+    registro de encuestada. Falso cuando el módulo se interrumpió por falta de privacidad,
+    angustia de la encuestada (protocolo nivel 2 o 3) u otras condiciones de campo. Falso no
+    indica ausencia de violencia. Compatible con DHS-8 (DV31/DV32).
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_module_admin
+core: false
+sensitivity: restricted

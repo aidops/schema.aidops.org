@@ -1,0 +1,22 @@
+id: ellsberg-heise-2005
+title: "Researching Violence Against Women: A Practical Guide for Researchers and Activists"
+short_title: "Ellsberg and Heise 2005"
+publisher: "World Health Organization (WHO) and Program for Appropriate Technology in Health (PATH)"
+year: 2005
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.who.int/publications/i/item/9241546476"
+access: open
+status: active
+
+informs:
+  concepts:
+    - IndividualGBVExperienceProfile
+  vocabularies: []
+  properties:
+    - gbv_module_consent_obtained
+    - interview_module_completed_gbv_dv
+    - gbv_helpseeking_attempted
+    - gbv_helpseeking_sources
+    - gbv_helpseeking_barriers
+    - gbv_safety_violence_during_pregnancy

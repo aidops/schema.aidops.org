@@ -1,0 +1,30 @@
+id: gbv_prev_partner_timing
+maturity: draft
+label:
+  en: "Previous partner violence: timing of most recent episode"
+  fr: "Violence par partenaire précédent : moment du dernier épisode"
+  es: "Violencia de compañero anterior: momento del episodio más reciente"
+
+definition:
+  en: >
+    Timing of the most recent episode of violence by a previous husband or partner, relative to the
+    interview date. DHS instrument item DV15B. Asked only if at least one of
+    gbv_prev_partner_phys_violence, gbv_prev_partner_sex_violence, or
+    gbv_prev_partner_emot_violence = true. DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Moment du dernier épisode de violence d'un mari ou partenaire précédent par rapport à la date
+    de l'entretien. Item DHS DV15B. Posée uniquement si au moins un des items de violence par
+    partenaire précédent est vrai. Compatible DHS-7+.
+  es: >
+    Momento del episodio más reciente de violencia de un marido o compañero anterior en relación
+    con la fecha de la entrevista. Ítem DHS DV15B. Se pregunta solo si al menos uno de los ítems
+    de violencia de compañero anterior es verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: single
+vocabulary: gbv-prev-partner-timing
+references: null
+category: gbv_safety_signals
+core: false
+sensitivity: restricted

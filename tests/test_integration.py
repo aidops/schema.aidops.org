@@ -57,7 +57,7 @@ class TestRealSchema:
             if v.get("source") == "aidops"
         }
 
-        # AidOps has exactly 29 concepts; update this count when adding/removing AidOps concepts
+        # AidOps has exactly 30 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
         # Batch 3 adds: MentalHealthProfile
         # Batch 3 adds: ChildProtectionProfile
@@ -67,8 +67,9 @@ class TestRealSchema:
         #   HealthFacilityProfile, CommunityNeedsProfile
         # Phase 7 adds: ProtectionProfile, MarketProfile,
         #   PastoralFoodSecurityProfile, ClimateAdaptationProfile
-        assert len(aidops_concepts) == 29, (
-            f"Expected 29 AidOps concepts, got {len(aidops_concepts)}: "
+        # Phase 8 adds: IndividualGBVExperienceProfile
+        assert len(aidops_concepts) == 30, (
+            f"Expected 30 AidOps concepts, got {len(aidops_concepts)}: "
             f"{sorted(aidops_concepts.keys())}"
         )
         assert set(aidops_concepts.keys()) == {
@@ -89,6 +90,7 @@ class TestRealSchema:
             "GenderEmpowermentProfile",
             "HealthAccessProfile",
             "HealthFacilityProfile",
+            "IndividualGBVExperienceProfile",
             "LivelihoodProfile",
             "MarketProfile",
             "MaternalNewbornHealthProfile",
@@ -126,8 +128,10 @@ class TestRealSchema:
         #   MarketProfile: +27
         #   PastoralFoodSecurityProfile: +24
         #   ClimateAdaptationProfile: +29
-        assert len(aidops_properties) == 890, (
-            f"Expected 890 AidOps properties, got {len(aidops_properties)}"
+        # Phase 8 delta (Phase 7 baseline was 890):
+        #   IndividualGBVExperienceProfile: +66
+        assert len(aidops_properties) == 956, (
+            f"Expected 956 AidOps properties, got {len(aidops_properties)}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
@@ -159,8 +163,12 @@ class TestRealSchema:
         #   ClimateAdaptationProfile: +8
         # PS-promotion pass: -4 (shelter-situation-type, maternity-care-provider,
         #                        occupancy-arrangement, document-status moved to PublicSchema)
-        assert len(aidops_vocabularies) == 231, (
-            f"Expected 231 AidOps vocabularies, got {len(aidops_vocabularies)}"
+        # Phase 8 delta (Phase 7 + PS-promotion baseline was 231):
+        #   IndividualGBVExperienceProfile: +8 (ipv-freq-3, gbv-help-sources,
+        #     gbv-helpseeking-barriers, gbv-partner-type, gbv-relationship-status,
+        #     gbv-perpetrator-type, gbv-prev-partner-timing, gbv-severity-tier)
+        assert len(aidops_vocabularies) == 239, (
+            f"Expected 239 AidOps vocabularies, got {len(aidops_vocabularies)}"
         )
 
         # Every AidOps concept has a JSON Schema

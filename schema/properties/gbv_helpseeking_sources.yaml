@@ -1,0 +1,31 @@
+id: gbv_helpseeking_sources
+maturity: draft
+label:
+  en: "Help-seeking: sources from which help was sought"
+  fr: "Recherche d'aide : sources auprès desquelles de l'aide a été cherchée"
+  es: "Búsqueda de ayuda: fuentes a las que recurrió para pedir ayuda"
+
+definition:
+  en: >
+    Sources from which the respondent sought help after experiencing partner violence. DHS
+    instrument item DV28. Multi-select; record all mentioned. Skip logic: asked only if
+    gbv_helpseeking_attempted = true. The 'current_former_partner' code is intentionally included;
+    a woman listing the perpetrator as a source of help is a substantive finding (not a data error)
+    and has important programming implications. DHS-7+ compatible.
+    Sensitivity: restricted. Minimum aggregate n=30 before publication.
+  fr: >
+    Sources auprès desquelles la répondante a cherché de l'aide après avoir subi des violences
+    conjugales. Item DHS DV28. Sélection multiple; noter toutes les sources mentionnées. Posée
+    uniquement si gbv_helpseeking_attempted = vrai. Compatible DHS-7+.
+  es: >
+    Fuentes a las que recurrió la encuestada para buscar ayuda tras sufrir violencia de pareja.
+    Ítem DHS DV28. Selección múltiple; registrar todas las mencionadas. Se pregunta solo si
+    gbv_helpseeking_attempted = verdadero. Compatible DHS-7+.
+
+type: string
+cardinality: multiple
+vocabulary: gbv-help-sources
+references: null
+category: gbv_help_seeking
+core: false
+sensitivity: restricted

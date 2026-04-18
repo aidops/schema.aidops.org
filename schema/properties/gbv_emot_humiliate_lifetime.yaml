@@ -1,0 +1,30 @@
+id: gbv_emot_humiliate_lifetime
+maturity: draft
+label:
+  en: "Emotional IPV (lifetime): said or did something to humiliate in front of others"
+  fr: "VPI émotionnelle (vie entière) : dit ou fait quelque chose pour humilier devant autrui"
+  es: "VPI emocional (de por vida): dijo o hizo algo para humillarla frente a otros"
+
+definition:
+  en: >
+    Whether the referent partner has ever said or done something to humiliate the respondent in
+    front of others. DHS instrument item DV04A-a (also coded d103a in DHS recode files). Lifetime
+    reference period (ever). If true, the follow-up 12-month frequency property
+    gbv_emot_humiliate_12m_freq is asked. DHS-7+ compatible. Sensitivity: restricted.
+    Minimum aggregate n=30 before publication.
+  fr: >
+    Si le partenaire référent a jamais dit ou fait quelque chose pour humilier la répondante
+    devant d'autres personnes. Item DHS DV04A-a (d103a). Période de référence : à vie. Si vrai,
+    gbv_emot_humiliate_12m_freq est posée. Compatible DHS-7+.
+  es: >
+    Si el compañero referente alguna vez dijo o hizo algo para humillar a la encuestada frente
+    a otros. Ítem DHS DV04A-a (d103a). Período de referencia: de por vida. Si verdadero, se
+    pregunta gbv_emot_humiliate_12m_freq. Compatible DHS-7+.
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: gbv_emotional_ipv
+core: false
+sensitivity: restricted
