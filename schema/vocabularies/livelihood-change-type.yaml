@@ -1,0 +1,77 @@
+id: livelihood-change-type
+maturity: draft
+label:
+  en: Livelihood Change Type
+  fr: "Type de changement de moyens de subsistance"
+  es: "Tipo de cambio en los medios de vida"
+definition:
+  en: "How a household's primary livelihood has changed since a crisis or displacement event. Synthesised from LSMS-ISA livelihood change modules and the IOM DTM Multi-Sectoral Location Assessment. Used to characterise whether the household has lost, reduced, maintained, diversified, switched, or improved its main livelihood activity relative to its pre-crisis or pre-displacement baseline."
+  fr: "Comment l'activité principale de subsistance d'un ménage a changé depuis une crise ou un événement de déplacement. Synthétisé à partir des modules de changement de moyens de subsistance LSMS-ISA et de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM. Utilisé pour caractériser si le ménage a perdu, réduit, maintenu, diversifié, changé ou amélioré son activité principale par rapport à sa situation de référence avant la crise ou le déplacement."
+  es: "Cómo ha cambiado la actividad principal de subsistencia del hogar desde una crisis o evento de desplazamiento. Sintetizado a partir de los módulos de cambio de medios de vida LSMS-ISA y de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM. Se utiliza para caracterizar si el hogar ha perdido, reducido, mantenido, diversificado, cambiado o mejorado su actividad principal en relación con su situación previa a la crisis o al desplazamiento."
+standard:
+  name: "Synthesised from LSMS-ISA livelihood change modules and IOM DTM MSLA"
+  notes: "Used with a programme-level reference date for 'since the crisis' / 'since displacement'."
+values:
+  - code: lost_entirely
+    label:
+      en: Lost entirely
+      fr: "Perdu entièrement"
+      es: "Perdida totalmente"
+    definition:
+      en: "The household can no longer practice the previous activity at all."
+      fr: "Le ménage ne peut plus du tout pratiquer l'activité antérieure."
+      es: "El hogar ya no puede practicar la actividad anterior en absoluto."
+  - code: significantly_reduced
+    label:
+      en: Significantly reduced
+      fr: "Considérablement réduit"
+      es: "Significativamente reducida"
+    definition:
+      en: "The household still practices the activity but at greatly reduced scale or income."
+      fr: "Le ménage pratique encore l'activité mais à une échelle ou avec un revenu considérablement réduits."
+      es: "El hogar todavía practica la actividad pero a una escala o ingresos muy reducidos."
+  - code: slightly_reduced
+    label:
+      en: Slightly reduced
+      fr: "Légèrement réduit"
+      es: "Ligeramente reducida"
+    definition:
+      en: "Minor reduction in scale or income; activity largely continues."
+      fr: "Réduction mineure d'échelle ou de revenus ; l'activité se poursuit largement."
+      es: "Reducción menor de escala o ingresos; la actividad continúa en gran medida."
+  - code: unchanged
+    label:
+      en: Unchanged
+      fr: "Inchangé"
+      es: "Sin cambios"
+    definition:
+      en: "No material change since the crisis or displacement."
+      fr: "Aucun changement matériel depuis la crise ou le déplacement."
+      es: "Sin cambios materiales desde la crisis o el desplazamiento."
+  - code: diversified_new_activity
+    label:
+      en: "Diversified — new activity added"
+      fr: "Diversifié — nouvelle activité"
+      es: "Diversificada — nueva actividad"
+    definition:
+      en: "Household has added a new livelihood activity to its previous portfolio."
+      fr: "Le ménage a ajouté une nouvelle activité de subsistance à son portefeuille antérieur."
+      es: "El hogar ha añadido una nueva actividad de subsistencia a su cartera anterior."
+  - code: switched_activity
+    label:
+      en: Switched to a new activity
+      fr: "Changé d'activité"
+      es: "Cambió a nueva actividad"
+    definition:
+      en: "Household has replaced its former primary activity with a different one."
+      fr: "Le ménage a remplacé son activité principale antérieure par une autre."
+      es: "El hogar ha reemplazado su actividad principal anterior por otra diferente."
+  - code: improved
+    label:
+      en: Improved
+      fr: "Amélioré"
+      es: "Mejorada"
+    definition:
+      en: "Household's livelihood situation has improved since the crisis."
+      fr: "La situation de subsistance du ménage s'est améliorée depuis la crise."
+      es: "La situación de subsistencia del hogar ha mejorado desde la crisis."

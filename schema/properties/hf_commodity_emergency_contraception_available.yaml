@@ -1,0 +1,19 @@
+id: hf_commodity_emergency_contraception_available
+maturity: draft
+label:
+  en: "Emergency contraception available and within expiry"
+  fr: "Contraception d'urgence disponible et non périmée"
+  es: "Anticoncepción de emergencia disponible y vigente"
+
+definition:
+  en: "Whether emergency contraception (levonorgestrel or ulipristal) is available today on the shelf and within valid expiration date. Observed by the enumerator. MISP dual tracer (Objective 2 and Objective 5). Sensitive: culturally and politically sensitive in some contexts; stock-out reporting is politically sensitive; SGBV-service availability can expose the facility or staff."
+  fr: "Si la contraception d'urgence (lévonorgestrel ou ulipristal) est disponible aujourd'hui en rayon et dans son délai de péremption. Observé par l'enquêteur. Indicateur traceur double MISP (Objectifs 2 et 5). Sensible : culturellement et politiquement sensible dans certains contextes ; le reporting des ruptures de stock est politiquement sensible ; la disponibilité des services VBG peut exposer l'établissement ou le personnel."
+  es: "Si la anticoncepción de emergencia (levonorgestrel o ulipristal) está disponible hoy en estantería y dentro de fecha de vencimiento válida. Observado por el enumerador. Indicador trazador dual MISP (Objetivos 2 y 5). Sensible: cultural y políticamente sensible en algunos contextos; el reporte de desabastecimientos es políticamente sensible; la disponibilidad de servicios VBG puede exponer al establecimiento o al personal."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: sensitive

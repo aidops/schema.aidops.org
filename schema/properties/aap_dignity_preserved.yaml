@@ -1,0 +1,19 @@
+id: aap_dignity_preserved
+maturity: draft
+label:
+  en: "AAP: Dignity preserved during distribution or registration"
+  fr: "Redevabilité : Dignité préservée lors de la distribution ou de l'inscription"
+  es: "Rendición de cuentas: Dignidad preservada durante la distribución o el registro"
+
+definition:
+  en: "Whether the respondent felt that their dignity was respected during aid distributions or registration — for example, reasonable waiting times, orderly facilities and lines, privacy maintained when discussing their situation. Recall: most recent distribution or registration event. Source: Sphere 2018 Humanitarian Charter (dignity); IFRC CEA Toolkit; IASC / REACH Menu 2018 distribution-experience section."
+  fr: "Si le répondant a senti que sa dignité était respectée lors des distributions d'aide ou de l'inscription — par exemple, temps d'attente raisonnables, installations et files d'attente organisées, intimité maintenue lors de la discussion de sa situation. Rappel : l'événement de distribution ou d'inscription le plus récent. Source : Charte humanitaire Sphère 2018 (dignité) ; Toolkit CEA de la FICR ; section expérience de distribution du Menu IASC / REACH 2018."
+  es: "Si el encuestado sintió que su dignidad fue respetada durante las distribuciones de ayuda o el registro — por ejemplo, tiempos de espera razonables, instalaciones y filas organizadas, privacidad mantenida al discutir su situación. Recordatorio: el evento de distribución o registro más reciente. Fuente: Carta Humanitaria de Esfera 2018 (dignidad); Kit de Herramientas CEA de la FICR; sección experiencia de distribución del Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-satisfaction-5
+references: null
+category: aap_respect
+core: false
+sensitivity: standard

@@ -1,0 +1,18 @@
+id: received_prior_aa_support
+maturity: draft
+label:
+  en: "Received prior anticipatory action support"
+  fr: "A reçu un soutien anticipatoire préalable"
+  es: "Recibió apoyo anticipatorio previo"
+
+definition:
+  en: "Whether the household received any anticipatory cash, vouchers, supplies, or training in the twelve months before the warning, intended to help them prepare for this kind of event. Captured as yes / no / don't know at household level. Kept as a single flag; detailed intervention records (dates, amounts, modalities) live in the implementing program's beneficiary management system rather than on this profile. Used by FbF evaluations to assess whether AA exposure influenced subsequent warning response."
+  fr: "Indique si le ménage a reçu des espèces anticipatoires, des bons d'achat, des fournitures ou une formation au cours des douze mois précédant l'alerte, destinés à l'aider à se préparer à ce type d'événement. Capté en oui / non / ne sait pas au niveau du ménage. Conservé comme simple indicateur ; les enregistrements détaillés d'intervention (dates, montants, modalités) résident dans le système de gestion des bénéficiaires du programme de mise en œuvre plutôt que sur ce profil. Utilisé par les évaluations FbF pour déterminer si l'exposition à l'action anticipatoire a influencé la réponse subséquente à l'alerte."
+  es: "Indica si el hogar recibió efectivo anticipatorio, vales, suministros o capacitación en los doce meses anteriores a la alerta, destinados a ayudarle a prepararse para este tipo de evento. Capturado como sí / no / no sabe a nivel del hogar. Se mantiene como indicador único; los registros detallados de intervención (fechas, montos, modalidades) residen en el sistema de gestión de beneficiarios del programa implementador en lugar de en este perfil. Utilizado por las evaluaciones FbF para determinar si la exposición a la acción anticipatoria influyó en la respuesta posterior a la alerta."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context

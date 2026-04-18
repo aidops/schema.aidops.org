@@ -1,0 +1,24 @@
+id: ifrc-cea-toolkit-2021
+title: "Community Engagement and Accountability (CEA) Toolkit and Guide"
+short_title: "IFRC CEA Toolkit 2021"
+publisher: "International Federation of Red Cross and Red Crescent Societies (IFRC)"
+year: 2021
+version: "Guide 2021; Toolkit rolling revisions; Strategy 2023–2025"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ifrc.org/document/cea-toolkit"
+access: open
+status: active
+
+informs:
+  concepts:
+    - AccountabilityToAffectedPopulationsProfile
+  vocabularies:
+    - aap-info-channel
+    - aap-feedback-channel
+    - aap-frequency-5
+  properties:
+    - aap_info_channel_preferred
+    - aap_complaint_channel_known_types
+    - aap_treated_with_respect
+    - aap_dignity_preserved

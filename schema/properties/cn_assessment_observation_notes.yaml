@@ -1,0 +1,18 @@
+id: cn_assessment_observation_notes
+maturity: draft
+label:
+  en: "Enumerator observation notes"
+  fr: "Notes d'observation de l'enquêteur"
+  es: "Notas de observación del encuestador"
+
+definition:
+  en: "Free-text enumerator observation notes recording visible indicators (e.g., visible damage, market activity, service availability, crowding, presence of aid actors) that corroborate or contradict informant responses. Maximum 1000 characters. Non-sensitive by default, but programme teams should review before publication because notes may accidentally mention specific individuals and require redaction. Derived from ACAPS Technical Brief §5.3 (triangulation of key-informant interviews with direct observation) and MIRA Phase 2 field guidance."
+  fr: "Notes d'observation en texte libre par l'enquêteur consignant les indicateurs visibles (par exemple, dommages visibles, activité des marchés, disponibilité des services, surpopulation, présence d'acteurs humanitaires) qui corroborent ou contredisent les réponses des informateurs. Maximum 1000 caractères. Non sensible par défaut, mais les équipes de programme doivent les examiner avant publication car les notes peuvent mentionner par inadvertance des personnes précises et nécessiter un caviardage. Tiré du § 5.3 de la note technique d'ACAPS (triangulation des entretiens avec des informateurs clés et de l'observation directe) et des orientations terrain de la Phase 2 de MIRA."
+  es: "Notas de observación en texto libre del encuestador, que registran indicadores visibles (por ejemplo, daños visibles, actividad de mercados, disponibilidad de servicios, hacinamiento, presencia de actores humanitarios) que corroboran o contradicen las respuestas de los informantes. Máximo 1000 caracteres. No sensible por defecto, pero los equipos de programa deben revisarlas antes de su publicación porque las notas pueden mencionar accidentalmente a personas específicas y requerir redacción. Derivado del § 5.3 de la nota técnica de ACAPS (triangulación de entrevistas con informantes clave y observación directa) y de las orientaciones de campo de la Fase 2 de MIRA."
+
+type: string
+cardinality: single
+vocabulary: null
+references: null
+category: context
+core: false

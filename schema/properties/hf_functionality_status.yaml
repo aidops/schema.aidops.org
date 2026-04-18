@@ -1,0 +1,19 @@
+id: hf_functionality_status
+maturity: draft
+label:
+  en: "Facility functionality status (HeRAMS)"
+  fr: "Statut de fonctionnalité de l'établissement (HeRAMS)"
+  es: "Estado de funcionalidad del establecimiento (HeRAMS)"
+
+definition:
+  en: "The HeRAMS functionality summary for the facility at the observation date: fully functioning (normal capacity), partially functioning (reduced range or capacity), not functioning (closed), destroyed, or inaccessible. Reported by the facility in-charge and verified by the enumerator through direct observation where possible. Signature variable of HeRAMS: the single most important summary of a facility's status in an active crisis."
+  fr: "Le résumé de fonctionnalité HeRAMS pour l'établissement à la date d'observation : pleinement fonctionnel (capacité normale), partiellement fonctionnel (gamme ou capacité réduite), non fonctionnel (fermé), détruit ou inaccessible. Rapporté par le responsable de l'établissement et vérifié par l'enquêteur par observation directe lorsque possible. Variable signature de HeRAMS : le résumé le plus important du statut d'un établissement en crise active."
+  es: "El resumen de funcionalidad HeRAMS para el establecimiento en la fecha de observación: plenamente funcional (capacidad normal), parcialmente funcional (gama o capacidad reducida), no funcional (cerrado), destruido o inaccesible. Reportado por el responsable del establecimiento y verificado por el enumerador mediante observación directa cuando sea posible. Variable distintiva de HeRAMS: el resumen más importante del estado de un establecimiento en crisis activa."
+
+type: string
+cardinality: single
+core: true
+vocabulary: facility-functionality-status
+references: null
+category: context
+sensitivity: sensitive

@@ -1,0 +1,19 @@
+id: hf_staff_vacancy_rate
+maturity: draft
+label:
+  en: "Staff vacancy rate (percent)"
+  fr: "Taux de vacance du personnel (pourcentage)"
+  es: "Tasa de vacantes de personal (porcentaje)"
+
+definition:
+  en: "Percentage of established clinical posts at the facility that are currently vacant. Numeric 0-100. Reported by the facility in-charge. Only meaningful in countries that publish establishment tables for facilities; where no establishment table exists, leave unpopulated rather than imputing. Extended (non-core). Politically sensitive: staffing gaps can be used to argue a ministry has failed to post staff, or to target reprisals in conflict zones."
+  fr: "Pourcentage des postes cliniques établis à l'établissement qui sont actuellement vacants. Numérique 0-100. Rapporté par le responsable de l'établissement. Pertinent uniquement dans les pays qui publient des tables d'effectifs par établissement ; en l'absence, laisser non renseigné plutôt qu'imputer. Étendu (non-core). Politiquement sensible : les lacunes d'effectifs peuvent être utilisées pour argumenter qu'un ministère a échoué à affecter du personnel, ou pour cibler des représailles en zones de conflit."
+  es: "Porcentaje de plazas clínicas establecidas en el establecimiento que están actualmente vacantes. Numérico 0-100. Reportado por el responsable del establecimiento. Solo pertinente en países que publican tablas de plantilla para establecimientos; donde no exista tabla de plantilla, dejar sin completar en vez de imputar. Extendido (no-core). Políticamente sensible: las brechas de dotación pueden usarse para argumentar que un ministerio no ha asignado personal, o para focalizar represalias en zonas de conflicto."
+
+type: decimal
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: governance
+sensitivity: sensitive

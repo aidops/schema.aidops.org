@@ -1,0 +1,18 @@
+id: evacuation_happened
+maturity: draft
+label:
+  en: "Evacuation happened (derived)"
+  fr: "Évacuation effectuée (dérivé)"
+  es: "Evacuación ocurrida (derivado)"
+
+definition:
+  en: "Derived household-level boolean: true if warning_actions_taken includes either 'evacuated_members' or 'evacuated_all'. Captures only that evacuation was attempted as a warning-triggered protective action; the actual displacement experience (where members went, for how long, whether they returned) is captured on DisplacementProfile and is out of scope here. Used as the IFRC FbF outcome indicator 'share of warned households who evacuated', which is a downstream measure under Sendai Framework Target G."
+  fr: "Booléen dérivé au niveau du ménage : vrai si warning_actions_taken inclut soit « evacuated_members » soit « evacuated_all ». Ne capture que le fait qu'une évacuation a été tentée comme action de protection déclenchée par l'alerte ; l'expérience effective de déplacement (où les membres sont allés, pendant combien de temps, s'ils sont revenus) est capturée sur DisplacementProfile et est hors périmètre ici. Utilisé comme indicateur de résultat du FbF de la FICR « part des ménages alertés ayant évacué », qui est une mesure en aval dans le cadre de la cible G du Cadre de Sendai."
+  es: "Booleano derivado a nivel del hogar: verdadero si warning_actions_taken incluye «evacuated_members» o «evacuated_all». Captura solo que se intentó una evacuación como acción de protección desencadenada por la alerta; la experiencia real de desplazamiento (adónde fueron los miembros, por cuánto tiempo, si regresaron) se captura en DisplacementProfile y queda fuera del alcance aquí. Utilizado como indicador de resultado del FbF de la FICR «proporción de hogares alertados que evacuaron», que es una medida posterior bajo la Meta G del Marco de Sendai."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: scores

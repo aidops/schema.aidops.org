@@ -1,0 +1,19 @@
+id: livelihood_programme_participation
+maturity: draft
+label:
+  en: "Household participates in a livelihood support programme"
+  fr: "Le ménage participe à un programme d'appui aux moyens de subsistance"
+  es: "El hogar participa en un programa de apoyo a medios de vida"
+
+definition:
+  en: "Whether any household member currently participates in a livelihood support programme run by government, NGO, UN agency, or private actor (e.g., cash-for-work, vocational training, business grant, cooperative, graduation programme). Drawn from the Sphere 2018 Livelihoods chapter on programme participation, the IOM DTM Multi-Sectoral Location Assessment programme-access module, and the CaLP Network programme monitoring indicators. Distinct from `humanitarian_assistance_reliance`, which concerns relief assistance dependency, not developmental programme enrolment."
+  fr: "Si un membre du ménage participe actuellement à un programme d'appui aux moyens de subsistance géré par le gouvernement, une ONG, une agence des Nations Unies ou un acteur privé (ex. argent contre travail, formation professionnelle, subvention d'entreprise, coopérative, programme de graduation). Tiré du chapitre Moyens de subsistance de Sphère 2018 sur la participation aux programmes, du module d'accès aux programmes de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM et des indicateurs de suivi de programmes du réseau CaLP. Distinct de `humanitarian_assistance_reliance`, qui concerne la dépendance à l'assistance de secours, et non l'inscription à un programme de développement."
+  es: "Si algún miembro del hogar actualmente participa en un programa de apoyo a medios de vida gestionado por gobierno, ONG, agencia de la ONU o actor privado (p. ej., dinero por trabajo, formación profesional, subvención empresarial, cooperativa, programa de graduación). Tomado del capítulo de Medios de Vida de Esfera 2018 sobre participación en programas, el módulo de acceso a programas de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM y los indicadores de monitoreo de programas de la Red CaLP. Distinto de `humanitarian_assistance_reliance`, que concierne a la dependencia de la asistencia de socorro, no a la inscripción en programas de desarrollo."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: context
+sensitivity: sensitive

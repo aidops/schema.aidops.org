@@ -1,0 +1,19 @@
+id: hf_staff_trained_recent
+maturity: draft
+label:
+  en: "Staff trained on core services within past 24 months"
+  fr: "Personnel formé aux services essentiels au cours des 24 derniers mois"
+  es: "Personal capacitado en servicios esenciales en los últimos 24 meses"
+
+definition:
+  en: "Whether at least one staff member has received training on the facility's core services within the past 24 months. Reported by the facility in-charge. SARA service-specific readiness tracers commonly include a 'trained staff within the past 2 years' item; this property is a generic summary applicable to any service mix. Extended (non-core). `dont_know` is retained as a distinct response."
+  fr: "Si au moins un membre du personnel a reçu une formation sur les services essentiels de l'établissement au cours des 24 derniers mois. Rapporté par le responsable de l'établissement. Les indicateurs traceurs SARA de capacité spécifique aux services incluent couramment un item « personnel formé au cours des 2 dernières années » ; cette propriété est un résumé générique applicable à toute combinaison de services. Étendu (non-core). `dont_know` est conservé comme réponse distincte."
+  es: "Si al menos un miembro del personal ha recibido capacitación sobre los servicios esenciales del establecimiento en los últimos 24 meses. Reportado por el responsable del establecimiento. Los indicadores trazadores SARA de capacidad específica por servicio comúnmente incluyen un ítem «personal capacitado en los últimos 2 años»; esta propiedad es un resumen genérico aplicable a cualquier mezcla de servicios. Extendido (no-core). `dont_know` se mantiene como respuesta distinta."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: governance
+sensitivity: standard

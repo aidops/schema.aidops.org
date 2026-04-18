@@ -1,0 +1,19 @@
+id: income_sources
+maturity: draft
+label:
+  en: "Income sources (multi-select)"
+  fr: "Sources de revenus (sélection multiple)"
+  es: "Fuentes de ingresos (selección múltiple)"
+
+definition:
+  en: "Full portfolio of income sources the household receives, drawn from the PublicSchema `income-source` vocabulary. Multi-select variant of the PS `income_source` property (which is single-select and used for proxy means testing): this AidOps property captures the complete income-source portfolio for livelihoods analysis. Recall period: past 30 days. Drawn from the DHS-8 Household Questionnaire income source module, the MICS6 Household Questionnaire income module, and the LSMS-ISA income module."
+  fr: "Portefeuille complet des sources de revenus que le ménage reçoit, tiré du vocabulaire PublicSchema `income-source`. Variante à sélection multiple de la propriété PS `income_source` (qui est à sélection unique et utilisée pour les tests des moyens par approximation) : cette propriété AidOps capture le portefeuille complet des sources de revenus pour l'analyse des moyens de subsistance. Période de rappel : 30 derniers jours. Tirée du module source de revenus du Questionnaire Ménage DHS-8, du module revenus du Questionnaire Ménage MICS6 et du module revenus LSMS-ISA."
+  es: "Cartera completa de fuentes de ingresos que recibe el hogar, tomada del vocabulario PublicSchema `income-source`. Variante de selección múltiple de la propiedad PS `income_source` (que es de selección única y se usa para pruebas de medios indirectos): esta propiedad AidOps captura la cartera completa de fuentes de ingresos para el análisis de medios de vida. Período de recordatorio: últimos 30 días. Tomada del módulo de fuente de ingresos del Cuestionario de Hogar DHS-8, el módulo de ingresos del Cuestionario de Hogar MICS6 y el módulo de ingresos LSMS-ISA."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: income-source
+references: null
+category: context
+sensitivity: sensitive

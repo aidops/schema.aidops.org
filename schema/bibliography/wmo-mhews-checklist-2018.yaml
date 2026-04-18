@@ -1,0 +1,26 @@
+id: wmo-mhews-checklist-2018
+title: "Multi-Hazard Early Warning Systems: A Checklist"
+short_title: "WMO MHEWS Checklist"
+publisher: "World Meteorological Organization (WMO) in cooperation with UNDRR"
+year: 2018
+version: "First edition 2018; second edition 2022"
+type: guidance_publication
+domain: humanitarian
+uri: "https://library.wmo.int/idurl/4/55893"
+access: open
+status: active
+
+informs:
+  concepts:
+    - WarningResponseProfile
+  vocabularies:
+    - warning-channel
+    - warning-source-authority
+  properties:
+    - warning_received
+    - warning_channel_primary
+    - warning_channels_all
+    - warning_source_authority
+    - warning_understood
+    - warning_had_action_guidance
+    - warning_source_trust

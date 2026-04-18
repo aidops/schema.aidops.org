@@ -1,0 +1,19 @@
+id: hf_service_child_immunization
+maturity: draft
+label:
+  en: "Offers routine child immunization (EPI)"
+  fr: "Offre la vaccination infantile de routine (PEV)"
+  es: "Ofrece inmunización infantil de rutina (PAI)"
+
+definition:
+  en: "Whether the facility offers routine child immunization (Expanded Programme on Immunization vaccines). Reported by the facility in-charge. SARA service-availability tracer. Offering EPI is also the gateway for cold-chain tracer (`hf_cold_chain_functional`)."
+  fr: "Si l'établissement offre la vaccination infantile de routine (vaccins du Programme élargi de vaccination). Rapporté par le responsable de l'établissement. Indicateur traceur SARA de disponibilité des services. Offrir le PEV est également la porte d'entrée pour le traceur de la chaîne du froid (`hf_cold_chain_functional`)."
+  es: "Si el establecimiento ofrece inmunización infantil de rutina (vacunas del Programa Ampliado de Inmunizaciones). Reportado por el responsable del establecimiento. Indicador trazador SARA de disponibilidad de servicios. Ofrecer PAI también es la entrada para el trazador de cadena de frío (`hf_cold_chain_functional`)."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: standard

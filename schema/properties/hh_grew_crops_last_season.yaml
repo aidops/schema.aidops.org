@@ -1,0 +1,19 @@
+id: hh_grew_crops_last_season
+maturity: draft
+label:
+  en: "Household grew crops during the last completed agricultural season"
+  fr: "Le ménage a cultivé des cultures au cours de la dernière saison agricole complète"
+  es: "El hogar cultivó cultivos durante la última temporada agrícola completa"
+
+definition:
+  en: "Whether the household grew any crops (including vegetables, fruits, or grain crops) for home consumption or for sale during the last completed agricultural season. Gateway item for the crop-production block; main_crops_grown, crop_use_purpose, seed_source_main, fertilizer_used_last_season, improved_seeds_used_last_season, crop_loss_shock_past_season, post_harvest_storage_access, and post_harvest_loss_magnitude skip when this is `no` or `dont_know`. Asked only when `hh_has_cultivable_land` is `yes`. Wording drawn from the MICS6 AFP module and DHS household food-production items. `dont_know` is retained as a distinct valid response."
+  fr: "Si le ménage a cultivé des cultures (y compris des légumes, des fruits ou des céréales) pour la consommation domestique ou la vente au cours de la dernière saison agricole complète. Question porte d'entrée du bloc production végétale ; main_crops_grown, crop_use_purpose, seed_source_main, fertilizer_used_last_season, improved_seeds_used_last_season, crop_loss_shock_past_season, post_harvest_storage_access et post_harvest_loss_magnitude sont sautés lorsque cette réponse est `no` ou `dont_know`. Posée uniquement lorsque `hh_has_cultivable_land` est `yes`. Formulation tirée du module AFP de MICS6 et des items de production alimentaire des ménages DHS. `dont_know` est conservé comme réponse valide distincte."
+  es: "Si el hogar cultivó algún tipo de cultivo (incluidos vegetales, frutas o granos) para consumo del hogar o para venta durante la última temporada agrícola completa. Ítem de entrada al bloque de producción de cultivos; main_crops_grown, crop_use_purpose, seed_source_main, fertilizer_used_last_season, improved_seeds_used_last_season, crop_loss_shock_past_season, post_harvest_storage_access y post_harvest_loss_magnitude se omiten cuando esta respuesta es `no` o `dont_know`. Se pregunta solo cuando `hh_has_cultivable_land` es `yes`. Formulación tomada del módulo AFP de MICS6 y los ítems de producción alimentaria de hogares DHS. `dont_know` se mantiene como respuesta válida distinta."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

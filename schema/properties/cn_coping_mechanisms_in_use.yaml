@@ -1,0 +1,18 @@
+id: cn_coping_mechanisms_in_use
+maturity: draft
+label:
+  en: "Coping mechanisms in use in the community"
+  fr: "Mécanismes d'adaptation en usage dans la communauté"
+  es: "Mecanismos de afrontamiento en uso en la comunidad"
+
+definition:
+  en: "The coping strategies commonly reported by informants as in use by households in this community in the past 30 days. Multi-select from the community-coping-strategy vocabulary (reducing meals, borrowing, selling productive assets, migrating for work, removing children from school, child labour, early marriage, begging, risky livelihoods, reducing health spending, sharing housing, remittances, community solidarity, none observed, don't know). This is a community-level perception of strategies in use, NOT a household-level reduced Coping Strategies Index (rCSI) or Livelihoods Coping Strategies Index (LCSI) measurement; those remain in FoodSecurityProfile. The overlap with rCSI/LCSI items is deliberate and signals sector-agnostic distress. Derived from ACAPS severity-measurement guidance, WFP rCSI, and the UNHCR Livelihoods Monitoring Framework."
+  fr: "Les stratégies d'adaptation couramment rapportées par les informateurs comme étant utilisées par les ménages de cette communauté au cours des 30 derniers jours. Choix multiple dans la taxonomie community-coping-strategy (réduction des repas, emprunts, vente d'actifs productifs, migration pour le travail, retrait des enfants de l'école, travail des enfants, mariage précoce, mendicité, moyens d'existence risqués, réduction des dépenses de santé, partage du logement, envois de fonds, solidarité communautaire, aucune, ne sait pas). Il s'agit d'une perception au niveau communautaire des stratégies en usage, et NON d'une mesure au niveau du ménage de l'indice réduit des stratégies d'adaptation (rCSI) ou de l'indice des stratégies d'adaptation aux moyens d'existence (LCSI) ; ces mesures restent dans FoodSecurityProfile. Le chevauchement avec les items rCSI/LCSI est délibéré et signale une détresse transversale aux secteurs. Tiré du guide de mesure de la sévérité d'ACAPS, du rCSI du PAM et du cadre de suivi des moyens d'existence du HCR."
+  es: "Las estrategias de afrontamiento comúnmente reportadas por los informantes como en uso por los hogares de esta comunidad en los últimos 30 días. Selección múltiple en la taxonomía community-coping-strategy (reducción de comidas, préstamos, venta de activos productivos, migración por trabajo, retiro de niños de la escuela, trabajo infantil, matrimonio precoz, mendicidad, medios de vida riesgosos, reducción del gasto en salud, compartir vivienda, remesas, solidaridad comunitaria, ninguna, no sabe). Se trata de una percepción a nivel comunitario de las estrategias en uso, y NO de una medición a nivel del hogar del Índice Reducido de Estrategias de Afrontamiento (rCSI) o del Índice de Estrategias de Afrontamiento de Medios de Vida (LCSI); esas mediciones permanecen en FoodSecurityProfile. La superposición con ítems rCSI/LCSI es deliberada y señala un sufrimiento transversal a los sectores. Derivado de la guía de medición de severidad de ACAPS, del rCSI del PMA y del marco de monitoreo de medios de vida del ACNUR."
+
+type: string
+cardinality: multiple
+vocabulary: community-coping-strategy
+references: null
+category: context
+core: true

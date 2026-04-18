@@ -1,0 +1,19 @@
+id: undp-dppa-social-cohesion-2020
+title: "Strengthening Social Cohesion: Conceptual Framing and Programming Implications"
+short_title: "UNDP-DPPA Social Cohesion"
+publisher: "United Nations Development Programme / UN Department of Political and Peacebuilding Affairs"
+year: 2020
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.undp.org/publications/strengthening-social-cohesion-conceptual-framing-and-programming-implications"
+access: open
+status: active
+
+informs:
+  concepts:
+    - CommunityNeedsProfile
+  vocabularies:
+    - social-cohesion-tension-level
+  properties:
+    - cn_social_cohesion_level
+    - cn_tension_between_groups_described

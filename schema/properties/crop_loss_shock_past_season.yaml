@@ -1,0 +1,19 @@
+id: crop_loss_shock_past_season
+maturity: draft
+label:
+  en: "Household experienced a significant crop loss in the last agricultural season"
+  fr: "Le ménage a subi une perte de récolte significative au cours de la dernière saison agricole"
+  es: "El hogar sufrió una pérdida de cultivo significativa en la última temporada agrícola"
+
+definition:
+  en: "Whether the household experienced a significant loss of standing crops or expected harvest during the last completed agricultural season due to a shock such as drought, flood, pest, disease, conflict, or other cause. Aligned with the LSMS-ISA shock module (crop-loss shock) and FAO WCA 2020 Theme 10 (impact of major risks). `dont_know` is retained as a distinct valid response. Gate question for `crop_loss_cause` and `crop_loss_magnitude`, which are asked only when this is `yes`. Asked only when `hh_grew_crops_last_season` is `yes`."
+  fr: "Si le ménage a subi une perte significative de cultures sur pied ou de récolte attendue au cours de la dernière saison agricole complète en raison d'un choc tel que sécheresse, inondation, ravageurs, maladie, conflit ou autre cause. Aligné avec le module des chocs du LSMS-ISA (choc de perte de récolte) et le Thème 10 du WCA 2020 de la FAO (impact des risques majeurs). `dont_know` est conservé comme réponse valide distincte. Question filtre pour `crop_loss_cause` et `crop_loss_magnitude`, qui ne sont posées que lorsque cette réponse est `yes`. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`."
+  es: "Si el hogar sufrió una pérdida significativa de cultivos en pie o de cosecha esperada durante la última temporada agrícola completa debido a un choque como sequía, inundación, plagas, enfermedad, conflicto u otra causa. Alineado con el módulo de choques de LSMS-ISA (choque de pérdida de cultivos) y el Tema 10 del WCA 2020 de la FAO (impacto de riesgos mayores). `dont_know` se mantiene como respuesta válida distinta. Pregunta filtro para `crop_loss_cause` y `crop_loss_magnitude`, que se preguntan solo cuando esta es `yes`. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

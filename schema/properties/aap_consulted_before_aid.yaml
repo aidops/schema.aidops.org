@@ -1,0 +1,19 @@
+id: aap_consulted_before_aid
+maturity: draft
+label:
+  en: "AAP: Household consulted about needs before aid"
+  fr: "Redevabilité : Ménage consulté sur les besoins avant l'aide"
+  es: "Rendición de cuentas: Hogar consultado sobre necesidades antes de la ayuda"
+
+definition:
+  en: "Whether anyone from aid providers asked the household, or community members, about their needs before aid was delivered. This is the primary CHS 2024 Commitment 1 household-level indicator ('People can exercise their rights and participate in actions and decisions that affect them'). Also maps to the IASC CAAP 2017 Participation & Partnerships commitment. IASC / REACH Menu 2018 wording."
+  fr: "Si quelqu'un de la part des intervenants a demandé au ménage ou aux membres de la communauté quels étaient leurs besoins avant que l'aide ne soit livrée. Il s'agit du principal indicateur au niveau du ménage de l'Engagement 1 de la CHS 2024 (« Les personnes peuvent exercer leurs droits et participer aux actions et décisions qui les concernent »). Correspond également à l'engagement Participation et partenariats de la CAAP IASC 2017. Formulation du Menu IASC / REACH 2018."
+  es: "Si alguien de los actores humanitarios preguntó al hogar o a los miembros de la comunidad sobre sus necesidades antes de la entrega de la ayuda. Es el indicador principal a nivel de hogar del Compromiso 1 de la CHS 2024 («Las personas pueden ejercer sus derechos y participar en las acciones y decisiones que les afectan»). También corresponde al compromiso de Participación y Asociaciones de la CAAP IASC 2017. Formulación del Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-yesno-dk
+references: null
+category: aap_consultation
+core: false
+sensitivity: standard

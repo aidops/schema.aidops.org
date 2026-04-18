@@ -1,0 +1,19 @@
+id: aap_fear_of_retaliation
+maturity: draft
+label:
+  en: "AAP: Community-level fear of retaliation for speaking up"
+  fr: "Redevabilité : Peur communautaire de représailles pour avoir parlé"
+  es: "Rendición de cuentas: Miedo comunitario a represalias por hablar"
+
+definition:
+  en: "Whether the respondent agrees that people in their community are afraid to speak up about aid or aid providers because of fear that aid could be reduced or taken away. The community-level framing ('people in this community') follows GTS and GBV AoR conventions for asking sensitive perception questions without requiring the respondent to disclose their own fear. Classified `sensitive`. Source: GTS 'Listening is Not Enough' (2022); IASC CAAP 2017 PSEA guidance on enabling environment. Maps to CHS 2024 Commitment 5 Key Action 5.2 (safe reporting)."
+  fr: "Si le répondant est d'accord sur le fait que les personnes de sa communauté ont peur de s'exprimer sur l'aide ou les intervenants par crainte que l'aide soit réduite ou retirée. La formulation au niveau de la communauté (« les gens de cette communauté ») suit les conventions de GTS et du GBV AoR pour poser des questions de perception sensibles sans exiger que le répondant divulgue sa propre peur. Classé `sensitive`. Source : « Listening is Not Enough » de GTS (2022) ; orientations PSEA de la CAAP IASC 2017 sur l'environnement favorable. Correspond à l'Engagement 5 Action clé 5.2 de la CHS 2024 (signalement sûr)."
+  es: "Si el encuestado está de acuerdo en que las personas de su comunidad tienen miedo de hablar sobre la ayuda o los actores humanitarios por temor a que la ayuda pudiera reducirse o retirarse. La formulación a nivel comunitario («las personas en esta comunidad») sigue las convenciones de GTS y del GBV AoR para hacer preguntas de percepción sensibles sin requerir que el encuestado divulgue su propio miedo. Clasificado como `sensitive`. Fuente: «Listening is Not Enough» de GTS (2022); orientaciones PSEA de la CAAP IASC 2017 sobre entorno propicio. Corresponde al Compromiso 5 Acción Clave 5.2 de la CHS 2024 (denuncia segura)."
+
+type: string
+cardinality: single
+vocabulary: aap-agree-5
+references: null
+category: aap_trust_safety
+core: false
+sensitivity: sensitive

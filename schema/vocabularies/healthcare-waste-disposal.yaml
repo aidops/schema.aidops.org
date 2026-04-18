@@ -1,0 +1,106 @@
+id: healthcare-waste-disposal
+maturity: draft
+label:
+  en: "Healthcare Waste Final Disposal Method"
+  fr: "Méthode finale d'élimination des déchets de soins"
+  es: "Método de eliminación final de residuos sanitarios"
+definition:
+  en: >
+    The method used by a health facility to finally dispose of healthcare
+    waste (infectious waste, sharps, pathological waste) after initial
+    segregation. Aligned with WASH FIT 2nd edition Healthcare Waste
+    Management indicators. Open burning and 'no system' are explicit red
+    flags for WASH FIT and Sphere 2018. Incinerator classification
+    distinguishes on-site from off-site; pit burial is coded only when
+    the pit is fenced, covered, and protected per WHO Safe Management of
+    Waste from Health-care Activities guidance.
+  fr: >
+    La méthode utilisée par un établissement de santé pour éliminer
+    finalement les déchets de soins (déchets infectieux, objets
+    tranchants, déchets pathologiques) après le tri initial. Alignée sur
+    les indicateurs de gestion des déchets de soins de WASH FIT 2e
+    édition. Le brûlage à l'air libre et « aucun système » sont des
+    signaux d'alerte explicites pour WASH FIT et Sphere 2018. La
+    classification de l'incinérateur distingue sur site et hors site ;
+    l'enfouissement en fosse n'est codé que lorsque la fosse est
+    clôturée, couverte et protégée conformément à la directive de l'OMS
+    sur la gestion sûre des déchets d'activités de soins.
+  es: >
+    El método utilizado por un establecimiento de salud para eliminar
+    finalmente los residuos sanitarios (residuos infecciosos, objetos
+    cortopunzantes, residuos patológicos) tras la segregación inicial.
+    Alineado con los indicadores de Gestión de Residuos Sanitarios de
+    WASH FIT 2ª edición. La quema al aire libre y «sin sistema» son
+    señales de alerta explícitas para WASH FIT y Esfera 2018. La
+    clasificación del incinerador distingue en el sitio y fuera del
+    sitio; el enterramiento en fosa se codifica solo cuando la fosa está
+    cercada, cubierta y protegida conforme a la guía de la OMS sobre
+    gestión segura de residuos de actividades sanitarias.
+standard:
+  name: "Water and Sanitation for Health Facility Improvement Tool (WASH FIT) 2nd edition"
+  uri: "https://www.who.int/publications/i/item/9789240043237"
+  notes: "WASH FIT 2nd ed. Healthcare Waste Management indicators define the canonical set of final-disposal categories. The set is harmonized with WHO Safe Management of Waste from Health-care Activities (2014)."
+values:
+- code: incinerator_on_site
+  label:
+    en: On-site incinerator
+    fr: "Incinérateur sur site"
+    es: "Incinerador en el sitio"
+  definition:
+    en: "Healthcare waste is incinerated in an incinerator located at the facility, typically operated by facility staff."
+    fr: "Les déchets de soins sont incinérés dans un incinérateur situé à l'établissement, généralement exploité par le personnel de l'établissement."
+    es: "Los residuos sanitarios se incineran en un incinerador ubicado en el establecimiento, generalmente operado por el personal del mismo."
+- code: incinerator_off_site
+  label:
+    en: Off-site incinerator (collected and transported)
+    fr: "Incinérateur hors site (collecté et transporté)"
+    es: "Incinerador fuera del sitio (recolectado y transportado)"
+  definition:
+    en: "Healthcare waste is collected by an external service provider and transported to an off-site incinerator."
+    fr: "Les déchets de soins sont collectés par un prestataire externe et transportés vers un incinérateur hors site."
+    es: "Los residuos sanitarios son recolectados por un proveedor externo y transportados a un incinerador fuera del sitio."
+- code: pit_burial_protected
+  label:
+    en: Protected pit burial (fenced and covered)
+    fr: "Enfouissement en fosse protégée (clôturée et couverte)"
+    es: "Enterramiento en fosa protegida (cercada y cubierta)"
+  definition:
+    en: "Healthcare waste is buried in a dedicated pit that is fenced, covered, and protected per WHO Safe Management of Waste from Health-care Activities guidance."
+    fr: "Les déchets de soins sont enfouis dans une fosse dédiée clôturée, couverte et protégée conformément à la directive de l'OMS sur la gestion sûre des déchets d'activités de soins."
+    es: "Los residuos sanitarios se entierran en una fosa dedicada cercada, cubierta y protegida conforme a la guía de la OMS sobre gestión segura de residuos de actividades sanitarias."
+- code: open_burning
+  label:
+    en: Open burning (red flag)
+    fr: "Brûlage à l'air libre (signal d'alerte)"
+    es: "Quema al aire libre (señal de alerta)"
+  definition:
+    en: "Healthcare waste is burned in the open without an incinerator. Explicit red flag per WASH FIT: produces toxic emissions and incomplete combustion; not an acceptable disposal method for infectious waste."
+    fr: "Les déchets de soins sont brûlés à l'air libre sans incinérateur. Signal d'alerte explicite pour WASH FIT : produit des émissions toxiques et une combustion incomplète ; n'est pas une méthode d'élimination acceptable pour les déchets infectieux."
+    es: "Los residuos sanitarios se queman al aire libre sin incinerador. Señal de alerta explícita para WASH FIT: produce emisiones tóxicas y combustión incompleta; no es un método de eliminación aceptable para residuos infecciosos."
+- code: collected_by_municipal_service
+  label:
+    en: Collected by municipal or general-waste service
+    fr: "Collecté par le service municipal ou de déchets généraux"
+    es: "Recolectado por el servicio municipal o de residuos generales"
+  definition:
+    en: "Healthcare waste is placed into the general municipal waste stream. Acceptable only for non-infectious general waste; explicit red flag for infectious or sharps waste."
+    fr: "Les déchets de soins sont placés dans le flux de déchets municipaux généraux. Acceptable uniquement pour les déchets généraux non infectieux ; signal d'alerte explicite pour les déchets infectieux ou tranchants."
+    es: "Los residuos sanitarios se colocan en el flujo de residuos municipales generales. Aceptable solo para residuos generales no infecciosos; señal de alerta explícita para residuos infecciosos o cortopunzantes."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "A disposal method that does not fit any of the listed categories."
+    fr: "Une méthode d'élimination qui ne correspond à aucune des catégories listées."
+    es: "Un método de eliminación que no corresponde a ninguna de las categorías listadas."
+- code: no_system
+  label:
+    en: No disposal system (red flag)
+    fr: "Aucun système d'élimination (signal d'alerte)"
+    es: "Sin sistema de eliminación (señal de alerta)"
+  definition:
+    en: "The facility has no defined healthcare-waste disposal system. Explicit red flag per WASH FIT."
+    fr: "L'établissement n'a aucun système défini d'élimination des déchets de soins. Signal d'alerte explicite pour WASH FIT."
+    es: "El establecimiento no tiene un sistema definido de eliminación de residuos sanitarios. Señal de alerta explícita para WASH FIT."

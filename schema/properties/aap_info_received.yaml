@@ -1,0 +1,19 @@
+id: aap_info_received
+maturity: draft
+label:
+  en: "AAP: Information received from aid providers"
+  fr: "Redevabilité : Information reçue des intervenants"
+  es: "Rendición de cuentas: Información recibida de los actores humanitarios"
+
+definition:
+  en: "Whether the household has received any information from aid providers about available assistance in the past three months. Measures the basic precondition for informed participation (CHS 2024 Commitment 4). IASC / REACH Menu 2018 wording: 'In the past 3 months, have you received any information from aid providers about the assistance available in this area?'"
+  fr: "Si le ménage a reçu des informations de la part des intervenants sur l'aide disponible au cours des trois derniers mois. Mesure la précondition de base pour une participation éclairée (Engagement 4 de la CHS 2024). Formulation du Menu IASC / REACH 2018 : « Au cours des 3 derniers mois, avez-vous reçu des informations des intervenants sur l'aide disponible dans cette zone ? »"
+  es: "Si el hogar ha recibido información de los actores humanitarios sobre la asistencia disponible en los últimos tres meses. Mide la condición previa básica para una participación informada (Compromiso 4 de la CHS 2024). Formulación del Menú IASC / REACH 2018: «En los últimos 3 meses, ¿ha recibido alguna información de los actores humanitarios sobre la asistencia disponible en esta zona?»"
+
+type: string
+cardinality: single
+vocabulary: aap-yesno-dk
+references: null
+category: aap_information
+core: false
+sensitivity: standard

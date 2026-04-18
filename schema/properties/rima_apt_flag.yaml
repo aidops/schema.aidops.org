@@ -1,0 +1,19 @@
+id: rima_apt_flag
+maturity: draft
+label:
+  en: "RIMA-II Assets, Productive Tools and Technology (APT) signal flag"
+  fr: "Indicateur du pilier Actifs, outils productifs et technologie (APT) de RIMA-II"
+  es: "Indicador del pilar Activos, Herramientas Productivas y Tecnología (APT) de RIMA-II"
+
+definition:
+  en: "Boolean flag indicating whether the LivelihoodProfile captures at least one signal for the FAO RIMA-II Assets, Productive Tools and Technology (APT) pillar. Typically set to true when `productive_asset_types_owned`, `productive_asset_loss_since_crisis`, or `land_access_status` is recorded. Used for downstream RIMA-II pillar computation and coverage reporting. Drawn from the FAO RIMA-II methodology (2016). Derived, not asked."
+  fr: "Indicateur booléen signalant si le LivelihoodProfile capture au moins un signal pour le pilier Actifs, outils productifs et technologie (APT) de FAO RIMA-II. Généralement vrai lorsque `productive_asset_types_owned`, `productive_asset_loss_since_crisis` ou `land_access_status` est enregistré. Utilisé pour le calcul en aval des piliers RIMA-II et le reporting de couverture. Tiré de la méthodologie FAO RIMA-II (2016). Dérivé, non demandé."
+  es: "Indicador booleano que señala si el LivelihoodProfile captura al menos una señal para el pilar Activos, Herramientas Productivas y Tecnología (APT) de FAO RIMA-II. Generalmente verdadero cuando se registra `productive_asset_types_owned`, `productive_asset_loss_since_crisis` o `land_access_status`. Utilizado para el cálculo posterior de pilares RIMA-II e informes de cobertura. Tomado de la metodología FAO RIMA-II (2016). Derivado, no preguntado."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

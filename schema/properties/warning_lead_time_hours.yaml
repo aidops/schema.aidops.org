@@ -1,0 +1,18 @@
+id: warning_lead_time_hours
+maturity: draft
+label:
+  en: "Warning lead time (hours)"
+  fr: "Délai de préavis de l'alerte (heures)"
+  es: "Tiempo de anticipación de la alerta (horas)"
+
+definition:
+  en: "Number of hours between the moment the household first received the warning and the arrival of the hazard event. Stored as an integer in hours; enumerators convert day answers into hours so that data quality is consistent across records. Valid range is 0 to 720 hours (up to 30 days); a sentinel value of -1 encodes 'don't know'. Applicable only when warning_received is yes. Lead time is the single most important operational metric in Forecast-based Financing and Anticipatory Action programs because it determines whether a household could feasibly act on the warning. Dashboards typically derive a warning lead-time category (very short under 6 hours, short 6 to 24 hours, medium 24 to 72 hours, long 72 to 168 hours, very long over 168 hours) from this integer for reporting."
+  fr: "Nombre d'heures entre le moment où le ménage a reçu l'alerte pour la première fois et l'arrivée de l'événement dangereux. Stocké en entier exprimé en heures ; les enquêteurs convertissent les réponses exprimées en jours en heures afin d'assurer une qualité de données cohérente entre les enregistrements. Plage valide de 0 à 720 heures (jusqu'à 30 jours) ; une valeur sentinelle de -1 code « ne sait pas ». Applicable uniquement si warning_received est oui. Le délai de préavis est la mesure opérationnelle la plus importante dans les programmes de financement basé sur les prévisions et d'action anticipatoire, car il détermine si un ménage a pu agir sur l'alerte. Les tableaux de bord dérivent généralement de cet entier une catégorie de délai de préavis (très court moins de 6 heures, court 6 à 24 heures, moyen 24 à 72 heures, long 72 à 168 heures, très long plus de 168 heures) pour le reporting."
+  es: "Número de horas entre el momento en que el hogar recibió por primera vez la alerta y la llegada del evento de peligro. Almacenado como entero en horas; los enumeradores convierten las respuestas en días a horas para asegurar una calidad de datos consistente entre registros. Rango válido de 0 a 720 horas (hasta 30 días); un valor centinela de -1 codifica «no sabe». Aplicable solo cuando warning_received es sí. El tiempo de anticipación es la métrica operativa más importante en los programas de financiamiento basado en pronósticos y de acción anticipatoria, porque determina si un hogar pudo actuar factiblemente ante la alerta. Los paneles normalmente derivan de este entero una categoría de tiempo de anticipación (muy corto menos de 6 horas, corto 6 a 24 horas, medio 24 a 72 horas, largo 72 a 168 horas, muy largo más de 168 horas) para el reporte."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: hazard_event

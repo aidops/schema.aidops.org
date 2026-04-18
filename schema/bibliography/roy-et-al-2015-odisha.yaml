@@ -1,0 +1,23 @@
+id: roy-et-al-2015-odisha
+title: "Household perception of and response to cyclone warnings in coastal Odisha"
+short_title: "Roy et al. 2015 (Odisha)"
+authors:
+  - "Roy et al."
+publisher: "International Journal of Disaster Risk Reduction"
+year: 2015
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.sciencedirect.com/journal/international-journal-of-disaster-risk-reduction"
+access: paywalled
+status: active
+
+informs:
+  concepts:
+    - WarningResponseProfile
+  vocabularies:
+    - warning-channel
+    - warning-action-barrier
+  properties:
+    - warning_channel_primary
+    - warning_source_trust
+    - warning_action_barriers

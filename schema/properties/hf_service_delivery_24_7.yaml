@@ -1,0 +1,19 @@
+id: hf_service_delivery_24_7
+maturity: draft
+label:
+  en: "Delivery care available 24/7"
+  fr: "Soins d'accouchement disponibles 24h/24 et 7j/7"
+  es: "Atención de parto disponible 24/7"
+
+definition:
+  en: "Whether delivery care is available 24 hours a day, 7 days a week, with a skilled birth attendant always on call or on duty. Reported by the facility in-charge. `not_applicable` when `hf_service_delivery` is false. 24/7 availability is the Sphere and MISP expectation, not day-hours only."
+  fr: "Si les soins d'accouchement sont disponibles 24 heures sur 24, 7 jours sur 7, avec un accoucheur qualifié toujours de garde ou en service. Rapporté par le responsable de l'établissement. `not_applicable` lorsque `hf_service_delivery` est faux. La disponibilité 24h/24 est l'attente Sphère et MISP, pas uniquement les heures de jour."
+  es: "Si la atención de parto está disponible 24 horas al día, 7 días a la semana, con un asistente de parto calificado siempre de guardia o en servicio. Reportado por el responsable del establecimiento. `not_applicable` cuando `hf_service_delivery` es falso. La disponibilidad 24/7 es la expectativa Esfera y MISP, no solo horas diurnas."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-na
+references: null
+category: classification
+sensitivity: standard

@@ -1,0 +1,24 @@
+id: ifrc-vca-2020
+title: "Vulnerability and Capacity Assessment (VCA) Toolbox — revised guidance"
+short_title: "IFRC VCA"
+publisher: "International Federation of Red Cross and Red Crescent Societies"
+year: 2020
+version: "Revised 2020 guidance (original toolbox 2007)"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ifrc.org/document/vulnerability-and-capacity-assessment-vca-toolbox"
+access: open
+status: active
+
+informs:
+  concepts:
+    - CommunityNeedsProfile
+  vocabularies:
+    - community-coping-strategy
+  properties:
+    - cn_assessment_method
+    - cn_priority_need_1
+    - cn_priority_need_2
+    - cn_priority_need_3
+    - cn_priority_group_most_in_need
+    - cn_coping_mechanisms_in_use

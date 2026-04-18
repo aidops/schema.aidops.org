@@ -1,0 +1,19 @@
+id: post_harvest_storage_access
+maturity: draft
+label:
+  en: "Household has access to post-harvest storage for its crops"
+  fr: "Le ménage a accès à un stockage post-récolte pour ses cultures"
+  es: "El hogar tiene acceso a almacenamiento poscosecha para sus cultivos"
+
+definition:
+  en: "Whether the household had access to any dedicated post-harvest storage facility (on-farm or shared) for its crops during the last completed agricultural season, including traditional granaries, metal silos, bags with hermetic liners, or community warehouses. Drawn from the FAO Post-Harvest Losses guidelines and the LSMS-ISA post-harvest module. `dont_know` is retained as a distinct valid response. Gate question for `post_harvest_storage_type` and contextualises `post_harvest_loss_magnitude`. Asked only when `hh_grew_crops_last_season` is `yes`."
+  fr: "Si le ménage a eu accès à une installation de stockage post-récolte dédiée (à la ferme ou partagée) pour ses cultures au cours de la dernière saison agricole complète, y compris greniers traditionnels, silos métalliques, sacs à doublure hermétique ou entrepôts communautaires. Tiré des directives Pertes Post-Récolte de la FAO et du module post-récolte du LSMS-ISA. `dont_know` est conservé comme réponse valide distincte. Question filtre pour `post_harvest_storage_type` et contextualise `post_harvest_loss_magnitude`. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`."
+  es: "Si el hogar tuvo acceso a alguna instalación de almacenamiento poscosecha dedicada (en la finca o compartida) para sus cultivos durante la última temporada agrícola completa, incluidos graneros tradicionales, silos metálicos, sacos con forros herméticos o almacenes comunitarios. Tomado de las directrices de Pérdidas Poscosecha de la FAO y del módulo poscosecha de LSMS-ISA. `dont_know` se mantiene como respuesta válida distinta. Pregunta filtro para `post_harvest_storage_type` y contextualiza `post_harvest_loss_magnitude`. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

@@ -1,0 +1,19 @@
+id: post_harvest_loss_magnitude
+maturity: draft
+label:
+  en: "Estimated magnitude of post-harvest loss in the last agricultural season"
+  fr: "Ampleur estimée des pertes post-récolte au cours de la dernière saison agricole"
+  es: "Magnitud estimada de la pérdida poscosecha en la última temporada agrícola"
+
+definition:
+  en: "Respondent's estimated magnitude of post-harvest loss (between harvest and consumption/sale) as a share of the harvested crop during the last completed agricultural season, due to causes such as pest infestation, mould, rodent damage, or spoilage. Single-select from vocabulary `post-harvest-loss-band` (none_or_minimal_lt5, small_5_14, moderate_15_29, large_30_plus, dont_know) using banded categories because recall precision is low; the bands align with FAO Post-Harvest Losses guidance and LSMS-ISA post-harvest module practice. `dont_know` is included as one of the response options. Asked only when `hh_grew_crops_last_season` is `yes`."
+  fr: "Ampleur estimée par le répondant des pertes post-récolte (entre la récolte et la consommation/vente) exprimée en part de la récolte collectée au cours de la dernière saison agricole complète, dues à des causes telles qu'infestation par ravageurs, moisissures, dégâts causés par les rongeurs ou détérioration. Sélection unique dans le vocabulaire `post-harvest-loss-band` (none_or_minimal_lt5, small_5_14, moderate_15_29, large_30_plus, dont_know) utilisant des catégories par tranches car la précision de rappel est faible ; les tranches s'alignent avec le guide Pertes Post-Récolte de la FAO et la pratique du module post-récolte du LSMS-ISA. `dont_know` est inclus comme l'une des options de réponse. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`."
+  es: "Magnitud estimada por el encuestado de la pérdida poscosecha (entre la cosecha y el consumo/venta) como proporción del cultivo cosechado durante la última temporada agrícola completa, debido a causas como infestación por plagas, moho, daños por roedores o deterioro. Selección única del vocabulario `post-harvest-loss-band` (none_or_minimal_lt5, small_5_14, moderate_15_29, large_30_plus, dont_know) que usa categorías por tramos porque la precisión de recuerdo es baja; los tramos se alinean con la guía de Pérdidas Poscosecha de la FAO y la práctica del módulo poscosecha de LSMS-ISA. `dont_know` se incluye como una de las opciones de respuesta. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: post-harvest-loss-band
+references: null
+category: context
+sensitivity: sensitive

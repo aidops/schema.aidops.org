@@ -1,0 +1,19 @@
+id: training_received_past_12mo
+maturity: draft
+label:
+  en: "Household received formal agricultural training in the last 12 months"
+  fr: "Le ménage a reçu une formation agricole formelle au cours des 12 derniers mois"
+  es: "El hogar recibió capacitación agrícola formal en los últimos 12 meses"
+
+definition:
+  en: "Whether any household member received a formal training, demonstration, or workshop on agricultural practices — including soil management, crop production, livestock care, or post-harvest handling — during the past 12 months. Drawn from the LSMS-ISA extension/training module and FAO WCA 2020 Theme 06 (use of agricultural advisory services). Distinct from `extension_visit_past_12mo` which captures individual advisory contact. `dont_know` is retained as a distinct valid response. Asked when `hh_has_cultivable_land` is `yes` or `hh_owns_livestock` is `yes`."
+  fr: "Si un membre du ménage a reçu une formation formelle, une démonstration ou un atelier sur les pratiques agricoles — y compris la gestion des sols, la production végétale, les soins aux animaux ou la manutention post-récolte — au cours des 12 derniers mois. Tiré du module vulgarisation/formation du LSMS-ISA et du Thème 06 du WCA 2020 de la FAO (utilisation de services consultatifs agricoles). Distinct de `extension_visit_past_12mo` qui saisit le contact consultatif individuel. `dont_know` est conservé comme réponse valide distincte. Posée lorsque `hh_has_cultivable_land` est `yes` ou `hh_owns_livestock` est `yes`."
+  es: "Si algún miembro del hogar recibió una capacitación formal, demostración o taller sobre prácticas agrícolas — incluyendo manejo del suelo, producción de cultivos, cuidado del ganado o manejo poscosecha — durante los últimos 12 meses. Tomado del módulo extensión/capacitación de LSMS-ISA y del Tema 06 del WCA 2020 de la FAO (uso de servicios de asesoramiento agrícola). Distinto de `extension_visit_past_12mo` que captura el contacto asesor individual. `dont_know` se mantiene como respuesta válida distinta. Se pregunta cuando `hh_has_cultivable_land` es `yes` o `hh_owns_livestock` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

@@ -1,0 +1,19 @@
+id: seed_source_main
+maturity: draft
+label:
+  en: "Main source of seed or planting material (last season, main crop)"
+  fr: "Principale source de semences ou de matériel de plantation (saison dernière, culture principale)"
+  es: "Fuente principal de semilla o material de siembra (temporada pasada, cultivo principal)"
+
+definition:
+  en: "Where the household got most of the seed or planting material it used last season for its most important crop. Uses vocabulary `seed-source-type` (own-saved, purchased_market, purchased_agro_dealer, donor_ngo, donor_government, exchange_neighbor, other). Drawn from the FAO Standard Seed Security Assessment Household Survey question on seed source for the important crop and the LSMS-ISA agricultural-inputs module. Asked only when `hh_grew_crops_last_season` is `yes`. The distinction between formal and informal channels, and between humanitarian and commercial supply, is central to seed-security analysis."
+  fr: "Où le ménage a obtenu la plupart des semences ou du matériel de plantation utilisé la saison dernière pour sa culture la plus importante. Utilise le vocabulaire `seed-source-type` (semences propres, achat au marché, achat chez revendeur agréé, don ONG, don gouvernement, échange voisin, autre). Tirée de la question sur la source de semences pour la culture importante de l'Évaluation standard de la sécurité semencière de la FAO et du module des intrants agricoles du LSMS-ISA. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`. La distinction entre canaux formels et informels, et entre approvisionnement humanitaire et commercial, est centrale pour l'analyse de la sécurité semencière."
+  es: "Dónde obtuvo el hogar la mayor parte de la semilla o material de siembra que usó la temporada pasada para su cultivo más importante. Usa el vocabulario `seed-source-type` (propia guardada, comprada en mercado, comprada en agrodistribuidor, donada por ONG, donada por gobierno, intercambiada con vecino, otro). Tomada de la pregunta sobre fuente de semilla para el cultivo importante de la Evaluación Estándar de Seguridad Semillera de la FAO y del módulo de insumos agrícolas de LSMS-ISA. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`. La distinción entre canales formales e informales, y entre suministro humanitario y comercial, es central para el análisis de seguridad semillera."
+
+type: string
+cardinality: single
+core: false
+vocabulary: seed-source-type
+references: null
+category: context
+sensitivity: sensitive

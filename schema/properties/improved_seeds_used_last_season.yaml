@@ -1,0 +1,19 @@
+id: improved_seeds_used_last_season
+maturity: draft
+label:
+  en: "Improved or certified seed varieties used during the last agricultural season"
+  fr: "Variétés de semences améliorées ou certifiées utilisées au cours de la dernière saison agricole"
+  es: "Variedades de semillas mejoradas o certificadas usadas durante la última temporada agrícola"
+
+definition:
+  en: "Whether the household used improved or certified seed varieties (not seeds saved from its own previous harvest) for any crop during the last completed agricultural season. Based on FAO WCA 2020 Vol.I Item 0321 (use of improved/certified seeds) and the LSMS-ISA crop-inputs module. `dont_know` is retained as a distinct valid response. Asked only when `hh_grew_crops_last_season` is `yes`."
+  fr: "Si le ménage a utilisé des variétés de semences améliorées ou certifiées (autres que les semences conservées de sa propre récolte précédente) pour toute culture au cours de la dernière saison agricole complète. Basé sur l'item 0321 (utilisation de semences améliorées/certifiées) du Volume I du WCA 2020 de la FAO et sur le module des intrants culturaux du LSMS-ISA. `dont_know` est conservé comme réponse valide distincte. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`."
+  es: "Si el hogar usó variedades de semillas mejoradas o certificadas (que no sean semillas guardadas de su propia cosecha anterior) para algún cultivo durante la última temporada agrícola completa. Basado en el ítem 0321 (uso de semillas mejoradas/certificadas) del Volumen I del WCA 2020 de la FAO y en el módulo de insumos de cultivos de LSMS-ISA. `dont_know` se mantiene como respuesta válida distinta. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

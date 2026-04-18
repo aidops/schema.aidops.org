@@ -1,0 +1,18 @@
+id: cn_priority_group_most_in_need
+maturity: draft
+label:
+  en: "Priority groups most in need"
+  fr: "Groupes prioritaires les plus dans le besoin"
+  es: "Grupos prioritarios con mayor necesidad"
+
+definition:
+  en: "The groups of people the community itself identifies as most in need of assistance at this time. Multi-select, capped at three responses to force a meaningful priority. Encoded with the priority-group-category vocabulary (elderly, pregnant or lactating women, persons with disabilities, unaccompanied or separated children, female-headed households, child-headed households, chronically ill, displaced, poor host community members, ethnic/religious/linguistic minority, returnees, other). Derived from the MIRA Community Level Assessment 'most vulnerable groups' question, the UNHCR Age-Gender-Diversity framework, and the IASC Guidelines on Inclusion of Persons with Disabilities."
+  fr: "Les groupes de personnes que la communauté elle-même identifie comme ayant le plus besoin d'assistance à l'heure actuelle. Choix multiple, limité à trois réponses pour imposer une priorité significative. Codé avec la taxonomie priority-group-category (personnes âgées, femmes enceintes ou allaitantes, personnes handicapées, enfants non accompagnés ou séparés, ménages dirigés par une femme, ménages dirigés par un enfant, personnes atteintes de maladies chroniques, personnes déplacées, membres pauvres de la communauté d'accueil, minorité ethnique/religieuse/linguistique, retournés, autre). Tiré de la question « groupes les plus vulnérables » de l'évaluation communautaire MIRA, du cadre Âge-Genre-Diversité du HCR et des Directives de l'IASC sur l'inclusion des personnes handicapées."
+  es: "Los grupos de personas que la propia comunidad identifica como más necesitados de asistencia en la actualidad. Selección múltiple, con un máximo de tres respuestas para forzar una priorización significativa. Codificado con la taxonomía priority-group-category (personas mayores, mujeres embarazadas o lactantes, personas con discapacidad, niños no acompañados o separados, hogares encabezados por mujeres, hogares encabezados por menores, personas con enfermedades crónicas, personas desplazadas, miembros pobres de la comunidad de acogida, minoría étnica/religiosa/lingüística, retornados, otros). Derivado de la pregunta «grupos más vulnerables» de la evaluación comunitaria MIRA, del marco de Edad-Género-Diversidad del ACNUR y de las Directrices del IASC sobre inclusión de personas con discapacidad."
+
+type: string
+cardinality: multiple
+vocabulary: priority-group-category
+references: null
+category: specific_needs
+core: true

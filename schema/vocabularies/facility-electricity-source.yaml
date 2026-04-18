@@ -1,0 +1,94 @@
+id: facility-electricity-source
+maturity: draft
+label:
+  en: "Facility Electricity Source"
+  fr: "Source d'électricité de l'établissement"
+  es: "Fuente de electricidad del establecimiento"
+definition:
+  en: >
+    The main source of electricity powering a health facility. Unlike the
+    household-level electricity-source vocabulary (which carries MTF-tier
+    semantics for access), the facility-level source distinguishes grid,
+    fuel generator, solar, hybrid, battery-only, and none, matching the
+    WASH FIT Energy-and-Environment indicator set and the HHFA
+    infrastructure module. Primary source is recorded; secondary/backup
+    source arrangements are captured separately when needed.
+  fr: >
+    La source principale d'électricité alimentant un établissement de
+    santé. Contrairement au vocabulaire electricity-source au niveau du
+    ménage (qui porte la sémantique de niveau MTF pour l'accès), la
+    source au niveau de l'établissement distingue le réseau, le groupe
+    électrogène à combustible, le solaire, l'hybride, la batterie
+    uniquement et aucun, correspondant à l'ensemble d'indicateurs Énergie
+    et environnement de WASH FIT et au module d'infrastructure HHFA. La
+    source primaire est enregistrée ; les dispositifs secondaires ou de
+    secours sont capturés séparément au besoin.
+  es: >
+    La fuente principal de electricidad que alimenta un establecimiento
+    de salud. A diferencia del vocabulario electricity-source a nivel del
+    hogar (que lleva semántica de Nivel MTF para acceso), la fuente a
+    nivel de establecimiento distingue red, generador a combustible,
+    solar, híbrido, solo batería y ninguno, correspondiendo al conjunto
+    de indicadores Energía y Ambiente de WASH FIT y al módulo de
+    infraestructura HHFA. Se registra la fuente primaria; los arreglos
+    secundarios o de respaldo se capturan por separado cuando es
+    necesario.
+standard:
+  name: "Water and Sanitation for Health Facility Improvement Tool (WASH FIT) 2nd edition"
+  uri: "https://www.who.int/publications/i/item/9789240043237"
+  notes: "WASH FIT 2nd ed. Energy-and-Environment indicators distinguish grid, generator, and solar sources for health facilities. The HHFA infrastructure module records the same categories."
+values:
+- code: national_grid
+  label:
+    en: National grid (utility)
+    fr: "Réseau national (service public)"
+    es: "Red nacional (servicio público)"
+  definition:
+    en: "Facility is connected to the national utility grid as its primary source of electricity."
+    fr: "L'établissement est raccordé au réseau national de service public comme source principale d'électricité."
+    es: "El establecimiento está conectado a la red nacional del servicio público como fuente principal de electricidad."
+- code: generator_fuel
+  label:
+    en: Fuel generator (diesel or petrol)
+    fr: "Groupe électrogène à combustible (diesel ou essence)"
+    es: "Generador a combustible (diésel o gasolina)"
+  definition:
+    en: "Facility is primarily powered by a diesel or petrol generator."
+    fr: "L'établissement est principalement alimenté par un groupe électrogène diesel ou à essence."
+    es: "El establecimiento se alimenta principalmente mediante un generador diésel o de gasolina."
+- code: solar
+  label:
+    en: Solar (photovoltaic system)
+    fr: "Solaire (système photovoltaïque)"
+    es: "Solar (sistema fotovoltaico)"
+  definition:
+    en: "Facility is primarily powered by a solar photovoltaic system with battery storage."
+    fr: "L'établissement est principalement alimenté par un système solaire photovoltaïque avec stockage par batterie."
+    es: "El establecimiento se alimenta principalmente por un sistema solar fotovoltaico con almacenamiento en batería."
+- code: hybrid_grid_and_backup
+  label:
+    en: Hybrid - grid with generator or solar backup
+    fr: "Hybride - réseau avec groupe électrogène ou solaire de secours"
+    es: "Híbrido - red con generador o solar de respaldo"
+  definition:
+    en: "Facility uses the national grid as its primary source with a generator or solar backup used during grid outages."
+    fr: "L'établissement utilise le réseau national comme source principale avec un groupe électrogène ou un système solaire de secours pendant les coupures."
+    es: "El establecimiento utiliza la red nacional como fuente principal con un generador o sistema solar de respaldo durante los cortes."
+- code: battery_only
+  label:
+    en: Battery only (charged off-site)
+    fr: "Batterie uniquement (chargée hors site)"
+    es: "Solo batería (cargada fuera del sitio)"
+  definition:
+    en: "Facility relies on batteries charged off-site as its only source of electricity, with no on-site grid, generator, or solar system."
+    fr: "L'établissement dépend de batteries chargées hors site comme seule source d'électricité, sans réseau, groupe électrogène ou système solaire sur site."
+    es: "El establecimiento depende de baterías cargadas fuera del sitio como única fuente de electricidad, sin red, generador o sistema solar en el sitio."
+- code: none
+  label:
+    en: No electricity
+    fr: "Pas d'électricité"
+    es: "Sin electricidad"
+  definition:
+    en: "The facility has no source of electricity of any kind."
+    fr: "L'établissement n'a aucune source d'électricité d'aucune sorte."
+    es: "El establecimiento no tiene ninguna fuente de electricidad."

@@ -1,0 +1,166 @@
+id: LivelihoodProfile
+label:
+  en: Livelihood Profile
+  fr: "Profil de moyens de subsistance"
+  es: "Perfil de medios de vida"
+maturity: draft
+featured: true
+
+definition:
+  en: >
+    A point-in-time record of a household's livelihood portfolio, productive
+    assets, financial access, shock exposure, coping response, and composite
+    resilience signals. Captures the household's primary and secondary
+    livelihood activities, income sources and seasonality, land and asset
+    access, savings and credit, humanitarian assistance reliance, experienced
+    shocks over the past 12 months, and the main coping strategy used,
+    alongside derived indicators (income diversification index, RIMA-II
+    pillar coverage flags, and an AidOps livelihood resilience composite
+    score). Draws on the FAO RIMA-II methodology, the LSMS-ISA livelihood
+    and shock modules, the IOM DTM Multi-Sectoral Location Assessment
+    livelihood components, and the Sphere 2018 Livelihoods chapter. Scoped
+    to the household livelihood portfolio and resilience: labour-statistics
+    items (e.g. individual employment status), food-specific coping (carried
+    by FoodSecurityProfile), and agriculture-specific detail (plot-level
+    tenure, area, crops; carried by AgricultureProfile) are deliberately
+    out of scope.
+  fr: >
+    Un enregistrement ponctuel du portefeuille de moyens de subsistance
+    d'un ménage, de ses actifs productifs, de son accès financier, de son
+    exposition aux chocs, de sa réponse d'adaptation et de ses signaux
+    composites de résilience. Saisit les activités principales et
+    secondaires de subsistance du ménage, les sources de revenus et leur
+    saisonnalité, l'accès à la terre et aux actifs, l'épargne et le
+    crédit, la dépendance à l'assistance humanitaire, les chocs subis
+    au cours des 12 derniers mois et la principale stratégie d'adaptation
+    utilisée, ainsi que des indicateurs dérivés (indice de diversification
+    des revenus, indicateurs de couverture des piliers RIMA-II, et un
+    score composite AidOps de résilience des moyens de subsistance).
+    S'appuie sur la méthodologie FAO RIMA-II, les modules moyens de
+    subsistance et chocs de LSMS-ISA, les composantes moyens de
+    subsistance de l'Évaluation multisectorielle de localisation (MSLA)
+    de la DTM de l'OIM et le chapitre Moyens de subsistance de Sphère
+    2018. Limité au portefeuille de subsistance et à la résilience du
+    ménage : les items de statistiques du travail (ex. statut d'emploi
+    individuel), l'adaptation spécifique à l'alimentation (portée par
+    FoodSecurityProfile) et les détails spécifiques à l'agriculture
+    (tenure à la parcelle, superficie, cultures ; portés par
+    AgricultureProfile) sont délibérément hors périmètre.
+  es: >
+    Un registro puntual de la cartera de medios de vida de un hogar, sus
+    activos productivos, acceso financiero, exposición a choques,
+    respuesta de afrontamiento y señales compuestas de resiliencia.
+    Captura las actividades primarias y secundarias de subsistencia del
+    hogar, las fuentes de ingresos y su estacionalidad, el acceso a la
+    tierra y a los activos, los ahorros y el crédito, la dependencia de
+    la asistencia humanitaria, los choques experimentados durante los
+    últimos 12 meses y la principal estrategia de afrontamiento
+    utilizada, junto con indicadores derivados (índice de diversificación
+    de ingresos, indicadores de cobertura de los pilares RIMA-II y una
+    puntuación compuesta AidOps de resiliencia de medios de vida). Se
+    basa en la metodología FAO RIMA-II, los módulos de medios de vida
+    y choques de LSMS-ISA, los componentes de medios de vida de la
+    Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM
+    y el capítulo de Medios de Vida de Esfera 2018. Limitado a la
+    cartera de subsistencia y a la resiliencia del hogar: los ítems de
+    estadísticas laborales (p. ej. situación laboral individual), el
+    afrontamiento específico de alimentos (abordado por
+    FoodSecurityProfile) y los detalles específicos de agricultura
+    (tenencia por parcela, superficie, cultivos; abordados por
+    AgricultureProfile) están deliberadamente fuera de alcance.
+
+properties:
+  - main_livelihood_activity
+  - secondary_livelihood_activities
+  - livelihood_diversity_count
+  - income_sources
+  - income_seasonality
+  - lean_season_months_count
+  - livelihood_change_since_crisis
+  - livelihood_disruption_barrier
+  - productive_asset_types_owned
+  - productive_asset_loss_since_crisis
+  - land_access_status
+  - has_savings
+  - access_to_credit
+  - humanitarian_assistance_reliance
+  - shock_experienced_past_12mo
+  - shock_coping_strategy_used
+  - livelihood_programme_participation
+  - income_diversification_index
+  - rima_abs_flag
+  - rima_apt_flag
+  - rima_ac_flag
+  - livelihood_resilience_score
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: context
+    properties:
+      - main_livelihood_activity
+      - secondary_livelihood_activities
+      - livelihood_diversity_count
+      - income_sources
+      - income_seasonality
+      - lean_season_months_count
+      - livelihood_change_since_crisis
+      - livelihood_disruption_barrier
+      - productive_asset_types_owned
+      - productive_asset_loss_since_crisis
+      - land_access_status
+      - has_savings
+      - access_to_credit
+      - humanitarian_assistance_reliance
+      - shock_experienced_past_12mo
+      - shock_coping_strategy_used
+      - livelihood_programme_participation
+  - category: scores
+    properties:
+      - income_diversification_index
+      - rima_abs_flag
+      - rima_apt_flag
+      - rima_ac_flag
+      - livelihood_resilience_score
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (household livelihood battery)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "Each LivelihoodProfile administration serialises naturally as a FHIR QuestionnaireResponse whose Questionnaire is the corresponding LSMS-ISA, FAO RIMA-II, or IOM DTM MSLA livelihood battery. Derived indicators (RIMA pillar flags, resilience composite) are better modelled as FHIR Observation or RiskAssessment resources produced by a scoring step."
+  dhis2:
+    label: "DHIS2 livelihoods data elements"
+    uri: "https://docs.dhis2.org/en/topics/metadata/global-health-data-sets.html"
+    match: related
+    vocabulary: "DHIS2"
+    note: "DHIS2 cash-transfer and resilience deployments sometimes carry livelihood signals as tracked-entity attributes or program-stage data elements, but there is no standard global data set for a household livelihood profile."
+
+convergence:
+  system_count: 1
+  total_systems: 6
+  notes: >
+    Among the v1 convergence reference systems (FHIR, DHIS2, OpenCRVS,
+    OpenSPP, openIMIS, DCI Social Registry), only FHIR offers a generic
+    item-level form response carrier (QuestionnaireResponse) that naturally
+    matches this concept. Social-protection platforms (OpenSPP, DCI Social
+    Registry) capture household economic profiling for targeting but do
+    not carry a structured livelihoods-and-resilience survey module. The
+    informing standards bodies are FAO (RIMA-II), the World Bank (LSMS-ISA),
+    IOM (DTM MSLA), and the Sphere Project rather than the v1 core set;
+    this convergence number understates prevalence because the v1 set does
+    not include resilience-measurement platforms.

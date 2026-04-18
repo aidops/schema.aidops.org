@@ -1,0 +1,69 @@
+id: aap-trust-4
+maturity: draft
+label:
+  en: "AAP: Trust in aid providers (4 levels)"
+  fr: "Redevabilité : Confiance envers les intervenants (4 niveaux)"
+  es: "Rendición de cuentas: Confianza en los actores humanitarios (4 niveles)"
+definition:
+  en: "Four-level trust scale used in the AccountabilityToAffectedPopulationsProfile for items about the respondent's general trust in aid providers. Source: GTS HVI trust pillar (one of the four canonical GTS pillars alongside relevance, fairness, and agency/voice) and the OECD Guidelines on Measuring Trust (2017). Properties using this vocabulary are PSEA-adjacent and must be flagged `sensitivity: sensitive` because the act of expressing distrust could be sensitive in some contexts."
+  fr: "Échelle de confiance à quatre niveaux utilisée dans le Profil de redevabilité envers les populations affectées pour les items concernant la confiance générale du répondant envers les intervenants. Source : pilier de confiance GTS HVI (l'un des quatre piliers canoniques de GTS aux côtés de la pertinence, de l'équité et de l'agentivité/voix) et Lignes directrices de l'OCDE sur la mesure de la confiance (2017). Les propriétés utilisant ce vocabulaire sont liées à la PSEA et doivent être marquées `sensitivity: sensitive` car l'expression de la méfiance pourrait être sensible dans certains contextes."
+  es: "Escala de confianza de cuatro niveles utilizada en el Perfil de Rendición de Cuentas a las Poblaciones Afectadas para los ítems sobre la confianza general del encuestado en los actores humanitarios. Fuente: pilar de confianza de GTS HVI (uno de los cuatro pilares canónicos de GTS junto con relevancia, equidad y agencia/voz) y Directrices de la OCDE sobre la Medición de la Confianza (2017). Las propiedades que utilizan este vocabulario están relacionadas con PSEA y deben marcarse como `sensitivity: sensitive` porque el acto de expresar desconfianza podría ser sensible en algunos contextos."
+standard:
+  name: "Humanitarian Voice Index (Ground Truth Solutions)"
+  uri: "https://humanitarianvoiceindex.org"
+  notes: "Trust 4-level scale from GTS HVI trust pillar, anchored in OECD 2017 guidance."
+values:
+  - code: trust_a_lot
+    label:
+      en: "Trust a lot"
+      fr: "Fait beaucoup confiance"
+      es: "Confía mucho"
+    definition:
+      en: "Respondent reports a high level of trust in aid providers."
+      fr: "Le répondant rapporte un niveau de confiance élevé envers les intervenants."
+      es: "El encuestado reporta un alto nivel de confianza en los actores humanitarios."
+  - code: trust_somewhat
+    label:
+      en: "Trust somewhat"
+      fr: "Fait assez confiance"
+      es: "Confía algo"
+    definition:
+      en: "Respondent reports a moderate level of trust in aid providers."
+      fr: "Le répondant rapporte un niveau de confiance modéré envers les intervenants."
+      es: "El encuestado reporta un nivel moderado de confianza en los actores humanitarios."
+  - code: trust_a_little
+    label:
+      en: "Trust a little"
+      fr: "Fait un peu confiance"
+      es: "Confía poco"
+    definition:
+      en: "Respondent reports a low level of trust in aid providers."
+      fr: "Le répondant rapporte un faible niveau de confiance envers les intervenants."
+      es: "El encuestado reporta un bajo nivel de confianza en los actores humanitarios."
+  - code: do_not_trust
+    label:
+      en: "Do not trust"
+      fr: "Ne fait pas confiance"
+      es: "No confía"
+    definition:
+      en: "Respondent reports no trust in aid providers."
+      fr: "Le répondant rapporte aucune confiance envers les intervenants."
+      es: "El encuestado reporta ninguna confianza en los actores humanitarios."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess trust."
+      fr: "Le répondant ne peut pas évaluer la confiance."
+      es: "El encuestado no puede evaluar la confianza."
+  - code: prefer_not_to_answer
+    label:
+      en: "Prefer not to answer"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent declines to answer."
+      fr: "Le répondant refuse de répondre."
+      es: "El encuestado se niega a responder."

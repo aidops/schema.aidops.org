@@ -1,0 +1,19 @@
+id: cn_tension_between_groups_described
+maturity: draft
+label:
+  en: "Inter-group tension: free-text description"
+  fr: "Tension intergroupe : description en texte libre"
+  es: "Tensión intergrupal: descripción en texto libre"
+
+definition:
+  en: "Free-text description of which groups in the community experience tension (past 90 days), written without naming individuals. Maximum 300 characters. Asked only when cn_social_cohesion_level is 'mixed', 'tense_occasional_incidents', or 'very_tense_frequent_incidents'. SENSITIVE: potentially identifies named groups and must never be published verbatim. Handle per AidOps sensitivity-handling rules for free-text sensitive fields. Derived from the UNDP-DPPA Social Cohesion Framework qualitative probe and conflict-sensitivity practice."
+  fr: "Description en texte libre des groupes de la communauté entre lesquels des tensions sont ressenties (90 derniers jours), rédigée sans nommer d'individus. Maximum 300 caractères. Demandé uniquement lorsque cn_social_cohesion_level vaut « mitigées », « tendues, incidents occasionnels » ou « très tendues, incidents fréquents ». SENSIBLE : identifie potentiellement des groupes nommés et ne doit jamais être publiée telle quelle. Traiter selon les règles de gestion de la sensibilité d'AidOps pour les champs en texte libre sensibles. Tiré de l'approfondissement qualitatif du Cadre de cohésion sociale PNUD-DPPA et de la pratique de sensibilité au conflit."
+  es: "Descripción en texto libre de los grupos de la comunidad entre los que se siente tensión (últimos 90 días), redactada sin nombrar a individuos. Máximo 300 caracteres. Se pregunta solo cuando cn_social_cohesion_level es «mixtas», «tensas, incidentes ocasionales» o «muy tensas, incidentes frecuentes». SENSIBLE: potencialmente identifica grupos nombrados y nunca debe publicarse tal cual. Se maneja según las reglas de manejo de sensibilidad de AidOps para campos de texto libre sensibles. Derivado de la indagación cualitativa del Marco de Cohesión Social PNUD-DPPA y de la práctica de sensibilidad al conflicto."
+
+type: string
+cardinality: single
+vocabulary: null
+references: null
+category: context
+core: false
+sensitivity: sensitive

@@ -1,0 +1,18 @@
+id: cn_informant_group_elderly
+maturity: draft
+label:
+  en: "Informants included elderly"
+  fr: "Informateurs comprenant des personnes âgées"
+  es: "Informantes incluyeron personas mayores"
+
+definition:
+  en: "Whether elderly persons (approximately 60+ years old) were among the participants in this community-level assessment session. Recorded to flag age representativeness of the informant group per MIRA §3.3 and HelpAge International assessment guidance on the inclusion of older persons."
+  fr: "Indique si des personnes âgées (environ 60 ans et plus) figuraient parmi les participants à cette séance d'évaluation au niveau communautaire. Enregistré pour signaler la représentativité par âge du groupe d'informateurs, conformément au § 3.3 de MIRA et aux orientations d'HelpAge International sur l'inclusion des personnes âgées dans les évaluations."
+  es: "Indica si había personas mayores (aproximadamente de 60 años en adelante) entre los participantes de esta sesión de evaluación a nivel comunitario. Se registra para señalar la representatividad por edad del grupo de informantes, conforme al § 3.3 de MIRA y a la orientación de HelpAge International sobre la inclusión de personas mayores en evaluaciones."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: administrative
+core: false

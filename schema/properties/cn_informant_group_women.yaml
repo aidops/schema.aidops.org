@@ -1,0 +1,18 @@
+id: cn_informant_group_women
+maturity: draft
+label:
+  en: "Informants included women"
+  fr: "Informateurs comprenant des femmes"
+  es: "Informantes incluyeron mujeres"
+
+definition:
+  en: "Whether women were among the participants in this community-level assessment session. Used to flag gender representativeness of the informant group per MIRA §3.3 informant-diversity guidance and the IASC Gender Handbook. Separate women-only and men-only sessions are good practice and may produce separate records per community."
+  fr: "Indique si des femmes figuraient parmi les participants à cette séance d'évaluation au niveau communautaire. Utilisé pour signaler la représentativité de genre du groupe d'informateurs, conformément aux orientations du § 3.3 de MIRA sur la diversité des informateurs et au Manuel de l'IASC sur le genre. Des séances séparées pour les femmes et pour les hommes sont une bonne pratique et peuvent donner lieu à des enregistrements distincts par communauté."
+  es: "Indica si hubo mujeres entre las participantes en esta sesión de evaluación a nivel comunitario. Utilizado para señalar la representatividad de género del grupo de informantes, conforme a la orientación del § 3.3 de MIRA sobre diversidad de informantes y al Manual del IASC sobre género. Las sesiones separadas para mujeres y para hombres son una buena práctica y pueden producir registros distintos por comunidad."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: administrative
+core: true

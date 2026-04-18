@@ -1,0 +1,19 @@
+id: hf_user_fee_charged
+maturity: draft
+label:
+  en: "User fees charged at point of care"
+  fr: "Frais d'utilisation facturés au point de soins"
+  es: "Tarifas al usuario cobradas en el punto de atención"
+
+definition:
+  en: "Whether the facility normally charges user fees for services at the point of care. Three-level response: `yes` (fees charged for most services), `partial` (fees charged for some services only), `no` (no fees charged). Reported by the facility in-charge. Sphere 2018 requires that humanitarian health services be free at the point of use during the emergency phase. HHFA Management and Finance module. Sensitive: user-fee policy is politically and operationally sensitive in crisis contexts."
+  fr: "Si l'établissement facture normalement des frais d'utilisation pour les services au point de soins. Réponse à trois niveaux : `yes` (frais facturés pour la plupart des services), `partial` (frais facturés pour certains services seulement), `no` (aucun frais facturé). Rapporté par le responsable de l'établissement. Sphere 2018 exige que les services de santé humanitaires soient gratuits au point de soins pendant la phase d'urgence. Module Gestion et Finances HHFA. Sensible : la politique de frais d'utilisation est politiquement et opérationnellement sensible en contexte de crise."
+  es: "Si el establecimiento normalmente cobra tarifas al usuario por servicios en el punto de atención. Respuesta de tres niveles: `yes` (se cobran tarifas por la mayoría de los servicios), `partial` (se cobran tarifas solo por algunos servicios), `no` (no se cobran tarifas). Reportado por el responsable del establecimiento. Esfera 2018 exige que los servicios de salud humanitarios sean gratuitos en el punto de atención durante la fase de emergencia. Módulo de Gestión y Finanzas de HHFA. Sensible: la política de tarifas al usuario es política y operativamente sensible en contextos de crisis."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: governance
+sensitivity: sensitive

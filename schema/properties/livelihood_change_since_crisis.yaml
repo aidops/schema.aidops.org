@@ -1,0 +1,19 @@
+id: livelihood_change_since_crisis
+maturity: draft
+label:
+  en: "Livelihood change since crisis or displacement"
+  fr: "Changement de subsistance depuis la crise ou le déplacement"
+  es: "Cambio en los medios de vida desde la crisis o desplazamiento"
+
+definition:
+  en: "How the household's primary livelihood activity has changed since a crisis or displacement event (form-level reference date). Asked only when the household has experienced displacement or shock (programme-level flag). Drawn from the LSMS-ISA livelihood change modules, the IOM DTM Multi-Sectoral Location Assessment livelihood change component, and the Sphere 2018 Livelihoods chapter on crisis-disrupted livelihoods."
+  fr: "Comment l'activité principale de subsistance du ménage a changé depuis une crise ou un événement de déplacement (date de référence au niveau du formulaire). Posé uniquement lorsque le ménage a subi un déplacement ou un choc (signal au niveau du programme). Tiré des modules de changement de moyens de subsistance LSMS-ISA, de la composante changement de moyens de subsistance de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM et du chapitre Moyens de subsistance de Sphère 2018 sur les moyens de subsistance perturbés par la crise."
+  es: "Cómo ha cambiado la actividad principal de subsistencia del hogar desde una crisis o un evento de desplazamiento (fecha de referencia a nivel del formulario). Se pregunta solo cuando el hogar ha experimentado desplazamiento o choque (marca a nivel del programa). Tomado de los módulos de cambio de medios de vida LSMS-ISA, el componente de cambio de medios de vida de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM y el capítulo de Medios de Vida de Esfera 2018 sobre medios de vida interrumpidos por crisis."
+
+type: string
+cardinality: single
+core: false
+vocabulary: livelihood-change-type
+references: null
+category: context
+sensitivity: sensitive

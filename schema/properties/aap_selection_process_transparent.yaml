@@ -1,0 +1,19 @@
+id: aap_selection_process_transparent
+maturity: draft
+label:
+  en: "AAP: Selection process perceived transparent"
+  fr: "Redevabilité : Processus de sélection perçu transparent"
+  es: "Rendición de cuentas: Proceso de selección percibido como transparente"
+
+definition:
+  en: "Whether the respondent understands how aid providers decided who would receive assistance. Measures transparency of the selection process as perceived at household level. Maps to CHS 2024 Commitment 4 (transparency of information). Source: IASC / REACH Menu 2018."
+  fr: "Si le répondant comprend comment les intervenants ont décidé qui recevrait l'aide. Mesure la transparence du processus de sélection telle qu'elle est perçue au niveau du ménage. Correspond à l'Engagement 4 de la CHS 2024 (transparence de l'information). Source : Menu IASC / REACH 2018."
+  es: "Si el encuestado entiende cómo los actores humanitarios decidieron quién recibiría la asistencia. Mide la transparencia del proceso de selección tal como se percibe a nivel de hogar. Corresponde al Compromiso 4 de la CHS 2024 (transparencia de la información). Fuente: Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-agree-5
+references: null
+category: aap_targeting
+core: false
+sensitivity: standard

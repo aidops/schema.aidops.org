@@ -1,0 +1,19 @@
+id: livelihood_diversity_count
+maturity: draft
+label:
+  en: "Livelihood diversity count"
+  fr: "Nombre d'activités de subsistance"
+  es: "Recuento de diversidad de medios de vida"
+
+definition:
+  en: "Derived count of distinct `livelihood-activity-category` codes selected across `main_livelihood_activity` and `secondary_livelihood_activities` combined. Not asked directly; computed in XLSForm `calculate` or post-hoc. Operationalises the FAO RIMA-II Access to Basic Services (ABS) pillar's income diversification subcomponent: a count of two or more distinct sources is a positive resilience indicator. Range: 1–12 (maximum equals the number of distinct activity codes in the vocabulary)."
+  fr: "Nombre dérivé de codes `livelihood-activity-category` distincts sélectionnés à travers `main_livelihood_activity` et `secondary_livelihood_activities` combinés. Pas demandé directement ; calculé dans un `calculate` XLSForm ou a posteriori. Opérationnalise le sous-composant de diversification des revenus du pilier Accès aux services de base (ABS) de FAO RIMA-II : un nombre de deux sources distinctes ou plus est un indicateur positif de résilience. Plage : 1–12 (maximum égal au nombre de codes d'activité distincts dans le vocabulaire)."
+  es: "Recuento derivado de códigos `livelihood-activity-category` distintos seleccionados en `main_livelihood_activity` y `secondary_livelihood_activities` combinados. No se pregunta directamente; se computa en `calculate` de XLSForm o post-hoc. Operacionaliza el subcomponente de diversificación de ingresos del pilar Acceso a Servicios Básicos (ABS) de FAO RIMA-II: un recuento de dos o más fuentes distintas es un indicador positivo de resiliencia. Rango: 1–12 (máximo igual al número de códigos de actividad distintos en el vocabulario)."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: sensitive

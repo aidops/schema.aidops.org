@@ -1,0 +1,19 @@
+id: land_access_status
+maturity: draft
+label:
+  en: "Land access status"
+  fr: "Statut d'accès à la terre"
+  es: "Estado de acceso a la tierra"
+
+definition:
+  en: "Whether the household currently has access to agricultural or productive land, and under what broad arrangement. Asked only when `main_livelihood_activity` or any `secondary_livelihood_activities` includes `agriculture`, `livestock`, or `fishing`. Drawn from the FAO Voluntary Guidelines on the Responsible Governance of Tenure (VGGT), the LSMS-ISA land tenure module, and the PS `land-tenure` vocabulary. Used as a prerequisite screen before recording full tenure detail in AgricultureProfile. Agriculture-specific land area and crop details belong to AgricultureProfile."
+  fr: "Si le ménage a actuellement accès à des terres agricoles ou productives, et sous quel arrangement général. Posé uniquement lorsque `main_livelihood_activity` ou l'un des `secondary_livelihood_activities` inclut `agriculture`, `livestock` ou `fishing`. Tiré des Directives volontaires de la FAO pour une gouvernance responsable des régimes fonciers (VGGT), du module foncier LSMS-ISA et du vocabulaire PublicSchema `land-tenure`. Utilisé comme écran préalable avant la saisie des détails complets du régime foncier dans AgricultureProfile. Les détails de superficie et de cultures relèvent d'AgricultureProfile."
+  es: "Si el hogar tiene actualmente acceso a tierras agrícolas o productivas, y bajo qué arreglo general. Se pregunta solo cuando `main_livelihood_activity` o alguna `secondary_livelihood_activities` incluye `agriculture`, `livestock` o `fishing`. Tomado de las Directrices Voluntarias de la FAO sobre la Gobernanza Responsable de la Tenencia (VGGT), el módulo de tenencia de la tierra LSMS-ISA y el vocabulario PublicSchema `land-tenure`. Se utiliza como pantalla previa antes de registrar los detalles completos de tenencia en AgricultureProfile. Los detalles de superficie y cultivos pertenecen a AgricultureProfile."
+
+type: string
+cardinality: single
+core: false
+vocabulary: land-access-status
+references: null
+category: context
+sensitivity: sensitive

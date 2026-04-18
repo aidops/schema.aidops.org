@@ -1,0 +1,19 @@
+id: hf_commodity_ors_available
+maturity: draft
+label:
+  en: "Oral rehydration salts (ORS) available and within expiry"
+  fr: "Sels de réhydratation orale (SRO) disponibles et non périmés"
+  es: "Sales de rehidratación oral (SRO) disponibles y vigentes"
+
+definition:
+  en: "Whether oral rehydration salts (1-litre sachet) are available today on the shelf and within valid expiration date. Observed by the enumerator. SARA child-health tracer (M-OR1); WHO EML; core IMCI medicine. Code `yes` only when at least one unit is available and not expired. Sensitive: stock-out reporting is politically sensitive."
+  fr: "Si les sels de réhydratation orale (sachet d'un litre) sont disponibles aujourd'hui en rayon et dans leur délai de péremption. Observé par l'enquêteur. Indicateur traceur SARA santé de l'enfant (M-OR1) ; EML de l'OMS ; médicament central PCIME. Coder `yes` uniquement lorsqu'au moins une unité est disponible et non périmée. Sensible : le reporting des ruptures de stock est politiquement sensible."
+  es: "Si las sales de rehidratación oral (sobre de un litro) están disponibles hoy en estantería y dentro de fecha de vencimiento válida. Observado por el enumerador. Indicador trazador SARA salud infantil (M-OR1); EML de la OMS; medicamento central AIEPI. Codificar `yes` solo cuando al menos una unidad está disponible y no vencida. Sensible: el reporte de desabastecimientos es políticamente sensible."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: sensitive

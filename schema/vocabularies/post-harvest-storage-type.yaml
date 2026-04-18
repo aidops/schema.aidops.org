@@ -1,0 +1,78 @@
+id: post-harvest-storage-type
+maturity: draft
+label:
+  en: "Post-Harvest Storage Type"
+  fr: "Type de stockage post-récolte"
+  es: "Tipo de almacenamiento poscosecha"
+definition:
+  en: "Main type of storage used by the household for its harvested crops. Distinguishes traditional granaries, hermetic bags (PICS and similar), metal silos, improved store rooms, shared warehouses, cooperative storage, and other. The hermetic and metal-silo categories are specifically included because they are commonly distributed through humanitarian post-harvest programmes and reduce losses dramatically compared with traditional granaries. Based on FAO post-harvest loss guidelines and LSMS-ISA post-harvest module."
+  fr: "Principal type de stockage utilisé par le ménage pour ses récoltes. Distingue les greniers traditionnels, les sacs hermétiques (PICS et similaires), les silos métalliques, les magasins améliorés, les entrepôts partagés, le stockage coopératif et autres. Les catégories hermétique et silo métallique sont spécifiquement incluses car elles sont couramment distribuées par les programmes humanitaires post-récolte et réduisent considérablement les pertes par rapport aux greniers traditionnels. Basé sur les lignes directrices de la FAO sur les pertes post-récolte et le module post-récolte du LSMS-ISA."
+  es: "Tipo principal de almacenamiento utilizado por el hogar para sus cosechas. Distingue graneros tradicionales, bolsas herméticas (PICS y similares), silos metálicos, cuartos de almacenamiento mejorados, bodegas compartidas, almacenamiento cooperativo y otros. Las categorías herméticas y de silo metálico se incluyen específicamente porque son comúnmente distribuidas a través de programas humanitarios poscosecha y reducen las pérdidas drásticamente en comparación con los graneros tradicionales. Basado en las directrices FAO sobre pérdidas poscosecha y el módulo poscosecha de LSMS-ISA."
+standard:
+  name: "FAO post-harvest loss guidelines / LSMS-ISA post-harvest module"
+  uri: "https://openknowledge.fao.org/server/api/core/bitstreams/bd596c08-1202-4745-b23d-07bb5dc84b06/content"
+  notes: "The storage-type categories follow FAO PHL guidelines and are used in LSMS-ISA country surveys. Hermetic bags (PICS) and metal silos are called out separately because their adoption directly reduces post-harvest losses."
+values:
+  - code: traditional_granary
+    label:
+      en: "Traditional granary or storage hut"
+      fr: "Grenier traditionnel ou hutte de stockage"
+      es: "Granero tradicional o choza de almacenamiento"
+    definition:
+      en: "Locally constructed grain store, typically of mud, thatch, or wood."
+      fr: "Grenier construit localement, généralement en terre, chaume ou bois."
+      es: "Granero construido localmente, típicamente de barro, paja o madera."
+  - code: hermetic_storage_bag
+    label:
+      en: "Hermetic storage bag (e.g., PICS bag, super grain bag)"
+      fr: "Sac de stockage hermétique (ex. sac PICS, super grain bag)"
+      es: "Bolsa de almacenamiento hermética (p. ej., bolsa PICS, super grain bag)"
+    definition:
+      en: "Sealed multi-layer bag designed to prevent oxygen penetration and reduce pest damage during storage."
+      fr: "Sac multicouche hermétique conçu pour empêcher la pénétration d'oxygène et réduire les dégâts des ravageurs pendant le stockage."
+      es: "Bolsa hermética multicapa diseñada para prevenir la penetración de oxígeno y reducir el daño por plagas durante el almacenamiento."
+  - code: metal_silo
+    label:
+      en: "Metal silo"
+      fr: "Silo métallique"
+      es: "Silo metálico"
+    definition:
+      en: "Metal storage container, often distributed through agricultural programmes, providing good hermetic protection."
+      fr: "Conteneur de stockage métallique, souvent distribué par des programmes agricoles, offrant une bonne protection hermétique."
+      es: "Contenedor metálico de almacenamiento, a menudo distribuido a través de programas agrícolas, que brinda buena protección hermética."
+  - code: improved_store_room
+    label:
+      en: "Improved store room or lockable indoor store"
+      fr: "Magasin amélioré ou entrepôt intérieur verrouillable"
+      es: "Cuarto de almacenamiento mejorado o bodega interior con llave"
+    definition:
+      en: "A dedicated, lockable room in the household's dwelling used for grain storage, typically with some pest control."
+      fr: "Une pièce dédiée et verrouillable dans le logement du ménage utilisée pour le stockage des céréales, généralement avec une certaine lutte antiparasitaire."
+      es: "Una habitación dedicada y con llave en la vivienda del hogar utilizada para almacenamiento de granos, típicamente con algún control de plagas."
+  - code: shared_warehouse
+    label:
+      en: "Shared community or rented warehouse"
+      fr: "Entrepôt communautaire partagé ou loué"
+      es: "Almacén comunitario compartido o arrendado"
+    definition:
+      en: "Storage in a warehouse shared among multiple households or rented from a commercial facility."
+      fr: "Stockage dans un entrepôt partagé entre plusieurs ménages ou loué à une installation commerciale."
+      es: "Almacenamiento en una bodega compartida entre varios hogares o arrendada de una instalación comercial."
+  - code: cooperative_store
+    label:
+      en: "Cooperative or farmer group storage"
+      fr: "Stockage en coopérative ou groupe d'agriculteurs"
+      es: "Almacenamiento en cooperativa o grupo de agricultores"
+    definition:
+      en: "Storage managed by and accessible through a farmer cooperative or producer organisation."
+      fr: "Stockage géré par et accessible via une coopérative d'agriculteurs ou une organisation de producteurs."
+      es: "Almacenamiento gestionado por y accesible a través de una cooperativa de agricultores u organización de productores."
+  - code: other
+    label:
+      en: "Other"
+      fr: "Autre"
+      es: "Otro"
+    definition:
+      en: "Storage type not covered by the other categories."
+      fr: "Type de stockage non couvert par les autres catégories."
+      es: "Tipo de almacenamiento no cubierto por las otras categorías."

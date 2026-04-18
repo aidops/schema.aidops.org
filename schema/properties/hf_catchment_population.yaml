@@ -1,0 +1,19 @@
+id: hf_catchment_population
+maturity: draft
+label:
+  en: "Estimated catchment population"
+  fr: "Population couverte estimée"
+  es: "Población de captación estimada"
+
+definition:
+  en: "Estimated population served by the facility in its catchment area. Typically drawn from the facility register or from the local health authority. Used with the Sphere 2018 emergency-phase benchmark of one health facility per 10,000 affected persons. Extended (non-core) — populate when a defensible catchment figure is on record. Reported."
+  fr: "Population estimée desservie par l'établissement dans sa zone de couverture. Généralement issue du registre de l'établissement ou de l'autorité sanitaire locale. Utilisée avec le repère Sphère 2018 de phase d'urgence d'un établissement pour 10 000 personnes affectées. Étendue (non-core) — à renseigner lorsqu'un chiffre de couverture défendable est consigné. Rapporté."
+  es: "Población estimada atendida por el establecimiento en su área de captación. Generalmente tomada del registro del establecimiento o de la autoridad sanitaria local. Usada con la referencia de fase de emergencia de Esfera 2018 de un establecimiento por cada 10.000 personas afectadas. Extendida (no-core) — complete cuando exista una cifra defendible de captación en el registro. Reportado."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: context
+sensitivity: standard

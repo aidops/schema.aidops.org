@@ -1,0 +1,19 @@
+id: livelihood_resilience_score
+maturity: draft
+label:
+  en: "Livelihood resilience composite score (0-100)"
+  fr: "Score composite de résilience des moyens de subsistance (0-100)"
+  es: "Puntuación compuesta de resiliencia de medios de vida (0-100)"
+
+definition:
+  en: "Integer 0-100 composite score summarising household livelihood resilience across diversification, assets, shock exposure, and coping dimensions. Intended as an AidOps-derived indicator, not an official FAO RIMA-II Resilience Capacity Index (RCI) value. The scoring recipe is documented in the AidOps analysis notes and is expected to combine `livelihood_diversity_count`, `income_diversification_index`, `productive_asset_types_owned` count, the RIMA-II pillar flags, and penalties for `shock_experienced_past_12mo` severity and stressed `shock_coping_strategy_used`. Drawn conceptually from the FAO RIMA-II RCI, the Tulane DRLA / USAID resilience measurement guidance, and the Sphere 2018 Livelihoods chapter. Derived, not asked."
+  fr: "Score composite entier 0-100 résumant la résilience des moyens de subsistance du ménage sur les dimensions diversification, actifs, exposition aux chocs et adaptation. Conçu comme un indicateur dérivé par AidOps, et non comme une valeur officielle de l'Indice de capacité de résilience (RCI) de FAO RIMA-II. La formule de calcul est documentée dans les notes d'analyse AidOps et devrait combiner `livelihood_diversity_count`, `income_diversification_index`, le nombre de `productive_asset_types_owned`, les indicateurs des piliers RIMA-II, et des pénalités pour la sévérité de `shock_experienced_past_12mo` et un `shock_coping_strategy_used` en situation de stress. Inspiré conceptuellement du RCI de FAO RIMA-II, des orientations de mesure de la résilience Tulane DRLA / USAID et du chapitre Moyens de subsistance de Sphère 2018. Dérivé, non demandé."
+  es: "Puntuación compuesta entera 0-100 que resume la resiliencia de los medios de vida del hogar en las dimensiones diversificación, activos, exposición a choques y afrontamiento. Concebida como un indicador derivado por AidOps, no como un valor oficial del Índice de Capacidad de Resiliencia (RCI) de FAO RIMA-II. La fórmula de cálculo está documentada en las notas de análisis de AidOps y se espera que combine `livelihood_diversity_count`, `income_diversification_index`, el recuento de `productive_asset_types_owned`, los indicadores de los pilares RIMA-II y penalizaciones por la severidad de `shock_experienced_past_12mo` y un `shock_coping_strategy_used` en situación de estrés. Inspirada conceptualmente en el RCI de FAO RIMA-II, las orientaciones de medición de resiliencia Tulane DRLA / USAID y el capítulo de Medios de Vida de Esfera 2018. Derivada, no preguntada."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

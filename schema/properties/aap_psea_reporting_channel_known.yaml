@@ -1,0 +1,19 @@
+id: aap_psea_reporting_channel_known
+maturity: draft
+label:
+  en: "AAP: PSEA reporting channel awareness"
+  fr: "Redevabilité : Connaissance du canal de signalement PSEA"
+  es: "Rendición de cuentas: Conciencia del canal de denuncia PSEA"
+
+definition:
+  en: "Whether the respondent knows how to report if an aid provider behaves badly towards them, their family, or anyone in the community, including requests for money, favours, or sexual favours in exchange for aid. This item measures awareness of the PSEA reporting channel, not experience. PSEA-adjacent and `sensitive`: enumerator training must include trauma-aware handling and a pre-prepared referral card. If a respondent spontaneously discloses an incident, follow the spontaneous-disclosure protocol (thank, do not probe, provide referral card, flag `x_spontaneous_disclosure` in form metadata). Source: IASC CAAP 2017 PSEA pillar; CHS Alliance PSEA indicators; IASC Plan for Accelerating PSEA (2018)."
+  fr: "Si le répondant sait comment signaler si un intervenant se comporte mal envers lui-même, sa famille ou toute personne de la communauté, y compris des demandes d'argent, de faveurs ou de faveurs sexuelles en échange de l'aide. Cet item mesure la connaissance du canal de signalement PSEA, et non l'expérience. Lié à la PSEA et `sensitive` : la formation des enquêteurs doit inclure une gestion soucieuse du traumatisme et une carte de référence pré-préparée. Si un répondant divulgue spontanément un incident, suivre le protocole de divulgation spontanée (remercier, ne pas sonder, fournir la carte de référence, marquer `x_spontaneous_disclosure` dans les métadonnées du formulaire). Source : pilier PSEA de la CAAP IASC 2017 ; indicateurs PSEA de CHS Alliance ; Plan IASC pour l'accélération de la PSEA (2018)."
+  es: "Si el encuestado sabe cómo denunciar si un actor humanitario se comporta mal con él, su familia o cualquier persona de la comunidad, incluidas las solicitudes de dinero, favores o favores sexuales a cambio de ayuda. Este ítem mide el conocimiento del canal de denuncia PSEA, no la experiencia. Relacionado con PSEA y `sensitive`: la capacitación de los encuestadores debe incluir un manejo consciente del trauma y una tarjeta de referencia pre-preparada. Si un encuestado divulga espontáneamente un incidente, seguir el protocolo de divulgación espontánea (agradecer, no sondear, proporcionar la tarjeta de referencia, marcar `x_spontaneous_disclosure` en los metadatos del formulario). Fuente: pilar PSEA de la CAAP IASC 2017; indicadores PSEA de CHS Alliance; Plan IASC para Acelerar la PSEA (2018)."
+
+type: string
+cardinality: single
+vocabulary: aap-yesno-dk
+references: null
+category: aap_trust_safety
+core: false
+sensitivity: sensitive

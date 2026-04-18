@@ -1,0 +1,19 @@
+id: hf_commodity_skilled_birth_kit_available
+maturity: draft
+label:
+  en: "Clean/skilled birth kit available"
+  fr: "Kit d'accouchement propre/qualifié disponible"
+  es: "Kit de parto limpio/calificado disponible"
+
+definition:
+  en: "Whether a clean or skilled birth kit (or the equivalent set of labour-ward supplies) is available at the facility. Observed by the enumerator. MISP Objective 4 tracer. `not_applicable` when the facility does not offer delivery services. Sensitive: commodity availability reporting is politically sensitive."
+  fr: "Si un kit d'accouchement propre ou qualifié (ou l'ensemble équivalent de fournitures de salle de travail) est disponible à l'établissement. Observé par l'enquêteur. Indicateur traceur MISP Objectif 4. `not_applicable` lorsque l'établissement n'offre pas de services d'accouchement. Sensible : le reporting des disponibilités de produits est politiquement sensible."
+  es: "Si un kit de parto limpio o calificado (o el conjunto equivalente de insumos de sala de partos) está disponible en el establecimiento. Observado por el enumerador. Indicador trazador MISP Objetivo 4. `not_applicable` cuando el establecimiento no ofrece servicios de parto. Sensible: el reporte de disponibilidad de insumos es políticamente sensible."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-na
+references: null
+category: classification
+sensitivity: sensitive

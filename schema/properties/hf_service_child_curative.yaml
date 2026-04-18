@@ -1,0 +1,19 @@
+id: hf_service_child_curative
+maturity: draft
+label:
+  en: "Offers curative services for sick children under 5 (IMCI)"
+  fr: "Offre des services curatifs pour les enfants malades de moins de 5 ans (PCIME)"
+  es: "Ofrece servicios curativos para niños menores de 5 años enfermos (AIEPI)"
+
+definition:
+  en: "Whether the facility offers curative services for sick children under 5, following the Integrated Management of Childhood Illness (IMCI) approach. Reported by the facility in-charge. SARA child-health tracers include diarrhea, pneumonia, and malaria management."
+  fr: "Si l'établissement offre des services curatifs pour les enfants malades de moins de 5 ans, suivant l'approche Prise en charge intégrée des maladies de l'enfant (PCIME). Rapporté par le responsable de l'établissement. Les indicateurs traceurs SARA de santé de l'enfant incluent la prise en charge de la diarrhée, de la pneumonie et du paludisme."
+  es: "Si el establecimiento ofrece servicios curativos para niños menores de 5 años enfermos, siguiendo el enfoque de Atención Integrada a las Enfermedades Prevalentes de la Infancia (AIEPI). Reportado por el responsable del establecimiento. Los indicadores trazadores SARA de salud infantil incluyen el manejo de diarrea, neumonía y malaria."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: standard

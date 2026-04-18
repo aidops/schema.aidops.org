@@ -1,0 +1,21 @@
+id: ocha-aap-msna-findings-2022
+title: "Multi-Sector Needs Assessments (MSNA) 2022 — Key Findings: Accountability to Affected People (AAP)"
+short_title: "OCHA AAP MSNA Findings 2022"
+publisher: "REACH / IMPACT Initiatives; OCHA"
+year: 2023
+version: "July 2023 (reporting on 2022 MSNA data)"
+type: guidance_publication
+domain: humanitarian
+uri: "https://reliefweb.int/report/world/multi-sector-needs-assessments-msna-2022-key-findings-accountability-affected-people-aap-july-2023-global"
+access: open
+status: active
+
+informs:
+  concepts:
+    - AccountabilityToAffectedPopulationsProfile
+  vocabularies:
+    - aap-sufficient-4
+  properties:
+    - aap_info_eligibility_clear
+    - aap_complaint_channel_known
+    - aap_aid_quantity_sufficient

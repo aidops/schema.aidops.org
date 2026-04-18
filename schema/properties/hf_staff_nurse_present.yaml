@@ -1,0 +1,19 @@
+id: hf_staff_nurse_present
+maturity: draft
+label:
+  en: "Qualified nurse on duty today"
+  fr: "Infirmier(ère) qualifié(e) de service aujourd'hui"
+  es: "Personal de enfermería calificado de servicio hoy"
+
+definition:
+  en: "Whether at least one qualified nurse is on duty at the facility on the observation date. 'Qualified' means holding a nationally recognized nursing qualification. Reported and observed. Nurse is the backbone cadre in most LMIC primary facilities; SARA and HHFA include this in health-worker availability tracers."
+  fr: "Si au moins un(e) infirmier(ère) qualifié(e) est de service à l'établissement à la date d'observation. « Qualifié(e) » signifie titulaire d'une qualification nationalement reconnue en soins infirmiers. Rapporté et observé. L'infirmier(ère) est la cadre de base dans la plupart des établissements primaires des PRFI ; SARA et HHFA l'incluent dans les indicateurs traceurs de disponibilité du personnel de santé."
+  es: "Si al menos una persona de enfermería calificada está de servicio en el establecimiento en la fecha de observación. «Calificada» significa titular de una cualificación de enfermería reconocida nacionalmente. Reportado y observado. La enfermería es el cuadro base en la mayoría de establecimientos primarios de PIMB; SARA y HHFA lo incluyen en los indicadores trazadores de disponibilidad de personal sanitario."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: governance
+sensitivity: standard

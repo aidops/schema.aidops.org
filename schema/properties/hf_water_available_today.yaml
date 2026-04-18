@@ -1,0 +1,19 @@
+id: hf_water_available_today
+maturity: draft
+label:
+  en: "Water available from the main source today"
+  fr: "Eau disponible à la source principale aujourd'hui"
+  es: "Agua disponible en la fuente principal hoy"
+
+definition:
+  en: "Whether water was flowing or available from the facility's main water source at the time of the visit. Presence on-site is not sufficient: the source must be providing water today. Observed by the enumerator. SARA and WASH FIT tracer."
+  fr: "Si l'eau coulait ou était disponible à la source principale de l'établissement au moment de la visite. La simple présence sur site ne suffit pas : la source doit fournir de l'eau aujourd'hui. Observé par l'enquêteur. Indicateur traceur SARA et WASH FIT."
+  es: "Si el agua fluía o estaba disponible desde la fuente principal del establecimiento en el momento de la visita. La mera presencia en el sitio no basta: la fuente debe estar suministrando agua hoy. Observado por el enumerador. Indicador trazador SARA y WASH FIT."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: water
+sensitivity: standard

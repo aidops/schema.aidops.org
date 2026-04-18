@@ -1,0 +1,126 @@
+id: priority-group-category
+maturity: draft
+label:
+  en: Priority Group Category
+  fr: "Catégorie de groupe prioritaire"
+  es: "Categoría de grupo prioritario"
+
+definition:
+  en: "Community-identified priority groups (who is most in need of assistance). Aligned with the UNHCR Age, Gender and Diversity (AGD) framework, the IASC Gender Handbook, the IASC Guidelines on Inclusion of Persons with Disabilities (2019), and the MIRA Community Level Assessment 'most vulnerable groups' question. Used by communities themselves to flag categories of people they perceive as most affected."
+  fr: "Groupes prioritaires identifiés par la communauté (qui est le plus dans le besoin). Alignée sur le cadre Âge, Genre et Diversité (AGD) du HCR, le Manuel de l'IASC sur le genre, les Directives de l'IASC sur l'inclusion des personnes handicapées (2019) et la question « groupes les plus vulnérables » de l'évaluation communautaire MIRA. Utilisée par les communautés elles-mêmes pour signaler les catégories de personnes qu'elles perçoivent comme les plus affectées."
+  es: "Grupos prioritarios identificados por la comunidad (quién tiene mayor necesidad de asistencia). Alineada con el marco de Edad, Género y Diversidad (AGD) del ACNUR, el Manual del IASC sobre género, las Directrices del IASC sobre inclusión de personas con discapacidad (2019) y la pregunta de «grupos más vulnerables» de la evaluación comunitaria MIRA. Utilizada por las propias comunidades para señalar las categorías de personas que perciben como más afectadas."
+
+standard:
+  name: "UNHCR Age, Gender and Diversity Policy"
+  uri: "https://www.unhcr.org/age-gender-and-diversity"
+  notes: "The vocabulary extends the UNHCR AGD core disaggregators with humanitarian-specific vulnerability groups recurrently elicited in MIRA Community Level Assessment forms, IOM DTM site-level priority-group questions, and IASC Guidelines on Inclusion of Persons with Disabilities (2019)."
+
+values:
+- code: elderly
+  label:
+    en: "Elderly persons"
+    fr: "Personnes âgées"
+    es: "Personas mayores"
+  definition:
+    en: "Persons approximately 60 years and older."
+    fr: "Personnes d'environ 60 ans et plus."
+    es: "Personas aproximadamente de 60 años en adelante."
+- code: pregnant_lactating_women
+  label:
+    en: "Pregnant or lactating women"
+    fr: "Femmes enceintes ou allaitantes"
+    es: "Mujeres embarazadas o lactantes"
+  definition:
+    en: "Women who are currently pregnant or breastfeeding."
+    fr: "Femmes actuellement enceintes ou allaitantes."
+    es: "Mujeres actualmente embarazadas o en período de lactancia."
+- code: persons_with_disabilities
+  label:
+    en: "Persons with disabilities"
+    fr: "Personnes handicapées"
+    es: "Personas con discapacidad"
+  definition:
+    en: "Persons with physical, sensory, intellectual, or psychosocial disabilities."
+    fr: "Personnes présentant un handicap physique, sensoriel, intellectuel ou psychosocial."
+    es: "Personas con discapacidad física, sensorial, intelectual o psicosocial."
+- code: unaccompanied_separated_children
+  label:
+    en: "Unaccompanied or separated children (UASC)"
+    fr: "Enfants non accompagnés ou séparés (ENAS)"
+    es: "Niños, niñas y adolescentes no acompañados o separados (NNAS)"
+  definition:
+    en: "Children under 18 who are separated from both parents or from their previous legal or customary primary caregiver."
+    fr: "Enfants de moins de 18 ans séparés de leurs deux parents ou de leur précédent tuteur légal ou coutumier principal."
+    es: "Niños, niñas y adolescentes menores de 18 años separados de ambos progenitores o de su anterior cuidador principal legal o consuetudinario."
+- code: female_headed_households
+  label:
+    en: "Female-headed households"
+    fr: "Ménages dirigés par une femme"
+    es: "Hogares encabezados por mujeres"
+  definition:
+    en: "Households whose primary decision-maker or income-provider is a woman, typically due to widowhood, separation, or male absence."
+    fr: "Ménages dont la principale décideuse ou pourvoyeuse de revenu est une femme, généralement en raison du veuvage, de la séparation ou de l'absence masculine."
+    es: "Hogares cuya principal persona que toma decisiones o proveedora de ingresos es una mujer, típicamente por viudez, separación o ausencia masculina."
+- code: child_headed_households
+  label:
+    en: "Child-headed households"
+    fr: "Ménages dirigés par un enfant"
+    es: "Hogares encabezados por un menor"
+  definition:
+    en: "Households whose primary decision-maker is a person under 18."
+    fr: "Ménages dont le principal décideur est une personne de moins de 18 ans."
+    es: "Hogares cuya principal persona que toma decisiones es menor de 18 años."
+- code: chronically_ill
+  label:
+    en: "Chronically ill persons"
+    fr: "Personnes atteintes de maladies chroniques"
+    es: "Personas con enfermedades crónicas"
+  definition:
+    en: "People with long-term illness (e.g., HIV, TB, diabetes, cancer) requiring continuous care."
+    fr: "Personnes atteintes de maladies de longue durée (par exemple VIH, TB, diabète, cancer) nécessitant des soins continus."
+    es: "Personas con enfermedades de larga duración (por ejemplo, VIH, TB, diabetes, cáncer) que requieren atención continua."
+- code: displaced
+  label:
+    en: "Displaced persons"
+    fr: "Personnes déplacées"
+    es: "Personas desplazadas"
+  definition:
+    en: "Internally displaced persons, refugees, or returnees living in the community."
+    fr: "Personnes déplacées internes, réfugiés ou retournés vivant dans la communauté."
+    es: "Personas desplazadas internas, refugiadas o retornadas que viven en la comunidad."
+- code: host_community_poor
+  label:
+    en: "Poor host community members"
+    fr: "Membres pauvres de la communauté d'accueil"
+    es: "Miembros pobres de la comunidad de acogida"
+  definition:
+    en: "Low-income members of the host community affected by the crisis or by the cost of hosting displaced populations."
+    fr: "Membres à faible revenu de la communauté d'accueil affectés par la crise ou par le coût d'accueillir des populations déplacées."
+    es: "Miembros de bajos ingresos de la comunidad de acogida afectados por la crisis o por el costo de acoger a poblaciones desplazadas."
+- code: minority_group
+  label:
+    en: "Ethnic, religious, or linguistic minority"
+    fr: "Minorité ethnique, religieuse ou linguistique"
+    es: "Minoría étnica, religiosa o lingüística"
+  definition:
+    en: "Members of a minority group facing discrimination or marginalisation in this community."
+    fr: "Membres d'un groupe minoritaire confrontés à la discrimination ou à la marginalisation dans cette communauté."
+    es: "Miembros de un grupo minoritario que enfrentan discriminación o marginación en esta comunidad."
+- code: returnees
+  label:
+    en: "Returnees"
+    fr: "Retournés"
+    es: "Retornados"
+  definition:
+    en: "Persons who have recently returned after a period of displacement."
+    fr: "Personnes récemment retournées après une période de déplacement."
+    es: "Personas que han regresado recientemente tras un período de desplazamiento."
+- code: other
+  label:
+    en: "Other"
+    fr: "Autre"
+    es: "Otro"
+  definition:
+    en: "Priority group not covered by the above categories; use the associated free-text field to describe."
+    fr: "Groupe prioritaire non couvert par les catégories ci-dessus ; utiliser le champ en texte libre associé pour décrire."
+    es: "Grupo prioritario no cubierto por las categorías anteriores; utilizar el campo de texto libre asociado para describir."

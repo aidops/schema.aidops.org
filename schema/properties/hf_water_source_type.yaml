@@ -1,0 +1,19 @@
+id: hf_water_source_type
+maturity: draft
+label:
+  en: "Main water source type at facility"
+  fr: "Type de source d'eau principale à l'établissement"
+  es: "Tipo de fuente de agua principal del establecimiento"
+
+definition:
+  en: "Type of the facility's main water source, using the PS `water-source` vocabulary (improved/unimproved JMP categories: piped, borehole, protected dug well, unprotected dug well, tanker-truck, surface water, etc.). Observed by the enumerator. WASH FIT indicator; JMP ladder alignment. Extended (non-core)."
+  fr: "Type de la source d'eau principale de l'établissement, selon le vocabulaire PS `water-source` (catégories JMP améliorée/non améliorée : canalisation, forage, puits creusé protégé, puits creusé non protégé, camion-citerne, eau de surface, etc.). Observé par l'enquêteur. Indicateur WASH FIT ; aligné sur l'échelle JMP. Étendu (non-core)."
+  es: "Tipo de la fuente de agua principal del establecimiento, usando el vocabulario PS `water-source` (categorías JMP mejorada/no mejorada: tubería, perforación, pozo cavado protegido, pozo cavado no protegido, camión cisterna, agua superficial, etc.). Observado por el enumerador. Indicador WASH FIT; alineación con la escalera JMP. Extendido (no-core)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: water-source
+references: null
+category: water
+sensitivity: standard

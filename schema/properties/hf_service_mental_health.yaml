@@ -1,0 +1,19 @@
+id: hf_service_mental_health
+maturity: draft
+label:
+  en: "Offers basic clinical mental health care (mhGAP)"
+  fr: "Offre des soins cliniques de santé mentale de base (mhGAP)"
+  es: "Ofrece atención clínica básica de salud mental (mhGAP)"
+
+definition:
+  en: "Whether the facility offers basic clinical mental health care, at minimum a trained non-specialist with supervision per WHO mhGAP. Reported by the facility in-charge. Sphere 2018 Standard 2.5: 'make basic clinical mental health care available at every healthcare facility.' Extended (non-core)."
+  fr: "Si l'établissement offre des soins cliniques de santé mentale de base, au minimum un non-spécialiste formé avec supervision selon le mhGAP de l'OMS. Rapporté par le responsable de l'établissement. Norme 2.5 de Sphère 2018 : « rendre les soins cliniques de santé mentale de base disponibles dans chaque établissement de soins ». Étendu (non-core)."
+  es: "Si el establecimiento ofrece atención clínica básica de salud mental, como mínimo un no especialista capacitado con supervisión según mhGAP de la OMS. Reportado por el responsable del establecimiento. Norma 2.5 de Esfera 2018: «hacer disponible la atención clínica básica de salud mental en todo establecimiento de salud». Extendido (no-core)."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: classification
+sensitivity: standard

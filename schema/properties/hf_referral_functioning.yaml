@@ -1,0 +1,19 @@
+id: hf_referral_functioning
+maturity: draft
+label:
+  en: "Functioning referral system to higher-level facility"
+  fr: "Système de référence fonctionnel vers un établissement de niveau supérieur"
+  es: "Sistema de referencia funcional hacia un establecimiento de nivel superior"
+
+definition:
+  en: "Whether the facility has a functioning referral system to a higher-level facility, defined as having (1) a documented destination facility, (2) a working communication channel to that destination, and (3) an agreed transport mechanism. Three-level response: `yes` (all three elements in place), `partial` (destination known but transport unreliable or transport arranged ad hoc), `no` (no documented referral system). Reported by the facility in-charge. Sphere 2018 Health Action; SARA; MISP Objective 4."
+  fr: "Si l'établissement dispose d'un système de référence fonctionnel vers un établissement de niveau supérieur, défini comme : (1) un établissement de destination documenté, (2) un canal de communication opérationnel vers cette destination et (3) un mécanisme de transport convenu. Réponse à trois niveaux : `yes` (les trois éléments en place), `partial` (destination connue mais transport peu fiable ou transport organisé au cas par cas), `no` (aucun système de référence documenté). Rapporté par le responsable de l'établissement. Sphere 2018 Action Santé ; SARA ; MISP Objectif 4."
+  es: "Si el establecimiento cuenta con un sistema de referencia funcional hacia un establecimiento de nivel superior, definido como: (1) un establecimiento de destino documentado, (2) un canal de comunicación operativo hacia ese destino y (3) un mecanismo de transporte acordado. Respuesta de tres niveles: `yes` (los tres elementos en su lugar), `partial` (destino conocido pero transporte poco fiable o transporte organizado ad hoc), `no` (sin sistema de referencia documentado). Reportado por el responsable del establecimiento. Esfera 2018 Acción de Salud; SARA; MISP Objetivo 4."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: governance
+sensitivity: standard

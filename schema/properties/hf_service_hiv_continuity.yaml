@@ -1,0 +1,19 @@
+id: hf_service_hiv_continuity
+maturity: draft
+label:
+  en: "Can continue antiretroviral therapy (ART) for people already on treatment"
+  fr: "Peut poursuivre la thérapie antirétrovirale (TAR) pour les personnes déjà sous traitement"
+  es: "Puede continuar la terapia antirretroviral (TAR) para personas ya en tratamiento"
+
+definition:
+  en: "Whether the facility can continue antiretroviral therapy for people already on treatment, including prevention of mother-to-child transmission (PMTCT). Not 'starts new ART' — just 'can continue'. Reported by the facility in-charge. MISP Objective 3. Sensitive: HIV service availability can identify the facility as serving a stigmatized population. `dont_know` is retained as a distinct response. Extended (non-core)."
+  fr: "Si l'établissement peut poursuivre la thérapie antirétrovirale pour les personnes déjà sous traitement, y compris la prévention de la transmission mère-enfant (PTME). Pas « initier une nouvelle TAR » — seulement « peut poursuivre ». Rapporté par le responsable de l'établissement. MISP Objectif 3. Sensible : la disponibilité des services VIH peut identifier l'établissement comme desservant une population stigmatisée. `dont_know` est conservé comme réponse distincte. Étendu (non-core)."
+  es: "Si el establecimiento puede continuar la terapia antirretroviral para personas ya en tratamiento, incluida la prevención de la transmisión madre-hijo (PTMH). No «iniciar nueva TAR» — solo «puede continuar». Reportado por el responsable del establecimiento. MISP Objetivo 3. Sensible: la disponibilidad de servicios VIH puede identificar al establecimiento como atención a una población estigmatizada. `dont_know` se mantiene como respuesta distinta. Extendido (no-core)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: classification
+sensitivity: sensitive

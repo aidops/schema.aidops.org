@@ -1,0 +1,19 @@
+id: hf_communication_functional
+maturity: draft
+label:
+  en: "Functioning communication means available"
+  fr: "Moyen de communication fonctionnel disponible"
+  es: "Medio de comunicación funcional disponible"
+
+definition:
+  en: "Whether the facility has at least one functioning means of communication (landline telephone, mobile phone with network coverage, or radio) available for referral coordination and emergency contact. Observed by the enumerator. Required by Sphere 2018: facilities must be able to contact a referral destination."
+  fr: "Si l'établissement dispose d'au moins un moyen de communication fonctionnel (téléphone fixe, téléphone mobile avec couverture réseau, ou radio) disponible pour la coordination des références et les contacts d'urgence. Observé par l'enquêteur. Requis par Sphère 2018 : les établissements doivent pouvoir contacter une destination de référence."
+  es: "Si el establecimiento tiene al menos un medio de comunicación funcional (teléfono fijo, teléfono móvil con cobertura de red, o radio) disponible para la coordinación de referencias y contacto de emergencia. Observado por el enumerador. Requerido por Esfera 2018: los establecimientos deben poder contactar un destino de referencia."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: habitability
+sensitivity: standard

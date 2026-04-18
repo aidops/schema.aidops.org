@@ -1,0 +1,17 @@
+id: aap_treated_with_respect_flag
+maturity: draft
+label:
+  en: "AAP: Treated with respect (derived)"
+  fr: "Redevabilité : Traité avec respect (dérivé)"
+  es: "Rendición de cuentas: Tratado con respeto (derivado)"
+definition:
+  en: "Derived household-level boolean: true if `aap_treated_with_respect IN (always, often)`. Maps to CHS 2024 Commitment 8 and to GTS HVI respect indicator."
+  fr: "Booléen dérivé au niveau ménage : vrai si `aap_treated_with_respect IN (always, often)`. Correspond à l'Engagement 8 de la CHS 2024 et à l'indicateur de respect GTS HVI."
+  es: "Booleano derivado a nivel de hogar: verdadero si `aap_treated_with_respect IN (always, often)`. Corresponde al Compromiso 8 de la CHS 2024 y al indicador de respeto de GTS HVI."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

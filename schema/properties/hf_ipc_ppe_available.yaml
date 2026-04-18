@@ -1,0 +1,19 @@
+id: hf_ipc_ppe_available
+maturity: draft
+label:
+  en: "Personal protective equipment (PPE) available today"
+  fr: "Équipements de protection individuelle (EPI) disponibles aujourd'hui"
+  es: "Equipos de protección individual (EPI) disponibles hoy"
+
+definition:
+  en: "Whether personal protective equipment (gloves plus surgical masks, at minimum) is available today in clinical areas. Three-level response: `yes` (both gloves and masks available), `partial` (one of the two available), `no` (neither available). Observed by the enumerator. WASH FIT 2nd edition core indicator; WHO IPC core components; Sphere 2018."
+  fr: "Si des équipements de protection individuelle (gants et masques chirurgicaux au minimum) sont disponibles aujourd'hui dans les zones cliniques. Réponse à trois niveaux : `yes` (gants et masques tous deux disponibles), `partial` (un des deux disponible), `no` (aucun disponible). Observé par l'enquêteur. Indicateur central WASH FIT 2e édition ; composantes centrales de la PCI de l'OMS ; Sphere 2018."
+  es: "Si el equipo de protección individual (guantes y mascarillas quirúrgicas, como mínimo) está disponible hoy en las áreas clínicas. Respuesta de tres niveles: `yes` (guantes y mascarillas ambos disponibles), `partial` (uno de los dos disponible), `no` (ninguno disponible). Observado por el enumerador. Indicador central WASH FIT 2ª edición; componentes centrales de PCI de la OMS; Esfera 2018."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: hygiene
+sensitivity: standard

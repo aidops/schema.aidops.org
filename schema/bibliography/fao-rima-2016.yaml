@@ -1,0 +1,45 @@
+id: fao-rima-2016
+title: "Resilience Index Measurement and Analysis - II (RIMA-II)"
+short_title: "FAO RIMA-II"
+publisher: "Food and Agriculture Organization of the United Nations (FAO)"
+year: 2016
+version: "II"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.fao.org/3/i5665e/i5665e.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - LivelihoodProfile
+  vocabularies:
+    - livelihood-activity-category
+    - livelihood-asset-type
+    - livelihood-shock-type
+    - livelihood-coping-strategy
+    - credit-access-level
+    - humanitarian-assistance-reliance
+    - income-seasonality-pattern
+    - livelihood-change-type
+  properties:
+    - main_livelihood_activity
+    - secondary_livelihood_activities
+    - livelihood_diversity_count
+    - income_sources
+    - income_seasonality
+    - lean_season_months_count
+    - livelihood_change_since_crisis
+    - productive_asset_types_owned
+    - productive_asset_loss_since_crisis
+    - has_savings
+    - access_to_credit
+    - humanitarian_assistance_reliance
+    - shock_experienced_past_12mo
+    - shock_coping_strategy_used
+    - livelihood_programme_participation
+    - income_diversification_index
+    - rima_abs_flag
+    - rima_apt_flag
+    - rima_ac_flag
+    - livelihood_resilience_score

@@ -1,0 +1,18 @@
+id: action_timing_relative_to_impact
+maturity: draft
+label:
+  en: "Action timing relative to impact"
+  fr: "Moment de l'action par rapport à l'impact"
+  es: "Momento de la acción respecto al impacto"
+
+definition:
+  en: "When the household carried out its main protective action relative to the hazard's arrival. Captured on a five-level scale: before_impact_well_in_advance, before_impact_just_in_time, during_impact, after_impact, dont_remember. Applicable when warning_actions_taken has any non-'no_action_taken' value. Supports the IFRC FbF MEAL 'timeliness of action' indicator and the CREWS impact-based forecasting timeliness metrics."
+  fr: "Moment auquel le ménage a réalisé son action de protection principale par rapport à l'arrivée du danger. Capté sur une échelle à cinq niveaux : before_impact_well_in_advance, before_impact_just_in_time, during_impact, after_impact, dont_remember. Applicable si warning_actions_taken contient une valeur autre que « no_action_taken ». Soutient l'indicateur « rapidité d'action » du MEAL FbF de la FICR et les métriques de rapidité des prévisions basées sur les impacts du CREWS."
+  es: "Momento en que el hogar realizó su acción de protección principal respecto a la llegada del peligro. Capturado en una escala de cinco niveles: before_impact_well_in_advance, before_impact_just_in_time, during_impact, after_impact, dont_remember. Aplicable cuando warning_actions_taken contiene un valor distinto de «no_action_taken». Respalda el indicador «oportunidad de la acción» del MEAL FbF de la FICR y las métricas de oportunidad del pronóstico basado en impactos del CREWS."
+
+type: string
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: hazard_event

@@ -1,0 +1,19 @@
+id: aap_aid_timely
+maturity: draft
+label:
+  en: "AAP: Aid arrived on time"
+  fr: "Redevabilité : L'aide est arrivée à temps"
+  es: "Rendición de cuentas: La ayuda llegó a tiempo"
+
+definition:
+  en: "Whether the most recent aid the household received arrived when it was needed. Perception-based; the objective measure belongs to operational M&E data. Maps to CHS 2024 Commitment 2 ('Access timely and effective support in accordance with their specific needs and priorities'). Source: IASC / REACH Menu 2018; GTS HVI timeliness item."
+  fr: "Si l'aide la plus récente reçue par le ménage est arrivée au moment où elle était nécessaire. Fondé sur la perception ; la mesure objective appartient aux données opérationnelles de suivi-évaluation. Correspond à l'Engagement 2 de la CHS 2024 (« Accéder à un soutien opportun et efficace en fonction de leurs besoins et priorités spécifiques »). Source : Menu IASC / REACH 2018 ; item de rapidité GTS HVI."
+  es: "Si la ayuda más reciente que recibió el hogar llegó cuando se necesitaba. Basado en percepción; la medida objetiva pertenece a los datos operativos de seguimiento y evaluación. Corresponde al Compromiso 2 de la CHS 2024 («Acceder a apoyo oportuno y eficaz de acuerdo con sus necesidades y prioridades específicas»). Fuente: Menú IASC / REACH 2018; ítem de oportunidad de GTS HVI."
+
+type: string
+cardinality: single
+vocabulary: aap-timeliness-4
+references: null
+category: aap_timeliness
+core: false
+sensitivity: standard

@@ -1,0 +1,19 @@
+id: income_diversification_index
+maturity: draft
+label:
+  en: "Income diversification index (0-3)"
+  fr: "Indice de diversification des revenus (0-3)"
+  es: "Índice de diversificación de ingresos (0-3)"
+
+definition:
+  en: "Integer 0-3 summarising the breadth of the household income portfolio, derived from `income_sources`. Coded as: 0 = no reported income source; 1 = single source; 2 = two sources; 3 = three or more sources. A lightweight proxy for income resilience used alongside `livelihood_diversity_count`. Drawn from the FAO RIMA-II Adaptive Capacity (AC) pillar indicators and the LSMS-ISA income portfolio module. Derived (computed from item responses), not separately asked."
+  fr: "Entier 0-3 résumant l'ampleur du portefeuille de revenus du ménage, dérivé de `income_sources`. Codé comme : 0 = aucune source de revenu déclarée ; 1 = source unique ; 2 = deux sources ; 3 = trois sources ou plus. Proxy léger de la résilience des revenus utilisé avec `livelihood_diversity_count`. Tiré des indicateurs du pilier Capacité d'adaptation (AC) de FAO RIMA-II et du module portefeuille de revenus LSMS-ISA. Dérivé (calculé à partir des réponses aux items), non demandé séparément."
+  es: "Entero 0-3 que resume la amplitud de la cartera de ingresos del hogar, derivado de `income_sources`. Codificado como: 0 = ninguna fuente de ingresos reportada; 1 = fuente única; 2 = dos fuentes; 3 = tres o más fuentes. Indicador indirecto ligero de la resiliencia de ingresos utilizado junto con `livelihood_diversity_count`. Tomado de los indicadores del pilar Capacidad Adaptativa (AC) de FAO RIMA-II y el módulo de cartera de ingresos LSMS-ISA. Derivado (calculado a partir de las respuestas a los ítems), no preguntado por separado."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

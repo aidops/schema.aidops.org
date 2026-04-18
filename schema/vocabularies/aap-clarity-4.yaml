@@ -1,0 +1,69 @@
+id: aap-clarity-4
+maturity: draft
+label:
+  en: "AAP: Information clarity (4 levels)"
+  fr: "Redevabilité : Clarté de l'information (4 niveaux)"
+  es: "Rendición de cuentas: Claridad de la información (4 niveles)"
+definition:
+  en: "Four-level perceived clarity scale for information-receipt items in the AccountabilityToAffectedPopulationsProfile. Used to measure whether information that has been provided by aid providers (about eligibility, distribution timing, registration processes) is understood by the household. A four-level scale (no neutral midpoint) is used following IASC / REACH 2018 convention to force a directional judgement. 'Don't know' and 'prefer not to answer' are provided as non-substantive options."
+  fr: "Échelle de clarté perçue à quatre niveaux pour les items de réception d'information du Profil de redevabilité envers les populations affectées. Utilisée pour mesurer si l'information fournie par les intervenants (sur l'admissibilité, le calendrier de distribution, les processus d'inscription) est comprise par le ménage. Une échelle à quatre niveaux (sans milieu neutre) est utilisée selon la convention IASC / REACH 2018 pour forcer un jugement directionnel. « Ne sait pas » et « préfère ne pas répondre » sont fournis comme options non substantielles."
+  es: "Escala de claridad percibida de cuatro niveles para los ítems de recepción de información del Perfil de Rendición de Cuentas a las Poblaciones Afectadas. Utilizada para medir si la información proporcionada por los actores humanitarios (sobre elegibilidad, calendario de distribución, procesos de registro) es comprendida por el hogar. Se utiliza una escala de cuatro niveles (sin punto medio neutro) siguiendo la convención IASC / REACH 2018 para forzar un juicio direccional. «No sabe» y «prefiere no responder» se proporcionan como opciones no sustantivas."
+standard:
+  name: "IASC / REACH Menu of AAP Questions for Needs Assessments 2018"
+  uri: "https://interagencystandingcommittee.org/sites/default/files/migrated/2018-06/reach_iasc_aap_psea_task_team_menu_of_aap_questions_for_needs_assessments_june_2018.pdf"
+  notes: "Clarity 4-level wording drawn from the IASC / REACH menu information-receipt section."
+values:
+  - code: very_clear
+    label:
+      en: "Very clear"
+      fr: "Très clair"
+      es: "Muy claro"
+    definition:
+      en: "The respondent reports that the information is entirely understandable."
+      fr: "Le répondant rapporte que l'information est entièrement compréhensible."
+      es: "El encuestado reporta que la información es completamente comprensible."
+  - code: somewhat_clear
+    label:
+      en: "Somewhat clear"
+      fr: "Assez clair"
+      es: "Algo claro"
+    definition:
+      en: "The respondent reports that the information is mostly understandable but has gaps or ambiguities."
+      fr: "Le répondant rapporte que l'information est globalement compréhensible mais comporte des lacunes ou des ambiguïtés."
+      es: "El encuestado reporta que la información es mayormente comprensible pero tiene vacíos o ambigüedades."
+  - code: not_very_clear
+    label:
+      en: "Not very clear"
+      fr: "Pas très clair"
+      es: "Poco claro"
+    definition:
+      en: "The respondent reports that the information is difficult to understand."
+      fr: "Le répondant rapporte que l'information est difficile à comprendre."
+      es: "El encuestado reporta que la información es difícil de comprender."
+  - code: not_at_all_clear
+    label:
+      en: "Not at all clear"
+      fr: "Pas du tout clair"
+      es: "Nada claro"
+    definition:
+      en: "The respondent reports that the information is incomprehensible or misleading."
+      fr: "Le répondant rapporte que l'information est incompréhensible ou trompeuse."
+      es: "El encuestado reporta que la información es incomprensible o engañosa."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent does not know or cannot assess the clarity of the information."
+      fr: "Le répondant ne sait pas ou ne peut pas évaluer la clarté de l'information."
+      es: "El encuestado no sabe o no puede evaluar la claridad de la información."
+  - code: prefer_not_to_answer
+    label:
+      en: "Prefer not to answer"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent declines to answer."
+      fr: "Le répondant refuse de répondre."
+      es: "El encuestado se niega a responder."

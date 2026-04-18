@@ -1,0 +1,60 @@
+id: tenure-security-3
+maturity: draft
+label:
+  en: "Tenure Security (perceived, 3-year horizon)"
+  fr: "Sécurité foncière (perçue, horizon 3 ans)"
+  es: "Seguridad de tenencia (percibida, horizonte de 3 años)"
+definition:
+  en: "Four-level subjective scale, plus a 'don't know' option, capturing the household's perceived security of its right to continue using its agricultural land over the next three years. Based on LSMS-ISA subjective-tenure-security questions and the PRINDEX (Property Rights Index) methodology. The three-year horizon is intentionally short enough to be meaningful to respondents and long enough to capture practical planning uncertainty. Complements objective tenure arrangement (`land-tenure`): a household may hold land 'owned_with_title' yet still feel insecure in a context of political instability, or hold land 'informal' yet feel secure on customary grounds."
+  fr: "Échelle subjective à quatre niveaux, plus une option « ne sait pas », saisissant la sécurité perçue par le ménage quant à son droit de continuer à utiliser sa terre agricole au cours des trois prochaines années. Basée sur les questions de sécurité foncière subjective du LSMS-ISA et la méthodologie PRINDEX (Indice des droits de propriété). L'horizon de trois ans est intentionnellement assez court pour être significatif pour les répondants et assez long pour saisir l'incertitude pratique de planification. Complète l'arrangement foncier objectif (`land-tenure`) : un ménage peut détenir une terre « owned_with_title » et pourtant se sentir en insécurité dans un contexte d'instabilité politique, ou détenir une terre « informal » et se sentir sécurisé pour des raisons coutumières."
+  es: "Escala subjetiva de cuatro niveles, más una opción 'no sabe', que captura la seguridad percibida por el hogar sobre su derecho a continuar usando su tierra agrícola durante los próximos tres años. Basada en las preguntas de seguridad subjetiva de tenencia del LSMS-ISA y la metodología PRINDEX (Índice de Derechos de Propiedad). El horizonte de tres años es intencionalmente lo suficientemente corto para ser significativo para los encuestados y lo suficientemente largo para capturar la incertidumbre práctica de planificación. Complementa el arreglo objetivo de tenencia (`land-tenure`): un hogar puede tener tierra 'owned_with_title' y aun así sentirse inseguro en un contexto de inestabilidad política, o tener tierra 'informal' y sentirse seguro por motivos consuetudinarios."
+standard:
+  name: "LSMS-ISA Agricultural Survey Design Guidebook / PRINDEX (Property Rights Index)"
+  uri: "https://www.prindex.net/"
+  notes: "Subjective tenure security captured through a categorical scale is the standard approach used by the World Bank LSMS-ISA and Prindex surveys. The four-band scale (very secure, somewhat secure, somewhat insecure, very insecure) is harmonised with Prindex reporting bands."
+values:
+  - code: very_secure
+    label:
+      en: "Very secure"
+      fr: "Très sécurisé"
+      es: "Muy seguro"
+    definition:
+      en: "Household feels very confident it will retain the right to use this land for the next 3 years."
+      fr: "Le ménage se sent très confiant qu'il conservera le droit d'utiliser cette terre au cours des 3 prochaines années."
+      es: "El hogar se siente muy confiado de que mantendrá el derecho a usar esta tierra durante los próximos 3 años."
+  - code: somewhat_secure
+    label:
+      en: "Somewhat secure"
+      fr: "Assez sécurisé"
+      es: "Algo seguro"
+    definition:
+      en: "Household feels it will probably retain the right to use this land over the next 3 years but has some uncertainty."
+      fr: "Le ménage estime qu'il conservera probablement le droit d'utiliser cette terre au cours des 3 prochaines années mais avec une certaine incertitude."
+      es: "El hogar cree que probablemente mantendrá el derecho a usar esta tierra durante los próximos 3 años pero con cierta incertidumbre."
+  - code: somewhat_insecure
+    label:
+      en: "Somewhat insecure"
+      fr: "Assez peu sécurisé"
+      es: "Algo inseguro"
+    definition:
+      en: "Household feels it may lose the right to use this land within the next 3 years."
+      fr: "Le ménage estime qu'il pourrait perdre le droit d'utiliser cette terre au cours des 3 prochaines années."
+      es: "El hogar cree que podría perder el derecho a usar esta tierra durante los próximos 3 años."
+  - code: very_insecure
+    label:
+      en: "Very insecure"
+      fr: "Très peu sécurisé"
+      es: "Muy inseguro"
+    definition:
+      en: "Household feels it is likely to lose the right to use this land within the next 3 years."
+      fr: "Le ménage estime qu'il risque fortement de perdre le droit d'utiliser cette terre au cours des 3 prochaines années."
+      es: "El hogar cree que es probable que pierda el derecho a usar esta tierra durante los próximos 3 años."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Household cannot assess its tenure security. Retained as a distinct valid response and must not be re-coded as 'insecure' or missing."
+      fr: "Le ménage ne peut pas évaluer sa sécurité foncière. Conservée comme réponse valide distincte et ne doit pas être recodée comme « insécurisé » ou manquant."
+      es: "El hogar no puede evaluar su seguridad de tenencia. Se mantiene como respuesta válida distinta y no debe recodificarse como 'inseguro' o faltante."

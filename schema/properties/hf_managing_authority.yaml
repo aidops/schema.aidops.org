@@ -1,0 +1,19 @@
+id: hf_managing_authority
+maturity: draft
+label:
+  en: "Facility managing authority"
+  fr: "Autorité gestionnaire de l'établissement"
+  es: "Autoridad gestora del establecimiento"
+
+definition:
+  en: "The entity that owns or operates the facility (Ministry of Health, other ministry, national or international NGO, faith-based organization, private for-profit or non-profit, UN agency, mixed public-private, other). Reported by the facility in-charge. Primary stratifier per WHO SARA, HHFA, HeRAMS, and DHS SPA."
+  fr: "L'entité qui possède ou exploite l'établissement (Ministère de la Santé, autre ministère, ONG nationale ou internationale, organisation confessionnelle, privé à but lucratif ou non lucratif, agence des Nations Unies, public-privé mixte, autre). Rapporté par le responsable de l'établissement. Stratificateur primaire selon SARA, HHFA, HeRAMS de l'OMS et DHS SPA."
+  es: "La entidad que posee u opera el establecimiento (Ministerio de Salud, otro ministerio, ONG nacional o internacional, organización confesional, privado con o sin fines de lucro, agencia de Naciones Unidas, mixto público-privado, otro). Reportado por el responsable del establecimiento. Estratificador primario según SARA, HHFA, HeRAMS de la OMS y DHS SPA."
+
+type: string
+cardinality: single
+core: true
+vocabulary: facility-managing-authority
+references: null
+category: classification
+sensitivity: standard

@@ -1,0 +1,19 @@
+id: hf_waste_segregation
+maturity: draft
+label:
+  en: "Healthcare waste segregated at point of generation"
+  fr: "Déchets de soins triés au point de production"
+  es: "Residuos sanitarios segregados en el punto de generación"
+
+definition:
+  en: "Whether healthcare waste is segregated at the point of generation into the three standard streams (sharps, infectious, general). Three-level response: `yes` (all three streams correctly separated), `partial` (some streams separated but not all), `no` (no segregation). Observed by the enumerator. WASH FIT core indicator. Extended (non-core)."
+  fr: "Si les déchets de soins sont triés au point de production selon les trois flux standard (tranchants, infectieux, généraux). Réponse à trois niveaux : `yes` (les trois flux correctement séparés), `partial` (certains flux séparés mais pas tous), `no` (aucun tri). Observé par l'enquêteur. Indicateur central WASH FIT. Étendu (non-core)."
+  es: "Si los residuos sanitarios se segregan en el punto de generación en los tres flujos estándar (cortopunzantes, infecciosos, generales). Respuesta de tres niveles: `yes` (los tres flujos correctamente separados), `partial` (algunos flujos separados pero no todos), `no` (sin segregación). Observado por el enumerador. Indicador central WASH FIT. Extendido (no-core)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-partial
+references: null
+category: hygiene
+sensitivity: standard

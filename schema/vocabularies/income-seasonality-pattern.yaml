@@ -1,0 +1,49 @@
+id: income-seasonality-pattern
+maturity: draft
+label:
+  en: Income Seasonality Pattern
+  fr: "Schéma de saisonnalité des revenus"
+  es: "Patrón de estacionalidad de ingresos"
+definition:
+  en: "Household-level assessment of income stability across the year. Synthesised from the LSMS-ISA seasonal module and the Sphere 2018 Livelihoods chapter's seasonal vulnerability calendar concept. Used to characterise whether household income is stable, moderately variable, strongly seasonal, or unpredictable, to identify households whose income is seasonally precarious."
+  fr: "Évaluation au niveau du ménage de la stabilité des revenus à travers l'année. Synthétisé à partir du module saisonnier LSMS-ISA et du concept de calendrier de vulnérabilité saisonnière du chapitre Moyens de subsistance de Sphère 2018. Utilisé pour caractériser si le revenu du ménage est stable, modérément variable, fortement saisonnier ou imprévisible, afin d'identifier les ménages dont le revenu est saisonnièrement précaire."
+  es: "Evaluación a nivel del hogar de la estabilidad de los ingresos a lo largo del año. Sintetizado a partir del módulo estacional LSMS-ISA y el concepto de calendario de vulnerabilidad estacional del capítulo de Medios de Vida de Esfera 2018. Se utiliza para caracterizar si el ingreso del hogar es estable, moderadamente variable, fuertemente estacional o impredecible, para identificar hogares cuyo ingreso es estacionalmente precario."
+standard:
+  name: "Synthesised from LSMS-ISA seasonal module and Sphere 2018 Livelihoods chapter"
+values:
+  - code: stable_year_round
+    label:
+      en: Stable year-round
+      fr: "Stable toute l'année"
+      es: "Estable todo el año"
+    definition:
+      en: "Income is relatively constant throughout the year with no significant seasonal fluctuation."
+      fr: "Le revenu est relativement constant tout au long de l'année, sans fluctuation saisonnière significative."
+      es: "El ingreso es relativamente constante durante todo el año sin fluctuación estacional significativa."
+  - code: mostly_stable_minor_fluctuation
+    label:
+      en: "Mostly stable — minor seasonal variation"
+      fr: "Principalement stable — légère variation saisonnière"
+      es: "Principalmente estable — variación estacional menor"
+    definition:
+      en: "Income fluctuates seasonally but the household can meet needs in all months."
+      fr: "Le revenu fluctue selon les saisons mais le ménage peut couvrir ses besoins tous les mois."
+      es: "El ingreso fluctúa estacionalmente pero el hogar puede cubrir sus necesidades todos los meses."
+  - code: seasonal_major_fluctuation
+    label:
+      en: "Seasonal — major fluctuation"
+      fr: "Saisonnier — fluctuation majeure"
+      es: "Estacional — fluctuación mayor"
+    definition:
+      en: "Income varies significantly by season; there are months when income is insufficient to meet basic needs."
+      fr: "Le revenu varie significativement selon la saison ; certains mois, le revenu est insuffisant pour couvrir les besoins de base."
+      es: "El ingreso varía significativamente por temporada; hay meses en los que el ingreso es insuficiente para cubrir las necesidades básicas."
+  - code: highly_irregular
+    label:
+      en: "Highly irregular — unpredictable"
+      fr: "Très irrégulier — imprévisible"
+      es: "Muy irregular — impredecible"
+    definition:
+      en: "Income has no predictable seasonal pattern and can drop to near zero at any time."
+      fr: "Le revenu n'a pas de schéma saisonnier prévisible et peut tomber à presque zéro à tout moment."
+      es: "El ingreso no tiene un patrón estacional predecible y puede bajar a casi cero en cualquier momento."

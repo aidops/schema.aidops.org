@@ -1,0 +1,18 @@
+id: community_type
+maturity: draft
+label:
+  en: "Community type"
+  fr: "Type de communauté"
+  es: "Tipo de comunidad"
+
+definition:
+  en: "The displacement-status composition of the community: host, displaced, mixed, or other. Distinguishes a host village community from a displacement-site population or a mixed host-plus-displaced community for coordination and targeting purposes."
+  fr: "La composition de la communauté en matière de statut de déplacement : hôte, déplacée, mixte ou autre. Distingue une communauté villageoise d'accueil d'une population de site de déplacement ou d'une communauté mixte accueil-déplacés à des fins de coordination et de ciblage."
+  es: "La composición de la comunidad en cuanto al estatus de desplazamiento: anfitriona, desplazada, mixta u otra. Distingue una comunidad de aldea de acogida de una población de sitio de desplazamiento o de una comunidad mixta de acogida y desplazados para fines de coordinación y focalización."
+
+type: string
+cardinality: single
+vocabulary: community-type
+references: null
+category: context
+valid_instruments: [mira, iom_dtm, reach_hsm]

@@ -1,0 +1,19 @@
+id: rima_ac_flag
+maturity: draft
+label:
+  en: "RIMA-II Adaptive Capacity (AC) signal flag"
+  fr: "Indicateur du pilier Capacité d'adaptation (AC) de RIMA-II"
+  es: "Indicador del pilar Capacidad Adaptativa (AC) de RIMA-II"
+
+definition:
+  en: "Boolean flag indicating whether the LivelihoodProfile captures at least one signal for the FAO RIMA-II Adaptive Capacity (AC) pillar. Typically set to true when `livelihood_diversity_count`, `income_diversification_index`, `has_savings`, or `shock_coping_strategy_used` is recorded. Used for downstream RIMA-II pillar computation and coverage reporting. Drawn from the FAO RIMA-II methodology (2016). Derived, not asked."
+  fr: "Indicateur booléen signalant si le LivelihoodProfile capture au moins un signal pour le pilier Capacité d'adaptation (AC) de FAO RIMA-II. Généralement vrai lorsque `livelihood_diversity_count`, `income_diversification_index`, `has_savings` ou `shock_coping_strategy_used` est enregistré. Utilisé pour le calcul en aval des piliers RIMA-II et le reporting de couverture. Tiré de la méthodologie FAO RIMA-II (2016). Dérivé, non demandé."
+  es: "Indicador booleano que señala si el LivelihoodProfile captura al menos una señal para el pilar Capacidad Adaptativa (AC) de FAO RIMA-II. Generalmente verdadero cuando se registra `livelihood_diversity_count`, `income_diversification_index`, `has_savings` o `shock_coping_strategy_used`. Utilizado para el cálculo posterior de pilares RIMA-II e informes de cobertura. Tomado de la metodología FAO RIMA-II (2016). Derivado, no preguntado."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

@@ -1,0 +1,24 @@
+id: unhcr-agd-2018
+title: "UNHCR Age, Gender and Diversity Policy"
+short_title: "UNHCR AGD"
+publisher: "United Nations High Commissioner for Refugees"
+year: 2018
+version: "Current policy"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unhcr.org/age-gender-and-diversity"
+access: open
+status: active
+
+informs:
+  concepts:
+    - CommunityNeedsProfile
+  vocabularies:
+    - priority-group-category
+  properties:
+    - cn_informant_group_women
+    - cn_informant_group_men
+    - cn_informant_group_youth
+    - cn_informant_group_elderly
+    - cn_informant_group_pwd
+    - cn_priority_group_most_in_need

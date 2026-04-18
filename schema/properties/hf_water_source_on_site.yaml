@@ -1,0 +1,19 @@
+id: hf_water_source_on_site
+maturity: draft
+label:
+  en: "Water source on-site"
+  fr: "Source d'eau sur site"
+  es: "Fuente de agua en el sitio"
+
+definition:
+  en: "Whether the facility has a water source inside the facility or on the facility grounds. `yes` if functioning at time of visit; `yes_but_not_functional` if present but not providing water today; `no` otherwise. SARA tracer for basic amenities: improved water source on-site (or within 500 m), functional at time of visit. Observed by the enumerator."
+  fr: "Si l'établissement dispose d'une source d'eau à l'intérieur ou sur le terrain de l'établissement. `yes` si fonctionnelle au moment de la visite ; `yes_but_not_functional` si présente mais ne fournissant pas d'eau aujourd'hui ; `no` sinon. Indicateur traceur SARA pour les aménités de base : source d'eau améliorée sur site (ou à moins de 500 m), fonctionnelle au moment de la visite. Observé par l'enquêteur."
+  es: "Si el establecimiento tiene una fuente de agua dentro del establecimiento o en su terreno. `yes` si funciona en el momento de la visita; `yes_but_not_functional` si está presente pero no suministra agua hoy; `no` en caso contrario. Indicador trazador SARA para servicios básicos: fuente de agua mejorada en el sitio (o a menos de 500 m), funcional en el momento de la visita. Observado por el enumerador."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: water
+sensitivity: standard

@@ -1,0 +1,49 @@
+id: iasc-reach-aap-menu-2018
+title: "Menu of AAP Questions for Needs Assessments (Multi-Sector Needs Assessment AAP module)"
+short_title: "IASC / REACH AAP Menu 2018"
+publisher: "REACH Initiative (IMPACT Initiatives) in partnership with the IASC AAP/PSEA Task Team"
+year: 2018
+version: "June 2018"
+type: guidance_publication
+domain: humanitarian
+uri: "https://interagencystandingcommittee.org/sites/default/files/migrated/2018-06/reach_iasc_aap_psea_task_team_menu_of_aap_questions_for_needs_assessments_june_2018.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - AccountabilityToAffectedPopulationsProfile
+  vocabularies:
+    - aap-yesno-dk
+    - aap-clarity-4
+    - aap-info-channel
+    - aap-feedback-channel
+    - aap-likelihood-4
+    - aap-complaint-barrier
+    - aap-satisfaction-5
+    - aap-safety-4
+    - aap-timeliness-4
+    - aap-sufficient-4
+    - aap-frequency-5
+  properties:
+    - aap_info_received
+    - aap_info_eligibility_clear
+    - aap_info_distribution_timing_clear
+    - aap_info_how_to_register_clear
+    - aap_info_channel_preferred
+    - aap_consulted_before_aid
+    - aap_needs_reflected_in_aid
+    - aap_complaint_channel_known
+    - aap_complaint_channel_known_types
+    - aap_complaint_would_use
+    - aap_complaint_would_use_why_not
+    - aap_complaint_filed_past
+    - aap_complaint_response_satisfaction
+    - aap_feels_safe_with_responders
+    - aap_aid_timely
+    - aap_aid_met_priority_needs
+    - aap_aid_quantity_sufficient
+    - aap_selection_fair_perception
+    - aap_selection_process_transparent
+    - aap_treated_with_respect
+    - aap_dignity_preserved

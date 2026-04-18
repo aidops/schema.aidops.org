@@ -1,0 +1,18 @@
+id: cn_coverage_gap_description
+maturity: draft
+label:
+  en: "Coverage gap description"
+  fr: "Description de la lacune de couverture"
+  es: "Descripción de la brecha de cobertura"
+
+definition:
+  en: "Free-text description of which groups the community believes are being left out of the response and why, covering the past 90 days. Maximum 400 characters. Asked only when cn_coverage_gap_perceived = 'yes'. Not-sensitive by default: describes perceived gaps in response coverage and is useful for Accountability to Affected Populations (AAP) feedback; not identifying of individuals. Derived from the IASC AAP framework and CHS Commitment 4."
+  fr: "Description en texte libre des groupes que la communauté estime laissés de côté par la réponse et des raisons, couvrant les 90 derniers jours. Maximum 400 caractères. Demandée uniquement lorsque cn_coverage_gap_perceived = « oui ». Non sensible par défaut : décrit des lacunes perçues dans la couverture de la réponse et est utile pour la redevabilité envers les populations affectées (AAP) ; n'identifie pas d'individus. Tiré du cadre AAP de l'IASC et de l'engagement 4 de la NHC."
+  es: "Descripción en texto libre de los grupos que la comunidad considera que están siendo dejados de lado por la respuesta y por qué, correspondiente a los últimos 90 días. Máximo 400 caracteres. Se pregunta solo cuando cn_coverage_gap_perceived = «sí». No sensible por defecto: describe brechas percibidas en la cobertura de la respuesta y es útil para la retroalimentación de Rendición de Cuentas a las Poblaciones Afectadas (AAP); no identifica a individuos. Derivado del marco AAP del IASC y el Compromiso 4 de la NHC."
+
+type: string
+cardinality: single
+vocabulary: null
+references: null
+category: context
+core: false

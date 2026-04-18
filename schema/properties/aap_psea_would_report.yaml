@@ -1,0 +1,19 @@
+id: aap_psea_would_report
+maturity: draft
+label:
+  en: "AAP: Would report a PSEA incident"
+  fr: "Redevabilité : Signalerait un incident PSEA"
+  es: "Rendición de cuentas: Denunciaría un incidente PSEA"
+
+definition:
+  en: "Hypothetical likelihood that the respondent would report a suspected SEA or misconduct incident if they or someone they know experienced it. Asked regardless of `aap_psea_reporting_channel_known`: a respondent who does not know a channel can still meaningfully answer the hypothetical. PSEA-adjacent and `sensitive`. Source: IASC CAAP 2017 PSEA; CHS Alliance auditor guidance on PSEA indicators."
+  fr: "Probabilité hypothétique que le répondant signale un incident d'EAS ou d'inconduite présumée si lui-même ou une personne qu'il connaît en était victime. Demandé indépendamment de `aap_psea_reporting_channel_known` : un répondant qui ne connaît pas de canal peut toujours répondre de manière significative à l'hypothèse. Lié à la PSEA et `sensitive`. Source : PSEA CAAP IASC 2017 ; orientations des auditeurs CHS Alliance sur les indicateurs PSEA."
+  es: "Probabilidad hipotética de que el encuestado denuncie un incidente de EAS o mala conducta si él o alguien que conoce lo experimentara. Se pregunta independientemente de `aap_psea_reporting_channel_known`: un encuestado que no conoce un canal aún puede responder significativamente a la hipótesis. Relacionado con PSEA y `sensitive`. Fuente: PSEA CAAP IASC 2017; orientaciones de auditores de CHS Alliance sobre indicadores PSEA."
+
+type: string
+cardinality: single
+vocabulary: aap-likelihood-4
+references: null
+category: aap_trust_safety
+core: false
+sensitivity: sensitive

@@ -1,0 +1,18 @@
+id: warning_had_action_guidance
+maturity: draft
+label:
+  en: "Warning included action guidance"
+  fr: "L'alerte incluait des consignes d'action"
+  es: "La alerta incluyó orientación para la acción"
+
+definition:
+  en: "Whether the warning told the household clearly what actions to take to protect themselves and their property. Captured on a four-level scale: yes, no, partially, dont_remember. Applicable only when warning_received is yes. Action guidance is the bridge between WMO MHEWS pillar 3 (dissemination) and pillar 4 (response capability), and is the normative requirement of Sphere 2018 Core Standard 1 (affected populations receive timely, accurate, and actionable information)."
+  fr: "Indique si l'alerte a dit clairement au ménage quelles actions entreprendre pour se protéger et protéger ses biens. Capté sur une échelle à quatre niveaux : yes, no, partially, dont_remember. Applicable uniquement si warning_received est oui. Les consignes d'action constituent le pont entre le pilier 3 du WMO MHEWS (diffusion) et le pilier 4 (capacité de réponse), et constituent l'exigence normative de la Norme fondamentale 1 de Sphère 2018 (les populations affectées reçoivent des informations opportunes, exactes et exploitables)."
+  es: "Indica si la alerta dijo claramente al hogar qué acciones tomar para protegerse a sí mismos y a sus bienes. Capturado en una escala de cuatro niveles: yes, no, partially, dont_remember. Aplicable solo cuando warning_received es sí. La orientación sobre acción es el puente entre el pilar 3 del MHEWS de la OMM (difusión) y el pilar 4 (capacidad de respuesta), y constituye el requisito normativo del Estándar Central 1 de Esfera 2018 (las poblaciones afectadas reciben información oportuna, exacta y accionable)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: hazard_event

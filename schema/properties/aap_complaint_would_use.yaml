@@ -1,0 +1,19 @@
+id: aap_complaint_would_use
+maturity: draft
+label:
+  en: "AAP: Would use complaint channel"
+  fr: "Redevabilité : Utiliserait le canal de plainte"
+  es: "Rendición de cuentas: Usaría el canal de quejas"
+
+definition:
+  en: "Hypothetical likelihood that the respondent would use one of the known complaint channels if they had a concern. Asked regardless of `aap_complaint_channel_known`: a respondent who does not know a channel can still meaningfully answer 'not at all likely' for reasons of distrust, fear of retaliation, or perceived futility. Maps to CHS 2024 Commitment 5 Key Action 5.2 ('access to safe and responsive ways to raise concerns or complaints'). GTS HVI 'meaningful access' indicator."
+  fr: "Probabilité hypothétique que le répondant utilise un des canaux de plainte connus s'il avait une préoccupation. Demandé indépendamment de `aap_complaint_channel_known` : un répondant qui ne connaît pas de canal peut toujours répondre de manière significative « pas du tout probable » pour des raisons de méfiance, de peur de représailles ou de futilité perçue. Correspond à l'Engagement 5 Action clé 5.2 de la CHS 2024 (« accès à des moyens sûrs et réactifs pour soulever des préoccupations ou des plaintes »). Indicateur d'« accès significatif » de GTS HVI."
+  es: "Probabilidad hipotética de que el encuestado utilice uno de los canales de quejas conocidos si tuviera una inquietud. Se pregunta independientemente de `aap_complaint_channel_known`: un encuestado que no conoce un canal aún puede responder significativamente «nada probable» por razones de desconfianza, miedo a represalias o futilidad percibida. Corresponde al Compromiso 5 Acción Clave 5.2 de la CHS 2024 («acceso a medios seguros y receptivos para plantear inquietudes o quejas»). Indicador de «acceso significativo» de GTS HVI."
+
+type: string
+cardinality: single
+vocabulary: aap-likelihood-4
+references: null
+category: aap_feedback
+core: false
+sensitivity: standard

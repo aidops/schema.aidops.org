@@ -1,0 +1,19 @@
+id: hf_ipc_waste_final_disposal
+maturity: draft
+label:
+  en: "Healthcare waste final disposal method"
+  fr: "Méthode finale d'élimination des déchets de soins"
+  es: "Método de eliminación final de residuos sanitarios"
+
+definition:
+  en: "Method used by the facility for the final disposal of healthcare waste (infectious, sharps, pathological). Reported by the facility in-charge and verified by enumerator observation where possible. WASH FIT 2nd edition Healthcare Waste Management; Sphere 2018. Open burning and `no_system` are explicit red flags per WASH FIT. Extended (non-core)."
+  fr: "Méthode utilisée par l'établissement pour l'élimination finale des déchets de soins (infectieux, tranchants, pathologiques). Rapporté par le responsable de l'établissement et vérifié par observation de l'enquêteur lorsque cela est possible. Gestion des déchets de soins WASH FIT 2e édition ; Sphere 2018. Le brûlage à l'air libre et `no_system` sont des signaux d'alerte explicites pour WASH FIT. Étendu (non-core)."
+  es: "Método utilizado por el establecimiento para la eliminación final de residuos sanitarios (infecciosos, cortopunzantes, patológicos). Reportado por el responsable del establecimiento y verificado por observación del enumerador cuando sea posible. Gestión de Residuos Sanitarios WASH FIT 2ª edición; Esfera 2018. La quema al aire libre y `no_system` son señales de alerta explícitas para WASH FIT. Extendido (no-core)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: healthcare-waste-disposal
+references: null
+category: hygiene
+sensitivity: standard

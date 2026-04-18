@@ -1,0 +1,20 @@
+id: ifrc-pgi-aa-toolkit
+title: "Protection, Gender and Inclusion (PGI) in Anticipatory Action Toolkit"
+short_title: "IFRC PGI in AA Toolkit"
+publisher: "IFRC"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ifrc.org/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - WarningResponseProfile
+  vocabularies:
+    - warning-action-barrier
+  properties:
+    - warning_action_barriers
+    - warning_primary_barrier
+    - warning_reception_gender_gap

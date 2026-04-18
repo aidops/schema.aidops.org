@@ -1,0 +1,58 @@
+id: who-hhfa-2022
+title: "Harmonized Health Facility Assessment (HHFA): Service Readiness and Service Availability Core Questionnaires"
+short_title: "WHO HHFA 2022"
+publisher: "World Health Organization (WHO)"
+year: 2022
+type: guidance_publication
+domain: health
+uri: "https://www.who.int/publications/m/item/harmonized-health-facility-assessment-service-readiness-core-questionnaire-october-2022"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthFacilityProfile
+  vocabularies:
+    - facility-managing-authority
+    - facility-functionality-status
+    - facility-electricity-source
+  properties:
+    - hf_facility_type
+    - hf_facility_level
+    - hf_managing_authority
+    - hf_catchment_population
+    - hf_water_source_on_site
+    - hf_water_source_type
+    - hf_water_available_today
+    - hf_electricity_source
+    - hf_electricity_reliable
+    - hf_cold_chain_functional
+    - hf_communication_functional
+    - hf_handwashing_at_consultation
+    - hf_waste_segregation
+    - hf_staff_md_present
+    - hf_staff_midwife_present
+    - hf_staff_nurse_present
+    - hf_staff_chw_linked
+    - hf_staff_total_fte
+    - hf_staff_vacancy_rate
+    - hf_staff_trained_recent
+    - hf_service_opd
+    - hf_service_ipd
+    - hf_service_anc
+    - hf_service_delivery
+    - hf_service_child_immunization
+    - hf_service_child_curative
+    - hf_service_family_planning
+    - hf_service_ncd
+    - hf_commodity_ors_available
+    - hf_commodity_zinc_available
+    - hf_commodity_amoxicillin_dt_available
+    - hf_commodity_amoxicillin_cap_available
+    - hf_commodity_act_available
+    - hf_commodity_rdt_malaria_available
+    - hf_commodity_insulin_available
+    - hf_commodity_amlodipine_available
+    - hf_commodity_salbutamol_inhaler_available
+    - hf_commodity_stockout_14d
+    - hf_ipc_written_ipc_protocol

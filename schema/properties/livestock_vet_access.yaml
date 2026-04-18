@@ -1,0 +1,19 @@
+id: livestock_vet_access
+maturity: draft
+label:
+  en: "Household had access to veterinary services in the last 12 months"
+  fr: "Le ménage a eu accès à des services vétérinaires au cours des 12 derniers mois"
+  es: "El hogar tuvo acceso a servicios veterinarios en los últimos 12 meses"
+
+definition:
+  en: "Whether the household had access to a veterinarian, animal-health worker, or veterinary-drug supplier when it needed one for its animals during the past 12 months. Drawn from the LSMS-ISA livestock module and FAO WCA 2020 Theme 06 (agricultural services). `dont_know` is retained as a distinct valid response. Asked only when `hh_owns_livestock` is `yes`."
+  fr: "Si le ménage a eu accès à un vétérinaire, un agent de santé animale ou un fournisseur de médicaments vétérinaires lorsqu'il en avait besoin pour ses animaux au cours des 12 derniers mois. Tiré du module bétail du LSMS-ISA et du Thème 06 du WCA 2020 de la FAO (services agricoles). `dont_know` est conservé comme réponse valide distincte. Posée uniquement lorsque `hh_owns_livestock` est `yes`."
+  es: "Si el hogar tuvo acceso a un veterinario, trabajador de salud animal o proveedor de medicamentos veterinarios cuando lo necesitaba para sus animales durante los últimos 12 meses. Tomado del módulo de ganado de LSMS-ISA y del Tema 06 del WCA 2020 de la FAO (servicios agrícolas). `dont_know` se mantiene como respuesta válida distinta. Se pregunta solo cuando `hh_owns_livestock` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: context
+sensitivity: sensitive

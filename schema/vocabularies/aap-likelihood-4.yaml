@@ -1,0 +1,78 @@
+id: aap-likelihood-4
+maturity: draft
+label:
+  en: "AAP: Hypothetical likelihood (4 levels)"
+  fr: "Redevabilité : Probabilité hypothétique (4 niveaux)"
+  es: "Rendición de cuentas: Probabilidad hipotética (4 niveles)"
+definition:
+  en: "Four-level hypothetical-likelihood scale used in the AccountabilityToAffectedPopulationsProfile for items that ask how likely the respondent would be to take an action (use a complaint channel, report a safeguarding concern). The scale is directional with no neutral midpoint, following GTS HVI and IASC / REACH 2018 convention. The `not_applicable_no_channel` code captures the case where the respondent would be willing in principle but no channel exists; this distinction matters for programmatic response design."
+  fr: "Échelle de probabilité hypothétique à quatre niveaux utilisée dans le Profil de redevabilité envers les populations affectées pour les items qui demandent à quel point le répondant serait susceptible d'agir (utiliser un canal de plainte, signaler une préoccupation de sauvegarde). L'échelle est directionnelle sans milieu neutre, suivant la convention GTS HVI et IASC / REACH 2018. Le code `not_applicable_no_channel` capture le cas où le répondant serait disposé en principe mais aucun canal n'existe ; cette distinction est importante pour la conception de la réponse programmatique."
+  es: "Escala de probabilidad hipotética de cuatro niveles utilizada en el Perfil de Rendición de Cuentas a las Poblaciones Afectadas para los ítems que preguntan qué tan probable sería que el encuestado tomara una acción (utilizar un canal de queja, reportar una preocupación de salvaguardia). La escala es direccional sin punto medio neutro, siguiendo la convención GTS HVI e IASC / REACH 2018. El código `not_applicable_no_channel` captura el caso en el que el encuestado estaría dispuesto en principio pero no existe un canal; esta distinción importa para el diseño de la respuesta programática."
+standard:
+  name: "Humanitarian Voice Index (Ground Truth Solutions)"
+  uri: "https://humanitarianvoiceindex.org"
+  notes: "Likelihood scale convention used across GTS HVI and cross-referenced in IASC / REACH AAP menu 2018."
+values:
+  - code: very_likely
+    label:
+      en: "Very likely"
+      fr: "Très probable"
+      es: "Muy probable"
+    definition:
+      en: "The respondent would take the action with high confidence."
+      fr: "Le répondant prendrait l'action avec une grande confiance."
+      es: "El encuestado tomaría la acción con alta confianza."
+  - code: somewhat_likely
+    label:
+      en: "Somewhat likely"
+      fr: "Assez probable"
+      es: "Algo probable"
+    definition:
+      en: "The respondent would probably take the action."
+      fr: "Le répondant prendrait probablement l'action."
+      es: "El encuestado probablemente tomaría la acción."
+  - code: not_very_likely
+    label:
+      en: "Not very likely"
+      fr: "Peu probable"
+      es: "Poco probable"
+    definition:
+      en: "The respondent would probably not take the action."
+      fr: "Le répondant ne prendrait probablement pas l'action."
+      es: "El encuestado probablemente no tomaría la acción."
+  - code: not_at_all_likely
+    label:
+      en: "Not at all likely"
+      fr: "Pas du tout probable"
+      es: "Nada probable"
+    definition:
+      en: "The respondent would not take the action under any circumstances."
+      fr: "Le répondant ne prendrait pas l'action en aucune circonstance."
+      es: "El encuestado no tomaría la acción bajo ninguna circunstancia."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess likelihood."
+      fr: "Le répondant ne peut pas évaluer la probabilité."
+      es: "El encuestado no puede evaluar la probabilidad."
+  - code: not_applicable_no_channel
+    label:
+      en: "Not applicable — no channel exists"
+      fr: "Non applicable — aucun canal n'existe"
+      es: "No aplicable — no existe canal"
+    definition:
+      en: "The hypothetical action presupposes a channel or mechanism that the respondent reports does not exist. Distinct from `not_at_all_likely`, which signals unwillingness given that a channel does exist."
+      fr: "L'action hypothétique présuppose un canal ou un mécanisme dont le répondant rapporte qu'il n'existe pas. Distinct de `not_at_all_likely`, qui signale une non-volonté alors qu'un canal existe."
+      es: "La acción hipotética presupone un canal o mecanismo que el encuestado reporta que no existe. Distinto de `not_at_all_likely`, que señala falta de disposición cuando sí existe un canal."
+  - code: prefer_not_to_answer
+    label:
+      en: "Prefer not to answer"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent declines to answer."
+      fr: "Le répondant refuse de répondre."
+      es: "El encuestado se niega a responder."

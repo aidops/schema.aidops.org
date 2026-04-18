@@ -1,0 +1,141 @@
+id: aap-info-channel
+maturity: draft
+label:
+  en: "AAP: Information channel"
+  fr: "Redevabilité : Canal d'information"
+  es: "Rendición de cuentas: Canal de información"
+definition:
+  en: "Multi-select typology of communication channels through which a household prefers to receive information about humanitarian assistance. Synthesised from the IASC / REACH Menu of AAP Questions 2018 communications preference section and the IFRC Community Engagement and Accountability Toolkit channel inventory. Used to measure information-receipt preferences and to design communications strategies aligned to how affected people actually wish to be reached."
+  fr: "Typologie à choix multiples des canaux de communication par lesquels un ménage préfère recevoir des informations sur l'aide humanitaire. Synthétisée à partir de la section des préférences de communication du Menu de questions AAP IASC / REACH 2018 et de l'inventaire des canaux du Toolkit d'engagement communautaire et de redevabilité de la FICR. Utilisée pour mesurer les préférences de réception d'information et pour concevoir des stratégies de communication alignées sur la façon dont les personnes affectées souhaitent réellement être atteintes."
+  es: "Tipología de selección múltiple de canales de comunicación por los cuales un hogar prefiere recibir información sobre la asistencia humanitaria. Sintetizada a partir de la sección de preferencias de comunicación del Menú de Preguntas AAP IASC / REACH 2018 y del inventario de canales del Kit de Herramientas de Participación Comunitaria y Rendición de Cuentas de la FICR. Utilizada para medir las preferencias de recepción de información y para diseñar estrategias de comunicación alineadas con la forma en que las personas afectadas desean realmente ser alcanzadas."
+standard:
+  name: "IASC / REACH Menu of AAP Questions for Needs Assessments 2018"
+  uri: "https://interagencystandingcommittee.org/sites/default/files/migrated/2018-06/reach_iasc_aap_psea_task_team_menu_of_aap_questions_for_needs_assessments_june_2018.pdf"
+  notes: "Channel typology is a merge of the IASC / REACH menu communications section with the IFRC CEA Toolkit channel inventory."
+values:
+  - code: in_person_community_meeting
+    label:
+      en: "In-person community meeting"
+      fr: "Réunion communautaire en personne"
+      es: "Reunión comunitaria presencial"
+    definition:
+      en: "Collective face-to-face meeting at community level where aid providers share information with residents."
+      fr: "Réunion collective en face-à-face au niveau communautaire où les intervenants partagent l'information avec les résidents."
+      es: "Reunión colectiva cara a cara a nivel comunitario donde los actores humanitarios comparten información con los residentes."
+  - code: in_person_household_visit
+    label:
+      en: "In-person household visit"
+      fr: "Visite à domicile en personne"
+      es: "Visita domiciliaria presencial"
+    definition:
+      en: "A staff member or volunteer visits the household directly to share information."
+      fr: "Un membre du personnel ou un volontaire rend visite directement au ménage pour partager des informations."
+      es: "Un miembro del personal o voluntario visita directamente al hogar para compartir información."
+  - code: phone_call
+    label:
+      en: "Phone call"
+      fr: "Appel téléphonique"
+      es: "Llamada telefónica"
+    definition:
+      en: "Voice phone call."
+      fr: "Appel téléphonique vocal."
+      es: "Llamada telefónica de voz."
+  - code: sms_text
+    label:
+      en: "SMS / text message"
+      fr: "SMS / texto"
+      es: "SMS / mensaje de texto"
+    definition:
+      en: "Short message delivered to a mobile phone."
+      fr: "Message court délivré à un téléphone mobile."
+      es: "Mensaje corto entregado a un teléfono móvil."
+  - code: whatsapp_or_messenger
+    label:
+      en: "WhatsApp or Messenger"
+      fr: "WhatsApp ou Messenger"
+      es: "WhatsApp o Messenger"
+    definition:
+      en: "Instant-messaging application such as WhatsApp, Facebook Messenger, Telegram, Viber, or Signal."
+      fr: "Application de messagerie instantanée telle que WhatsApp, Facebook Messenger, Telegram, Viber ou Signal."
+      es: "Aplicación de mensajería instantánea como WhatsApp, Facebook Messenger, Telegram, Viber o Signal."
+  - code: radio
+    label:
+      en: "Radio"
+      fr: "Radio"
+      es: "Radio"
+    definition:
+      en: "Broadcast or community radio."
+      fr: "Radio diffusée ou communautaire."
+      es: "Radio difundida o comunitaria."
+  - code: tv
+    label:
+      en: "Television"
+      fr: "Télévision"
+      es: "Televisión"
+    definition:
+      en: "Broadcast television."
+      fr: "Télévision diffusée."
+      es: "Televisión difundida."
+  - code: poster_or_flyer
+    label:
+      en: "Poster or flyer"
+      fr: "Affiche ou dépliant"
+      es: "Cartel o volante"
+    definition:
+      en: "Printed informational material posted in public spaces or distributed to households."
+      fr: "Matériel informatif imprimé affiché dans les espaces publics ou distribué aux ménages."
+      es: "Material informativo impreso colocado en espacios públicos o distribuido a los hogares."
+  - code: social_media
+    label:
+      en: "Social media"
+      fr: "Médias sociaux"
+      es: "Redes sociales"
+    definition:
+      en: "Public or semi-public social-media platforms such as Facebook, Twitter/X, Instagram, TikTok."
+      fr: "Plateformes de médias sociaux publiques ou semi-publiques telles que Facebook, Twitter/X, Instagram, TikTok."
+      es: "Plataformas de redes sociales públicas o semipúblicas como Facebook, Twitter/X, Instagram, TikTok."
+  - code: community_leader_or_elder
+    label:
+      en: "Community leader or elder"
+      fr: "Leader ou aîné communautaire"
+      es: "Líder o anciano comunitario"
+    definition:
+      en: "Information relayed through a traditional, customary, or civic community leader."
+      fr: "Information relayée par un leader communautaire traditionnel, coutumier ou civique."
+      es: "Información transmitida a través de un líder comunitario tradicional, consuetudinario o cívico."
+  - code: religious_leader
+    label:
+      en: "Religious leader"
+      fr: "Leader religieux"
+      es: "Líder religioso"
+    definition:
+      en: "Information relayed through a religious leader or religious institution."
+      fr: "Information relayée par un leader religieux ou une institution religieuse."
+      es: "Información transmitida a través de un líder religioso o una institución religiosa."
+  - code: aid_provider_help_desk
+    label:
+      en: "Aid provider help desk"
+      fr: "Guichet d'aide de l'intervenant"
+      es: "Mesa de ayuda del actor humanitario"
+    definition:
+      en: "Information desk staffed at a distribution site or at an agency office."
+      fr: "Bureau d'information tenu par du personnel sur un site de distribution ou dans un bureau d'agence."
+      es: "Mesa de información atendida por personal en un sitio de distribución o en una oficina de la agencia."
+  - code: other
+    label:
+      en: "Other"
+      fr: "Autre"
+      es: "Otro"
+    definition:
+      en: "Information channel not covered by the listed codes."
+      fr: "Canal d'information non couvert par les codes listés."
+      es: "Canal de información no cubierto por los códigos listados."
+  - code: prefer_not_to_answer
+    label:
+      en: "Prefer not to answer"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent declines to answer."
+      fr: "Le répondant refuse de répondre."
+      es: "El encuestado se niega a responder."

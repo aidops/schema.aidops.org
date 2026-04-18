@@ -1,0 +1,49 @@
+id: credit-access-level
+maturity: draft
+label:
+  en: Credit Access Level
+  fr: "Niveau d'accès au crédit"
+  es: "Nivel de acceso al crédito"
+definition:
+  en: "Perceived or actual access to credit or borrowing available to the household if needed for a basic need or emergency. Synthesised from the FAO RIMA-II Access to Basic Services (ABS) pillar's financial inclusion subcomponent, the LSMS-ISA financial services module, and the MICS6 Household Questionnaire financial access questions. Captures availability of credit, not decision agency (which is covered separately by WEAI credit-decision items)."
+  fr: "Accès perçu ou réel au crédit ou à l'emprunt disponible pour le ménage en cas de besoin fondamental ou d'urgence. Synthétisé à partir du sous-composant d'inclusion financière du pilier Accès aux services de base (ABS) de FAO RIMA-II, du module des services financiers LSMS-ISA et des questions d'accès financier du Questionnaire Ménage MICS6. Capture la disponibilité du crédit, pas l'agentivité décisionnelle (couverte séparément par les items WEAI de décision sur le crédit)."
+  es: "Acceso percibido o real al crédito o préstamo disponible para el hogar en caso de necesidad básica o emergencia. Sintetizado a partir del subcomponente de inclusión financiera del pilar de Acceso a Servicios Básicos (ABS) de FAO RIMA-II, el módulo de servicios financieros LSMS-ISA y las preguntas de acceso financiero del Cuestionario de Hogar MICS6. Captura la disponibilidad de crédito, no la agencia de decisión (cubierta por separado por los ítems WEAI de decisión sobre crédito)."
+standard:
+  name: "Synthesised from FAO RIMA-II ABS pillar, LSMS-ISA financial services module, and MICS6"
+values:
+  - code: yes_formal
+    label:
+      en: "Yes — from a formal lender"
+      fr: "Oui — auprès d'un prêteur formel"
+      es: "Sí — de un prestamista formal"
+    definition:
+      en: "Could borrow from a bank, microfinance institution, mobile money lender, or other formal source."
+      fr: "Pourrait emprunter auprès d'une banque, d'une institution de microfinance, d'un prêteur mobile money ou d'une autre source formelle."
+      es: "Podría pedir prestado de un banco, institución de microfinanzas, prestamista de dinero móvil u otra fuente formal."
+  - code: yes_informal_only
+    label:
+      en: "Yes — from informal sources only"
+      fr: "Oui — auprès de sources informelles uniquement"
+      es: "Sí — solo de fuentes informales"
+    definition:
+      en: "Could borrow only from family, friends, community savings group, or local moneylender."
+      fr: "Pourrait emprunter uniquement auprès de la famille, d'amis, d'un groupe d'épargne communautaire ou d'un prêteur local."
+      es: "Podría pedir prestado solo de familia, amigos, grupo de ahorro comunitario o prestamista local."
+  - code: uncertain
+    label:
+      en: Uncertain
+      fr: "Incertain"
+      es: "Incierto"
+    definition:
+      en: "Not sure whether credit would be available."
+      fr: "Incertain quant à la disponibilité du crédit."
+      es: "No está seguro de si habría crédito disponible."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "No credit or borrowing is accessible from any source."
+      fr: "Aucun crédit ou emprunt n'est accessible auprès d'aucune source."
+      es: "No hay crédito ni préstamo accesible de ninguna fuente."

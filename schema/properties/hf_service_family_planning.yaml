@@ -1,0 +1,19 @@
+id: hf_service_family_planning
+maturity: draft
+label:
+  en: "Offers family planning counselling and at least three modern methods"
+  fr: "Offre du conseil en planification familiale et au moins trois méthodes modernes"
+  es: "Ofrece consejería en planificación familiar y al menos tres métodos modernos"
+
+definition:
+  en: "Whether the facility offers family planning counselling and at least three modern contraceptive methods. Reported by the facility in-charge. MISP Objective 5 core tracer: 'at least three methods of contraception' is the minimum. SARA family-planning service-availability tracer."
+  fr: "Si l'établissement offre du conseil en planification familiale et au moins trois méthodes contraceptives modernes. Rapporté par le responsable de l'établissement. Indicateur traceur central MISP Objectif 5 : « au moins trois méthodes de contraception » est le minimum. Indicateur traceur SARA de disponibilité des services de planification familiale."
+  es: "Si el establecimiento ofrece consejería en planificación familiar y al menos tres métodos anticonceptivos modernos. Reportado por el responsable del establecimiento. Indicador trazador central MISP Objetivo 5: «al menos tres métodos de anticoncepción» es el mínimo. Indicador trazador SARA de disponibilidad de servicios de planificación familiar."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: standard

@@ -1,0 +1,19 @@
+id: aap_selection_fair_perception
+maturity: draft
+label:
+  en: "AAP: Perception of fairness of selection"
+  fr: "Redevabilité : Perception de l'équité de la sélection"
+  es: "Rendición de cuentas: Percepción de la equidad de la selección"
+
+definition:
+  en: "Whether the respondent agrees that aid providers selected the right people in their community to receive assistance. GTS HVI canonical 'fairness' pillar (one of the four canonical GTS pillars). Maps to CHS 2024 Commitments 1 and 2. Source: GTS HVI fairness pillar; IASC / REACH Menu 2018 targeting-perception section."
+  fr: "Si le répondant est d'accord sur le fait que les intervenants ont sélectionné les bonnes personnes dans sa communauté pour recevoir l'aide. Pilier d'« équité » canonique de GTS HVI (l'un des quatre piliers canoniques de GTS). Correspond aux Engagements 1 et 2 de la CHS 2024. Source : pilier d'équité GTS HVI ; section perception du ciblage du Menu IASC / REACH 2018."
+  es: "Si el encuestado está de acuerdo en que los actores humanitarios seleccionaron a las personas correctas en su comunidad para recibir la asistencia. Pilar canónico de «equidad» de GTS HVI (uno de los cuatro pilares canónicos de GTS). Corresponde a los Compromisos 1 y 2 de la CHS 2024. Fuente: pilar de equidad de GTS HVI; sección percepción de focalización del Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-agree-5
+references: null
+category: aap_targeting
+core: false
+sensitivity: standard

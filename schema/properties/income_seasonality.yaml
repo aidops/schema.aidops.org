@@ -1,0 +1,19 @@
+id: income_seasonality
+maturity: draft
+label:
+  en: "Income seasonality pattern"
+  fr: "Schéma de saisonnalité des revenus"
+  es: "Patrón de estacionalidad de ingresos"
+
+definition:
+  en: "Household-level assessment of income stability across the year, from stable year-round to highly irregular. Recall period: past 12 months. Drawn from the LSMS-ISA livelihood module, the FAO RIMA-II income component, and the Sphere 2018 Livelihoods chapter on seasonal vulnerability calendars. Together with `lean_season_months_count`, supports a seasonal-precarity flag for households whose income is insufficient for three or more months per year."
+  fr: "Évaluation au niveau du ménage de la stabilité des revenus à travers l'année, allant de stable toute l'année à très irrégulière. Période de rappel : 12 derniers mois. Tirée du module des moyens de subsistance LSMS-ISA, de la composante revenus de FAO RIMA-II et du chapitre Moyens de subsistance de Sphère 2018 sur les calendriers de vulnérabilité saisonnière. Avec `lean_season_months_count`, soutient un signal de précarité saisonnière pour les ménages dont le revenu est insuffisant pendant trois mois ou plus par an."
+  es: "Evaluación a nivel del hogar de la estabilidad de los ingresos a lo largo del año, desde estable todo el año hasta muy irregular. Período de recordatorio: últimos 12 meses. Tomada del módulo de medios de vida LSMS-ISA, el componente de ingresos de FAO RIMA-II y el capítulo de Medios de Vida de Esfera 2018 sobre calendarios de vulnerabilidad estacional. Junto con `lean_season_months_count`, apoya un indicador de precariedad estacional para hogares cuyo ingreso es insuficiente durante tres o más meses por año."
+
+type: string
+cardinality: single
+core: false
+vocabulary: income-seasonality-pattern
+references: null
+category: context
+sensitivity: sensitive

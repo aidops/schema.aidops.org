@@ -1,0 +1,19 @@
+id: hf_commodity_contraceptive_methods_count
+maturity: draft
+label:
+  en: "Count of modern contraceptive methods in stock today"
+  fr: "Nombre de méthodes contraceptives modernes en stock aujourd'hui"
+  es: "Número de métodos anticonceptivos modernos en stock hoy"
+
+definition:
+  en: "Count (0-8) of distinct modern contraceptive methods currently in stock and available to clients today. Methods counted: male condom, female condom, oral contraceptive pill, injectable, intrauterine device (IUD), implant, emergency contraception, progestin-only pill. Observed by the enumerator. MISP Objective 5 core indicator: the minimum standard is at least three methods. Sensitive: commodity availability reporting is politically sensitive."
+  fr: "Nombre (0-8) de méthodes contraceptives modernes distinctes actuellement en stock et disponibles pour les client(e)s aujourd'hui. Méthodes comptabilisées : préservatif masculin, préservatif féminin, pilule contraceptive orale, injectable, dispositif intra-utérin (DIU), implant, contraception d'urgence, pilule progestative. Observé par l'enquêteur. Indicateur central MISP Objectif 5 : le standard minimum est au moins trois méthodes. Sensible : le reporting des disponibilités de produits est politiquement sensible."
+  es: "Número (0-8) de métodos anticonceptivos modernos distintos actualmente en stock y disponibles para usuarias/os hoy. Métodos contados: condón masculino, condón femenino, píldora anticonceptiva oral, inyectable, dispositivo intrauterino (DIU), implante, anticoncepción de emergencia, píldora solo de progestina. Observado por el enumerador. Indicador central MISP Objetivo 5: el estándar mínimo es al menos tres métodos. Sensible: el reporte de disponibilidad de insumos es políticamente sensible."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: sensitive

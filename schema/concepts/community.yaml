@@ -1,0 +1,93 @@
+id: Community
+label:
+  en: Community
+  fr: Communauté
+  es: Comunidad
+maturity: draft
+featured: true
+
+definition:
+  en: >
+    A self-identified collective of people bound by shared residence,
+    shared identity, or shared experience of a crisis, treated as a
+    single reporting unit for community-level assessment. A Community
+    typically spans many households and is the subject of assessments
+    sourced through focus group discussions, key informant interviews,
+    or community meetings. Distinct from Location (which names an
+    administrative or geographic place) and from Household (which names
+    a co-residing economic unit): a Community is the social/collective
+    voice, even when many of its members are displaced across multiple
+    sites or when its geographic footprint is not well defined.
+    Typical instances include a host-village community, a displacement
+    site population, a camp block, a host-plus-displaced mixed
+    community, or a pastoralist group on the move.
+  fr: >
+    Un collectif auto-identifié de personnes lié par une résidence, une
+    identité ou une expérience commune d'une crise, traité comme une
+    unité de rapport unique pour l'évaluation au niveau communautaire.
+    Une Communauté regroupe généralement plusieurs ménages et constitue
+    le sujet d'évaluations issues de discussions de groupes thématiques,
+    d'entretiens avec des informateurs clés ou de réunions
+    communautaires. Distinct de Location (qui nomme un lieu
+    administratif ou géographique) et de Household (qui nomme une unité
+    économique corésidente) : une Communauté est la voix
+    sociale/collective, même lorsque plusieurs de ses membres sont
+    déplacés sur différents sites ou que son emprise géographique n'est
+    pas bien définie. Les cas typiques incluent une communauté villageoise
+    d'accueil, la population d'un site de déplacement, un bloc d'un
+    camp, une communauté mixte accueil-déplacés ou un groupe pastoraliste
+    en déplacement.
+  es: >
+    Un colectivo auto-identificado de personas unido por residencia,
+    identidad o experiencia común de una crisis, tratado como una
+    unidad única de informe para la evaluación a nivel comunitario.
+    Una Comunidad suele abarcar varios hogares y es el sujeto de
+    evaluaciones obtenidas mediante grupos focales, entrevistas con
+    informantes clave o reuniones comunitarias. Distinta de Location
+    (que nombra un lugar administrativo o geográfico) y de Household
+    (que nombra una unidad económica corresidente): una Comunidad es
+    la voz social/colectiva, aun cuando varios de sus miembros se
+    encuentren desplazados en distintos sitios o cuando su huella
+    geográfica no esté bien definida. Los casos típicos incluyen una
+    comunidad de aldea de acogida, la población de un sitio de
+    desplazamiento, un bloque de un campamento, una comunidad mixta
+    de acogida y desplazados, o un grupo pastoril en movimiento.
+
+properties:
+  - community_type
+  - located_at
+
+property_groups:
+  - category: identity
+    properties:
+      - name
+      - identifiers
+      - identity_documents
+  - category: administrative
+    properties:
+      - formation_date
+      - member_count
+      - memberships
+  - category: classification
+    properties:
+      - group_type
+      - community_type
+  - category: location
+    properties:
+      - located_at
+
+supertypes: [Group]
+subtypes: []
+
+external_equivalents: {}
+
+convergence:
+  system_count: 1
+  total_systems: 6
+  notes: >
+    Only IOM DTM site-level reporting and UNHCR population-group data
+    align with a Community-as-subject model; OpenCRVS, OpenSPP,
+    openIMIS, DHIS2, and DCI have no explicit Community concept. The
+    humanitarian rapid-assessment canon (MIRA, JIAF, REACH HSM, IFRC
+    VCA) treats the community as the assessment subject without naming
+    it as a discrete data object, which this concept addresses.

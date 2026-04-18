@@ -1,0 +1,40 @@
+id: humanitarian-assistance-reliance
+maturity: draft
+label:
+  en: Humanitarian Assistance Reliance
+  fr: "Dépendance à l'aide humanitaire"
+  es: "Dependencia de la asistencia humanitaria"
+definition:
+  en: "Degree to which the household depends on humanitarian assistance (food, cash, non-food items, or services from NGOs or UN agencies) as a source of income or food. Synthesised from the Sphere 2018 Livelihoods chapter, the IOM DTM Multi-Sectoral Location Assessment assistance reliance indicator, and the LSMS-ISA government transfer module. Distinct from `social_transfers` in the PS `income-source` vocabulary (which covers government programmes): this vocabulary specifically flags humanitarian-actor assistance, relevant for exit-strategy analysis."
+  fr: "Degré auquel le ménage dépend de l'aide humanitaire (nourriture, espèces, articles non alimentaires ou services d'ONG ou d'agences de l'ONU) comme source de revenus ou de nourriture. Synthétisé à partir du chapitre Moyens de subsistance de Sphère 2018, de l'indicateur de dépendance à l'aide de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM et du module des transferts gouvernementaux LSMS-ISA. Distinct de `social_transfers` dans le vocabulaire `income-source` de PublicSchema (qui couvre les programmes gouvernementaux) : ce vocabulaire signale spécifiquement l'aide d'acteurs humanitaires, pertinent pour l'analyse de la stratégie de sortie."
+  es: "Grado en que el hogar depende de la asistencia humanitaria (alimentos, efectivo, artículos no alimentarios o servicios de ONG o agencias de la ONU) como fuente de ingresos o alimentos. Sintetizado a partir del capítulo de Medios de Vida de Esfera 2018, el indicador de dependencia de asistencia de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM y el módulo de transferencias gubernamentales LSMS-ISA. Distinto de `social_transfers` en el vocabulario `income-source` de PublicSchema (que cubre programas gubernamentales): este vocabulario marca específicamente la asistencia de actores humanitarios, relevante para el análisis de estrategia de salida."
+standard:
+  name: "Synthesised from Sphere 2018 Livelihoods chapter, IOM DTM MSLA, and LSMS-ISA"
+values:
+  - code: yes_primary_source
+    label:
+      en: "Yes — primary source"
+      fr: "Oui — source principale"
+      es: "Sí — fuente principal"
+    definition:
+      en: "Humanitarian assistance is the household's main source of food or income."
+      fr: "L'aide humanitaire est la principale source de nourriture ou de revenus du ménage."
+      es: "La asistencia humanitaria es la principal fuente de alimentos o ingresos del hogar."
+  - code: yes_supplementary
+    label:
+      en: "Yes — supplementary"
+      fr: "Oui — complémentaire"
+      es: "Sí — complementaria"
+    definition:
+      en: "Household receives assistance but also has other livelihood income sources."
+      fr: "Le ménage reçoit une aide mais dispose également d'autres sources de revenus de subsistance."
+      es: "El hogar recibe asistencia pero también tiene otras fuentes de ingresos de subsistencia."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "Household does not currently receive humanitarian assistance."
+      fr: "Le ménage ne reçoit pas actuellement d'aide humanitaire."
+      es: "El hogar no recibe actualmente asistencia humanitaria."

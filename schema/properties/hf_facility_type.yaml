@@ -1,0 +1,19 @@
+id: hf_facility_type
+maturity: draft
+label:
+  en: "Facility type"
+  fr: "Type d'établissement"
+  es: "Tipo de establecimiento"
+
+definition:
+  en: "Functional category of the health facility per the WHO SARA/HHFA taxonomy (hospital, health centre, health post, dispensary, clinic, pharmacy, laboratory, mobile clinic, etc.). Reported by the facility in-charge; commonly cross-referenced with the national master facility list. Stratifier for all downstream readiness analyses."
+  fr: "Catégorie fonctionnelle de l'établissement de santé selon la taxonomie SARA/HHFA de l'OMS (hôpital, centre de santé, poste de santé, dispensaire, clinique, pharmacie, laboratoire, clinique mobile, etc.). Rapporté par le responsable de l'établissement ; généralement recoupé avec la liste maîtresse nationale des établissements. Stratificateur pour toutes les analyses de capacité qui en découlent."
+  es: "Categoría funcional del establecimiento de salud según la taxonomía SARA/HHFA de la OMS (hospital, centro de salud, puesto de salud, dispensario, clínica, farmacia, laboratorio, clínica móvil, etc.). Reportado por el responsable del establecimiento; comúnmente contrastado con la lista maestra nacional de establecimientos. Estratificador para todos los análisis de capacidad posteriores."
+
+type: string
+cardinality: single
+core: true
+vocabulary: health-facility-type
+references: null
+category: classification
+sensitivity: standard

@@ -1,0 +1,19 @@
+id: main_crops_grown
+maturity: draft
+label:
+  en: "Main crops grown during the last completed agricultural season"
+  fr: "Principales cultures de la dernière saison agricole complète"
+  es: "Cultivos principales durante la última temporada agrícola completa"
+
+definition:
+  en: "Main crops the household grew during the last completed agricultural season, captured as free text with up to three entries ordered from most to least important. No canonical global crop vocabulary is assigned at the schema level because crop taxonomies are deeply context-specific (agro-ecological zones differ across East Africa, West Africa, the Middle East, and Latin America). Form authors should provide a local constrained select with an 'other/specify' escape. Based on LSMS-ISA crop module, MICS6 AFP, and FAO WCA 2020. See AgricultureProfile Open Questions for the crop-taxonomy decision."
+  fr: "Principales cultures que le ménage a cultivées au cours de la dernière saison agricole complète, saisies en texte libre avec jusqu'à trois entrées ordonnées de la plus à la moins importante. Aucun vocabulaire global canonique n'est attribué au niveau du schéma car les taxonomies de cultures sont profondément spécifiques au contexte (les zones agro-écologiques diffèrent entre l'Afrique de l'Est, l'Afrique de l'Ouest, le Moyen-Orient et l'Amérique latine). Les auteurs de formulaires doivent fournir une sélection contrainte locale avec une option « autre / préciser ». Basé sur le module des cultures du LSMS-ISA, le MICS6 AFP et le WCA 2020 de la FAO. Voir Questions ouvertes AgricultureProfile pour la décision sur la taxonomie des cultures."
+  es: "Cultivos principales que el hogar cultivó durante la última temporada agrícola completa, capturados como texto libre con hasta tres entradas ordenadas del más al menos importante. No se asigna un vocabulario global canónico a nivel del esquema porque las taxonomías de cultivos son profundamente específicas al contexto (las zonas agroecológicas difieren entre África Oriental, África Occidental, Medio Oriente y América Latina). Los autores de formularios deben proporcionar una selección restringida local con una opción 'otro / especificar'. Basado en el módulo de cultivos de LSMS-ISA, MICS6 AFP y WCA 2020 de la FAO. Véase Preguntas Abiertas de AgricultureProfile para la decisión sobre la taxonomía de cultivos."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: null
+references: null
+category: context
+sensitivity: sensitive

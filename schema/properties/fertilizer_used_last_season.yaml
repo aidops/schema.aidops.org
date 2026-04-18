@@ -1,0 +1,19 @@
+id: fertilizer_used_last_season
+maturity: draft
+label:
+  en: "Fertilizer used on crops during the last agricultural season"
+  fr: "Engrais utilisé sur les cultures au cours de la dernière saison agricole"
+  es: "Fertilizante usado en cultivos durante la última temporada agrícola"
+
+definition:
+  en: "Whether the household used chemical fertilizer, organic fertilizer, both, or none on any of its crops during the last completed agricultural season, plus a `dont_know` option. Uses vocabulary `fertilizer-use-type`. Based on FAO WCA 2020 Vol.I Items 0322 (use of chemical fertilizer) and 0323 (use of organic fertilizer), collapsed to a single categorical response for rapid household assessment. Asked only when `hh_grew_crops_last_season` is `yes`."
+  fr: "Si le ménage a utilisé des engrais chimiques, des engrais organiques, les deux ou aucun sur ses cultures au cours de la dernière saison agricole complète, plus une option `dont_know`. Utilise le vocabulaire `fertilizer-use-type`. Basé sur les items 0322 (utilisation d'engrais chimique) et 0323 (utilisation d'engrais organique) du Volume I du WCA 2020 de la FAO, regroupés en une seule réponse catégorielle pour l'évaluation rapide au niveau du ménage. Posée uniquement lorsque `hh_grew_crops_last_season` est `yes`."
+  es: "Si el hogar usó fertilizante químico, fertilizante orgánico, ambos o ninguno en alguno de sus cultivos durante la última temporada agrícola completa, más una opción `dont_know`. Usa el vocabulario `fertilizer-use-type`. Basado en los ítems 0322 (uso de fertilizante químico) y 0323 (uso de fertilizante orgánico) del Volumen I del WCA 2020 de la FAO, colapsados en una sola respuesta categórica para la evaluación rápida a nivel del hogar. Se pregunta solo cuando `hh_grew_crops_last_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: fertilizer-use-type
+references: null
+category: context
+sensitivity: sensitive

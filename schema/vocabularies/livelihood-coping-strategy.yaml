@@ -1,0 +1,104 @@
+id: livelihood-coping-strategy
+maturity: draft
+label:
+  en: Livelihood Coping Strategy
+  fr: "Stratégie d'adaptation des moyens de subsistance"
+  es: "Estrategia de afrontamiento de medios de vida"
+definition:
+  en: "Non-food livelihood coping strategies used in response to an income or livelihood shock. Synthesised from FAO RIMA-II, the LSMS-ISA coping module, and the Sphere 2018 Livelihoods chapter on coping thresholds. Distinct from the WFP Livelihood Coping Strategies (LCS) instrument used in FoodSecurityProfile: LCS captures food-access coping over the past 30 days, while this vocabulary captures income and livelihood coping responses to a shock over the past 12 months, non-food focus."
+  fr: "Stratégies d'adaptation non alimentaires des moyens de subsistance utilisées en réponse à un choc de revenu ou de subsistance. Synthétisé à partir de FAO RIMA-II, du module d'adaptation LSMS-ISA et du chapitre Moyens de subsistance de Sphère 2018 sur les seuils d'adaptation. Distinct de l'instrument des stratégies d'adaptation des moyens d'existence (LCS) du PAM utilisé dans FoodSecurityProfile : le LCS capture l'adaptation à l'accès alimentaire sur les 30 derniers jours, tandis que ce vocabulaire capture les réponses d'adaptation des revenus et des moyens de subsistance à un choc sur les 12 derniers mois, hors alimentaire."
+  es: "Estrategias de afrontamiento de medios de vida no alimentarias usadas en respuesta a un choque de ingresos o de subsistencia. Sintetizado a partir de FAO RIMA-II, el módulo de afrontamiento LSMS-ISA y el capítulo de Medios de Vida de Esfera 2018 sobre umbrales de afrontamiento. Distinto del instrumento de Estrategias de Afrontamiento de Medios de Vida (LCS) del PMA utilizado en FoodSecurityProfile: el LCS captura el afrontamiento de acceso a alimentos en los últimos 30 días, mientras que este vocabulario captura respuestas de afrontamiento de ingresos y medios de vida a un choque en los últimos 12 meses, con enfoque no alimentario."
+standard:
+  name: "Synthesised from FAO RIMA-II coping subcomponent, LSMS-ISA coping module, and Sphere 2018 Livelihoods chapter"
+  notes: "Do not duplicate WFP LCS codes (captured by `lcs-strategy` vocabulary in FoodSecurityProfile)."
+values:
+  - code: used_savings
+    label:
+      en: Used savings or sold financial assets
+      fr: "Utilisation de l'épargne ou vente d'actifs financiers"
+      es: "Uso de ahorros o venta de activos financieros"
+    definition:
+      en: "Drew down savings, sold financial assets, or liquidated mobile money."
+      fr: "A puisé dans l'épargne, vendu des actifs financiers ou liquidé du mobile money."
+      es: "Utilizó ahorros, vendió activos financieros o liquidó dinero móvil."
+  - code: borrowed_from_family_community
+    label:
+      en: Borrowed from family or community
+      fr: "Emprunt auprès de la famille ou de la communauté"
+      es: "Prestado de familia o comunidad"
+    definition:
+      en: "Took an interest-free or informal loan from relatives, neighbours, or a community savings group."
+      fr: "A pris un prêt sans intérêt ou informel auprès de parents, de voisins ou d'un groupe d'épargne communautaire."
+      es: "Tomó un préstamo sin intereses o informal de familiares, vecinos o un grupo de ahorro comunitario."
+  - code: borrowed_formal_credit
+    label:
+      en: Borrowed from formal credit source
+      fr: "Emprunt auprès d'une source de crédit formelle"
+      es: "Prestado de fuente de crédito formal"
+    definition:
+      en: "Took a loan from a bank, microfinance institution, or formal lender."
+      fr: "A pris un prêt auprès d'une banque, d'une institution de microfinance ou d'un prêteur formel."
+      es: "Tomó un préstamo de un banco, institución de microfinanzas o prestamista formal."
+  - code: sold_non_productive_asset
+    label:
+      en: Sold non-productive household asset
+      fr: "Vente d'un actif ménager non productif"
+      es: "Vendió activo del hogar no productivo"
+    definition:
+      en: "Sold furniture, clothing, jewellery, electronics, or other consumer goods."
+      fr: "A vendu des meubles, des vêtements, des bijoux, de l'électronique ou d'autres biens de consommation."
+      es: "Vendió muebles, ropa, joyas, electrónicos u otros bienes de consumo."
+  - code: sought_additional_work
+    label:
+      en: Sought or took additional work
+      fr: "Recherché ou pris un emploi supplémentaire"
+      es: "Buscó o tomó trabajo adicional"
+    definition:
+      en: "Took on extra labour, a second job, or sent additional household members to work."
+      fr: "A pris un travail supplémentaire, un deuxième emploi ou envoyé des membres supplémentaires du ménage au travail."
+      es: "Tomó trabajo adicional, un segundo empleo o envió a miembros adicionales del hogar a trabajar."
+  - code: received_assistance
+    label:
+      en: Received assistance from programme or community
+      fr: "Aide reçue d'un programme ou de la communauté"
+      es: "Recibió asistencia de programa o comunidad"
+    definition:
+      en: "Received humanitarian assistance, government cash transfer, or community support."
+      fr: "A reçu une aide humanitaire, un transfert monétaire gouvernemental ou un soutien communautaire."
+      es: "Recibió asistencia humanitaria, transferencia monetaria gubernamental o apoyo comunitario."
+  - code: reduced_nonfood_expenditure
+    label:
+      en: Reduced non-food expenditure
+      fr: "Réduction des dépenses non alimentaires"
+      es: "Redujo gastos no alimentarios"
+    definition:
+      en: "Cut spending on health, education, clothing, transport, or other non-food items."
+      fr: "A réduit les dépenses de santé, d'éducation, d'habillement, de transport ou d'autres articles non alimentaires."
+      es: "Redujo el gasto en salud, educación, ropa, transporte u otros artículos no alimentarios."
+  - code: migrated_for_work
+    label:
+      en: One or more members migrated for work
+      fr: "Migration d'un ou plusieurs membres pour le travail"
+      es: "Uno o más miembros migraron para trabajar"
+    definition:
+      en: "Sent household member(s) temporarily to another area to earn income."
+      fr: "A envoyé un ou plusieurs membres du ménage temporairement dans une autre zone pour gagner des revenus."
+      es: "Envió a miembro(s) del hogar temporalmente a otra área para generar ingresos."
+  - code: nothing_no_coping
+    label:
+      en: "Nothing — no coping strategy available"
+      fr: "Rien — aucune stratégie d'adaptation disponible"
+      es: "Nada — sin estrategia de afrontamiento disponible"
+    definition:
+      en: "Household could not cope: no savings, no credit, no support available."
+      fr: "Le ménage n'a pas pu s'adapter : pas d'épargne, pas de crédit, pas de soutien disponible."
+      es: "El hogar no pudo afrontar: sin ahorros, sin crédito, sin apoyo disponible."
+  - code: other
+    label:
+      en: Other strategy
+      fr: "Autre stratégie"
+      es: "Otra estrategia"
+    definition:
+      en: "Coping strategy not covered by the above categories."
+      fr: "Stratégie d'adaptation non couverte par les catégories ci-dessus."
+      es: "Estrategia de afrontamiento no cubierta por las categorías anteriores."

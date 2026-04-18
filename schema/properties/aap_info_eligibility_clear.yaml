@@ -1,0 +1,19 @@
+id: aap_info_eligibility_clear
+maturity: draft
+label:
+  en: "AAP: Information clarity — eligibility criteria"
+  fr: "Redevabilité : Clarté de l'information — critères d'admissibilité"
+  es: "Rendición de cuentas: Claridad de la información — criterios de elegibilidad"
+
+definition:
+  en: "Household's perceived clarity of the information it has received about who is eligible for assistance. Maps to CHS 2024 Commitment 4, Key Action 4.1 ('provide accessible and timely information about eligibility criteria'). OCHA MSNA Key Findings 2022 identifies eligibility clarity as the primary AAP indicator gap across 14 country operations. IASC / REACH Menu 2018 wording."
+  fr: "Clarté perçue par le ménage des informations reçues sur l'admissibilité à l'aide. Correspond à l'Engagement 4 de la CHS 2024, Action clé 4.1 (« fournir des informations accessibles et opportunes sur les critères d'admissibilité »). Les conclusions clés de l'OCHA MSNA 2022 identifient la clarté de l'admissibilité comme la principale lacune d'indicateur AAP dans 14 opérations pays. Formulation du Menu IASC / REACH 2018."
+  es: "Claridad percibida por el hogar de la información recibida sobre quién es elegible para la asistencia. Corresponde al Compromiso 4 de la CHS 2024, Acción Clave 4.1 («proporcionar información accesible y oportuna sobre los criterios de elegibilidad»). Los Hallazgos Clave del OCHA MSNA 2022 identifican la claridad de elegibilidad como la principal brecha de indicador AAP en 14 operaciones de país. Formulación del Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-clarity-4
+references: null
+category: aap_information
+core: false
+sensitivity: standard

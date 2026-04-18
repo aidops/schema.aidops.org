@@ -1,0 +1,18 @@
+id: would_act_differently_next_time
+maturity: draft
+label:
+  en: "Would act differently next time"
+  fr: "Agirait différemment la prochaine fois"
+  es: "Actuaría de forma diferente la próxima vez"
+
+definition:
+  en: "Whether the household would do anything differently if the same kind of warning came again. Captured as yes / no / don't know. Asked of all respondents regardless of whether they received a warning for the reference event, and used by IFRC FbF post-event reflection and Start Network DEF household learning modules to identify learning and programmatic entry points."
+  fr: "Indique si le ménage ferait quelque chose de différent si le même type d'alerte revenait. Capté en oui / non / ne sait pas. Posé à tous les répondants qu'ils aient ou non reçu une alerte pour l'événement de référence, et utilisé par les modules de réflexion post-événement du FbF de la FICR et les modules d'apprentissage des ménages du DEF du Réseau Start pour identifier les apprentissages et les points d'entrée programmatiques."
+  es: "Indica si el hogar haría algo diferente si volviera la misma clase de alerta. Capturado como sí / no / no sabe. Se pregunta a todos los respondientes hayan recibido o no una alerta para el evento de referencia, y lo usan los módulos de reflexión posterior al evento del FbF de la FICR y los módulos de aprendizaje del hogar del DEF de Start Network para identificar aprendizajes y puntos de entrada programáticos."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: context

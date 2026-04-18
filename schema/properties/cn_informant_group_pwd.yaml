@@ -1,0 +1,18 @@
+id: cn_informant_group_pwd
+maturity: draft
+label:
+  en: "Informants included persons with disabilities"
+  fr: "Informateurs comprenant des personnes handicapées"
+  es: "Informantes incluyeron personas con discapacidad"
+
+definition:
+  en: "Whether persons with disabilities were among the participants in this community-level assessment session. Recorded to flag accessibility and representativeness of the informant group per the IASC Guidelines on Inclusion of Persons with Disabilities in Humanitarian Action (2019), §3.2 on accessible consultations."
+  fr: "Indique si des personnes handicapées figuraient parmi les participants à cette séance d'évaluation au niveau communautaire. Enregistré pour signaler l'accessibilité et la représentativité du groupe d'informateurs, conformément aux Directives de l'IASC sur l'inclusion des personnes handicapées dans l'action humanitaire (2019), § 3.2 sur les consultations accessibles."
+  es: "Indica si había personas con discapacidad entre los participantes de esta sesión de evaluación a nivel comunitario. Se registra para señalar la accesibilidad y la representatividad del grupo de informantes, conforme a las Directrices del IASC sobre inclusión de personas con discapacidad en la acción humanitaria (2019), § 3.2 sobre consultas accesibles."
+
+type: boolean
+cardinality: single
+vocabulary: null
+references: null
+category: administrative
+core: false

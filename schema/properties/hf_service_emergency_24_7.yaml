@@ -1,0 +1,19 @@
+id: hf_service_emergency_24_7
+maturity: draft
+label:
+  en: "Emergency care available 24/7"
+  fr: "Soins d'urgence disponibles 24h/24 et 7j/7"
+  es: "Atención de emergencia disponible 24/7"
+
+definition:
+  en: "Whether emergency care is available 24 hours a day, 7 days a week. Reported by the facility in-charge. `not_applicable` when `hf_service_emergency_care` is false. Sphere 2018 minimum for life-saving services; ECAT."
+  fr: "Si les soins d'urgence sont disponibles 24 heures sur 24, 7 jours sur 7. Rapporté par le responsable de l'établissement. `not_applicable` lorsque `hf_service_emergency_care` est faux. Minimum Sphère 2018 pour les services vitaux ; ECAT."
+  es: "Si la atención de emergencia está disponible 24 horas al día, 7 días a la semana. Reportado por el responsable del establecimiento. `not_applicable` cuando `hf_service_emergency_care` es falso. Mínimo Esfera 2018 para servicios vitales; ECAT."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-na
+references: null
+category: classification
+sensitivity: standard

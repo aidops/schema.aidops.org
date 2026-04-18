@@ -1,0 +1,21 @@
+id: dhs-spa-revised-2022
+title: "Service Provision Assessment (SPA) Survey - Revised 2022"
+short_title: "DHS SPA (Revised 2022)"
+publisher: "ICF / The DHS Program"
+year: 2022
+type: guidance_publication
+domain: health
+uri: "https://dhsprogram.com/What-We-Do/Survey-Types/SPA.cfm"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthFacilityProfile
+  vocabularies:
+    - facility-managing-authority
+  properties:
+    - hf_facility_type
+    - hf_managing_authority
+    - hf_staff_total_fte
+    - hf_staff_trained_recent

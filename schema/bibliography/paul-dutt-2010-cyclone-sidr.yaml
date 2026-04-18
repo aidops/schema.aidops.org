@@ -1,0 +1,25 @@
+id: paul-dutt-2010-cyclone-sidr
+title: "Hazard warnings and responses to evacuation orders: the case of Bangladesh's Cyclone Sidr"
+short_title: "Paul & Dutt 2010 (Cyclone Sidr)"
+authors:
+  - "Bimal Kanti Paul"
+  - "Sunil Dutt"
+publisher: "Geographical Review (American Geographical Society)"
+year: 2010
+type: guidance_publication
+domain: humanitarian
+uri: "https://doi.org/10.1111/j.1931-0846.2010.00040.x"
+access: paywalled
+status: active
+
+informs:
+  concepts:
+    - WarningResponseProfile
+  vocabularies:
+    - warning-channel
+    - warning-action-barrier
+  properties:
+    - warning_channel_primary
+    - warning_source_trust
+    - warning_action_barriers
+    - warning_primary_barrier

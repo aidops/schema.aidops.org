@@ -1,0 +1,19 @@
+id: crop_loss_magnitude
+maturity: draft
+label:
+  en: "Estimated magnitude of crop loss in the last agricultural season"
+  fr: "Ampleur estimée de la perte de récolte au cours de la dernière saison agricole"
+  es: "Magnitud estimada de la pérdida de cultivos en la última temporada agrícola"
+
+definition:
+  en: "Respondent's estimated magnitude of the crop loss as a share of the expected harvest during the last completed agricultural season. Single-select from vocabulary `crop-loss-band` (none_or_minimal_lt10, small_10_24, moderate_25_49, large_50_74, near_total_75_plus, dont_know) using banded categories rather than a free-text percentage because recall precision for share-of-harvest estimates is low and banded categories are standard in rapid-assessment practice (WFP EFSA guidance, LSMS-ISA shock module). `dont_know` is included as one of the response options. Asked only when `crop_loss_shock_past_season` is `yes`."
+  fr: "Ampleur estimée par le répondant de la perte de récolte exprimée en part de la récolte attendue au cours de la dernière saison agricole complète. Sélection unique dans le vocabulaire `crop-loss-band` (none_or_minimal_lt10, small_10_24, moderate_25_49, large_50_74, near_total_75_plus, dont_know) utilisant des catégories par tranches plutôt qu'un pourcentage libre, car la précision de rappel pour les estimations de part de récolte est faible et les catégories par tranches sont standard dans la pratique d'évaluation rapide (guide EFSA du PAM, module des chocs du LSMS-ISA). `dont_know` est inclus comme l'une des options de réponse. Posée uniquement lorsque `crop_loss_shock_past_season` est `yes`."
+  es: "Magnitud estimada por el encuestado de la pérdida de cultivos como proporción de la cosecha esperada durante la última temporada agrícola completa. Selección única del vocabulario `crop-loss-band` (none_or_minimal_lt10, small_10_24, moderate_25_49, large_50_74, near_total_75_plus, dont_know) que usa categorías por tramos en lugar de un porcentaje libre, porque la precisión de recuerdo para estimaciones de proporción de cosecha es baja y las categorías por tramos son estándar en la práctica de evaluación rápida (guía EFSA del PMA, módulo de choques de LSMS-ISA). `dont_know` se incluye como una de las opciones de respuesta. Se pregunta solo cuando `crop_loss_shock_past_season` es `yes`."
+
+type: string
+cardinality: single
+core: false
+vocabulary: crop-loss-band
+references: null
+category: context
+sensitivity: sensitive

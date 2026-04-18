@@ -1,0 +1,19 @@
+id: aap_aid_met_priority_needs
+maturity: draft
+label:
+  en: "AAP: Aid met priority needs"
+  fr: "Redevabilité : L'aide a répondu aux besoins prioritaires"
+  es: "Rendición de cuentas: La ayuda cumplió con las necesidades prioritarias"
+
+definition:
+  en: "Whether the most recent aid received met the things the household most needed. Maps to CHS 2024 Commitments 2 and 7 (relevance indicator). GTS HVI relevance pillar. Distinct from objective sufficiency (see `aap_aid_quantity_sufficient` for quantity perception; sector profiles for adequacy measurement). Source: IASC / REACH Menu 2018."
+  fr: "Si l'aide la plus récente reçue a répondu à ce dont le ménage avait le plus besoin. Correspond aux Engagements 2 et 7 de la CHS 2024 (indicateur de pertinence). Pilier de pertinence de GTS HVI. Distinct de la suffisance objective (voir `aap_aid_quantity_sufficient` pour la perception de la quantité ; profils sectoriels pour la mesure de l'adéquation). Source : Menu IASC / REACH 2018."
+  es: "Si la ayuda más reciente recibida cumplió con lo que el hogar más necesitaba. Corresponde a los Compromisos 2 y 7 de la CHS 2024 (indicador de relevancia). Pilar de relevancia de GTS HVI. Distinto de la suficiencia objetiva (ver `aap_aid_quantity_sufficient` para la percepción de la cantidad; perfiles sectoriales para la medición de la adecuación). Fuente: Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-satisfaction-5
+references: null
+category: aap_timeliness
+core: false
+sensitivity: standard

@@ -1,0 +1,59 @@
+id: land-access-status
+maturity: draft
+label:
+  en: Land Access Status
+  fr: "Statut d'accès à la terre"
+  es: "Estado de acceso a la tierra"
+definition:
+  en: "Whether the household currently has access to agricultural or productive land, and under what broad arrangement (owned, rented, customary, or borrowed). Synthesised from the FAO Voluntary Guidelines on the Responsible Governance of Tenure (VGGT) and the LSMS-ISA land tenure module. Used as a prerequisite screen before capturing full tenure details: this vocabulary is coarser than `land-tenure` (PS) and is designed for rapid needs assessment. Agriculture-specific land area and crop details belong to AgricultureProfile."
+  fr: "Si le ménage a actuellement accès à des terres agricoles ou productives, et sous quel arrangement général (propriété, location, droit coutumier ou emprunt). Synthétisé à partir des Directives volontaires de la FAO pour une gouvernance responsable des régimes fonciers (VGGT) et du module foncier LSMS-ISA. Utilisé comme écran préalable avant la saisie des détails complets du régime foncier : ce vocabulaire est plus grossier que `land-tenure` (PublicSchema) et est conçu pour l'évaluation rapide des besoins. Les détails de superficie et de cultures relèvent d'AgricultureProfile."
+  es: "Si el hogar tiene actualmente acceso a tierras agrícolas o productivas, y bajo qué arreglo general (propia, arrendada, consuetudinaria o prestada). Sintetizado a partir de las Directrices Voluntarias de la FAO sobre la Gobernanza Responsable de la Tenencia (VGGT) y el módulo de tenencia de la tierra LSMS-ISA. Se utiliza como pantalla previa antes de capturar los detalles completos de tenencia: este vocabulario es más grueso que `land-tenure` (PublicSchema) y está diseñado para evaluación rápida de necesidades. Los detalles de superficie y cultivos pertenecen a AgricultureProfile."
+standard:
+  name: "Synthesised from FAO VGGT and LSMS-ISA land tenure module"
+  notes: "Coarser than the PS `land-tenure` vocabulary: use `land-tenure` for full tenure regime classification."
+values:
+  - code: yes_owned
+    label:
+      en: "Yes — owned"
+      fr: "Oui — en propriété"
+      es: "Sí — en propiedad"
+    definition:
+      en: "Household currently has access to land that it owns."
+      fr: "Le ménage a actuellement accès à des terres dont il est propriétaire."
+      es: "El hogar tiene actualmente acceso a tierras que posee."
+  - code: yes_rented_leased
+    label:
+      en: "Yes — rented or leased"
+      fr: "Oui — loué ou pris à bail"
+      es: "Sí — alquilada o arrendada"
+    definition:
+      en: "Household has access to land through a rental or formal lease arrangement."
+      fr: "Le ménage a accès à des terres par location ou bail formel."
+      es: "El hogar tiene acceso a la tierra mediante alquiler o arrendamiento formal."
+  - code: yes_customary_access
+    label:
+      en: "Yes — customary or community access"
+      fr: "Oui — accès coutumier ou communautaire"
+      es: "Sí — acceso consuetudinario o comunitario"
+    definition:
+      en: "Household accesses land through customary tenure arrangements or community allocation without formal title."
+      fr: "Le ménage accède à la terre par des arrangements de tenure coutumière ou d'allocation communautaire sans titre formel."
+      es: "El hogar accede a la tierra mediante arreglos de tenencia consuetudinaria o asignación comunitaria sin título formal."
+  - code: yes_borrowed_shared
+    label:
+      en: "Yes — borrowed or share-cropped"
+      fr: "Oui — emprunté ou en métayage"
+      es: "Sí — prestada o en aparcería"
+    definition:
+      en: "Household uses land lent by another party or under a share-cropping arrangement."
+      fr: "Le ménage utilise des terres prêtées par une autre partie ou dans le cadre d'un arrangement de métayage."
+      es: "El hogar usa tierras prestadas por otra parte o bajo un acuerdo de aparcería."
+  - code: "no"
+    label:
+      en: "No"
+      fr: "Non"
+      es: "No"
+    definition:
+      en: "Household does not currently have access to agricultural or productive land."
+      fr: "Le ménage n'a pas actuellement accès à des terres agricoles ou productives."
+      es: "El hogar no tiene actualmente acceso a tierras agrícolas o productivas."

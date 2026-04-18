@@ -1,0 +1,18 @@
+id: warning_received
+maturity: draft
+label:
+  en: "Warning received for hazard event"
+  fr: "Alerte reçue pour l'événement dangereux"
+  es: "Alerta recibida para el evento de peligro"
+
+definition:
+  en: "Whether the household received any warning, alert, or notice that the reference hazard event was coming or likely to happen. Asked at household level with recall of the most recent hazard event affecting the household in the last twelve months. Gating item for modules C, D, and E: if the answer is no or don't know, comprehension, action, and barrier items are skipped and the respondent jumps directly to the reflection items (G1, G2)."
+  fr: "Indique si le ménage a reçu une quelconque alerte, avertissement ou avis indiquant que l'événement dangereux de référence allait survenir ou était probable. Posé au niveau du ménage avec rappel de l'événement dangereux le plus récent ayant affecté le ménage au cours des douze derniers mois. Item de filtrage pour les modules C, D et E : si la réponse est non ou ne sait pas, les items de compréhension, d'action et d'obstacles sont ignorés et le répondant passe directement aux items de réflexion (G1, G2)."
+  es: "Indica si el hogar recibió alguna alerta, aviso o notificación de que el evento de peligro de referencia iba a ocurrir o era probable. Preguntado a nivel del hogar con recuerdo del evento de peligro más reciente que afectó al hogar en los últimos doce meses. Ítem de filtro para los módulos C, D y E: si la respuesta es no o no sabe, se omiten los ítems de comprensión, acción y barreras y el respondiente pasa directamente a los ítems de reflexión (G1, G2)."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: hazard_event

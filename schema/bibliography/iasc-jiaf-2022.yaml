@@ -1,0 +1,21 @@
+id: iasc-jiaf-2022
+title: "JIAF 2.0 Guidance — Joint Intersectoral Analysis Framework"
+short_title: "IASC JIAF 2.0"
+publisher: "IASC (hosted by OCHA)"
+year: 2022
+version: "v2.0"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.jiaf.info/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - CommunityNeedsProfile
+  vocabularies:
+    - needs-severity-5
+    - baseline-comparison
+  properties:
+    - cn_severity_vs_baseline
+    - cn_severity_overall_rating

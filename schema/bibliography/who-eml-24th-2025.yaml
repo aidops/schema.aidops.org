@@ -1,0 +1,27 @@
+id: who-eml-24th-2025
+title: "WHO Model List of Essential Medicines - 24th List"
+short_title: "WHO EML 24th (2025)"
+publisher: "World Health Organization"
+year: 2025
+version: "24th List (with 10th EMLc)"
+type: guidance_publication
+domain: health
+uri: "https://list.essentialmeds.org/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - HealthFacilityProfile
+  vocabularies: []
+  properties:
+    - hf_commodity_ors_available
+    - hf_commodity_zinc_available
+    - hf_commodity_amoxicillin_dt_available
+    - hf_commodity_amoxicillin_cap_available
+    - hf_commodity_act_available
+    - hf_commodity_oxytocin_available
+    - hf_commodity_magnesium_sulfate_available
+    - hf_commodity_insulin_available
+    - hf_commodity_amlodipine_available
+    - hf_commodity_salbutamol_inhaler_available

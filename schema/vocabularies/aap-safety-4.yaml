@@ -1,0 +1,69 @@
+id: aap-safety-4
+maturity: draft
+label:
+  en: "AAP: Safety with responders (4 levels)"
+  fr: "Redevabilité : Sécurité avec les intervenants (4 niveaux)"
+  es: "Rendición de cuentas: Seguridad con los actores humanitarios (4 niveles)"
+definition:
+  en: "Four-level safety perception scale specifically for interactions with aid providers. Distinct from GBVRiskProfile's `safety-perception-3` (which is a three-level scale covering site-level daytime/nighttime movement safety for women and girls): the AAP scale has finer granularity on the narrower topic of staff-interaction safety, aligned with GTS HVI convention. Properties using this vocabulary are PSEA-adjacent and must be flagged `sensitivity: sensitive`."
+  fr: "Échelle de perception de sécurité à quatre niveaux spécifiquement pour les interactions avec les intervenants. Distincte de `safety-perception-3` du Profil de risque VBG (qui est une échelle à trois niveaux couvrant la sécurité des déplacements au niveau du site de jour et de nuit pour les femmes et les filles) : l'échelle AAP a une granularité plus fine sur le sujet plus étroit de la sécurité des interactions avec le personnel, alignée sur la convention GTS HVI. Les propriétés utilisant ce vocabulaire sont liées à la PSEA et doivent être marquées `sensitivity: sensitive`."
+  es: "Escala de percepción de seguridad de cuatro niveles específicamente para las interacciones con los actores humanitarios. Distinta de `safety-perception-3` del Perfil de Riesgo VBG (que es una escala de tres niveles que cubre la seguridad del movimiento a nivel de sitio de día/noche para mujeres y niñas): la escala AAP tiene una granularidad más fina sobre el tema más estrecho de la seguridad en las interacciones con el personal, alineada con la convención GTS HVI. Las propiedades que utilizan este vocabulario están relacionadas con PSEA y deben marcarse como `sensitivity: sensitive`."
+standard:
+  name: "Humanitarian Voice Index (Ground Truth Solutions)"
+  uri: "https://humanitarianvoiceindex.org"
+  notes: "Safety 4-level scale aligned with GTS HVI and IASC / REACH 2018 staff-interaction safety convention."
+values:
+  - code: very_safe
+    label:
+      en: "Very safe"
+      fr: "Très en sécurité"
+      es: "Muy seguro"
+    definition:
+      en: "Respondent reports feeling very safe in interactions with aid providers."
+      fr: "Le répondant rapporte se sentir très en sécurité lors des interactions avec les intervenants."
+      es: "El encuestado reporta sentirse muy seguro en las interacciones con los actores humanitarios."
+  - code: somewhat_safe
+    label:
+      en: "Somewhat safe"
+      fr: "Plutôt en sécurité"
+      es: "Algo seguro"
+    definition:
+      en: "Respondent reports generally feeling safe but with some hesitation."
+      fr: "Le répondant rapporte se sentir généralement en sécurité mais avec une certaine hésitation."
+      es: "El encuestado reporta sentirse generalmente seguro pero con cierta vacilación."
+  - code: not_very_safe
+    label:
+      en: "Not very safe"
+      fr: "Peu en sécurité"
+      es: "Poco seguro"
+    definition:
+      en: "Respondent reports feeling unsafe in some or most interactions with aid providers."
+      fr: "Le répondant rapporte se sentir peu en sécurité dans certaines ou la plupart des interactions avec les intervenants."
+      es: "El encuestado reporta sentirse poco seguro en algunas o la mayoría de las interacciones con los actores humanitarios."
+  - code: not_at_all_safe
+    label:
+      en: "Not at all safe"
+      fr: "Pas du tout en sécurité"
+      es: "Nada seguro"
+    definition:
+      en: "Respondent reports feeling unsafe in interactions with aid providers."
+      fr: "Le répondant rapporte ne se sentir pas en sécurité lors des interactions avec les intervenants."
+      es: "El encuestado reporta sentirse inseguro en las interacciones con los actores humanitarios."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess safety."
+      fr: "Le répondant ne peut pas évaluer la sécurité."
+      es: "El encuestado no puede evaluar la seguridad."
+  - code: prefer_not_to_answer
+    label:
+      en: "Prefer not to answer"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent declines to answer."
+      fr: "Le répondant refuse de répondre."
+      es: "El encuestado se niega a responder."

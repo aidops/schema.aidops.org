@@ -1,0 +1,114 @@
+id: warning-support-needed
+maturity: draft
+label:
+  en: Warning Support Needed
+  fr: "Soutien nécessaire pour répondre à une alerte"
+  es: "Apoyo necesario para responder a una alerta"
+definition:
+  en: "The kinds of support a household identifies as most helpful for taking protective action in response to a future early warning. Covers message-side improvements (earlier warning, clearer message, warning in the local language), operational support (transport assistance, safe shelter location, cash assistance, livestock protection support, childcare or elderly-care support), capacity support (training or drills on what to do), an explicit 'none' code for households that feel they can act fully without additional support, and an 'other' code. Captured as a multi-select reflection item asked of all respondents whether or not they received a warning for the reference event."
+  fr: "Les types de soutien qu'un ménage identifie comme les plus utiles pour prendre des actions de protection en réponse à une alerte précoce future. Couvre les améliorations du côté du message (alerte plus précoce, message plus clair, alerte dans la langue locale), le soutien opérationnel (aide au transport, lieu d'abri sûr, aide financière, soutien à la protection du bétail, soutien à la garde d'enfants ou de personnes âgées), le soutien en capacité (formation ou exercices sur ce qu'il faut faire), un code explicite « aucun » pour les ménages qui estiment pouvoir agir pleinement sans soutien supplémentaire, et un code « autre ». Saisi comme un item de réflexion à sélection multiple posé à tous les répondants qu'ils aient reçu ou non une alerte pour l'événement de référence."
+  es: "Los tipos de apoyo que un hogar identifica como más útiles para tomar acción de protección en respuesta a una alerta temprana futura. Abarca mejoras del lado del mensaje (alerta más temprana, mensaje más claro, alerta en el idioma local), apoyo operativo (asistencia de transporte, lugar de refugio seguro, asistencia en efectivo, apoyo para protección de ganado, apoyo al cuidado de niños o personas mayores), apoyo en capacidad (capacitación o simulacros sobre qué hacer), un código explícito «ninguno» para hogares que consideran que pueden actuar plenamente sin apoyo adicional, y un código «otro». Capturado como ítem de reflexión de selección múltiple preguntado a todos los respondientes hayan o no recibido una alerta para el evento de referencia."
+standard:
+  name: "IFRC Forecast-based Financing focus-group discussion guide; Start Network Distribution Evaluation Framework household learning module; IASC Accountability to Affected Populations operational guidance"
+  uri: "https://www.anticipation-hub.org/"
+  notes: "Codes consolidate the support-needs inventories used in IFRC FbF post-event reflection FGD guides and in Start Network DEF household learning modules, cross-referenced with IASC AAP guidance on closing the information and support feedback loop."
+values:
+- code: earlier_warning
+  label:
+    en: Earlier warning
+    fr: "Alerte plus précoce"
+    es: "Alerta más temprana"
+  definition:
+    en: "More lead time between the warning and the event."
+    fr: "Plus de délai entre l'alerte et l'événement."
+    es: "Más tiempo entre la alerta y el evento."
+- code: clearer_message
+  label:
+    en: Clearer message
+    fr: Message plus clair
+    es: "Mensaje más claro"
+  definition:
+    en: "Warning content that is more specific and more actionable."
+    fr: "Contenu d'alerte plus spécifique et plus exploitable."
+    es: "Contenido de la alerta más específico y más accionable."
+- code: warning_in_local_language
+  label:
+    en: Warning in the local language
+    fr: "Alerte dans la langue locale"
+    es: "Alerta en el idioma local"
+  definition:
+    en: "Warning translated into the household's primary language."
+    fr: "Alerte traduite dans la langue principale du ménage."
+    es: "Alerta traducida al idioma principal del hogar."
+- code: transport_assistance
+  label:
+    en: Transport assistance
+    fr: Aide au transport
+    es: Asistencia de transporte
+  definition:
+    en: "Help getting to a safer location."
+    fr: "Aide pour rejoindre un lieu plus sûr."
+    es: "Ayuda para llegar a un lugar más seguro."
+- code: safe_shelter_location
+  label:
+    en: Safer shelter available
+    fr: "Abri plus sûr disponible"
+    es: "Refugio más seguro disponible"
+  definition:
+    en: "A designated and accessible safe shelter."
+    fr: "Un abri sûr désigné et accessible."
+    es: "Un refugio seguro designado y accesible."
+- code: cash_assistance
+  label:
+    en: Anticipatory cash
+    fr: "Espèces anticipatoires"
+    es: Efectivo anticipatorio
+  definition:
+    en: "Cash transferred in advance of the event to fund protective action."
+    fr: "Espèces transférées avant l'événement pour financer l'action de protection."
+    es: "Efectivo transferido antes del evento para financiar la acción de protección."
+- code: livestock_protection_support
+  label:
+    en: Livestock protection support
+    fr: "Soutien à la protection du bétail"
+    es: "Apoyo para protección del ganado"
+  definition:
+    en: "Fodder, temporary livestock shelters, or livestock evacuation support."
+    fr: "Fourrage, abris temporaires pour le bétail ou appui à l'évacuation du bétail."
+    es: "Forraje, refugios temporales para ganado o apoyo a la evacuación del ganado."
+- code: childcare_elderly_care_support
+  label:
+    en: Support caring for dependents
+    fr: "Soutien pour la prise en charge des personnes dépendantes"
+    es: Apoyo al cuidado de personas dependientes
+  definition:
+    en: "Help moving or caring for children, elderly, or disabled household members."
+    fr: "Aide pour déplacer ou prendre en charge les enfants, les personnes âgées ou les membres du ménage en situation de handicap."
+    es: "Ayuda para trasladar o cuidar a niños, personas mayores o miembros del hogar con discapacidad."
+- code: training_on_what_to_do
+  label:
+    en: Training or drills
+    fr: "Formation ou exercices"
+    es: "Capacitación o simulacros"
+  definition:
+    en: "Prior training or simulation exercises on what to do during this type of event."
+    fr: "Formation préalable ou exercices de simulation sur ce qu'il faut faire lors de ce type d'événement."
+    es: "Capacitación previa o ejercicios de simulación sobre qué hacer durante este tipo de evento."
+- code: none
+  label:
+    en: No additional support needed
+    fr: "Aucun soutien supplémentaire nécessaire"
+    es: "No se necesita apoyo adicional"
+  definition:
+    en: "Household feels it can act fully without additional support."
+    fr: "Le ménage estime qu'il peut agir pleinement sans soutien supplémentaire."
+    es: "El hogar considera que puede actuar plenamente sin apoyo adicional."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "Support not listed above."
+    fr: "Soutien non répertorié ci-dessus."
+    es: "Apoyo no listado arriba."

@@ -1,0 +1,18 @@
+id: support_needed_to_act
+maturity: draft
+label:
+  en: "Support needed to act on warnings (multi-select)"
+  fr: "Soutien nécessaire pour agir sur les alertes (sélection multiple)"
+  es: "Apoyo necesario para actuar ante alertas (selección múltiple)"
+
+definition:
+  en: "The kinds of support the household identifies as most helpful for taking protective action in response to future warnings. Multi-select from the warning-support-needed vocabulary, covering message-side improvements (earlier warning, clearer message, warning in the local language), operational support (transport assistance, safer shelter, anticipatory cash, livestock protection support, dependent-care support), capacity support (training or drills), an explicit 'none' code, and 'other'. Asked of all respondents whether or not they received a warning for the reference event."
+  fr: "Les types de soutien que le ménage identifie comme les plus utiles pour prendre des actions de protection en réponse aux alertes futures. Sélection multiple dans le vocabulaire warning-support-needed, couvrant les améliorations du côté du message (alerte plus précoce, message plus clair, alerte dans la langue locale), le soutien opérationnel (aide au transport, abri plus sûr, espèces anticipatoires, soutien à la protection du bétail, soutien à la prise en charge des personnes dépendantes), le soutien en capacité (formation ou exercices), un code explicite « none », et « other ». Posé à tous les répondants qu'ils aient ou non reçu une alerte pour l'événement de référence."
+  es: "Los tipos de apoyo que el hogar identifica como más útiles para tomar acción de protección en respuesta a alertas futuras. Selección múltiple del vocabulario warning-support-needed, que abarca mejoras del lado del mensaje (alerta más temprana, mensaje más claro, alerta en el idioma local), apoyo operativo (asistencia de transporte, refugio más seguro, efectivo anticipatorio, apoyo para protección de ganado, apoyo al cuidado de personas dependientes), apoyo en capacidad (capacitación o simulacros), un código explícito «none», y «other». Se pregunta a todos los respondientes hayan recibido o no una alerta para el evento de referencia."
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: warning-support-needed
+references: null
+category: context

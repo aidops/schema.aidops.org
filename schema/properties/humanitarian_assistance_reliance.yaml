@@ -1,0 +1,19 @@
+id: humanitarian_assistance_reliance
+maturity: draft
+label:
+  en: "Household reliance on humanitarian assistance"
+  fr: "Dépendance du ménage à l'assistance humanitaire"
+  es: "Dependencia del hogar de la asistencia humanitaria"
+
+definition:
+  en: "The degree to which the household currently relies on humanitarian assistance (cash, vouchers, food, in-kind, or services) as a livelihood input. Captured as a structured status, not a dollar amount. Drawn from the IOM DTM Multi-Sectoral Location Assessment assistance module, the Sphere 2018 Livelihoods chapter on assistance and protection, and the CaLP Network cash and voucher assistance core indicators. Distinct from `income_sources` where humanitarian transfers may also be listed: this item asks specifically about the household's dependence level."
+  fr: "Le degré auquel le ménage dépend actuellement de l'assistance humanitaire (espèces, coupons, nourriture, en nature ou services) comme intrant de subsistance. Saisi comme un statut structuré, et non comme un montant. Tiré du module d'assistance de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM, du chapitre Moyens de subsistance de Sphère 2018 sur l'assistance et la protection, et des indicateurs de base de l'assistance en espèces et sous forme de coupons du réseau CaLP. Distinct de `income_sources` où les transferts humanitaires peuvent également être listés : cet item interroge spécifiquement le niveau de dépendance du ménage."
+  es: "El grado en que el hogar actualmente depende de la asistencia humanitaria (efectivo, vales, alimentos, en especie o servicios) como insumo de subsistencia. Capturado como un estado estructurado, no un monto. Tomado del módulo de asistencia de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM, el capítulo de Medios de Vida de Esfera 2018 sobre asistencia y protección, y los indicadores básicos de asistencia en efectivo y vales de la Red CaLP. Distinto de `income_sources` donde las transferencias humanitarias también pueden listarse: este ítem pregunta específicamente sobre el nivel de dependencia del hogar."
+
+type: string
+cardinality: single
+core: false
+vocabulary: humanitarian-assistance-reliance
+references: null
+category: context
+sensitivity: sensitive

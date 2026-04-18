@@ -1,0 +1,21 @@
+id: gfdrr-aa-toolkit-2023
+title: "Anticipatory Action Toolkit and Evidence Review"
+short_title: "GFDRR AA Toolkit"
+publisher: "World Bank / Global Facility for Disaster Reduction and Recovery (GFDRR)"
+year: 2023
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.gfdrr.org/en/publication/anticipatory-action-toolkit"
+access: open
+status: active
+
+informs:
+  concepts:
+    - WarningResponseProfile
+  vocabularies:
+    - warning-protective-action
+    - warning-support-needed
+  properties:
+    - warning_actions_taken
+    - received_prior_aa_support
+    - support_needed_to_act

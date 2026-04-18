@@ -1,0 +1,103 @@
+id: livelihood-disruption-barrier
+maturity: draft
+label:
+  en: Livelihood Disruption Barrier
+  fr: "Obstacle à la subsistance"
+  es: "Barrera de interrupción de medios de vida"
+definition:
+  en: "Primary barrier preventing a household from practicing its previous livelihood activity. Synthesised from IOM DTM Multi-Sectoral Location Assessment, the Sphere 2018 Livelihoods chapter, and the LSMS-ISA livelihood constraints module. Used to identify the most important reason a household cannot resume or maintain its main livelihood after a crisis or displacement, to inform programme design."
+  fr: "Obstacle principal empêchant un ménage de pratiquer son activité de subsistance antérieure. Synthétisé à partir de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM, du chapitre Moyens de subsistance de Sphère 2018 et du module de contraintes de subsistance du LSMS-ISA. Utilisé pour identifier la raison la plus importante pour laquelle un ménage ne peut pas reprendre ou maintenir sa principale activité de subsistance après une crise ou un déplacement, afin d'éclairer la conception des programmes."
+  es: "Barrera principal que impide a un hogar practicar su actividad de subsistencia anterior. Sintetizada a partir de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM, el capítulo de Medios de Vida de Esfera 2018 y el módulo de restricciones de subsistencia del LSMS-ISA. Se utiliza para identificar la razón más importante por la que un hogar no puede reanudar o mantener su actividad principal de subsistencia tras una crisis o desplazamiento, para orientar el diseño de programas."
+standard:
+  name: "Synthesised from IOM DTM MSLA, Sphere 2018 Livelihoods chapter, and LSMS-ISA constraints module"
+values:
+  - code: lost_productive_assets
+    label:
+      en: Lost productive assets or tools
+      fr: "Perte d'actifs ou d'outils productifs"
+      es: "Pérdida de activos o herramientas productivas"
+    definition:
+      en: "Key tools, equipment, livestock, or other productive assets were lost, destroyed, or stolen."
+      fr: "Des outils clés, du matériel, du bétail ou d'autres actifs productifs ont été perdus, détruits ou volés."
+      es: "Se perdieron, destruyeron o robaron herramientas clave, equipo, ganado u otros activos productivos."
+  - code: lost_access_to_land
+    label:
+      en: Lost access to land or natural resources
+      fr: "Perte d'accès à la terre ou aux ressources naturelles"
+      es: "Pérdida de acceso a tierra o recursos naturales"
+    definition:
+      en: "Unable to access the land, fishing grounds, or natural resources needed for the activity."
+      fr: "Incapacité d'accéder à la terre, aux zones de pêche ou aux ressources naturelles nécessaires à l'activité."
+      es: "No se puede acceder a la tierra, zonas de pesca o recursos naturales necesarios para la actividad."
+  - code: insecurity_movement_restriction
+    label:
+      en: Insecurity or movement restriction
+      fr: "Insécurité ou restriction de mouvement"
+      es: "Inseguridad o restricción de movimiento"
+    definition:
+      en: "Conflict, insecurity, or imposed restrictions prevent access to livelihood sites or markets."
+      fr: "Conflit, insécurité ou restrictions imposées empêchent l'accès aux sites de subsistance ou aux marchés."
+      es: "Conflicto, inseguridad o restricciones impuestas impiden el acceso a los sitios de subsistencia o los mercados."
+  - code: no_market_access
+    label:
+      en: No market access
+      fr: "Absence d'accès au marché"
+      es: "Sin acceso al mercado"
+    definition:
+      en: "Cannot sell products or purchase inputs because markets are absent, destroyed, or too distant."
+      fr: "Impossible de vendre des produits ou d'acheter des intrants car les marchés sont absents, détruits ou trop éloignés."
+      es: "No se pueden vender productos ni comprar insumos porque los mercados están ausentes, destruidos o demasiado lejanos."
+  - code: lack_capital
+    label:
+      en: Lack of capital or start-up costs
+      fr: "Manque de capital ou coûts de démarrage"
+      es: "Falta de capital o costos de inicio"
+    definition:
+      en: "Cannot restart or scale up due to lack of money, credit, or in-kind inputs."
+      fr: "Impossible de redémarrer ou de se développer en raison d'un manque d'argent, de crédit ou d'intrants en nature."
+      es: "No se puede reiniciar o ampliar debido a la falta de dinero, crédito o insumos en especie."
+  - code: legal_documentation
+    label:
+      en: Lack of legal documents or permits
+      fr: "Absence de documents légaux ou permis"
+      es: "Falta de documentos legales o permisos"
+    definition:
+      en: "Inability to operate due to missing business permit, identity documentation, or legal status."
+      fr: "Incapacité d'exercer en raison de l'absence de permis commercial, de documentation d'identité ou de statut légal."
+      es: "Incapacidad de operar debido a la falta de permiso comercial, documentación de identidad o estatus legal."
+  - code: skills_mismatch
+    label:
+      en: Skills not applicable in current location
+      fr: "Compétences non applicables à l'emplacement actuel"
+      es: "Habilidades no aplicables en la ubicación actual"
+    definition:
+      en: "The skills or trade practised before do not have a market or opportunity in the current location."
+      fr: "Les compétences ou le métier pratiqués auparavant n'ont pas de marché ou de débouché dans le lieu actuel."
+      es: "Las habilidades u oficio practicados anteriormente no tienen mercado ni oportunidad en la ubicación actual."
+  - code: family_obligations
+    label:
+      en: Family or care obligations
+      fr: "Obligations familiales ou de soins"
+      es: "Obligaciones familiares o de cuidado"
+    definition:
+      en: "Caring for dependants, injury, or illness prevents participation in the activity."
+      fr: "Les soins aux personnes à charge, les blessures ou la maladie empêchent la participation à l'activité."
+      es: "El cuidado de dependientes, lesiones o enfermedades impide la participación en la actividad."
+  - code: discrimination_exclusion
+    label:
+      en: Discrimination or social exclusion
+      fr: "Discrimination ou exclusion sociale"
+      es: "Discriminación o exclusión social"
+    definition:
+      en: "Prevented from practicing the activity due to discrimination (ethnicity, gender, displacement status, religion)."
+      fr: "Empêché de pratiquer l'activité en raison de discriminations (ethnie, genre, statut de déplacement, religion)."
+      es: "Impedido de practicar la actividad por discriminación (etnia, género, estatus de desplazamiento, religión)."
+  - code: other
+    label:
+      en: Other
+      fr: Autre
+      es: Otro
+    definition:
+      en: "Barrier not covered by the above categories."
+      fr: "Obstacle non couvert par les catégories ci-dessus."
+      es: "Barrera no cubierta por las categorías anteriores."

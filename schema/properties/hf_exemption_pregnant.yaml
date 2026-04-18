@@ -1,0 +1,19 @@
+id: hf_exemption_pregnant
+maturity: draft
+label:
+  en: "Pregnant women exempted from user fees"
+  fr: "Femmes enceintes exemptées des frais d'utilisation"
+  es: "Mujeres embarazadas exentas de tarifas al usuario"
+
+definition:
+  en: "Whether pregnant women are exempted from user fees for ANC, delivery, and PNC at this facility. Three-level response: `yes` (full exemption for all three services), `partial` (exemption for some but not all of ANC / delivery / PNC), `no` (no exemption). Asked only when `hf_user_fee_charged` is not `no`; leave null when user fees are not charged at all. Reported by the facility in-charge. Sphere 2018 Health Action; MISP. Sensitive: fee-waiver policy is politically sensitive."
+  fr: "Si les femmes enceintes sont exemptées des frais d'utilisation pour les CPN, l'accouchement et les soins du post-partum dans cet établissement. Réponse à trois niveaux : `yes` (exemption complète pour les trois services), `partial` (exemption pour certains mais pas tous parmi CPN / accouchement / post-partum), `no` (aucune exemption). À poser uniquement lorsque `hf_user_fee_charged` n'est pas `no` ; laisser à null lorsqu'aucun frais d'utilisation n'est facturé. Rapporté par le responsable de l'établissement. Sphere 2018 Action Santé ; MISP. Sensible : la politique d'exemption de frais est politiquement sensible."
+  es: "Si las mujeres embarazadas están exentas de tarifas al usuario para CPN, parto y atención postnatal en este establecimiento. Respuesta de tres niveles: `yes` (exención completa para los tres servicios), `partial` (exención para algunos pero no todos entre CPN / parto / postnatal), `no` (sin exención). Preguntar solo cuando `hf_user_fee_charged` no sea `no`; dejar nulo cuando no se cobren tarifas al usuario. Reportado por el responsable del establecimiento. Esfera 2018 Acción de Salud; MISP. Sensible: la política de exención de tarifas es políticamente sensible."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: governance
+sensitivity: sensitive

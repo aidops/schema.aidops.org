@@ -1,0 +1,19 @@
+id: lean_season_months_count
+maturity: draft
+label:
+  en: "Lean season months count (past 12 months)"
+  fr: "Nombre de mois de soudure (12 derniers mois)"
+  es: "Recuento de meses de escasez (últimos 12 meses)"
+
+definition:
+  en: "Integer count (0–12) of months in the past year during which the household experienced a lean season or period with insufficient income. Asked only when `income_seasonality` is not `stable_year_round`. Drawn from the FAO MAHFP (Months of Adequate Household Food Provisioning) structural analogue applied to income, the LSMS-ISA seasonal calendar module, and the FAO RIMA-II income stability subcomponent. Used with `income_seasonality` to derive a lean-season vulnerability flag (post-hoc)."
+  fr: "Nombre entier (0–12) de mois au cours de l'année écoulée pendant lesquels le ménage a connu une période de soudure ou une période de revenu insuffisant. Posé uniquement lorsque `income_seasonality` n'est pas `stable_year_round`. Tiré de l'analogue structurel FAO MAHFP (Mois d'approvisionnement alimentaire adéquat du ménage) appliqué au revenu, du module de calendrier saisonnier LSMS-ISA et du sous-composant de stabilité des revenus de FAO RIMA-II. Utilisé avec `income_seasonality` pour dériver un signal de vulnérabilité à la soudure (a posteriori)."
+  es: "Recuento entero (0–12) de meses en el año pasado durante los cuales el hogar experimentó una temporada de escasez o un período con ingresos insuficientes. Se pregunta solo cuando `income_seasonality` no es `stable_year_round`. Tomado del análogo estructural FAO MAHFP (Meses de Aprovisionamiento Alimentario Adecuado del Hogar) aplicado al ingreso, el módulo de calendario estacional LSMS-ISA y el subcomponente de estabilidad de ingresos de FAO RIMA-II. Se usa con `income_seasonality` para derivar una marca de vulnerabilidad a la temporada de escasez (post-hoc)."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: context
+sensitivity: sensitive

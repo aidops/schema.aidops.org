@@ -1,0 +1,19 @@
+id: hf_ipc_written_ipc_protocol
+maturity: draft
+label:
+  en: "Written IPC protocols available at facility"
+  fr: "Protocoles de PCI écrits disponibles à l'établissement"
+  es: "Protocolos de PCI escritos disponibles en el establecimiento"
+
+definition:
+  en: "Whether written infection prevention and control (IPC) protocols, covering at minimum standard precautions and transmission-based precautions, are available on-site. Observed by the enumerator. WHO IPC core component 2; HHFA Quality of Care module. Extended (non-core)."
+  fr: "Si des protocoles écrits de prévention et contrôle des infections (PCI), couvrant au minimum les précautions standard et les précautions additionnelles selon le mode de transmission, sont disponibles sur site. Observé par l'enquêteur. Composante centrale PCI 2 de l'OMS ; module Qualité des soins HHFA. Étendu (non-core)."
+  es: "Si hay protocolos escritos de prevención y control de infecciones (PCI), que cubran al menos las precauciones estándar y las precauciones basadas en la transmisión, disponibles en el sitio. Observado por el enumerador. Componente central PCI 2 de la OMS; módulo Calidad de la Atención de HHFA. Extendido (no-core)."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: hygiene
+sensitivity: standard

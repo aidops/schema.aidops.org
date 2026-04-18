@@ -431,3 +431,93 @@ gad7_items:
     en: "GAD-7 anxiety screener items"
     fr: "Items du dépistage de l'anxiété GAD-7"
     es: "Ítems del tamizaje de ansiedad GAD-7"
+
+identity:
+  label:
+    en: Identity
+    fr: Identité
+    es: Identidad
+
+classification:
+  label:
+    en: Classification
+    fr: Classification
+    es: Clasificación
+
+aap_information:
+  label:
+    en: "Information and communication"
+    fr: "Information et communication"
+    es: "Información y comunicación"
+
+aap_consultation:
+  label:
+    en: "Consultation and participation"
+    fr: "Consultation et participation"
+    es: "Consulta y participación"
+
+aap_feedback:
+  label:
+    en: "Feedback and complaints"
+    fr: "Retours et plaintes"
+    es: "Retroalimentación y quejas"
+
+aap_trust_safety:
+  label:
+    en: "Trust, safety and PSEA"
+    fr: "Confiance, sécurité et PSEA"
+    es: "Confianza, seguridad y PEAS"
+
+aap_timeliness:
+  label:
+    en: "Timeliness and adequacy"
+    fr: "Rapidité et adéquation"
+    es: "Oportunidad y adecuación"
+
+aap_targeting:
+  label:
+    en: "Targeting and relevance"
+    fr: "Ciblage et pertinence"
+    es: "Focalización y pertinencia"
+
+aap_respect:
+  label:
+    en: "Dignity and respect"
+    fr: "Dignité et respect"
+    es: "Dignidad y respeto"
+
+health_facility_metadata:
+  label:
+    en: "Health facility metadata"
+    fr: "Métadonnées de l'établissement de santé"
+    es: "Metadatos del establecimiento de salud"
+
+health_facility_staffing:
+  label:
+    en: "Health facility staffing"
+    fr: "Dotation en personnel de l'établissement"
+    es: "Dotación de personal del establecimiento"
+
+health_facility_services:
+  label:
+    en: "Health facility services"
+    fr: "Services de l'établissement de santé"
+    es: "Servicios del establecimiento de salud"
+
+health_facility_commodities:
+  label:
+    en: "Health facility commodities"
+    fr: "Produits et intrants de l'établissement"
+    es: "Insumos del establecimiento de salud"
+
+health_facility_referral:
+  label:
+    en: "Health facility referral and continuity"
+    fr: "Référence et continuité"
+    es: "Referencia y continuidad"
+
+health_facility_cost_equity:
+  label:
+    en: "Health facility cost and equity"
+    fr: "Coût et équité"
+    es: "Costo y equidad"

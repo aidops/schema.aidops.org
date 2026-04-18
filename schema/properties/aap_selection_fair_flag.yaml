@@ -1,0 +1,17 @@
+id: aap_selection_fair_flag
+maturity: draft
+label:
+  en: "AAP: Selection perceived fair (derived)"
+  fr: "Redevabilité : Sélection perçue équitable (dérivé)"
+  es: "Rendición de cuentas: Selección percibida justa (derivado)"
+definition:
+  en: "Derived household-level boolean: true if `aap_selection_fair_perception IN (strongly_agree, agree)`. Maps to CHS 2024 Commitment 1 and to GTS HVI fairness pillar."
+  fr: "Booléen dérivé au niveau ménage : vrai si `aap_selection_fair_perception IN (strongly_agree, agree)`. Correspond à l'Engagement 1 de la CHS 2024 et au pilier d'équité GTS HVI."
+  es: "Booleano derivado a nivel de hogar: verdadero si `aap_selection_fair_perception IN (strongly_agree, agree)`. Corresponde al Compromiso 1 de la CHS 2024 y al pilar de equidad de GTS HVI."
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

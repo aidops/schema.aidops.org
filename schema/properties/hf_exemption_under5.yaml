@@ -1,0 +1,19 @@
+id: hf_exemption_under5
+maturity: draft
+label:
+  en: "Children under 5 exempted from user fees"
+  fr: "Enfants de moins de 5 ans exemptés des frais d'utilisation"
+  es: "Niños menores de 5 años exentos de tarifas al usuario"
+
+definition:
+  en: "Whether children under 5 years old are exempted from user fees for curative services and immunization at this facility. Three-level response: `yes` (full exemption for both curative and immunization), `partial` (exemption for one but not both), `no` (no exemption). Asked only when `hf_user_fee_charged` is not `no`; leave null when user fees are not charged at all. Reported by the facility in-charge. Sphere 2018 Health Action. Sensitive: fee-waiver policy is politically sensitive."
+  fr: "Si les enfants de moins de 5 ans sont exemptés des frais d'utilisation pour les services curatifs et la vaccination dans cet établissement. Réponse à trois niveaux : `yes` (exemption complète pour le curatif et la vaccination), `partial` (exemption pour l'un mais pas les deux), `no` (aucune exemption). À poser uniquement lorsque `hf_user_fee_charged` n'est pas `no` ; laisser à null lorsqu'aucun frais n'est facturé. Rapporté par le responsable de l'établissement. Sphere 2018 Action Santé. Sensible : la politique d'exemption de frais est politiquement sensible."
+  es: "Si los niños menores de 5 años están exentos de tarifas al usuario para servicios curativos e inmunización en este establecimiento. Respuesta de tres niveles: `yes` (exención completa tanto para curativos como para inmunización), `partial` (exención para uno pero no para ambos), `no` (sin exención). Preguntar solo cuando `hf_user_fee_charged` no sea `no`; dejar nulo cuando no se cobren tarifas. Reportado por el responsable del establecimiento. Esfera 2018 Acción de Salud. Sensible: la política de exención de tarifas es políticamente sensible."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial
+references: null
+category: governance
+sensitivity: sensitive

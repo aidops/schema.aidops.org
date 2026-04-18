@@ -1,0 +1,25 @@
+id: reach-hsm-2023
+title: "Humanitarian Situation Monitoring (HSM) / Area-Based Assessment (ABA) Terms of Reference Template"
+short_title: "REACH HSM"
+publisher: "IMPACT Initiatives / REACH"
+year: 2023
+version: "Rolling (current generation 2023)"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.reach-initiative.org/what-we-do/humanitarian-planning-and-prioritisation/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - CommunityNeedsProfile
+  vocabularies: []
+  properties:
+    - cn_assessment_method
+    - cn_informant_count
+    - cn_priority_need_1
+    - cn_priority_need_2
+    - cn_priority_need_3
+    - cn_priority_group_most_in_need
+    - cn_coverage_gap_perceived
+    - cn_coverage_gap_description

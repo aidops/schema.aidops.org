@@ -1,0 +1,78 @@
+id: seed-source-type
+maturity: draft
+label:
+  en: "Seed Source Type"
+  fr: "Type de source de semences"
+  es: "Tipo de fuente de semillas"
+definition:
+  en: "Primary source of seed or planting material used by the household for its most important crop during the last completed agricultural season. Drawn directly from the FAO Standard Seed Security Assessment (SSA) Household Survey question 'What was your source of seed for the important CROP?'. Distinguishing own-saved seed, market-bought seed, agro-dealer seed, and humanitarian or government distributions is important for seed security analysis: own-saved and market-bought channels dominate in most smallholder contexts, while humanitarian or government distributions indicate prior seed shortage events."
+  fr: "Principale source de semences ou de matériel de plantation utilisé par le ménage pour sa culture la plus importante au cours de la dernière saison agricole complète. Tirée directement de la question de l'Évaluation standard de la sécurité semencière (SSA) de la FAO : « Quelle était votre source de semences pour la CULTURE importante ? ». Distinguer les semences propres conservées, les semences achetées au marché, les semences achetées chez un revendeur agréé, et les distributions humanitaires ou gouvernementales est important pour l'analyse de la sécurité semencière : les semences propres et les achats au marché dominent dans la plupart des contextes de petits exploitants, tandis que les distributions humanitaires ou gouvernementales indiquent des événements antérieurs de pénurie de semences."
+  es: "Fuente principal de semillas o material de siembra utilizado por el hogar para su cultivo más importante durante la última temporada agrícola completa. Tomada directamente de la pregunta de la Evaluación Estándar de Seguridad Semillera (SSA) de la FAO: '¿Cuál fue su fuente de semilla para el CULTIVO importante?'. Distinguir semillas propias guardadas, semillas compradas en el mercado, semillas de agrodistribuidores, y distribuciones humanitarias o gubernamentales es importante para el análisis de seguridad semillera: las semillas propias y las compras en el mercado dominan en la mayoría de contextos de pequeños productores, mientras que las distribuciones humanitarias o gubernamentales indican eventos previos de escasez de semillas."
+standard:
+  name: "FAO Standard Seed Security Assessment — Household Survey"
+  uri: "https://www.fao.org/fileadmin/user_upload/food-security-capacity-building/docs/Seeds/Training_Material/ParticipantsManual/Day_3/Day_3_-_S7-H1_Household_Survey.pdf"
+  notes: "FAO SSA 2015 Household Survey is the canonical instrument for seed source classification in humanitarian and development contexts."
+values:
+  - code: own_saved
+    label:
+      en: "Own-saved seed"
+      fr: "Semences propres conservées"
+      es: "Semilla propia guardada"
+    definition:
+      en: "Seed saved by the household from a previous harvest."
+      fr: "Semences conservées par le ménage à partir d'une récolte précédente."
+      es: "Semilla guardada por el hogar de una cosecha anterior."
+  - code: purchased_market
+    label:
+      en: "Purchased — open market or informal trader"
+      fr: "Acheté — marché ouvert ou commerçant informel"
+      es: "Comprado — mercado abierto o comerciante informal"
+    definition:
+      en: "Seed bought from a local market or informal vendor without formal certification guarantee."
+      fr: "Semences achetées sur un marché local ou auprès d'un vendeur informel sans garantie de certification formelle."
+      es: "Semilla comprada en un mercado local o a un vendedor informal sin garantía de certificación formal."
+  - code: purchased_agro_dealer
+    label:
+      en: "Purchased — licensed agro-dealer or seed company"
+      fr: "Acheté — revendeur agro-intrants agréé ou société semencière"
+      es: "Comprado — agrodistribuidor autorizado o empresa semillera"
+    definition:
+      en: "Seed bought from a certified agro-dealer or formal seed company."
+      fr: "Semences achetées auprès d'un revendeur agro-intrants certifié ou d'une société semencière formelle."
+      es: "Semilla comprada a un agrodistribuidor certificado o una empresa semillera formal."
+  - code: donor_ngo
+    label:
+      en: "Distributed by an NGO or humanitarian programme"
+      fr: "Distribué par une ONG ou un programme humanitaire"
+      es: "Distribuido por ONG o programa humanitario"
+    definition:
+      en: "Seed received as in-kind assistance from an NGO or humanitarian agency."
+      fr: "Semences reçues en tant qu'assistance en nature d'une ONG ou d'une agence humanitaire."
+      es: "Semilla recibida como asistencia en especie de una ONG o agencia humanitaria."
+  - code: donor_government
+    label:
+      en: "Distributed by the government"
+      fr: "Distribué par le gouvernement"
+      es: "Distribuido por el gobierno"
+    definition:
+      en: "Seed received through a government distribution or subsidy programme."
+      fr: "Semences reçues par le biais d'un programme de distribution ou de subvention gouvernemental."
+      es: "Semilla recibida a través de un programa de distribución o subsidio gubernamental."
+  - code: exchange_neighbor
+    label:
+      en: "Exchanged or received from neighbour / community"
+      fr: "Échangé ou reçu d'un voisin ou de la communauté"
+      es: "Intercambiado o recibido de vecino o comunidad"
+    definition:
+      en: "Seed obtained through informal exchange or gift within the household's social network."
+      fr: "Semences obtenues par échange informel ou don au sein du réseau social du ménage."
+      es: "Semilla obtenida a través de intercambio informal o regalo dentro de la red social del hogar."
+  - code: other
+    label:
+      en: "Other"
+      fr: "Autre"
+      es: "Otro"
+    definition:
+      en: "Seed source not covered by the other categories."
+      fr: "Source de semences non couverte par les autres catégories."
+      es: "Fuente de semillas no cubierta por las otras categorías."

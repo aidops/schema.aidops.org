@@ -1,0 +1,19 @@
+id: hf_service_delivery
+maturity: draft
+label:
+  en: "Offers routine childbirth/delivery services"
+  fr: "Offre des services d'accouchement de routine"
+  es: "Ofrece servicios de parto de rutina"
+
+definition:
+  en: "Whether the facility offers routine childbirth and delivery services. Reported by the facility in-charge. SARA service-availability tracer; MISP Objective 4 tracer."
+  fr: "Si l'établissement offre des services d'accouchement de routine. Rapporté par le responsable de l'établissement. Indicateur traceur SARA de disponibilité des services ; indicateur traceur MISP Objectif 4."
+  es: "Si el establecimiento ofrece servicios de parto de rutina. Reportado por el responsable del establecimiento. Indicador trazador SARA de disponibilidad de servicios; indicador trazador MISP Objetivo 4."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: standard

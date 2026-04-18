@@ -1,0 +1,19 @@
+id: livelihood_disruption_barrier
+maturity: draft
+label:
+  en: "Main livelihood disruption barrier"
+  fr: "Obstacle principal à la reprise de l'activité"
+  es: "Barrera principal de interrupción del medio de vida"
+
+definition:
+  en: "The single most important reason the household cannot practice its previous livelihood activity. Asked only when `livelihood_change_since_crisis` is `lost_entirely` or `significantly_reduced`. Drawn from the IOM DTM Multi-Sectoral Location Assessment livelihood disruption module, the Sphere 2018 Livelihoods chapter's protection and legal barriers section, and the LSMS-ISA livelihood constraints questions."
+  fr: "La raison la plus importante pour laquelle le ménage ne peut pas pratiquer son activité de subsistance antérieure. Posée uniquement lorsque `livelihood_change_since_crisis` est `lost_entirely` ou `significantly_reduced`. Tirée du module de perturbation des moyens de subsistance de l'Évaluation multisectorielle de localisation (MSLA) de la DTM de l'OIM, de la section sur les obstacles de protection et juridiques du chapitre Moyens de subsistance de Sphère 2018 et des questions sur les contraintes de subsistance LSMS-ISA."
+  es: "La razón más importante por la que el hogar no puede practicar su actividad de subsistencia anterior. Se pregunta solo cuando `livelihood_change_since_crisis` es `lost_entirely` o `significantly_reduced`. Tomada del módulo de interrupción de medios de vida de la Evaluación Multisectorial de Ubicación (MSLA) de la DTM de la OIM, la sección sobre barreras de protección y legales del capítulo de Medios de Vida de Esfera 2018 y las preguntas sobre restricciones de subsistencia LSMS-ISA."
+
+type: string
+cardinality: single
+core: false
+vocabulary: livelihood-disruption-barrier
+references: null
+category: context
+sensitivity: sensitive

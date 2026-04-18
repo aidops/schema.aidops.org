@@ -1,0 +1,19 @@
+id: hf_commodity_act_available
+maturity: draft
+label:
+  en: "Artemisinin-based combination therapy (ACT) available and within expiry"
+  fr: "Combinaison thérapeutique à base d'artémisinine (CTA) disponible et non périmée"
+  es: "Terapia combinada con artemisinina (TCA) disponible y vigente"
+
+definition:
+  en: "Whether an artemisinin-based combination therapy (ACT) is available today on the shelf and within valid expiration date. Observed by the enumerator. SARA malaria tracer; WHO EML. `not_applicable` only for non-malaria-endemic areas. Sensitive: stock-out reporting is politically sensitive."
+  fr: "Si une combinaison thérapeutique à base d'artémisinine (CTA) est disponible aujourd'hui en rayon et dans son délai de péremption. Observé par l'enquêteur. Indicateur traceur SARA pour le paludisme ; EML de l'OMS. `not_applicable` uniquement pour les zones non endémiques. Sensible : le reporting des ruptures de stock est politiquement sensible."
+  es: "Si una terapia combinada con artemisinina (TCA) está disponible hoy en estantería y dentro de fecha de vencimiento válida. Observado por el enumerador. Indicador trazador SARA para malaria; EML de la OMS. `not_applicable` solo para zonas no endémicas. Sensible: el reporte de desabastecimientos es políticamente sensible."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-na
+references: null
+category: classification
+sensitivity: sensitive

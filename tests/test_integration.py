@@ -57,27 +57,36 @@ class TestRealSchema:
             if v.get("source") == "aidops"
         }
 
-        # AidOps has exactly 18 concepts; update this count when adding/removing AidOps concepts
+        # AidOps has exactly 25 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
         # Batch 3 adds: MentalHealthProfile
         # Batch 3 adds: ChildProtectionProfile
         # Phase 6 adds: GBVRiskProfile
-        assert len(aidops_concepts) == 18, (
-            f"Expected 18 AidOps concepts, got {len(aidops_concepts)}: "
+        # Phase 6 Batch 2 adds: Community + LivelihoodProfile, AgricultureProfile,
+        #   WarningResponseProfile, AccountabilityToAffectedPopulationsProfile,
+        #   HealthFacilityProfile, CommunityNeedsProfile
+        assert len(aidops_concepts) == 25, (
+            f"Expected 25 AidOps concepts, got {len(aidops_concepts)}: "
             f"{sorted(aidops_concepts.keys())}"
         )
         assert set(aidops_concepts.keys()) == {
-            "FoodSecurityProfile",
+            "AccountabilityToAffectedPopulationsProfile",
+            "AgricultureProfile",
             "AnthropometricProfile",
             "ChildHealthProfile",
             "ChildProtectionProfile",
+            "Community",
+            "CommunityNeedsProfile",
             "DisplacementProfile",
             "DwellingDamageProfile",
             "EducationProfile",
             "EnergyAccessProfile",
+            "FoodSecurityProfile",
             "GBVRiskProfile",
             "GenderEmpowermentProfile",
             "HealthAccessProfile",
+            "HealthFacilityProfile",
+            "LivelihoodProfile",
             "MaternalNewbornHealthProfile",
             "MentalHealthProfile",
             "NFIProfile",
@@ -85,6 +94,7 @@ class TestRealSchema:
             "ReproductiveHealthProfile",
             "ShelterAdequacyProfile",
             "WASHAssessmentProfile",
+            "WarningResponseProfile",
         }
 
         # Update this count when adding/removing AidOps-owned properties.
@@ -97,8 +107,16 @@ class TestRealSchema:
         #   CP Batch +41 props, +6 vocabs (plus 1 extra vocab for fgm-continuation-belief → +7 in build count)
         # Phase 6 delta (Batch 3 baseline was 576):
         #   GBVRiskProfile: +15 properties (14 net-new + 1 new specific_need_adolescent_girl_at_risk)
-        assert len(aidops_properties) == 591, (
-            f"Expected 591 AidOps properties, got {len(aidops_properties)}"
+        # Phase 6 Batch 2 delta (Phase 6 Batch 1 baseline was 591):
+        #   Community: +1 property (community_type)
+        #   LivelihoodProfile: +22
+        #   AgricultureProfile: +26
+        #   WarningResponseProfile: +18
+        #   AccountabilityToAffectedPopulationsProfile: +40
+        #   HealthFacilityProfile: +69
+        #   CommunityNeedsProfile: +21
+        assert len(aidops_properties) == 788, (
+            f"Expected 788 AidOps properties, got {len(aidops_properties)}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
@@ -115,8 +133,16 @@ class TestRealSchema:
         #                   safety-perception-3, gbv-service-type; + 2 added to satisfy the
         #                   no-vocabulary:null-on-enumerated rule: latrine-sex-segregation,
         #                   latrine-lock-status)
-        assert len(aidops_vocabularies) == 144, (
-            f"Expected 144 AidOps vocabularies, got {len(aidops_vocabularies)}"
+        # Phase 6 Batch 2 delta (Phase 6 Batch 1 baseline was 144):
+        #   Community: +1 (community-type)
+        #   LivelihoodProfile: +10
+        #   AgricultureProfile: +9
+        #   WarningResponseProfile: +5
+        #   AccountabilityToAffectedPopulationsProfile: +13
+        #   HealthFacilityProfile: +5
+        #   CommunityNeedsProfile: +7
+        assert len(aidops_vocabularies) == 194, (
+            f"Expected 194 AidOps vocabularies, got {len(aidops_vocabularies)}"
         )
 
         # Every AidOps concept has a JSON Schema

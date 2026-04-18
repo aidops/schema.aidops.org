@@ -1,0 +1,19 @@
+id: hf_service_gbv_clinical_rape
+maturity: draft
+label:
+  en: "Provides clinical management of rape survivors"
+  fr: "Fournit la prise en charge clinique des survivant(e)s de viol"
+  es: "Presta manejo clínico de sobrevivientes de violación"
+
+definition:
+  en: "Whether the facility provides clinical management of rape survivors per the IAWG/WHO protocol: emergency contraception within 120 hours, HIV post-exposure prophylaxis (PEP) within 72 hours, STI prophylaxis, and psychological first aid. Reported by the facility in-charge. MISP Objective 2 core tracer. Politically and culturally sensitive in some contexts and can expose the facility or staff; data collection requires appropriate safeguarding per IASC GBV Guidelines."
+  fr: "Si l'établissement fournit la prise en charge clinique des survivant(e)s de viol selon le protocole IAWG/OMS : contraception d'urgence dans les 120 heures, prophylaxie post-exposition au VIH (PPE) dans les 72 heures, prophylaxie des IST et premiers secours psychologiques. Rapporté par le responsable de l'établissement. Indicateur traceur central MISP Objectif 2. Politiquement et culturellement sensible dans certains contextes et peut exposer l'établissement ou le personnel ; la collecte de données nécessite des garanties appropriées selon les Directives VBG de l'IASC."
+  es: "Si el establecimiento presta el manejo clínico de sobrevivientes de violación según el protocolo IAWG/OMS: anticoncepción de emergencia dentro de 120 horas, profilaxis posterior a la exposición al VIH (PEP) dentro de 72 horas, profilaxis de ITS y primeros auxilios psicológicos. Reportado por el responsable del establecimiento. Indicador trazador central MISP Objetivo 2. Política y culturalmente sensible en algunos contextos y puede exponer al establecimiento o al personal; la recolección de datos requiere salvaguardas apropiadas según las Directrices VBG del IASC."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: sensitive

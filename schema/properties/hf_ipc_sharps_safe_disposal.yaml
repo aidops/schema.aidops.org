@@ -1,0 +1,19 @@
+id: hf_ipc_sharps_safe_disposal
+maturity: draft
+label:
+  en: "Sharps disposed of safely"
+  fr: "Déchets tranchants éliminés en toute sécurité"
+  es: "Cortopunzantes eliminados de forma segura"
+
+definition:
+  en: "Whether sharps are disposed of safely: a sharps container is in use at the point of generation, the container is not overfilled (at or below the fill line), and sharps containers are collected routinely. Observed by the enumerator. WASH FIT 2nd edition core indicator; WHO IPC core components."
+  fr: "Si les déchets tranchants sont éliminés en toute sécurité : un conteneur à tranchants est utilisé au point de production, le conteneur n'est pas trop rempli (au niveau ou en dessous du repère) et les conteneurs à tranchants sont collectés régulièrement. Observé par l'enquêteur. Indicateur central WASH FIT 2e édition ; composantes centrales de la PCI de l'OMS."
+  es: "Si los cortopunzantes se eliminan de forma segura: se usa un contenedor de cortopunzantes en el punto de generación, el contenedor no está sobrellenado (al nivel o por debajo de la marca) y los contenedores se recogen de forma rutinaria. Observado por el enumerador. Indicador central WASH FIT 2ª edición; componentes centrales de PCI de la OMS."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: hygiene
+sensitivity: standard

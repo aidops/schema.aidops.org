@@ -1,0 +1,177 @@
+id: warning-action-barrier
+maturity: draft
+label:
+  en: Warning Action Barrier
+  fr: "Obstacle à l'action sur alerte"
+  es: "Barrera para la acción ante alerta"
+definition:
+  en: "The obstacles that prevented a household from taking the protective actions it judged necessary after receiving an early warning. Codes cover transport and destination barriers, inability to leave livestock or property, caregiver constraints (elderly, disabled, young children, pregnancy), financial cost, disbelief in the warning, absence of action guidance, time-too-short, physical barriers (for example flooded roads), language barriers, security and conflict, and two permission-denied codes. The two permission-denied codes (permission_denied_household_member and permission_denied_community_authority) can surface intra-household coercion or community coercion that bears on protection and GBV analysis; their definitions carry a sensitivity flag, and programs should ask the parent item in a private setting and handle these two codes with partial-sensitivity protections downstream."
+  fr: "Les obstacles qui ont empêché un ménage de prendre les actions de protection jugées nécessaires après réception d'une alerte précoce. Les codes couvrent les obstacles de transport et de destination, l'impossibilité de laisser le bétail ou les biens, les contraintes de soins (personnes âgées, handicapées, jeunes enfants, grossesse), le coût financier, l'incrédulité à l'égard de l'alerte, l'absence de consignes d'action, le temps trop court, les obstacles physiques (par exemple routes inondées), les barrières linguistiques, la sécurité et le conflit, ainsi que deux codes de refus de permission. Les deux codes de refus de permission (permission_denied_household_member et permission_denied_community_authority) peuvent révéler une contrainte intra-ménage ou communautaire pertinente pour l'analyse protection et VBG ; leur définition porte un marqueur de sensibilité, et les programmes devraient poser l'item parent dans un cadre privé et traiter ces deux codes avec des protections de sensibilité partielle en aval."
+  es: "Los obstáculos que impidieron a un hogar tomar las acciones de protección que consideró necesarias tras recibir una alerta temprana. Los códigos cubren obstáculos de transporte y destino, imposibilidad de dejar ganado o bienes, restricciones de cuidado (personas mayores, con discapacidad, niños pequeños, embarazo), costo financiero, incredulidad ante la alerta, ausencia de orientación sobre qué hacer, tiempo demasiado corto, barreras físicas (por ejemplo caminos inundados), barreras lingüísticas, seguridad y conflicto, y dos códigos de denegación de permiso. Los dos códigos de denegación de permiso (permission_denied_household_member y permission_denied_community_authority) pueden revelar coerción intrafamiliar o comunitaria relevante para el análisis de protección y VBG; sus definiciones llevan un marcador de sensibilidad, y los programas deben preguntar el ítem padre en un entorno privado y tratar estos dos códigos con protecciones de sensibilidad parcial en etapas posteriores."
+standard:
+  name: "IFRC Forecast-based Financing MEAL barrier analysis; IASC Operational Guidance on Accountability to Affected Populations in Early Response; Start Network Distribution Evaluation Framework"
+  uri: "https://www.anticipation-hub.org/"
+  notes: "Codes consolidate barrier taxonomies from IFRC FbF MEAL and Start Network DEF, with permission-denied codes informed by academic cyclone warning studies (Paul & Dutt 2010 on Cyclone Sidr; Roy et al. 2015 on Odisha) documenting women's restricted mobility and intra-household permission dynamics as principal non-compliance factors."
+values:
+- code: no_transport
+  label:
+    en: No transport available
+    fr: "Pas de moyen de transport disponible"
+    es: Sin transporte disponible
+  definition:
+    en: "Household had no means of transport to reach a safer location."
+    fr: "Le ménage n'avait aucun moyen de transport pour atteindre un lieu plus sûr."
+    es: "El hogar no tenía medios de transporte para llegar a un lugar más seguro."
+- code: no_safe_destination
+  label:
+    en: Nowhere safe to go
+    fr: "Aucun lieu sûr où aller"
+    es: "Ningún lugar seguro a dónde ir"
+  definition:
+    en: "No known shelter, higher ground, or safe destination was accessible."
+    fr: "Aucun abri connu, terrain plus élevé ou destination sûre n'était accessible."
+    es: "No se pudo acceder a ningún refugio conocido, terreno más alto o destino seguro."
+- code: could_not_leave_livestock
+  label:
+    en: Could not leave livestock
+    fr: "Impossible de laisser le bétail"
+    es: "No se pudo dejar el ganado"
+  definition:
+    en: "Household could not abandon its animals and had no way to evacuate them."
+    fr: "Le ménage ne pouvait pas abandonner ses animaux et n'avait aucun moyen de les évacuer."
+    es: "El hogar no podía abandonar a sus animales y no tenía forma de evacuarlos."
+- code: could_not_leave_property
+  label:
+    en: Could not leave property
+    fr: "Impossible de quitter le logement"
+    es: "No se pudo dejar la propiedad"
+  definition:
+    en: "Fear of looting, or fear of loss of dwelling or assets, if the household left."
+    fr: "Crainte de pillage ou de perte du logement ou des biens si le ménage partait."
+    es: "Temor a saqueo, o temor a la pérdida de la vivienda o los bienes, si el hogar se marchaba."
+- code: elderly_or_disabled_member
+  label:
+    en: Elderly or disabled member
+    fr: "Membre âgé ou en situation de handicap"
+    es: Miembro mayor o con discapacidad
+  definition:
+    en: "A member could not move quickly or required assistance that the household could not arrange."
+    fr: "Un membre ne pouvait pas se déplacer rapidement ou nécessitait une assistance que le ménage n'a pas pu organiser."
+    es: "Un miembro no podía moverse rápido o requería asistencia que el hogar no pudo organizar."
+- code: young_children
+  label:
+    en: Young children
+    fr: Jeunes enfants
+    es: "Niños pequeños"
+  definition:
+    en: "Young children made evacuation or other action difficult."
+    fr: "La présence de jeunes enfants a rendu l'évacuation ou l'action difficile."
+    es: "La presencia de niños pequeños dificultó la evacuación u otra acción."
+- code: pregnant_or_postpartum_member
+  label:
+    en: Pregnant or recently pregnant member
+    fr: "Membre enceinte ou en post-partum"
+    es: Miembro embarazada o en posparto
+  definition:
+    en: "Pregnancy or the post-partum period limited a member's movement."
+    fr: "Une grossesse ou la période post-partum a limité les déplacements d'un membre."
+    es: "El embarazo o el período posparto limitó el desplazamiento de un miembro."
+- code: cost_financial
+  label:
+    en: Cost or financial constraint
+    fr: "Coût ou contrainte financière"
+    es: "Costo o restricción financiera"
+  definition:
+    en: "The financial cost of action, including transport, supplies, or lost income, exceeded the household's means."
+    fr: "Le coût financier de l'action, incluant transport, fournitures ou perte de revenu, dépassait les moyens du ménage."
+    es: "El costo financiero de la acción, incluidos transporte, suministros o pérdida de ingresos, superaba los medios del hogar."
+- code: did_not_believe_warning
+  label:
+    en: Did not believe the warning
+    fr: "L'alerte n'a pas été crue"
+    es: "No se creyó la alerta"
+  definition:
+    en: "Household did not believe the event would actually occur or would affect them."
+    fr: "Le ménage ne croyait pas que l'événement se produirait réellement ou les affecterait."
+    es: "El hogar no creyó que el evento realmente ocurriría o los afectaría."
+- code: did_not_know_what_to_do
+  label:
+    en: Did not know what to do
+    fr: "Ne savait pas quoi faire"
+    es: "No supo qué hacer"
+  definition:
+    en: "The warning did not provide sufficient guidance on what action to take."
+    fr: "L'alerte n'a pas fourni de consignes suffisantes sur l'action à entreprendre."
+    es: "La alerta no proporcionó orientación suficiente sobre qué acción tomar."
+- code: permission_denied_household_member
+  label:
+    en: Permission denied by another household member
+    fr: "Permission refusée par un autre membre du ménage"
+    es: "Permiso denegado por otro miembro del hogar"
+  definition:
+    en: "Another member of the household, typically a spouse or the head of household, refused to allow the action. Sensitivity flag: this code can surface intra-household coercion and is a possible protection or gender-based violence signal. Programs should ask the parent item in a private setting and apply partial-sensitivity handling to this code in downstream analysis and sharing."
+    fr: "Un autre membre du ménage, typiquement un conjoint ou le chef de ménage, a refusé d'autoriser l'action. Marqueur de sensibilité : ce code peut révéler une contrainte intra-ménage et constitue un possible signal de protection ou de violence basée sur le genre. Les programmes devraient poser l'item parent dans un cadre privé et appliquer un traitement à sensibilité partielle à ce code lors de l'analyse et du partage en aval."
+    es: "Otro miembro del hogar, típicamente un cónyuge o el jefe del hogar, se negó a permitir la acción. Marcador de sensibilidad: este código puede revelar coerción intrafamiliar y constituye una posible señal de protección o de violencia basada en género. Los programas deben preguntar el ítem padre en un entorno privado y aplicar un tratamiento de sensibilidad parcial a este código en el análisis y la difusión posteriores."
+- code: permission_denied_community_authority
+  label:
+    en: Permission denied by community authority
+    fr: "Permission refusée par une autorité communautaire"
+    es: "Permiso denegado por autoridad comunitaria"
+  definition:
+    en: "A community leader, employer, or authority figure prevented the action. Sensitivity flag: this code can surface community-level coercion with protection implications. Programs should ask the parent item in a private setting and apply partial-sensitivity handling to this code in downstream analysis and sharing."
+    fr: "Un chef communautaire, un employeur ou une figure d'autorité a empêché l'action. Marqueur de sensibilité : ce code peut révéler une contrainte au niveau communautaire avec des implications de protection. Les programmes devraient poser l'item parent dans un cadre privé et appliquer un traitement à sensibilité partielle à ce code lors de l'analyse et du partage en aval."
+    es: "Un líder comunitario, un empleador o una figura de autoridad impidió la acción. Marcador de sensibilidad: este código puede revelar coerción a nivel comunitario con implicaciones de protección. Los programas deben preguntar el ítem padre en un entorno privado y aplicar un tratamiento de sensibilidad parcial a este código en el análisis y la difusión posteriores."
+- code: time_too_short
+  label:
+    en: Warning came too late
+    fr: "L'alerte est arrivée trop tard"
+    es: "La alerta llegó demasiado tarde"
+  definition:
+    en: "There was not enough time between receiving the warning and the event to act."
+    fr: "Il n'y avait pas assez de temps entre la réception de l'alerte et l'événement pour agir."
+    es: "No hubo tiempo suficiente entre recibir la alerta y el evento para actuar."
+- code: physical_barrier_road_flooded
+  label:
+    en: Physical barrier, for example a flooded road
+    fr: "Obstacle physique, par exemple une route inondée"
+    es: "Barrera física, por ejemplo un camino inundado"
+  definition:
+    en: "A physical obstacle such as a flooded road or blocked path prevented the action."
+    fr: "Un obstacle physique tel qu'une route inondée ou un chemin bloqué a empêché l'action."
+    es: "Un obstáculo físico como un camino inundado o un sendero bloqueado impidió la acción."
+- code: language_barrier
+  label:
+    en: Language barrier
+    fr: "Barrière linguistique"
+    es: "Barrera lingüística"
+  definition:
+    en: "The warning was not in a language the household understood well."
+    fr: "L'alerte n'était pas dans une langue que le ménage comprenait bien."
+    es: "La alerta no estaba en un idioma que el hogar entendía bien."
+- code: security_insecurity_conflict
+  label:
+    en: Security or conflict
+    fr: "Sécurité ou conflit"
+    es: Seguridad o conflicto
+  definition:
+    en: "Conflict or insecurity made the safer location unreachable or the journey dangerous."
+    fr: "Le conflit ou l'insécurité a rendu le lieu plus sûr inaccessible ou le trajet dangereux."
+    es: "El conflicto o la inseguridad hizo inaccesible el lugar más seguro o peligroso el trayecto."
+- code: no_barrier
+  label:
+    en: "No barrier (household took all action it wanted)"
+    fr: "Aucun obstacle (le ménage a pris toutes les actions qu'il souhaitait)"
+    es: "Sin barrera (el hogar tomó todas las acciones que quería)"
+  definition:
+    en: "Household faced no obstacle. Used when the barriers item is asked to confirm and no barriers apply."
+    fr: "Le ménage n'a rencontré aucun obstacle. Utilisé lorsque l'item sur les obstacles est posé pour confirmation et qu'aucun obstacle ne s'applique."
+    es: "El hogar no enfrentó ningún obstáculo. Se usa cuando el ítem sobre barreras se pregunta para confirmar y no aplica ninguna barrera."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "Barrier not listed above."
+    fr: "Obstacle non répertorié ci-dessus."
+    es: "Obstáculo no listado arriba."

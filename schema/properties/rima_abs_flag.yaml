@@ -1,0 +1,19 @@
+id: rima_abs_flag
+maturity: draft
+label:
+  en: "RIMA-II Access to Basic Services (ABS) signal flag"
+  fr: "Indicateur du pilier Accès aux services de base (ABS) de RIMA-II"
+  es: "Indicador del pilar Acceso a Servicios Básicos (ABS) de RIMA-II"
+
+definition:
+  en: "Boolean flag indicating whether the LivelihoodProfile captures at least one signal for the FAO RIMA-II Access to Basic Services (ABS) pillar. Typically set to true when `access_to_credit` or `humanitarian_assistance_reliance` or `livelihood_programme_participation` is recorded. Used for downstream RIMA-II pillar computation and coverage reporting. Drawn from the FAO RIMA-II methodology (2016). Derived, not asked."
+  fr: "Indicateur booléen signalant si le LivelihoodProfile capture au moins un signal pour le pilier Accès aux services de base (ABS) de FAO RIMA-II. Généralement vrai lorsque `access_to_credit`, `humanitarian_assistance_reliance` ou `livelihood_programme_participation` est enregistré. Utilisé pour le calcul en aval des piliers RIMA-II et le reporting de couverture. Tiré de la méthodologie FAO RIMA-II (2016). Dérivé, non demandé."
+  es: "Indicador booleano que señala si el LivelihoodProfile captura al menos una señal para el pilar Acceso a Servicios Básicos (ABS) de FAO RIMA-II. Generalmente verdadero cuando se registra `access_to_credit`, `humanitarian_assistance_reliance` o `livelihood_programme_participation`. Utilizado para el cálculo posterior de pilares RIMA-II e informes de cobertura. Tomado de la metodología FAO RIMA-II (2016). Derivado, no preguntado."
+
+type: boolean
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: scores
+sensitivity: standard

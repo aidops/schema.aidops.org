@@ -1,0 +1,130 @@
+id: facility-managing-authority
+maturity: draft
+label:
+  en: "Facility Managing Authority"
+  fr: "Autorité gestionnaire de l'établissement"
+  es: "Autoridad gestora del establecimiento"
+definition:
+  en: >
+    The entity that owns or operates a health facility, used as a stratifier
+    for all downstream service-availability and readiness analyses. Codes
+    distinguish public (ministry of health and other ministries), NGO
+    (national and international), faith-based, private (for-profit and
+    non-profit), UN-agency, and mixed public-private arrangements. Aligned
+    with WHO SARA/HHFA managing-authority classification and with HeRAMS
+    facility typology used in humanitarian crisis monitoring.
+  fr: >
+    L'entité qui possède ou exploite un établissement de santé, utilisée
+    comme stratificateur pour toutes les analyses de disponibilité et de
+    capacité opérationnelle des services qui en découlent. Les codes
+    distinguent le public (ministère de la santé et autres ministères),
+    les ONG (nationales et internationales), confessionnel, privé (à but
+    lucratif et à but non lucratif), agences des Nations Unies et
+    arrangements public-privé mixtes. Aligné sur la classification de
+    l'autorité gestionnaire SARA/HHFA de l'OMS et sur la typologie des
+    établissements HeRAMS utilisée dans le suivi des crises humanitaires.
+  es: >
+    La entidad que posee u opera un establecimiento de salud, utilizada
+    como estratificador para todos los análisis posteriores de disponibilidad
+    y capacidad operativa de servicios. Los códigos distinguen público
+    (ministerio de salud y otros ministerios), ONG (nacionales e
+    internacionales), confesional, privado (con y sin fines de lucro),
+    agencias de Naciones Unidas y arreglos público-privados mixtos.
+    Alineado con la clasificación de autoridad gestora SARA/HHFA de la OMS
+    y con la tipología de establecimientos HeRAMS utilizada en el
+    monitoreo de crisis humanitarias.
+standard:
+  name: "WHO Service Availability and Readiness Assessment (SARA) Reference Manual v2.2"
+  uri: "https://www.who.int/publications/i/item/WHO-HIS-HSI-2014.5-Rev.1"
+  notes: "SARA and HHFA use managing authority as a primary stratifier for service-availability and readiness analyses. HeRAMS applies a similar typology in humanitarian contexts, adding UN-agency and NGO-international distinctions relevant to crisis-response facility ownership."
+values:
+- code: government_moh
+  label:
+    en: Government - Ministry of Health
+    fr: "Gouvernement - Ministère de la Santé"
+    es: "Gobierno - Ministerio de Salud"
+  definition:
+    en: "Facility owned and operated by the national or sub-national Ministry of Health."
+    fr: "Établissement possédé et exploité par le Ministère de la Santé national ou infranational."
+    es: "Establecimiento de propiedad y operado por el Ministerio de Salud nacional o subnacional."
+- code: government_other_ministry
+  label:
+    en: Government - other ministry or agency
+    fr: "Gouvernement - autre ministère ou agence"
+    es: "Gobierno - otro ministerio u organismo"
+  definition:
+    en: "Facility owned and operated by a government body other than the Ministry of Health, such as defence, interior, or social-protection ministries."
+    fr: "Établissement possédé et exploité par un organisme gouvernemental autre que le Ministère de la Santé, tel que la défense, l'intérieur ou les ministères de la protection sociale."
+    es: "Establecimiento de propiedad y operado por un organismo gubernamental distinto del Ministerio de Salud, como defensa, interior o ministerios de protección social."
+- code: ngo_national
+  label:
+    en: NGO - national
+    fr: "ONG - nationale"
+    es: "ONG - nacional"
+  definition:
+    en: "Facility operated by a national non-governmental organization."
+    fr: "Établissement exploité par une organisation non gouvernementale nationale."
+    es: "Establecimiento operado por una organización no gubernamental nacional."
+- code: ngo_international
+  label:
+    en: NGO - international
+    fr: "ONG - internationale"
+    es: "ONG - internacional"
+  definition:
+    en: "Facility operated by an international non-governmental organization, including international humanitarian agencies such as MSF, IRC, or Save the Children."
+    fr: "Établissement exploité par une organisation non gouvernementale internationale, y compris des agences humanitaires internationales telles que MSF, IRC ou Save the Children."
+    es: "Establecimiento operado por una organización no gubernamental internacional, incluidas agencias humanitarias internacionales como MSF, IRC o Save the Children."
+- code: faith_based
+  label:
+    en: Faith-based organization
+    fr: "Organisation confessionnelle"
+    es: "Organización confesional"
+  definition:
+    en: "Facility operated by a religious organization, mission, or faith-based health network (e.g., Christian Health Association)."
+    fr: "Établissement exploité par une organisation religieuse, une mission ou un réseau de santé confessionnel (par exemple, une association chrétienne de santé)."
+    es: "Establecimiento operado por una organización religiosa, misión o red de salud confesional (por ejemplo, una asociación cristiana de salud)."
+- code: private_for_profit
+  label:
+    en: Private - for profit
+    fr: "Privé - à but lucratif"
+    es: "Privado - con fines de lucro"
+  definition:
+    en: "Facility owned and operated by a commercial private-sector entity."
+    fr: "Établissement possédé et exploité par une entité privée à but lucratif."
+    es: "Establecimiento de propiedad y operado por una entidad privada con fines de lucro."
+- code: private_non_profit
+  label:
+    en: Private - non-profit (non-faith-based)
+    fr: "Privé - à but non lucratif (non confessionnel)"
+    es: "Privado - sin fines de lucro (no confesional)"
+  definition:
+    en: "Facility owned and operated by a non-profit private entity that is not a faith-based organization, such as a philanthropic foundation or cooperative."
+    fr: "Établissement possédé et exploité par une entité privée à but non lucratif qui n'est pas une organisation confessionnelle, telle qu'une fondation philanthropique ou une coopérative."
+    es: "Establecimiento de propiedad y operado por una entidad privada sin fines de lucro que no es una organización confesional, como una fundación filantrópica o cooperativa."
+- code: un_agency
+  label:
+    en: United Nations agency
+    fr: "Agence des Nations Unies"
+    es: "Agencia de las Naciones Unidas"
+  definition:
+    en: "Facility operated by a United Nations agency (e.g., UNHCR, UNICEF, WHO) or by a UN-funded partner, common in refugee and IDP operations."
+    fr: "Établissement exploité par une agence des Nations Unies (par exemple HCR, UNICEF, OMS) ou par un partenaire financé par l'ONU, courant dans les opérations auprès des réfugiés et des PDI."
+    es: "Establecimiento operado por una agencia de las Naciones Unidas (p. ej., ACNUR, UNICEF, OMS) o por un socio financiado por la ONU, común en operaciones con refugiados y PDI."
+- code: mixed_public_private
+  label:
+    en: Mixed public-private
+    fr: "Public-privé mixte"
+    es: "Mixto público-privado"
+  definition:
+    en: "Facility operated under a formal public-private partnership or similar arrangement that shares management responsibility across public and non-public actors."
+    fr: "Établissement exploité dans le cadre d'un partenariat public-privé formel ou d'un arrangement similaire qui partage la responsabilité de gestion entre acteurs publics et non publics."
+    es: "Establecimiento operado bajo una asociación público-privada formal o arreglo similar que comparte la responsabilidad de gestión entre actores públicos y no públicos."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "Managing authority that does not fit any of the listed categories."
+    fr: "Autorité gestionnaire qui ne correspond à aucune des catégories listées."
+    es: "Autoridad gestora que no corresponde a ninguna de las categorías listadas."

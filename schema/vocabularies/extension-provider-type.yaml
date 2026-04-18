@@ -1,0 +1,78 @@
+id: extension-provider-type
+maturity: draft
+label:
+  en: "Extension Provider Type"
+  fr: "Type de prestataire de vulgarisation"
+  es: "Tipo de proveedor de extensión"
+definition:
+  en: "Type of organisation or individual providing agricultural extension or advisory services to the household. Multi-select because a household may receive advice from more than one channel in the same reference period. Drawn from the LSMS-ISA extension module and FAO WCA 2020 Theme 06 (agricultural services). The distinction between public (government), private (input dealers), NGO, cooperative, peer-farmer, and research sources is essential for programme-level analysis of extension coverage and pluralism."
+  fr: "Type d'organisation ou d'individu fournissant des services de vulgarisation agricole ou de conseil au ménage. Sélection multiple car un ménage peut recevoir des conseils de plus d'un canal au cours de la même période de référence. Tiré du module de vulgarisation du LSMS-ISA et du Thème 06 du WCA 2020 de la FAO (services agricoles). La distinction entre sources publiques (gouvernement), privées (revendeurs d'intrants), ONG, coopératives, agriculteurs pairs et recherche est essentielle pour l'analyse au niveau du programme de la couverture et du pluralisme de la vulgarisation."
+  es: "Tipo de organización o individuo que proporciona servicios de extensión agrícola o asesoramiento al hogar. Selección múltiple porque un hogar puede recibir asesoramiento de más de un canal en el mismo período de referencia. Tomado del módulo de extensión del LSMS-ISA y del Tema 06 del WCA 2020 de la FAO (servicios agrícolas). La distinción entre fuentes públicas (gobierno), privadas (distribuidores de insumos), ONG, cooperativas, agricultores pares e investigación es esencial para el análisis a nivel de programa de la cobertura y pluralismo de la extensión."
+standard:
+  name: "LSMS-ISA Agricultural Survey Design guidebook / FAO WCA 2020 Theme 06"
+  uri: "https://documents1.worldbank.org/curated/en/570941632979626559/pdf/Agricultural-Survey-Design-Lessons-from-the-LSMS-ISA-and-Beyond.pdf"
+  notes: "LSMS-ISA country surveys (Ethiopia ESS, Nigeria GHS-Panel, Tanzania NPS, Uganda UNPS, Malawi IHS) all use a variant of this provider-type list. FAO WCA 2020 Theme 06 frames the same providers as agricultural-service sources."
+values:
+  - code: government_ministry
+    label:
+      en: "Government extension service (Ministry of Agriculture or equivalent)"
+      fr: "Service de vulgarisation gouvernemental (Ministère de l'Agriculture ou équivalent)"
+      es: "Servicio de extensión del gobierno (Ministerio de Agricultura o equivalente)"
+    definition:
+      en: "Extension provided by a national or sub-national government agricultural service."
+      fr: "Vulgarisation fournie par un service agricole gouvernemental national ou infranational."
+      es: "Extensión proporcionada por un servicio agrícola gubernamental nacional o subnacional."
+  - code: ngo_ingo
+    label:
+      en: "NGO or international organisation"
+      fr: "ONG ou organisation internationale"
+      es: "ONG u organización internacional"
+    definition:
+      en: "Extension provided by a non-governmental or international humanitarian or development organisation."
+      fr: "Vulgarisation fournie par une organisation non gouvernementale ou internationale humanitaire ou de développement."
+      es: "Extensión proporcionada por una organización no gubernamental o internacional humanitaria o de desarrollo."
+  - code: input_dealer_private
+    label:
+      en: "Private input dealer or agribusiness"
+      fr: "Revendeur d'intrants privé ou agro-entreprise"
+      es: "Distribuidor privado de insumos o agroindustria"
+    definition:
+      en: "Advice provided by a private input supplier (seeds, fertilizers, agro-chemicals) or agribusiness firm."
+      fr: "Conseils fournis par un fournisseur privé d'intrants (semences, engrais, produits agro-chimiques) ou une agro-entreprise."
+      es: "Asesoramiento proporcionado por un proveedor privado de insumos (semillas, fertilizantes, productos agroquímicos) o una empresa agroindustrial."
+  - code: farmer_cooperative
+    label:
+      en: "Farmer cooperative or producer organisation"
+      fr: "Coopérative agricole ou organisation de producteurs"
+      es: "Cooperativa agrícola u organización de productores"
+    definition:
+      en: "Extension facilitated through a member-based farmer organisation or producer cooperative."
+      fr: "Vulgarisation facilitée par une organisation d'agriculteurs basée sur l'adhésion ou une coopérative de producteurs."
+      es: "Extensión facilitada a través de una organización de agricultores basada en la membresía o una cooperativa de productores."
+  - code: peer_farmer_lead
+    label:
+      en: "Lead farmer or farmer-to-farmer training"
+      fr: "Agriculteur référent ou formation entre agriculteurs"
+      es: "Agricultor líder o capacitación entre agricultores"
+    definition:
+      en: "Extension through a trained lead-farmer model or peer-to-peer learning approach."
+      fr: "Vulgarisation par le biais d'un modèle d'agriculteur référent formé ou d'une approche d'apprentissage entre pairs."
+      es: "Extensión a través de un modelo de agricultor líder capacitado o un enfoque de aprendizaje entre pares."
+  - code: research_institution
+    label:
+      en: "Research institution or university"
+      fr: "Institution de recherche ou université"
+      es: "Institución de investigación o universidad"
+    definition:
+      en: "Extension provided directly by researchers or universities (e.g., demonstration trials, on-farm research)."
+      fr: "Vulgarisation fournie directement par des chercheurs ou des universités (par exemple, essais de démonstration, recherche à la ferme)."
+      es: "Extensión proporcionada directamente por investigadores o universidades (por ejemplo, ensayos de demostración, investigación en finca)."
+  - code: other
+    label:
+      en: "Other"
+      fr: "Autre"
+      es: "Otro"
+    definition:
+      en: "Extension provider not covered by the other categories."
+      fr: "Prestataire de vulgarisation non couvert par les autres catégories."
+      es: "Proveedor de extensión no cubierto por las otras categorías."

@@ -1,0 +1,19 @@
+id: crop_loss_cause
+maturity: draft
+label:
+  en: "Primary cause(s) of crop loss in the last agricultural season"
+  fr: "Cause(s) principale(s) de la perte de récolte au cours de la dernière saison agricole"
+  es: "Causa(s) principal(es) de la pérdida de cultivos en la última temporada agrícola"
+
+definition:
+  en: "Primary cause or causes of the reported crop loss during the last completed agricultural season. Multi-select from vocabulary `crop-loss-cause` (drought, flood, irregular_rainfall, pest_infestation, crop_disease, animal_damage, fire, theft_conflict, other) because a single season may combine concurrent shocks (e.g., drought followed by pests). Drawn from the LSMS-ISA shock module and FAO WCA 2020 Theme 10 (major risks faced by the holding). Asked only when `crop_loss_shock_past_season` is `yes`."
+  fr: "Cause ou causes principales de la perte de récolte signalée au cours de la dernière saison agricole complète. Sélection multiple dans le vocabulaire `crop-loss-cause` (drought, flood, irregular_rainfall, pest_infestation, crop_disease, animal_damage, fire, theft_conflict, other) car une seule saison peut combiner des chocs concurrents (par exemple, sécheresse suivie de ravageurs). Tiré du module des chocs du LSMS-ISA et du Thème 10 du WCA 2020 de la FAO (risques majeurs auxquels est confrontée l'exploitation). Posée uniquement lorsque `crop_loss_shock_past_season` est `yes`."
+  es: "Causa o causas principales de la pérdida de cultivos reportada durante la última temporada agrícola completa. Selección múltiple del vocabulario `crop-loss-cause` (drought, flood, irregular_rainfall, pest_infestation, crop_disease, animal_damage, fire, theft_conflict, other) porque una sola temporada puede combinar choques concurrentes (por ejemplo, sequía seguida de plagas). Tomado del módulo de choques de LSMS-ISA y del Tema 10 del WCA 2020 de la FAO (riesgos mayores que enfrenta la explotación). Se pregunta solo cuando `crop_loss_shock_past_season` es `yes`."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: crop-loss-cause
+references: null
+category: context
+sensitivity: sensitive

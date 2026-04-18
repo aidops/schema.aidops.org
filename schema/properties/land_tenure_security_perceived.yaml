@@ -1,0 +1,19 @@
+id: land_tenure_security_perceived
+maturity: draft
+label:
+  en: "Perceived tenure security (3-year horizon)"
+  fr: "Sécurité foncière perçue (horizon 3 ans)"
+  es: "Seguridad de tenencia percibida (horizonte 3 años)"
+
+definition:
+  en: "Household's subjective assessment of how secure its right is to continue using its agricultural land over the next three years. Uses the four-level scale in vocabulary `tenure-security-3` plus a `dont_know` option. Based on LSMS-ISA subjective-tenure-security questions and PRINDEX methodology. FAO VGGT Section 5 frames tenure security as protection against loss of tenure rights. Complements `land_tenure_arrangement`: a household may be secure in a weak objective arrangement (customary community support) or insecure under a strong objective arrangement (political or conflict risk). Sensitive because responses may indicate vulnerability to eviction or conflict."
+  fr: "Évaluation subjective du ménage quant à la sécurité de son droit de continuer à utiliser sa terre agricole au cours des trois prochaines années. Utilise l'échelle à quatre niveaux du vocabulaire `tenure-security-3` plus une option `dont_know`. Basée sur les questions de sécurité foncière subjective du LSMS-ISA et la méthodologie PRINDEX. La Section 5 des VGGT de la FAO définit la sécurité foncière comme la protection contre la perte des droits fonciers. Complète `land_tenure_arrangement` : un ménage peut être sécurisé dans un arrangement objectif faible (soutien communautaire coutumier) ou non sécurisé dans un arrangement objectif fort (risque politique ou de conflit). Sensible car les réponses peuvent indiquer une vulnérabilité à l'expulsion ou au conflit."
+  es: "Evaluación subjetiva del hogar sobre cuán seguro es su derecho a continuar usando su tierra agrícola durante los próximos tres años. Usa la escala de cuatro niveles del vocabulario `tenure-security-3` más una opción `dont_know`. Basada en las preguntas de seguridad subjetiva de tenencia del LSMS-ISA y la metodología PRINDEX. La Sección 5 de las VGGT de la FAO enmarca la seguridad de tenencia como protección contra la pérdida de derechos de tenencia. Complementa `land_tenure_arrangement`: un hogar puede estar seguro en un arreglo objetivo débil (apoyo comunitario consuetudinario) o inseguro en un arreglo objetivo fuerte (riesgo político o de conflicto). Sensible porque las respuestas pueden indicar vulnerabilidad a desalojo o conflicto."
+
+type: string
+cardinality: single
+core: false
+vocabulary: tenure-security-3
+references: null
+category: context
+sensitivity: sensitive

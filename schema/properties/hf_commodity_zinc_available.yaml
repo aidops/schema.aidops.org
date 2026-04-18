@@ -1,0 +1,19 @@
+id: hf_commodity_zinc_available
+maturity: draft
+label:
+  en: "Zinc sulfate tablets available and within expiry"
+  fr: "Comprimés de sulfate de zinc disponibles et non périmés"
+  es: "Tabletas de sulfato de zinc disponibles y vigentes"
+
+definition:
+  en: "Whether zinc sulfate tablets (20 mg) are available today on the shelf and within valid expiration date. Observed by the enumerator. SARA tracer; WHO EML; paired with ORS for IMCI diarrhea management. Sensitive: stock-out reporting is politically sensitive."
+  fr: "Si les comprimés de sulfate de zinc (20 mg) sont disponibles aujourd'hui en rayon et dans leur délai de péremption. Observé par l'enquêteur. Indicateur traceur SARA ; EML de l'OMS ; associé aux SRO dans la prise en charge PCIME de la diarrhée. Sensible : le reporting des ruptures de stock est politiquement sensible."
+  es: "Si las tabletas de sulfato de zinc (20 mg) están disponibles hoy en estantería y dentro de fecha de vencimiento válida. Observado por el enumerador. Indicador trazador SARA; EML de la OMS; combinado con SRO en el manejo AIEPI de diarrea. Sensible: el reporte de desabastecimientos es políticamente sensible."
+
+type: boolean
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: classification
+sensitivity: sensitive

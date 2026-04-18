@@ -1,0 +1,150 @@
+id: warning-protective-action
+maturity: draft
+label:
+  en: Warning Protective Action
+  fr: "Action de protection sur alerte"
+  es: "Acción de protección ante alerta"
+definition:
+  en: "The protective or mitigating actions a household took in response to an early warning for a hazard event. Covers evacuation (partial or full), asset and livestock movement, shelter reinforcement, stockpiling of food, water, fuel, and cash, information seeking, alerting others, relocating vulnerable members first, securing identity documents, partial evacuation of some members, and an explicit 'no action taken' code. The vocabulary is hazard-agnostic: actions that are not relevant to a specific hazard (for example moving livestock during an epidemic) are simply not selected. The 'no action taken' code is mutually exclusive with all other codes; this constraint is expected to be enforced in the data-collection form."
+  fr: "Les actions de protection ou d'atténuation prises par un ménage en réponse à une alerte précoce pour un événement dangereux. Couvre l'évacuation (partielle ou totale), le déplacement de biens et de bétail, le renforcement de l'abri, le stockage de nourriture, d'eau, de combustible et d'argent, la recherche d'information, l'alerte d'autres personnes, la relocalisation prioritaire des membres vulnérables, la mise en sécurité des documents d'identité, l'évacuation partielle de certains membres, et un code explicite « aucune action prise ». Le vocabulaire est indépendant du type de danger : les actions non pertinentes pour un danger donné (par exemple déplacer le bétail lors d'une épidémie) ne sont simplement pas sélectionnées. Le code « aucune action prise » est mutuellement exclusif avec tous les autres codes ; cette contrainte doit être appliquée dans le formulaire de collecte."
+  es: "Las acciones de protección o mitigación que un hogar tomó en respuesta a una alerta temprana para un evento de peligro. Abarca la evacuación (parcial o total), el traslado de bienes y ganado, el refuerzo del refugio, el acopio de alimentos, agua, combustible y dinero, la búsqueda de información, el aviso a otras personas, la reubicación prioritaria de miembros vulnerables, la puesta a resguardo de documentos de identidad, la evacuación parcial de algunos miembros, y un código explícito «ninguna acción tomada». El vocabulario es independiente del tipo de peligro: las acciones no pertinentes para un peligro dado (por ejemplo trasladar ganado durante una epidemia) simplemente no se seleccionan. El código «ninguna acción tomada» es mutuamente excluyente con todos los demás códigos; esta restricción debe aplicarse en el formulario de recolección."
+standard:
+  name: "IFRC Forecast-based Financing Early Action Protocol (EAP) standard early action menu; FAO Anticipatory Action simulation toolkit; Start Network Distribution Evaluation Framework action inventory"
+  uri: "https://www.anticipation-hub.org/"
+  notes: "Codes consolidate the standard early-action menus used in IFRC EAPs for flood, cyclone, drought, and heatwave programs (Bangladesh, Mozambique, Philippines, Niger, Mongolia) with the Start Network DEF action inventory and the World Bank GFDRR AA Toolkit menu."
+values:
+- code: evacuated_members
+  label:
+    en: Some members evacuated
+    fr: "Certains membres ont été évacués"
+    es: "Algunos miembros fueron evacuados"
+  definition:
+    en: "Some household members moved to a safer location before, during, or immediately after the event."
+    fr: "Certains membres du ménage se sont déplacés vers un lieu plus sûr avant, pendant ou juste après l'événement."
+    es: "Algunos miembros del hogar se trasladaron a un lugar más seguro antes, durante o inmediatamente después del evento."
+- code: evacuated_all
+  label:
+    en: All members evacuated
+    fr: "Tous les membres ont été évacués"
+    es: "Todos los miembros fueron evacuados"
+  definition:
+    en: "The whole household moved to a safer location."
+    fr: "L'ensemble du ménage s'est déplacé vers un lieu plus sûr."
+    es: "Todo el hogar se trasladó a un lugar más seguro."
+- code: moved_livestock
+  label:
+    en: Moved livestock
+    fr: "Bétail déplacé"
+    es: Ganado trasladado
+  definition:
+    en: "Livestock or other animals moved to higher ground, a safer shelter, or a different area."
+    fr: "Bétail ou autres animaux déplacés vers un terrain plus élevé, un abri plus sûr ou une autre zone."
+    es: "Ganado u otros animales trasladados a terreno más alto, refugio más seguro u otra zona."
+- code: moved_valuable_assets
+  label:
+    en: Moved valuable assets
+    fr: "Biens de valeur déplacés"
+    es: "Bienes valiosos trasladados"
+  definition:
+    en: "Household assets such as tools, furniture, or stored crops relocated to a safer place."
+    fr: "Biens du ménage tels qu'outils, meubles ou cultures stockées déplacés vers un lieu plus sûr."
+    es: "Bienes del hogar como herramientas, muebles o cultivos almacenados trasladados a un lugar más seguro."
+- code: reinforced_shelter
+  label:
+    en: Reinforced dwelling
+    fr: "Logement renforcé"
+    es: Vivienda reforzada
+  definition:
+    en: "Roof tied down, walls braced, windows covered, sandbags placed, or comparable structural reinforcement."
+    fr: "Toit arrimé, murs étayés, fenêtres protégées, sacs de sable placés ou renforcement structurel comparable."
+    es: "Techo amarrado, paredes apuntaladas, ventanas protegidas, sacos de arena colocados o refuerzo estructural comparable."
+- code: stockpiled_food
+  label:
+    en: Stockpiled food
+    fr: "Nourriture stockée"
+    es: Alimentos almacenados
+  definition:
+    en: "Additional food stored in anticipation of restricted access during or after the event."
+    fr: "Nourriture supplémentaire stockée en prévision d'un accès restreint pendant ou après l'événement."
+    es: "Alimentos adicionales almacenados en previsión de acceso restringido durante o después del evento."
+- code: stockpiled_water
+  label:
+    en: Stockpiled water
+    fr: "Eau stockée"
+    es: Agua almacenada
+  definition:
+    en: "Clean water stored in containers in anticipation of supply disruption."
+    fr: "Eau propre stockée dans des récipients en prévision d'une interruption de l'approvisionnement."
+    es: "Agua limpia almacenada en recipientes en previsión de una interrupción del suministro."
+- code: stockpiled_fuel_cash
+  label:
+    en: Stockpiled fuel or cash
+    fr: "Combustible ou argent stocké"
+    es: "Combustible o efectivo acopiado"
+  definition:
+    en: "Cooking fuel, lighting fuel, or cash withdrawn and stored."
+    fr: "Combustible de cuisson, combustible d'éclairage, ou argent retiré et stocké."
+    es: "Combustible para cocina, combustible para iluminación, o dinero retirado y almacenado."
+- code: sought_more_information
+  label:
+    en: Sought more information
+    fr: "Recherche d'information supplémentaire"
+    es: "Buscó más información"
+  definition:
+    en: "Actively looked for further information through radio, phone, neighbors, or officials."
+    fr: "Recherche active d'informations complémentaires via la radio, le téléphone, les voisins ou les responsables."
+    es: "Buscó activamente más información a través de la radio, el teléfono, los vecinos o los funcionarios."
+- code: alerted_neighbors_relatives
+  label:
+    en: Alerted neighbors or relatives
+    fr: Voisins ou proches alertés
+    es: Alertó a vecinos o familiares
+  definition:
+    en: "Passed the warning on to other people."
+    fr: "L'alerte a été transmise à d'autres personnes."
+    es: "La alerta se transmitió a otras personas."
+- code: moved_children_elderly_first
+  label:
+    en: Moved children, elderly, or disabled members first
+    fr: "Enfants, personnes âgées ou handicapées déplacés en priorité"
+    es: "Niños, personas mayores o con discapacidad trasladados primero"
+  definition:
+    en: "Vulnerable household members were pre-emptively relocated."
+    fr: "Les membres vulnérables du ménage ont été déplacés de manière anticipée."
+    es: "Los miembros vulnerables del hogar fueron reubicados de forma anticipada."
+- code: secured_documents
+  label:
+    en: Secured identity documents
+    fr: "Documents d'identité mis en sécurité"
+    es: "Documentos de identidad resguardados"
+  definition:
+    en: "Identity cards, land titles, and health records gathered and protected."
+    fr: "Cartes d'identité, titres fonciers et dossiers de santé rassemblés et protégés."
+    es: "Tarjetas de identidad, títulos de tierras y registros de salud reunidos y protegidos."
+- code: sent_members_to_safer_location
+  label:
+    en: Sent some members to relatives or a safer area
+    fr: "Certains membres envoyés chez des proches ou dans une zone plus sûre"
+    es: "Algunos miembros enviados con familiares o a una zona más segura"
+  definition:
+    en: "Partial evacuation, typically of women, children, or elderly members to relatives' homes."
+    fr: "Évacuation partielle, typiquement des femmes, des enfants ou des personnes âgées chez des proches."
+    es: "Evacuación parcial, típicamente de mujeres, niños o personas mayores hacia casas de familiares."
+- code: no_action_taken
+  label:
+    en: No action taken
+    fr: "Aucune action prise"
+    es: "Ninguna acción tomada"
+  definition:
+    en: "The household did not take any protective action in response to the warning. Mutually exclusive with all other values."
+    fr: "Le ménage n'a pris aucune action de protection en réponse à l'alerte. Mutuellement exclusif avec toutes les autres valeurs."
+    es: "El hogar no tomó ninguna acción de protección en respuesta a la alerta. Mutuamente excluyente con todos los demás valores."
+- code: other
+  label:
+    en: Other
+    fr: Autre
+    es: Otro
+  definition:
+    en: "Protective action not listed above."
+    fr: "Action de protection non répertoriée ci-dessus."
+    es: "Acción de protección no listada arriba."

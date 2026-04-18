@@ -1,0 +1,19 @@
+id: aap_complaint_response_satisfaction
+maturity: draft
+label:
+  en: "AAP: Satisfaction with response to complaint"
+  fr: "Redevabilité : Satisfaction concernant la réponse à la plainte"
+  es: "Rendición de cuentas: Satisfacción con la respuesta a la queja"
+
+definition:
+  en: "How satisfied the respondent was with how aid providers responded to their question, suggestion, or complaint. Asked only when `aap_complaint_filed_past = yes`. Maps to CHS 2024 Commitment 5 Key Action 5.3 ('Acknowledge and respond to complaints in a timely manner'). Source: IASC / REACH Menu 2018."
+  fr: "Dans quelle mesure le répondant était satisfait de la manière dont les intervenants ont répondu à sa question, suggestion ou plainte. Demandé uniquement si `aap_complaint_filed_past = yes`. Correspond à l'Engagement 5 Action clé 5.3 de la CHS 2024 (« Accuser réception et répondre aux plaintes en temps opportun »). Source : Menu IASC / REACH 2018."
+  es: "Qué tan satisfecho estaba el encuestado con la forma en que los actores humanitarios respondieron a su pregunta, sugerencia o queja. Se pregunta solo cuando `aap_complaint_filed_past = yes`. Corresponde al Compromiso 5 Acción Clave 5.3 de la CHS 2024 («Acusar recibo y responder a las quejas de manera oportuna»). Fuente: Menú IASC / REACH 2018."
+
+type: string
+cardinality: single
+vocabulary: aap-satisfaction-5
+references: null
+category: aap_feedback
+core: false
+sensitivity: standard

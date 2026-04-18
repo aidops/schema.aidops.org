@@ -1,0 +1,19 @@
+id: hf_electricity_source
+maturity: draft
+label:
+  en: "Main electricity source at facility"
+  fr: "Source principale d'électricité de l'établissement"
+  es: "Fuente principal de electricidad del establecimiento"
+
+definition:
+  en: "Primary source of electricity for the facility: national grid, fuel generator, solar, hybrid (grid plus backup), battery only, or none. Observed by the enumerator. Multi-source arrangements are common; the primary source is recorded here, with backup captured elsewhere if needed. SARA basic-amenities tracer; WASH FIT Energy indicator."
+  fr: "Source principale d'électricité pour l'établissement : réseau national, groupe électrogène à combustible, solaire, hybride (réseau plus secours), batterie uniquement ou aucune. Observé par l'enquêteur. Les configurations multi-sources sont courantes ; la source principale est enregistrée ici, le secours étant capturé ailleurs au besoin. Indicateur traceur SARA pour les aménités de base ; indicateur WASH FIT Énergie."
+  es: "Fuente principal de electricidad para el establecimiento: red nacional, generador a combustible, solar, híbrido (red más respaldo), solo batería o ninguno. Observado por el enumerador. Los arreglos multifuente son comunes; aquí se registra la fuente principal, capturando el respaldo en otro lugar cuando sea necesario. Indicador trazador SARA para servicios básicos; indicador WASH FIT Energía."
+
+type: string
+cardinality: single
+core: true
+vocabulary: facility-electricity-source
+references: null
+category: energy
+sensitivity: standard

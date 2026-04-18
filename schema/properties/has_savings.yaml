@@ -1,0 +1,19 @@
+id: has_savings
+maturity: draft
+label:
+  en: "Household has any savings"
+  fr: "Le ménage a des économies"
+  es: "El hogar tiene ahorros"
+
+definition:
+  en: "Whether the household currently has any form of savings (cash, bank account, mobile money, savings group, in-kind stores, or other). A binary indicator of financial buffer capacity. Drawn from the LSMS-ISA finance and savings module, the FAO RIMA-II Access to Basic Services and Social Safety Nets (ABS/SSN) pillars, and the CGAP financial inclusion core indicators. The `prefer_not_to_answer` option is retained given high sensitivity and enumerator observations that savings questions often trigger refusal."
+  fr: "Si le ménage dispose actuellement d'une forme quelconque d'épargne (liquidités, compte bancaire, monnaie mobile, groupe d'épargne, stocks en nature ou autre). Indicateur binaire de capacité tampon financière. Tiré du module finances et épargne LSMS-ISA, des piliers Accès aux services de base et Filets de sécurité sociale (ABS/SSN) de FAO RIMA-II et des indicateurs de base d'inclusion financière du CGAP. L'option `prefer_not_to_answer` est conservée en raison de la sensibilité élevée et des observations d'enquêteurs selon lesquelles les questions sur l'épargne déclenchent souvent un refus."
+  es: "Si el hogar actualmente tiene alguna forma de ahorros (efectivo, cuenta bancaria, dinero móvil, grupo de ahorro, reservas en especie u otro). Indicador binario de capacidad de amortiguación financiera. Tomado del módulo de finanzas y ahorros LSMS-ISA, los pilares Acceso a Servicios Básicos y Redes de Protección Social (ABS/SSN) de FAO RIMA-II y los indicadores básicos de inclusión financiera del CGAP. La opción `prefer_not_to_answer` se conserva dada la alta sensibilidad y las observaciones de los encuestadores de que las preguntas sobre ahorros suelen provocar rechazo."
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-pnta
+references: null
+category: context
+sensitivity: sensitive

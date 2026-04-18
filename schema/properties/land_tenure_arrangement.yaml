@@ -1,0 +1,19 @@
+id: land_tenure_arrangement
+maturity: draft
+label:
+  en: "Primary land tenure arrangement (household level)"
+  fr: "Régime foncier principal (niveau du ménage)"
+  es: "Régimen de tenencia de tierra principal (nivel del hogar)"
+
+definition:
+  en: "Primary arrangement under which the household accesses or holds the agricultural land it uses. When the household uses land under more than one arrangement, the primary (most-used or most-important) arrangement is selected. Uses the PS `land-tenure` vocabulary (FAO VGGT categories: owned_with_title, owned_without_title, rented, sharecropped, communal, state_allocated, informal, borrowed, other). This is a household-level restatement of the per-parcel PS `Farm.land_tenure` property; the household profile captures the dominant arrangement across the household's total land access. Sensitive because tenure status can be stigmatising; in IDP or refugee contexts the `informal` code may warrant restricted sensitivity handling (see AgricultureProfile Open Questions)."
+  fr: "Principal régime dans lequel le ménage accède à la terre agricole qu'il utilise ou la détient. Lorsque le ménage utilise des terres sous plus d'un régime, le régime principal (le plus utilisé ou le plus important) est sélectionné. Utilise le vocabulaire PS `land-tenure` (catégories VGGT de la FAO : owned_with_title, owned_without_title, rented, sharecropped, communal, state_allocated, informal, borrowed, other). C'est une reformulation au niveau du ménage de la propriété par parcelle PS `Farm.land_tenure` ; le profil du ménage capture le régime dominant sur l'ensemble de l'accès du ménage à la terre. Sensible parce que le statut foncier peut être stigmatisant ; dans les contextes de PDI ou de réfugiés, le code `informal` peut justifier un traitement de sensibilité restreinte (voir Questions ouvertes AgricultureProfile)."
+  es: "Arreglo principal bajo el cual el hogar accede o posee la tierra agrícola que usa. Cuando el hogar usa tierra bajo más de un arreglo, se selecciona el principal (el más usado o más importante). Usa el vocabulario PS `land-tenure` (categorías VGGT de la FAO: owned_with_title, owned_without_title, rented, sharecropped, communal, state_allocated, informal, borrowed, other). Es una reformulación a nivel del hogar de la propiedad por parcela PS `Farm.land_tenure`; el perfil del hogar captura el arreglo dominante sobre el acceso total del hogar a la tierra. Sensible porque el estado de tenencia puede ser estigmatizante; en contextos de PDI o refugiados, el código `informal` puede ameritar manejo de sensibilidad restringida (ver Preguntas Abiertas de AgricultureProfile)."
+
+type: string
+cardinality: single
+core: false
+vocabulary: land-tenure
+references: null
+category: context
+sensitivity: sensitive

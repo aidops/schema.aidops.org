@@ -1,0 +1,19 @@
+id: hf_facility_level
+maturity: draft
+label:
+  en: "Facility level of care"
+  fr: "Niveau de soins de l'établissement"
+  es: "Nivel de atención del establecimiento"
+
+definition:
+  en: "Position of the facility in the national health-system tier (primary, secondary, tertiary, community-level). Reported by the facility in-charge. Primary care covers first-contact facilities (health posts, health centres); secondary covers district hospitals; tertiary covers national/referral hospitals; community covers outposts and auxiliary community sites. Follows Sphere 2018 Ch.3 and WHO health-systems framing."
+  fr: "Position de l'établissement dans la hiérarchie du système de santé national (primaire, secondaire, tertiaire, niveau communautaire). Rapporté par le responsable de l'établissement. Les soins primaires couvrent les établissements de premier contact (postes de santé, centres de santé) ; le secondaire couvre les hôpitaux de district ; le tertiaire couvre les hôpitaux nationaux/de référence ; la communauté couvre les avant-postes et les sites communautaires auxiliaires. Suit Sphère 2018 Ch.3 et le cadrage des systèmes de santé de l'OMS."
+  es: "Posición del establecimiento en la jerarquía del sistema de salud nacional (primario, secundario, terciario, nivel comunitario). Reportado por el responsable del establecimiento. La atención primaria cubre establecimientos de primer contacto (puestos de salud, centros de salud); el secundario cubre hospitales de distrito; el terciario cubre hospitales nacionales/de referencia; el comunitario cubre avanzadas y sitios comunitarios auxiliares. Sigue Esfera 2018 Cap. 3 y el marco de sistemas de salud de la OMS."
+
+type: string
+cardinality: single
+core: true
+vocabulary: health-facility-level
+references: null
+category: classification
+sensitivity: standard
