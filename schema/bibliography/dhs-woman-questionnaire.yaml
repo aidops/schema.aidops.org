@@ -13,7 +13,6 @@ informs:
   concepts:
     - MaternalNewbornHealthProfile
   vocabularies:
-    - maternity-care-provider
     - pregnancy-outcome
     - birth-multiplicity
     - place-of-delivery

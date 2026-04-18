@@ -15,7 +15,6 @@ informs:
   vocabularies:
     - pnc-timing
     - postpartum-stay-duration
-    - maternity-care-provider
   properties:
     - delivery_stay_hours_or_days
     - newborn_skin_to_skin

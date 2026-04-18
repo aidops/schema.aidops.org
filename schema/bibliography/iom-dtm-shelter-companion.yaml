@@ -13,7 +13,6 @@ informs:
   concepts:
     - ShelterAdequacyProfile
   vocabularies:
-    - occupancy-arrangement
     - technical-assistance-type
   properties:
     - shelter_type

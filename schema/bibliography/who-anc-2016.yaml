@@ -15,7 +15,6 @@ informs:
   vocabularies:
     - anc-visit-count-group
     - anc-first-visit-timing
-    - maternity-care-provider
   properties:
     - anc_any_visit
     - anc_visits_count

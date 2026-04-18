@@ -14,7 +14,6 @@ informs:
   - ShelterAdequacyProfile
   - NFIProfile
   vocabularies:
-  - shelter-situation-type
   - shelter-damage-level
   - habitability-status
   properties:

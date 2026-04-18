@@ -157,8 +157,10 @@ class TestRealSchema:
         #   MarketProfile: +9
         #   PastoralFoodSecurityProfile: +13
         #   ClimateAdaptationProfile: +8
-        assert len(aidops_vocabularies) == 235, (
-            f"Expected 235 AidOps vocabularies, got {len(aidops_vocabularies)}"
+        # PS-promotion pass: -4 (shelter-situation-type, maternity-care-provider,
+        #                        occupancy-arrangement, document-status moved to PublicSchema)
+        assert len(aidops_vocabularies) == 231, (
+            f"Expected 231 AidOps vocabularies, got {len(aidops_vocabularies)}"
         )
 
         # Every AidOps concept has a JSON Schema

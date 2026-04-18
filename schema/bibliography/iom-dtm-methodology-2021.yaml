@@ -16,7 +16,6 @@ informs:
   - return-intention
   - return-timeline
   - return-barrier
-  - shelter-situation-type
   properties:
   - displacement_origin_country
   - displacement_origin_admin1

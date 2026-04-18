@@ -13,7 +13,6 @@ informs:
   concepts:
     - MaternalNewbornHealthProfile
   vocabularies:
-    - maternity-care-provider
     - place-of-delivery
     - anc-visit-count-group
     - mnh-breastfeeding-initiation-timing

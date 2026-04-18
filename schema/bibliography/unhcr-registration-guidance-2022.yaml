@@ -13,7 +13,6 @@ informs:
   - DisplacementProfile
   vocabularies:
   - rsd-status
-  - document-status
   properties:
   - displacement_origin_country
   - refugee_status_determination

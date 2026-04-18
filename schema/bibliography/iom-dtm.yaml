@@ -12,7 +12,6 @@ informs:
   - DwellingDamageProfile
   vocabularies:
   - shelter-damage-level
-  - shelter-situation-type
   properties:
   - damage_level
   - current_shelter_type
