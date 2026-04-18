@@ -1,0 +1,19 @@
+id: migration_distance_km
+maturity: draft
+label:
+  en: "Migration distance traveled by main herd — km, last 30 days"
+  fr: "Distance de migration parcourue par le troupeau principal — km, 30 derniers jours"
+  es: "Distancia de migración recorrida por el rebaño principal — km, últimos 30 días"
+
+definition:
+  en: "Approximate kilometers traveled by the household's main herd following the seasonal migration route in the last 30 days. Integer; allow 0 for sedentarized or non-mobile households in the recall period; allow a `dont_know` response when the respondent cannot estimate the distance. Migration distance is difficult to estimate accurately; FSNAU uses it as a categorical indicator (far vs. near vs. not moved). A free integer is preferred here to allow post-hoc conversion to distance-band categories at analysis time. Sensitivity note: at aggregated livelihood-zone level this item is low sensitivity; at household level combined with GPS or admin-area data, migration distance could reveal camp or grazing-area locations. Do not cross-tabulate household-level migration distance with GPS interview coordinates in shared data products. See `migration_routes_disrupted` and `conflict_mobility_restriction` for route and conflict items. Grounded in FSNAU seasonal assessment migration distance items, FEWSNET livelihoods zone monitoring, LEGS 3rd edition (mobility as livelihood characteristic), and HEA pastoral baseline migration pattern variable. `core: false` — recall is difficult for free-integer distance; zone-level use is recommended."
+  fr: "Kilomètres approximatifs parcourus par le troupeau principal du ménage sur l'itinéraire de migration saisonnier au cours des 30 derniers jours. Entier ; autoriser 0 pour les ménages sédentarisés ou non mobiles pendant la période de rappel. Note de sensibilité : au niveau agrégé de la zone de moyens d'existence, cet item est peu sensible ; au niveau du ménage combiné avec des données GPS ou administratives, la distance de migration pourrait révéler des emplacements de campements. Fondé sur les items de distance de migration FSNAU, le suivi des zones FEWSNET, LEGS 3e éd. et la variable de schéma de migration de la ligne de base HEA pastorale. `core: false`."
+  es: "Kilómetros aproximados recorridos por el rebaño principal del hogar siguiendo la ruta de migración estacional en los últimos 30 días. Entero; permitir 0 para hogares sedentarizados o no móviles durante el período de recordatorio. Nota de sensibilidad: a nivel de zona de medios de vida agregada este ítem es de baja sensibilidad; a nivel del hogar combinado con datos GPS o de área administrativa, la distancia de migración podría revelar ubicaciones de campamentos o áreas de pastoreo. Fundamentado en los ítems de distancia de migración FSNAU, el monitoreo de zonas FEWSNET, LEGS 3.a ed. y la variable de patrón de migración de la línea base HEA pastoral. `core: false`."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: pastoral_mobility
+sensitivity: sensitive

@@ -1,0 +1,65 @@
+id: water-access-livestock
+maturity: draft
+label:
+  en: "Livestock Water Access at Seasonal Water Points"
+  fr: "Accès à l'eau pour le bétail aux points d'eau saisonniers"
+  es: "Acceso al agua para el ganado en puntos de agua estacionales"
+definition:
+  en: "Adequacy of water access for livestock at seasonal water points along the household's migration route. Used in PastoralFoodSecurityProfile for the `water_point_access` property. This vocabulary covers livestock watering only — not household WASH water access. Severity codes align with Sphere 2018 LEGS livestock water standards and FAO GIEWS water-point monitoring categories."
+  fr: "Adéquation de l'accès à l'eau pour le bétail aux points d'eau saisonniers le long de la route de migration du ménage. Couvre uniquement l'abreuvement du bétail — pas l'accès à l'eau WASH du ménage. Les codes de gravité s'alignent sur les normes LEGS Sphère 2018 et les catégories de suivi FAO GIEWS."
+  es: "Adecuación del acceso al agua para el ganado en puntos de agua estacionales a lo largo de la ruta de migración del hogar. Cubre solo el abrevadero del ganado — no el acceso al agua WASH del hogar. Los códigos de gravedad se alinean con los estándares LEGS Esfera 2018 y las categorías de monitoreo FAO GIEWS."
+values:
+  - code: adequate
+    label:
+      en: "Adequate — sufficient water available at water points"
+      fr: "Adéquat — eau suffisante disponible aux points d'eau"
+      es: "Adecuado — agua suficiente disponible en los puntos de agua"
+    definition:
+      en: "Livestock can be watered at normal intervals; water points are not under stress."
+      fr: "Le bétail peut être abreuvé à des intervalles normaux ; les points d'eau ne sont pas sous pression."
+      es: "El ganado puede abrevarse a intervalos normales; los puntos de agua no están bajo estrés."
+  - code: reduced_but_manageable
+    label:
+      en: "Reduced but manageable — some extra travel required"
+      fr: "Réduit mais gérable — quelques déplacements supplémentaires nécessaires"
+      es: "Reducido pero manejable — se requiere algo de viaje adicional"
+    definition:
+      en: "Water is available but livestock must travel farther than normal to reach it; manageable with extra effort."
+      fr: "L'eau est disponible mais le bétail doit parcourir plus loin que d'habitude pour y accéder ; gérable avec un effort supplémentaire."
+      es: "El agua está disponible pero el ganado debe viajar más de lo normal para alcanzarla; manejable con esfuerzo adicional."
+  - code: inadequate_stress
+    label:
+      en: "Inadequate — livestock under water stress"
+      fr: "Insuffisant — bétail sous stress hydrique"
+      es: "Inadecuado — ganado bajo estrés hídrico"
+    definition:
+      en: "Water points are insufficient; livestock are showing signs of water stress including weight loss and reduced milk production."
+      fr: "Les points d'eau sont insuffisants ; le bétail présente des signes de stress hydrique, notamment une perte de poids et une réduction de la production laitière."
+      es: "Los puntos de agua son insuficientes; el ganado muestra señales de estrés hídrico incluyendo pérdida de peso y reducción de producción de leche."
+  - code: severely_inadequate
+    label:
+      en: "Severely inadequate — livestock mortality risk from thirst"
+      fr: "Très insuffisant — risque de mortalité du bétail due à la soif"
+      es: "Gravemente inadecuado — riesgo de mortalidad del ganado por sed"
+    definition:
+      en: "Acute water shortage; livestock deaths from dehydration are imminent or already occurring."
+      fr: "Pénurie d'eau aiguë ; des décès de bétail par déshydratation sont imminents ou en cours."
+      es: "Escasez aguda de agua; las muertes de ganado por deshidratación son inminentes o ya están ocurriendo."
+  - code: water_point_closed
+    label:
+      en: "Water point closed or inaccessible"
+      fr: "Point d'eau fermé ou inaccessible"
+      es: "Punto de agua cerrado o inaccesible"
+    definition:
+      en: "The water point the household normally uses is closed, blocked, damaged, or made inaccessible by conflict or other factors."
+      fr: "Le point d'eau habituellement utilisé par le ménage est fermé, bloqué, endommagé ou rendu inaccessible par un conflit ou d'autres facteurs."
+      es: "El punto de agua que el hogar normalmente usa está cerrado, bloqueado, dañado o hecho inaccesible por conflicto u otros factores."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess the adequacy of livestock water access."
+      fr: "Le répondant ne peut pas évaluer l'adéquation de l'accès à l'eau pour le bétail."
+      es: "El encuestado no puede evaluar la adecuación del acceso al agua para el ganado."

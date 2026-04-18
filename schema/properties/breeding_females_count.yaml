@@ -1,0 +1,19 @@
+id: breeding_females_count
+maturity: draft
+label:
+  en: "Breeding females count per dairy species"
+  fr: "Nombre de femelles reproductrices par espèce laitière"
+  es: "Conteo de hembras reproductoras por especie láctea"
+
+definition:
+  en: "Count of adult female animals currently lactating or recently pregnant, one integer value per dairy-relevant livestock-type code (cattle, camels, goats, sheep). Collected as a sub-count of `herd_composition_by_species` for dairy species only; form should pre-populate species from the herd composition grid and display only species with a count above zero. The ratio `breeding_females_count / herd_composition_by_species` (breeding-female ratio) is a structural indicator of herd resilience and future milk production capacity used in the IPC AFI pastoral annex and HEA pastoral baseline. IPC pastoral thresholds: >= 0.40 adequate reproductive base; 0.25–0.39 reduced; < 0.25 critically depleted (IPC Phase 3+ signal). Grounded in LEGS 3rd edition Chapter 3 (lactating females as herd resilience indicator), FSNAU lactating-female count items, HEA pastoral baseline breeding-females module, and IPC AFI pastoral annex Section 4.2."
+  fr: "Effectif des femelles adultes actuellement en lactation ou récemment gestantes, une valeur entière par code livestock-type pertinent pour la production laitière (bovins, chameaux, caprins, ovins). Collecté comme sous-effectif de `herd_composition_by_species` pour les espèces laitières uniquement ; le formulaire doit prépopuler les espèces à partir de la grille de composition du troupeau et afficher uniquement les espèces avec un effectif supérieur à zéro. Le ratio `breeding_females_count / herd_composition_by_species` (ratio de femelles reproductrices) est un indicateur structurel de résilience du troupeau et de capacité future de production laitière utilisé dans l'annexe pastoraliste IPC AFI et le référentiel HEA pastoral. Fondé sur LEGS 3e éd. Chapitre 3, les items FSNAU de comptage des femelles en lactation, le module de femelles reproductrices de la ligne de base HEA pastorale et l'annexe pastoraliste IPC AFI Section 4.2."
+  es: "Conteo de hembras adultas actualmente en lactancia o recientemente preñadas, un valor entero por código livestock-type relevante para producción láctea (bovinos, camellos, caprinos, ovinos). Recopilado como sub-conteo de `herd_composition_by_species` solo para especies lácteas; el formulario debe pre-poblar las especies desde la cuadrícula de composición del rebaño y mostrar solo las especies con conteo mayor a cero. La razón `breeding_females_count / herd_composition_by_species` (razón de hembras reproductoras) es un indicador estructural de resiliencia del rebaño y capacidad futura de producción de leche utilizado en el anexo pastoralista IPC AFI y la línea base HEA pastoral."
+
+type: integer
+cardinality: multiple
+core: true
+vocabulary: livestock-type
+references: null
+category: pastoral_herd
+sensitivity: sensitive

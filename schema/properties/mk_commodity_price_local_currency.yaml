@@ -1,0 +1,19 @@
+id: mk_commodity_price_local_currency
+maturity: draft
+label:
+  en: Current commodity price (local currency)
+  fr: Prix actuel du produit (monnaie locale)
+  es: Precio actual del producto (moneda local)
+
+definition:
+  en: "Current price of the commodity per its reference unit in local currency, as quoted by active vendors on this visit date. JMMI standard practice is to interview at least 3 vendors per commodity and record the modal or average price. Reference unit is defined per commodity code in the market-price-basket vocabulary. Decimal ≥ 0; use -1 for dont_know; use -2 for not_applicable (when mk_commodity_available = not_available)."
+  fr: "Prix actuel du produit par son unité de référence en monnaie locale, tel qu'indiqué par les vendeurs actifs à la date de cette visite. La pratique standard JMMI est d'interviewer au moins 3 vendeurs par produit et d'enregistrer le prix modal ou moyen. L'unité de référence est définie par code de produit dans le vocabulaire market-price-basket."
+  es: "Precio actual del producto por su unidad de referencia en moneda local, según lo cotizado por vendedores activos en la fecha de esta visita. La práctica estándar JMMI es entrevistar al menos a 3 vendedores por producto y registrar el precio modal o promedio. La unidad de referencia se define por código de producto en el vocabulario market-price-basket."
+
+type: decimal
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_price_basket
+sensitivity: standard

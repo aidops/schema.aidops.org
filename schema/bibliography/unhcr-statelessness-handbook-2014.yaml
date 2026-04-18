@@ -1,0 +1,17 @@
+id: unhcr-statelessness-handbook-2014
+title: "Handbook on Protection of Stateless Persons"
+short_title: "UNHCR Statelessness Handbook 2014"
+publisher: "UNHCR"
+year: 2014
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unhcr.org/protection/statelessness/53b698ab9/handbook-protection-stateless-persons.html"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies: []
+  properties:
+    - statelessness_risk

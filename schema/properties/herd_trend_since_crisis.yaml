@@ -1,0 +1,19 @@
+id: herd_trend_since_crisis
+maturity: draft
+label:
+  en: "Herd size trend since reference period"
+  fr: "Tendance de la taille du troupeau depuis la période de référence"
+  es: "Tendencia del tamaño del rebaño desde el período de referencia"
+
+definition:
+  en: "Directional change in the household's total herd size since a reference event or the same season in the prior year. The reference event or baseline period is defined in the survey session metadata (not on this profile) to ensure comparability across assessment rounds — typically the same survey round from the prior year or a named crisis onset date (following FSNAU and FEWSNET Livelihoods Monitoring Framework practice). This is the most tractable single-item herd-dynamics indicator used in the IPC AFI pastoral annex (Section 4.2) and FSNAU herd-trend items. It is a directional perception item, not a precise count change; use `livestock_losses_count_past_12mo` and `herd_composition_by_species` for quantitative attrition analysis. Response uses vocabulary `herd-trend`. Grounded in IPC AFI pastoral annex Section 4.2, LEGS 3rd edition initial assessment, FSNAU herd-trend items, and FEWSNET Livelihoods Monitoring Framework."
+  fr: "Changement directionnel dans la taille totale du troupeau du ménage depuis un événement de référence ou la même saison de l'année précédente. L'événement de référence ou la période de base est défini dans les métadonnées de la session d'enquête (et non sur ce profil) pour assurer la comparabilité entre les cycles d'évaluation — généralement le même cycle d'enquête de l'année précédente ou une date de début de crise nommée. Il s'agit de l'indicateur le plus simple de dynamique du troupeau utilisé dans l'annexe pastoraliste IPC AFI (Section 4.2) et les items de tendance du troupeau FSNAU. C'est un item de perception directionnel, non un changement d'effectif précis. Utilise le vocabulaire `herd-trend`."
+  es: "Cambio direccional en el tamaño total del rebaño del hogar desde un evento de referencia o la misma estación del año anterior. El evento de referencia o período base se define en los metadatos de la sesión de encuesta (no en este perfil) para garantizar comparabilidad entre rondas de evaluación. Es el indicador de dinámica del rebaño más manejable utilizado en el anexo pastoralista IPC AFI (Sección 4.2) y los ítems de tendencia del rebaño FSNAU. Es un ítem de percepción direccional, no un cambio de conteo preciso. Usa el vocabulario `herd-trend`."
+
+type: string
+cardinality: single
+core: true
+vocabulary: herd-trend
+references: null
+category: pastoral_herd
+sensitivity: sensitive

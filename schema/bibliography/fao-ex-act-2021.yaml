@@ -1,0 +1,22 @@
+id: fao-ex-act-2021
+title: "EX-Ante Carbon-balance Tool (EX-ACT) — Household Adaptation Monitoring Supplement"
+short_title: "FAO EX-ACT"
+publisher: "Food and Agriculture Organization of the United Nations (FAO)"
+year: 2021
+version: "2021 edition"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.fao.org/in-action/epic/ex-act-tool/en/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies:
+    - adaptive-practice-type
+  properties:
+    - climate_months_hazard_prone_per_year
+    - climate_primary_livelihood_climate_dependent
+    - climate_adaptive_practices_used
+    - climate_trend_perception_seasons

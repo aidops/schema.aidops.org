@@ -1,0 +1,45 @@
+id: climate_dwelling_vulnerable_location
+maturity: draft
+label:
+  en: "Household location exposed to climate location risks"
+  fr: "Emplacement du ménage exposé à des risques climatiques de localisation"
+  es: "Ubicación del hogar expuesta a riesgos climáticos de localización"
+
+definition:
+  en: >
+    Multi-select sensitivity indicator recording which location-level climate
+    risks apply to the area where the household lives. This is a household-level
+    sensitivity indicator — not a dwelling structural assessment. The item asks
+    the respondent about the location characteristics, not the building
+    condition. Boundary with DwellingDamageProfile: that profile records
+    post-event structural damage to the dwelling. This property captures the
+    forward-looking location risk prior to any event, as a sensitivity
+    component of the IPCC vulnerability framework. Enumerator note: if the
+    respondent is uncertain, the enumerator may observe and mark applicable
+    codes based on visible terrain or setting.
+  fr: >
+    Indicateur de sensibilité à sélection multiple enregistrant quels risques
+    climatiques liés à l'emplacement s'appliquent à la zone où vit le ménage.
+    Il s'agit d'un indicateur de sensibilité au niveau du ménage — non d'une
+    évaluation structurelle du logement. L'item interroge le répondant sur les
+    caractéristiques de l'emplacement, pas sur l'état du bâtiment. Frontière
+    avec DwellingDamageProfile : ce profil enregistre les dommages structurels
+    post-événement au logement. Cette propriété capture le risque de localisation
+    prospectif antérieur à tout événement.
+  es: >
+    Indicador de sensibilidad de selección múltiple que registra qué riesgos
+    climáticos de ubicación aplican al área donde vive el hogar. Es un
+    indicador de sensibilidad a nivel del hogar, no una evaluación estructural
+    de la vivienda. El ítem pregunta al encuestado sobre las características de
+    la ubicación, no sobre el estado del edificio. Límite con
+    DwellingDamageProfile: ese perfil registra daños estructurales post-evento
+    a la vivienda. Esta propiedad captura el riesgo de ubicación prospectivo
+    anterior a cualquier evento.
+
+type: string
+cardinality: multiple
+core: true
+vocabulary: climate-location-risk
+references: null
+category: climate
+sensitivity: sensitive

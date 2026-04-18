@@ -1,0 +1,25 @@
+id: gcf-results-framework-2022
+title: "GCF Adaptation Results Framework and Vulnerability Assessment Guidance"
+short_title: "GCF Adaptation Results Framework"
+publisher: "Green Climate Fund"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.greenclimate.fund/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies:
+    - climate-location-risk
+    - climate-insurance-type
+  properties:
+    - climate_primary_livelihood_climate_dependent
+    - climate_dwelling_vulnerable_location
+    - climate_water_source_impact
+    - climate_insurance_coverage_type
+    - climate_insurance_paid_out_past_event
+    - climate_safety_net_access
+    - climate_adaptive_capacity_index

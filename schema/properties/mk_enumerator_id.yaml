@@ -1,0 +1,19 @@
+id: mk_enumerator_id
+maturity: draft
+label:
+  en: Enumerator identifier code
+  fr: Code d'identification de l'enquêteur
+  es: Código de identificación del encuestador
+
+definition:
+  en: "Enumerator staff code from the field roster, typically 4–8 characters. Enables data quality review (outlier detection by enumerator) without creating a respondent privacy concern. This is a staff identifier, not a personal identifier for any respondent or market actor."
+  fr: "Code du personnel enquêteur tiré du registre de terrain, généralement de 4 à 8 caractères. Permet l'examen de la qualité des données (détection des valeurs aberrantes par enquêteur) sans créer de préoccupation de confidentialité pour le répondant."
+  es: "Código del personal enumerador del registro de campo, típicamente de 4 a 8 caracteres. Permite la revisión de la calidad de los datos (detección de valores atípicos por enumerador) sin crear una preocupación de privacidad para ningún respondente."
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_metadata
+sensitivity: standard

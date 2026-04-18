@@ -1,0 +1,74 @@
+id: herd-trend
+maturity: draft
+label:
+  en: "Herd Trend"
+  fr: "Tendance du troupeau"
+  es: "Tendencia del rebaño"
+definition:
+  en: "Directional change in a pastoral household's total herd size since a reference event or the same season in the prior year. Used in IPC AFI pastoral annex (Section 4.2) as an IPC structural indicator for classifying pastoral livelihood zones. The reference period is defined in survey session metadata, not collected on the profile itself."
+  fr: "Changement directionnel dans la taille totale du troupeau d'un ménage pastoral depuis un événement de référence ou la même saison de l'année précédente. Utilisé dans l'annexe pastoraliste IPC AFI (Section 4.2) comme indicateur structurel IPC."
+  es: "Cambio direccional en el tamaño total del rebaño de un hogar pastoral desde un evento de referencia o la misma estación del año anterior. Utilizado en el anexo pastoralista IPC AFI (Sección 4.2) como indicador estructural IPC."
+values:
+  - code: significantly_increased
+    label:
+      en: "Significantly increased (more than 25%)"
+      fr: "Considérablement augmenté (plus de 25%)"
+      es: "Aumentó significativamente (más del 25%)"
+    definition:
+      en: "Total herd size has grown by more than 25% since the reference period. Indicates herd rebuilding and recovery."
+      fr: "La taille totale du troupeau a augmenté de plus de 25% depuis la période de référence. Indique la reconstitution et la récupération du troupeau."
+      es: "El tamaño total del rebaño creció más del 25% desde el período de referencia. Indica reconstitución y recuperación del rebaño."
+  - code: slightly_increased
+    label:
+      en: "Slightly increased (10–25%)"
+      fr: "Légèrement augmenté (10–25%)"
+      es: "Aumentó ligeramente (10–25%)"
+    definition:
+      en: "Moderate herd growth since the reference period; household recovering or maintaining stability."
+      fr: "Croissance modérée du troupeau depuis la période de référence ; ménage en convalescence ou stable."
+      es: "Crecimiento moderado del rebaño desde el período de referencia; hogar en recuperación o manteniendo estabilidad."
+  - code: stayed_same
+    label:
+      en: "Stayed about the same"
+      fr: "Est resté à peu près le même"
+      es: "Se mantuvo aproximadamente igual"
+    definition:
+      en: "No significant change in herd size since the reference period."
+      fr: "Pas de changement significatif dans la taille du troupeau depuis la période de référence."
+      es: "Sin cambio significativo en el tamaño del rebaño desde el período de referencia."
+  - code: slightly_decreased
+    label:
+      en: "Slightly decreased (10–25%)"
+      fr: "Légèrement diminué (10–25%)"
+      es: "Disminuyó ligeramente (10–25%)"
+    definition:
+      en: "Moderate herd attrition since the reference period; early stress signal."
+      fr: "Attrition modérée du troupeau depuis la période de référence ; signal de stress précoce."
+      es: "Desgaste moderado del rebaño desde el período de referencia; señal de estrés temprana."
+  - code: significantly_decreased
+    label:
+      en: "Significantly decreased (more than 25%)"
+      fr: "Considérablement diminué (plus de 25%)"
+      es: "Disminuyó significativamente (más del 25%)"
+    definition:
+      en: "Major herd attrition since the reference period; acute stress. Triggers further investigation."
+      fr: "Attrition majeure du troupeau depuis la période de référence ; stress aigu."
+      es: "Desgaste mayor del rebaño desde el período de referencia; estrés agudo."
+  - code: total_loss
+    label:
+      en: "Total loss — herd wiped out"
+      fr: "Perte totale — troupeau décimé"
+      es: "Pérdida total — rebaño perdido por completo"
+    definition:
+      en: "The household has lost all or virtually all of its livestock. IPC destitution indicator; household no longer classified as pastoral."
+      fr: "Le ménage a perdu la totalité ou la quasi-totalité de son bétail. Indicateur de dénuement IPC ; le ménage n'est plus classifié comme pastoral."
+      es: "El hogar perdió todo o prácticamente todo su ganado. Indicador de destitución IPC; el hogar ya no se clasifica como pastoral."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot estimate the direction of herd change since the reference period."
+      fr: "Le répondant ne peut pas estimer la direction du changement du troupeau depuis la période de référence."
+      es: "El encuestado no puede estimar la dirección del cambio del rebaño desde el período de referencia."

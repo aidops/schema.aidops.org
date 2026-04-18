@@ -1,0 +1,19 @@
+id: mk_market_operational_status
+maturity: draft
+label:
+  en: Market operational status
+  fr: Statut opérationnel du marché
+  es: Estado operacional del mercado
+
+definition:
+  en: "Overall operational state of the market at the time of this visit, assessed by the enumerator through direct observation and confirmed with key vendor informants. A five-level scale from fully operational to closed. The primary input to the derived functionality score. Core for all humanitarian market monitoring programs (MISMA, RAM, JMMI, WFP MAG)."
+  fr: "État opérationnel global du marché au moment de cette visite, évalué par l'enquêteur par observation directe et confirmé auprès des informateurs clés vendeurs. Échelle à cinq niveaux allant de pleinement opérationnel à fermé. Principale entrée pour le score de fonctionnalité dérivé."
+  es: "Estado operativo general del mercado en el momento de esta visita, evaluado por el enumerador mediante observación directa y confirmado con informantes clave vendedores. Escala de cinco niveles desde completamente operacional hasta cerrado. Entrada principal para el puntaje de funcionalidad derivado."
+
+type: string
+cardinality: single
+core: true
+vocabulary: market-operational-status
+references: null
+category: market_functionality
+sensitivity: standard

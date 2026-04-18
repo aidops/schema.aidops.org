@@ -1,0 +1,18 @@
+id: unhcr-participatory-assessment-2006
+title: "Participatory Assessment in Operations"
+short_title: "UNHCR Participatory Assessment 2006"
+publisher: "UNHCR Division of International Protection"
+year: 2006
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unhcr.org/4b5921009.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies:
+    - protection-concern-type
+  properties:
+    - protection_priority_concern

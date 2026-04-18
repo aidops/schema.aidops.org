@@ -1,0 +1,19 @@
+id: mk_security_incidents_at_market
+maturity: draft
+label:
+  en: Security incidents at or around market (past 30 days)
+  fr: Incidents sécuritaires au marché ou aux alentours (30 derniers jours)
+  es: Incidentes de seguridad en o alrededor del mercado (últimos 30 días)
+
+definition:
+  en: "Whether security incidents occurred at or immediately around this market in the past 30 days in a way that affected trading operations or buyer access, as reported by key vendor informants. Boolean: yes / no / dont_know. The coded yes/no flag is non-sensitive and appropriate for routine reporting. Narrative descriptions of specific incidents, perpetrators, or methods must not be included in this profile — route those to a security incident management system."
+  fr: "Si des incidents sécuritaires se sont produits au niveau ou aux alentours immédiats de ce marché au cours des 30 derniers jours d'une manière qui a affecté les opérations commerciales ou l'accès des acheteurs, tel que rapporté par les informateurs clés vendeurs. Booléen : oui / non / ne sait pas. L'indicateur oui/non codé est non sensible et approprié pour les rapports courants."
+  es: "Si ocurrieron incidentes de seguridad en o alrededor inmediato de este mercado en los últimos 30 días de una manera que afectó las operaciones comerciales o el acceso de compradores, según lo reportado por informantes clave vendedores. Booleano: sí / no / no sabe. La bandera sí/no codificada no es sensible y es apropiada para informes rutinarios."
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_accessibility
+sensitivity: standard

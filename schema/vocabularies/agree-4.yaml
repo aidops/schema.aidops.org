@@ -1,0 +1,56 @@
+id: agree-4
+maturity: draft
+label:
+  en: "Four-point agreement scale"
+  fr: "Échelle d'accord à quatre points"
+  es: "Escala de acuerdo de cuatro puntos"
+definition:
+  en: "Four-point Likert agreement scale without a neutral midpoint. The absence of a midpoint reduces fence-sitting and produces more differentiated responses for rule-of-law and fairness perception items. Introduced for rule_of_law_perception in ProtectionProfile (OQ-8 decision: weai-agree-5 is 5-point and WEAI-specific; a 4-point scale is appropriate for general fairness perception questions)."
+  fr: "Échelle d'accord de Likert à quatre points sans point médian neutre. L'absence de point médian réduit les réponses de compromis et produit des réponses plus différenciées pour les items de perception de l'état de droit et d'équité. Introduite pour rule_of_law_perception dans ProtectionProfile (décision OQ-8 : weai-agree-5 est à 5 points et spécifique au WEAI ; une échelle à 4 points est appropriée pour les questions générales de perception d'équité)."
+  es: "Escala de acuerdo de Likert de cuatro puntos sin punto medio neutral. La ausencia de punto medio reduce las respuestas intermedias y produce respuestas más diferenciadas para ítems de percepción del estado de derecho y equidad. Introducida para rule_of_law_perception en ProtectionProfile (decisión OQ-8: weai-agree-5 es de 5 puntos y específica de WEAI; una escala de 4 puntos es apropiada para preguntas generales de percepción de equidad)."
+values:
+  - code: strongly_agree
+    label:
+      en: "Strongly agree"
+      fr: "Fortement d'accord"
+      es: "Muy de acuerdo"
+    definition:
+      en: "The respondent strongly agrees with the statement."
+      fr: "Le répondant est fortement d'accord avec l'affirmation."
+      es: "El encuestado está muy de acuerdo con la afirmación."
+  - code: agree
+    label:
+      en: "Agree"
+      fr: "D'accord"
+      es: "De acuerdo"
+    definition:
+      en: "The respondent agrees with the statement."
+      fr: "Le répondant est d'accord avec l'affirmation."
+      es: "El encuestado está de acuerdo con la afirmación."
+  - code: disagree
+    label:
+      en: "Disagree"
+      fr: "En désaccord"
+      es: "En desacuerdo"
+    definition:
+      en: "The respondent disagrees with the statement."
+      fr: "Le répondant est en désaccord avec l'affirmation."
+      es: "El encuestado está en desacuerdo con la afirmación."
+  - code: strongly_disagree
+    label:
+      en: "Strongly disagree"
+      fr: "Fortement en désaccord"
+      es: "Muy en desacuerdo"
+    definition:
+      en: "The respondent strongly disagrees with the statement."
+      fr: "Le répondant est fortement en désaccord avec l'affirmation."
+      es: "El encuestado está muy en desacuerdo con la afirmación."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess. Valid response; must not be re-coded as disagree or missing."
+      fr: "Le répondant ne peut pas évaluer. Réponse valide ; ne doit pas être recodée comme en désaccord ou manquante."
+      es: "El encuestado no puede evaluar. Respuesta válida; no debe recodificarse como en desacuerdo o faltante."

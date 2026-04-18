@@ -1,0 +1,42 @@
+id: climate_safety_net_access
+maturity: draft
+label:
+  en: "Household is covered by a climate-responsive social protection programme"
+  fr: "Le ménage est couvert par un programme de protection sociale sensible au climat"
+  es: "El hogar está cubierto por un programa de protección social sensible al clima"
+
+definition:
+  en: >
+    Binary item asking whether the household is currently covered by any
+    government or NGO programme that specifically provides support when climate
+    hazards like drought or flood affect their area (for example, Ethiopia's
+    Productive Safety Net Programme triggered by drought, or Kenya Hunger Safety
+    Net Programme). RIMA-II overlap: LivelihoodProfile.humanitarian_assistance_reliance
+    asks about humanitarian assistance broadly. This property is narrower: it
+    asks specifically about climate-responsive social protection. When
+    LivelihoodProfile is collected in the same survey, the Form Author should
+    consider a branch from humanitarian_assistance_reliance = yes to filter
+    whether any of those programmes are climate-triggered rather than re-asking
+    the baseline.
+  fr: >
+    Item binaire demandant si le ménage est actuellement couvert par un programme
+    gouvernemental ou d'une ONG qui fournit spécifiquement un soutien lorsque
+    des aléas climatiques tels que la sécheresse ou les inondations affectent
+    sa région. Chevauchement RIMA-II : LivelihoodProfile.humanitarian_assistance_reliance
+    couvre l'assistance humanitaire de manière générale ; cette propriété est
+    plus étroite et spécifique aux programmes sensibles au climat.
+  es: >
+    Ítem binario que pregunta si el hogar está cubierto actualmente por algún
+    programa gubernamental o de ONG que proporcione específicamente apoyo cuando
+    peligros climáticos como sequías o inundaciones afectan su área. Superposición
+    con RIMA-II: LivelihoodProfile.humanitarian_assistance_reliance cubre la
+    asistencia humanitaria en general; esta propiedad es más estrecha y
+    específica de programas sensibles al clima.
+
+type: string
+cardinality: single
+core: false
+vocabulary: yes-no-dk
+references: null
+category: climate
+sensitivity: sensitive

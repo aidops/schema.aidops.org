@@ -1,0 +1,40 @@
+id: climate_info_services_access
+maturity: draft
+label:
+  en: "Household has access to climate or weather information services"
+  fr: "Le ménage a accès à des services d'information climatique ou météorologique"
+  es: "El hogar tiene acceso a servicios de información climática o meteorológica"
+
+definition:
+  en: >
+    Binary gateway item asking whether the household has access to any service
+    that provides weather forecasts, seasonal rainfall outlooks, or agricultural
+    climate advisories. Gateway: if 'no' or 'dont_know', skip
+    climate_information_source, climate_information_trust, and
+    climate_information_used_for_decisions. A key adaptive capacity indicator
+    in the UNFCCC NAP M&E framework and the LoCAL PBCRG performance standard
+    on climate information access. Low access is a distinct adaptive capacity
+    gap from low trust (captured in climate_information_trust).
+  fr: >
+    Item binaire de passerelle demandant si le ménage a accès à un service qui
+    fournit des prévisions météorologiques, des perspectives de précipitations
+    saisonnières ou des avis agricoles liés au climat. Passerelle : si « non »
+    ou « ne sait pas », ignorer climate_information_source,
+    climate_information_trust et climate_information_used_for_decisions.
+    Indicateur clé de capacité d'adaptation dans le cadre de suivi-évaluation
+    des PNA de la CCNUCC.
+  es: >
+    Ítem binario de puerta de acceso que pregunta si el hogar tiene acceso a
+    algún servicio que proporcione pronósticos del tiempo, perspectivas de
+    lluvia estacional o avisos agroclimáticos. Puerta de acceso: si «no» o
+    «no sé», omitir climate_information_source, climate_information_trust y
+    climate_information_used_for_decisions. Indicador clave de capacidad de
+    adaptación en el marco de seguimiento y evaluación de los PNA de la CMNUCC.
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: climate
+sensitivity: standard

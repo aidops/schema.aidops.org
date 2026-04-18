@@ -1,0 +1,65 @@
+id: terms-of-trade-trend
+maturity: draft
+label:
+  en: "Livestock-to-Cereal Terms of Trade Trend"
+  fr: "Tendance des termes de l'échange bétail/céréales"
+  es: "Tendencia de los términos de intercambio ganadería/cereales"
+definition:
+  en: "Perceived direction of the livestock-to-cereal price ratio relative to the same period in the prior year. Used in PastoralFoodSecurityProfile as a market perception indicator when objective price data are unavailable or cannot be compared to a baseline. Grounded in FEWSNET terms-of-trade monitoring methodology and IPC AFI pastoral annex market-access evidence requirements."
+  fr: "Direction perçue du ratio prix bétail/céréale par rapport à la même période de l'année précédente. Utilisé comme indicateur de perception du marché lorsque les données objectives de prix sont indisponibles. Fondé sur la méthodologie FEWSNET et les exigences de preuves d'accès au marché de l'annexe pastoraliste IPC AFI."
+  es: "Dirección percibida de la razón precio ganadería/cereal relativa al mismo período del año anterior. Usado como indicador de percepción del mercado cuando los datos objetivos de precios no están disponibles. Fundamentado en la metodología de monitoreo de FEWSNET y los requisitos de evidencia de acceso al mercado del anexo pastoralista IPC AFI."
+values:
+  - code: much_better
+    label:
+      en: "Much better — can buy much more cereal for the same animal"
+      fr: "Bien meilleur — peut acheter beaucoup plus de céréales pour le même animal"
+      es: "Mucho mejor — puede comprar mucho más cereal por el mismo animal"
+    definition:
+      en: "Livestock prices have risen significantly relative to cereal prices; pastoral purchasing power substantially improved compared to last year."
+      fr: "Les prix du bétail ont considérablement augmenté par rapport aux prix des céréales ; le pouvoir d'achat pastoral s'est nettement amélioré par rapport à l'année dernière."
+      es: "Los precios del ganado han aumentado significativamente relativo a los precios de los cereales; el poder adquisitivo pastoral ha mejorado sustancialmente respecto al año pasado."
+  - code: slightly_better
+    label:
+      en: "Slightly better"
+      fr: "Légèrement meilleur"
+      es: "Ligeramente mejor"
+    definition:
+      en: "Marginal improvement in livestock-to-cereal purchasing power compared to the same period last year."
+      fr: "Amélioration marginale du pouvoir d'achat bétail/céréale par rapport à la même période l'année dernière."
+      es: "Mejora marginal en el poder adquisitivo ganadería/cereal comparado con el mismo período del año pasado."
+  - code: same
+    label:
+      en: "About the same"
+      fr: "À peu près pareil"
+      es: "Aproximadamente igual"
+    definition:
+      en: "No significant change in livestock-to-cereal purchasing power compared to the same period last year."
+      fr: "Pas de changement significatif dans le pouvoir d'achat bétail/céréale par rapport à la même période l'année dernière."
+      es: "Sin cambio significativo en el poder adquisitivo ganadería/cereal comparado con el mismo período del año pasado."
+  - code: slightly_worse
+    label:
+      en: "Slightly worse"
+      fr: "Légèrement pire"
+      es: "Ligeramente peor"
+    definition:
+      en: "Marginal deterioration in purchasing power; livestock prices declining relative to cereal prices."
+      fr: "Détérioration marginale du pouvoir d'achat ; les prix du bétail baissent par rapport aux prix des céréales."
+      es: "Deterioro marginal del poder adquisitivo; los precios del ganado declinan relativo a los precios de los cereales."
+  - code: much_worse
+    label:
+      en: "Much worse — can buy much less cereal for the same animal"
+      fr: "Bien pire — peut acheter beaucoup moins de céréales pour le même animal"
+      es: "Mucho peor — puede comprar mucho menos cereal por el mismo animal"
+    definition:
+      en: "Significant deterioration in pastoral purchasing power; livestock prices have fallen sharply relative to cereal prices. Key stress indicator used in IPC pastoral analysis."
+      fr: "Détérioration significative du pouvoir d'achat pastoral ; les prix du bétail ont fortement baissé par rapport aux prix des céréales. Indicateur de stress clé utilisé dans l'analyse pastorale IPC."
+      es: "Deterioro significativo del poder adquisitivo pastoral; los precios del ganado han caído drásticamente relativo a los precios de los cereales. Indicador de estrés clave usado en el análisis pastoral IPC."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot assess the direction of change in livestock-to-cereal purchasing power."
+      fr: "Le répondant ne peut pas évaluer la direction du changement du pouvoir d'achat bétail/céréale."
+      es: "El encuestado no puede evaluar la dirección del cambio en el poder adquisitivo ganadería/cereal."

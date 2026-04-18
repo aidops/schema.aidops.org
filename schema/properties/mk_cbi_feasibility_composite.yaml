@@ -1,0 +1,50 @@
+id: mk_cbi_feasibility_composite
+maturity: draft
+label:
+  en: CBI feasibility composite score
+  fr: Score composite de faisabilité CBI
+  es: Puntaje compuesto de viabilidad CBI
+
+definition:
+  en: >
+    Derived integer 0–5 market-side feasibility score for cash-based
+    programming, aligned to the CaLP MISMA Cash Feasibility Decision Tree 2018.
+    Each of five conditions contributes 1 point: (1) supply chain is fully or
+    mostly functional; (2) market is at least partially operational; (3)
+    physical cash accepted by most or all vendors; (4) mobile money accepted by
+    most or all vendors; (5) vendors have capacity for large coordinated orders.
+    Score 5 = strong CBI feasibility; score 0 = not feasible under current
+    conditions. This is a market-side pre-screening tool, not a full CBI
+    modality decision (which also requires FSP assessment, beneficiary
+    identification, and protection-risk analysis). Implemented as an XLSForm
+    calculate field. Score of 2 or below should prompt additional assessment
+    before CBI programming is approved.
+  fr: >
+    Score entier dérivé 0–5 de faisabilité côté marché pour la programmation
+    basée sur le cash, aligné sur l'arbre de décision de faisabilité du cash
+    CaLP MISMA 2018. Chacune des cinq conditions contribue 1 point : (1) la
+    chaîne d'approvisionnement est pleinement ou majoritairement fonctionnelle ;
+    (2) le marché est au moins partiellement opérationnel ; (3) les espèces
+    physiques sont acceptées par la plupart ou tous les vendeurs ; (4) le
+    mobile money est accepté par la plupart ou tous les vendeurs ; (5) les
+    vendeurs ont la capacité de traiter des commandes coordonnées importantes.
+    Score 5 = forte faisabilité CBI ; score 0 = non faisable dans les
+    conditions actuelles.
+  es: >
+    Puntaje entero derivado 0–5 de viabilidad del lado del mercado para
+    programación basada en efectivo, alineado con el Árbol de Decisión de
+    Viabilidad del Efectivo CaLP MISMA 2018. Cada una de cinco condiciones
+    contribuye 1 punto: (1) la cadena de suministro es completa o mayormente
+    funcional; (2) el mercado está al menos parcialmente operacional; (3) el
+    efectivo físico es aceptado por la mayoría o todos los vendedores; (4) el
+    dinero móvil es aceptado por la mayoría o todos los vendedores; (5) los
+    vendedores tienen capacidad para pedidos coordinados grandes. Puntaje 5 =
+    fuerte viabilidad CBI; puntaje 0 = no viable en las condiciones actuales.
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_cbi_feasibility
+sensitivity: standard

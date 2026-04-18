@@ -1,0 +1,19 @@
+id: mk_mobile_money_accepted
+maturity: draft
+label:
+  en: Mobile money acceptance by vendors
+  fr: Acceptation du mobile money par les vendeurs
+  es: Aceptación de dinero móvil por los vendedores
+
+definition:
+  en: "Proportion of vendors at this market who accept mobile money (e.g., M-Pesa, Wave, MTN MoMo, Orange Money, or local equivalent) for transactions, as reported by key vendor informants. Mobile money acceptance often varies by vendor type; the enumerator should estimate across the full market, not just one sector."
+  fr: "Proportion de vendeurs sur ce marché qui acceptent le mobile money (par ex. M-Pesa, Wave, MTN MoMo, Orange Money, ou équivalent local) pour les transactions, tel que rapporté par les informateurs clés vendeurs. L'acceptation du mobile money varie souvent selon le type de vendeur ; l'enquêteur doit estimer sur l'ensemble du marché, pas seulement sur un secteur."
+  es: "Proporción de vendedores en este mercado que aceptan dinero móvil (p. ej., M-Pesa, Wave, MTN MoMo, Orange Money o equivalente local) para transacciones, según lo reportado por informantes clave vendedores. La aceptación del dinero móvil varía frecuentemente según el tipo de vendedor; el enumerador debe estimar para todo el mercado, no solo un sector."
+
+type: string
+cardinality: single
+core: true
+vocabulary: cash-modality-acceptance
+references: null
+category: market_cbi_feasibility
+sensitivity: standard

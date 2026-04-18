@@ -1,0 +1,37 @@
+id: climate_information_used_for_decisions
+maturity: draft
+label:
+  en: "Decisions for which climate information was used in the past 12 months"
+  fr: "Décisions pour lesquelles des informations climatiques ont été utilisées au cours des 12 derniers mois"
+  es: "Decisiones para las que se usó información climática en los últimos 12 meses"
+
+definition:
+  en: >
+    Multi-select item asking which decisions the household has used weather or
+    climate information to make in the past 12 months. Applies when
+    climate_info_services_access = 'yes'. Captures the translation from access
+    to action: a household that accesses but does not use climate information
+    represents a different programmatic gap than one that lacks access entirely.
+    Aligns with the UNFCCC NAP M&E use-of-information indicator and the LoCAL
+    PBCRG performance standard on the information-to-action pathway.
+  fr: >
+    Item à sélection multiple demandant pour quelles décisions le ménage a
+    utilisé des informations météorologiques ou climatiques au cours des 12
+    derniers mois. S'applique lorsque climate_info_services_access = 'yes'.
+    Capture la traduction de l'accès en action : un ménage qui accède aux
+    informations climatiques sans les utiliser représente une lacune
+    programmatique différente de celui qui n'y a pas accès.
+  es: >
+    Ítem de selección múltiple que pregunta para qué decisiones el hogar ha
+    usado información meteorológica o climática en los últimos 12 meses. Aplica
+    cuando climate_info_services_access = 'yes'. Captura la traducción de
+    acceso a acción: un hogar que accede pero no usa información climática
+    representa una brecha programática diferente de uno que carece de acceso.
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: climate-info-use-pattern
+references: null
+category: climate
+sensitivity: standard

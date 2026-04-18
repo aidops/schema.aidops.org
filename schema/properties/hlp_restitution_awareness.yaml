@@ -1,0 +1,19 @@
+id: hlp_restitution_awareness
+maturity: draft
+label:
+  en: "HLP restitution mechanism awareness"
+  fr: "Connaissance des mécanismes de restitution LTP"
+  es: "Conocimiento de mecanismos de restitución VTP"
+
+definition:
+  en: "Whether the household knows of any mechanism, process, or organization that could help resolve a housing, land, or property dispute or claim restitution for lost property. This is an awareness measure; it does not imply the mechanism is accessible or trusted. Based on Pinheiro Principles (2005) Principles 2, 12–21 (right to restitution and procedures); NRC HLP Handbook (2013) Chapter 6; GPC PAF Domain 3."
+  fr: "Si le ménage connaît un mécanisme, un processus ou une organisation qui pourrait aider à résoudre un litige foncier ou à réclamer la restitution d'un bien perdu. Il s'agit d'une mesure de connaissance ; cela n'implique pas que le mécanisme soit accessible ou fiable. Fondé sur les Principes Pinheiro (2005) Principes 2, 12–21 (droit à la restitution et procédures) ; Manuel HLP du NRC (2013) Chapitre 6 ; GPC PAF Domaine 3."
+  es: "Si el hogar conoce algún mecanismo, proceso u organización que pueda ayudar a resolver una disputa de vivienda, tierra o propiedad o a reclamar la restitución de bienes perdidos. Esta es una medida de conocimiento; no implica que el mecanismo sea accesible o confiable. Basado en los Principios Pinheiro (2005) Principios 2, 12–21 (derecho a la restitución y procedimientos); Manual HLP del NRC (2013) Capítulo 6; GPC PAF Dominio 3."
+
+type: string
+cardinality: single
+vocabulary: yes-no-dk
+references: null
+category: hlp
+core: false
+sensitivity: sensitive

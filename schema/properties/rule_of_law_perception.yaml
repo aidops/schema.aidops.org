@@ -1,0 +1,19 @@
+id: rule_of_law_perception
+maturity: draft
+label:
+  en: "Rule of law perception (household)"
+  fr: "Perception de l'état de droit (ménage)"
+  es: "Percepción del estado de derecho (hogar)"
+
+definition:
+  en: "Whether the household feels that the laws and rules governing their area treat all people fairly regardless of who they are. Four-point agreement scale without a neutral midpoint to reduce fence-sitting. OQ-8 decision: created new agree-4 vocabulary rather than reusing weai-agree-5 (5-point, WEAI-specific). Context-specific item; most useful in post-conflict and transitional settings. Could be misused to profile households by political allegiance in sensitive contexts — aggregate before reporting. Based on OHCHR Rule-of-Law Indicators (2011) legitimacy dimension; REACH Syria (2022) rule-of-law module; GPC PAF Domain 2."
+  fr: "Si le ménage estime que les lois et règles régissant leur zone traitent toutes les personnes équitablement, indépendamment de leur identité. Échelle d'accord à quatre points sans point médian neutre pour réduire les réponses de compromis. Décision OQ-8 : création d'un nouveau vocabulaire agree-4 plutôt que réutilisation de weai-agree-5 (5 points, spécifique au WEAI). Item spécifique au contexte ; le plus utile dans les contextes post-conflit et de transition. Pourrait être utilisé à mauvais escient pour profiler les ménages selon leur allégeance politique dans des contextes sensibles — agréger avant de communiquer. Fondé sur la dimension légitimité des Indicateurs d'état de droit HCDH (2011) ; REACH Syrie (2022) module état de droit ; GPC PAF Domaine 2."
+  es: "Si el hogar siente que las leyes y normas que rigen su área tratan a todas las personas de manera justa independientemente de quiénes sean. Escala de acuerdo de cuatro puntos sin punto medio neutral para reducir las respuestas de término medio. Decisión OQ-8: se creó el nuevo vocabulario agree-4 en lugar de reutilizar weai-agree-5 (5 puntos, específico de WEAI). Ítem específico del contexto; más útil en entornos posconflicto y de transición. Podría usarse indebidamente para perfilar hogares por lealtad política en contextos sensibles — agregar antes de reportar. Basado en la dimensión de legitimidad de los Indicadores del Estado de Derecho del ACNUDH (2011); módulo de estado de derecho de REACH Siria (2022); GPC PAF Dominio 2."
+
+type: string
+cardinality: single
+vocabulary: agree-4
+references: null
+category: access_to_justice
+core: false
+sensitivity: sensitive

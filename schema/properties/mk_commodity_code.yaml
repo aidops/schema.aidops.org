@@ -1,0 +1,19 @@
+id: mk_commodity_code
+maturity: draft
+label:
+  en: Commodity code (price basket)
+  fr: Code du produit (panier de prix)
+  es: Código del producto (cesta de precios)
+
+definition:
+  en: "Identifies which commodity the current repeat-group row describes. Pre-populated from the fixed basket list configured at survey deployment time; typically displayed as a read-only roster label to the enumerator. Values drawn from the market-price-basket vocabulary. This property is the repeat identifier within the Module C price basket repeat group."
+  fr: "Identifie le produit décrit par la ligne actuelle du groupe répété. Pré-rempli à partir de la liste de panier fixe configurée au moment du déploiement de l'enquête ; généralement affiché comme libellé de liste en lecture seule pour l'enquêteur. Valeurs tirées du vocabulaire market-price-basket."
+  es: "Identifica qué producto describe la fila actual del grupo de repetición. Pre-poblado desde la lista de cesta fija configurada en el momento del despliegue de la encuesta; generalmente mostrado como etiqueta de lista de solo lectura al enumerador. Valores extraídos del vocabulario market-price-basket."
+
+type: string
+cardinality: single
+core: true
+vocabulary: market-price-basket
+references: null
+category: market_price_basket
+sensitivity: standard

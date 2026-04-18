@@ -1,0 +1,56 @@
+id: civil-registry-access
+maturity: draft
+label:
+  en: "Civil registry access"
+  fr: "Accès à l'état civil"
+  es: "Acceso al registro civil"
+definition:
+  en: "Household-perceived accessibility of civil document registration services. Distinguishes practical barriers (distance, cost, office closure, lack of information) from legal or discriminatory barriers (household is legally excluded or discriminated against). The distinction is important for programme response: practical barriers require outreach; legal barriers require advocacy. Based on GPC PAF Domain 2 documentation access indicator; UNHCR Protection Monitoring Framework (2016) civil documentation indicator; REACH Syria (2022) documentation module."
+  fr: "Accessibilité perçue par le ménage des services d'enregistrement des documents civils. Distingue les obstacles pratiques (distance, coût, fermeture des bureaux, manque d'information) des obstacles juridiques ou discriminatoires (ménage légalement exclu ou discriminé). La distinction est importante pour la réponse programmatique : les obstacles pratiques nécessitent des activités de sensibilisation ; les obstacles juridiques nécessitent du plaidoyer. Fondé sur l'indicateur d'accès à la documentation du GPC PAF Domaine 2 ; Cadre de suivi de la protection UNHCR (2016) indicateur de documentation civile ; module de documentation REACH Syrie (2022)."
+  es: "Accesibilidad percibida por el hogar de los servicios de registro de documentos civiles. Distingue las barreras prácticas (distancia, costo, cierre de oficinas, falta de información) de las barreras legales o discriminatorias (hogar legalmente excluido o discriminado). La distinción es importante para la respuesta programática: las barreras prácticas requieren actividades de divulgación; las barreras legales requieren abogacía. Basado en el indicador de acceso a la documentación del GPC PAF Dominio 2; indicador de documentación civil del Marco de Monitoreo de Protección del ACNUR (2016); módulo de documentación de REACH Siria (2022)."
+values:
+  - code: yes_easily
+    label:
+      en: "Yes, easily accessible"
+      fr: "Oui, facilement accessible"
+      es: "Sí, fácilmente accesible"
+    definition:
+      en: "Household can access civil documentation services without significant difficulty."
+      fr: "Le ménage peut accéder aux services de documentation civile sans difficulté significative."
+      es: "El hogar puede acceder a los servicios de documentación civil sin dificultad significativa."
+  - code: yes_with_difficulty
+    label:
+      en: "Yes, but with difficulty"
+      fr: "Oui, mais avec difficulté"
+      es: "Sí, pero con dificultad"
+    definition:
+      en: "Accessible but requires overcoming significant practical barriers (distance, cost, bureaucratic complexity)."
+      fr: "Accessible mais nécessite de surmonter des obstacles pratiques importants (distance, coût, complexité bureaucratique)."
+      es: "Accesible pero requiere superar barreras prácticas significativas (distancia, costo, complejidad burocrática)."
+  - code: no_practical_barriers
+    label:
+      en: "No — practical barriers prevent access"
+      fr: "Non — des obstacles pratiques empêchent l'accès"
+      es: "No — barreras prácticas impiden el acceso"
+    definition:
+      en: "Cannot access because of distance, cost, office closure, lack of information, or other practical constraints."
+      fr: "Impossible d'accéder en raison de la distance, du coût, de la fermeture des bureaux, du manque d'information ou d'autres contraintes pratiques."
+      es: "No puede acceder por distancia, costo, cierre de oficinas, falta de información u otras limitaciones prácticas."
+  - code: no_legal_barriers
+    label:
+      en: "No — legal or discriminatory barriers prevent access"
+      fr: "Non — des obstacles juridiques ou discriminatoires empêchent l'accès"
+      es: "No — barreras legales o discriminatorias impiden el acceso"
+    definition:
+      en: "Cannot access because the household is legally excluded, discriminated against, or the service is not accessible to persons of their status."
+      fr: "Impossible d'accéder car le ménage est légalement exclu, fait l'objet de discrimination, ou le service n'est pas accessible aux personnes de leur statut."
+      es: "No puede acceder porque el hogar está legalmente excluido, discriminado, o el servicio no es accesible para personas de su condición."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent does not know whether civil document services are accessible."
+      fr: "Le répondant ne sait pas si les services de documentation civile sont accessibles."
+      es: "El encuestado no sabe si los servicios de documentación civil son accesibles."

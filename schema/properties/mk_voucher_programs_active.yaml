@@ -1,0 +1,19 @@
+id: mk_voucher_programs_active
+maturity: draft
+label:
+  en: Active voucher programs at market
+  fr: Programmes de bons actifs sur le marché
+  es: Programas de vales activos en el mercado
+
+definition:
+  en: "Whether any voucher programs (e-vouchers, paper vouchers, commodity vouchers, or restricted cash transfers) are currently operating at this market, as reported by key vendor informants. Vendors know if they are registered in a voucher program. A yes response informs modality choice: existing program registrations reduce vendor-recruitment burden for new programs but also signal potential market-distortion risk if multiple programs converge on the same vendors."
+  fr: "Si des programmes de bons (e-bons, bons papier, bons de marchandises ou transferts en espèces restreints) sont actuellement en cours sur ce marché, tel que rapporté par les informateurs clés vendeurs. Les vendeurs savent s'ils sont enregistrés dans un programme de bons."
+  es: "Si hay programas de vales (e-vales, vales en papel, vales de mercancía o transferencias de efectivo restringidas) actualmente en funcionamiento en este mercado, según lo reportado por informantes clave vendedores. Los vendedores saben si están registrados en un programa de vales."
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_cbi_feasibility
+sensitivity: standard

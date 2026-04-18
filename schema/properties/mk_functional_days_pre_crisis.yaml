@@ -1,0 +1,19 @@
+id: mk_functional_days_pre_crisis
+maturity: draft
+label:
+  en: Functional days per week (pre-crisis baseline)
+  fr: Jours de fonctionnement par semaine (référence avant-crise)
+  es: Días de funcionamiento por semana (línea base pre-crisis)
+
+definition:
+  en: "Number of days per week the market was typically open before the current crisis or disruption began, as recalled by key vendor informants. Integer 0–7; use -1 when the informant does not know. Enables the days-ratio adjustment in the derived functionality score: if current days are below 50% of pre-crisis days, a one-level downward adjustment is applied."
+  fr: "Nombre de jours par semaine où le marché était typiquement ouvert avant le début de la crise ou perturbation actuelle, tel que rappelé par les informateurs clés vendeurs. Entier 0–7 ; utiliser -1 lorsque l'informateur ne sait pas. Permet l'ajustement du ratio des jours dans le score de fonctionnalité dérivé."
+  es: "Número de días por semana que el mercado estaba típicamente abierto antes de que comenzara la crisis o perturbación actual, según el recuerdo de informantes clave vendedores. Entero 0–7; usar -1 cuando el informante no sabe. Permite el ajuste del ratio de días en el puntaje de funcionalidad derivado."
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: market_functionality
+sensitivity: standard

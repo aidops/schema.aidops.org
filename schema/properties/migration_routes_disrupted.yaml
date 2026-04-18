@@ -1,0 +1,19 @@
+id: migration_routes_disrupted
+maturity: draft
+label:
+  en: "Seasonal migration routes blocked or disrupted — last 30 days"
+  fr: "Routes de migration saisonnière bloquées ou perturbées — 30 derniers jours"
+  es: "Rutas de migración estacional bloqueadas o interrumpidas — últimos 30 días"
+
+definition:
+  en: "Whether the household's planned seasonal migration routes were blocked, closed, contested, or otherwise inaccessible to its herd in the last 30 days. Response from vocabulary `yes-no-partial-dk` (yes / no / partially / dont_know). A `yes` or `partially` response triggers the companion item `migration_route_disruption_cause`. Route disruption is a LEGS and IPC pastoral annex indicator: restricted mobility is one of the IPC criteria for destitution-phase classification in pastoral livelihood zones. The binary-or-partial flag at livelihood-zone level is low sensitivity; at household level combined with GPS coordinates it could imply which routes were taken or avoided by a specific household. Share only at zone-level aggregation in external data products; retain household-level for internal programme analysis. Grounded in LEGS 3rd edition, IPC AFI pastoral annex (restricted mobility as IPC destitution criterion), FSNAU route-disruption items, and FEWSNET conflict-migration nexus monitoring. Recall: last 30 days."
+  fr: "Si les routes de migration saisonnière prévues du ménage ont été bloquées, fermées, contestées ou autrement inaccessibles pour son troupeau au cours des 30 derniers jours. Réponse dans le vocabulaire `yes-no-partial-dk`. Une réponse `yes` ou `partially` déclenche l'item associé `migration_route_disruption_cause`. Le marqueur binaire ou partiel au niveau de la zone de moyens d'existence est peu sensible ; au niveau du ménage combiné avec des coordonnées GPS, il pourrait indiquer les routes empruntées ou évitées. Fondé sur LEGS 3e éd., l'annexe pastoraliste IPC AFI, les items FSNAU et le suivi FEWSNET. Rappel : 30 derniers jours."
+  es: "Si las rutas de migración estacional planificadas del hogar estuvieron bloqueadas, cerradas, en disputa o de otro modo inaccesibles para su rebaño en los últimos 30 días. Respuesta del vocabulario `yes-no-partial-dk`. Una respuesta `yes` o `partially` activa el ítem asociado `migration_route_disruption_cause`. El indicador binario o parcial a nivel de zona de medios de vida es de baja sensibilidad; a nivel del hogar combinado con coordenadas GPS podría indicar qué rutas fueron tomadas o evitadas. Fundamentado en LEGS 3.a ed., el anexo pastoralista IPC AFI, ítems FSNAU y el monitoreo FEWSNET. Recordatorio: últimos 30 días."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-partial-dk
+references: null
+category: pastoral_mobility
+sensitivity: sensitive

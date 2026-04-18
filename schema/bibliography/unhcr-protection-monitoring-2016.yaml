@@ -1,0 +1,21 @@
+id: unhcr-protection-monitoring-2016
+title: "Protection Monitoring — A UNHCR Operational Guidance"
+short_title: "UNHCR Protection Monitoring 2016"
+publisher: "UNHCR Division of International Protection"
+year: 2016
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.unhcr.org/publications/manuals/5177cf139/unhcr-protection-monitoring.html"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies:
+    - civil-registry-access
+  properties:
+    - hh_national_id_gap
+    - hh_civil_registry_access
+    - movement_restricted
+    - arbitrary_detention_experienced

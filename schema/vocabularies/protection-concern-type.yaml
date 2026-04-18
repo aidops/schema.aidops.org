@@ -1,0 +1,119 @@
+id: protection-concern-type
+maturity: draft
+label:
+  en: "Protection concern type"
+  fr: "Type de préoccupation de protection"
+  es: "Tipo de preocupación de protección"
+definition:
+  en: "Types of protection concern a household can self-identify as their priority. Mirrors the ProtectionProfile module structure and allows respondents to flag their own priority concern. Useful for qualitative reporting and participatory feedback analysis. prefer_not_to_say is a valid response and must not be re-coded as missing. Based on GPC PAF all three domains (Physical Safety and Security, Rule of Law and Justice, Housing Land and Property); UNHCR Participatory Assessment Guidance (2006); Sphere Protection Principles."
+  fr: "Types de préoccupation de protection qu'un ménage peut s'auto-identifier comme prioritaire. Reflète la structure des modules de ProtectionProfile et permet aux répondants de signaler leur propre préoccupation prioritaire. Utile pour les rapports qualitatifs et l'analyse des retours participatifs. prefer_not_to_say est une réponse valide et ne doit pas être recodée comme manquante. Fondé sur les trois domaines du GPC PAF (Sécurité physique et sûreté, État de droit et justice, Logement terres et propriétés) ; Directives d'évaluation participative UNHCR (2006) ; Principes de protection Sphère."
+  es: "Tipos de preocupación de protección que un hogar puede auto-identificar como su prioridad. Refleja la estructura de módulos de ProtectionProfile y permite a los encuestados señalar su propia preocupación prioritaria. Útil para informes cualitativos y análisis de retroalimentación participativa. prefer_not_to_say es una respuesta válida y no debe recodificarse como faltante. Basado en los tres dominios del GPC PAF (Seguridad Física, Estado de Derecho y Justicia, Vivienda Tierra y Propiedad); Guía de Evaluación Participativa del ACNUR (2006); Principios de Protección de Esfera."
+values:
+  - code: no_serious_concern
+    label:
+      en: "No serious protection concern"
+      fr: "Aucune préoccupation de protection grave"
+      es: "Ningún problema de protección grave"
+    definition:
+      en: "Household does not currently face a serious protection concern."
+      fr: "Le ménage ne fait pas actuellement face à une préoccupation de protection grave."
+      es: "El hogar no enfrenta actualmente un problema de protección grave."
+  - code: physical_violence_risk
+    label:
+      en: "Risk of physical violence"
+      fr: "Risque de violence physique"
+      es: "Riesgo de violencia física"
+    definition:
+      en: "Fear of attack, armed violence, or physical harm from an armed actor or other group."
+      fr: "Crainte d'une attaque, de violences armées ou de préjudices physiques de la part d'un acteur armé ou d'un autre groupe."
+      es: "Miedo a un ataque, violencia armada o daño físico de un actor armado u otro grupo."
+  - code: freedom_of_movement
+    label:
+      en: "Freedom of movement restriction"
+      fr: "Restriction de la liberté de mouvement"
+      es: "Restricción de la libertad de circulación"
+    definition:
+      en: "Inability to move freely to access services, family, or livelihoods."
+      fr: "Impossibilité de se déplacer librement pour accéder aux services, à la famille ou aux moyens de subsistance."
+      es: "Incapacidad de moverse libremente para acceder a servicios, familia o medios de vida."
+  - code: hlp_dispute
+    label:
+      en: "Housing, land, or property dispute"
+      fr: "Litige de logement, de terres ou de propriété"
+      es: "Disputa de vivienda, tierra o propiedad"
+    definition:
+      en: "Conflict over housing, land, or property rights."
+      fr: "Conflit portant sur les droits relatifs au logement, aux terres ou à la propriété."
+      es: "Conflicto sobre derechos de vivienda, tierra o propiedad."
+  - code: documentation_gap
+    label:
+      en: "Missing civil documents"
+      fr: "Absence de documents civils"
+      es: "Falta de documentos civiles"
+    definition:
+      en: "Household lacks key identity or civil documents needed to access services or rights."
+      fr: "Le ménage manque de documents d'identité ou civils essentiels nécessaires pour accéder aux services ou aux droits."
+      es: "El hogar carece de documentos de identidad o civiles clave necesarios para acceder a servicios o derechos."
+  - code: statelessness
+    label:
+      en: "Statelessness or nationality uncertainty"
+      fr: "Apatridie ou incertitude de nationalité"
+      es: "Apatridia o incertidumbre de nacionalidad"
+    definition:
+      en: "A member cannot prove nationality in any country."
+      fr: "Un membre ne peut pas prouver sa nationalité dans aucun pays."
+      es: "Un miembro no puede demostrar su nacionalidad en ningún país."
+  - code: explosive_ordnance
+    label:
+      en: "Explosive ordnance risk"
+      fr: "Risque d'engins explosifs"
+      es: "Riesgo de artefactos explosivos"
+    definition:
+      en: "Landmines, unexploded ordnance, cluster munitions, or IEDs pose a risk to the household."
+      fr: "Les mines terrestres, les engins non explosés, les sous-munitions ou les engins explosifs improvisés représentent un risque pour le ménage."
+      es: "Las minas terrestres, artefactos sin explotar, municiones en racimo o IEDs representan un riesgo para el hogar."
+  - code: arbitrary_detention
+    label:
+      en: "Arbitrary detention or arrest"
+      fr: "Détention ou arrestation arbitraire"
+      es: "Detención o arresto arbitrario"
+    definition:
+      en: "Fear of being or having been detained without legal basis."
+      fr: "Crainte d'être ou d'avoir été détenu sans base légale."
+      es: "Miedo a ser o haber sido detenido sin base legal."
+  - code: discrimination
+    label:
+      en: "Discrimination"
+      fr: "Discrimination"
+      es: "Discriminación"
+    definition:
+      en: "Being treated unfairly or denied services because of ethnicity, religion, origin, or other characteristic."
+      fr: "Être traité de manière injuste ou se voir refuser des services en raison de son appartenance ethnique, religion, origine ou autre caractéristique."
+      es: "Ser tratado injustamente o negado de servicios por etnia, religión, origen u otra característica."
+  - code: access_to_justice
+    label:
+      en: "Unable to access justice"
+      fr: "Incapacité à accéder à la justice"
+      es: "Imposibilitado de acceder a la justicia"
+    definition:
+      en: "Cannot seek redress for a rights violation through any accessible mechanism."
+      fr: "Impossible de demander réparation pour une violation des droits par tout mécanisme accessible."
+      es: "No puede buscar reparación por una violación de derechos a través de ningún mecanismo accesible."
+  - code: other
+    label:
+      en: "Other protection concern"
+      fr: "Autre préoccupation de protection"
+      es: "Otra preocupación de protección"
+    definition:
+      en: "Protection concern not covered by the above categories."
+      fr: "Préoccupation de protection non couverte par les catégories ci-dessus."
+      es: "Preocupación de protección no cubierta por las categorías anteriores."
+  - code: prefer_not_to_say
+    label:
+      en: "Prefer not to say"
+      fr: "Préfère ne pas répondre"
+      es: "Prefiere no responder"
+    definition:
+      en: "Respondent prefers not to disclose their priority protection concern. Valid response; must not be re-coded as missing."
+      fr: "Le répondant préfère ne pas divulguer sa principale préoccupation de protection. Réponse valide ; ne doit pas être recodée comme manquante."
+      es: "El encuestado prefiere no divulgar su preocupación de protección prioritaria. Respuesta válida; no debe recodificarse como faltante."

@@ -1,0 +1,24 @@
+id: emma-toolkit-v2-2017
+title: "Emergency Market Mapping and Analysis (EMMA) Toolkit, second edition"
+short_title: "EMMA Toolkit v2"
+authors:
+  - "Mike Albu"
+publisher: "Practical Action Publishing / Oxfam"
+year: 2017
+type: guidance_publication
+domain: humanitarian
+uri: "https://emma-toolkit.org/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MarketProfile
+  vocabularies:
+    - market-type
+    - supply-chain-status
+  properties:
+    - mk_market_type
+    - mk_supply_chain_functional
+    - mk_supply_route_blocked
+    - mk_transport_cost_change

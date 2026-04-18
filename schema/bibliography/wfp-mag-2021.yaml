@@ -1,0 +1,39 @@
+id: wfp-mag-2021
+title: "Market Analysis Guidance (MAG)"
+short_title: "WFP MAG 2021"
+publisher: "WFP (World Food Programme)"
+year: 2021
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.wfp.org/publications/market-analysis-guidance"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MarketProfile
+  vocabularies:
+    - market-type
+    - market-operational-status
+    - market-price-basket
+    - price-trend-direction
+    - supply-chain-status
+    - food-safety-concern
+  properties:
+    - mk_market_type
+    - mk_market_operational_status
+    - mk_functionality_score
+    - mk_commodity_code
+    - mk_commodity_available
+    - mk_commodity_price_local_currency
+    - mk_commodity_price_reference
+    - mk_commodity_price_change_pct
+    - mk_commodity_price_trend
+    - mk_supply_chain_functional
+    - mk_transport_cost_change
+    - mk_road_access_status
+    - mk_gender_access_barriers
+    - mk_mobile_money_accepted
+    - mk_vendor_capacity_large_orders
+    - mk_cbi_feasibility_composite
+    - mk_food_safety_concerns

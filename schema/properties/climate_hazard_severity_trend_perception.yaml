@@ -1,0 +1,40 @@
+id: climate_hazard_severity_trend_perception
+maturity: draft
+label:
+  en: "Perceived change in hazard severity compared to 10–15 years ago"
+  fr: "Changement perçu dans la sévérité des aléas par rapport à il y a 10–15 ans"
+  es: "Cambio percibido en la severidad de peligros comparado con hace 10–15 años"
+
+definition:
+  en: >
+    Single-select item asking whether the household perceives the same hazard
+    referenced in climate_hazard_frequency_trend_perception is usually more
+    severe, less severe, or about the same when it occurs now compared to 10–15
+    years ago. Severity perception is distinct from frequency perception and both
+    are required for a complete hazard trend profile. Together with
+    climate_hazard_frequency_trend_perception, forms the perceived-hazard-trend
+    pair used in CARE CVCA historical timelines and IFRC PCVA trend analysis.
+    Applies when at least one hazard is selected in
+    climate_hazards_experienced_past_5_years.
+  fr: >
+    Item à sélection unique demandant si le ménage perçoit que le même aléa
+    référencé dans climate_hazard_frequency_trend_perception est généralement
+    plus grave, moins grave ou à peu près aussi grave lorsqu'il se produit
+    maintenant par rapport à il y a 10 à 15 ans. La perception de la sévérité
+    est distincte de la perception de la fréquence et les deux sont nécessaires
+    pour un profil complet des tendances des aléas.
+  es: >
+    Ítem de selección única que pregunta si el hogar percibe que el mismo peligro
+    referenciado en climate_hazard_severity_trend_perception suele ser más severo,
+    menos severo o aproximadamente igual cuando ocurre ahora en comparación con
+    hace 10 a 15 años. La percepción de severidad es distinta de la percepción
+    de frecuencia y ambas son necesarias para un perfil completo de tendencias
+    de peligros.
+
+type: string
+cardinality: single
+core: true
+vocabulary: climate-trend-perception
+references: null
+category: climate
+sensitivity: standard

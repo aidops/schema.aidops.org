@@ -1,0 +1,19 @@
+id: mk_market_type
+maturity: draft
+label:
+  en: Market type
+  fr: Type de marché
+  es: Tipo de mercado
+
+definition:
+  en: "Structural and operational category of the market being assessed (e.g., central wholesale, periodic retail, permanent retail, displacement site market). Collected on the first visit; may be pre-populated from the Market concept registry on subsequent visits. Stratifier for downstream market monitoring analyses and basket design decisions."
+  fr: "Catégorie structurelle et opérationnelle du marché évalué (par exemple, marché central de gros, marché de détail périodique, marché de détail permanent, marché en site de déplacés). Collecté lors de la première visite ; peut être pré-rempli à partir du registre de concept de marché lors des visites suivantes. Facteur de stratification pour les analyses de suivi des marchés et les décisions de conception du panier."
+  es: "Categoría estructural y operacional del mercado evaluado (por ejemplo, mercado central mayorista, mercado minorista periódico, mercado minorista permanente, mercado en sitio de desplazados). Se recoge en la primera visita; puede pre-poblarse desde el registro del concepto de mercado en visitas posteriores. Estratificador para análisis de monitoreo de mercados y decisiones de diseño de cesta."
+
+type: string
+cardinality: single
+core: true
+vocabulary: market-type
+references: null
+category: market_metadata
+sensitivity: standard

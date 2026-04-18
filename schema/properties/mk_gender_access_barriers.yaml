@@ -1,0 +1,19 @@
+id: mk_gender_access_barriers
+maturity: draft
+label:
+  en: Women's access barriers at market
+  fr: Barrières d'accès des femmes au marché
+  es: Barreras de acceso de mujeres al mercado
+
+definition:
+  en: "Whether women's access to this market as buyers or sellers is currently reported as restricted due to security conditions, social norms, or physical barriers, as reported by key vendor informants (at least one female vendor informant should be consulted where present). This is a market-level observation, not an individual-level measure. A yes response signals that programming design should include gender-disaggregated market-access analysis. Boolean: yes / no / dont_know."
+  fr: "Si l'accès des femmes à ce marché en tant qu'acheteuses ou vendeuses est actuellement signalé comme restreint en raison de conditions sécuritaires, de normes sociales ou de barrières physiques, tel que rapporté par les informateurs clés vendeurs (au moins un(e) informateur(trice) vendeur(se) de sexe féminin devrait être consulté(e) si présent(e)). Il s'agit d'une observation au niveau du marché, pas d'une mesure au niveau individuel."
+  es: "Si el acceso de las mujeres a este mercado como compradoras o vendedoras está actualmente reportado como restringido debido a condiciones de seguridad, normas sociales o barreras físicas, según lo reportado por informantes clave vendedores (al menos un informante vendedor femenino debe ser consultado cuando esté presente). Esta es una observación a nivel de mercado, no una medida a nivel individual."
+
+type: string
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: market_accessibility
+sensitivity: standard

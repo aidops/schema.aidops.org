@@ -1,0 +1,24 @@
+id: hh_violence_types
+maturity: draft
+label:
+  en: "Household violence types"
+  fr: "Types de violence subis par le ménage"
+  es: "Tipos de violencia experimentados por el hogar"
+
+definition:
+  en: "Types of violence that household members experienced or witnessed in the past 3 months. Asked only when hh_violence_exposure = yes. Record only what the respondent mentions voluntarily; do not probe for details. If abduction_kidnapping, forced_recruitment, or arbitrary_detention is selected, do not ask any follow-up questions. GBV incidents are NOT listed here. Sexual violence as a tactic of conflict appears under physical_attack in this aggregated view — do not add a specific GBV code. Based on GPC PAF Domain 1; REACH Syria / Yemen (2022) Physical Safety module; IOM DTM Protection Monitoring incident typology; ICRC Enhancing Protection (2018)."
+  fr: "Types de violence que les membres du ménage ont subis ou dont ils ont été témoins au cours des 3 derniers mois. Posée uniquement lorsque hh_violence_exposure = oui. Enregistrer uniquement ce que le répondant mentionne volontairement ; ne pas chercher à obtenir des détails. Si abduction_kidnapping, forced_recruitment ou arbitrary_detention est sélectionné, ne poser aucune question de suivi. Les incidents VBG ne sont PAS répertoriés ici. La violence sexuelle comme tactique de conflit apparaît sous physical_attack dans cette vue agrégée — ne pas ajouter de code VBG spécifique. Fondé sur GPC PAF Domaine 1 ; module Sécurité physique REACH Syrie/Yémen (2022) ; typologie des incidents de Suivi de la protection DTM de l'OIM ; CICR Améliorer la protection (2018)."
+  es: "Tipos de violencia que los miembros del hogar experimentaron o presenciaron en los últimos 3 meses. Se pregunta solo cuando hh_violence_exposure = sí. Registrar solo lo que el encuestado menciona voluntariamente; no indagar por detalles. Si se selecciona abduction_kidnapping, forced_recruitment o arbitrary_detention, no hacer preguntas de seguimiento. Los incidentes de VBG NO están listados aquí. La violencia sexual como táctica de conflicto aparece bajo physical_attack en esta vista agregada — no agregar un código VBG específico. Basado en GPC PAF Dominio 1; módulo de Seguridad Física de REACH Siria/Yemen (2022); tipología de incidentes de Monitoreo de Protección DTM de la OIM; CICR Mejora de la Protección (2018)."
+
+type: string
+cardinality: multiple
+vocabulary: protection-violence-type
+references: null
+category: physical_safety
+core: false
+sensitivity: restricted
+# RESTRICTED: abduction_kidnapping, forced_recruitment, and arbitrary_detention
+# codes carry especially high risk if linked to identifiable households.
+# Raw household-level positive responses must be aggregated before sharing.
+# Guidance threshold (not enforced by validator): n >= 30 households at
+# village/block level before reporting a rate.

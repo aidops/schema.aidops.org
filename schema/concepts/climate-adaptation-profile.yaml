@@ -1,0 +1,228 @@
+# ClimateAdaptationProfile — Schema Author decisions (2026-04-18)
+#
+# OQ-1 (RIMA-II overlap): Keep all climate-specific items distinct from RIMA-II items.
+#   Property names use `climate_` prefix to make overlap visible at a glance.
+#   Property definitions document the coordination note for Form Authors.
+#   When both profiles are collected, Form Authors should branch (see implementation notes
+#   in the research doc, Section 8.5).
+#
+# OQ-2 (Hazard vocabulary): Create a new `hazard-type-climate` vocabulary.
+#   The PS `hazard-type` vocabulary is hazard-agnostic and not restricted here.
+#   `hazard-type-climate` is narrower (climate-driver hazards only) and adds
+#   `landslide_climate` as a distinct code from any generic landslide code.
+#
+# OQ-3 (Temperature trend vocab): Use one generic `climate-trend-perception` vocabulary
+#   for rainfall (G1), temperature (G2), and extreme events (G4). Item-level label
+#   overrides in XLSForm handle the "hotter/cooler" framing for temperature.
+#
+# OQ-4 (Migration sensitivity): `climate_migration_adaptation_intent` is `sensitivity: sensitive`
+#   as the baseline. Programs in non-conflict contexts may document a justified downgrade.
+#
+# OQ-5 (Category): A new `climate` category is added to categories.yaml.
+#
+# OQ-6 (Index weighting): The adaptive capacity index uses equal weights (1 point per signal).
+#   Program-specific weighting is a configuration decision, not a schema decision.
+#
+# OQ-7 (WRP cross-reference): An annotation in the definition notes that
+#   `climate_hazards_experienced_past_5_years` values should be consistent with
+#   WarningResponseProfile hazard event context when both profiles are collected
+#   in the same survey — but the profiles are kept fully independent at schema level.
+
+id: ClimateAdaptationProfile
+label:
+  en: Climate Adaptation Profile
+  fr: "Profil d'adaptation climatique"
+  es: "Perfil de adaptación climática"
+maturity: draft
+
+definition:
+  en: >
+    A household-level record of climate vulnerability and adaptive capacity
+    grounded in the IPCC AR5/AR6 tripartite framework: exposure (climate
+    hazards experienced and perceived trends), sensitivity (livelihood
+    climate-dependence and location risk), and adaptive capacity (climate
+    information services, insurance and finance for climate shocks,
+    climate-smart practice adoption, and social safety net coverage). The
+    profile also captures maladaptation signals — distress coping responses
+    to climate shocks that erode future capacity (productive asset sales,
+    distress migration, children withdrawn from school) — and the
+    respondent's own multi-year perceptions of shifts in rainfall, temperature,
+    seasonal timing, and extreme-event frequency. The profile is
+    forward-looking and trend-anchored over a medium-to-long recall window
+    (5–10 years for hazard trends; 12 months for recent practice use). It
+    supports IPCC AR6 WGII vulnerability mapping at household and community
+    aggregation, UNFCCC National Adaptation Plan (NAP) household evidence,
+    Green Climate Fund (GCF) project vulnerability baselines, CARE CVCA
+    household components, IFRC/Red Cross Climate Centre participatory
+    vulnerability assessments, and LoCAL/UNCDF performance assessments.
+    Boundary discipline: WarningResponseProfile owns event-anchored
+    warning-reception and protective-action items (event-specific, not
+    trend-based). DwellingDamageProfile owns post-disaster structural damage
+    records; this profile's `climate_dwelling_vulnerable_location` captures
+    location-level climate risk prior to any event, not post-event damage.
+    LivelihoodProfile carries the RIMA-II savings, credit, and safety-net
+    signals for general livelihood resilience; this profile's climate-specific
+    finance items (`climate_savings_for_shock`, `climate_shock_credit_access`,
+    `climate_safety_net_access`) reframe the same underlying dimensions with a
+    climate trigger specifier and are kept distinct with the `climate_` prefix.
+    AgricultureProfile owns extension visit counts; this profile owns
+    climate-smart practice adoption (`climate_adaptive_practices_used`).
+    WASHAssessmentProfile owns water source type and service level;
+    `climate_water_source_impact` adds the climate-trend reliability dimension.
+    When both profiles are collected in the same survey, the Form Author should
+    apply the branching logic described in the research instrument notes to
+    avoid re-asking overlapping baseline questions. The adaptive capacity index
+    (0–9, in-form computable) and composite vulnerability flag use equal
+    weights; program-specific weighting is a configuration decision.
+  fr: >
+    Un enregistrement au niveau du ménage de la vulnérabilité climatique et
+    de la capacité d'adaptation, ancré dans le cadre tripartite IPCC AR5/AR6 :
+    exposition (aléas climatiques subis et tendances perçues), sensibilité
+    (dépendance climatique du mode de subsistance et risque lié à
+    l'emplacement), et capacité d'adaptation (services d'information
+    climatique, assurance et financement pour les chocs climatiques, adoption
+    de pratiques climato-intelligentes et couverture par les filets de
+    protection sociale). Le profil capture également les signaux de
+    maladaptation — réponses d'adaptation en situation de détresse aux chocs
+    climatiques qui érodent la capacité future (vente d'actifs productifs,
+    migration forcée, enfants retirés de l'école) — et les perceptions
+    pluriannuelles du répondant concernant les changements dans les
+    précipitations, les températures, le calendrier saisonnier et la fréquence
+    des événements extrêmes. Le profil est prospectif et ancré sur les
+    tendances, sur une fenêtre de rappel moyen à long terme (5 à 10 ans pour
+    les tendances d'aléas ; 12 mois pour l'utilisation récente des pratiques).
+    Il soutient la cartographie de la vulnérabilité IPCC AR6 WGII au niveau
+    du ménage et de la communauté, les bases de données probantes des ménages
+    pour les Plans Nationaux d'Adaptation (PNA) de la CCNUCC, les bases de
+    référence de vulnérabilité des projets du Fonds vert pour le climat (FVC),
+    les composantes ménage du CVCA de CARE, les évaluations participatives de
+    vulnérabilité climatique de la FICR/du Centre Climat de la Croix-Rouge,
+    et les évaluations de performance LoCAL/UNCDF.
+  es: >
+    Un registro a nivel del hogar de la vulnerabilidad climática y la capacidad
+    de adaptación, basado en el marco tripartito del IPCC AR5/AR6: exposición
+    (peligros climáticos experimentados y tendencias percibidas), sensibilidad
+    (dependencia climática de los medios de vida y riesgo de ubicación) y
+    capacidad de adaptación (servicios de información climática, seguros y
+    financiamiento para choques climáticos, adopción de prácticas climáticamente
+    inteligentes y cobertura de redes de protección social). El perfil también
+    captura señales de maladaptación — respuestas de afrontamiento en situación
+    de angustia ante choques climáticos que erosionan la capacidad futura (venta
+    de activos productivos, migración forzada, niños retirados de la escuela) —
+    y las percepciones plurianuales del encuestado sobre cambios en las lluvias,
+    la temperatura, el calendario estacional y la frecuencia de eventos extremos.
+    El perfil es prospectivo y orientado a tendencias, con un período de
+    referencia de mediano a largo plazo (5 a 10 años para tendencias de peligros;
+    12 meses para el uso reciente de prácticas). Apoya la cartografía de
+    vulnerabilidad del IPCC AR6 WGII a nivel de hogar y comunidad, la base de
+    evidencia de hogares para los Planes Nacionales de Adaptación (PNA) de la
+    CMNUCC, las líneas de base de vulnerabilidad de proyectos del Fondo Verde
+    para el Clima (FVC), los componentes de hogar del CVCA de CARE, las
+    evaluaciones participativas de vulnerabilidad climática de la FICR/del
+    Centro del Clima de la Cruz Roja, y las evaluaciones de desempeño de
+    LoCAL/UNCDF.
+
+properties:
+  - climate_hazards_experienced_past_5_years
+  - climate_hazard_frequency_trend_perception
+  - climate_hazard_severity_trend_perception
+  - climate_months_hazard_prone_per_year
+  - climate_primary_livelihood_climate_dependent
+  - climate_dwelling_vulnerable_location
+  - climate_water_source_impact
+  - climate_info_services_access
+  - climate_information_source
+  - climate_information_trust
+  - climate_information_used_for_decisions
+  - climate_insurance_coverage_type
+  - climate_insurance_paid_out_past_event
+  - climate_savings_for_shock
+  - climate_shock_credit_access
+  - climate_adaptive_practices_used
+  - climate_adaptive_practice_barrier
+  - climate_livelihood_diversification_intent
+  - climate_migration_adaptation_intent
+  - climate_safety_net_access
+  - climate_productive_asset_sales_past_event
+  - climate_distress_migration_past_event
+  - climate_children_withdrawn_school_past_event
+  - climate_trend_perception_rainfall
+  - climate_trend_perception_temperature
+  - climate_trend_perception_seasons
+  - climate_extreme_events_frequency_perception
+  - climate_adaptive_capacity_index
+  - climate_vulnerability_flag
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: climate
+    properties:
+      - climate_hazards_experienced_past_5_years
+      - climate_hazard_frequency_trend_perception
+      - climate_hazard_severity_trend_perception
+      - climate_months_hazard_prone_per_year
+      - climate_primary_livelihood_climate_dependent
+      - climate_dwelling_vulnerable_location
+      - climate_water_source_impact
+      - climate_info_services_access
+      - climate_information_source
+      - climate_information_trust
+      - climate_information_used_for_decisions
+      - climate_insurance_coverage_type
+      - climate_insurance_paid_out_past_event
+      - climate_savings_for_shock
+      - climate_shock_credit_access
+      - climate_adaptive_practices_used
+      - climate_adaptive_practice_barrier
+      - climate_livelihood_diversification_intent
+      - climate_migration_adaptation_intent
+      - climate_safety_net_access
+      - climate_productive_asset_sales_past_event
+      - climate_distress_migration_past_event
+      - climate_children_withdrawn_school_past_event
+      - climate_trend_perception_rainfall
+      - climate_trend_perception_temperature
+      - climate_trend_perception_seasons
+      - climate_extreme_events_frequency_perception
+  - category: scores
+    properties:
+      - climate_adaptive_capacity_index
+      - climate_vulnerability_flag
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (household climate vulnerability and adaptation assessment)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A household-level climate adaptation assessment serializes naturally as a QuestionnaireResponse whose Questionnaire is the CARE CVCA or IFRC PCVA household module. Derived indicators (adaptive capacity index, vulnerability flag) are better modelled as FHIR Observation or RiskAssessment resources produced by a scoring step."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS,
+    OpenSPP, openIMIS, DCI Social Registry) carry a household-level
+    climate vulnerability and adaptation assessment. The domain tools
+    live in the humanitarian and climate-finance sector: CARE CVCA,
+    IFRC PCVA, GCF vulnerability assessment templates, UNFCCC NAP M&E
+    household modules, World Bank CSA Country Profile household surveys,
+    and LoCAL PBCRG household performance assessments. FHIR's
+    QuestionnaireResponse pattern accommodates the shape. The low v1
+    convergence reflects scope rather than prevalence; household-level
+    climate vulnerability assessment is a growing domain driven by NAP
+    requirements and climate finance accountability.

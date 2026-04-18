@@ -1,0 +1,19 @@
+id: mk_visit_date
+maturity: draft
+label:
+  en: Market visit date
+  fr: Date de visite du marché
+  es: Fecha de visita al mercado
+
+definition:
+  en: "Date of the enumerator's market visit, recorded in ISO 8601 format (YYYY-MM-DD). Combined with the market identifier, forms the natural primary key for a market monitoring time series. The monitoring platform should prevent duplicate submissions for the same (market, visit_date) pair."
+  fr: "Date de la visite de l'enquêteur sur le marché, enregistrée au format ISO 8601 (AAAA-MM-JJ). Combinée à l'identifiant du marché, constitue la clé primaire naturelle pour une série chronologique de suivi du marché."
+  es: "Fecha de la visita del enumerador al mercado, registrada en formato ISO 8601 (AAAA-MM-DD). Combinada con el identificador del mercado, forma la clave primaria natural para una serie temporal de monitoreo del mercado."
+
+type: date
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_metadata
+sensitivity: standard

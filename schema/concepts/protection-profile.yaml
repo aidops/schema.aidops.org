@@ -1,0 +1,252 @@
+# ProtectionProfile concept — AidOps schema
+#
+# Open-question decisions (Section 10 of research doc):
+#
+# OQ-1 (count vs. boolean for hh_national_id_gap): Keep as boolean.
+#   The binary flag suffices for JIAF 2.0 severity scoring. Programmes
+#   requiring a count can add a supplementary item at deployment.
+#
+# OQ-2 (civil-registry-access vs. document-status): New vocabulary
+#   civil-registry-access as recommended. The access-feasibility semantics
+#   (can you obtain?) differ from document-status semantics (what do you hold?).
+#
+# OQ-3 (boolean vs. three-code vocabulary): Three-code vocabulary pattern
+#   throughout (yes-no-dk or yes-no-pnta depending on item). Avoids
+#   null-vs-false ambiguity; consistent with GBVRiskProfile convention.
+#
+# OQ-4 (movement-restriction-type / movement-restriction-impact as PS
+#   candidates): Created as AO-local. Both vocabularies are flagged
+#   ps_promotion_candidate: true in their YAML for future promotion.
+#
+# OQ-5 (protection-referral-channel vs. gbv-service-type consolidation):
+#   Kept separate. Different framing (reporting mechanism vs. service type).
+#   A note in protection-referral-channel.yaml flags the consolidation
+#   opportunity for a future batch.
+#
+# OQ-6 (arbitrary_detention_experienced standalone vs. absorbed): Kept as
+#   standalone (D3). Arbitrary detention has specific ICCPR Art. 9 legal
+#   grounding and is a primary UNHCR Protection Monitoring indicator. The
+#   resulting redundancy with D2 code arbitrary_detention is documented in
+#   the property YAML.
+#
+# OQ-7 (EO module selectors): Schema concern is out of scope. Form authors
+#   should gate E2 and E3 on E1 = yes via skip logic, and optionally gate
+#   all EO items behind a module selector for non-mine-affected deployments.
+#   No schema change needed.
+#
+# OQ-8 (rule_of_law_perception vocabulary): Created new agree-4 vocabulary
+#   (4-point scale). The existing weai-agree-5 is 5-point and WEAI-specific;
+#   a 4-point scale avoids fence-sitting and is appropriate for this item.
+#
+# OQ-9 (suppression threshold): Added minimum_aggregate_n: 30 on restricted-
+#   tier properties as a guidance annotation. Enforced at data management
+#   layer, not by the validator.
+#
+# OQ-10 (single vs. sub-profiles): Single profile retained. GPC PAF treats
+#   its three domains as integrated; JIAF 2.0 requires all six P-indicators
+#   together. Profile size (22 items) is smaller than ChildProtectionProfile.
+
+id: ProtectionProfile
+label:
+  en: Protection Profile
+  fr: "Profil de protection"
+  es: "Perfil de protección"
+maturity: draft
+
+definition:
+  en: >
+    A household-level, periodic-monitoring record of the general protection
+    situation of a crisis-affected or displaced household. Captures the
+    residual protection domain after carving out GBV risk (GBVRiskProfile),
+    child protection (ChildProtectionProfile), mental health and psychosocial
+    support (MentalHealthProfile), and displacement-specific documentation
+    and push factors (DisplacementProfile). Covers: civil documentation at
+    household level (national ID, civil registry access, statelessness risk);
+    freedom of movement and physical access restrictions (checkpoints,
+    curfews, permits, armed-actor control of routes); Housing, Land and
+    Property (HLP) disputes, discrimination, and restitution awareness;
+    exposure to armed-conflict-related non-GBV violence at aggregate
+    household level; explosive ordnance (EO) awareness and impact; general
+    protection referral pathway awareness; and household-level perception of
+    access to justice and rule of law. All six JIAF 2.0 Protection sector
+    indicators (P1–P6) have a corresponding core item. Produces
+    population-level indicators for protection cluster HNO/HRP reporting,
+    JIAF 2.0 sectoral severity analysis, and REACH/UNHCR protection
+    monitoring rounds. This is NOT a case-management instrument and does NOT
+    capture individual incident disclosure. Based on GPC Protection
+    Analytical Framework (2021), IASC Protection Core Indicators (2021),
+    JIAF 2.0 (2022), UNHCR Protection Monitoring (2016), IMAS EORE (2022),
+    NRC HLP Handbook (2013), Pinheiro Principles (2005), OHCHR Rule-of-Law
+    Indicators (2011), and REACH Protection Monitoring tools (2021–2023).
+  fr: >
+    Un enregistrement de surveillance périodique au niveau du ménage de la
+    situation générale de protection d'un ménage affecté par une crise ou
+    déplacé. Couvre le domaine de protection résiduel après délimitation du
+    risque VBG (GBVRiskProfile), de la protection de l'enfance
+    (ChildProtectionProfile), de la santé mentale et du soutien psychosocial
+    (MentalHealthProfile), et de la documentation et des facteurs de
+    déplacement spécifiques (DisplacementProfile). Comprend : la
+    documentation civile au niveau du ménage (carte d'identité nationale,
+    accès à l'état civil, risque d'apatridie) ; la liberté de mouvement et
+    les restrictions d'accès physique (points de contrôle, couvre-feux,
+    permis, contrôle des itinéraires par des acteurs armés) ; les litiges,
+    discriminations et sensibilisation à la restitution en matière de
+    logement, terres et propriétés (LTP) ; l'exposition à la violence
+    non-VBG liée au conflit armé au niveau agrégé du ménage ; la
+    sensibilisation aux engins explosifs (EE) et leur impact ; la
+    sensibilisation aux voies d'orientation en matière de protection
+    générale ; et la perception par le ménage de l'accès à la justice et
+    de l'état de droit. Les six indicateurs sectoriels de protection du
+    JIAF 2.0 (P1–P6) ont chacun un item de base correspondant. Produit
+    des indicateurs au niveau de la population pour les rapports HNO/HRP
+    du cluster protection, l'analyse de sévérité sectorielle du JIAF 2.0,
+    et les cycles de suivi de la protection REACH/UNHCR. Il ne s'agit PAS
+    d'un instrument de gestion de cas et ne capture PAS la divulgation
+    d'incidents individuels. Fondé sur le Cadre analytique de protection
+    du GPC (2021), les Indicateurs de base de la protection de l'IASC
+    (2021), le JIAF 2.0 (2022), le Suivi de la protection UNHCR (2016),
+    les IMAS EORE (2022), le Manuel HLP du NRC (2013), les Principes
+    Pinheiro (2005), les Indicateurs d'état de droit HCDH (2011), et les
+    outils de suivi de la protection REACH (2021–2023).
+  es: >
+    Un registro de monitoreo periódico a nivel del hogar de la situación
+    general de protección de un hogar afectado por crisis o desplazado.
+    Cubre el dominio de protección residual tras delimitar el riesgo VBG
+    (GBVRiskProfile), la protección infantil (ChildProtectionProfile), la
+    salud mental y el apoyo psicosocial (MentalHealthProfile), y la
+    documentación y factores de desplazamiento específicos
+    (DisplacementProfile). Incluye: documentación civil a nivel del hogar
+    (cédula de identidad nacional, acceso al registro civil, riesgo de
+    apatridia); libertad de movimiento y restricciones de acceso físico
+    (controles, toques de queda, permisos, control de rutas por actores
+    armados); disputas, discriminación y conocimiento de mecanismos de
+    restitución en materia de vivienda, tierra y propiedad (VTP);
+    exposición a violencia no-VBG relacionada con el conflicto armado a
+    nivel agregado del hogar; conocimiento e impacto de los artefactos
+    explosivos (AE); conocimiento de las vías de derivación en materia de
+    protección general; y percepción del hogar sobre el acceso a la
+    justicia y el estado de derecho. Los seis indicadores sectoriales de
+    protección del JIAF 2.0 (P1–P6) tienen un ítem central correspondiente.
+    Produce indicadores a nivel de población para informes HNO/HRP del
+    clúster de protección, análisis de severidad sectorial del JIAF 2.0, y
+    rondas de monitoreo de protección de REACH/ACNUR. Este instrumento NO
+    es de gestión de casos y NO captura la divulgación de incidentes
+    individuales. Basado en el Marco Analítico de Protección del GPC (2021),
+    los Indicadores de Protección del IASC (2021), el JIAF 2.0 (2022), el
+    Monitoreo de Protección del ACNUR (2016), las IMAS EORE (2022), el
+    Manual HLP del NRC (2013), los Principios Pinheiro (2005), los
+    Indicadores del Estado de Derecho del ACNUDH (2011), y las herramientas
+    de monitoreo de protección de REACH (2021–2023).
+
+# All 22 items are net-new to this profile. None duplicate adjacent profiles.
+# Cross-profile dependencies (for form authors using co-administration):
+#   - civil documentation module complements DisplacementProfile.primary_identity_document_status
+#   - HLP module complements ShelterAdequacyProfile.eviction_risk_6mo and tenure_document_type
+#   - protection_referral_aware complements GBVRiskProfile.gbv_referral_services_known
+properties:
+  # Module A: Civil Documentation
+  - hh_national_id_gap
+  - hh_civil_registry_access
+  - statelessness_risk
+  # Module B: Freedom of Movement
+  - movement_restricted
+  - movement_restriction_types
+  - movement_restriction_impact
+  # Module C: Housing, Land and Property
+  - hlp_property_dispute
+  - hlp_dispute_type
+  - hlp_discrimination
+  - hlp_restitution_awareness
+  # Module D: Physical Safety and Exposure to Violence
+  - hh_violence_exposure
+  - hh_violence_types
+  - arbitrary_detention_experienced
+  # Module E: Explosive Ordnance
+  - eo_contamination_known
+  - eo_impact_type
+  - eore_received
+  # Module F: Protection Referral Pathway Awareness
+  - protection_referral_aware
+  - protection_referral_channel_known
+  - protection_referral_trust
+  # Module G: Access to Justice
+  - justice_access_perceived
+  - rule_of_law_perception
+  # Module H: Cross-cutting
+  - protection_priority_concern
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: civil_documentation
+    properties:
+      - hh_national_id_gap
+      - hh_civil_registry_access
+      - statelessness_risk
+  - category: freedom_of_movement
+    properties:
+      - movement_restricted
+      - movement_restriction_types
+      - movement_restriction_impact
+  - category: hlp
+    properties:
+      - hlp_property_dispute
+      - hlp_dispute_type
+      - hlp_discrimination
+      - hlp_restitution_awareness
+  - category: physical_safety
+    properties:
+      - hh_violence_exposure
+      - hh_violence_types
+      - arbitrary_detention_experienced
+  - category: explosive_ordnance
+    properties:
+      - eo_contamination_known
+      - eo_impact_type
+      - eore_received
+  - category: protection_referral
+    properties:
+      - protection_referral_aware
+      - protection_referral_channel_known
+      - protection_referral_trust
+  - category: access_to_justice
+    properties:
+      - justice_access_perceived
+      - rule_of_law_perception
+  - category: cross_cutting
+    properties:
+      - protection_priority_concern
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (general protection monitoring)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A household protection monitoring interview serializes as a QuestionnaireResponse. There is no general protection FHIR profile in core R4; the GPC and UNHCR do not publish FHIR implementation guides as of 2026. Violence exposure and arbitrary detention items map most naturally as FHIR RiskAssessment resources on the Household/Group subject."
+
+convergence:
+  system_count: 0
+  total_systems: 6
+  notes: >
+    None of the v1 social-protection systems (FHIR, DHIS2, OpenCRVS,
+    OpenSPP, openIMIS, DCI Social Registry) carry a household-level
+    general protection monitoring module. Protection data in those systems,
+    where present, is confined to case-management records. The zero
+    convergence reflects the humanitarian-operations origin of this profile;
+    general protection monitoring is deployed in MSNA and REACH household
+    surveys, IOM DTM protection rounds, and UNHCR protection monitoring
+    operations.

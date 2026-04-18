@@ -1,0 +1,99 @@
+id: climate-info-use-pattern
+maturity: draft
+label:
+  en: "Climate information use pattern"
+  fr: "Schéma d'utilisation de l'information climatique"
+  es: "Patrón de uso de la información climática"
+definition:
+  en: >
+    Decisions for which the household has used climate or weather information in
+    the past 12 months. Used for climate_information_used_for_decisions. Captures
+    the translation from information access to adaptive action. Sources: IPCC
+    AR6 WGII Chapter 17 (information-to-action pathway); UNFCCC NAP M&E
+    use-of-information indicator; LoCAL PBCRG information-to-action performance
+    standard.
+  fr: >
+    Décisions pour lesquelles le ménage a utilisé des informations climatiques
+    ou météorologiques au cours des 12 derniers mois. Utilisé pour
+    climate_information_used_for_decisions. Capture la traduction de l'accès
+    à l'information en action adaptative. Sources : GIEC AR6 WGII Chapitre 17 ;
+    CCNUCC PNA ; LoCAL PBCRG.
+  es: >
+    Decisiones para las que el hogar ha usado información climática o
+    meteorológica en los últimos 12 meses. Usado para
+    climate_information_used_for_decisions. Captura la traducción del acceso
+    a la información en acción adaptativa. Fuentes: IPCC AR6 WGII Capítulo 17;
+    CMNUCC PNA; LoCAL PBCRG.
+values:
+  - code: planting_decisions
+    label:
+      en: "Deciding when and what to plant"
+      fr: "Décision de plantation (quand et quoi planter)"
+      es: "Decisiones de siembra (cuándo y qué plantar)"
+    definition:
+      en: "The household used a seasonal forecast or climate advisory to decide on planting dates or crop variety selection."
+      fr: "Le ménage a utilisé une prévision saisonnière ou un avis climatique pour décider des dates de plantation ou du choix des variétés de cultures."
+      es: "El hogar usó un pronóstico estacional o aviso climático para decidir las fechas de siembra o la selección de variedades de cultivos."
+  - code: water_storage_management
+    label:
+      en: "Deciding when to store or manage water"
+      fr: "Décision de stockage ou de gestion de l'eau"
+      es: "Decisiones de almacenamiento o gestión del agua"
+    definition:
+      en: "The household used weather information to decide when to collect or store water for dry-season use."
+      fr: "Le ménage a utilisé des informations météorologiques pour décider quand collecter ou stocker de l'eau pour la saison sèche."
+      es: "El hogar usó información meteorológica para decidir cuándo recolectar o almacenar agua para uso en la temporada seca."
+  - code: livestock_destocking
+    label:
+      en: "Deciding to sell or move livestock before a dry spell"
+      fr: "Décision de déstockage ou de déplacement du bétail avant une période sèche"
+      es: "Decisiones de reducción de ganado o traslado antes de una sequía"
+    definition:
+      en: "The household used a seasonal drought forecast to pre-emptively sell, move, or reduce livestock."
+      fr: "Le ménage a utilisé une prévision de sécheresse saisonnière pour vendre, déplacer ou réduire préventivement le bétail."
+      es: "El hogar usó un pronóstico estacional de sequía para vender, mover o reducir preventivamente el ganado."
+  - code: financial_planning_savings
+    label:
+      en: "Financial planning or savings decisions"
+      fr: "Planification financière ou décisions d'épargne"
+      es: "Planificación financiera o decisiones de ahorro"
+    definition:
+      en: "The household used climate outlooks to decide when to save money, buy insurance, or draw down savings in anticipation of a lean season."
+      fr: "Le ménage a utilisé des perspectives climatiques pour décider quand épargner, acheter une assurance ou puiser dans l'épargne en prévision d'une période de soudure."
+      es: "El hogar usó perspectivas climáticas para decidir cuándo ahorrar, comprar seguros o utilizar ahorros en anticipación de una temporada de escasez."
+  - code: migration_or_relocation_planning
+    label:
+      en: "Planning seasonal migration or temporary relocation"
+      fr: "Planification d'une migration saisonnière ou d'une relocalisation temporaire"
+      es: "Planificación de migración estacional o reubicación temporal"
+    definition:
+      en: "The household used weather or climate information to decide whether or when to migrate temporarily for work or to a safer location."
+      fr: "Le ménage a utilisé des informations météorologiques ou climatiques pour décider si ou quand migrer temporairement pour le travail ou vers un endroit plus sûr."
+      es: "El hogar usó información meteorológica o climática para decidir si o cuándo migrar temporalmente por trabajo o a un lugar más seguro."
+  - code: market_sales_timing
+    label:
+      en: "Deciding when to sell crops or products"
+      fr: "Décision du moment pour vendre les cultures ou les produits"
+      es: "Decisiones sobre cuándo vender cultivos o productos"
+    definition:
+      en: "The household used seasonal information to time the sale of crops, livestock, or other products before or after an expected adverse event."
+      fr: "Le ménage a utilisé des informations saisonnières pour chronométrer la vente de cultures, de bétail ou d'autres produits avant ou après un événement défavorable prévu."
+      es: "El hogar usó información estacional para cronometrar la venta de cultivos, ganado u otros productos antes o después de un evento adverso esperado."
+  - code: health_and_safety_precautions
+    label:
+      en: "Health or safety precautions"
+      fr: "Précautions sanitaires ou de sécurité"
+      es: "Precauciones de salud o seguridad"
+    definition:
+      en: "The household used climate or weather information to take precautions related to heat-related illness, flood safety, or wildfire risk."
+      fr: "Le ménage a utilisé des informations climatiques ou météorologiques pour prendre des précautions liées aux maladies dues à la chaleur, à la sécurité en cas d'inondation ou au risque d'incendie."
+      es: "El hogar usó información climática o meteorológica para tomar precauciones relacionadas con enfermedades por calor, seguridad ante inundaciones o riesgo de incendio."
+  - code: none_information_not_used
+    label:
+      en: "Information received but not used for decisions"
+      fr: "Information reçue mais non utilisée pour les décisions"
+      es: "Información recibida pero no usada para decisiones"
+    definition:
+      en: "The household has access to climate or weather information but has not used it to make any concrete decisions."
+      fr: "Le ménage a accès aux informations climatiques ou météorologiques mais ne les a pas utilisées pour prendre des décisions concrètes."
+      es: "El hogar tiene acceso a información climática o meteorológica pero no la ha usado para tomar decisiones concretas."

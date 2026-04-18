@@ -1,0 +1,19 @@
+id: mk_road_access_status
+maturity: draft
+label:
+  en: Road access status
+  fr: Statut d'accessibilité routière
+  es: Estado de acceso vial
+
+definition:
+  en: "Whether the market is physically reachable by road for most of the population it typically serves, assessed by the enumerator from their own travel experience and key vendor informant input on catchment-area access. Enumerators should assess access from the communities the market serves, not only from their own approach route."
+  fr: "Si le marché est physiquement accessible par route pour la plupart de la population qu'il dessert habituellement, évalué par l'enquêteur à partir de sa propre expérience de déplacement et des informations des informateurs clés vendeurs sur l'accès à la zone de chalandise."
+  es: "Si el mercado es físicamente accesible por carretera para la mayor parte de la población que normalmente sirve, evaluado por el enumerador a partir de su propia experiencia de viaje y la información de informantes clave vendedores sobre el acceso a la zona de captación."
+
+type: string
+cardinality: single
+core: true
+vocabulary: market-accessibility-level
+references: null
+category: market_accessibility
+sensitivity: standard

@@ -1,0 +1,23 @@
+id: practical-action-v2r-2016
+title: "Vulnerability to Resilience (V2R) Framework — Concepts and Application"
+short_title: "Practical Action V2R Framework"
+publisher: "Practical Action / International Institute for Environment and Development (IIED)"
+year: 2016
+version: "V2R v2"
+type: guidance_publication
+domain: humanitarian
+uri: "https://practicalaction.org/knowledge-centre/resources/vulnerability-to-resilience/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies: []
+  properties:
+    - climate_hazard_frequency_trend_perception
+    - climate_savings_for_shock
+    - climate_livelihood_diversification_intent
+    - climate_migration_adaptation_intent
+    - climate_productive_asset_sales_past_event
+    - climate_distress_migration_past_event

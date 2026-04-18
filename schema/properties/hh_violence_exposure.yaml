@@ -1,0 +1,23 @@
+id: hh_violence_exposure
+maturity: draft
+label:
+  en: "Household exposure to violence (past 3 months)"
+  fr: "Exposition du ménage à la violence (3 derniers mois)"
+  es: "Exposición del hogar a violencia (últimos 3 meses)"
+
+definition:
+  en: "Whether any household member experienced or directly witnessed violence — such as physical attack, deliberate bombing or shelling of civilian areas, forced entry, or looting — by any armed actor or unknown perpetrator in the past 3 months. Asked at aggregate household level; does NOT collect perpetrator names, individual identity, or incident details. GBV incidents are NOT captured here (owned by GBVRiskProfile / future IndividualGBVExperienceProfile). Framing at 'any member' keeps this household-level. JIAF 2.0 Protection Indicator P1; GPC PAF Domain 1 Indicator 1.1. Critical enumerator instruction: if a respondent spontaneously discloses an incident, acknowledge calmly, do not probe, provide referral card, and flag x_spontaneous_disclosure = true in form metadata."
+  fr: "Si un membre du ménage a subi ou directement été témoin de violences — telles qu'une agression physique, des bombardements ou tirs délibérés sur des zones civiles, une entrée forcée, ou un pillage — par un acteur armé ou un auteur inconnu au cours des 3 derniers mois. Posée au niveau agrégé du ménage ; ne collecte PAS les noms des auteurs, l'identité individuelle, ni les détails de l'incident. Les incidents VBG ne sont PAS capturés ici (appartenant à GBVRiskProfile / futur IndividualGBVExperienceProfile). Le cadrage sur 'un membre' maintient cela au niveau du ménage. Indicateur de protection JIAF 2.0 P1 ; GPC PAF Domaine 1 Indicateur 1.1. Instruction critique pour l'enquêteur : si un répondant divulgue spontanément un incident, réagir calmement, ne pas approfondir, remettre la carte de référence et marquer x_spontaneous_disclosure = true dans les métadonnées du formulaire."
+  es: "Si algún miembro del hogar ha experimentado o presenciado directamente violencia — como ataque físico, bombardeo o artillería deliberada contra zonas civiles, entrada forzada, o saqueo — por parte de algún actor armado o perpetrador desconocido en los últimos 3 meses. Se pregunta a nivel agregado del hogar; NO recopila nombres de perpetradores, identidad individual, ni detalles del incidente. Los incidentes de VBG NO se capturan aquí (pertenecen a GBVRiskProfile / futuro IndividualGBVExperienceProfile). El encuadre en 'algún miembro' mantiene esto a nivel del hogar. Indicador de Protección JIAF 2.0 P1; GPC PAF Dominio 1 Indicador 1.1. Instrucción crítica para el encuestador: si un encuestado divulga espontáneamente un incidente, reconocer con calma, no indagar, proporcionar la tarjeta de referencia y marcar x_spontaneous_disclosure = true en los metadatos del formulario."
+
+type: string
+cardinality: single
+vocabulary: yes-no-pnta
+references: null
+category: physical_safety
+core: true
+sensitivity: restricted
+# RESTRICTED: positive answer constitutes a protection violation flag.
+# Raw household-level positive responses must be aggregated before sharing.
+# Guidance threshold (not enforced by validator): n >= 30 households at
+# village/block level before reporting a rate.

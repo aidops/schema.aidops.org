@@ -1,0 +1,19 @@
+id: mk_functional_days_per_week
+maturity: draft
+label:
+  en: Functional days per week (current)
+  fr: Jours de fonctionnement par semaine (actuels)
+  es: Días de funcionamiento por semana (actual)
+
+definition:
+  en: "Number of days per week the market is currently open and trading at the time of this visit, as assessed by direct observation and confirmed with key vendor informants. Integer 0–7. A value of 0 means the market is completely closed. Records current operating days, not the market's nominal schedule."
+  fr: "Nombre de jours par semaine où le marché est actuellement ouvert et actif au moment de cette visite, tel qu'évalué par observation directe et confirmé auprès des informateurs clés vendeurs. Entier 0–7. Une valeur de 0 signifie que le marché est complètement fermé. Enregistre les jours d'opération actuels, et non le calendrier nominal du marché."
+  es: "Número de días por semana que el mercado está actualmente abierto y en funcionamiento en el momento de esta visita, según la evaluación por observación directa y confirmación con informantes clave vendedores. Entero 0–7. Un valor de 0 significa que el mercado está completamente cerrado. Registra los días de operación actuales, no el calendario nominal del mercado."
+
+type: integer
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: market_functionality
+sensitivity: standard

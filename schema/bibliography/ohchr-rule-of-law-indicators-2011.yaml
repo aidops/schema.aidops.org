@@ -1,0 +1,21 @@
+id: ohchr-rule-of-law-indicators-2011
+title: "Rule-of-Law Indicators: Implementation Guide and Project Tools"
+short_title: "OHCHR Rule-of-Law Indicators 2011"
+publisher: "Office of the United Nations High Commissioner for Human Rights (OHCHR) / Department of Peacekeeping Operations (DPKO)"
+year: 2011
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ohchr.org/Documents/Publications/RoLToolkit_E.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies:
+    - justice-access-3
+    - referral-trust-3
+  properties:
+    - justice_access_perceived
+    - rule_of_law_perception
+    - protection_referral_trust

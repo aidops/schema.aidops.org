@@ -1,0 +1,103 @@
+id: food-safety-concern
+maturity: draft
+label:
+  en: Food Safety Concern
+  fr: Problème de sécurité alimentaire
+  es: Problema de inocuidad alimentaria
+definition:
+  en: >
+    Specific food safety concerns observable by an enumerator at food stalls
+    during a market visit, drawn from WFP MAG 2021 food quality dimensions,
+    Sphere 2018 food security Essential standard 1, and ACAPS market
+    assessment observation items. Multi-select; the code 'no_concerns_observed'
+    is mutually exclusive with all other codes and must be enforced in XLSForm
+    constraint logic.
+  fr: >
+    Problèmes spécifiques de sécurité alimentaire observables par un enquêteur
+    aux étals alimentaires lors d'une visite de marché, tirés des dimensions de
+    qualité alimentaire du WFP MAG 2021, de la norme essentielle 1 de sécurité
+    alimentaire du Sphere 2018 et des éléments d'observation ACAPS pour
+    l'évaluation des marchés. Multi-sélection ; le code 'no_concerns_observed'
+    est mutuellement exclusif avec tous les autres codes et doit être appliqué
+    dans la logique de contrainte XLSForm.
+  es: >
+    Problemas específicos de inocuidad alimentaria observables por un enumerador
+    en los puestos de comida durante una visita al mercado, extraídos de las
+    dimensiones de calidad alimentaria del WFP MAG 2021, la norma esencial 1 de
+    seguridad alimentaria del Sphere 2018 y los ítems de observación ACAPS para
+    evaluación de mercados. Selección múltiple; el código 'no_concerns_observed'
+    es mutuamente exclusivo con todos los demás códigos y debe aplicarse en la
+    lógica de restricción XLSForm.
+values:
+- code: expired_goods_present
+  label:
+    en: Expired goods observed
+    fr: Produits périmés observés
+    es: Productos vencidos observados
+  definition:
+    en: "Enumerator directly observes food products being sold at or past their expiry date or best-before date. Applies primarily to packaged and processed goods."
+    fr: "L'enquêteur observe directement des produits alimentaires vendus à ou après leur date de péremption ou de consommation optimale. S'applique principalement aux produits emballés et transformés."
+    es: "El enumerador observa directamente productos alimenticios que se venden en o después de su fecha de vencimiento o fecha de consumo preferente. Se aplica principalmente a productos envasados y procesados."
+- code: poor_perishable_storage
+  label:
+    en: Poor perishable food storage
+    fr: Mauvaise conservation des denrées périssables
+    es: Almacenamiento deficiente de alimentos perecederos
+  definition:
+    en: "Perishable foods (meat, fish, dairy, eggs) stored at ambient temperature without refrigeration, ice, or other appropriate cold-chain means. Flies, visible spoilage, or off-odors may be present."
+    fr: "Aliments périssables (viande, poisson, produits laitiers, œufs) stockés à température ambiante sans réfrigération, glace ou autre moyen de chaîne du froid approprié. Des mouches, une détérioration visible ou des odeurs anormales peuvent être présentes."
+    es: "Alimentos perecederos (carne, pescado, lácteos, huevos) almacenados a temperatura ambiente sin refrigeración, hielo u otro medio apropiado de cadena de frío. Pueden estar presentes moscas, deterioro visible o malos olores."
+- code: absence_of_handwashing_facilities
+  label:
+    en: No handwashing facilities at food stalls
+    fr: Absence de dispositifs de lavage des mains aux étals alimentaires
+    es: Sin instalaciones de lavado de manos en puestos de comida
+  definition:
+    en: "Food vendors have no access to soap and water or hand sanitizer in the food preparation or service area."
+    fr: "Les vendeurs de nourriture n'ont pas accès à de l'eau et du savon ou à un désinfectant pour les mains dans la zone de préparation ou de service alimentaire."
+    es: "Los vendedores de alimentos no tienen acceso a jabón y agua o desinfectante para manos en el área de preparación o servicio de alimentos."
+- code: visible_pest_infestation
+  label:
+    en: Visible pest infestation
+    fr: Infestation visible de nuisibles
+    es: Infestación visible de plagas
+  definition:
+    en: "Rodents, insects (flies, cockroaches), or other pests are visibly present near or on stored or displayed food."
+    fr: "Des rongeurs, des insectes (mouches, cafards) ou d'autres nuisibles sont visiblement présents à proximité ou sur des aliments stockés ou exposés."
+    es: "Roedores, insectos (moscas, cucarachas) u otras plagas están visiblemente presentes cerca o sobre alimentos almacenados o exhibidos."
+- code: no_separation_raw_cooked
+  label:
+    en: No separation of raw and cooked food
+    fr: Absence de séparation entre aliments crus et cuits
+    es: Sin separación entre alimentos crudos y cocidos
+  definition:
+    en: "Ready-to-eat or cooked food in direct contact with raw meat, fish, or other contamination risk (cross-contamination hazard)."
+    fr: "Aliments prêts à consommer ou cuits en contact direct avec de la viande crue, du poisson ou d'autres risques de contamination (risque de contamination croisée)."
+    es: "Alimentos listos para comer o cocidos en contacto directo con carne cruda, pescado u otro riesgo de contaminación (peligro de contaminación cruzada)."
+- code: open_sewage_near_food_stalls
+  label:
+    en: Open sewage or solid waste near food stalls
+    fr: Égout ouvert ou déchets solides à proximité des étals alimentaires
+    es: Aguas residuales abiertas o residuos sólidos cerca de puestos de comida
+  definition:
+    en: "Open drainage channels, accumulations of garbage, or fecal matter within the food area of the market."
+    fr: "Canaux de drainage ouverts, accumulations d'ordures ou matières fécales dans la zone alimentaire du marché."
+    es: "Canales de drenaje abiertos, acumulaciones de basura o materia fecal dentro del área de alimentos del mercado."
+- code: no_concerns_observed
+  label:
+    en: No food safety concerns observed
+    fr: Aucun problème de sécurité alimentaire observé
+    es: No se observaron problemas de inocuidad alimentaria
+  definition:
+    en: "Enumerator did not observe any notable food safety concerns during this market visit. Mutually exclusive with all other codes — enforce in XLSForm constraint."
+    fr: "L'enquêteur n'a observé aucun problème notable de sécurité alimentaire lors de cette visite de marché. Mutuellement exclusif avec tous les autres codes — appliquer dans la contrainte XLSForm."
+    es: "El enumerador no observó ningún problema notable de inocuidad alimentaria durante esta visita al mercado. Mutuamente exclusivo con todos los demás códigos — aplicar en restricción XLSForm."
+- code: other
+  label:
+    en: Other food safety concern
+    fr: Autre problème de sécurité alimentaire
+    es: Otro problema de inocuidad alimentaria
+  definition:
+    en: "Concern observed that does not fit the codes above; enumerator should describe in form-local notes field."
+    fr: "Problème observé qui ne correspond à aucun des codes ci-dessus ; l'enquêteur doit décrire dans le champ de notes local au formulaire."
+    es: "Problema observado que no encaja en los códigos anteriores; el enumerador debe describir en el campo de notas local del formulario."

@@ -1,0 +1,56 @@
+id: milk-use-share
+maturity: draft
+label:
+  en: "Milk Use Share"
+  fr: "Part d'utilisation du lait"
+  es: "Proporción de uso de la leche"
+definition:
+  en: "Proportion of household milk production consumed directly by household members versus sold, processed for sale (cheese, ghee), or shared with other households. Used in PastoralFoodSecurityProfile to estimate the household's own-milk dietary contribution as an input for HEA food-source stacking. Combined with `milk_production_liters_per_day_household`, this allows estimation of household own-milk caloric intake."
+  fr: "Proportion de la production laitière du ménage consommée directement par les membres du ménage, par opposition au lait vendu, transformé pour la vente (fromage, ghee) ou partagé avec d'autres ménages. Utilisée pour estimer la contribution alimentaire du lait propre du ménage."
+  es: "Proporción de la producción de leche del hogar consumida directamente por los miembros del hogar, frente a la leche vendida, procesada para venta (queso, ghee) o compartida con otros hogares. Usada para estimar la contribución alimentaria de la leche propia del hogar."
+values:
+  - code: mostly_consumed
+    label:
+      en: "Mostly consumed by household (more than 75%)"
+      fr: "Principalement consommé par le ménage (plus de 75%)"
+      es: "Mayormente consumido por el hogar (más del 75%)"
+    definition:
+      en: "Most milk goes directly to household diet; less than 25% is sold, given away, or processed for sale."
+      fr: "La majeure partie du lait va directement au régime alimentaire du ménage ; moins de 25% est vendu, donné ou transformé pour la vente."
+      es: "La mayor parte de la leche va directamente a la dieta del hogar; menos del 25% se vende, regala o procesa para venta."
+  - code: half_consumed_half_sold
+    label:
+      en: "About half consumed, half sold or shared"
+      fr: "Environ la moitié consommée, moitié vendue ou partagée"
+      es: "Aproximadamente la mitad consumida, la mitad vendida o compartida"
+    definition:
+      en: "Milk is split roughly evenly between household consumption and market sales, gifts, or processing for sale."
+      fr: "Le lait est réparti à peu près également entre la consommation du ménage et les ventes sur le marché, les dons ou la transformation pour la vente."
+      es: "La leche se divide aproximadamente por igual entre el consumo del hogar y las ventas en el mercado, regalos o procesamiento para venta."
+  - code: mostly_sold_or_shared
+    label:
+      en: "Mostly sold or shared (less than 25% consumed)"
+      fr: "Principalement vendu ou partagé (moins de 25% consommé)"
+      es: "Mayormente vendido o compartido (menos del 25% consumido)"
+    definition:
+      en: "Household consumes little of its own milk; most goes to market or is shared socially."
+      fr: "Le ménage consomme peu de son propre lait ; la majeure partie va sur le marché ou est partagée socialement."
+      es: "El hogar consume poca de su propia leche; la mayor parte va al mercado o se comparte socialmente."
+  - code: none_consumed
+    label:
+      en: "None consumed by household"
+      fr: "Aucun consommé par le ménage"
+      es: "Ninguna consumida por el hogar"
+    definition:
+      en: "Household receives no milk from its animals in the recall period — either zero production or all milk sold or given away."
+      fr: "Le ménage ne reçoit aucun lait de ses animaux pendant la période de rappel — soit production nulle, soit tout vendu ou donné."
+      es: "El hogar no recibe leche de sus animales en el período de recordatorio — ya sea producción cero o toda la leche vendida o regalada."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot estimate the proportion of milk consumed versus sold or shared."
+      fr: "Le répondant ne peut pas estimer la proportion de lait consommée par rapport au lait vendu ou partagé."
+      es: "El encuestado no puede estimar la proporción de leche consumida frente a la vendida o compartida."

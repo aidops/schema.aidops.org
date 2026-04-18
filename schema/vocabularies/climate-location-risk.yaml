@@ -1,0 +1,100 @@
+id: climate-location-risk
+maturity: draft
+label:
+  en: "Climate location risk"
+  fr: "Risque climatique lié à la localisation"
+  es: "Riesgo climático de ubicación"
+definition:
+  en: >
+    Location-level climate risk categories for climate_dwelling_vulnerable_location.
+    Captures the forward-looking geographic sensitivity of the household's
+    location as a sensitivity component of the IPCC vulnerability framework.
+    Not a structural damage assessment. Sources: GCF vulnerability assessment
+    template (geographic risk factors); IPCC AR6 WGII Chapter 16 risk hotspot
+    typology; ND-GAIN vulnerability score components; UNFCCC NAP M&E location
+    risk profiling.
+  fr: >
+    Catégories de risque climatique liées à la localisation pour
+    climate_dwelling_vulnerable_location. Capture la sensibilité géographique
+    prospective de l'emplacement du ménage en tant que composante de sensibilité
+    du cadre de vulnérabilité du GIEC. Sources : FVC ; GIEC AR6 WGII Chapitre 16 ;
+    ND-GAIN ; CCNUCC PNA.
+  es: >
+    Categorías de riesgo climático de ubicación para
+    climate_dwelling_vulnerable_location. Captura la sensibilidad geográfica
+    prospectiva de la ubicación del hogar como componente de sensibilidad del
+    marco de vulnerabilidad del IPCC. Fuentes: FVC; IPCC AR6 WGII Capítulo 16;
+    ND-GAIN; CMNUCC PNA.
+values:
+  - code: flood_plain_low_lying
+    label:
+      en: "Flood-plain or low-lying area"
+      fr: "Plaine inondable ou zone basse"
+      es: "Llanura aluvial o zona baja"
+    definition:
+      en: "The household's dwelling is located in a flood plain, river valley, or low-lying depression known to flood seasonally or during heavy rainfall."
+      fr: "Le logement du ménage est situé dans une plaine inondable, une vallée fluviale ou une dépression en zone basse connue pour s'inonder de façon saisonnière ou lors de fortes pluies."
+      es: "La vivienda del hogar está ubicada en una llanura aluvial, valle fluvial o depresión baja conocida por inundarse estacionalmente o durante lluvias intensas."
+  - code: drought_prone_dryland
+    label:
+      en: "Drought-prone dryland or semi-arid zone"
+      fr: "Zone sèche ou semi-aride sujette à la sécheresse"
+      es: "Zona árida o semiárida propensa a la sequía"
+    definition:
+      en: "The household is located in an area with erratic or insufficient rainfall, where drought is a recurring risk."
+      fr: "Le ménage est situé dans une zone à précipitations irrégulières ou insuffisantes où la sécheresse est un risque récurrent."
+      es: "El hogar está ubicado en un área con lluvias erráticas o insuficientes donde la sequía es un riesgo recurrente."
+  - code: landslide_prone_slope
+    label:
+      en: "Landslide-prone hillside or slope"
+      fr: "Versant ou pente sujet aux glissements de terrain"
+      es: "Ladera o pendiente propensa a deslizamientos"
+    definition:
+      en: "The household's dwelling is located on a hillside, steep slope, or area of loose soil where rainfall can trigger landslides or mudslides."
+      fr: "Le logement du ménage est situé sur un versant, une pente raide ou une zone de sol meuble où les précipitations peuvent déclencher des glissements de terrain ou des coulées de boue."
+      es: "La vivienda del hogar está ubicada en una ladera, pendiente pronunciada o área de suelo suelto donde las lluvias pueden desencadenar deslizamientos de tierra o lodo."
+  - code: coastal_erosion_zone
+    label:
+      en: "Coastal erosion or sea-level-rise zone"
+      fr: "Zone d'érosion côtière ou de montée du niveau de la mer"
+      es: "Zona de erosión costera o elevación del nivel del mar"
+    definition:
+      en: "The household is located in a coastal area threatened by sea-level rise, increased storm surges, or beach or shoreline erosion."
+      fr: "Le ménage est situé dans une zone côtière menacée par la montée du niveau de la mer, l'augmentation des ondes de tempête ou l'érosion de la plage ou du littoral."
+      es: "El hogar está ubicado en una zona costera amenazada por el aumento del nivel del mar, aumento de marejadas o erosión de playas o costas."
+  - code: urban_heat_island
+    label:
+      en: "Urban heat island"
+      fr: "Îlot de chaleur urbain"
+      es: "Isla de calor urbana"
+    definition:
+      en: "The household is located in a dense urban area where built surfaces and lack of vegetation amplify heat during heatwaves."
+      fr: "Le ménage est situé dans une zone urbaine dense où les surfaces bâties et le manque de végétation amplifient la chaleur lors des vagues de chaleur."
+      es: "El hogar está ubicado en un área urbana densa donde las superficies construidas y la falta de vegetación amplían el calor durante las olas de calor."
+  - code: flash_flood_catchment
+    label:
+      en: "Flash flood catchment or upstream area"
+      fr: "Bassin versant sujet aux crues soudaines"
+      es: "Cuenca de recepción propensa a inundaciones repentinas"
+    definition:
+      en: "The household is located in a catchment area that receives rapid runoff, making it prone to flash flooding after intense rain."
+      fr: "Le ménage est situé dans un bassin versant qui reçoit un ruissellement rapide, le rendant sujet aux crues soudaines après de fortes pluies."
+      es: "El hogar está ubicado en una cuenca de recepción que recibe escorrentía rápida, haciéndola propensa a inundaciones repentinas después de lluvias intensas."
+  - code: wildfire_prone_area
+    label:
+      en: "Wildfire-prone area"
+      fr: "Zone exposée aux feux de brousse"
+      es: "Área propensa a incendios forestales"
+    definition:
+      en: "The household is located in or adjacent to grassland, woodland, or forest that is prone to wildfires during dry seasons."
+      fr: "Le ménage est situé dans ou à proximité de prairies, forêts ouvertes ou forêts sujettes aux feux de brousse durant les saisons sèches."
+      es: "El hogar está ubicado en o adyacente a pastizales, bosques abiertos o bosques propensos a incendios forestales durante las temporadas secas."
+  - code: none_no_specific_risk
+    label:
+      en: "No specific location risk"
+      fr: "Pas de risque d'emplacement spécifique"
+      es: "Sin riesgo de ubicación específico"
+    definition:
+      en: "The household does not consider its location to be specifically exposed to any of the above climate risk factors. Mutually exclusive with all other codes."
+      fr: "Le ménage ne considère pas que son emplacement soit spécifiquement exposé à l'un des facteurs de risque climatique ci-dessus. Mutuellement exclusif avec tous les autres codes."
+      es: "El hogar no considera que su ubicación esté específicamente expuesta a ninguno de los factores de riesgo climático anteriores. Mutuamente exclusivo con todos los demás códigos."

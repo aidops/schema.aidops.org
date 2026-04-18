@@ -1,0 +1,45 @@
+id: climate_trend_perception_temperature
+maturity: draft
+label:
+  en: "Perceived trend in temperatures over the past 10–15 years"
+  fr: "Tendance perçue des températures au cours des 10–15 dernières années"
+  es: "Tendencia percibida en las temperaturas durante los últimos 10–15 años"
+
+definition:
+  en: >
+    Single-select item asking whether the respondent perceives temperatures in
+    their area to have become hotter, cooler, or stayed about the same compared
+    to 10–15 years ago. Uses the same climate-trend-perception vocabulary as
+    climate_trend_perception_rainfall; for this item the directional codes read
+    as hotter (much_increased = much hotter) and cooler (much_decreased = much
+    cooler). Form Authors using XLSForm should apply item-level label overrides
+    to display temperature-appropriate phrasing without creating a separate
+    vocabulary (OQ-3 resolution). Requires a respondent who has lived in the
+    area for at least 10 years.
+  fr: >
+    Item à sélection unique demandant si le répondant perçoit que les
+    températures dans sa région sont devenues plus chaudes, plus fraîches ou
+    sont restées à peu près les mêmes par rapport à il y a 10 à 15 ans.
+    Utilise le même vocabulaire climate-trend-perception que
+    climate_trend_perception_rainfall ; les codes directionnels se lisent
+    comme plus chaud (much_increased) ou plus frais (much_decreased).
+    Les auteurs de formulaires XLSForm doivent appliquer des remplacements
+    d'étiquettes au niveau de l'item pour afficher un libellé approprié
+    à la température.
+  es: >
+    Ítem de selección única que pregunta si el encuestado percibe que las
+    temperaturas en su área se han vuelto más calientes, más frías o se han
+    mantenido aproximadamente igual en comparación con hace 10 a 15 años.
+    Usa el mismo vocabulario climate-trend-perception que
+    climate_trend_perception_rainfall; los códigos direccionales se leen
+    como más caliente (much_increased) o más frío (much_decreased). Los
+    autores de formularios XLSForm deben aplicar reemplazos de etiquetas a
+    nivel de ítem para mostrar el texto apropiado para temperatura.
+
+type: string
+cardinality: single
+core: true
+vocabulary: climate-trend-perception
+references: null
+category: climate
+sensitivity: standard

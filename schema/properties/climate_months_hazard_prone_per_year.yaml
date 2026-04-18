@@ -1,0 +1,40 @@
+id: climate_months_hazard_prone_per_year
+maturity: draft
+label:
+  en: "Months per year in an active climate hazard period"
+  fr: "Mois par an en période d'aléa climatique actif"
+  es: "Meses por año en un período de peligro climático activo"
+
+definition:
+  en: >
+    Integer (0–12) recording how many months per year the household experiences
+    a period of heightened risk from climate hazards — for example, a rainy
+    season with flood risk, a dry season with drought risk, or a hot season
+    with heatwave risk. Captures the proportion of the year during which the
+    household is in an active exposure period. Combined with
+    climate_hazards_experienced_past_5_years and the sensitivity items, feeds
+    the exposure component of the composite vulnerability flag. Drawn from IFRC
+    PCVA seasonal calendar and CARE CVCA seasonal vulnerability profile
+    methodology.
+  fr: >
+    Entier (0–12) enregistrant combien de mois par an le ménage connaît une
+    période de risque accru lié aux aléas climatiques — par exemple, une saison
+    des pluies avec risque d'inondation, une saison sèche avec risque de
+    sécheresse, ou une saison chaude avec risque de vague de chaleur. Capture
+    la proportion de l'année pendant laquelle le ménage est en période
+    d'exposition active.
+  es: >
+    Entero (0–12) que registra cuántos meses al año el hogar experimenta un
+    período de mayor riesgo de peligros climáticos — por ejemplo, una temporada
+    de lluvias con riesgo de inundación, una temporada seca con riesgo de
+    sequía, o una temporada calurosa con riesgo de ola de calor. Captura la
+    proporción del año durante la cual el hogar está en un período de exposición
+    activa.
+
+type: integer
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: climate
+sensitivity: standard

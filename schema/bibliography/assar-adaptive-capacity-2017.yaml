@@ -1,0 +1,26 @@
+id: assar-adaptive-capacity-2017
+title: "ASSAR Working Papers — Adaptive Capacity at Household and Community Level in Semi-Arid Regions"
+short_title: "ASSAR Adaptive Capacity Framework"
+publisher: "Adaptation at Scale in Semi-Arid Regions (ASSAR) consortium — TERI / University of Cape Town / Oxfam / IIED"
+year: 2017
+version: "Working papers 2016–2018"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.assar.uct.ac.za/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies: []
+  properties:
+    - climate_primary_livelihood_climate_dependent
+    - climate_info_services_access
+    - climate_information_trust
+    - climate_shock_credit_access
+    - climate_livelihood_diversification_intent
+    - climate_migration_adaptation_intent
+    - climate_trend_perception_rainfall
+    - climate_trend_perception_temperature
+    - climate_extreme_events_frequency_perception

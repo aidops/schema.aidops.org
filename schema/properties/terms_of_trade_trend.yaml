@@ -1,0 +1,19 @@
+id: terms_of_trade_trend
+maturity: draft
+label:
+  en: "Perceived livestock-to-cereal terms of trade trend compared to last year"
+  fr: "Tendance perçue des termes de l'échange bétail/céréales par rapport à l'année dernière"
+  es: "Tendencia percibida de los términos de intercambio ganadería/cereales comparada con el año pasado"
+
+definition:
+  en: "Household perception of whether the price obtainable for livestock relative to the price of the local staple cereal is better, the same, or worse than the same time last year. Single-select from vocabulary `terms-of-trade-trend`. This perception item complements the objective ratio in `terms_of_trade_goat_cereal` and is used when market price data are unavailable or when the objective ratio cannot be compared to a baseline. It is grounded in the FEWSNET terms-of-trade perception item, FSNAU market perception module, and IPC AFI pastoral annex (perceived market access as supporting evidence for IPC classification). Unlike `terms_of_trade_goat_cereal` (which requires the respondent to recall a specific price), this item captures directional perception and can be collected in markets where prices are not stable or where respondents have difficulty recalling exact quantities. `core: false` because the objective ToT item (C1) is preferred when accessible."
+  fr: "Perception du ménage quant à savoir si le prix obtenu pour le bétail par rapport au prix de la céréale de base locale est meilleur, identique ou moins bon que la même période l'année dernière. Sélection unique dans le vocabulaire `terms-of-trade-trend`. Cet item de perception complète le ratio objectif dans `terms_of_trade_goat_cereal` et est utilisé lorsque les données sur les prix du marché sont indisponibles ou lorsque le ratio objectif ne peut être comparé à une référence. Fondé sur l'item de perception des termes de l'échange FEWSNET, le module de perception du marché FSNAU et l'annexe pastoraliste IPC AFI. `core: false` car l'item objectif (C1) est préféré lorsqu'il est accessible."
+  es: "Percepción del hogar sobre si el precio obtenible por el ganado relativo al precio del cereal básico local es mejor, igual o peor que la misma época del año pasado. Selección única del vocabulario `terms-of-trade-trend`. Este ítem de percepción complementa la razón objetiva en `terms_of_trade_goat_cereal` y se usa cuando los datos de precios de mercado no están disponibles o cuando la razón objetiva no puede compararse con una línea base. Fundamentado en el ítem de percepción de términos de intercambio de FEWSNET, el módulo de percepción de mercado FSNAU y el anexo pastoralista IPC AFI. `core: false` porque el ítem objetivo (C1) es preferido cuando es accesible."
+
+type: string
+cardinality: single
+core: false
+vocabulary: terms-of-trade-trend
+references: null
+category: pastoral_market
+sensitivity: sensitive

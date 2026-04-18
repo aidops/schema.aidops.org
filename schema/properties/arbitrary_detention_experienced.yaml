@@ -1,0 +1,25 @@
+id: arbitrary_detention_experienced
+maturity: draft
+label:
+  en: "Arbitrary detention experienced (household)"
+  fr: "Détention arbitraire vécue (ménage)"
+  es: "Detención arbitraria experimentada (hogar)"
+
+definition:
+  en: "Whether any adult household member was detained, arrested, or held without explanation or charges for more than 24 hours in the past 3 months. Listed separately from hh_violence_types because: (a) arbitrary detention is a distinct legal category grounded in ICCPR Article 9; (b) it is the most sensitive item in the profile since it can directly link a household to a legal rights violation; (c) UNHCR Protection Monitoring Framework treats arbitrary detention as a standalone primary indicator. Note: a household selecting this item will typically also select arbitrary_detention in hh_violence_types, creating an intentional redundancy noted for analysts. Do not probe for details if respondent discloses."
+  fr: "Si un adulte du ménage a été détenu, arrêté ou maintenu sans explication ni charges pendant plus de 24 heures au cours des 3 derniers mois. Répertorié séparément de hh_violence_types car : (a) la détention arbitraire est une catégorie juridique distincte fondée sur l'Article 9 du PIDCP ; (b) c'est l'item le plus sensible du profil puisqu'il peut directement relier un ménage à une violation de ses droits légaux ; (c) le Cadre de suivi de la protection de l'UNHCR traite la détention arbitraire comme un indicateur primaire autonome. Remarque : un ménage sélectionnant cet item sélectionnera également généralement arbitrary_detention dans hh_violence_types, créant une redondance intentionnelle notée pour les analystes. Ne pas approfondir si le répondant divulgue."
+  es: "Si algún adulto miembro del hogar fue detenido, arrestado o retenido sin explicación ni cargos por más de 24 horas en los últimos 3 meses. Listado separadamente de hh_violence_types porque: (a) la detención arbitraria es una categoría legal distinta fundamentada en el Artículo 9 del ICCPR; (b) es el ítem más sensible del perfil ya que puede vincular directamente a un hogar con una violación de derechos legales; (c) el Marco de Monitoreo de Protección del ACNUR trata la detención arbitraria como un indicador primario independiente. Nota: un hogar que seleccione este ítem también seleccionará típicamente arbitrary_detention en hh_violence_types, creando una redundancia intencional anotada para los analistas. No indagar si el encuestado divulga."
+
+type: string
+cardinality: single
+vocabulary: yes-no-pnta
+references: null
+category: physical_safety
+core: false
+sensitivity: restricted
+# RESTRICTED: most sensitive item in profile. Directly links a household to
+# a legal rights violation that could endanger the respondent if associated
+# with their identity in insecure contexts.
+# Raw household-level positive responses must be aggregated before sharing.
+# Guidance threshold (not enforced by validator): n >= 30 households at
+# village/block level before reporting a rate.

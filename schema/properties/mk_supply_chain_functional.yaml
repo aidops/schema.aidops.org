@@ -1,0 +1,19 @@
+id: mk_supply_chain_functional
+maturity: draft
+label:
+  en: Supply chain functional status
+  fr: Statut fonctionnel de la chaîne d'approvisionnement
+  es: Estado funcional de la cadena de suministro
+
+definition:
+  en: "Overall functional state of the supply and transport chains currently feeding this market, as assessed by key vendor informants. A five-level ordinal scale from fully functional to non-functional. The coded status value is non-sensitive and suitable for routine situation reporting. Do not capture specific route names, checkpoint locations, or armed actor details as part of this property — those belong in secure reporting channels."
+  fr: "État fonctionnel global des chaînes d'approvisionnement et de transport alimentant actuellement ce marché, tel qu'évalué par les informateurs clés vendeurs. Échelle ordinale à cinq niveaux de pleinement fonctionnel à non fonctionnel. La valeur de statut codée est non sensible et convient aux rapports de situation courants. Ne pas saisir les noms de routes spécifiques, les emplacements de points de contrôle ou les détails sur les acteurs armés — ceux-ci appartiennent aux canaux de signalement sécurisés."
+  es: "Estado funcional general de las cadenas de suministro y transporte que actualmente abastecen este mercado, según la evaluación de informantes clave vendedores. Escala ordinal de cinco niveles desde completamente funcional hasta no funcional. El valor de estado codificado no es sensible y es adecuado para los informes de situación rutinarios. No capturar nombres de rutas específicas, ubicaciones de puntos de control o detalles de actores armados — esos pertenecen a canales de reporte seguros."
+
+type: string
+cardinality: single
+core: true
+vocabulary: supply-chain-status
+references: null
+category: market_supply_chain
+sensitivity: standard

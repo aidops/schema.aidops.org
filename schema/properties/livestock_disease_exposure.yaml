@@ -1,0 +1,19 @@
+id: livestock_disease_exposure
+maturity: draft
+label:
+  en: "Herd experienced significant disease-related illness or deaths — last 30 days"
+  fr: "Le troupeau a connu des maladies ou des morts significatives liées à des maladies — 30 derniers jours"
+  es: "El rebaño experimentó enfermedades o muertes significativas relacionadas con enfermedades — últimos 30 días"
+
+definition:
+  en: "Whether the household's herd experienced significant illness or deaths that the respondent believes were caused by disease or parasites (rather than drought, raiding, or other non-disease causes) in the last 30 days. Yes / No / Don't know (`yes-no-dk` vocabulary). Used in LEGS initial assessment decision trees to determine the appropriate emergency response category (livestock health emergency vs. destocking vs. restocking). This item is distinct from `livestock_losses_count_past_12mo` (12-month quantitative losses from all causes) — this item is a current-season 30-day disease-flag. At household level this item is non-sensitive; aggregated disease outbreak reporting at zone level may have veterinary surveillance implications and the programme should coordinate reporting with the national veterinary authority when significant outbreaks are detected. Grounded in LEGS 3rd edition Chapter 5, IPC AFI pastoral annex (disease mortality as IPC evidence), FSNAU livestock health items, and Sphere 2018 LEGS livestock health standards. Recall: last 30 days."
+  fr: "Si le troupeau du ménage a connu des maladies ou des morts importantes que le répondant croit causées par des maladies ou des parasites (et non par la sécheresse ou le pillage) au cours des 30 derniers jours. Oui / Non / Ne sait pas (vocabulaire `yes-no-dk`). Utilisé dans les arbres de décision d'évaluation initiale LEGS. Distinct de `livestock_losses_count_past_12mo` (pertes quantitatives sur 12 mois toutes causes confondues). Les rapports d'épidémie agrégés au niveau de la zone peuvent avoir des implications de surveillance vétérinaire. Fondé sur LEGS 3e éd. Chapitre 5, l'annexe pastoraliste IPC AFI, les items de santé du bétail FSNAU et les normes LEGS Sphère 2018. Rappel : 30 derniers jours."
+  es: "Si el rebaño del hogar experimentó enfermedades o muertes significativas que el encuestado cree causadas por enfermedades o parásitos (en lugar de sequía, rapiña u otras causas no relacionadas con enfermedades) en los últimos 30 días. Sí / No / No sabe (vocabulario `yes-no-dk`). Usado en los árboles de decisión de evaluación inicial de LEGS. Distinto de `livestock_losses_count_past_12mo` (pérdidas cuantitativas de 12 meses de todas las causas). Los informes de brotes de enfermedades agregados a nivel de zona pueden tener implicaciones de vigilancia veterinaria. Fundamentado en LEGS 3.a ed. Capítulo 5, el anexo pastoralista IPC AFI, ítems de salud del ganado FSNAU y los estándares LEGS Esfera 2018. Recordatorio: últimos 30 días."
+
+type: string
+cardinality: single
+core: true
+vocabulary: yes-no-dk
+references: null
+category: pastoral_animal_health
+sensitivity: sensitive

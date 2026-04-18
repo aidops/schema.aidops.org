@@ -1,0 +1,49 @@
+id: ipcc-ar6-wg2-2022
+title: "Climate Change 2022: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change"
+short_title: "IPCC AR6 WGII"
+publisher: "Intergovernmental Panel on Climate Change (IPCC) / Cambridge University Press"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.ipcc.ch/report/ar6/wg2/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies:
+    - hazard-type-climate
+    - climate-location-risk
+    - adaptive-practice-type
+    - climate-trend-perception
+  properties:
+    - climate_hazards_experienced_past_5_years
+    - climate_hazard_frequency_trend_perception
+    - climate_hazard_severity_trend_perception
+    - climate_months_hazard_prone_per_year
+    - climate_primary_livelihood_climate_dependent
+    - climate_dwelling_vulnerable_location
+    - climate_water_source_impact
+    - climate_info_services_access
+    - climate_information_source
+    - climate_information_trust
+    - climate_information_used_for_decisions
+    - climate_insurance_coverage_type
+    - climate_insurance_paid_out_past_event
+    - climate_savings_for_shock
+    - climate_shock_credit_access
+    - climate_adaptive_practices_used
+    - climate_adaptive_practice_barrier
+    - climate_livelihood_diversification_intent
+    - climate_migration_adaptation_intent
+    - climate_safety_net_access
+    - climate_productive_asset_sales_past_event
+    - climate_distress_migration_past_event
+    - climate_children_withdrawn_school_past_event
+    - climate_trend_perception_rainfall
+    - climate_trend_perception_temperature
+    - climate_trend_perception_seasons
+    - climate_extreme_events_frequency_perception
+    - climate_adaptive_capacity_index
+    - climate_vulnerability_flag

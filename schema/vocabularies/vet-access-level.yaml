@@ -1,0 +1,65 @@
+id: vet-access-level
+maturity: draft
+label:
+  en: "Veterinary Services Access Level"
+  fr: "Niveau d'accès aux services vétérinaires"
+  es: "Nivel de acceso a servicios veterinarios"
+definition:
+  en: "Consistency of access to veterinary or animal health services when the household's livestock needed them. Used in PastoralFoodSecurityProfile `vet_services_access`. This 5-level scale adds granularity to the binary AgricultureProfile `livestock_vet_access` (yes/no) item. Compatibility mapping: `always_accessed` and `mostly_accessed` map to yes in the AgricultureProfile binary; `rarely_accessed` and `never_accessed` map to no; `sometimes_accessed` is the nuance the binary cannot capture."
+  fr: "Régularité de l'accès aux services vétérinaires ou de santé animale lorsque le bétail du ménage en avait besoin. Ajoute une granularité à l'item binaire `livestock_vet_access` du AgricultureProfile. Correspondance : `always_accessed` et `mostly_accessed` correspondent à oui ; `rarely_accessed` et `never_accessed` correspondent à non."
+  es: "Consistencia del acceso a servicios veterinarios o de salud animal cuando el ganado del hogar los necesitaba. Añade granularidad al ítem binario `livestock_vet_access` de AgricultureProfile. Correspondencia: `always_accessed` y `mostly_accessed` corresponden a sí; `rarely_accessed` y `never_accessed` corresponden a no."
+values:
+  - code: always_accessed
+    label:
+      en: "Always — accessed services every time needed"
+      fr: "Toujours — services accessibles chaque fois que nécessaire"
+      es: "Siempre — accedió a los servicios cada vez que fue necesario"
+    definition:
+      en: "Full access to veterinary services throughout the recall period; no gaps. Maps to yes in AgricultureProfile binary."
+      fr: "Accès complet aux services vétérinaires tout au long de la période de rappel ; aucune lacune. Correspond à oui dans le binaire AgricultureProfile."
+      es: "Acceso completo a servicios veterinarios durante todo el período de recordatorio; sin brechas. Corresponde a sí en el binario de AgricultureProfile."
+  - code: mostly_accessed
+    label:
+      en: "Mostly — accessed services most of the time"
+      fr: "Souvent — services accessibles la plupart du temps"
+      es: "Mayormente — accedió a los servicios la mayor parte del tiempo"
+    definition:
+      en: "Access achieved in most but not all cases; minor gaps. Maps to yes in AgricultureProfile binary."
+      fr: "Accès obtenu dans la plupart des cas mais pas tous ; lacunes mineures. Correspond à oui dans le binaire AgricultureProfile."
+      es: "Acceso logrado en la mayoría de los casos pero no en todos; brechas menores. Corresponde a sí en el binario de AgricultureProfile."
+  - code: sometimes_accessed
+    label:
+      en: "Sometimes — accessed services about half the time"
+      fr: "Parfois — services accessibles environ la moitié du temps"
+      es: "A veces — accedió a los servicios aproximadamente la mitad del tiempo"
+    definition:
+      en: "Inconsistent access; significant service gaps experienced. This is the granularity the AgricultureProfile binary cannot capture."
+      fr: "Accès inconsistant ; lacunes de service significatives. Il s'agit de la granularité que le binaire AgricultureProfile ne peut pas capturer."
+      es: "Acceso inconsistente; brechas de servicio significativas experimentadas. Esta es la granularidad que el binario de AgricultureProfile no puede capturar."
+  - code: rarely_accessed
+    label:
+      en: "Rarely — almost never able to access services"
+      fr: "Rarement — presque jamais en mesure d'accéder aux services"
+      es: "Raramente — casi nunca pudo acceder a los servicios"
+    definition:
+      en: "Structural access failure; household largely unable to access veterinary care. Maps to no in AgricultureProfile binary."
+      fr: "Défaillance structurelle de l'accès ; le ménage est largement incapable d'accéder aux soins vétérinaires. Correspond à non dans le binaire AgricultureProfile."
+      es: "Fallo estructural de acceso; el hogar es en gran medida incapaz de acceder a la atención veterinaria. Corresponde a no en el binario de AgricultureProfile."
+  - code: never_accessed
+    label:
+      en: "Never — no access at all during the recall period"
+      fr: "Jamais — aucun accès du tout pendant la période de rappel"
+      es: "Nunca — sin acceso en absoluto durante el período de recordatorio"
+    definition:
+      en: "Complete absence of veterinary service access during the recall period. Maps to no in AgricultureProfile binary."
+      fr: "Absence complète d'accès aux services vétérinaires pendant la période de rappel. Correspond à non dans le binaire AgricultureProfile."
+      es: "Ausencia completa de acceso a servicios veterinarios durante el período de recordatorio. Corresponde a no en el binario de AgricultureProfile."
+  - code: no_need
+    label:
+      en: "No need — livestock did not require veterinary care"
+      fr: "Pas besoin — le bétail n'a pas nécessité de soins vétérinaires"
+      es: "Sin necesidad — el ganado no requirió atención veterinaria"
+    definition:
+      en: "Household did not seek veterinary care because animals were healthy throughout the recall period."
+      fr: "Le ménage n'a pas eu recours aux soins vétérinaires parce que les animaux étaient en bonne santé tout au long de la période de rappel."
+      es: "El hogar no buscó atención veterinaria porque los animales estuvieron sanos durante todo el período de recordatorio."

@@ -1,0 +1,40 @@
+id: climate_information_trust
+maturity: draft
+label:
+  en: "Trust in climate or weather information for household decisions"
+  fr: "Confiance dans l'information climatique ou météorologique pour les décisions du ménage"
+  es: "Confianza en la información climática o meteorológica para las decisiones del hogar"
+
+definition:
+  en: >
+    4-point Likert item asking how much the household trusts the climate or
+    weather information it receives when making decisions about farming, water,
+    or planning. Applies when climate_info_services_access = 'yes'. Trust is a
+    documented prerequisite for acting on climate information in agricultural
+    decisions (IPCC AR6 WGII Chapter 17). Low trust where access exists is a
+    critical adaptive capacity gap distinct from lack of access. Uses the same
+    4-point Likert scale as WarningResponseProfile.warning_source_trust for
+    cross-profile comparability. Valid codes: fully_trusted / mostly_trusted /
+    somewhat_trusted / did_not_trust / dont_know.
+  fr: >
+    Item Likert à 4 points demandant dans quelle mesure le ménage fait confiance
+    aux informations climatiques ou météorologiques qu'il reçoit pour prendre
+    des décisions concernant l'agriculture, l'eau ou la planification. S'applique
+    lorsque climate_info_services_access = 'yes'. La confiance est une condition
+    préalable documentée à l'utilisation des informations climatiques dans les
+    décisions agricoles (GIEC AR6 WGII Chapitre 17).
+  es: >
+    Ítem Likert de 4 puntos que pregunta cuánto confía el hogar en la
+    información climática o meteorológica que recibe al tomar decisiones sobre
+    agricultura, agua o planificación. Aplica cuando
+    climate_info_services_access = 'yes'. La confianza es un prerrequisito
+    documentado para actuar sobre la información climática en decisiones
+    agrícolas (IPCC AR6 WGII Capítulo 17).
+
+type: string
+cardinality: single
+core: false
+vocabulary: null
+references: null
+category: climate
+sensitivity: standard

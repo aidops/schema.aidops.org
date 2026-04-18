@@ -1,0 +1,114 @@
+id: adaptive-practice-barrier
+maturity: draft
+label:
+  en: "Barrier to adopting additional climate-adaptive practices"
+  fr: "Obstacle à l'adoption de pratiques climato-adaptatives supplémentaires"
+  es: "Barrera para adoptar prácticas adicionales de adaptación climática"
+definition:
+  en: >
+    Primary barrier preventing the household from adopting additional
+    climate-adaptive practices. Used for climate_adaptive_practice_barrier.
+    Sources: IPCC AR6 WGII Chapter 17 (barriers to adaptation); World Bank
+    CSA Country Profiles (barriers to CSA adoption); CARE CVCA barriers
+    analysis; Oxfam adaptation toolkit barriers framework.
+  fr: >
+    Principal obstacle empêchant le ménage d'adopter des pratiques
+    climato-adaptatives supplémentaires. Utilisé pour
+    climate_adaptive_practice_barrier. Sources : GIEC AR6 WGII Chapitre 17 ;
+    Profils pays CSA Banque mondiale ; CARE CVCA ; boîte à outils Oxfam.
+  es: >
+    Principal barrera que impide al hogar adoptar prácticas adicionales de
+    adaptación climática. Usado para climate_adaptive_practice_barrier.
+    Fuentes: IPCC AR6 WGII Capítulo 17; Perfiles de países CSA del Banco
+    Mundial; CARE CVCA; kit de herramientas de adaptación de Oxfam.
+values:
+  - code: no_access_inputs
+    label:
+      en: "Cannot access the inputs or materials needed"
+      fr: "Impossibilité d'accéder aux intrants ou matériaux nécessaires"
+      es: "No puede acceder a los insumos o materiales necesarios"
+    definition:
+      en: "Drought-tolerant seeds, irrigation equipment, or other needed inputs are not available locally or are too difficult to obtain."
+      fr: "Les semences résistantes à la sécheresse, l'équipement d'irrigation ou d'autres intrants nécessaires ne sont pas disponibles localement ou sont trop difficiles à obtenir."
+      es: "Las semillas tolerantes a la sequía, equipos de riego u otros insumos necesarios no están disponibles localmente o son demasiado difíciles de obtener."
+  - code: no_financial_resources
+    label:
+      en: "Cannot afford the cost"
+      fr: "Coût trop élevé"
+      es: "No puede costear el precio"
+    definition:
+      en: "The household cannot pay for the seeds, equipment, labor, or other investments required to adopt the practice."
+      fr: "Le ménage ne peut pas payer pour les semences, l'équipement, la main-d'œuvre ou d'autres investissements nécessaires à l'adoption de la pratique."
+      es: "El hogar no puede pagar por las semillas, equipos, mano de obra u otras inversiones necesarias para adoptar la práctica."
+  - code: no_knowledge_training
+    label:
+      en: "Do not know how to use the practice"
+      fr: "Méconnaissance de la pratique"
+      es: "Desconoce cómo usar la práctica"
+    definition:
+      en: "The household has not received information or training on how to implement the practice correctly."
+      fr: "Le ménage n'a pas reçu d'information ou de formation sur la manière de mettre en œuvre correctement la pratique."
+      es: "El hogar no ha recibido información o capacitación sobre cómo implementar la práctica correctamente."
+  - code: no_land_access
+    label:
+      en: "No secure access to land or water"
+      fr: "Accès insuffisant à la terre ou à l'eau"
+      es: "No tiene acceso seguro a la tierra o el agua"
+    definition:
+      en: "Tenure insecurity or lack of access to land or water makes it impractical to invest in soil conservation, irrigation, or agroforestry."
+      fr: "L'insécurité foncière ou le manque d'accès à la terre ou à l'eau rend peu pratique l'investissement dans la conservation des sols, l'irrigation ou l'agroforesterie."
+      es: "La inseguridad de la tenencia o la falta de acceso a la tierra o al agua hace impracticable invertir en conservación de suelos, riego o agroforestería."
+  - code: not_suitable_for_context
+    label:
+      en: "Practice does not suit local conditions"
+      fr: "Pratique inadaptée aux conditions locales"
+      es: "La práctica no se adapta a las condiciones locales"
+    definition:
+      en: "The practice is not appropriate for the household's soil type, altitude, climate zone, or crop system."
+      fr: "La pratique n'est pas appropriée pour le type de sol, l'altitude, la zone climatique ou le système de cultures du ménage."
+      es: "La práctica no es apropiada para el tipo de suelo, altitud, zona climática o sistema de cultivos del hogar."
+  - code: social_or_cultural_barriers
+    label:
+      en: "Social or cultural reasons"
+      fr: "Raisons sociales ou culturelles"
+      es: "Razones sociales o culturales"
+    definition:
+      en: "Social norms, gender roles, religious practice, or community expectations prevent adoption."
+      fr: "Les normes sociales, les rôles de genre, la pratique religieuse ou les attentes de la communauté empêchent l'adoption."
+      es: "Las normas sociales, los roles de género, las prácticas religiosas o las expectativas comunitarias impiden la adopción."
+  - code: labor_constraint
+    label:
+      en: "Not enough labor available"
+      fr: "Main-d'œuvre insuffisante"
+      es: "No hay suficiente mano de obra disponible"
+    definition:
+      en: "The household does not have enough available labor (family or hired) to implement labor-intensive practices."
+      fr: "Le ménage n'a pas suffisamment de main-d'œuvre disponible (familiale ou salariée) pour mettre en œuvre des pratiques à forte intensité de travail."
+      es: "El hogar no tiene suficiente mano de obra disponible (familiar o contratada) para implementar prácticas que requieren mucho trabajo."
+  - code: no_market_for_products
+    label:
+      en: "No market for the products of this practice"
+      fr: "Absence de marché pour les produits de cette pratique"
+      es: "No hay mercado para los productos de esta práctica"
+    definition:
+      en: "Even if the household adopted the practice, there is no local market to sell the output."
+      fr: "Même si le ménage adoptait la pratique, il n'y a pas de marché local pour vendre les produits."
+      es: "Incluso si el hogar adoptara la práctica, no hay mercado local para vender los productos."
+  - code: no_barrier_satisfied_with_current
+    label:
+      en: "No barrier — satisfied with current practices"
+      fr: "Pas d'obstacle — satisfait des pratiques actuelles"
+      es: "Sin barrera — satisfecho con las prácticas actuales"
+    definition:
+      en: "The household does not want to change its current practices."
+      fr: "Le ménage ne souhaite pas changer ses pratiques actuelles."
+      es: "El hogar no desea cambiar sus prácticas actuales."
+  - code: other
+    label:
+      en: Other barrier
+      fr: Autre obstacle
+      es: Otra barrera
+    definition:
+      en: "Barrier not covered by the above categories."
+      fr: "Obstacle non couvert par les catégories ci-dessus."
+      es: "Barrera no cubierta por las categorías anteriores."

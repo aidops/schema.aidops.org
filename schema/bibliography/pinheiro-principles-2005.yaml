@@ -1,0 +1,21 @@
+id: pinheiro-principles-2005
+title: "Principles on Housing and Property Restitution for Refugees and Displaced Persons (Pinheiro Principles)"
+short_title: "Pinheiro Principles 2005"
+publisher: "United Nations Commission on Human Rights"
+year: 2005
+type: legal_instrument
+domain: humanitarian
+uri: "https://www.ohchr.org/Documents/Publications/pinheiro_principles.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies:
+    - hlp-dispute-type
+  properties:
+    - hlp_property_dispute
+    - hlp_dispute_type
+    - hlp_discrimination
+    - hlp_restitution_awareness

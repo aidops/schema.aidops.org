@@ -1,0 +1,96 @@
+# PS-promotion candidate: freedom-of-movement restriction types are relevant
+# to access monitoring across multiple humanitarian profiles (protection,
+# health access, food security, education). Flag for PS team review before
+# any future promotion; keep AO-local in this batch.
+id: movement-restriction-type
+maturity: draft
+label:
+  en: "Movement restriction type"
+  fr: "Type de restriction aux déplacements"
+  es: "Tipo de restricción de movimiento"
+definition:
+  en: "Types of freedom-of-movement restrictions experienced by household members. Codes are functional categories, not actor-naming — enumerators must not record names of armed groups or authorities. Based on GPC PAF Domain 1 (Physical Safety and Security); REACH Syria (2022) and Ukraine (2023) protection monitoring tools; IOM DTM Protection Monitoring."
+  fr: "Types de restrictions à la liberté de mouvement vécues par les membres du ménage. Les codes sont des catégories fonctionnelles, pas des désignations d'acteurs — les enquêteurs ne doivent pas enregistrer les noms des groupes armés ou des autorités. Fondé sur GPC PAF Domaine 1 (Sécurité physique et sûreté) ; outils de suivi de la protection REACH Syrie (2022) et Ukraine (2023) ; Suivi de la protection DTM de l'OIM."
+  es: "Tipos de restricciones de libertad de movimiento experimentadas por los miembros del hogar. Los códigos son categorías funcionales, no identificación de actores — los encuestadores no deben registrar nombres de grupos armados o autoridades. Basado en GPC PAF Dominio 1 (Seguridad Física); herramientas de monitoreo de protección de REACH Siria (2022) y Ucrania (2023); Monitoreo de Protección DTM de la OIM."
+values:
+  - code: armed_actor_checkpoint
+    label:
+      en: "Checkpoint controlled by non-state armed actor"
+      fr: "Point de contrôle d'un acteur armé non étatique"
+      es: "Puesto de control de actor armado no estatal"
+    definition:
+      en: "Movement blocked or restricted by a checkpoint operated by a non-state armed group. Do not record the name of the group."
+      fr: "Mouvement bloqué ou restreint par un point de contrôle opéré par un groupe armé non étatique. Ne pas enregistrer le nom du groupe."
+      es: "Movimiento bloqueado o restringido por un puesto de control operado por un grupo armado no estatal. No registrar el nombre del grupo."
+  - code: official_government_checkpoint
+    label:
+      en: "Official government checkpoint"
+      fr: "Point de contrôle gouvernemental officiel"
+      es: "Puesto de control gubernamental oficial"
+    definition:
+      en: "Movement restricted by a government military, police, or administrative checkpoint."
+      fr: "Mouvement restreint par un point de contrôle militaire, policier ou administratif gouvernemental."
+      es: "Movimiento restringido por un puesto de control militar, policial o administrativo gubernamental."
+  - code: movement_permit_required
+    label:
+      en: "Movement permit or documentation required"
+      fr: "Permis de déplacement ou document requis"
+      es: "Permiso de movimiento o documentación requerida"
+    definition:
+      en: "Household members cannot move without a permit, pass, or document they do not possess or cannot obtain."
+      fr: "Les membres du ménage ne peuvent pas se déplacer sans un permis, un laissez-passer ou un document qu'ils ne possèdent pas ou ne peuvent pas obtenir."
+      es: "Los miembros del hogar no pueden moverse sin un permiso, pase o documento que no poseen o no pueden obtener."
+  - code: curfew
+    label:
+      en: "Curfew"
+      fr: "Couvre-feu"
+      es: "Toque de queda"
+    definition:
+      en: "Movement restricted during certain hours by a declared or de facto curfew."
+      fr: "Mouvement restreint pendant certaines heures par un couvre-feu déclaré ou de facto."
+      es: "Movimiento restringido durante ciertas horas por un toque de queda declarado o de facto."
+  - code: front_line_proximity
+    label:
+      en: "Proximity to active conflict front line"
+      fr: "Proximité d'une ligne de front active"
+      es: "Proximidad a una línea de frente activa"
+    definition:
+      en: "Area is militarized or dangerous to cross because of active armed conflict."
+      fr: "La zone est militarisée ou dangereuse à traverser en raison d'un conflit armé actif."
+      es: "El área está militarizada o es peligrosa de cruzar debido al conflicto armado activo."
+  - code: eo_contamination
+    label:
+      en: "Explosive ordnance contamination on routes"
+      fr: "Contamination par engins explosifs sur les itinéraires"
+      es: "Contaminación por artefactos explosivos en rutas"
+    definition:
+      en: "Routes are impassable because of known or suspected explosive hazards. See also eo_contamination_known for the broader EO exposure indicator."
+      fr: "Les itinéraires sont impraticables en raison de risques explosifs connus ou suspectés. Voir aussi eo_contamination_known pour l'indicateur plus large d'exposition aux EE."
+      es: "Las rutas son intransitables por peligros explosivos conocidos o sospechados. Ver también eo_contamination_known para el indicador más amplio de exposición a AE."
+  - code: route_unsafe_general
+    label:
+      en: "Route generally unsafe (insecurity)"
+      fr: "Itinéraire globalement dangereux (insécurité)"
+      es: "Ruta generalmente insegura (inseguridad)"
+    definition:
+      en: "Route is unsafe to use because of general insecurity not specifically attributed to a specific actor or explosive ordnance."
+      fr: "L'itinéraire est dangereux à emprunter en raison d'une insécurité générale non spécifiquement attribuée à un acteur particulier ou à des engins explosifs."
+      es: "La ruta es insegura por inseguridad general no atribuida específicamente a un actor o artefactos explosivos."
+  - code: discriminatory_restriction
+    label:
+      en: "Discriminatory restriction on movement"
+      fr: "Restriction discriminatoire aux déplacements"
+      es: "Restricción discriminatoria de movimiento"
+    definition:
+      en: "Household members are specifically restricted from moving because of their ethnicity, religion, origin, or other characteristic. An important indicator for the access-to-justice module."
+      fr: "Les membres du ménage sont spécifiquement empêchés de se déplacer en raison de leur appartenance ethnique, religion, origine ou autre caractéristique. Un indicateur important pour le module accès à la justice."
+      es: "Los miembros del hogar son específicamente impedidos de moverse por su etnia, religión, origen u otra característica. Un indicador importante para el módulo de acceso a la justicia."
+  - code: other
+    label:
+      en: "Other restriction"
+      fr: "Autre restriction"
+      es: "Otra restricción"
+    definition:
+      en: "Restriction type not covered by the above categories."
+      fr: "Type de restriction non couvert par les catégories ci-dessus."
+      es: "Tipo de restricción no cubierto por las categorías anteriores."

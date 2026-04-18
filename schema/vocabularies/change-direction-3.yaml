@@ -1,0 +1,69 @@
+# NOTE: This vocabulary is a candidate for promotion to PublicSchema (PS).
+# It is a generic three-way directional comparison ("increased / same / decreased")
+# applicable to any "compared to baseline" question across multiple profiles.
+# No equivalent exists in the current PS vocabulary set (checked 2026-04-18).
+# When PS-promotion is approved, this file should be replaced with a vendor reference.
+id: change-direction-3
+maturity: draft
+label:
+  en: Change Direction (3-way)
+  fr: Direction du changement (3 niveaux)
+  es: Dirección del cambio (3 niveles)
+definition:
+  en: >
+    A generic three-way ordinal scale comparing a current measurement to a
+    reference or baseline period: increased, stayed the same, or decreased.
+    Used for "compared to before the crisis" questions across supply chain
+    monitoring, vendor counts, transport costs, and other comparative items.
+    Candidate for promotion to PublicSchema as a shared vocabulary.
+  fr: >
+    Une échelle ordinale générique à trois niveaux comparant une mesure actuelle
+    à une période de référence ou de base : augmenté, resté stable ou diminué.
+    Utilisé pour les questions « par rapport à avant la crise » dans le suivi de
+    la chaîne d'approvisionnement, le comptage des vendeurs, les coûts de
+    transport et d'autres éléments comparatifs. Candidat à la promotion dans
+    PublicSchema en tant que vocabulaire partagé.
+  es: >
+    Una escala ordinal genérica de tres niveles que compara una medición actual
+    con un período de referencia o línea base: aumentado, se mantuvo igual o
+    disminuido. Se utiliza para preguntas de "en comparación con antes de la
+    crisis" en el monitoreo de cadenas de suministro, conteo de vendedores,
+    costos de transporte y otros ítems comparativos. Candidato a promoción en
+    PublicSchema como vocabulario compartido.
+values:
+- code: increased
+  label:
+    en: Increased
+    fr: Augmenté
+    es: Aumentado
+  definition:
+    en: "The measured quantity is higher than the reference period."
+    fr: "La quantité mesurée est plus élevée que la période de référence."
+    es: "La cantidad medida es mayor que el período de referencia."
+- code: same
+  label:
+    en: Stayed the same
+    fr: Resté stable
+    es: Se mantuvo igual
+  definition:
+    en: "No material change from the reference period."
+    fr: "Aucun changement significatif par rapport à la période de référence."
+    es: "Sin cambio material desde el período de referencia."
+- code: decreased
+  label:
+    en: Decreased
+    fr: Diminué
+    es: Disminuido
+  definition:
+    en: "The measured quantity is lower than the reference period."
+    fr: "La quantité mesurée est inférieure à la période de référence."
+    es: "La cantidad medida es menor que el período de referencia."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: Ne sait pas
+    es: No sabe
+  definition:
+    en: "Informant cannot assess the direction of change."
+    fr: "L'informateur ne peut pas évaluer la direction du changement."
+    es: "El informante no puede evaluar la dirección del cambio."

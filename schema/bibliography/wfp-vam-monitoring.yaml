@@ -1,0 +1,27 @@
+id: wfp-vam-monitoring
+title: "WFP VAM Market Monitoring and Bulletins — Methodology guide"
+short_title: "WFP VAM 2022"
+publisher: "WFP (Vulnerability Analysis and Mapping unit)"
+year: 2022
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.wfp.org/food-security-analysis/food-security/market-analysis"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MarketProfile
+  vocabularies:
+    - market-price-basket
+    - price-trend-direction
+  properties:
+    - mk_visit_date
+    - mk_market_operational_status
+    - mk_functionality_score
+    - mk_commodity_code
+    - mk_commodity_available
+    - mk_commodity_price_local_currency
+    - mk_commodity_price_reference
+    - mk_commodity_price_change_pct
+    - mk_commodity_price_trend

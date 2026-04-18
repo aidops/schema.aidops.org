@@ -1,0 +1,43 @@
+id: climate_hazard_frequency_trend_perception
+maturity: draft
+label:
+  en: "Perceived change in hazard frequency compared to 10–15 years ago"
+  fr: "Changement perçu dans la fréquence des aléas par rapport à il y a 10–15 ans"
+  es: "Cambio percibido en la frecuencia de peligros comparado con hace 10–15 años"
+
+definition:
+  en: >
+    Single-select item asking whether the household perceives the most frequently
+    experienced climate hazard (identified in climate_hazards_experienced_past_5_years)
+    now occurs more often, less often, or about the same compared to when the
+    respondent was growing up or 10–15 years ago. Per IPCC AR6 WGII Box 1.1,
+    community-perceived frequency trends show high concordance with observed
+    meteorological data in data-sparse regions and are a valid proxy indicator.
+    Applies when at least one hazard is selected in
+    climate_hazards_experienced_past_5_years. Together with
+    climate_hazard_severity_trend_perception, forms the perceived-hazard-trend
+    pair used in CARE CVCA and IFRC PCVA community assessments.
+  fr: >
+    Item à sélection unique demandant si le ménage perçoit que l'aléa climatique
+    le plus fréquemment subi (identifié dans
+    climate_hazards_experienced_past_5_years) se produit maintenant plus souvent,
+    moins souvent ou à peu près autant par rapport à l'enfance du répondant ou
+    il y a 10 à 15 ans. Selon le Encadré 1.1 du GIEC AR6 WGII, les tendances
+    de fréquence perçues par les communautés présentent une concordance élevée
+    avec les données météorologiques observées dans les régions pauvres en données.
+  es: >
+    Ítem de selección única que pregunta si el hogar percibe que el peligro
+    climático más frecuentemente experimentado (identificado en
+    climate_hazards_experienced_past_5_years) ahora ocurre más seguido, menos
+    seguido o aproximadamente igual que cuando el encuestado era joven o hace
+    10 a 15 años. Según el Recuadro 1.1 del IPCC AR6 WGII, las tendencias de
+    frecuencia percibidas por la comunidad muestran alta concordancia con los
+    datos meteorológicos observados en regiones con escasez de datos.
+
+type: string
+cardinality: single
+core: true
+vocabulary: climate-trend-perception
+references: null
+category: climate
+sensitivity: standard

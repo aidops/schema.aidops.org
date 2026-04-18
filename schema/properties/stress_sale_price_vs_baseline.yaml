@@ -1,0 +1,19 @@
+id: stress_sale_price_vs_baseline
+maturity: draft
+label:
+  en: "Stress sale price relative to seasonal baseline"
+  fr: "Prix de vente de détresse par rapport à la référence saisonnière"
+  es: "Precio de venta de estrés relativo a la línea base estacional"
+
+definition:
+  en: "Whether the price received for livestock at the stress sale was higher, the same, or lower than the usual price for this time of year. Single-select from vocabulary `stress-sale-price-relative`. Applies only when `stress_sale_occurred` is `yes`. This is a terms-of-trade input item: below-normal sale prices at pastoral stress sales are an IPC destitution indicator (used in FSNAU/IPC pastoral analysis to identify households selling at fire-sale prices, which signals acute asset liquidation under extreme pressure). The severity bands (below_normal_slight, below_normal_significant, below_normal_severe) are adapted from FSNAU and FEWSNET price-relative coding. The `could_not_sell` code captures market failure. `core: false` — recommended for comprehensive seasonal assessments. Grounded in FEWSNET terms-of-trade monitoring, FSNAU market items, LEGS 3rd edition (price-relative as liquidation-depth indicator), and IPC AFI pastoral annex (below-normal sale prices as IPC destitution indicator)."
+  fr: "Si le prix reçu pour le bétail lors de la vente de détresse était supérieur, identique ou inférieur au prix habituel à cette période de l'année. Sélection unique dans le vocabulaire `stress-sale-price-relative`. S'applique uniquement lorsque `stress_sale_occurred` est `yes`. Il s'agit d'un item de saisie des termes de l'échange : des prix de vente inférieurs à la normale lors de ventes de détresse pastorales constituent un indicateur de dénuement IPC. `core: false` — recommandé pour les évaluations saisonnières complètes. Fondé sur le suivi des termes de l'échange FEWSNET, les items de marché FSNAU, LEGS 3e éd. et l'annexe pastoraliste IPC AFI."
+  es: "Si el precio recibido por el ganado en la venta de estrés fue mayor, igual o menor que el precio habitual para esta época del año. Selección única del vocabulario `stress-sale-price-relative`. Aplica solo cuando `stress_sale_occurred` es `yes`. Es un ítem de entrada de términos de intercambio: los precios de venta por debajo de lo normal en ventas de estrés pastoral son un indicador de destitución IPC. `core: false` — recomendado para evaluaciones estacionales integrales. Fundamentado en el monitoreo de términos de intercambio de FEWSNET, ítems de mercado FSNAU, LEGS 3.a ed. y el anexo pastoralista IPC AFI."
+
+type: string
+cardinality: single
+core: false
+vocabulary: stress-sale-price-relative
+references: null
+category: pastoral_market
+sensitivity: sensitive

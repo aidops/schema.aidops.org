@@ -1,0 +1,41 @@
+id: climate_children_withdrawn_school_past_event
+maturity: draft
+label:
+  en: "Children withdrawn from school or schooling delayed due to climate hazard in the past 5 years"
+  fr: "Enfants retirés de l'école ou scolarité retardée en raison d'un aléa climatique au cours des 5 dernières années"
+  es: "Niños retirados de la escuela o escolarización retrasada por peligro climático en los últimos 5 años"
+
+definition:
+  en: >
+    Item asking whether the household has had to withdraw children from school
+    or delay their schooling because of losses or hardship caused by drought,
+    flood, or another climate hazard in the past 5 years. A binary maladaptation
+    flag capturing human-capital depletion through climate-induced school
+    withdrawal. Applies when the household has at least one school-age child
+    (age 5–17); mark 'not_applicable_no_school_age_children' if clearly no
+    children in that age range. Coordination with EducationProfile if collected:
+    this item is a binary climate-maladaptation flag; the detailed school
+    enrollment and attendance record belongs on EducationProfile.
+    Valid codes: yes / no / not_applicable_no_school_age_children / dont_know.
+  fr: >
+    Item demandant si le ménage a dû retirer des enfants de l'école ou retarder
+    leur scolarité en raison de pertes ou de difficultés causées par la
+    sécheresse, les inondations ou un autre aléa climatique au cours des 5
+    dernières années. Indicateur binaire de maladaptation capturant la
+    déplétion du capital humain par retrait scolaire lié au climat. S'applique
+    lorsque le ménage a au moins un enfant d'âge scolaire (5–17 ans).
+  es: >
+    Ítem que pregunta si el hogar ha tenido que retirar niños de la escuela o
+    retrasar su escolarización por pérdidas o dificultades causadas por sequía,
+    inundaciones u otro peligro climático en los últimos 5 años. Indicador
+    binario de maladaptación que captura el agotamiento del capital humano por
+    retiro escolar relacionado con el clima. Aplica cuando el hogar tiene al
+    menos un niño en edad escolar (5–17 años).
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: climate
+sensitivity: sensitive

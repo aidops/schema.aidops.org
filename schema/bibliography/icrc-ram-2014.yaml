@@ -1,0 +1,29 @@
+id: icrc-ram-2014
+title: "Rapid Assessment for Markets (RAM)"
+short_title: "ICRC RAM 2014"
+publisher: "ICRC (International Committee of the Red Cross)"
+year: 2014
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.icrc.org/en/publication/4304-rapid-assessment-markets"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MarketProfile
+  vocabularies:
+    - market-operational-status
+    - supply-chain-status
+    - market-accessibility-level
+  properties:
+    - mk_market_operational_status
+    - mk_functional_days_per_week
+    - mk_vendor_count_current
+    - mk_vendor_count_change
+    - mk_functionality_score
+    - mk_supply_chain_functional
+    - mk_supply_route_blocked
+    - mk_road_access_status
+    - mk_cash_accepted
+    - mk_vendor_capacity_large_orders

@@ -1,0 +1,27 @@
+id: unfccc-nap-me-2022
+title: "National Adaptation Plans — Monitoring and Evaluation Framework Guidance"
+short_title: "UNFCCC NAP M&E Guidance"
+publisher: "UNFCCC / Least Developed Countries Expert Group (LEG)"
+year: 2022
+version: "Guidance 2015; updated 2022"
+type: guidance_publication
+domain: humanitarian
+uri: "https://unfccc.int/topics/adaptation-and-resilience/workstreams/national-adaptation-plans"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ClimateAdaptationProfile
+  vocabularies:
+    - climate-info-source
+    - climate-info-use-pattern
+    - climate-insurance-type
+  properties:
+    - climate_dwelling_vulnerable_location
+    - climate_info_services_access
+    - climate_information_source
+    - climate_information_used_for_decisions
+    - climate_insurance_coverage_type
+    - climate_adaptive_practices_used
+    - climate_safety_net_access

@@ -1,0 +1,19 @@
+id: herd_composition_by_species
+maturity: draft
+label:
+  en: "Herd composition by species — current counts"
+  fr: "Composition du troupeau par espèce — effectifs actuels"
+  es: "Composición del rebaño por especie — conteos actuales"
+
+definition:
+  en: "Current count of animals in the household's herd, one integer value per livestock-type code, collected for the pastoral household's core mobile herd. Uses the same PS `livestock-type` vocabulary codes as AgricultureProfile `livestock_counts` but is scoped to pastoral households and the mobile herd context. If AgricultureProfile was collected in the same assessment round, this item should be skipped and cross-referenced to `AgricultureProfile.livestock_counts`; form implementations should implement this as a conditional skip. Recorded as a repeat group or grid with one row per species; `0` is a valid count when a species is not kept. In the Horn of Africa context (Somalia, Kenya ASAL), camels are the primary high-value species; in the Sahel, cattle dominate. The counts feed the TLU derivation (see `AgricultureProfile.tlu_total`). Grounded in LEGS 3rd edition initial assessment herd composition items, FSNAU seasonal assessment (LS-1 to LS-4), and IPC AFI pastoral annex Section 4.2. See also: `AgricultureProfile.livestock_counts` (conditional dependency: skip if AgricultureProfile co-administered)."
+  fr: "Effectif actuel d'animaux du troupeau du ménage, une valeur entière par code livestock-type, collecté pour le troupeau mobile principal du ménage pastoral. Utilise les mêmes codes du vocabulaire PS `livestock-type` que `livestock_counts` du AgricultureProfile mais est limité aux ménages pastoraux et au contexte du troupeau mobile. Si le AgricultureProfile a été collecté dans le même cycle d'évaluation, cet item doit être omis et croisé avec `AgricultureProfile.livestock_counts` ; les implémentations de formulaire doivent réaliser cela comme un saut conditionnel. Enregistré sous forme de groupe de répétition ou de grille avec une ligne par espèce ; `0` est un effectif valide lorsqu'une espèce n'est pas élevée. Dans le contexte Corne de l'Afrique (Somalie, Kenya ASAL), les chameaux sont l'espèce principale à haute valeur ; au Sahel, le bétail domine. Les effectifs alimentent le calcul de TLU (voir `AgricultureProfile.tlu_total`). Fondé sur les items de composition du troupeau de l'évaluation initiale LEGS 3e éd., l'évaluation saisonnière FSNAU (LS-1 à LS-4) et l'annexe pastoraliste IPC AFI Section 4.2."
+  es: "Conteo actual de animales en el rebaño del hogar, un valor entero por código livestock-type, recopilado para el rebaño móvil principal del hogar pastoral. Usa los mismos códigos del vocabulario PS `livestock-type` que `livestock_counts` de AgricultureProfile pero está limitado a hogares pastorales y al contexto de rebaño móvil. Si AgricultureProfile fue recopilado en la misma ronda de evaluación, este ítem debe omitirse y referenciarse cruzadamente a `AgricultureProfile.livestock_counts`; las implementaciones de formulario deben implementar esto como un salto condicional. Registrado como grupo de repetición o cuadrícula con una fila por especie; `0` es un conteo válido cuando una especie no se tiene. En el contexto del Cuerno de África (Somalia, Kenya ASAL), los camellos son la especie principal de alto valor; en el Sahel, el ganado bovino domina. Los conteos alimentan la derivación de UGT (ver `AgricultureProfile.tlu_total`)."
+
+type: integer
+cardinality: multiple
+core: true
+vocabulary: livestock-type
+references: null
+category: pastoral_herd
+sensitivity: sensitive

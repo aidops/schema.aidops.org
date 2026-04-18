@@ -1,0 +1,22 @@
+id: sphere-handbook-2018-legs
+title: "The Sphere Handbook — LEGS Livestock Standards (4th edition)"
+short_title: "Sphere 2018 LEGS Livestock Standards"
+publisher: "Sphere Association"
+year: 2018
+version: "Fourth Edition"
+type: guidance_publication
+domain: humanitarian
+uri: "https://spherestandards.org/handbook-2018/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - PastoralFoodSecurityProfile
+  vocabularies:
+    - water-access-livestock
+    - vet-access-level
+  properties:
+    - water_point_access
+    - livestock_disease_exposure
+    - vet_services_access

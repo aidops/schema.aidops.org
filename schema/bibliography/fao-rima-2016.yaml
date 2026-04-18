@@ -13,6 +13,7 @@ status: active
 informs:
   concepts:
     - LivelihoodProfile
+    - ClimateAdaptationProfile
   vocabularies:
     - livelihood-activity-category
     - livelihood-asset-type
@@ -43,3 +44,7 @@ informs:
     - rima_apt_flag
     - rima_ac_flag
     - livelihood_resilience_score
+    - climate_savings_for_shock
+    - climate_shock_credit_access
+    - climate_safety_net_access
+    - climate_adaptive_capacity_index

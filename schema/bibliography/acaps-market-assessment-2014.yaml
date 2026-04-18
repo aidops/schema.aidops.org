@@ -1,0 +1,26 @@
+id: acaps-market-assessment-2014
+title: "ACAPS Technical Brief: Market Assessment Methodology Note"
+short_title: "ACAPS Market Assessment 2014"
+publisher: "ACAPS"
+year: 2014
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.acaps.org/sites/acaps/files/resources/files/acaps_technical_brief_market_assessment_methodology_note_2014.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - MarketProfile
+  vocabularies:
+    - market-type
+    - market-operational-status
+    - market-accessibility-level
+    - food-safety-concern
+  properties:
+    - mk_market_type
+    - mk_market_operational_status
+    - mk_functional_days_per_week
+    - mk_vendor_count_current
+    - mk_road_access_status
+    - mk_food_safety_concerns

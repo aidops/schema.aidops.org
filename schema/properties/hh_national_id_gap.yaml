@@ -1,0 +1,25 @@
+id: hh_national_id_gap
+maturity: draft
+label:
+  en: "National identity document gap (household)"
+  fr: "Absence de document d'identité nationale (ménage)"
+  es: "Brecha de documento de identidad nacional (hogar)"
+
+definition:
+  en: "Whether any adult member of the household currently lacks a valid national identity card or equivalent civil identity document. This is a household-level flag, not per-person. Does NOT capture displacement-specific documents (those are in DisplacementProfile.primary_identity_document_status). A positive result indicates a documentation gap that may limit access to services, rights, and social protection. JIAF 2.0 Protection Indicator P6; GPC PAF Domain 2. Asked of household head or adult member, current recall."
+  fr: "Si un adulte du ménage est actuellement dépourvu d'une carte d'identité nationale valide ou d'un document d'identité civile équivalent. Il s'agit d'un indicateur au niveau du ménage, pas par personne. Ne capture PAS les documents spécifiques au déplacement (ceux-ci figurent dans DisplacementProfile.primary_identity_document_status). Un résultat positif indique une lacune documentaire pouvant limiter l'accès aux services, aux droits et à la protection sociale. Indicateur de protection JIAF 2.0 P6 ; GPC PAF Domaine 2."
+  es: "Si algún adulto miembro del hogar carece actualmente de una cédula de identidad nacional válida o documento de identidad civil equivalente. Este es un indicador a nivel del hogar, no por persona. NO captura documentos específicos de desplazamiento (estos figuran en DisplacementProfile.primary_identity_document_status). Un resultado positivo indica una brecha documental que puede limitar el acceso a servicios, derechos y protección social. Indicador de Protección JIAF 2.0 P6; GPC PAF Dominio 2."
+
+type: string
+cardinality: single
+# OQ-3 decision: three-code yes/no/don't-know vocabulary throughout.
+# The research doc specifies true/false; yes-no-dk captures the same
+# semantics while handling genuine uncertainty without null ambiguity.
+vocabulary: yes-no-dk
+references: null
+category: civil_documentation
+core: true
+sensitivity: sensitive
+# Related to DisplacementProfile.primary_identity_document_status
+# (complementary — different scope: national civil documents vs.
+# displacement-specific travel/asylum documents).

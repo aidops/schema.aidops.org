@@ -1,0 +1,86 @@
+id: market-operational-status
+maturity: draft
+label:
+  en: Market Operational Status
+  fr: Statut opérationnel du marché
+  es: Estado operacional del mercado
+definition:
+  en: >
+    The overall operational state of a market at the time of a monitoring visit,
+    assessed by the enumerator through direct observation and confirmed with key
+    vendor informants. A five-level scale from fully operational to closed, designed
+    to minimize inter-enumerator variability through specific threshold definitions.
+    Aligned with the ICRC RAM three-level triage, WFP MAG 2021 four-level
+    functionality classification, and JMMI operational status variable.
+  fr: >
+    L'état opérationnel global d'un marché au moment d'une visite de suivi,
+    évalué par l'enquêteur par observation directe et confirmé auprès des
+    informateurs clés vendeurs. Échelle à cinq niveaux allant de pleinement
+    opérationnel à fermé, conçue pour minimiser la variabilité inter-enquêteurs
+    grâce à des définitions de seuils spécifiques. Aligné sur le triage à trois
+    niveaux de l'ICRC RAM, la classification de fonctionnalité à quatre niveaux
+    du WFP MAG 2021 et la variable de statut opérationnel JMMI.
+  es: >
+    El estado operativo general de un mercado en el momento de una visita de
+    monitoreo, evaluado por el enumerador mediante observación directa y
+    confirmado con informantes clave vendedores. Escala de cinco niveles desde
+    completamente operacional hasta cerrado, diseñada para minimizar la
+    variabilidad entre enumeradores mediante definiciones de umbrales específicas.
+    Alineado con el triage de tres niveles del ICRC RAM, la clasificación de
+    funcionalidad de cuatro niveles del WFP MAG 2021 y la variable de estado
+    operacional JMMI.
+values:
+- code: fully_operational
+  label:
+    en: Fully operational
+    fr: Pleinement opérationnel
+    es: Completamente operacional
+  definition:
+    en: "Market is open on all normally scheduled trading days. Vendor count is at or near pre-crisis levels (≥ 80%). Full range of normally available commodities is present. No unusual access barriers."
+    fr: "Le marché est ouvert tous les jours de négoce normalement prévus. Le nombre de vendeurs est au niveau d'avant-crise ou proche de celui-ci (≥ 80 %). La gamme complète de produits normalement disponibles est présente. Aucune barrière d'accès inhabituelle."
+    es: "El mercado está abierto todos los días de comercio normalmente programados. El número de vendedores está en o cerca de los niveles previos a la crisis (≥ 80 %). Está presente la gama completa de productos normalmente disponibles. Sin barreras de acceso inusuales."
+- code: mostly_operational
+  label:
+    en: Mostly operational
+    fr: Majoritairement opérationnel
+    es: Mayormente operacional
+  definition:
+    en: "Market is open most scheduled days. Vendor count is moderately reduced (50–80% of pre-crisis level). Most normal commodities are available, though some goods show reduced stock. Minor access constraints."
+    fr: "Le marché est ouvert la plupart des jours prévus. Le nombre de vendeurs est modérément réduit (50–80 % du niveau d'avant-crise). La plupart des produits habituels sont disponibles, bien que certains affichent un stock réduit. Contraintes d'accès mineures."
+    es: "El mercado está abierto la mayoría de los días programados. El número de vendedores está moderadamente reducido (50–80 % del nivel previo a la crisis). La mayoría de los productos normales están disponibles, aunque algunos muestran stock reducido. Restricciones de acceso menores."
+- code: partially_operational
+  label:
+    en: Partially operational
+    fr: Partiellement opérationnel
+    es: Parcialmente operacional
+  definition:
+    en: "Market is open some days but significantly less than normal. Vendor count substantially reduced (20–50% of pre-crisis level). Several critical goods are unavailable or very limited. Notable access constraints affecting part of the population."
+    fr: "Le marché est ouvert certains jours mais de manière significativement inférieure à la normale. Le nombre de vendeurs est substantiellement réduit (20–50 % du niveau d'avant-crise). Plusieurs produits essentiels sont indisponibles ou très limités. Contraintes d'accès notables affectant une partie de la population."
+    es: "El mercado está abierto algunos días pero significativamente menos que lo normal. El número de vendedores está sustancialmente reducido (20–50 % del nivel previo a la crisis). Varios bienes críticos no están disponibles o están muy limitados. Restricciones de acceso notables que afectan a parte de la población."
+- code: minimally_operational
+  label:
+    en: Minimally operational
+    fr: Minimalement opérationnel
+    es: Mínimamente operacional
+  definition:
+    en: "Market barely functioning: open only sporadically or for short hours. Very few vendors remain active (< 20% of pre-crisis count). Most critical goods unavailable. Severe access constraints."
+    fr: "Le marché fonctionne à peine : ouvert seulement de manière sporadique ou pendant de courtes heures. Très peu de vendeurs restent actifs (< 20 % du nombre d'avant-crise). La plupart des produits essentiels sont indisponibles. Contraintes d'accès sévères."
+    es: "El mercado apenas funciona: abierto solo esporádicamente o por pocas horas. Muy pocos vendedores permanecen activos (< 20 % del conteo previo a la crisis). La mayoría de los bienes críticos no están disponibles. Restricciones de acceso severas."
+- code: closed
+  label:
+    en: Closed
+    fr: Fermé
+    es: Cerrado
+  definition:
+    en: "Market is not open and no trade is occurring. Applies both to markets shut by authority (administrative closure, conflict, curfew) and to markets that have collapsed entirely."
+    fr: "Le marché n'est pas ouvert et aucun commerce n'a lieu. S'applique aussi bien aux marchés fermés par les autorités (fermeture administrative, conflit, couvre-feu) qu'aux marchés qui se sont effondrés entièrement."
+    es: "El mercado no está abierto y no se produce ningún comercio. Se aplica tanto a los mercados cerrados por autoridad (cierre administrativo, conflicto, toque de queda) como a los mercados que han colapsado por completo."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: Ne sait pas
+    es: No sabe
+  definition:
+    en: "Enumerator is unable to reliably assess operational status — for example, if the market was not accessible on the visit date."
+    fr: "L'enquêteur est incapable d'évaluer de manière fiable le statut opérationnel — par exemple, si le marché n'était pas accessible à la date de visite."
+    es: "El enumerador no puede evaluar de manera confiable el estado operacional — por ejemplo, si el mercado no era accesible en la fecha de visita."

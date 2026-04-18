@@ -1,0 +1,19 @@
+id: protection_referral_trust
+maturity: draft
+label:
+  en: "Protection referral mechanism trust"
+  fr: "Confiance dans le mécanisme de signalement de protection"
+  es: "Confianza en el mecanismo de derivación de protección"
+
+definition:
+  en: "How much the household trusts that the reporting mechanism they know would help if they reported a protection concern. Asked only when protection_referral_aware = yes. fear_of_reprisal code indicates households in situations of coercive control — aggregate before reporting. Based on OHCHR Rule-of-Law Indicators (2011) legitimacy dimension; GPC PAF Domain 2; REACH Syria (2022) rule-of-law module."
+  fr: "Dans quelle mesure le ménage fait confiance au mécanisme de signalement qu'il connaît pour l'aider s'il signalait un problème de protection. Posée uniquement lorsque protection_referral_aware = oui. Le code fear_of_reprisal indique des ménages en situation de contrôle coercitif — agréger avant de communiquer. Fondé sur la dimension légitimité des Indicateurs d'état de droit HCDH (2011) ; GPC PAF Domaine 2 ; REACH Syrie (2022) module état de droit."
+  es: "Cuánto confía el hogar en que el mecanismo de reporte que conoce le ayudaría si reportara un problema de protección. Se pregunta solo cuando protection_referral_aware = sí. El código fear_of_reprisal indica hogares en situaciones de control coercitivo — agregar antes de reportar. Basado en la dimensión de legitimidad de los Indicadores del Estado de Derecho del ACNUDH (2011); GPC PAF Dominio 2; módulo de estado de derecho de REACH Siria (2022)."
+
+type: string
+cardinality: single
+vocabulary: referral-trust-3
+references: null
+category: protection_referral
+core: false
+sensitivity: sensitive

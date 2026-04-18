@@ -1,0 +1,74 @@
+id: stress-sale-price-relative
+maturity: draft
+label:
+  en: "Stress Sale Price Relative to Seasonal Baseline"
+  fr: "Prix de vente de détresse par rapport à la référence saisonnière"
+  es: "Precio de venta de estrés relativo a la línea base estacional"
+definition:
+  en: "Price received for livestock at a distress sale relative to the typical seasonal market price. Used in PastoralFoodSecurityProfile to assess the depth of pastoral asset liquidation. Below-normal sale prices at pastoral stress sales are an IPC destitution indicator (FSNAU/IPC pastoral analysis). The severity bands are adapted from FSNAU and FEWSNET price-relative coding."
+  fr: "Prix reçu pour le bétail lors d'une vente de détresse par rapport au prix saisonnier habituel. Les prix inférieurs à la normale lors des ventes de détresse pastorales constituent un indicateur de dénuement IPC."
+  es: "Precio recibido por el ganado en una venta de estrés relativo al precio de mercado estacional típico. Los precios por debajo de lo normal en ventas de estrés pastorales son un indicador de destitución IPC."
+values:
+  - code: above_normal
+    label:
+      en: "Above normal price"
+      fr: "Au-dessus du prix normal"
+      es: "Por encima del precio normal"
+    definition:
+      en: "Sale price was better than the typical seasonal market price; this sale was not a distress price despite the stress context."
+      fr: "Le prix de vente était supérieur au prix saisonnier habituel ; cette vente n'était pas un prix de détresse malgré le contexte de stress."
+      es: "El precio de venta fue mejor que el precio de mercado estacional típico; esta venta no fue un precio de estrés a pesar del contexto de estrés."
+  - code: at_normal
+    label:
+      en: "At normal seasonal price"
+      fr: "Au prix saisonnier normal"
+      es: "Al precio estacional normal"
+    definition:
+      en: "Sale occurred at the typical seasonal market price with no price discount."
+      fr: "La vente a eu lieu au prix saisonnier habituel sans réduction de prix."
+      es: "La venta ocurrió al precio de mercado estacional típico sin descuento en el precio."
+  - code: below_normal_slight
+    label:
+      en: "Slightly below normal (up to 25% lower)"
+      fr: "Légèrement en dessous du normal (jusqu'à 25% de moins)"
+      es: "Ligeramente por debajo del normal (hasta un 25% menos)"
+    definition:
+      en: "Minor distress discount; early stress signal. Household accepted a small price reduction to sell more quickly."
+      fr: "Réduction de prix de détresse mineure ; signal de stress précoce."
+      es: "Descuento de estrés menor; señal de estrés temprana."
+  - code: below_normal_significant
+    label:
+      en: "Significantly below normal (25–50% lower)"
+      fr: "Nettement en dessous du normal (25–50% de moins)"
+      es: "Significativamente por debajo del normal (25–50% menos)"
+    definition:
+      en: "Moderate distress; household accepting a substantial price discount to liquidate assets. Indicates acute livelihood pressure."
+      fr: "Détresse modérée ; le ménage accepte une réduction de prix substantielle pour liquider des actifs."
+      es: "Estrés moderado; el hogar acepta un descuento sustancial para liquidar activos. Indica presión aguda sobre los medios de vida."
+  - code: below_normal_severe
+    label:
+      en: "Severely below normal (more than 50% lower)"
+      fr: "Très nettement en dessous du normal (plus de 50% de moins)"
+      es: "Gravemente por debajo del normal (más del 50% menos)"
+    definition:
+      en: "Severe distress sale price. IPC destitution signal used in FSNAU and IPC pastoral analysis to identify households in extreme asset-liquidation distress."
+      fr: "Prix de vente de détresse sévère. Signal de dénuement IPC utilisé dans l'analyse pastorale FSNAU et IPC."
+      es: "Precio de venta de estrés severo. Señal de destitución IPC usada en el análisis pastoral FSNAU e IPC."
+  - code: could_not_sell
+    label:
+      en: "Could not sell — no buyers available"
+      fr: "N'a pas pu vendre — pas d'acheteurs disponibles"
+      es: "No pudo vender — no había compradores disponibles"
+    definition:
+      en: "Market failure: the household could not find any buyers even at a reduced price."
+      fr: "Défaillance du marché : le ménage n'a pas pu trouver d'acheteurs même à un prix réduit."
+      es: "Fallo del mercado: el hogar no pudo encontrar compradores incluso a un precio reducido."
+  - code: dont_know
+    label:
+      en: "Don't know"
+      fr: "Ne sait pas"
+      es: "No sabe"
+    definition:
+      en: "Respondent cannot estimate the sale price relative to the seasonal baseline."
+      fr: "Le répondant ne peut pas estimer le prix de vente par rapport à la référence saisonnière."
+      es: "El encuestado no puede estimar el precio de venta relativo a la línea base estacional."

@@ -1,0 +1,184 @@
+id: PastoralFoodSecurityProfile
+label:
+  en: Pastoral Food Security Profile
+  fr: "Profil de sécurité alimentaire pastorale"
+  es: "Perfil de seguridad alimentaria pastoral"
+maturity: draft
+featured: true
+
+definition:
+  en: >
+    A point-in-time record of the pastoral-specific determinants of food
+    security for households whose primary livelihood is mobile livestock
+    herding or agro-pastoralism. Covers the structural and seasonal drivers
+    that FoodSecurityProfile does not reach: herd health and dynamics,
+    milk production and consumption, livestock-to-cereal terms of trade,
+    mobility and rangeland conditions, livestock losses, and veterinary
+    access in mobile-herd contexts. Designed to be co-administered alongside
+    FoodSecurityProfile for pastoral and agro-pastoral households — it does
+    not replace any FoodSecurityProfile instrument. FoodSecurityProfile
+    supplies the food-security outcome indicators (FCS, rCSI, LCS-FS, HDDS,
+    HHS, FIES, MAHFP); this profile supplies the pastoral-specific structural
+    and process indicators that explain why and how pastoral households fall
+    into or recover from food insecurity. Canonical grounding is LEGS 3rd
+    edition (2023), IPC AFI Technical Manual v3.1 pastoralist annex, and
+    FSNAU Somalia seasonal assessment methodology, with FEWSNET HEA, FAO
+    GIEWS, Sphere 2018, AGIR Sahel, and SMART pastoral adaptations as
+    supporting sources. Subject is a Household in a pastoral or
+    agro-pastoral livelihood zone (pre-classified by FEWSNET Livelihood
+    Zone Profile or equivalent national livelihoods mapping before
+    administration).
+  fr: >
+    Un enregistrement ponctuel des déterminants pastoraux spécifiques de
+    la sécurité alimentaire pour les ménages dont le moyen de subsistance
+    principal est l'élevage nomade ou l'agro-pastoralisme. Couvre les
+    facteurs structurels et saisonniers que le FoodSecurityProfile n'atteint
+    pas : santé et dynamique du troupeau, production et consommation de
+    lait, termes de l'échange bétail/céréales, mobilité et conditions des
+    pâturages, pertes de bétail et accès aux services vétérinaires dans
+    les contextes de troupeaux mobiles. Conçu pour être co-administré avec
+    le FoodSecurityProfile pour les ménages pastoraux et agro-pastoraux —
+    il ne remplace aucun instrument du FoodSecurityProfile. Le
+    FoodSecurityProfile fournit les indicateurs de résultats de sécurité
+    alimentaire (FCS, rCSI, LCS-FS, HDDS, HHS, FIES, MAHFP) ; ce profil
+    fournit les indicateurs structurels et de processus propres au
+    pastoralisme qui expliquent comment et pourquoi les ménages pastoraux
+    tombent dans l'insécurité alimentaire ou s'en rétablissent. L'ancrage
+    canonique est la 3e édition des LEGS (2023), le manuel technique IPC
+    AFI v3.1 (annexe pastoraliste) et la méthodologie FSNAU Somalie, avec
+    le HEA FEWSNET, le FAO GIEWS, Sphère 2018, AGIR Sahel et les
+    adaptations pastorales SMART comme sources complémentaires. Le sujet
+    est un Ménage dans une zone de moyens d'existence pastorale ou
+    agro-pastorale.
+  es: >
+    Un registro puntual de los determinantes pastorales específicos de la
+    seguridad alimentaria para hogares cuyo medio de vida principal es la
+    ganadería nómada o el agropastoralismo. Cubre los factores estructurales
+    y estacionales que FoodSecurityProfile no alcanza: salud y dinámica del
+    rebaño, producción y consumo de leche, términos de intercambio
+    ganadería/cereales, movilidad y condiciones de pastizales, pérdidas de
+    ganado y acceso a servicios veterinarios en contextos de rebaños móviles.
+    Diseñado para co-administrarse junto con FoodSecurityProfile para hogares
+    pastorales y agropastorales — no reemplaza ningún instrumento de
+    FoodSecurityProfile. FoodSecurityProfile suministra los indicadores de
+    resultados de seguridad alimentaria (FCS, rCSI, LCS-FS, HDDS, HHS,
+    FIES, MAHFP); este perfil suministra los indicadores estructurales y
+    de proceso específicos del pastoralismo que explican por qué y cómo
+    los hogares pastorales caen o se recuperan de la inseguridad alimentaria.
+    El fundamento canónico es la 3.a edición de LEGS (2023), el Manual
+    Técnico IPC AFI v3.1 (anexo pastoralista) y la metodología de evaluación
+    estacional FSNAU Somalia, con HEA de FEWSNET, FAO GIEWS, Esfera 2018,
+    AGIR Sahel y adaptaciones pastorales SMART como fuentes de apoyo. El
+    sujeto es un Hogar en una zona de medios de vida pastoral o agropastoral.
+
+properties:
+  # Module A: Herd Composition and Dynamics
+  - herd_composition_by_species
+  - breeding_females_count
+  - herd_trend_since_crisis
+  - livestock_losses_count_past_12mo
+  - livestock_loss_cause
+  # Module B: Milk Production and Consumption
+  - milk_production_liters_per_day_household
+  - milk_household_proportion_consumed
+  - milk_consumption_frequency
+  # Module C: Market Access and Terms of Trade
+  - terms_of_trade_goat_cereal
+  - terms_of_trade_trend
+  - stress_sale_occurred
+  - stress_sale_price_vs_baseline
+  - stress_sale_reason
+  # Module D: Rangeland and Water Access
+  - rangeland_condition_perception
+  - water_point_access
+  - fodder_availability
+  - fodder_cost_change
+  # Module E: Migration and Mobility
+  - migration_distance_km
+  - migration_routes_disrupted
+  - migration_route_disruption_cause
+  - conflict_mobility_restriction
+  # Module F: Animal Health and Veterinary Access
+  - livestock_disease_exposure
+  - vet_services_access
+  - vet_access_barriers
+
+property_groups:
+  - category: administrative
+    properties:
+      - identifiers
+      - subject
+      - observation_date
+      - performed_by
+      - instrument_used
+      - software_used
+      - administration_mode
+      - respondent
+      - respondent_relationship
+      - items_asked
+  - category: pastoral_herd
+    properties:
+      - herd_composition_by_species
+      - breeding_females_count
+      - herd_trend_since_crisis
+      - livestock_losses_count_past_12mo
+      - livestock_loss_cause
+  - category: pastoral_milk
+    properties:
+      - milk_production_liters_per_day_household
+      - milk_household_proportion_consumed
+      - milk_consumption_frequency
+  - category: pastoral_market
+    properties:
+      - terms_of_trade_goat_cereal
+      - terms_of_trade_trend
+      - stress_sale_occurred
+      - stress_sale_price_vs_baseline
+      - stress_sale_reason
+  - category: pastoral_rangeland
+    properties:
+      - rangeland_condition_perception
+      - water_point_access
+      - fodder_availability
+      - fodder_cost_change
+  - category: pastoral_mobility
+    properties:
+      - migration_distance_km
+      - migration_routes_disrupted
+      - migration_route_disruption_cause
+      - conflict_mobility_restriction
+  - category: pastoral_animal_health
+    properties:
+      - livestock_disease_exposure
+      - vet_services_access
+      - vet_access_barriers
+
+subtypes: []
+supertypes: [Profile]
+
+external_equivalents:
+  fhir:
+    label: "QuestionnaireResponse (pastoral food security battery)"
+    uri: "http://hl7.org/fhir/QuestionnaireResponse"
+    match: close
+    vocabulary: "FHIR R4"
+    note: "A pastoral food security administration serializes as a QuestionnaireResponse whose Questionnaire corresponds to the LEGS initial assessment or FSNAU seasonal assessment instrument definition. FHIR has no dedicated pastoral livestock resource; derived indicators (breeding-female ratio, terms-of-trade ratio) are better represented as Observation or RiskAssessment produced by a scoring step."
+  dhis2:
+    label: "DHIS2 event program (pastoral livelihoods)"
+    uri: "https://docs.dhis2.org/en/topics/metadata/global-health-data-sets.html"
+    match: broad
+    vocabulary: "DHIS2 data sets"
+    note: "DHIS2 instances in pastoral early-warning programmes (FSNAU Somalia, NDMA Kenya, FEWSNET livelihoods monitoring) carry selected items (herd composition, terms of trade, rangeland condition) as data elements in event programs, but no global DHIS2 pastoral data set exists and item-level standardization varies widely by country implementation."
+
+convergence:
+  system_count: 2
+  total_systems: 6
+  notes: >
+    Only FHIR and DHIS2 represent pastoral food security data at item level
+    in programmatic implementations. OpenCRVS, OpenSPP, openIMIS, and DCI
+    Social Registry do not carry pastoral food security items in core;
+    national deployments (Somalia Baxnaano, Kenya HSNP ASAL, Ethiopia
+    pastoralist zones) collect them in separate humanitarian assessment
+    modules. The informing standards bodies are LEGS Project (Tufts/FAO),
+    IPC Global Partners (FAO/WFP/FEWSNET), FSNAU (FAO Somalia), and
+    FEWSNET (USAID) rather than the v1 MIS core set.

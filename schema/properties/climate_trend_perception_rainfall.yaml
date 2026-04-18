@@ -1,0 +1,38 @@
+id: climate_trend_perception_rainfall
+maturity: draft
+label:
+  en: "Perceived trend in annual rainfall over the past 10–15 years"
+  fr: "Tendance perçue des précipitations annuelles au cours des 10–15 dernières années"
+  es: "Tendencia percibida en las lluvias anuales durante los últimos 10–15 años"
+
+definition:
+  en: >
+    Single-select item asking whether the respondent perceives annual rainfall
+    in their area to have increased, decreased, or stayed about the same compared
+    to when they were growing up or 10–15 years ago. IPCC AR6 WGII Box 1.1
+    confirms that community-perceived rainfall trends show high concordance with
+    observed meteorological data in data-sparse regions, making this a valid
+    proxy indicator. Requires a respondent who has lived in the area for at least
+    10 years; the Form Author should add a soft eligibility gate.
+  fr: >
+    Item à sélection unique demandant si le répondant perçoit que les
+    précipitations annuelles dans sa région ont augmenté, diminué ou sont restées
+    à peu près les mêmes par rapport à son enfance ou il y a 10 à 15 ans.
+    Le Encadré 1.1 du GIEC AR6 WGII confirme que les tendances pluviométriques
+    perçues par les communautés présentent une concordance élevée avec les données
+    météorologiques observées dans les régions pauvres en données.
+  es: >
+    Ítem de selección única que pregunta si el encuestado percibe que las
+    lluvias anuales en su área han aumentado, disminuido o se han mantenido
+    aproximadamente igual en comparación con cuando era joven o hace 10 a 15
+    años. El Recuadro 1.1 del IPCC AR6 WGII confirma que las tendencias de
+    lluvias percibidas por la comunidad muestran alta concordancia con datos
+    meteorológicos observados en regiones con escasez de datos.
+
+type: string
+cardinality: single
+core: true
+vocabulary: climate-trend-perception
+references: null
+category: climate
+sensitivity: standard

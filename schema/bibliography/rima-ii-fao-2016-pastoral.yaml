@@ -1,0 +1,23 @@
+id: rima-ii-fao-2016-pastoral
+title: "Resilience Index Measurement and Analysis II (RIMA-II) — Pastoral Resilience Indicators"
+short_title: "RIMA-II Pastoral Indicators"
+publisher: "Food and Agriculture Organization of the United Nations (FAO)"
+year: 2016
+version: "II"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.fao.org/resilience/resources/resources-detail/en/c/416208/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - PastoralFoodSecurityProfile
+  vocabularies:
+    - vet-access-level
+    - vet-access-barrier
+    - rangeland-condition
+  properties:
+    - rangeland_condition_perception
+    - vet_services_access
+    - vet_access_barriers

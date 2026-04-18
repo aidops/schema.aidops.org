@@ -1,0 +1,52 @@
+id: fsnau-seasonal-assessment-methodology-2022
+title: "FSNAU Seasonal Assessment Integrated Household Survey Methodology"
+short_title: "FSNAU Seasonal Assessment Methodology"
+publisher: "Food Security and Nutrition Analysis Unit for Somalia (FAO/FSNAU)"
+year: 2022
+version: "2022 revision"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.fsnau.org/in-focus/analytical-framework"
+access: open
+status: active
+
+informs:
+  concepts:
+    - PastoralFoodSecurityProfile
+  vocabularies:
+    - herd-trend
+    - livestock-loss-cause
+    - milk-use-share
+    - rangeland-condition
+    - water-access-livestock
+    - terms-of-trade-trend
+    - stress-sale-price-relative
+    - stress-sale-reason
+    - migration-route-disruption
+    - vet-access-level
+    - vet-access-barrier
+    - cost-change-relative
+  properties:
+    - herd_composition_by_species
+    - breeding_females_count
+    - herd_trend_since_crisis
+    - livestock_losses_count_past_12mo
+    - livestock_loss_cause
+    - milk_production_liters_per_day_household
+    - milk_household_proportion_consumed
+    - milk_consumption_frequency
+    - terms_of_trade_goat_cereal
+    - terms_of_trade_trend
+    - stress_sale_occurred
+    - stress_sale_price_vs_baseline
+    - stress_sale_reason
+    - rangeland_condition_perception
+    - water_point_access
+    - fodder_availability
+    - fodder_cost_change
+    - migration_distance_km
+    - migration_routes_disrupted
+    - migration_route_disruption_cause
+    - livestock_disease_exposure
+    - vet_services_access
+    - vet_access_barriers

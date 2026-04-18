@@ -57,7 +57,7 @@ class TestRealSchema:
             if v.get("source") == "aidops"
         }
 
-        # AidOps has exactly 25 concepts; update this count when adding/removing AidOps concepts
+        # AidOps has exactly 29 concepts; update this count when adding/removing AidOps concepts
         # Batch 2 adds: HealthAccessProfile
         # Batch 3 adds: MentalHealthProfile
         # Batch 3 adds: ChildProtectionProfile
@@ -65,8 +65,10 @@ class TestRealSchema:
         # Phase 6 Batch 2 adds: Community + LivelihoodProfile, AgricultureProfile,
         #   WarningResponseProfile, AccountabilityToAffectedPopulationsProfile,
         #   HealthFacilityProfile, CommunityNeedsProfile
-        assert len(aidops_concepts) == 25, (
-            f"Expected 25 AidOps concepts, got {len(aidops_concepts)}: "
+        # Phase 7 adds: ProtectionProfile, MarketProfile,
+        #   PastoralFoodSecurityProfile, ClimateAdaptationProfile
+        assert len(aidops_concepts) == 29, (
+            f"Expected 29 AidOps concepts, got {len(aidops_concepts)}: "
             f"{sorted(aidops_concepts.keys())}"
         )
         assert set(aidops_concepts.keys()) == {
@@ -75,6 +77,7 @@ class TestRealSchema:
             "AnthropometricProfile",
             "ChildHealthProfile",
             "ChildProtectionProfile",
+            "ClimateAdaptationProfile",
             "Community",
             "CommunityNeedsProfile",
             "DisplacementProfile",
@@ -87,10 +90,13 @@ class TestRealSchema:
             "HealthAccessProfile",
             "HealthFacilityProfile",
             "LivelihoodProfile",
+            "MarketProfile",
             "MaternalNewbornHealthProfile",
             "MentalHealthProfile",
             "NFIProfile",
             "NutritionPracticesProfile",
+            "PastoralFoodSecurityProfile",
+            "ProtectionProfile",
             "ReproductiveHealthProfile",
             "ShelterAdequacyProfile",
             "WASHAssessmentProfile",
@@ -115,8 +121,13 @@ class TestRealSchema:
         #   AccountabilityToAffectedPopulationsProfile: +40
         #   HealthFacilityProfile: +69
         #   CommunityNeedsProfile: +21
-        assert len(aidops_properties) == 788, (
-            f"Expected 788 AidOps properties, got {len(aidops_properties)}"
+        # Phase 7 delta (Phase 6 Batch 2 baseline was 788):
+        #   ProtectionProfile: +22
+        #   MarketProfile: +27
+        #   PastoralFoodSecurityProfile: +24
+        #   ClimateAdaptationProfile: +29
+        assert len(aidops_properties) == 890, (
+            f"Expected 890 AidOps properties, got {len(aidops_properties)}"
         )
 
         # Update this count when adding/removing AidOps-owned vocabularies.
@@ -141,8 +152,13 @@ class TestRealSchema:
         #   AccountabilityToAffectedPopulationsProfile: +13
         #   HealthFacilityProfile: +5
         #   CommunityNeedsProfile: +7
-        assert len(aidops_vocabularies) == 194, (
-            f"Expected 194 AidOps vocabularies, got {len(aidops_vocabularies)}"
+        # Phase 7 delta (Phase 6 Batch 2 baseline was 194):
+        #   ProtectionProfile: +11
+        #   MarketProfile: +9
+        #   PastoralFoodSecurityProfile: +13
+        #   ClimateAdaptationProfile: +8
+        assert len(aidops_vocabularies) == 235, (
+            f"Expected 235 AidOps vocabularies, got {len(aidops_vocabularies)}"
         )
 
         # Every AidOps concept has a JSON Schema

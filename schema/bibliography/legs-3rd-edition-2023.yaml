@@ -1,0 +1,49 @@
+id: legs-3rd-edition-2023
+title: "Livestock Emergency Guidelines and Standards — Third Edition"
+short_title: "LEGS 3rd Edition"
+publisher: "LEGS Project (Tufts University Feinstein International Center, VSF-Belgium, FAO, ILRI, and others)"
+year: 2023
+version: "Third Edition"
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.livestock-emergency.net/legs-3rd-edition/"
+access: open
+status: active
+
+informs:
+  concepts:
+    - PastoralFoodSecurityProfile
+  vocabularies:
+    - herd-trend
+    - livestock-loss-cause
+    - milk-use-share
+    - rangeland-condition
+    - water-access-livestock
+    - stress-sale-price-relative
+    - stress-sale-reason
+    - vet-access-level
+    - vet-access-barrier
+    - migration-route-disruption
+  properties:
+    - herd_composition_by_species
+    - breeding_females_count
+    - herd_trend_since_crisis
+    - livestock_losses_count_past_12mo
+    - livestock_loss_cause
+    - milk_production_liters_per_day_household
+    - milk_household_proportion_consumed
+    - milk_consumption_frequency
+    - stress_sale_occurred
+    - stress_sale_price_vs_baseline
+    - stress_sale_reason
+    - rangeland_condition_perception
+    - water_point_access
+    - fodder_availability
+    - fodder_cost_change
+    - migration_distance_km
+    - migration_routes_disrupted
+    - migration_route_disruption_cause
+    - conflict_mobility_restriction
+    - livestock_disease_exposure
+    - vet_services_access
+    - vet_access_barriers

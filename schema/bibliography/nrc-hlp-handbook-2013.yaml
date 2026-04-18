@@ -1,0 +1,21 @@
+id: nrc-hlp-handbook-2013
+title: "Housing, Land and Property Rights in Humanitarian Action — A Handbook for Practitioners"
+short_title: "NRC HLP Handbook 2013"
+publisher: "Norwegian Refugee Council (NRC) / IFRC"
+year: 2013
+type: guidance_publication
+domain: humanitarian
+uri: "https://www.nrc.no/globalassets/pdf/legal-documents/icla/hlp-and-humanitarian-response-nrc-2013.pdf"
+access: open
+status: active
+
+informs:
+  concepts:
+    - ProtectionProfile
+  vocabularies:
+    - hlp-dispute-type
+  properties:
+    - hlp_property_dispute
+    - hlp_dispute_type
+    - hlp_discrimination
+    - hlp_restitution_awareness

@@ -1,0 +1,19 @@
+id: mk_transport_cost_change
+maturity: draft
+label:
+  en: Transport cost change vs. pre-crisis
+  fr: Évolution des coûts de transport par rapport à avant la crise
+  es: Cambio en costos de transporte vs. antes de la crisis
+
+definition:
+  en: "Whether transport costs for goods arriving at this market have increased, stayed the same, or decreased compared to before the current crisis, as reported by key vendor informants. A leading indicator of future price inflation: higher transport costs typically pass through to consumer prices within 1–4 weeks."
+  fr: "Si les coûts de transport des marchandises arrivant sur ce marché ont augmenté, sont restés stables ou ont diminué par rapport à avant la crise actuelle, tel que rapporté par les informateurs clés vendeurs. Indicateur avancé de l'inflation future des prix : des coûts de transport plus élevés se répercutent généralement sur les prix à la consommation dans un délai de 1 à 4 semaines."
+  es: "Si los costos de transporte de los bienes que llegan a este mercado han aumentado, se han mantenido iguales o han disminuido en comparación con antes de la crisis actual, según lo reportado por informantes clave vendedores. Indicador adelantado de la inflación futura de precios: los costos de transporte más altos típicamente se trasladan a los precios al consumidor dentro de 1 a 4 semanas."
+
+type: string
+cardinality: single
+core: false
+vocabulary: change-direction-3
+references: null
+category: market_supply_chain
+sensitivity: standard

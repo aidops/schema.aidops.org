@@ -1,0 +1,43 @@
+id: climate_productive_asset_sales_past_event
+maturity: draft
+label:
+  en: "Sold productive assets due to climate hazard losses in the past 5 years"
+  fr: "Vente d'actifs productifs due à des pertes causées par des aléas climatiques au cours des 5 dernières années"
+  es: "Venta de activos productivos por pérdidas de peligros climáticos en los últimos 5 años"
+
+definition:
+  en: >
+    Single-select maladaptation signal asking whether the household has sold
+    important productive assets — such as livestock, land, tools, or equipment
+    — specifically because of losses caused by drought, flood, or another
+    climate hazard in the past 5 years. A 'yes' response indicates depletion of
+    productive capital through distress coping, which erodes future adaptive
+    capacity. Boundary with LivelihoodProfile.productive_asset_loss_since_crisis:
+    that item asks about asset loss since a displacement or crisis event (general
+    trigger). Boundary with FoodSecurityProfile.lcs_sold_productive_assets (WFP
+    LCS): that item is a 30-day food-access coping indicator. This item is
+    specifically anchored to climate-hazard causality and a 5-year window to
+    capture repeated maladaptive cycles.
+    Valid codes: yes_repeatedly / yes_once / no / not_applicable_no_assets.
+  fr: >
+    Signal de maladaptation à sélection unique demandant si le ménage a vendu
+    des actifs productifs importants spécifiquement à cause de pertes causées
+    par la sécheresse, les inondations ou un autre aléa climatique au cours des
+    5 dernières années. Frontière avec LivelihoodProfile et FoodSecurityProfile :
+    cet item est ancré à la causalité d'aléa climatique sur 5 ans pour capturer
+    des cycles de maladaptation répétés.
+  es: >
+    Señal de maladaptación de selección única que pregunta si el hogar ha
+    vendido activos productivos importantes específicamente por pérdidas causadas
+    por sequía, inundaciones u otro peligro climático en los últimos 5 años.
+    Límite con LivelihoodProfile y FoodSecurityProfile: este ítem está anclado
+    a la causalidad del peligro climático con una ventana de 5 años para
+    capturar ciclos de maladaptación repetidos.
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: climate
+sensitivity: sensitive

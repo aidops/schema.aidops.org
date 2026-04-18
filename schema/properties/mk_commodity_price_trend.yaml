@@ -1,0 +1,19 @@
+id: mk_commodity_price_trend
+maturity: draft
+label:
+  en: Commodity price trend (past 30 days)
+  fr: Tendance du prix du produit (30 derniers jours)
+  es: Tendencia del precio del producto (últimos 30 días)
+
+definition:
+  en: "Direction and magnitude of price movement for this commodity over the past 30 days, as reported by key vendor informants. A leading indicator of future price levels — often more actionable than the price level alone. Hidden when mk_commodity_available = not_available (no price to trend)."
+  fr: "Direction et amplitude du mouvement des prix pour ce produit au cours des 30 derniers jours, tels que rapportés par les informateurs clés vendeurs. Indicateur avancé des niveaux de prix futurs — souvent plus exploitable que le niveau de prix seul. Masqué lorsque mk_commodity_available = not_available."
+  es: "Dirección y magnitud del movimiento de precios para este producto en los últimos 30 días, según lo reportado por informantes clave vendedores. Indicador adelantado de los niveles de precios futuros — a menudo más accionable que el nivel de precio solo. Oculto cuando mk_commodity_available = not_available."
+
+type: string
+cardinality: single
+core: true
+vocabulary: price-trend-direction
+references: null
+category: market_price_basket
+sensitivity: standard

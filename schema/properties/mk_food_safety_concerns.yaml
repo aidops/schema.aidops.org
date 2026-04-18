@@ -1,0 +1,19 @@
+id: mk_food_safety_concerns
+maturity: draft
+label:
+  en: Food safety concerns observed at food stalls
+  fr: Problèmes de sécurité alimentaire observés aux étals alimentaires
+  es: Problemas de inocuidad alimentaria observados en puestos de comida
+
+definition:
+  en: "Food safety concerns directly observed by the enumerator at food stalls during the market visit, selected from the food-safety-concern vocabulary. Multi-select. The code no_concerns_observed is mutually exclusive with all other codes and must be enforced in XLSForm constraint logic. The enumerator should walk through the food area for at least 5 minutes before answering."
+  fr: "Problèmes de sécurité alimentaire directement observés par l'enquêteur aux étals alimentaires lors de la visite du marché, sélectionnés dans le vocabulaire food-safety-concern. Multi-sélection. Le code no_concerns_observed est mutuellement exclusif avec tous les autres codes et doit être appliqué dans la logique de contrainte XLSForm."
+  es: "Problemas de inocuidad alimentaria directamente observados por el enumerador en los puestos de comida durante la visita al mercado, seleccionados del vocabulario food-safety-concern. Selección múltiple. El código no_concerns_observed es mutuamente exclusivo con todos los demás códigos y debe aplicarse en la lógica de restricción XLSForm."
+
+type: string
+cardinality: multiple
+core: false
+vocabulary: food-safety-concern
+references: null
+category: market_food_safety
+sensitivity: standard

@@ -1,4 +1,10 @@
 # AidOps-exclusive categories
+climate:
+  label:
+    en: Climate Adaptation
+    fr: "Adaptation climatique"
+    es: "Adaptación climática"
+
 context:
   label:
     en: Context
@@ -521,3 +527,131 @@ health_facility_cost_equity:
     en: "Health facility cost and equity"
     fr: "Coût et équité"
     es: "Costo y equidad"
+
+pastoral_herd:
+  label:
+    en: "Pastoral: Herd Composition and Dynamics"
+    fr: "Pastoral : Composition et dynamique du troupeau"
+    es: "Pastoral: Composición y dinámica del rebaño"
+
+pastoral_milk:
+  label:
+    en: "Pastoral: Milk Production and Consumption"
+    fr: "Pastoral : Production et consommation de lait"
+    es: "Pastoral: Producción y consumo de leche"
+
+pastoral_market:
+  label:
+    en: "Pastoral: Market Access and Terms of Trade"
+    fr: "Pastoral : Accès au marché et termes de l'échange"
+    es: "Pastoral: Acceso al mercado y términos de intercambio"
+
+pastoral_rangeland:
+  label:
+    en: "Pastoral: Rangeland and Water Access"
+    fr: "Pastoral : Pâturages et accès à l'eau"
+    es: "Pastoral: Pastizales y acceso al agua"
+
+pastoral_mobility:
+  label:
+    en: "Pastoral: Migration and Mobility"
+    fr: "Pastoral : Migration et mobilité"
+    es: "Pastoral: Migración y movilidad"
+
+pastoral_animal_health:
+  label:
+    en: "Pastoral: Animal Health and Veterinary Access"
+    fr: "Pastoral : Santé animale et accès vétérinaire"
+    es: "Pastoral: Salud animal y acceso veterinario"
+
+# MarketProfile categories
+market_metadata:
+  label:
+    en: "Market metadata and visit context"
+    fr: "Métadonnées du marché et contexte de visite"
+    es: "Metadatos del mercado y contexto de visita"
+
+market_functionality:
+  label:
+    en: "Market functionality and operations"
+    fr: "Fonctionnalité et opérations du marché"
+    es: "Funcionalidad y operaciones del mercado"
+
+market_price_basket:
+  label:
+    en: "Commodity availability and prices (price basket)"
+    fr: "Disponibilité et prix des produits (panier de prix)"
+    es: "Disponibilidad y precios de productos (cesta de precios)"
+
+market_supply_chain:
+  label:
+    en: "Supply chain status"
+    fr: "Statut de la chaîne d'approvisionnement"
+    es: "Estado de la cadena de suministro"
+
+market_accessibility:
+  label:
+    en: "Market accessibility and security"
+    fr: "Accessibilité et sécurité du marché"
+    es: "Accesibilidad y seguridad del mercado"
+
+market_cbi_feasibility:
+  label:
+    en: "Cash and CBI feasibility"
+    fr: "Faisabilité des espèces et CBI"
+    es: "Viabilidad de efectivo y CBI"
+
+market_food_safety:
+  label:
+    en: "Food safety observation"
+    fr: "Observation de la sécurité alimentaire"
+    es: "Observación de inocuidad alimentaria"
+
+# ProtectionProfile categories
+civil_documentation:
+  label:
+    en: "Civil Documentation"
+    fr: "Documentation civile"
+    es: "Documentación civil"
+
+freedom_of_movement:
+  label:
+    en: "Freedom of Movement"
+    fr: "Liberté de mouvement"
+    es: "Libertad de movimiento"
+
+hlp:
+  label:
+    en: "Housing, Land and Property"
+    fr: "Logement, terres et propriété"
+    es: "Vivienda, tierra y propiedad"
+
+physical_safety:
+  label:
+    en: "Physical Safety and Exposure to Violence"
+    fr: "Sécurité physique et exposition à la violence"
+    es: "Seguridad física y exposición a la violencia"
+
+explosive_ordnance:
+  label:
+    en: "Explosive Ordnance"
+    fr: "Engins explosifs"
+    es: "Artefactos explosivos"
+
+protection_referral:
+  label:
+    en: "Protection Referral Pathway Awareness"
+    fr: "Connaissance des voies d'orientation en matière de protection"
+    es: "Conocimiento de las vías de derivación de protección"
+
+access_to_justice:
+  label:
+    en: "Access to Justice"
+    fr: "Accès à la justice"
+    es: "Acceso a la justicia"
+
+cross_cutting:
+  label:
+    en: "Cross-cutting"
+    fr: "Transversal"
+    es: "Transversal"

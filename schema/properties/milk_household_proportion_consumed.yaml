@@ -1,0 +1,19 @@
+id: milk_household_proportion_consumed
+maturity: draft
+label:
+  en: "Proportion of household milk production consumed directly — last 7 days"
+  fr: "Proportion de la production laitière du ménage consommée directement — 7 derniers jours"
+  es: "Proporción de la producción de leche del hogar consumida directamente — últimos 7 días"
+
+definition:
+  en: "Approximate share of the milk produced by the household's animals in the last 7 days that was consumed directly by household members, as distinct from milk sold, given away, or used to make cheese or ghee for sale. Single-select from vocabulary `milk-use-share`. This is a milk-disposition indicator used in HEA food-source stacking (the proportion consumed is the input for estimating the milk caloric contribution to household diet). It complements `milk_production_liters_per_day_household` — together they allow estimation of the household's own-milk caloric intake. Grounded in FSNAU milk utilization items, HEA pastoral baseline milk disposal module (consumed vs. sold vs. processed), and LEGS 3rd edition (milk as dietary contribution vs. income source). Recall: last 7 days."
+  fr: "Part approximative du lait produit par les animaux du ménage au cours des 7 derniers jours qui a été consommée directement par les membres du ménage, par opposition au lait vendu, donné ou utilisé pour faire du fromage ou du ghee destiné à la vente. Sélection unique dans le vocabulaire `milk-use-share`. Il s'agit d'un indicateur d'utilisation du lait utilisé dans l'empilement des sources alimentaires HEA. Fondé sur les items d'utilisation du lait FSNAU, le module de disposition du lait de la ligne de base HEA pastorale et LEGS 3e éd. Rappel : 7 derniers jours."
+  es: "Proporción aproximada de la leche producida por los animales del hogar en los últimos 7 días que fue consumida directamente por los miembros del hogar, a diferencia de la leche vendida, regalada o utilizada para hacer queso o ghee para venta. Selección única del vocabulario `milk-use-share`. Es un indicador de disposición de leche utilizado en el apilamiento de fuentes alimentarias del HEA. Fundamentado en ítems de utilización de leche FSNAU, el módulo de disposición de leche de la línea base HEA pastoral y LEGS 3.a ed. Recordatorio: últimos 7 días."
+
+type: string
+cardinality: single
+core: true
+vocabulary: milk-use-share
+references: null
+category: pastoral_milk
+sensitivity: sensitive

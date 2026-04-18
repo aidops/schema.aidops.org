@@ -1,0 +1,19 @@
+id: movement_restriction_impact
+maturity: draft
+label:
+  en: "Movement restriction impact (domains affected)"
+  fr: "Impact des restrictions aux déplacements (domaines affectés)"
+  es: "Impacto de las restricciones de movimiento (dominios afectados)"
+
+definition:
+  en: "Domains of access or activity that the household was unable to reach or conduct because of freedom-of-movement restrictions in the past 3 months. Asked only when movement_restricted = yes. Multi-sectoral impact measure; feeds joint HNO severity analysis by linking protection restrictions to food, health, education, and livelihood deprivation. Based on GPC PAF Domain 1 multi-sectoral impact analysis; REACH Syria and Yemen (2022); JIAF 2.0 multi-sectoral analysis framework."
+  fr: "Domaines d'accès ou d'activité auxquels le ménage n'a pas pu accéder ou qu'il n'a pas pu exercer en raison des restrictions à la liberté de mouvement au cours des 3 derniers mois. Posée uniquement lorsque movement_restricted = oui. Mesure d'impact multisectoriel ; alimente l'analyse de sévérité HNO conjointe en reliant les restrictions de protection à la privation alimentaire, sanitaire, éducative et de moyens de subsistance. Fondé sur l'analyse d'impact multisectoriel du GPC PAF Domaine 1 ; REACH Syrie et Yémen (2022) ; cadre d'analyse multisectorielle JIAF 2.0."
+  es: "Dominios de acceso o actividad a los que el hogar no pudo acceder o realizar debido a restricciones de libertad de movimiento en los últimos 3 meses. Se pregunta solo cuando movement_restricted = sí. Medida de impacto multisectorial; alimenta el análisis de severidad conjunto del HNO vinculando las restricciones de protección con la privación de alimentos, salud, educación y medios de vida. Basado en el análisis de impacto multisectorial del GPC PAF Dominio 1; REACH Siria y Yemen (2022); marco de análisis multisectorial del JIAF 2.0."
+
+type: string
+cardinality: multiple
+vocabulary: movement-restriction-impact
+references: null
+category: freedom_of_movement
+core: false
+sensitivity: sensitive

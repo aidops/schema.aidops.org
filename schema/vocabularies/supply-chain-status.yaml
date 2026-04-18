@@ -1,0 +1,71 @@
+id: supply-chain-status
+maturity: draft
+label:
+  en: Supply Chain Status
+  fr: Statut de la chaîne d'approvisionnement
+  es: Estado de la cadena de suministro
+definition:
+  en: >
+    The overall functional state of the supply and transport chains feeding a
+    market, as assessed by key vendor informants. A five-level scale from fully
+    functional to non-functional, aligned with the EMMA Toolkit v2 supply chain
+    analysis, ICRC RAM 2014, and WFP MAG 2021. Potential for reuse in future
+    LogisticsProfile or supply-chain monitoring contexts.
+  fr: >
+    L'état fonctionnel global des chaînes d'approvisionnement et de transport
+    alimentant un marché, tel qu'évalué par les informateurs clés vendeurs.
+    Échelle à cinq niveaux allant de pleinement fonctionnel à non fonctionnel,
+    alignée sur l'analyse de la chaîne d'approvisionnement de l'EMMA Toolkit v2,
+    l'ICRC RAM 2014 et le WFP MAG 2021.
+  es: >
+    El estado funcional general de las cadenas de suministro y transporte que
+    alimentan a un mercado, según la evaluación de informantes clave vendedores.
+    Escala de cinco niveles desde completamente funcional hasta no funcional,
+    alineada con el análisis de cadena de suministro del EMMA Toolkit v2,
+    ICRC RAM 2014 y WFP MAG 2021.
+values:
+- code: fully_functional
+  label:
+    en: Fully functional
+    fr: Pleinement fonctionnel
+    es: Completamente funcional
+  definition:
+    en: "Goods arriving through all normal supply and transport channels without significant delay, route change, or cost increase. Supply chain actors (wholesalers, transporters, intermediaries) operating normally."
+    fr: "Marchandises arrivant par tous les circuits d'approvisionnement et de transport habituels sans délai significatif, changement d'itinéraire ou augmentation des coûts. Acteurs de la chaîne d'approvisionnement (grossistes, transporteurs, intermédiaires) fonctionnant normalement."
+    es: "Los bienes llegan a través de todos los canales normales de suministro y transporte sin retrasos significativos, cambios de ruta o aumentos de costos. Los actores de la cadena de suministro (mayoristas, transportistas, intermediarios) operan con normalidad."
+- code: mostly_functional_minor_delays
+  label:
+    en: Mostly functional — minor delays
+    fr: Majoritairement fonctionnel — délais mineurs
+    es: Mayormente funcional — retrasos menores
+  definition:
+    en: "Primary supply routes intact; some alternative routes being used due to minor disruptions. Supply arriving with modest delays (1–3 days beyond normal) or small cost increases (<20% transport cost increase). Stock replenishment somewhat slower than normal."
+    fr: "Routes d'approvisionnement principales intactes ; certaines routes alternatives sont utilisées en raison de perturbations mineures. Approvisionnement arrivant avec des délais modestes (1 à 3 jours au-delà du normal) ou de légères augmentations des coûts (<20 % d'augmentation des coûts de transport). Réapprovisionnement des stocks légèrement plus lent que la normale."
+    es: "Rutas de suministro principales intactas; se usan algunas rutas alternativas debido a interrupciones menores. El suministro llega con retrasos modestos (1–3 días más de lo normal) o pequeños aumentos de costos (<20 % de aumento de costo de transporte). Reabastecimiento de stock algo más lento que lo normal."
+- code: partially_functional_major_disruptions
+  label:
+    en: Partially functional — major disruptions
+    fr: Partiellement fonctionnel — perturbations majeures
+    es: Parcialmente funcional — interrupciones mayores
+  definition:
+    en: "One or more major supply routes are blocked, inaccessible, or very costly. Supply arriving through limited alternative channels at significantly higher cost (>20% transport increase) or with delays of more than one week. Visible reduction in stock diversity or depth."
+    fr: "Une ou plusieurs routes d'approvisionnement principales sont bloquées, inaccessibles ou très coûteuses. Approvisionnement arrivant par des canaux alternatifs limités à un coût significativement plus élevé (>20 % d'augmentation du transport) ou avec des délais de plus d'une semaine. Réduction visible de la diversité ou de la profondeur des stocks."
+    es: "Una o más rutas de suministro principales están bloqueadas, inaccesibles o muy costosas. El suministro llega a través de canales alternativos limitados a un costo significativamente mayor (>20 % de aumento de transporte) o con retrasos de más de una semana. Reducción visible en la diversidad o profundidad del stock."
+- code: non_functional
+  label:
+    en: Non-functional
+    fr: Non fonctionnel
+    es: No funcional
+  definition:
+    en: "Supply chains have collapsed. Goods are not arriving through any normal or alternative channel. Market may be drawing down on pre-positioned stock only; replenishment expected to cause market failure within days to weeks."
+    fr: "Les chaînes d'approvisionnement se sont effondrées. Les marchandises n'arrivent par aucun canal normal ou alternatif. Le marché peut utiliser uniquement des stocks pré-positionnés ; le réapprovisionnement devrait provoquer une défaillance du marché dans les jours à semaines."
+    es: "Las cadenas de suministro han colapsado. Los bienes no llegan a través de ningún canal normal o alternativo. El mercado puede estar agotando solo stock preposicionado; se espera que el reabastecimiento cause una falla del mercado en días a semanas."
+- code: dont_know
+  label:
+    en: Don't know
+    fr: Ne sait pas
+    es: No sabe
+  definition:
+    en: "Vendor informants unable to assess supply chain status; enumerator cannot determine from observation."
+    fr: "Les informateurs vendeurs sont incapables d'évaluer le statut de la chaîne d'approvisionnement ; l'enquêteur ne peut pas le déterminer à partir de l'observation."
+    es: "Los informantes vendedores no pueden evaluar el estado de la cadena de suministro; el enumerador no puede determinarlo a partir de la observación."

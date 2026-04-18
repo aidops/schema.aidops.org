@@ -1,0 +1,42 @@
+id: climate_distress_migration_past_event
+maturity: draft
+label:
+  en: "Household or member forced to move due to climate hazard in the past 5 years"
+  fr: "Le ménage ou un membre contraint de se déplacer en raison d'un aléa climatique au cours des 5 dernières années"
+  es: "Hogar o miembro forzado a mudarse por un peligro climático en los últimos 5 años"
+
+definition:
+  en: >
+    Single-select maladaptation signal asking whether the household or any of
+    its members has been forced to move or leave home specifically because of
+    losses or threats from drought, flood, cyclone, or another climate-related
+    event — even temporarily — in the past 5 years. Captures involuntary climate
+    displacement as a signal that the household has already exhausted in-place
+    coping options, eroding future adaptive capacity. Boundary with
+    DisplacementProfile: if the household is currently displaced, a full
+    DisplacementProfile should be collected; the reason field there should
+    include a climate-displacement code. This property is a maladaptation flag,
+    not a full displacement record. Boundary with
+    climate_migration_adaptation_intent: that captures voluntary planned
+    future relocation as an adaptive strategy; this captures past forced
+    displacement. Valid codes: yes_multiple_times / yes_once / no / dont_know.
+  fr: >
+    Signal de maladaptation à sélection unique demandant si le ménage ou l'un
+    de ses membres a été contraint de se déplacer spécifiquement à cause de
+    pertes ou de menaces liées à la sécheresse, aux inondations, aux cyclones
+    ou à un autre événement climatique au cours des 5 dernières années. Frontière
+    avec DisplacementProfile et climate_migration_adaptation_intent.
+  es: >
+    Señal de maladaptación de selección única que pregunta si el hogar o alguno
+    de sus miembros se ha visto obligado a mudarse específicamente por pérdidas
+    o amenazas de sequía, inundación, ciclón u otro evento climático en los
+    últimos 5 años. Límite con DisplacementProfile y
+    climate_migration_adaptation_intent.
+
+type: string
+cardinality: single
+core: true
+vocabulary: null
+references: null
+category: climate
+sensitivity: sensitive

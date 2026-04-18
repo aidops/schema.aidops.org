@@ -1,0 +1,19 @@
+id: rangeland_condition_perception
+maturity: draft
+label:
+  en: "Rangeland condition — household perception of current pasture availability and quality"
+  fr: "Condition des pâturages — perception du ménage de la disponibilité et de la qualité actuelles des pâturages"
+  es: "Condición de los pastizales — percepción del hogar sobre la disponibilidad y calidad actuales de los pastos"
+
+definition:
+  en: "Household assessment of the availability and quality of pasture (grass and browse) for their animals in the current grazing area at the time of the interview. Single-select from vocabulary `rangeland-condition`. Assessed at the time of interview (current condition, not a recall item). This is a pastoral-specific item: FoodSecurityProfile and AgricultureProfile have no equivalent. Household perception of rangeland condition is used as a proxy for satellite NDVI data when remote sensing data are unavailable or when ground-truth triangulation is needed. FSNAU triangulates this household-perception item against satellite NDVI data at livelihood-zone level for their biannual Somalia assessments. The vocabulary codes (very_good through none) are adapted from the FAO GIEWS household perception methodology and align with NDVI anomaly severity thresholds used in FEWSNET early warning. Grounded in FAO GIEWS pastoral rangeland monitoring methodology, FSNAU rangeland assessment items, LEGS 3rd edition Chapter 3, FEWSNET livelihoods zone monitoring, and IPC AFI pastoral annex Section 4.1."
+  fr: "Évaluation par le ménage de la disponibilité et de la qualité des pâturages (herbe et broutage) pour ses animaux dans la zone de pâturage actuelle au moment de l'entretien. Sélection unique dans le vocabulaire `rangeland-condition`. Évalué au moment de l'entretien (condition actuelle, pas un item de rappel). La perception des ménages est utilisée comme proxy des données satellitaires NDVI lorsque celles-ci sont indisponibles. FSNAU triangule cet item avec les données NDVI au niveau de la zone de moyens d'existence. Fondé sur la méthodologie FAO GIEWS, les items d'évaluation des pâturages FSNAU, LEGS 3e éd. Chapitre 3, le suivi des zones de moyens d'existence FEWSNET et l'annexe pastoraliste IPC AFI Section 4.1."
+  es: "Evaluación del hogar sobre la disponibilidad y calidad de los pastos (hierba y ramoneo) para sus animales en el área de pastoreo actual al momento de la entrevista. Selección única del vocabulario `rangeland-condition`. Evaluado al momento de la entrevista (condición actual, no un ítem de recordatorio). La percepción del hogar se usa como proxy de los datos satelitales NDVI cuando no están disponibles. FSNAU triangula este ítem con datos NDVI a nivel de zona de medios de vida. Fundamentado en la metodología FAO GIEWS, ítems de evaluación de pastizales FSNAU, LEGS 3.a ed. Capítulo 3, el monitoreo de zonas de medios de vida FEWSNET y el anexo pastoralista IPC AFI Sección 4.1."
+
+type: string
+cardinality: single
+core: true
+vocabulary: rangeland-condition
+references: null
+category: pastoral_rangeland
+sensitivity: sensitive

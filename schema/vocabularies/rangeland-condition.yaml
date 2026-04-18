@@ -1,0 +1,65 @@
+id: rangeland-condition
+maturity: draft
+label:
+  en: "Rangeland Condition"
+  fr: "Condition des pâturages"
+  es: "Condición de los pastizales"
+definition:
+  en: "Household perception of current pasture (grass and browse) availability and quality in the current grazing area. Used in PastoralFoodSecurityProfile as a proxy for satellite NDVI data when remote sensing data are unavailable or when ground-truth triangulation is needed. Codes align with NDVI anomaly severity thresholds used in FAO GIEWS and FEWSNET early warning systems. FSNAU triangulates household-perception responses against NDVI data at livelihood-zone level."
+  fr: "Perception du ménage de la disponibilité et de la qualité actuelles des pâturages (herbe et broutage) dans la zone de pâturage actuelle. Utilisé comme proxy des données satellitaires NDVI. Les codes s'alignent sur les seuils de gravité des anomalies NDVI utilisés dans FAO GIEWS et FEWSNET."
+  es: "Percepción del hogar sobre la disponibilidad y calidad actuales de los pastos (hierba y ramoneo) en el área de pastoreo actual. Usado como proxy de los datos satelitales NDVI. Los códigos se alinean con los umbrales de gravedad de anomalías NDVI usados en FAO GIEWS y FEWSNET."
+values:
+  - code: very_good
+    label:
+      en: "Very good — abundant pasture, green and sufficient"
+      fr: "Très bon — pâturage abondant, vert et suffisant"
+      es: "Muy bueno — pastos abundantes, verdes y suficientes"
+    definition:
+      en: "Pasture is plentiful and of high quality; livestock body condition is likely improving."
+      fr: "Le pâturage est abondant et de haute qualité ; l'état corporel du bétail s'améliore probablement."
+      es: "Los pastos son abundantes y de alta calidad; la condición corporal del ganado probablemente está mejorando."
+  - code: good
+    label:
+      en: "Good — adequate pasture, mostly sufficient"
+      fr: "Bon — pâturage adéquat, généralement suffisant"
+      es: "Bueno — pastos adecuados, mayormente suficientes"
+    definition:
+      en: "Pasture is adequate for herd needs; normal seasonal conditions."
+      fr: "Le pâturage est adéquat pour les besoins du troupeau ; conditions saisonnières normales."
+      es: "Los pastos son adecuados para las necesidades del rebaño; condiciones estacionales normales."
+  - code: fair
+    label:
+      en: "Fair — pasture is reduced but livestock can still graze"
+      fr: "Passable — pâturage réduit mais le bétail peut encore pâturer"
+      es: "Regular — los pastos son reducidos pero el ganado aún puede pastar"
+    definition:
+      en: "Pasture is below normal; livestock are grazing but under some nutritional stress."
+      fr: "Le pâturage est inférieur à la normale ; le bétail pâture mais est sous un certain stress nutritionnel."
+      es: "Los pastos están por debajo de lo normal; el ganado pasta pero está bajo cierto estrés nutricional."
+  - code: poor
+    label:
+      en: "Poor — very limited pasture; livestock losing body condition"
+      fr: "Mauvais — pâturage très limité ; bétail perdant de la condition corporelle"
+      es: "Deficiente — pastos muy limitados; el ganado pierde condición corporal"
+    definition:
+      en: "Severe pasture shortage; livestock are losing body condition rapidly. Early warning threshold."
+      fr: "Grave pénurie de pâturage ; le bétail perd rapidement de la condition corporelle. Seuil d'alerte précoce."
+      es: "Escasez severa de pastos; el ganado pierde condición corporal rápidamente. Umbral de alerta temprana."
+  - code: none
+    label:
+      en: "None — no usable pasture; bare ground"
+      fr: "Aucun — aucun pâturage utilisable ; sol nu"
+      es: "Ninguno — sin pastos utilizables; suelo desnudo"
+    definition:
+      en: "Complete absence of usable pasture; herd survival at acute risk without emergency feed interventions."
+      fr: "Absence complète de pâturage utilisable ; la survie du troupeau est en danger aigu sans interventions d'urgence alimentaire."
+      es: "Ausencia completa de pastos utilizables; la supervivencia del rebaño está en riesgo agudo sin intervenciones de alimentación de emergencia."
+  - code: dont_know
+    label:
+      en: "Don't know / not applicable"
+      fr: "Ne sait pas / sans objet"
+      es: "No sabe / no aplica"
+    definition:
+      en: "Respondent cannot assess rangeland condition, or the household's herd is not currently in a grazing area."
+      fr: "Le répondant ne peut pas évaluer la condition des pâturages, ou le troupeau du ménage n'est pas actuellement dans une zone de pâturage."
+      es: "El encuestado no puede evaluar la condición de los pastizales, o el rebaño del hogar no está actualmente en un área de pastoreo."
