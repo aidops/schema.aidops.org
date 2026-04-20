@@ -16,7 +16,7 @@
     "@floating-ui/dom": "^1.7.6",
     "astro": "^6.1.4",
     "highlight.js": "^11.11.1",
-    "marked": "^18.0.0",
+    "marked": "^18.0.2",
     "marked-gfm-heading-id": "^4.1.4",
     "marked-highlight": "^2.2.4",
     "minisearch": "^7.2.0"
