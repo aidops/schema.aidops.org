@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro';
 import { defaultLocale, type Locale } from '../../i18n/languages';
 import { useTranslations, localePath } from '../../i18n/utils';
 import { loadVocabulary } from '../../data/vocabulary';
-import { isOwned } from '../../data/concept-utils';
+import { isOwned, externalHref } from '../../data/concept-utils';
+import PsMark from '../PsMark.astro';
 
 interface Props {
   locale?: Locale;
@@ -38,11 +39,14 @@ const properties = Object.values(vocab.properties).filter(isOwned).sort(byMaturi
     <tbody>
       {properties.map((p) => {
         const conceptRef = p.type.match(/^concept:(.+)$/)?.[1];
+        const refConcept = conceptRef ? vocab.concepts[conceptRef] : undefined;
         return (
           <tr>
             <td><a href={localePath(p.path, locale)}>{p.label?.[locale] ?? p.label?.en ?? p.id}</a></td>
             <td data-label={t('properties.table.type')}>{conceptRef
-              ? <a href={localePath(vocab.concepts[conceptRef]?.path || `/${conceptRef}`, locale)}><code>{p.type}</code></a>
+              ? isOwned(refConcept)
+                ? <a href={localePath(refConcept!.path, locale)}><code>{p.type}</code></a>
+                : <a href={externalHref(refConcept) ?? `https://publicschema.org/${conceptRef}`} target="_blank" rel="noopener noreferrer"><PsMark /><code>{p.type}</code></a>
               : <code>{p.type}</code>
             }</td>
             <td data-label={t('properties.table.used_by')}>{p.used_by.join(", ")}</td>

@@ -4,6 +4,7 @@ import ExpandableDefinition from '../ExpandableDefinition.astro';
 import { defaultLocale, type Locale } from '../../i18n/languages';
 import { useTranslations, localePath } from '../../i18n/utils';
 import { loadVocabulary } from '../../data/vocabulary';
+import { isOwned } from '../../data/concept-utils';
 
 interface Props {
   locale?: Locale;
@@ -20,6 +21,7 @@ const vocabLabel = (v: { id: string; label?: { en?: string; fr?: string; es?: st
   v.label?.[locale] ?? v.label?.en ?? v.id;
 const showCanonical = locale !== defaultLocale;
 const vocabularies = Object.entries(vocab.vocabularies)
+  .filter(([, v]) => isOwned(v))
   .map(([key, v]) => ({ key, ...v }))
   .sort((a, b) =>
     (maturityRank[a.maturity] ?? 9) - (maturityRank[b.maturity] ?? 9) || a.key.localeCompare(b.key)

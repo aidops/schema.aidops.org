@@ -199,7 +199,10 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                 return (
                   <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                     <td>
-                      <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                      {isOwned(p.detail)
+                        ? <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                        : <a href={externalHref(p.detail) ?? `https://publicschema.org/${p.id}`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(p.detail)}><PsMark />{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                      }
                       {p.from && (
                         <span class="inherited-badge">
                           {t('concept_detail.inherited_from')} {isOwned(fromConcept)
@@ -233,7 +236,13 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                         );
                       })()}
                       {p.detail?.vocabulary && (
-                        <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(vocab.vocabularies[p.detail.vocabulary])}>{p.detail.vocabulary}</a>)</>
+                        (() => {
+                          const v = vocab.vocabularies[p.detail.vocabulary!];
+                          return <> ({isOwned(v)
+                            ? <a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(v)}>{p.detail.vocabulary}</a>
+                            : <a href={externalHref(v) ?? `https://publicschema.org/vocabularies/${p.detail.vocabulary}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(v)}><PsMark />{p.detail.vocabulary}</a>
+                          })</>;
+                        })()
                       )}
                     </td>
                     <td data-label={t('concept_detail.table.definition')}>
@@ -266,7 +275,10 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
             return (
               <tr class={p.from ? 'inherited-row' : ''} id={`prop-${p.id}`}>
                 <td>
-                  <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                  {isOwned(p.detail)
+                        ? <a href={propLink(p.id)} data-preview-key={previewKey(p.detail)}>{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                        : <a href={externalHref(p.detail) ?? `https://publicschema.org/${p.id}`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(p.detail)}><PsMark />{p.detail?.label?.[locale] ?? p.detail?.label?.en ?? p.id}</a>
+                      }
                   {p.from && (
                     <span class="inherited-badge">
                       {t('concept_detail.inherited_from')} {isOwned(fromConcept)
@@ -298,7 +310,13 @@ const showsPsExtendsHint = hasPsSupertype || hasPsInheritedProp;
                     );
                   })()}
                   {p.detail?.vocabulary && (
-                    <> (<a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(vocab.vocabularies[p.detail.vocabulary])}>{p.detail.vocabulary}</a>)</>
+                    (() => {
+                          const v = vocab.vocabularies[p.detail.vocabulary!];
+                          return <> ({isOwned(v)
+                            ? <a href={localePath(`/vocabularies/${p.detail.vocabulary}`, locale)} data-preview-key={previewKey(v)}>{p.detail.vocabulary}</a>
+                            : <a href={externalHref(v) ?? `https://publicschema.org/vocabularies/${p.detail.vocabulary}/`} target="_blank" rel="noopener noreferrer" data-preview-key={previewKey(v)}><PsMark />{p.detail.vocabulary}</a>
+                          })</>;
+                        })()
                   )}
                 </td>
                 <td data-label={t('concept_detail.table.definition')}>

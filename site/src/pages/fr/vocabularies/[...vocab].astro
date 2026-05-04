@@ -1,10 +1,13 @@
 ---
 import VocabDetail from '../../../components/pages/VocabDetail.astro';
 import { loadVocabulary } from '../../../data/vocabulary';
+import { isOwned } from '../../../data/concept-utils';
 
 export function getStaticPaths() {
   const vocab = loadVocabulary();
-  return Object.keys(vocab.vocabularies).map((key) => ({ params: { vocab: key } }));
+  return Object.entries(vocab.vocabularies)
+    .filter(([, v]) => isOwned(v))
+    .map(([key]) => ({ params: { vocab: key } }));
 }
 ---
 <VocabDetail vocab={Astro.params.vocab!} locale="fr" />

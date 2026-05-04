@@ -6,15 +6,18 @@
 import ConceptDetail from '../../components/pages/ConceptDetail.astro';
 import PropertyDetail from '../../components/pages/PropertyDetail.astro';
 import { loadVocabulary } from '../../data/vocabulary';
+import { isOwned } from '../../data/concept-utils';
 
 export function getStaticPaths() {
   const vocab = loadVocabulary();
   const paths = [];
   for (const [id, concept] of Object.entries(vocab.concepts)) {
+    if (!isOwned(concept)) continue;
     const slug = concept.path.replace(/^\//, '');
     paths.push({ params: { slug }, props: { kind: 'concept' as const, termId: id } });
   }
   for (const [id, prop] of Object.entries(vocab.properties)) {
+    if (!isOwned(prop)) continue;
     const slug = prop.path.replace(/^\//, '');
     paths.push({ params: { slug }, props: { kind: 'property' as const, termId: id } });
   }
