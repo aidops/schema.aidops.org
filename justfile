@@ -32,6 +32,7 @@ clean:
 # Generate dist/ from YAML sources (AidOps + vendored PublicSchema)
 build: clean
     uv run publicschema build --profile-dir "$PWD" --out "$PWD/{{dist_dir}}"
+    uv run python scripts/emit_preview_bundles.py --dist "{{dist_dir}}"
     cp {{dist_dir}}/vocabulary.json {{site_dir}}/public/vocabulary.json
     mkdir -p {{site_dir}}/public/preview
     rsync -a {{dist_dir}}/preview/ {{site_dir}}/public/preview/
