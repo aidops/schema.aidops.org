@@ -35,6 +35,7 @@ build: clean
     cp {{dist_dir}}/vocabulary.json {{site_dir}}/public/vocabulary.json
     mkdir -p {{site_dir}}/public/preview
     rsync -a {{dist_dir}}/preview/ {{site_dir}}/public/preview/
+    rsync -a --exclude='preview/' --include='*/' --include='*.jsonld' --exclude='*' {{dist_dir}}/ {{site_dir}}/public/
 
 # Validate schema (loads project.yaml, resolves deps, compiles embedded profiles)
 validate:
