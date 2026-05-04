@@ -1,15 +1,13 @@
 # SPDX-License-Identifier: Apache-2.0
 """Fetch and vendor the PublicSchema schema directory.
 
-Copies the local PublicSchema schema into vendor/publicschema/schema/ and
-synthesizes a project.yaml from the legacy _meta.yaml so that
-publicschema-build's dependency resolver can find the manifest.
+Copies the local PublicSchema schema into vendor/publicschema/schema/.
+If upstream ships schema/project.yaml, that manifest is used as-is.
+Older PS releases that only ship _meta.yaml fall through to a synth
+shim that converts _meta.yaml into the SchemaProject manifest shape.
 
 Usage:
     uv run python scripts/fetch_publicschema.py [--local-path PATH]
-
-When Phase 6 lands and PublicSchema itself ships schema/project.yaml, the
-synth step below becomes a no-op (or can be removed entirely).
 """
 
 from __future__ import annotations
@@ -112,9 +110,11 @@ def main(argv: list[str] | None = None) -> int:
     if not local_path.exists():
         print(f"error: local_path does not exist: {local_path}", file=sys.stderr)
         return 1
-    if not (local_path / "_meta.yaml").exists():
+    has_upstream_project_yaml = (local_path / "project.yaml").exists()
+    has_meta_yaml = (local_path / "_meta.yaml").exists()
+    if not has_upstream_project_yaml and not has_meta_yaml:
         print(
-            f"error: no _meta.yaml found at {local_path}; "
+            f"error: neither project.yaml nor _meta.yaml found at {local_path}; "
             "is this a PublicSchema schema/ directory?",
             file=sys.stderr,
         )
@@ -134,22 +134,30 @@ def main(argv: list[str] | None = None) -> int:
     shutil.copytree(local_path, VENDOR_DEST)
     print(f"Copied {local_path} -> {VENDOR_DEST}")
 
-    # Read the copied _meta.yaml.
-    meta_path = VENDOR_DEST / "_meta.yaml"
-    meta = yaml.safe_load(meta_path.read_text(encoding="utf-8")) or {}
+    # Determine the actual version, preferring upstream project.yaml.
+    vendored_project_yaml = VENDOR_DEST / "project.yaml"
+    if vendored_project_yaml.exists():
+        vendored_project = (
+            yaml.safe_load(vendored_project_yaml.read_text(encoding="utf-8")) or {}
+        )
+        actual_version = str(
+            vendored_project.get("schema_project", {}).get("version", "")
+        )
+        print(f"  Using upstream project.yaml at {vendored_project_yaml}")
+    else:
+        # Synth fallback for older PS releases that only ship _meta.yaml.
+        meta_path = VENDOR_DEST / "_meta.yaml"
+        meta = yaml.safe_load(meta_path.read_text(encoding="utf-8")) or {}
+        actual_version = str(meta.get("version", ""))
+        _synthesize_project_yaml(meta, vendored_project_yaml)
 
     # Version check.
-    actual_version = str(meta.get("version", ""))
     if actual_version != expected_version:
         print(
             f"warning: vendor version {actual_version!r} does not match "
             f"pinned version {expected_version!r} in schema/project.yaml",
             file=sys.stderr,
         )
-
-    # Synthesize project.yaml (idempotent).
-    synth_dest = VENDOR_DEST / "project.yaml"
-    _synthesize_project_yaml(meta, synth_dest)
 
     # Validate via publicschema-build.
     # vendor/publicschema/schema/project.yaml → dep repo root = vendor/publicschema/
