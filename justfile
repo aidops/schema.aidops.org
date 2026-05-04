@@ -55,6 +55,10 @@ site-build: validate build
 site-preview:
     cd {{site_dir}} && npm run preview
 
+# Check internal links in the built site (offline, no network)
+check-links:
+    lychee --offline --include-fragments --root-dir "$PWD/{{site_dir}}/dist" "{{site_dir}}/dist"
+
 # Install site dependencies
 site-install:
     cd {{site_dir}} && npm install
