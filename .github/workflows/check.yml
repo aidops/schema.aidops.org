@@ -7,15 +7,28 @@ on:
 permissions:
   contents: read
 
+env:
+  AIDOPS_DIR: 204-programs-delivery-commons/repo/schema_aidops_org
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      # Check out AidOps at the same relative path used in the local monorepo,
+      # so that the [tool.uv.sources] path "../../../apps/publicschema-build"
+      # in pyproject.toml resolves correctly.
       - uses: actions/checkout@v4
         with:
+          path: 204-programs-delivery-commons/repo/schema_aidops_org
           fetch-depth: 0
 
-      # Vendor PublicSchema schema/ for cross-schema resolution
+      # Sibling tool that AidOps wires in via [tool.uv.sources].
+      - uses: actions/checkout@v4
+        with:
+          repository: PublicSchema/publicschema-build
+          path: apps/publicschema-build
+
+      # Vendored PublicSchema schema/ for cross-schema resolution.
       - uses: actions/checkout@v4
         with:
           repository: PublicSchema/publicschema.org
@@ -24,29 +37,42 @@ jobs:
 
       - uses: astral-sh/setup-uv@v4
 
-      - run: uv sync
+      - name: Sync deps
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv sync
 
-      - name: Fetch vendored PublicSchema
-        run: uv run python -m build.fetch_dependency --local .publicschema/schema
+      - name: Vendor PublicSchema schema
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run python scripts/fetch_publicschema.py --local-path "$GITHUB_WORKSPACE/.publicschema/schema"
 
       - name: Validate schema
-        run: uv run python -m build.validate
-
-      - name: Lint schema content
-        run: uv run python -m build.lint
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run publicschema validate --profile-dir "$PWD"
 
       - name: Run tests
+        working-directory: ${{ env.AIDOPS_DIR }}
         run: uv run pytest
 
-      - name: Build vocabulary data
-        run: uv run python -m build.build
+      - name: Build dist artifacts
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run publicschema build --profile-dir "$PWD" --out "$PWD/dist"
+
+      - name: Stage downloads into site/public
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: |
+          mkdir -p site/public/preview
+          rsync -a dist/preview/ site/public/preview/
+          cp dist/vocabulary.json site/public/vocabulary.json
+          rsync -a --exclude='preview/' --include='*/' --include='*.jsonld' --include='*.schema.json' --include='*.csv' --include='*.xlsx' --exclude='*' dist/ site/public/
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
 
       - name: Install site dependencies
-        run: cd site && npm ci
+        working-directory: ${{ env.AIDOPS_DIR }}/site
+        run: npm ci
 
       - name: Build site
-        run: cd site && npm run build
+        working-directory: ${{ env.AIDOPS_DIR }}/site
+        run: npm run build

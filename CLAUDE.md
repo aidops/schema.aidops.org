@@ -66,3 +66,4 @@ just site-build         # full production build
 - `vendor/` is gitignored. CI must fetch it explicitly.
 - The `dist/` directory is generated. Never hand-edit files there.
 - When adding properties that reference PS vocabularies, the vocabulary must exist in vendored PS.
+- `pyproject.toml` declares `publicschema-build` via `[tool.uv.sources]` with the relative path `../../../apps/publicschema-build`. This assumes the AidOps repo is checked out inside the `204-programs-delivery-commons` monorepo. CI workflows replicate the same layout via `actions/checkout` paths.

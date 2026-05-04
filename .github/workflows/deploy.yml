@@ -13,15 +13,28 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  AIDOPS_DIR: 204-programs-delivery-commons/repo/schema_aidops_org
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Check out AidOps at the same relative path used in the local monorepo,
+      # so that the [tool.uv.sources] path "../../../apps/publicschema-build"
+      # in pyproject.toml resolves correctly.
       - uses: actions/checkout@v4
         with:
+          path: 204-programs-delivery-commons/repo/schema_aidops_org
           fetch-depth: 0
 
-      # Vendor PublicSchema schema/ for cross-schema resolution
+      # Sibling tool that AidOps wires in via [tool.uv.sources].
+      - uses: actions/checkout@v4
+        with:
+          repository: PublicSchema/publicschema-build
+          path: apps/publicschema-build
+
+      # Vendored PublicSchema schema/ for cross-schema resolution.
       - uses: actions/checkout@v4
         with:
           repository: PublicSchema/publicschema.org
@@ -30,28 +43,29 @@ jobs:
 
       - uses: astral-sh/setup-uv@v4
 
-      - run: uv sync
+      - name: Sync deps
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv sync
 
-      - name: Fetch vendored PublicSchema
-        run: uv run python -m build.fetch_dependency --local .publicschema/schema
+      - name: Vendor PublicSchema schema
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run python scripts/fetch_publicschema.py --local-path "$GITHUB_WORKSPACE/.publicschema/schema"
 
       - name: Validate schema
-        run: uv run python -m build.validate
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run publicschema validate --profile-dir "$PWD"
 
-      - name: Lint schema content
-        run: uv run python -m build.lint
+      - name: Build dist artifacts
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: uv run publicschema build --profile-dir "$PWD" --out "$PWD/dist"
 
-      - name: Build vocabulary data
-        run: uv run python -m build.build
-
-      - name: Copy downloads to site
-        run: rsync -a --include='*.csv' --include='*.xlsx' --include='*/' --exclude='*' dist/downloads/ site/public/
-
-      - name: Copy JSON Schemas to site
-        run: rsync -a dist/schemas/ site/public/schemas/
-
-      - name: Copy vocabulary data to site
-        run: cp dist/vocabulary.json site/public/vocabulary.json
+      - name: Stage downloads into site/public
+        working-directory: ${{ env.AIDOPS_DIR }}
+        run: |
+          mkdir -p site/public/preview
+          rsync -a dist/preview/ site/public/preview/
+          cp dist/vocabulary.json site/public/vocabulary.json
+          rsync -a --exclude='preview/' --include='*/' --include='*.jsonld' --include='*.schema.json' --include='*.csv' --include='*.xlsx' --exclude='*' dist/ site/public/
 
       - uses: actions/setup-node@v4
         with:
@@ -60,7 +74,7 @@ jobs:
       - name: Build site
         uses: withastro/action@v6
         with:
-          path: site
+          path: ${{ env.AIDOPS_DIR }}/site
 
   deploy:
     needs: build
