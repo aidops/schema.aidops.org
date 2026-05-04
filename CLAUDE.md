@@ -8,18 +8,20 @@ See the sibling project at `../v2/` for PublicSchema itself.
 
 ## Architecture
 
-- **schema/**: YAML source of truth. Concepts, properties, vocabularies, categories, bibliography.
+- **schema/**: YAML source of truth. Manifest (`project.yaml`), concepts, properties, vocabularies, categories, bibliography.
 - **vendor/publicschema/schema/**: Vendored PS schema (fetched via `just fetch-publicschema`, not committed).
-- **build/**: Python build pipeline. Validates YAML, generates `dist/` outputs (JSON, CSV, XLSX, TTL, SHACL, JSON-LD).
-- **dist/**: Generated artifacts. Never hand-edited.
+- **scripts/fetch_publicschema.py**: Vendors PS into `vendor/` and synthesizes a `project.yaml` for dep resolution.
+- **dist/**: Generated artifacts (JSON, CSV, XLSX, TTL, SHACL, JSON-LD). Never hand-edited.
 - **site/**: Astro static site. Reads `dist/vocabulary.json` via Vite alias.
 - **tests/**: Python tests (pytest).
 
-Data flows: `schema/` + `vendor/publicschema/` -> `build/` -> `dist/` -> `site/` -> static HTML.
+Build tooling lives in the `publicschema-build` package (CLI: `publicschema build|validate`), wired in via `[tool.uv.sources]`.
+
+Data flows: `schema/` + `vendor/publicschema/` -> `publicschema build` -> `dist/` -> `site/` -> static HTML.
 
 ## Cross-schema resolution
 
-The build pipeline loads YAML from both `schema/` (AidOps-owned) and `vendor/publicschema/schema/` (vendored PS) into a single merged lookup. All type resolution functions see the full type graph. The output step filters to emit only AidOps-owned types.
+`schema/project.yaml` declares AidOps as `kind: extension` with PublicSchema as a `source.type: local` dependency pointing at `vendor/publicschema/schema`. `publicschema-build` loads both projects, resolves cross-schema references, and emits only AidOps-owned types into `dist/`.
 
 Key rules:
 - AidOps concepts can reference PS supertypes (e.g., `supertypes: [Profile]`)
@@ -30,9 +32,9 @@ Key rules:
 
 ## Vendor dependency
 
-PublicSchema is version-pinned in `aidops.yaml`. Fetch it with:
+PublicSchema is version-pinned in `schema/project.yaml` under `schema_project.dependencies`. Fetch it with:
 ```bash
-just fetch-publicschema   # uses --local mode for development
+just fetch-publicschema   # copies ../v2/schema into vendor/ and synthesizes its project.yaml
 ```
 
 The `vendor/` directory is gitignored. CI fetches it before build/validate.
@@ -46,7 +48,7 @@ just build              # generate dist/ from YAML sources
 just validate           # validate all YAML source files
 just dev                # build then start Astro dev server
 just test               # uv run pytest
-just check              # validate + lint + test + build
+just check              # validate + test + build
 just site-build         # full production build
 ```
 

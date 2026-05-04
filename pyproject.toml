@@ -13,9 +13,8 @@ dependencies = [
     "rdflib>=7.6.0",
 ]
 
-[tool.uv]
-dev-dependencies = [
-    "publicschema-build",
+[dependency-groups]
+dev = [
     "pyld>=3.0.0",
     "pyshacl>=0.31.0",
     "pytest>=8.0",

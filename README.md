@@ -19,24 +19,25 @@ AidOps imports PublicSchema's core types (Person, Household, Profile, Instrument
 ```bash
 just setup                # install Python + Node dependencies
 just fetch-publicschema   # vendor PublicSchema schema
-just check                # validate + lint + test + build
+just check                # validate + test + build
 just dev                  # start the dev server
 ```
 
 ## Architecture
 
-- **schema/**: YAML source of truth. Concepts, properties, vocabularies, bibliography.
+- **schema/**: YAML source of truth. Manifest (`project.yaml`), concepts, properties, vocabularies, bibliography.
 - **vendor/publicschema/**: Vendored PublicSchema schema (fetched, not committed).
-- **build/**: Python build pipeline. Validates YAML, generates `dist/` outputs.
 - **dist/**: Generated artifacts. Never hand-edited.
 - **site/**: Astro static site at schema.aidops.org.
 - **tests/**: Python tests (pytest).
 
-Data flows one direction: `schema/` + `vendor/` -> `build/` -> `dist/` -> `site/` -> static HTML.
+Build tooling is provided by the `publicschema-build` package (CLI: `publicschema build|validate`).
+
+Data flows one direction: `schema/` + `vendor/` -> `publicschema build` -> `dist/` -> `site/` -> static HTML.
 
 ## Relationship to PublicSchema
 
-AidOps depends on PublicSchema for universal concepts (Person, Household, Profile, etc.). The dependency is explicit and version-pinned in `aidops.yaml`. AidOps can extend but not fork the foundation.
+AidOps depends on PublicSchema for universal concepts (Person, Household, Profile, etc.). The dependency is explicit and version-pinned in `schema/project.yaml`. AidOps can extend but not fork the foundation.
 
 | | PublicSchema | AidOps |
 |---|---|---|
