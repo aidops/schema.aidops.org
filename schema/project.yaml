@@ -1,0 +1,22 @@
+schema_project:
+  id: aidops
+  kind: extension
+  name: AidOps
+  namespace: aidops
+  base_uri: https://schema.aidops.org/
+  version: 0.1.0
+  status: draft
+  languages:
+    primary: en
+    additional: [fr, es]
+  license: Apache-2.0
+  dependencies:
+    - id: publicschema
+      base_uri: https://publicschema.org/
+      version: 0.3.0
+      source:
+        type: local
+        path: vendor/publicschema/schema
+  publish:
+    site: astro
+    site_dir: site

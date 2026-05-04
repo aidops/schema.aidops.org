@@ -5,6 +5,7 @@ description = "Humanitarian assessment profiles and operational tooling, built o
 requires-python = ">=3.12"
 license = "Apache-2.0"
 dependencies = [
+    "publicschema-build",
     "pyyaml>=6.0",
     "jsonschema>=4.20",
     "openpyxl>=3.1",
@@ -14,10 +15,14 @@ dependencies = [
 
 [tool.uv]
 dev-dependencies = [
+    "publicschema-build",
     "pyld>=3.0.0",
     "pyshacl>=0.31.0",
     "pytest>=8.0",
 ]
+
+[tool.uv.sources]
+publicschema-build = { path = "../../../apps/publicschema-build", editable = true }
 
 [tool.ruff]
 target-version = "py312"
@@ -31,6 +36,4 @@ ignore = ["E501"]
 testpaths = ["tests"]
 
 [project.scripts]
-ao-build = "build.build:main"
-ao-validate = "build.validate:main"
-ao-lint = "build.lint:main"
+ao-build = "build.cli:main"

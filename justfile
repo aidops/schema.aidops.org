@@ -13,9 +13,9 @@ default:
 
 # --- Dependencies ---
 
-# Fetch vendored PublicSchema schema (local mode for development)
+# Fetch vendored PublicSchema schema and synthesize project.yaml for dep resolution
 fetch-publicschema:
-    uv run python -m build.fetch_dependency --local
+    uv run python scripts/fetch_publicschema.py
 
 # --- Build ---
 
@@ -31,20 +31,14 @@ clean:
 
 # Generate dist/ from YAML sources (AidOps + vendored PublicSchema)
 build: clean
-    uv run python -m build.build
-    rsync -a --include='*.csv' --include='*.xlsx' --include='*/' --exclude='*' {{dist_dir}}/downloads/ {{site_dir}}/public/
-    cp {{dist_dir}}/schemas/*.schema.json {{site_dir}}/public/
-    cp {{dist_dir}}/jsonld/concepts/*.jsonld {{site_dir}}/public/
-    cp {{dist_dir}}/jsonld/properties/*.jsonld {{site_dir}}/public/
-    mkdir -p {{site_dir}}/public/vocabularies
-    cp {{dist_dir}}/jsonld/vocab/*.jsonld {{site_dir}}/public/vocabularies/
+    uv run publicschema build --profile-dir "$PWD" --out "$PWD/{{dist_dir}}"
     cp {{dist_dir}}/vocabulary.json {{site_dir}}/public/vocabulary.json
     mkdir -p {{site_dir}}/public/preview
-    cp {{dist_dir}}/preview/*.json {{site_dir}}/public/preview/
+    rsync -a {{dist_dir}}/preview/ {{site_dir}}/public/preview/
 
-# Validate all YAML source files (schema, referential integrity, translations)
+# Validate schema (loads project.yaml, resolves deps, compiles embedded profiles)
 validate:
-    uv run python -m build.validate
+    uv run publicschema validate --profile-dir "$PWD"
 
 # --- Site ---
 
@@ -70,22 +64,14 @@ site-install:
 test:
     uv run pytest
 
-# Lint schema content for quality and style issues
-lint:
-    uv run python -m build.lint
-
-# Validate, lint, test, build, and check everything is clean
-check: validate lint test build
+# Validate, test, and build
+check: validate test build
     @echo "All checks passed."
 
 # Install all dependencies (Python + Node)
 setup:
     uv sync
     cd {{site_dir}} && npm install
-
-# Create a versioned release snapshot from dist/
-release: build
-    uv run python -m build.release
 
 # Fetch PS, install deps, validate, build data, build site
 all: setup fetch-publicschema validate build site-build
