@@ -67,7 +67,7 @@ jobs:
           cp dist/vocabulary.json site/public/vocabulary.json
           rsync -a --exclude='preview/' --include='*/' --include='*.jsonld' --include='*.schema.json' --include='*.csv' --include='*.xlsx' --exclude='*' dist/ site/public/
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: "22"
 
