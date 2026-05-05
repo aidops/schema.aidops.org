@@ -17,19 +17,19 @@ jobs:
       # Check out AidOps at the same relative path used in the local monorepo,
       # so that the [tool.uv.sources] path "../../../apps/publicschema-build"
       # in pyproject.toml resolves correctly.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           path: 204-programs-delivery-commons/repo/schema_aidops_org
           fetch-depth: 0
 
       # Sibling tool that AidOps wires in via [tool.uv.sources].
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           repository: PublicSchema/publicschema-build
           path: apps/publicschema-build
 
       # Vendored PublicSchema schema/ for cross-schema resolution.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           repository: PublicSchema/publicschema.org
           path: .publicschema
