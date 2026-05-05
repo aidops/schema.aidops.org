@@ -41,7 +41,7 @@ jobs:
           path: .publicschema
           sparse-checkout: schema
 
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
 
       - name: Sync deps
         working-directory: ${{ env.AIDOPS_DIR }}
