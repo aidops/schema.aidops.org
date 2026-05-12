@@ -1,0 +1,23 @@
+id: https://schema.aidops.org/linkml/aidops
+name: aidops
+title: AidOps · aidops
+description: AidOps schema composite. Imports PublicSchema (vendored) and the per-kind AidOps LinkML modules emitted from the bespoke source by scripts/migrate_to_linkml.py.
+license: Apache-2.0
+version: 0.1.0
+prefixes:
+  aidops: https://schema.aidops.org/
+  publicschema: https://publicschema.org/
+  linkml: https://w3id.org/linkml/
+  skos: http://www.w3.org/2004/02/skos/core#
+  schema: http://schema.org/
+  xsd: http://www.w3.org/2001/XMLSchema#
+default_prefix: aidops
+default_range: string
+imports:
+- linkml:types
+- ../../vendor/publicschema/schema/publicschema
+- concepts
+- properties
+- vocabularies
+- bibliography
+- categories

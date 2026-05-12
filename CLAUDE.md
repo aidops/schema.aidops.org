@@ -8,9 +8,17 @@ See the sibling project at `../v2/` for PublicSchema itself.
 
 ## Architecture
 
-- **schema/**: YAML source of truth. Manifest (`project.yaml`), concepts, properties, vocabularies, categories, bibliography.
-- **vendor/publicschema/schema/**: Vendored PS schema (fetched via `just fetch-publicschema`, not committed).
+- **schema/**: LinkML source of truth. Manifest (`project.yaml`) plus
+  `linkml/` holding the AidOps LinkML composite (`aidops.yaml`) and the
+  per-kind modules (`concepts.yaml`, `properties.yaml`, `vocabularies.yaml`,
+  `bibliography.yaml`, `categories.yaml`). The composite imports the
+  vendored PS LinkML composite to resolve cross-schema supertypes,
+  vocabulary references and slot references.
+- **vendor/publicschema/schema/**: Vendored PS LinkML composite (fetched via `just fetch-publicschema`, not committed).
 - **scripts/fetch_publicschema.py**: Vendors PS into `vendor/` and synthesizes a `project.yaml` for dep resolution.
+- **scripts/migrate_to_linkml.py**: One-shot migrator from the original
+  bespoke `schema/{concepts,properties,vocabularies,bibliography,categories.yaml}`
+  tree to the LinkML composite. Preserved as documentation of the cutover.
 - **dist/**: Generated artifacts (JSON, CSV, XLSX, TTL, SHACL, JSON-LD). Never hand-edited.
 - **site/**: Astro static site. Reads `dist/vocabulary.json` via Vite alias.
 - **tests/**: Python tests (pytest).
@@ -23,9 +31,15 @@ Data flows: `schema/` + `vendor/publicschema/` -> `publicschema build` -> `dist/
 
 `schema/project.yaml` declares AidOps as `kind: extension` with PublicSchema as a `source.type: local` dependency pointing at `vendor/publicschema/schema`. `publicschema-build` loads both projects, resolves cross-schema references, and emits only AidOps-owned types into `dist/`.
 
+At the LinkML layer, `schema/linkml/aidops.yaml` carries an
+`imports:` entry pointing at
+`../../vendor/publicschema/schema/publicschema`. The vendored PS
+composite is the LinkML cutover output from
+[`publicschema.org @ claude/linkml-schema-linking-fRL0E`].
+
 Key rules:
 - AidOps concepts can reference PS supertypes (e.g., `supertypes: [Profile]`)
-- AidOps properties can reference PS vocabularies (e.g., `vocabulary: acute-malnutrition-severity`)
+- AidOps properties can reference PS vocabularies (e.g., `vocabulary: acute-malnutrition-severity`) — kebab-case slugs are aliased to PascalCase LinkML enum names by `publicschema-build`'s reader.
 - Inherited properties from PS supertypes appear in AidOps concept output
 - PS types in output carry `"source": "publicschema"` and canonical publicschema.org URIs
 - Validation skips supertype/subtype symmetry for cross-schema supertypes

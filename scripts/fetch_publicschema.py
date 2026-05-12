@@ -43,6 +43,38 @@ def _find_publicschema_dep(project: dict) -> dict:
     raise ValueError("No publicschema dependency found in schema/project.yaml")
 
 
+def _synthesize_project_yaml_from_linkml(composite: dict, dest: Path) -> None:
+    """Write a project.yaml synthesized from a LinkML composite header.
+
+    Post-LinkML-cutover PS no longer ships a bespoke ``_meta.yaml`` or
+    ``project.yaml``; the composite ``publicschema.yaml`` is the only
+    metadata-bearing file. Read its top-level fields and reverse them
+    into the SchemaProject manifest shape ``publicschema-build`` expects.
+    """
+    name = str(composite.get("name") or "publicschema")
+    title = str(composite.get("title") or name)
+    version = str(composite.get("version") or "")
+    license_ = str(composite.get("license") or "")
+    default_prefix = str(composite.get("default_prefix") or name)
+    prefixes = composite.get("prefixes") or {}
+    base_uri = str(prefixes.get(default_prefix) or "")
+    project_doc = {
+        "schema_project": {
+            "id": name,
+            "kind": "core",
+            "name": title,
+            "namespace": default_prefix,
+            "base_uri": base_uri,
+            "version": version,
+            "status": "release",
+            "languages": {"primary": "en", "additional": ["fr", "es"]},
+            "license": license_,
+        }
+    }
+    dest.write_text(yaml.dump(project_doc, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    print(f"  Synthesized project.yaml at {dest} (from LinkML composite)")
+
+
 def _synthesize_project_yaml(meta: dict, dest: Path) -> None:
     """Write a project.yaml synthesized from a legacy _meta.yaml.
 
@@ -112,9 +144,10 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     has_upstream_project_yaml = (local_path / "project.yaml").exists()
     has_meta_yaml = (local_path / "_meta.yaml").exists()
-    if not has_upstream_project_yaml and not has_meta_yaml:
+    has_linkml_composite = (local_path / "publicschema.yaml").exists()
+    if not (has_upstream_project_yaml or has_meta_yaml or has_linkml_composite):
         print(
-            f"error: neither project.yaml nor _meta.yaml found at {local_path}; "
+            f"error: none of project.yaml, _meta.yaml, or publicschema.yaml found at {local_path}; "
             "is this a PublicSchema schema/ directory?",
             file=sys.stderr,
         )
@@ -136,6 +169,8 @@ def main(argv: list[str] | None = None) -> int:
 
     # Determine the actual version, preferring upstream project.yaml.
     vendored_project_yaml = VENDOR_DEST / "project.yaml"
+    vendored_meta_yaml = VENDOR_DEST / "_meta.yaml"
+    vendored_linkml_composite = VENDOR_DEST / "publicschema.yaml"
     if vendored_project_yaml.exists():
         vendored_project = (
             yaml.safe_load(vendored_project_yaml.read_text(encoding="utf-8")) or {}
@@ -144,12 +179,21 @@ def main(argv: list[str] | None = None) -> int:
             vendored_project.get("schema_project", {}).get("version", "")
         )
         print(f"  Using upstream project.yaml at {vendored_project_yaml}")
-    else:
-        # Synth fallback for older PS releases that only ship _meta.yaml.
-        meta_path = VENDOR_DEST / "_meta.yaml"
-        meta = yaml.safe_load(meta_path.read_text(encoding="utf-8")) or {}
+    elif vendored_meta_yaml.exists():
+        # Synth fallback for legacy PS releases that only ship _meta.yaml.
+        meta = yaml.safe_load(vendored_meta_yaml.read_text(encoding="utf-8")) or {}
         actual_version = str(meta.get("version", ""))
         _synthesize_project_yaml(meta, vendored_project_yaml)
+    elif vendored_linkml_composite.exists():
+        # Post-LinkML-cutover PS: synth from the composite header.
+        composite = yaml.safe_load(vendored_linkml_composite.read_text(encoding="utf-8")) or {}
+        actual_version = str(composite.get("version", ""))
+        _synthesize_project_yaml_from_linkml(composite, vendored_project_yaml)
+    else:
+        raise SystemExit(
+            f"vendored PS at {VENDOR_DEST} has no project.yaml, _meta.yaml, "
+            "or publicschema.yaml composite — cannot synthesize manifest."
+        )
 
     # Version check.
     if actual_version != expected_version:
